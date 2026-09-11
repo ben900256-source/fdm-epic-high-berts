@@ -1,22 +1,125 @@
 {
   "blender_version": "5.1.2",
   "checks": {
-    "measured_features": true,
-    "mesh_preflight": true,
-    "same_bounds": true,
-    "same_feature_measurements": true,
-    "same_resolved_plans": true,
+    "component_recipe_hashes": true,
+    "deposited_layer_support": false,
+    "face_details_survive": false,
+    "generic_3mf": true,
+    "installed_presets_unchanged": true,
+    "lib3mf": true,
+    "metrics_bound_to_stl": true,
+    "profile_snapshots": true,
+    "project": true,
     "same_seed_geometry": true,
-    "same_triangle_count": true,
-    "same_volume": true,
     "saved_provenance": true,
-    "self_intersections": true
+    "scale": true,
+    "self_intersections": true,
+    "sliced_layers": false,
+    "slicer_artifacts": true,
+    "source_scene": true,
+    "stl_requires_no_face_removal": true,
+    "structural_probes": true,
+    "technical_views": true,
+    "tip_survival": true,
+    "topology": true,
+    "triangle_budget": true
   },
-  "component_version": 9,
+  "component_version": 10,
+  "diagnostic_slicer_variants": [
+    {
+      "failed_witnesses": [
+        {
+          "feature": "nose",
+          "instance_id": "elf-01"
+        },
+        {
+          "feature": "nose",
+          "instance_id": "elf-02"
+        },
+        {
+          "feature": "nose",
+          "instance_id": "elf-03"
+        },
+        {
+          "feature": "nose",
+          "instance_id": "elf-04"
+        },
+        {
+          "feature": "nose",
+          "instance_id": "elf-05"
+        }
+      ],
+      "gcode_sha256": "e3108c56f3c6d1ac479ccfcdae078ad1ef5cc679febe3f1725329766207fcc19",
+      "name": "classic-thin",
+      "overrides": {
+        "perimeter_generator": "classic",
+        "thin_walls": "1"
+      },
+      "passes": false
+    },
+    {
+      "failed_witnesses": [
+        {
+          "feature": "nose",
+          "instance_id": "elf-01"
+        },
+        {
+          "feature": "nose",
+          "instance_id": "elf-03"
+        },
+        {
+          "feature": "nose",
+          "instance_id": "elf-04"
+        },
+        {
+          "feature": "nose",
+          "instance_id": "elf-05"
+        }
+      ],
+      "gcode_sha256": "7e577abdabd137da9db9f341f1c1a8e8a5ba3d71df233c373ca94d0597b8483e",
+      "name": "explicit-nozzle-width",
+      "overrides": {
+        "min_bead_width": "0.2125",
+        "min_feature_size": "0.0625"
+      },
+      "passes": false
+    },
+    {
+      "failed_witnesses": [
+        {
+          "feature": "nose",
+          "instance_id": "elf-01"
+        },
+        {
+          "feature": "nose",
+          "instance_id": "elf-03"
+        },
+        {
+          "feature": "nose",
+          "instance_id": "elf-04"
+        },
+        {
+          "feature": "nose",
+          "instance_id": "elf-05"
+        }
+      ],
+      "gcode_sha256": "90faad07d31bb5ddcb6495fa2cdbe5b5e21aaeca427c75ef261f27e9a577bbc5",
+      "name": "short-transition",
+      "overrides": {
+        "min_bead_width": "0.2125",
+        "min_feature_size": "0.0625",
+        "wall_transition_filter_deviation": "10%",
+        "wall_transition_length": "25%"
+      },
+      "passes": false
+    }
+  ],
+  "digitally_validated": false,
   "executed_generator_sha256": {
-    "blender_backend.py": "dfbd0a58452f964d21cab8390c14113965ffb5e1db321700f704c75b74791b28",
+    "blender_backend.py": "36392f0df6cf1b445fbcd7177785774e0084c08cc7c4a7ba3b134a61bf0b0743",
     "components/core.py": "6daf12162c39ddfe7a8e02ac1202074f8e84adce2a1270e1270e0a1b53eb38c2",
-    "components/elves.py": "5820e1e5c49459ab9cc9e4484b141378a00870e93462eee8c482c34f57716c03",
+    "components/elves.py": "ef243da0a83ef5eca1fc7d81c969f0fa8a51a6df3f916fe9efff371a40231f1a",
+    "components/elves_v10.py": "44a4f4bc5b963220fa3bbb4bbab623e8419b6965915db17cbcd0a0a1eeec0e8d",
     "components/elves_v2.py": "cd045c4c3b68bd52806052bdab27c6fb8740e60233028dc20a7dc4276d945e72",
     "components/elves_v3.py": "dd822268ad1e1fe99f1cd652897df68105b1cff77fd64a8f3a95f9934413c15e",
     "components/elves_v4.py": "5374e1632779f43b560a1270f018da545a024e6e6afe3bccb44edecdad572ffb",
@@ -25,11 +128,396 @@
     "components/elves_v7.py": "239a0a47183913cabb80ba48593c8e16524bd74a494819d0352150d227f0bcd4",
     "components/elves_v8.py": "d05a66444f38465e78ad9ab92607ad88b52519f9c39f8982e8e1789963b8f8b2",
     "components/elves_v9.py": "8c381eb97c2fd55259466a826b4499c3655843ad451fc4552184bec2c75f6221",
-    "prusa.py": "ec299e89824e978d32de33780f9202ecc3e4489c6a17b981dd1229c8314046f3",
-    "regiment.py": "3bdec1ea85df065984194a259386e492f9b8f5d1c54ae337fd30c148b87f816d",
-    "regiment_blender.py": "abcff3c5b6e7e56d4aa887a61ba598efe985867e760c43d1ca451df3e2bf3e77",
+    "printability.py": "b6a075825881360a6fec4c27f36564359aa45d5e62972a299f5771a6b6c75af8",
+    "prusa.py": "d833efbf58e816d54ff1d8ea8edc9031553d9b3fdc8479ec65868d276d187fbd",
+    "regiment.py": "45073207fe07a3709e43023fb6b05dfbe4b5966ad1f8dc5fc589cf55e745bcc4",
+    "regiment_blender.py": "c2ef944ce76262291a1fbcfd86f29c5c9fc2994bb362bc395ac6631043ec1bd9",
     "regiment_provenance_entry.py": "7a3bb7ea30cb1abe66e00f9b2b60145066d319d17402d9033133cb55092058f7",
-    "regiment_spec.py": "7bd516ea3eac8f90bae131df2ee4adff9935fe126c55601e8c622f84fe1fed60"
+    "regiment_spec.py": "1ae664ed1678b64e457a17e6d40fbfc4958093bbe52e87421e88155474c513de",
+    "regiment_validation.py": "b1457ab58ea28a200a2085ea20cb634d741a439afd3f285ccfae943c5865966f"
+  },
+  "face_details": {
+    "applicable": true,
+    "features": [
+      {
+        "deposited_samples": 0,
+        "expected": "open recess",
+        "feature": "left_eye_socket",
+        "instance_id": "elf-01",
+        "layer_index": 172,
+        "layer_z_mm": 8.74,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          -8.595209472,
+          -0.31741973,
+          8.702861236
+        ]
+      },
+      {
+        "deposited_samples": 0,
+        "expected": "open recess",
+        "feature": "right_eye_socket",
+        "instance_id": "elf-01",
+        "layer_index": 173,
+        "layer_z_mm": 8.79,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          -8.010123311,
+          -0.518653232,
+          8.74260116
+        ]
+      },
+      {
+        "deposited_samples": 0,
+        "expected": "open recess",
+        "feature": "mouth_line",
+        "instance_id": "elf-01",
+        "layer_index": 155,
+        "layer_z_mm": 7.89,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          -8.266270091,
+          -0.483566585,
+          7.855043976
+        ]
+      },
+      {
+        "deposited_samples": 0,
+        "expected": "plastic",
+        "feature": "nose",
+        "instance_id": "elf-01",
+        "layer_index": 163,
+        "layer_z_mm": 8.29,
+        "passes": false,
+        "total_samples": 5,
+        "world_mm": [
+          -8.404775586,
+          -0.800731052,
+          8.288198601
+        ]
+      },
+      {
+        "deposited_samples": 5,
+        "expected": "plastic",
+        "feature": "brow_fill",
+        "instance_id": "elf-01",
+        "layer_index": 178,
+        "layer_z_mm": 9.04,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          -8.339267697,
+          -0.465198354,
+          9.022791362
+        ]
+      },
+      {
+        "deposited_samples": 0,
+        "expected": "open recess",
+        "feature": "left_eye_socket",
+        "instance_id": "elf-02",
+        "layer_index": 172,
+        "layer_z_mm": 8.74,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          -4.049089358,
+          -0.74161971,
+          8.691923164
+        ]
+      },
+      {
+        "deposited_samples": 0,
+        "expected": "open recess",
+        "feature": "right_eye_socket",
+        "instance_id": "elf-02",
+        "layer_index": 171,
+        "layer_z_mm": 8.69,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          -3.447631355,
+          -0.591694162,
+          8.678861755
+        ]
+      },
+      {
+        "deposited_samples": 0,
+        "expected": "open recess",
+        "feature": "mouth_line",
+        "instance_id": "elf-02",
+        "layer_index": 154,
+        "layer_z_mm": 7.84,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          -3.768209182,
+          -0.662882622,
+          7.814707798
+        ]
+      },
+      {
+        "deposited_samples": 5,
+        "expected": "plastic",
+        "feature": "nose",
+        "instance_id": "elf-02",
+        "layer_index": 162,
+        "layer_z_mm": 8.24,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          -3.66952191,
+          -1.023088465,
+          8.224479165
+        ]
+      },
+      {
+        "deposited_samples": 5,
+        "expected": "plastic",
+        "feature": "brow_fill",
+        "instance_id": "elf-02",
+        "layer_index": 177,
+        "layer_z_mm": 8.99,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          -3.723779225,
+          -0.739470554,
+          8.981524094
+        ]
+      },
+      {
+        "deposited_samples": 0,
+        "expected": "open recess",
+        "feature": "left_eye_socket",
+        "instance_id": "elf-03",
+        "layer_index": 172,
+        "layer_z_mm": 8.74,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          -0.261473092,
+          -0.708414652,
+          8.7079801
+        ]
+      },
+      {
+        "deposited_samples": 0,
+        "expected": "open recess",
+        "feature": "right_eye_socket",
+        "instance_id": "elf-03",
+        "layer_index": 172,
+        "layer_z_mm": 8.74,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          0.35693625,
+          -0.66477619,
+          8.699882548
+        ]
+      },
+      {
+        "deposited_samples": 0,
+        "expected": "open recess",
+        "feature": "mouth_line",
+        "instance_id": "elf-03",
+        "layer_index": 154,
+        "layer_z_mm": 7.84,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          0.037720193,
+          -0.706277835,
+          7.833292263
+        ]
+      },
+      {
+        "deposited_samples": 0,
+        "expected": "plastic",
+        "feature": "nose",
+        "instance_id": "elf-03",
+        "layer_index": 163,
+        "layer_z_mm": 8.29,
+        "passes": false,
+        "total_samples": 5,
+        "world_mm": [
+          0.068572458,
+          -1.065302797,
+          8.254658155
+        ]
+      },
+      {
+        "deposited_samples": 5,
+        "expected": "plastic",
+        "feature": "brow_fill",
+        "instance_id": "elf-03",
+        "layer_index": 178,
+        "layer_z_mm": 9.04,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          0.056353329,
+          -0.753398515,
+          9.002365592
+        ]
+      },
+      {
+        "deposited_samples": 0,
+        "expected": "open recess",
+        "feature": "left_eye_socket",
+        "instance_id": "elf-04",
+        "layer_index": 172,
+        "layer_z_mm": 8.74,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          3.86121776,
+          -0.546068143,
+          8.729336569
+        ]
+      },
+      {
+        "deposited_samples": 0,
+        "expected": "open recess",
+        "feature": "right_eye_socket",
+        "instance_id": "elf-04",
+        "layer_index": 172,
+        "layer_z_mm": 8.74,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          4.440085606,
+          -0.324447536,
+          8.715325054
+        ]
+      },
+      {
+        "deposited_samples": 0,
+        "expected": "open recess",
+        "feature": "mouth_line",
+        "instance_id": "elf-04",
+        "layer_index": 155,
+        "layer_z_mm": 7.89,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          4.148738999,
+          -0.485233191,
+          7.852848893
+        ]
+      },
+      {
+        "deposited_samples": 0,
+        "expected": "plastic",
+        "feature": "nose",
+        "instance_id": "elf-04",
+        "layer_index": 163,
+        "layer_z_mm": 8.29,
+        "passes": false,
+        "total_samples": 5,
+        "world_mm": [
+          4.28194399,
+          -0.805830934,
+          8.285137591
+        ]
+      },
+      {
+        "deposited_samples": 5,
+        "expected": "plastic",
+        "feature": "brow_fill",
+        "instance_id": "elf-04",
+        "layer_index": 178,
+        "layer_z_mm": 9.04,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          4.177705599,
+          -0.48693433,
+          9.022660007
+        ]
+      },
+      {
+        "deposited_samples": 0,
+        "expected": "open recess",
+        "feature": "left_eye_socket",
+        "instance_id": "elf-05",
+        "layer_index": 172,
+        "layer_z_mm": 8.74,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          7.723439508,
+          -0.531584257,
+          8.726409875
+        ]
+      },
+      {
+        "deposited_samples": 0,
+        "expected": "open recess",
+        "feature": "right_eye_socket",
+        "instance_id": "elf-05",
+        "layer_index": 172,
+        "layer_z_mm": 8.74,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          8.337322745,
+          -0.617989629,
+          8.717383036
+        ]
+      },
+      {
+        "deposited_samples": 0,
+        "expected": "open recess",
+        "feature": "mouth_line",
+        "instance_id": "elf-05",
+        "layer_index": 155,
+        "layer_z_mm": 7.89,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          8.01143047,
+          -0.618576491,
+          7.852285423
+        ]
+      },
+      {
+        "deposited_samples": 0,
+        "expected": "plastic",
+        "feature": "nose",
+        "instance_id": "elf-05",
+        "layer_index": 163,
+        "layer_z_mm": 8.29,
+        "passes": false,
+        "total_samples": 5,
+        "world_mm": [
+          7.969296986,
+          -0.963090706,
+          8.284644909
+        ]
+      },
+      {
+        "deposited_samples": 5,
+        "expected": "plastic",
+        "feature": "brow_fill",
+        "instance_id": "elf-05",
+        "layer_index": 178,
+        "layer_z_mm": 9.04,
+        "passes": true,
+        "total_samples": 5,
+        "world_mm": [
+          8.026638268,
+          -0.632759217,
+          9.022271565
+        ]
+      }
+    ],
+    "limitation": "local feature witnesses; inspect the complete face preview and a physical trial",
+    "method": "five 0.025 mm raster witnesses in the deposited layer containing each named face landmark",
+    "passes": false
   },
   "feature_measurements": {
     "cape_shoulders": [
@@ -202,6 +690,78 @@
       0.619324,
       0.591199
     ],
+    "fitted_heads": [
+      {
+        "brow_front_recess_mm": 0.1125914554595947,
+        "eye_recess_depths_mm": [
+          0.2956494353711605,
+          0.2956494875252247
+        ],
+        "filled_landmarks": [
+          true,
+          true,
+          true
+        ],
+        "instance_id": "elf-01",
+        "passes": true
+      },
+      {
+        "brow_front_recess_mm": 0.1125919322967529,
+        "eye_recess_depths_mm": [
+          0.29564936645329,
+          0.2956494903191924
+        ],
+        "filled_landmarks": [
+          true,
+          true,
+          true
+        ],
+        "instance_id": "elf-02",
+        "passes": true
+      },
+      {
+        "brow_front_recess_mm": 0.11259217071533201,
+        "eye_recess_depths_mm": [
+          0.2956491579534486,
+          0.2956491559743881
+        ],
+        "filled_landmarks": [
+          true,
+          true,
+          true
+        ],
+        "instance_id": "elf-03",
+        "passes": true
+      },
+      {
+        "brow_front_recess_mm": 0.11259181308746335,
+        "eye_recess_depths_mm": [
+          0.29564925841987133,
+          0.29564925841987133
+        ],
+        "filled_landmarks": [
+          true,
+          true,
+          true
+        ],
+        "instance_id": "elf-04",
+        "passes": true
+      },
+      {
+        "brow_front_recess_mm": 0.11259187269210813,
+        "eye_recess_depths_mm": [
+          0.29564939392730594,
+          0.29564885050058365
+        ],
+        "filled_landmarks": [
+          true,
+          true,
+          true
+        ],
+        "instance_id": "elf-05",
+        "passes": true
+      }
+    ],
     "grasps": [
       {
         "finger_span_mm": 1.501826,
@@ -328,7 +888,7 @@
         ],
         "feature": "neck_core",
         "instance_id": "elf-01",
-        "measured_mm": 1.008039,
+        "measured_mm": 1.00804,
         "minimum_mm": 0.75,
         "passes": true,
         "start_mm": [
@@ -413,7 +973,7 @@
         ],
         "feature": "neck_core",
         "instance_id": "elf-02",
-        "measured_mm": 1.008039,
+        "measured_mm": 1.00804,
         "minimum_mm": 0.75,
         "passes": true,
         "start_mm": [
@@ -583,7 +1143,7 @@
         ],
         "feature": "neck_core",
         "instance_id": "elf-04",
-        "measured_mm": 1.008039,
+        "measured_mm": 1.00804,
         "minimum_mm": 0.75,
         "passes": true,
         "start_mm": [
@@ -760,9 +1320,9 @@
       }
     ]
   },
-  "geometry_hash": "da02b290f25afc7968492561f3003542be703658c820becd8cd561d57cde370c",
-  "geometry_hash_method": "solid occupancy lattice, corroborated by equal bounds, triangle count, volume, features and resolved plans",
-  "label": "visual proof; mesh and feature checks passed",
+  "geometry_hash": "05a5d359466286c73bcf8891a3595ba9cb2434981bbe8085bf97bf2811b4eb6d",
+  "geometry_hash_method": "solid occupancy lattice, corroborated by equal triangle count, bounds, volume, features and resolved plans",
+  "label": "visual proof; geometry passes, printability screen failed",
   "mesh": {
     "bounds_max_mm": [
       10.0,
@@ -775,23 +1335,99 @@
       0.0
     ],
     "self_intersection_count": 0,
-    "triangles": 42444,
-    "volume_mm3": 382.295832
+    "triangles": 43400,
+    "volume_mm3": 385.876987
   },
   "package_build": "wheel and source distribution built successfully",
   "physical_trial": "not run",
   "preview_sha256": {
-    "docs/images/cape-shoulders.png": "53bfcf619f32f1bb6ba7d13c26ee20ae15d0177253ccad4b6f995f4c2cb67bd8",
-    "docs/images/face-grip-detail.png": "66c553e306df17c9048fe3e4054ab9fd6b1543833bff7ad248a1e61acf0b26fa",
-    "docs/images/front.png": "2250be9ee7cea201016ba0829ef91c23925230d398e70d6e74a1159b3e7b7069",
-    "docs/images/seahorse-shield.png": "9581f4f80f4fc5aae6f1dd91506f7b20cfd23874eea4b9294472bcf3f17a6efe",
-    "docs/images/side.png": "d277c1c24dcb99de132e649835451aa52ff0f587c73784f74229b9e16dc24463",
-    "docs/images/three-quarter.png": "fddc8c746910b5a3a511f68fa1ed07aeb1669f01f1487676952958584d67719c"
+    "docs/images/cape-shoulders.png": "c2957523a021b6e90145250738229f108ca76c0f7ea4633f71d269b10f12e4c2",
+    "docs/images/face-grip-detail.png": "8ac0ac42d7006bd599d7a0869abca682ec504c8a668303609a9459e66830443d",
+    "docs/images/face-three-quarter.png": "4549458001bbf6bdd597389e3609f99cd8a8ec66b34920fb3dba534c7eedbc1d",
+    "docs/images/front.png": "44332085c8df4d30501735be722cdb4a662b440083b8f766b0f8724ffcdcaf2c",
+    "docs/images/nose-layer-diagnostic.png": "7b69b9664a33efe02e5eda06af777d0792e55ac5769e4f67897b91c1eacd6e5b",
+    "docs/images/seahorse-shield.png": "58ab73a9f7e306003e1b5bbecf6de6e568ae67f359cacf61084afb8060f8d975",
+    "docs/images/side.png": "a04c2d0f399958c69b327d7d36ea0a31d2448d1901ba6343e0e0660cb8e95b28",
+    "docs/images/support-hotspots.png": "4cd7c85164cabc5d4c5a7d934f2db312696d030ce44eba2e0f20bd0a0517170d",
+    "docs/images/three-quarter.png": "47dd10ea04cff9e9503d96935f76235d0e4489b02bfc17ab61e0e68b5a13114c"
+  },
+  "printability": {
+    "analysis_source_sha256": {
+      "printability.py": "b6a075825881360a6fec4c27f36564359aa45d5e62972a299f5771a6b6c75af8",
+      "prusa.py": "d833efbf58e816d54ff1d8ea8edc9031553d9b3fdc8479ec65868d276d187fbd",
+      "regiment_validation.py": "b1457ab58ea28a200a2085ea20cb634d741a439afd3f285ccfae943c5865966f"
+    },
+    "automatic_support_audit": {
+      "configuration_sha256": "aa5a188119a7ea00790242fe9f100ebfb27a243565a2c1eace87d542f7f06613",
+      "filament_length_mm": {
+        "adhesion": 27.3982,
+        "model": 151.3793,
+        "support": 47.4045
+      },
+      "label": "diagnostic automatic-support estimate; not approved print G-code",
+      "limitation": "automatic support quantity is a conservative design diagnostic; inspect contact locations and removal access",
+      "method": "PrusaSlicer 2.9.5 organic supports, 45-degree threshold, same machine/nozzle/layers/material",
+      "support_threshold_degrees_from_bed": 45,
+      "support_to_model_filament_ratio": 0.31315056372639133,
+      "zero_support_target_met": false
+    },
+    "criteria": {
+      "first_layer_mm": 0.14,
+      "maximum_bridge_curvature_ratio": 1.1,
+      "maximum_external_bridge_mm": 1.0,
+      "maximum_internal_bridge_mm": 5.0,
+      "maximum_local_unanchored_run_mm": 0.25,
+      "nominal_layer_mm": 0.05,
+      "nozzle_mm": 0.25,
+      "raster_tolerance_mm": 0.025,
+      "removable_support_target": 0,
+      "resolution_mm": 0.025,
+      "target_overhang_degrees_from_vertical": 45.0
+    },
+    "deposited_layer_support": false,
+    "face_details_survive": false,
+    "gcode": {
+      "estimated_print_time": "43m 55s",
+      "extrusion_tools": [
+        1
+      ],
+      "filament_used_g_by_tool": "0.00, 0.64, 0.00, 0.00, 0.00",
+      "final_z_mm": 12.99,
+      "first_layer_mm": 0.14,
+      "layer_count": 258,
+      "model_extrusion_segments": 86492,
+      "roles": [
+        "Bridge infill",
+        "External perimeter",
+        "Internal infill",
+        "Overhang perimeter",
+        "Perimeter",
+        "Skirt/Brim",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "selected_tools": [
+        1
+      ]
+    },
+    "gcode_sha256": "5e87369ed6b766e0edb2eacef91993ce8557281b6e5bb2138871583895611f6b",
+    "label": "printability design review; physical trial pending",
+    "mesh_layer_checks": false,
+    "passes": false,
+    "stl_sha256": "44f0bea9fa798c6476b61427e106ace6aee65833d24fcb0cdfb6b00786bba876",
+    "support_summary": {
+      "accepted_bridge_count": 53,
+      "layer_count": 258,
+      "model_path_length_mm": 29052.277,
+      "unaccepted_run_count": 163,
+      "unsupported_centerline_mm": 199.676
+    }
   },
   "published_generator_sha256": {
     "blender_backend.py": "36392f0df6cf1b445fbcd7177785774e0084c08cc7c4a7ba3b134a61bf0b0743",
     "components/core.py": "6daf12162c39ddfe7a8e02ac1202074f8e84adce2a1270e1270e0a1b53eb38c2",
-    "components/elves.py": "5820e1e5c49459ab9cc9e4484b141378a00870e93462eee8c482c34f57716c03",
+    "components/elves.py": "ef243da0a83ef5eca1fc7d81c969f0fa8a51a6df3f916fe9efff371a40231f1a",
+    "components/elves_v10.py": "44a4f4bc5b963220fa3bbb4bbab623e8419b6965915db17cbcd0a0a1eeec0e8d",
     "components/elves_v2.py": "cd045c4c3b68bd52806052bdab27c6fb8740e60233028dc20a7dc4276d945e72",
     "components/elves_v3.py": "dd822268ad1e1fe99f1cd652897df68105b1cff77fd64a8f3a95f9934413c15e",
     "components/elves_v4.py": "5374e1632779f43b560a1270f018da545a024e6e6afe3bccb44edecdad572ffb",
@@ -800,20 +1436,27 @@
     "components/elves_v7.py": "239a0a47183913cabb80ba48593c8e16524bd74a494819d0352150d227f0bcd4",
     "components/elves_v8.py": "d05a66444f38465e78ad9ab92607ad88b52519f9c39f8982e8e1789963b8f8b2",
     "components/elves_v9.py": "8c381eb97c2fd55259466a826b4499c3655843ad451fc4552184bec2c75f6221",
-    "prusa.py": "ec299e89824e978d32de33780f9202ecc3e4489c6a17b981dd1229c8314046f3",
-    "regiment.py": "3bdec1ea85df065984194a259386e492f9b8f5d1c54ae337fd30c148b87f816d",
-    "regiment_blender.py": "6c91ce932924770d1134f71708eb888d5cb8161d4da6f7f2cd2869530965f9d0",
+    "printability.py": "b6a075825881360a6fec4c27f36564359aa45d5e62972a299f5771a6b6c75af8",
+    "prusa.py": "d833efbf58e816d54ff1d8ea8edc9031553d9b3fdc8479ec65868d276d187fbd",
+    "regiment.py": "45073207fe07a3709e43023fb6b05dfbe4b5966ad1f8dc5fc589cf55e745bcc4",
+    "regiment_blender.py": "c2ef944ce76262291a1fbcfd86f29c5c9fc2994bb362bc395ac6631043ec1bd9",
     "regiment_provenance_entry.py": "7a3bb7ea30cb1abe66e00f9b2b60145066d319d17402d9033133cb55092058f7",
-    "regiment_spec.py": "e888740fd33849237a492aba3cde079274d7f51daa66b439afa61223b355434b"
+    "regiment_spec.py": "1ae664ed1678b64e457a17e6d40fbfc4958093bbe52e87421e88155474c513de",
+    "regiment_validation.py": "b1457ab58ea28a200a2085ea20cb634d741a439afd3f285ccfae943c5865966f"
   },
   "repeat": {
-    "extraction_note": "Only unused backend functions and unrelated palette entries were removed. Used primitive, CSG and mesh-check implementations are retained.",
-    "generator_files_changed_by_extraction": [
-      "blender_backend.py"
-    ],
-    "method": "same-seed regeneration using the focused standalone source tree"
+    "checks": {
+      "bounds": true,
+      "features": true,
+      "geometry": true,
+      "plans": true,
+      "seed": true,
+      "triangles": true,
+      "volume": true
+    },
+    "method": "independent same-seed build using the focused standalone source tree"
   },
-  "resolved_plans_sha256": "d856d23d591202171a9016b61d38205152697470ad7d85948205bbbc8dfb1c4f",
+  "resolved_plans_sha256": "ea9514ddb0f7a8e499b230f3d4bc8d572c4e652fda58b72a18c6e8e3d073ed2b",
   "saved_provenance": {
     "checks": {
       "assembly_exact": true,
@@ -830,56 +1473,68 @@
     },
     "instances": [
       {
-        "definition_sha256": "a3900500ef47a67693fec088c27de1a21eb6d6f1972ee2cc80a235f923d4cbd3",
+        "definition_sha256": "7f03d8b4341e012e7446903bc6fa2841a8f63f2055d6dbbc61369ec053056205",
         "instance_id": "elf-01",
-        "maximum_primitive_center_error_mm": 6.49304576327836e-07,
-        "plan_sha256": "7d19ada55a1a387f0acab1d7fac3d4beb4c6acebc03aa5af36280da91cad4ca0",
-        "source_objects": 86
+        "maximum_primitive_center_error_mm": 8.213602384898877e-07,
+        "plan_sha256": "143e2f3cb779146fba7f06e2a720bc3963dd8146a1503640e13ea00dbeeec6a8",
+        "source_objects": 91
       },
       {
-        "definition_sha256": "8846834b54f9dca7ebb6d7f66f53f0753d75816084564fa3edb9c885e50824f5",
+        "definition_sha256": "5362c7a58f02cd0008d2b9621419a9d19213c4476267b31dfc2d0750fa3ad311",
         "instance_id": "elf-02",
         "maximum_primitive_center_error_mm": 7.601634681719815e-07,
-        "plan_sha256": "640db0437833f9784eee4453d807706bbd657d4d4019587b6f5286db8b8e41ef",
-        "source_objects": 86
+        "plan_sha256": "85a5bdea88e692110d98747557e8330fdf7aa0c215fa86600dd24f1424d49898",
+        "source_objects": 91
       },
       {
-        "definition_sha256": "493870cc1f23003246e22bbf4ec300487273c9b1aba0bff0abca108d78a00725",
+        "definition_sha256": "8828163b153bc4f496b2fea7430d70b583a7bc1d17c3a9bcbc7dd506355f2875",
         "instance_id": "elf-03",
         "maximum_primitive_center_error_mm": 8.53663809863292e-07,
-        "plan_sha256": "707670badbd118b3f45b9a4752f6e6b24b3e601acfa48e554128d78961671b26",
-        "source_objects": 86
+        "plan_sha256": "5134ea760a63afffa29bcd28a57224a4586ac6c816cf82a821c2f9ba6602db51",
+        "source_objects": 91
       },
       {
-        "definition_sha256": "ed08990c82926e10650151e48ea20f0453611e9d98fde32c198c67ddbd8e8e20",
+        "definition_sha256": "291faf1d5b520bd224148a398ed7e52ca4a8037f8ad30a2bb70ed94f6ab2470d",
         "instance_id": "elf-04",
         "maximum_primitive_center_error_mm": 7.709769196395655e-07,
-        "plan_sha256": "b6d5ae9f50304890c9891bace475fdc5e9838f14f2fbd9bb86eaff1b1032b846",
-        "source_objects": 86
+        "plan_sha256": "09bb3cd48158ba254134f25f4b8d63a74f88b6f087a2431b8f668c0091104982",
+        "source_objects": 91
       },
       {
-        "definition_sha256": "50d98cb4fba23c7455900bd10cc860c4a4dc8f0be4cfede1e221cd534d2d6c9b",
+        "definition_sha256": "3f040216e6ece0cd6727babd20c57620f20958c95137646c47cfe99b76efbac1",
         "instance_id": "elf-05",
         "maximum_primitive_center_error_mm": 9.060068144606248e-07,
-        "plan_sha256": "10373e81d4cdf8b9e4e0399b43328c7b2b7c9e4350c03e87477c3f4feeee0bdb",
-        "source_objects": 86
+        "plan_sha256": "65479bb658d88df0424b09671eeb188521b684657e7c4194f835e50d79e7da20",
+        "source_objects": 91
       }
     ],
     "method": "reopened saved Blender scene; retained primitive roles, hashes and Exact modifier operands",
     "passes": true
   },
   "seed": 1001,
-  "slicing_validation": "not run for revision 9",
-  "source_newline_note": "Published source uses canonical LF newlines. Executed hashes retain the original Windows file bytes; normalization changes no code or resolved geometry.",
+  "support_baseline_v9": {
+    "configuration_sha256": "aa5a188119a7ea00790242fe9f100ebfb27a243565a2c1eace87d542f7f06613",
+    "filament_length_mm": {
+      "adhesion": 27.3982,
+      "model": 149.5884,
+      "support": 54.1385
+    },
+    "label": "diagnostic automatic-support estimate; not approved print G-code",
+    "limitation": "automatic support quantity is a conservative design diagnostic; inspect contact locations and removal access",
+    "method": "PrusaSlicer 2.9.5 organic supports, 45-degree threshold, same machine/nozzle/layers/material",
+    "support_threshold_degrees_from_bed": 45,
+    "support_to_model_filament_ratio": 0.3619166198437287,
+    "zero_support_target_met": false
+  },
   "tests": {
-    "passed": 63,
+    "passed": 76,
     "skip_reason": "historical revision-specific Blender integration tests",
-    "skipped": 6
+    "skipped": 7
   },
   "topology": {
     "boundary_edges": 0,
     "component_signed_volumes_mm3": [
-      382.299600615
+      385.880008414
     ],
     "connected_components": 1,
     "degenerate_triangles": 0,
@@ -889,8 +1544,8 @@
     "nonmanifold_edges": 0,
     "outward_facing": true,
     "positive_volume": true,
-    "signed_volume_mm3": 382.299600615,
-    "triangle_count": 42444,
+    "signed_volume_mm3": 385.880008414,
+    "triangle_count": 43400,
     "watertight": true
   }
 }

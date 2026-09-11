@@ -14,6 +14,7 @@ from .components.core import component_digest
 from .components.elves import ELF_LIBRARY, resolve_elf
 from .prusa import check_profile, inspect_project, read_settings, sha256
 from .regiment_spec import RegimentSpec
+from .printability import assess_toolpaths,assess_face_detail
 
 
 def parse_gcode(text):
@@ -247,6 +248,37 @@ def inspect_layers(mesh, layers, output):
     return evidence
 
 
+def analysis_source_hashes():
+    package=Path(__file__).resolve().parent
+    return {name:sha256(package/name) for name in ('regiment_validation.py','printability.py','prusa.py')}
+
+
+def assess_build(output, *, automatic_supports=False):
+    """Repeatable design feedback without claiming completed validation."""
+    output=Path(output).resolve()
+    mesh=formats.read_stl(output/'elf-spearman-proof.stl')
+    layers,gcode=parse_gcode((output/'elf-spearman-proof.gcode').read_text())
+    layer_evidence=inspect_layers(mesh,layers,output/'previews')
+    support=assess_toolpaths(layers,output/'previews')
+    details=assess_face_detail(layers,RegimentSpec.load(output/'internal/regiment-spec.json'),output/'previews')
+    result=dict(label='printability design review; physical trial pending',
+                passes=layer_evidence['passes'] and support['passes'] and details['passes'],
+                mesh_layer_checks=layer_evidence['passes'],deposited_layer_support=support['passes'],
+                face_details_survive=details['passes'],
+                gcode=gcode,support_summary=support['summary'],criteria=support['criteria'],
+                analysis_source_sha256=analysis_source_hashes(),
+                stl_sha256=sha256(output/'elf-spearman-proof.stl'),
+                gcode_sha256=sha256(output/'elf-spearman-proof.gcode'))
+    if automatic_supports:
+        from .prusa import support_audit
+        audit=support_audit(output)
+        result['automatic_support_audit']={k:v for k,v in audit.items() if k!='execution'}
+    path=output/'printability-review.json'
+    path.write_text(json.dumps(result,sort_keys=True,indent=2)+'\n')
+    return dict(passes=result['passes'],label=result['label'],
+                support_summary=result['support_summary'],report=str(path))
+
+
 def validate_build(output, compare):
     output,compare = Path(output).resolve(),Path(compare).resolve()
     if output == compare:
@@ -301,6 +333,9 @@ def validate_build(output, compare):
     layers,gcode = parse_gcode((output/"elf-spearman-proof.gcode").read_text())
     layer_evidence = inspect_layers(mesh,layers,output/"previews")
     checks["sliced_layers"] = layer_evidence["passes"]
+    printability = assess_toolpaths(layers,output/"previews")
+    checks["deposited_layer_support"] = printability["passes"]
+    checks['face_details_survive'] = assess_face_detail(layers,spec,output/'previews')['passes']
     checks["tip_survival"] = gcode["final_z_mm"]>=12.9
     label = "digitally validated" if all(checks.values()) else "internal proof - validation failed"
     instructions = (
@@ -324,6 +359,8 @@ def validate_build(output, compare):
                   geometry_hash=metrics["mesh_hash"], compare_directory=str(compare),
                   geometry_hash_method="repository solid occupancy lattice, corroborated by same recipe plans, bounds and volume",
                   mesh_analysis=asdict(analysis), gcode=gcode,
+                  validation_source_sha256=analysis_source_hashes(),
+                  printability=printability['summary'],printability_criteria=printability['criteria'],
                   generic_3mf_inspection=generic_inspection.to_dict(),
                   prototype_limits=dict(structural_wall_mm=0.75,shaft_mm=1.0,relief_mm=0.25,gap_mm=0.5,
                                         note="terminal tapered tips and attached decorative edges are not structural walls"),

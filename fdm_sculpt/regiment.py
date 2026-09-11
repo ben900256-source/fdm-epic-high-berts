@@ -30,7 +30,8 @@ def generate(spec_path, *, seed, output, operation="build", renders=True, slice_
                                                 "regiment_provenance_entry.py","blender_backend.py",
                                                 "components/elves.py","components/elves_v2.py",
                                                 "components/elves_v3.py","components/elves_v4.py","components/elves_v5.py","components/elves_v6.py","components/elves_v7.py","components/elves_v8.py","components/elves_v9.py",
-                                                "components/core.py","prusa.py")]
+                                                "components/elves_v10.py","components/core.py","prusa.py",
+                                                "regiment_validation.py","printability.py")]
     generator_hashes = {str(p.relative_to(package)).replace('\\','/'):sha256(p) for p in sorted(generator_files)}
     (internal/"generator-hashes.json").write_text(json.dumps(generator_hashes,sort_keys=True,indent=2)+"\n")
     blender = find_blender()
@@ -80,9 +81,15 @@ def main(argv=None):
     validate = sub.add_parser("validate")
     validate.add_argument("build", type=Path)
     validate.add_argument("--compare", type=Path, required=True, help="independent same-seed build")
+    assess = sub.add_parser("assess", help="inspect existing trial layers and support risks before final validation")
+    assess.add_argument("build", type=Path)
+    assess.add_argument("--support-audit", action="store_true", help="also generate a separate automatic-support diagnostic")
     args = parser.parse_args(argv)
     try:
-        if args.operation == "validate":
+        if args.operation == "assess":
+            from .regiment_validation import assess_build
+            result = assess_build(args.build, automatic_supports=args.support_audit)
+        elif args.operation == "validate":
             from .regiment_validation import validate_build
             result = validate_build(args.build, args.compare)
         else:

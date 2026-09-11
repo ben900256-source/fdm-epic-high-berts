@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "component_id": "aurelian.spearman.a",
+      "instance_id": "elf-01",
+      "version": 10,
+      "x_mm": -8.0
+    },
+    {
+      "component_id": "aurelian.spearman.b",
+      "instance_id": "elf-02",
+      "version": 10,
+      "x_mm": -4.0
+    },
+    {
+      "component_id": "aurelian.spearman.c",
+      "instance_id": "elf-03",
+      "version": 10,
+      "x_mm": 0.0
+    },
+    {
+      "component_id": "aurelian.spearman.d",
+      "instance_id": "elf-04",
+      "version": 10,
+      "x_mm": 4.0
+    },
+    {
+      "component_id": "aurelian.spearman.e",
+      "instance_id": "elf-05",
+      "version": 10,
+      "x_mm": 8.0
+    }
+  ],
+  "printer_profile": "prusa-xl-0.25-0.05",
+  "regiment_id": "aurelian-leafguard-proof",
+  "schema_version": 1,
+  "seed": 1001,
+  "sole_to_eye_mm": 8.0,
+  "strip_mm": [
+    20.0,
+    5.0,
+    1.0
+  ]
+}

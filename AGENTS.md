@@ -25,6 +25,13 @@
   Prusa project and slice without a separate config to verify it is complete.
 - Label only passing builds `digitally validated`; never claim physical print
   testing without an actual user-run trial. Visual review alone is insufficient.
+- Use zero removable supports as the design target. Run `regiment assess`
+  on fresh sliced builds; use `--support-audit` for a separate conservative
+  automatic-support estimate. Follow `docs/printability.md` for anchored bridge,
+  deposited-layer and facial-detail criteria. Do not weaken gates to pass a model.
+- Preserve the approved helmet outline and shared long planar nose character.
+  Check filled brow/temple landmarks and actual sliced eye, mouth and nose detail.
+  Geometry probes alone do not establish that small facial relief will print.
 - The user does not model in Blender. Unsaved GUI changes may be discarded when
   replacing a review scene. Keep earlier saved builds.
 - This source repository is explicitly authorized for public publication under

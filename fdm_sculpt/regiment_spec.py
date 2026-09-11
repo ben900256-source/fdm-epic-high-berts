@@ -34,13 +34,13 @@ class RegimentSpec:
         if len(placements) != 5:
             raise ValueError("proof requires five figures")
         instances = []
-        individual_poses = any(all(p.get("version")==v for p in placements) for v in (2,3,4,5,6,7,8,9))
+        individual_poses = any(all(p.get("version")==v for p in placements) for v in (2,3,4,5,6,7,8,9,10))
         sequence = "abcde" if individual_poses else "abaca"
         for index, (placement, pose) in enumerate(zip(placements, sequence)):
             if set(placement) != {"component_id", "version", "instance_id", "x_mm"}:
                 raise ValueError("invalid placement fields")
             if placement["x_mm"] != -8+index*4 or placement["component_id"] != f"aurelian.spearman.{pose}":
-                raise ValueError("proof requires pinned ABACA v1 or ABCDE v2/v3/v4/v5/v6/v7/v8/v9 at 4 mm spacing")
+                raise ValueError("proof requires pinned ABACA v1 or ABCDE v2/v3/v4/v5/v6/v7/v8/v9/v10 at 4 mm spacing")
             instance = ComponentInstanceSpec(
                 placement["component_id"], placement["version"], placement["instance_id"],
                 {"sole": TransformSpec(translate_mm=(placement["x_mm"], 0, 1))}, {"mono": "ivory"})

@@ -1,6 +1,6 @@
 # Spearman construction and validation
 
-The latest `RegimentSpec` pins five version-9 recipes at 4 mm spacing, with sole
+The latest `RegimentSpec` pins five version-10 recipes at 4 mm spacing, with sole
 anchors at X = -8, -4, 0, 4 and 8 mm. Named hips, knees, ankles, hands and elbows
 drive the restrained poses. The seed is explicit even though the current
 recipes do not make random choices.
@@ -18,6 +18,14 @@ crown. A rounded face aperture forms its brow and cheek guards directly in the
 shell. The aperture is 1.08 mm wide, has 0.12 mm corner rounding and reaches
 8.10 mm above the soles. Three projecting brow/temple plates from revision 8
 are removed; the rest of the reviewed cape, shield and body geometry is retained.
+
+Revision 10 retains that helmet and fits a broader rounded head into its
+envelope. The nominal head blank is 1.48 mm wide and 1.88 mm high. An Exact
+intersection limits it to the helmet interior, leaving a shallow rim recess.
+Chin and nose-root volumes are unioned before subtracting rounded eye sockets
+and a mouth line. The shared four-plane nose is unioned last to preserve its
+outline. Evaluated head-only ray probes check brow/temple fill and eye depth;
+using the head recipe avoids false probe hits on a nearby spear.
 
 Spear shafts measure 1.02 mm in diameter. Their terminal flats have nominal
 radius 0.34 mm before the 0.85 depth scaling and polygon faceting: approximately
@@ -63,3 +71,6 @@ lateral growth to one 0.25 mm extrusion width at 0.025 mm sampling.
 These are prototype digital checks. They do not establish physical durability
 or universally prove minimum wall thickness from a finite set of probes.
 Latest revision status and measured results are recorded in `proof/review.json`.
+The additional [printability screen](printability.md) checks deposited G-code
+against the previous layer's plastic and verifies named facial landmarks.
+These are mandatory validation gates; current failures remain visible.

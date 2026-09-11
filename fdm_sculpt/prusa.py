@@ -224,3 +224,79 @@ def slice_build(output, executable=EXECUTABLE):
         raise RuntimeError("installed preset input changed during the build")
     (folder/"slicer-evidence.json").write_text(json.dumps(record, sort_keys=True, indent=2)+"\n")
     return record
+
+
+def support_audit(output, executable=EXECUTABLE):
+    """Diagnostic automatic-support slice; never overwrite trial artifacts.
+
+    Uses a conservative 45-degree threshold measured from the bed plane.
+    The generated G-code is evidence for design review, not an approved print.
+    """
+    output=Path(output).resolve()
+    folder=output/'support-audit'
+    folder.mkdir(exist_ok=True)
+    config=read_settings((output/'prusa/normalized.ini').read_text(encoding='utf-8'))
+    check_profile(config)
+    config.update(support_material='1',support_material_auto='1',support_material_threshold='45',
+                  support_material_style='organic',support_material_buildplate_only='0')
+    ini=folder/'diagnostic.ini'
+    ini.write_text(''.join(f'{k} = {v}\n' for k,v in sorted(config.items())),encoding='utf-8')
+    gcode=folder/'diagnostic-supports.gcode'
+    isolated=folder/'isolated-settings'
+    isolated.mkdir(exist_ok=True)
+    evidence=run_slicer([executable,'--datadir',isolated,'--threads','2','--loglevel','3',
+                        '--load',ini,'--center','180,180','--export-gcode','--output',gcode,
+                        output/'elf-spearman-proof.stl'],folder/'slice.log',gcode,
+                       ['Slicing process finished','Exporting G-code finished','Slicing result exported to'])
+    lengths=filament_by_role(gcode.read_text(encoding='utf-8'))
+    result=dict(label='diagnostic automatic-support estimate; not approved print G-code',
+                method='PrusaSlicer 2.9.5 organic supports, 45-degree threshold, same machine/nozzle/layers/material',
+                support_threshold_degrees_from_bed=45,
+                filament_length_mm={k:round(v,4) for k,v in lengths.items()},
+                support_to_model_filament_ratio=lengths['support']/lengths['model'] if lengths['model'] else None,
+                zero_support_target_met=lengths['support']==0,
+                limitation='automatic support quantity is a conservative design diagnostic; inspect contact locations and removal access',
+                execution=evidence,configuration_sha256=sha256(ini))
+    (folder/'support-audit.json').write_text(json.dumps(result,sort_keys=True,indent=2)+'\n')
+    return result
+
+
+def filament_by_role(text):
+    # Count deposited filament by role, respecting absolute/relative E and G92.
+    # Retractions and stationary unretractions do not count as model/support.
+    x=y=e=0.0
+    relative=False
+    relative_xyz=False
+    role=''
+    started=False
+    lengths={'model':0.0,'support':0.0,'adhesion':0.0}
+    for raw in text.splitlines():
+        if raw==';LAYER_CHANGE':
+            started=True
+        elif raw.startswith(';TYPE:'):
+            role=raw[6:]
+        code=raw.split(';',1)[0].split()
+        if not code:
+            continue
+        values={v[0]:float(v[1:]) for v in code[1:] if re.fullmatch(r'[XYZE][-+]?\d*\.?\d+',v)}
+        if code[0]=='M83':
+            relative=True
+        elif code[0]=='M82':
+            relative=False
+        elif code[0]=='G90':
+            relative_xyz=False
+        elif code[0]=='G91':
+            relative_xyz=True
+        elif code[0]=='G92':
+            e=values.get('E',e)
+            x,y=values.get('X',x),values.get('Y',y)
+        elif code[0] in ('G0','G1'):
+            nx=x+values.get('X',0) if relative_xyz else values.get('X',x)
+            ny=y+values.get('Y',0) if relative_xyz else values.get('Y',y)
+            delta=values.get('E',0) if relative else values.get('E',e)-e
+            if started and delta>0 and ((nx-x)**2+(ny-y)**2)>1e-8:
+                kind='support' if 'support' in role.lower() else 'adhesion' if role in ('Skirt/Brim','Skirt','Brim') else 'model'
+                lengths[kind]+=delta
+            e=e+values.get('E',0) if relative else values.get('E',e)
+            x,y=nx,ny
+    return lengths
