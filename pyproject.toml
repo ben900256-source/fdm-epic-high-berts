@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fdm-epic-high-berts"
+version = "0.1.0"
+description = "Deterministic high-elf spearman proof strips for Prusa XL 0.25 mm printing"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "Proprietary" }
+authors = [{ name = "ben900256-source" }]
+dependencies = ["lib3mf>=2.5,<3", "Pillow>=11,<13"]
+
+[project.optional-dependencies]
+test = ["pytest>=8.3", "build>=1.2"]
+
+[project.scripts]
+fdm-elf = "fdm_sculpt.regiment:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["fdm_sculpt"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+markers = ["integration: requires installed Blender or PrusaSlicer and a generated proof"]

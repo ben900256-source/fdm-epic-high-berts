@@ -1,0 +1,896 @@
+{
+  "blender_version": "5.1.2",
+  "checks": {
+    "measured_features": true,
+    "mesh_preflight": true,
+    "same_bounds": true,
+    "same_feature_measurements": true,
+    "same_resolved_plans": true,
+    "same_seed_geometry": true,
+    "same_triangle_count": true,
+    "same_volume": true,
+    "saved_provenance": true,
+    "self_intersections": true
+  },
+  "component_version": 9,
+  "executed_generator_sha256": {
+    "blender_backend.py": "dfbd0a58452f964d21cab8390c14113965ffb5e1db321700f704c75b74791b28",
+    "components/core.py": "6daf12162c39ddfe7a8e02ac1202074f8e84adce2a1270e1270e0a1b53eb38c2",
+    "components/elves.py": "5820e1e5c49459ab9cc9e4484b141378a00870e93462eee8c482c34f57716c03",
+    "components/elves_v2.py": "cd045c4c3b68bd52806052bdab27c6fb8740e60233028dc20a7dc4276d945e72",
+    "components/elves_v3.py": "dd822268ad1e1fe99f1cd652897df68105b1cff77fd64a8f3a95f9934413c15e",
+    "components/elves_v4.py": "5374e1632779f43b560a1270f018da545a024e6e6afe3bccb44edecdad572ffb",
+    "components/elves_v5.py": "56333204768e353eb62c0ef563293d940bc624da490fe7713b071447076c1ab0",
+    "components/elves_v6.py": "beeb86249d91897de2154aa4c9089f2a2547cae4a14347b56ebd8aa5aa32d81e",
+    "components/elves_v7.py": "239a0a47183913cabb80ba48593c8e16524bd74a494819d0352150d227f0bcd4",
+    "components/elves_v8.py": "d05a66444f38465e78ad9ab92607ad88b52519f9c39f8982e8e1789963b8f8b2",
+    "components/elves_v9.py": "8c381eb97c2fd55259466a826b4499c3655843ad451fc4552184bec2c75f6221",
+    "prusa.py": "ec299e89824e978d32de33780f9202ecc3e4489c6a17b981dd1229c8314046f3",
+    "regiment.py": "3bdec1ea85df065984194a259386e492f9b8f5d1c54ae337fd30c148b87f816d",
+    "regiment_blender.py": "abcff3c5b6e7e56d4aa887a61ba598efe985867e760c43d1ca451df3e2bf3e77",
+    "regiment_provenance_entry.py": "7a3bb7ea30cb1abe66e00f9b2b60145066d319d17402d9033133cb55092058f7",
+    "regiment_spec.py": "7bd516ea3eac8f90bae131df2ee4adff9935fe126c55601e8c622f84fe1fed60"
+  },
+  "feature_measurements": {
+    "cape_shoulders": [
+      {
+        "fused_thickness_mm": 1.354344,
+        "instance_id": "elf-01",
+        "minimum_projection_mm": 0.7,
+        "minimum_thickness_mm": 0.75,
+        "passes": true,
+        "rear_drape_projection_mm": 0.8817133537668269,
+        "side": "left"
+      },
+      {
+        "fused_thickness_mm": 2.138138,
+        "instance_id": "elf-01",
+        "minimum_projection_mm": 0.7,
+        "minimum_thickness_mm": 0.75,
+        "passes": true,
+        "rear_drape_projection_mm": 1.1967760589614045,
+        "side": "right"
+      },
+      {
+        "fused_thickness_mm": 1.56879,
+        "instance_id": "elf-02",
+        "minimum_projection_mm": 0.7,
+        "minimum_thickness_mm": 0.75,
+        "passes": true,
+        "rear_drape_projection_mm": 1.1007925535086542,
+        "side": "left"
+      },
+      {
+        "fused_thickness_mm": 2.70446,
+        "instance_id": "elf-02",
+        "minimum_projection_mm": 0.7,
+        "minimum_thickness_mm": 0.75,
+        "passes": true,
+        "rear_drape_projection_mm": 1.2260814721230417,
+        "side": "right"
+      },
+      {
+        "fused_thickness_mm": 1.543039,
+        "instance_id": "elf-03",
+        "minimum_projection_mm": 0.7,
+        "minimum_thickness_mm": 0.75,
+        "passes": true,
+        "rear_drape_projection_mm": 1.067728681024164,
+        "side": "left"
+      },
+      {
+        "fused_thickness_mm": 2.724187,
+        "instance_id": "elf-03",
+        "minimum_projection_mm": 0.7,
+        "minimum_thickness_mm": 0.75,
+        "passes": true,
+        "rear_drape_projection_mm": 1.2882734443992376,
+        "side": "right"
+      },
+      {
+        "fused_thickness_mm": 1.35532,
+        "instance_id": "elf-04",
+        "minimum_projection_mm": 0.7,
+        "minimum_thickness_mm": 0.75,
+        "passes": true,
+        "rear_drape_projection_mm": 0.8863101393217221,
+        "side": "left"
+      },
+      {
+        "fused_thickness_mm": 3.099467,
+        "instance_id": "elf-04",
+        "minimum_projection_mm": 0.7,
+        "minimum_thickness_mm": 0.75,
+        "passes": true,
+        "rear_drape_projection_mm": 1.1620636776206084,
+        "side": "right"
+      },
+      {
+        "fused_thickness_mm": 1.51423,
+        "instance_id": "elf-05",
+        "minimum_projection_mm": 0.7,
+        "minimum_thickness_mm": 0.75,
+        "passes": true,
+        "rear_drape_projection_mm": 1.0447279459185665,
+        "side": "left"
+      },
+      {
+        "fused_thickness_mm": 2.121668,
+        "instance_id": "elf-05",
+        "minimum_projection_mm": 0.7,
+        "minimum_thickness_mm": 0.75,
+        "passes": true,
+        "rear_drape_projection_mm": 1.1928952987218508,
+        "side": "right"
+      }
+    ],
+    "elbow_armor": [
+      {
+        "instance_id": "elf-01",
+        "measured_mm": 2.942879,
+        "minimum_mm": 1.0,
+        "passes": true,
+        "side": "left"
+      },
+      {
+        "instance_id": "elf-01",
+        "measured_mm": 3.235433,
+        "minimum_mm": 1.0,
+        "passes": true,
+        "side": "right"
+      },
+      {
+        "instance_id": "elf-02",
+        "measured_mm": 2.783138,
+        "minimum_mm": 1.0,
+        "passes": true,
+        "side": "left"
+      },
+      {
+        "instance_id": "elf-02",
+        "measured_mm": 2.996898,
+        "minimum_mm": 1.0,
+        "passes": true,
+        "side": "right"
+      },
+      {
+        "instance_id": "elf-03",
+        "measured_mm": 3.161202,
+        "minimum_mm": 1.0,
+        "passes": true,
+        "side": "left"
+      },
+      {
+        "instance_id": "elf-03",
+        "measured_mm": 3.13045,
+        "minimum_mm": 1.0,
+        "passes": true,
+        "side": "right"
+      },
+      {
+        "instance_id": "elf-04",
+        "measured_mm": 3.253439,
+        "minimum_mm": 1.0,
+        "passes": true,
+        "side": "left"
+      },
+      {
+        "instance_id": "elf-04",
+        "measured_mm": 2.845909,
+        "minimum_mm": 1.0,
+        "passes": true,
+        "side": "right"
+      },
+      {
+        "instance_id": "elf-05",
+        "measured_mm": 3.053882,
+        "minimum_mm": 1.0,
+        "passes": true,
+        "side": "left"
+      },
+      {
+        "instance_id": "elf-05",
+        "measured_mm": 3.476515,
+        "minimum_mm": 1.0,
+        "passes": true,
+        "side": "right"
+      }
+    ],
+    "figure_gaps_mm": [
+      0.530007,
+      0.59606,
+      0.619324,
+      0.591199
+    ],
+    "grasps": [
+      {
+        "finger_span_mm": 1.501826,
+        "instance_id": "elf-01",
+        "knuckle_projection_beyond_shaft_mm": 0.3051463649753714,
+        "passes": true
+      },
+      {
+        "finger_span_mm": 3.434297,
+        "instance_id": "elf-02",
+        "knuckle_projection_beyond_shaft_mm": 0.3051464617892634,
+        "passes": true
+      },
+      {
+        "finger_span_mm": 1.501826,
+        "instance_id": "elf-03",
+        "knuckle_projection_beyond_shaft_mm": 0.30514624942316004,
+        "passes": true
+      },
+      {
+        "finger_span_mm": 1.501827,
+        "instance_id": "elf-04",
+        "knuckle_projection_beyond_shaft_mm": 0.30514623879571445,
+        "passes": true
+      },
+      {
+        "finger_span_mm": 3.34937,
+        "instance_id": "elf-05",
+        "knuckle_projection_beyond_shaft_mm": 0.3051462547155097,
+        "passes": true
+      }
+    ],
+    "helmet_backs": [
+      {
+        "instance_id": "elf-01",
+        "minimum_mm": 0.25,
+        "passes": true,
+        "rear_cover_projection_mm": 0.5094965632306412
+      },
+      {
+        "instance_id": "elf-02",
+        "minimum_mm": 0.25,
+        "passes": true,
+        "rear_cover_projection_mm": 0.5094961788272485
+      },
+      {
+        "instance_id": "elf-03",
+        "minimum_mm": 0.25,
+        "passes": true,
+        "rear_cover_projection_mm": 0.5094963913434185
+      },
+      {
+        "instance_id": "elf-04",
+        "minimum_mm": 0.25,
+        "passes": true,
+        "rear_cover_projection_mm": 0.5094967116310727
+      },
+      {
+        "instance_id": "elf-05",
+        "minimum_mm": 0.25,
+        "passes": true,
+        "rear_cover_projection_mm": 0.5094960808801261
+      }
+    ],
+    "method": "evaluated solid BVH entry/exit rays and projected envelopes above strip",
+    "passes": true,
+    "probes": [
+      {
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "feature": "spear_shaft",
+        "instance_id": "elf-01",
+        "measured_mm": 1.02,
+        "minimum_mm": 1.0,
+        "passes": true,
+        "start_mm": [
+          -10.0,
+          -0.523007869720459,
+          10.697104454040527
+        ]
+      },
+      {
+        "direction": [
+          0.13717365264892578,
+          0.9891651272773743,
+          -0.05230407416820526
+        ],
+        "feature": "shield_wall",
+        "instance_id": "elf-01",
+        "measured_mm": 2.736483,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          -9.257823944091797,
+          -4.751768112182617,
+          4.175473690032959
+        ]
+      },
+      {
+        "direction": [
+          -0.06714461743831635,
+          -0.9977432489395142,
+          0.0
+        ],
+        "feature": "cloak_wall",
+        "instance_id": "elf-01",
+        "measured_mm": 1.914655,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          -7.664277076721191,
+          4.988716125488281,
+          2.0
+        ]
+      },
+      {
+        "direction": [
+          0.12230423092842102,
+          0.9923393130302429,
+          -0.017446426674723625
+        ],
+        "feature": "neck_core",
+        "instance_id": "elf-01",
+        "measured_mm": 1.008039,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          -8.674725532531738,
+          -4.907340049743652,
+          7.485920429229736
+        ]
+      },
+      {
+        "direction": [
+          0.0,
+          0.9997014999389648,
+          -0.02443217858672142
+        ],
+        "feature": "right_grip",
+        "instance_id": "elf-01",
+        "measured_mm": 2.58078,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          -6.949999809265137,
+          -4.86973237991333,
+          6.382016658782959
+        ]
+      },
+      {
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "feature": "spear_shaft",
+        "instance_id": "elf-02",
+        "measured_mm": 1.02,
+        "minimum_mm": 1.0,
+        "passes": true,
+        "start_mm": [
+          -6.0,
+          -1.064684271812439,
+          10.695213317871094
+        ]
+      },
+      {
+        "direction": [
+          -0.2094133347272873,
+          0.9764273166656494,
+          0.05230407416820526
+        ],
+        "feature": "shield_wall",
+        "instance_id": "elf-02",
+        "measured_mm": 1.04,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          -4.055111885070801,
+          -5.2773942947387695,
+          3.732257843017578
+        ]
+      },
+      {
+        "direction": [
+          0.05756402760744095,
+          -0.9983417987823486,
+          0.0
+        ],
+        "feature": "cloak_wall",
+        "instance_id": "elf-02",
+        "measured_mm": 1.914655,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          -4.287820339202881,
+          4.991708755493164,
+          2.0
+        ]
+      },
+      {
+        "direction": [
+          -0.10355623066425323,
+          0.9940115809440613,
+          0.034887537360191345
+        ],
+        "feature": "neck_core",
+        "instance_id": "elf-02",
+        "measured_mm": 1.008039,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          -3.403604507446289,
+          -5.054788589477539,
+          7.223040580749512
+        ]
+      },
+      {
+        "direction": [
+          0.0,
+          0.9995065331459045,
+          0.03141075745224953
+        ],
+        "feature": "right_grip",
+        "instance_id": "elf-02",
+        "measured_mm": 2.909389,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          -2.950000047683716,
+          -5.157474517822266,
+          5.944311618804932
+        ]
+      },
+      {
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "feature": "spear_shaft",
+        "instance_id": "elf-03",
+        "measured_mm": 1.02,
+        "minimum_mm": 1.0,
+        "passes": true,
+        "start_mm": [
+          -2.0,
+          -0.827718198299408,
+          10.699763298034668
+        ]
+      },
+      {
+        "direction": [
+          0.06776499003171921,
+          0.9952614307403564,
+          -0.06973256915807724
+        ],
+        "feature": "shield_wall",
+        "instance_id": "elf-03",
+        "measured_mm": 2.751026,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          -1.020639181137085,
+          -4.8612260818481445,
+          4.238088607788086
+        ]
+      },
+      {
+        "direction": [
+          -0.01919744163751602,
+          -0.9998157024383545,
+          0.0
+        ],
+        "feature": "cloak_wall",
+        "instance_id": "elf-03",
+        "measured_mm": 1.914655,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          0.09598720818758011,
+          4.999078750610352,
+          2.0
+        ]
+      },
+      {
+        "direction": [
+          0.034868884831666946,
+          0.9985141754150391,
+          0.041875652968883514
+        ],
+        "feature": "neck_core",
+        "instance_id": "elf-03",
+        "measured_mm": 1.008039,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          -0.17821723222732544,
+          -5.103473663330078,
+          7.188297271728516
+        ]
+      },
+      {
+        "direction": [
+          0.0,
+          0.9999756217002869,
+          0.006981260143220425
+        ],
+        "feature": "right_grip",
+        "instance_id": "elf-03",
+        "measured_mm": 2.735721,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          1.0499999523162842,
+          -5.038851737976074,
+          6.550263404846191
+        ]
+      },
+      {
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "feature": "spear_shaft",
+        "instance_id": "elf-04",
+        "measured_mm": 1.02,
+        "minimum_mm": 1.0,
+        "passes": true,
+        "start_mm": [
+          2.0,
+          -1.1154439449310303,
+          10.693485260009766
+        ]
+      },
+      {
+        "direction": [
+          -0.27371370792388916,
+          0.9611795544624329,
+          0.034851666539907455
+        ],
+        "feature": "shield_wall",
+        "instance_id": "elf-04",
+        "measured_mm": 2.645925,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          4.454075336456299,
+          -4.994325637817383,
+          3.8387060165405273
+        ]
+      },
+      {
+        "direction": [
+          0.07671903073787689,
+          -0.9970527291297913,
+          0.0
+        ],
+        "feature": "cloak_wall",
+        "instance_id": "elf-04",
+        "measured_mm": 1.914655,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          3.6164047718048096,
+          4.985263824462891,
+          2.0
+        ]
+      },
+      {
+        "direction": [
+          -0.1387806385755539,
+          0.9901017546653748,
+          -0.020939230918884277
+        ],
+        "feature": "neck_core",
+        "instance_id": "elf-04",
+        "measured_mm": 1.008039,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          4.640390396118164,
+          -4.901986598968506,
+          7.503711700439453
+        ]
+      },
+      {
+        "direction": [
+          0.0,
+          0.9993283748626709,
+          0.03664370998740196
+        ],
+        "feature": "right_grip",
+        "instance_id": "elf-04",
+        "measured_mm": 2.833929,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          5.050000190734863,
+          -5.207120895385742,
+          6.57078218460083
+        ]
+      },
+      {
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "feature": "spear_shaft",
+        "instance_id": "elf-05",
+        "measured_mm": 1.02,
+        "minimum_mm": 1.0,
+        "passes": true,
+        "start_mm": [
+          6.0,
+          -0.43839478492736816,
+          10.694666862487793
+        ]
+      },
+      {
+        "direction": [
+          0.20867863297462463,
+          0.977361798286438,
+          -0.034887537360191345
+        ],
+        "feature": "shield_wall",
+        "instance_id": "elf-05",
+        "measured_mm": 2.795843,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          6.318427085876465,
+          -4.728521823883057,
+          4.08359956741333
+        ]
+      },
+      {
+        "direction": [
+          -0.047978129237890244,
+          -0.9988483786582947,
+          0.0
+        ],
+        "feature": "cloak_wall",
+        "instance_id": "elf-05",
+        "measured_mm": 1.914655,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          8.239891052246094,
+          4.994241714477539,
+          2.0
+        ]
+      },
+      {
+        "direction": [
+          0.08753152191638947,
+          0.9960868954658508,
+          0.012210972607135773
+        ],
+        "feature": "neck_core",
+        "instance_id": "elf-05",
+        "measured_mm": 1.00804,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          7.642436504364014,
+          -5.019940376281738,
+          7.337440013885498
+        ]
+      },
+      {
+        "direction": [
+          0.0,
+          0.9994502067565918,
+          -0.0331551767885685
+        ],
+        "feature": "right_grip",
+        "instance_id": "elf-05",
+        "measured_mm": 2.55299,
+        "minimum_mm": 0.75,
+        "passes": true,
+        "start_mm": [
+          9.050000190734863,
+          -4.825924873352051,
+          6.317729473114014
+        ]
+      }
+    ],
+    "relief": [
+      {
+        "instance_id": "elf-01",
+        "measured_mm": 0.3600004776380956,
+        "minimum_mm": 0.25,
+        "passes": true
+      },
+      {
+        "instance_id": "elf-02",
+        "measured_mm": 0.36000019451603293,
+        "minimum_mm": 0.25,
+        "passes": true
+      },
+      {
+        "instance_id": "elf-03",
+        "measured_mm": 0.3600001308659557,
+        "minimum_mm": 0.25,
+        "passes": true
+      },
+      {
+        "instance_id": "elf-04",
+        "measured_mm": 0.35999972047284245,
+        "minimum_mm": 0.25,
+        "passes": true
+      },
+      {
+        "instance_id": "elf-05",
+        "measured_mm": 0.3599996760021895,
+        "minimum_mm": 0.25,
+        "passes": true
+      }
+    ],
+    "wrist_joins": [
+      {
+        "instance_id": "elf-01",
+        "measured_mm": 1.014459,
+        "minimum_mm": 0.9,
+        "passes": true
+      },
+      {
+        "instance_id": "elf-02",
+        "measured_mm": 0.998634,
+        "minimum_mm": 0.9,
+        "passes": true
+      },
+      {
+        "instance_id": "elf-03",
+        "measured_mm": 1.073332,
+        "minimum_mm": 0.9,
+        "passes": true
+      },
+      {
+        "instance_id": "elf-04",
+        "measured_mm": 3.105375,
+        "minimum_mm": 0.9,
+        "passes": true
+      },
+      {
+        "instance_id": "elf-05",
+        "measured_mm": 3.333425,
+        "minimum_mm": 0.9,
+        "passes": true
+      }
+    ]
+  },
+  "geometry_hash": "da02b290f25afc7968492561f3003542be703658c820becd8cd561d57cde370c",
+  "geometry_hash_method": "solid occupancy lattice, corroborated by equal bounds, triangle count, volume, features and resolved plans",
+  "label": "visual proof; mesh and feature checks passed",
+  "mesh": {
+    "bounds_max_mm": [
+      10.0,
+      2.5,
+      13.003436
+    ],
+    "bounds_min_mm": [
+      -10.0,
+      -2.5,
+      0.0
+    ],
+    "self_intersection_count": 0,
+    "triangles": 42444,
+    "volume_mm3": 382.295832
+  },
+  "package_build": "wheel and source distribution built successfully",
+  "physical_trial": "not run",
+  "preview_sha256": {
+    "docs/images/cape-shoulders.png": "53bfcf619f32f1bb6ba7d13c26ee20ae15d0177253ccad4b6f995f4c2cb67bd8",
+    "docs/images/face-grip-detail.png": "66c553e306df17c9048fe3e4054ab9fd6b1543833bff7ad248a1e61acf0b26fa",
+    "docs/images/front.png": "2250be9ee7cea201016ba0829ef91c23925230d398e70d6e74a1159b3e7b7069",
+    "docs/images/seahorse-shield.png": "9581f4f80f4fc5aae6f1dd91506f7b20cfd23874eea4b9294472bcf3f17a6efe",
+    "docs/images/side.png": "d277c1c24dcb99de132e649835451aa52ff0f587c73784f74229b9e16dc24463",
+    "docs/images/three-quarter.png": "fddc8c746910b5a3a511f68fa1ed07aeb1669f01f1487676952958584d67719c"
+  },
+  "published_generator_sha256": {
+    "blender_backend.py": "36392f0df6cf1b445fbcd7177785774e0084c08cc7c4a7ba3b134a61bf0b0743",
+    "components/core.py": "6daf12162c39ddfe7a8e02ac1202074f8e84adce2a1270e1270e0a1b53eb38c2",
+    "components/elves.py": "5820e1e5c49459ab9cc9e4484b141378a00870e93462eee8c482c34f57716c03",
+    "components/elves_v2.py": "cd045c4c3b68bd52806052bdab27c6fb8740e60233028dc20a7dc4276d945e72",
+    "components/elves_v3.py": "dd822268ad1e1fe99f1cd652897df68105b1cff77fd64a8f3a95f9934413c15e",
+    "components/elves_v4.py": "5374e1632779f43b560a1270f018da545a024e6e6afe3bccb44edecdad572ffb",
+    "components/elves_v5.py": "56333204768e353eb62c0ef563293d940bc624da490fe7713b071447076c1ab0",
+    "components/elves_v6.py": "beeb86249d91897de2154aa4c9089f2a2547cae4a14347b56ebd8aa5aa32d81e",
+    "components/elves_v7.py": "239a0a47183913cabb80ba48593c8e16524bd74a494819d0352150d227f0bcd4",
+    "components/elves_v8.py": "d05a66444f38465e78ad9ab92607ad88b52519f9c39f8982e8e1789963b8f8b2",
+    "components/elves_v9.py": "8c381eb97c2fd55259466a826b4499c3655843ad451fc4552184bec2c75f6221",
+    "prusa.py": "ec299e89824e978d32de33780f9202ecc3e4489c6a17b981dd1229c8314046f3",
+    "regiment.py": "3bdec1ea85df065984194a259386e492f9b8f5d1c54ae337fd30c148b87f816d",
+    "regiment_blender.py": "6c91ce932924770d1134f71708eb888d5cb8161d4da6f7f2cd2869530965f9d0",
+    "regiment_provenance_entry.py": "7a3bb7ea30cb1abe66e00f9b2b60145066d319d17402d9033133cb55092058f7",
+    "regiment_spec.py": "e888740fd33849237a492aba3cde079274d7f51daa66b439afa61223b355434b"
+  },
+  "repeat": {
+    "extraction_note": "Only unused backend functions and unrelated palette entries were removed. Used primitive, CSG and mesh-check implementations are retained.",
+    "generator_files_changed_by_extraction": [
+      "blender_backend.py"
+    ],
+    "method": "same-seed regeneration using the focused standalone source tree"
+  },
+  "resolved_plans_sha256": "d856d23d591202171a9016b61d38205152697470ad7d85948205bbbc8dfb1c4f",
+  "saved_provenance": {
+    "checks": {
+      "assembly_exact": true,
+      "assembly_operation_order": true,
+      "declared_numerical_weld": true,
+      "elf-01": true,
+      "elf-02": true,
+      "elf-03": true,
+      "elf-04": true,
+      "elf-05": true,
+      "millimeters": true,
+      "one_export": true,
+      "source_hidden": true
+    },
+    "instances": [
+      {
+        "definition_sha256": "a3900500ef47a67693fec088c27de1a21eb6d6f1972ee2cc80a235f923d4cbd3",
+        "instance_id": "elf-01",
+        "maximum_primitive_center_error_mm": 6.49304576327836e-07,
+        "plan_sha256": "7d19ada55a1a387f0acab1d7fac3d4beb4c6acebc03aa5af36280da91cad4ca0",
+        "source_objects": 86
+      },
+      {
+        "definition_sha256": "8846834b54f9dca7ebb6d7f66f53f0753d75816084564fa3edb9c885e50824f5",
+        "instance_id": "elf-02",
+        "maximum_primitive_center_error_mm": 7.601634681719815e-07,
+        "plan_sha256": "640db0437833f9784eee4453d807706bbd657d4d4019587b6f5286db8b8e41ef",
+        "source_objects": 86
+      },
+      {
+        "definition_sha256": "493870cc1f23003246e22bbf4ec300487273c9b1aba0bff0abca108d78a00725",
+        "instance_id": "elf-03",
+        "maximum_primitive_center_error_mm": 8.53663809863292e-07,
+        "plan_sha256": "707670badbd118b3f45b9a4752f6e6b24b3e601acfa48e554128d78961671b26",
+        "source_objects": 86
+      },
+      {
+        "definition_sha256": "ed08990c82926e10650151e48ea20f0453611e9d98fde32c198c67ddbd8e8e20",
+        "instance_id": "elf-04",
+        "maximum_primitive_center_error_mm": 7.709769196395655e-07,
+        "plan_sha256": "b6d5ae9f50304890c9891bace475fdc5e9838f14f2fbd9bb86eaff1b1032b846",
+        "source_objects": 86
+      },
+      {
+        "definition_sha256": "50d98cb4fba23c7455900bd10cc860c4a4dc8f0be4cfede1e221cd534d2d6c9b",
+        "instance_id": "elf-05",
+        "maximum_primitive_center_error_mm": 9.060068144606248e-07,
+        "plan_sha256": "10373e81d4cdf8b9e4e0399b43328c7b2b7c9e4350c03e87477c3f4feeee0bdb",
+        "source_objects": 86
+      }
+    ],
+    "method": "reopened saved Blender scene; retained primitive roles, hashes and Exact modifier operands",
+    "passes": true
+  },
+  "seed": 1001,
+  "slicing_validation": "not run for revision 9",
+  "source_newline_note": "Published source uses canonical LF newlines. Executed hashes retain the original Windows file bytes; normalization changes no code or resolved geometry.",
+  "tests": {
+    "passed": 63,
+    "skip_reason": "historical revision-specific Blender integration tests",
+    "skipped": 6
+  },
+  "topology": {
+    "boundary_edges": 0,
+    "component_signed_volumes_mm3": [
+      382.299600615
+    ],
+    "connected_components": 1,
+    "degenerate_triangles": 0,
+    "duplicate_triangles": 0,
+    "inconsistently_oriented_edges": 0,
+    "manifold": true,
+    "nonmanifold_edges": 0,
+    "outward_facing": true,
+    "positive_volume": true,
+    "signed_volume_mm3": 382.299600615,
+    "triangle_count": 42444,
+    "watertight": true
+  }
+}

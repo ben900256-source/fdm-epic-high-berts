@@ -1,0 +1,15 @@
+/out/
+/dist/
+/.venv/
+/.pytest_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.blend
+*.blend1
+*.stl
+*.3mf
+*.gcode
+*.bgcode
+.env
+.env.*

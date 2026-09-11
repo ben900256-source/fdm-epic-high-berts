@@ -1,0 +1,14 @@
+{
+  "aurelian.spearman.a@1": {
+    "definition": "2aeb47fc2fc49cfe0f109d79001c40f89f630021d0a0cb04a92dcc1e7be7bcb6",
+    "plan": "7e9106d4c27c289e0f041d38d4f26109dbe9878c3169b6f0ae9bd29e9bcdd897"
+  },
+  "aurelian.spearman.b@1": {
+    "definition": "7ec3c58dbda5702d9bf62eeb1b80488e0ea817409edbfc46e0fb3a3b27488907",
+    "plan": "0c8273e837b667e863a25b7e6bb4f0a01c8f6cbf318e9a69981cfc983fb8ee4e"
+  },
+  "aurelian.spearman.c@1": {
+    "definition": "a542bd25a33242575790e12958c2ad5ed18d8f4d4479cfd239e29844e8bc16cf",
+    "plan": "12724aa75bbdd49ab8db712cb5635a29f91116edb5bb25a7cf4daec1db0968a9"
+  }
+}

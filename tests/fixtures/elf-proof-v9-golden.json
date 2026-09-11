@@ -1,0 +1,22 @@
+{
+  "aurelian.spearman.a@9": {
+    "definition": "a3900500ef47a67693fec088c27de1a21eb6d6f1972ee2cc80a235f923d4cbd3",
+    "plan": "0f727bfdc52d3eef7bd2c955b255f36c09c4a7cc8ded94f68e340460459f6d7b"
+  },
+  "aurelian.spearman.b@9": {
+    "definition": "8846834b54f9dca7ebb6d7f66f53f0753d75816084564fa3edb9c885e50824f5",
+    "plan": "df08e940ebc0105fc8c11c082a4c1161e0b347fc93c5d7482077bf4ac9861e28"
+  },
+  "aurelian.spearman.c@9": {
+    "definition": "493870cc1f23003246e22bbf4ec300487273c9b1aba0bff0abca108d78a00725",
+    "plan": "bbe2753787f4b3f353873a097e0485609c6ad3df39178028861585f320016bf0"
+  },
+  "aurelian.spearman.d@9": {
+    "definition": "ed08990c82926e10650151e48ea20f0453611e9d98fde32c198c67ddbd8e8e20",
+    "plan": "000c2810320176ae749331998c0f6709df52ad24aa6ca5efbe80a37c0bc959c7"
+  },
+  "aurelian.spearman.e@9": {
+    "definition": "50d98cb4fba23c7455900bd10cc860c4a4dc8f0be4cfede1e221cd534d2d6c9b",
+    "plan": "ef7499c48297a9ca67916856bf9b6b7683e4f5598cce8e8f9959a4013eec96b7"
+  }
+}
