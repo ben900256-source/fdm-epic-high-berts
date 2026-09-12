@@ -1,0 +1,183 @@
+{
+  "component_id": "aurelian.cape-e",
+  "version": 2,
+  "name": "Cape without skirt columns-e",
+  "family": "cape",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "cloak",
+    "cape_left_shoulder_drape",
+    "cape_right_shoulder_drape"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.24,
+        "bevel_segments": 4,
+        "depth": 6.949999999999999,
+        "export": true,
+        "frame_mm": [
+          [
+            0.998735977,
+            -0.039240443,
+            -0.031410759,
+            0.117790347
+          ],
+          [
+            0.039640335,
+            0.999139398,
+            0.012210972,
+            -0.045791147
+          ],
+          [
+            0.030904563,
+            -0.013440671,
+            0.999431967,
+            -5.197869876
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0.63,
+          2.9
+        ],
+        "primitive": "cone",
+        "radius1": 1.76,
+        "radius2": 1.18,
+        "role": "cloak",
+        "rotation": [
+          0,
+          0,
+          0.19634954084936207
+        ],
+        "scale": [
+          1,
+          0.59,
+          1
+        ],
+        "vertices": 16
+      },
+      {
+        "dimensions": [
+          0.86,
+          0.9,
+          0.6
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.88,
+          0.42,
+          6.2
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "cape_left_shoulder_drape",
+        "segments": 20
+      },
+      {
+        "dimensions": [
+          0.86,
+          0.9,
+          0.6
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.88,
+          0.42,
+          6.2
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "cape_right_shoulder_drape",
+        "segments": 20
+      }
+    ],
+    "landmarks": {
+      "cape_left_shoulder_drape": [
+        -0.88,
+        0.42,
+        1.0
+      ],
+      "cape_right_shoulder_drape": [
+        0.88,
+        0.42,
+        1.0
+      ],
+      "cloak": [
+        0.001977667,
+        0.619078493,
+        -2.307984794
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [],
+    "provenance": "parameter recipe extracted from spearman revision 11"
+  }
+}

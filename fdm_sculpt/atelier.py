@@ -84,6 +84,8 @@ def compose(data, *, seed, output, cache=DEFAULT_CACHE, render=False, definition
     result = json.loads((output/'visual-review.json').read_text())
     result['elapsed_seconds'] = round(time.perf_counter()-started, 3)
     (output/'visual-review.json').write_text(json.dumps(result, indent=2)+'\n')
+    from .viewer import publish
+    result['browser_review'] = publish(output)
     return result
 
 

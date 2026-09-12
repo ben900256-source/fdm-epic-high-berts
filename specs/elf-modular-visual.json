@@ -4,8 +4,8 @@
   "placements": [
     {
       "instance_id": "strip",
-      "part": "aurelian.strip@1",
-      "definition_sha256": "e7af707c1893f4df16632df976c427d2520c4626c775662af96285169017a9cd",
+      "part": "aurelian.strip@4",
+      "definition_sha256": "ee33cf9d5d496770478e530ddc3f8056977d2e04c92225fbc320a171994bf4bf",
       "mount": [
         [
           1.0,
@@ -35,8 +35,8 @@
     },
     {
       "instance_id": "elf-01/left-leg",
-      "part": "aurelian.left-leg@1",
-      "definition_sha256": "47417f69fb3404c7e9555aa69470f7f71f83a51d8af69f88c200d3a05fe84590",
+      "part": "aurelian.left-leg@3",
+      "definition_sha256": "3797f85a6544b339663fb23e8d7b500de8b95732a35f52ea6a4889d7fc817bf1",
       "mount": [
         [
           0.992206031,
@@ -66,8 +66,8 @@
     },
     {
       "instance_id": "elf-01/right-leg",
-      "part": "aurelian.right-leg@1",
-      "definition_sha256": "5c0775adc7cea9fcd8029a71c4687de4328cc5f658b99678271575ec59fd03be",
+      "part": "aurelian.right-leg@3",
+      "definition_sha256": "ff8ca13d6521abfb5a964d6ed241b2eab586c46537800f9b18aae8b188524ecf",
       "mount": [
         [
           0.992206031,
@@ -97,8 +97,8 @@
     },
     {
       "instance_id": "elf-01/cape",
-      "part": "aurelian.cape@1",
-      "definition_sha256": "859f6c13b3c3efb9aa2a53df5b616db96d13214615f0c9a62b87c14ce4f12feb",
+      "part": "aurelian.cape@2",
+      "definition_sha256": "d331236b0461dabcd2ad98739bb950fa6433df571f6a6735fad394c66a095485",
       "mount": [
         [
           0.992206031,
@@ -128,8 +128,8 @@
     },
     {
       "instance_id": "elf-01/skirt",
-      "part": "aurelian.skirt@2",
-      "definition_sha256": "7d478894b059457d97766f39842098441c6759bdfe2b10adc8cd4bcbcc008ccc",
+      "part": "aurelian.skirt@3",
+      "definition_sha256": "47fc22a5f9102f2dcd3a75f22774d1b70c91e418dade7b9880c3e50e2cc358ed",
       "mount": [
         [
           0.992206031,
@@ -190,8 +190,8 @@
     },
     {
       "instance_id": "elf-01/head",
-      "part": "aurelian.head@6",
-      "definition_sha256": "1cc5312fca8e867fff300c8bca8da6f5eb592f72c128fcb10fde88d01c44063d",
+      "part": "aurelian.head@12",
+      "definition_sha256": "539e53b2c3d83535370628a0464ba94cfdf613dbc8abbd580f6b16edc3f17efe",
       "mount": [
         [
           0.943687357,
@@ -221,8 +221,8 @@
     },
     {
       "instance_id": "elf-01/helmet",
-      "part": "aurelian.helmet@1",
-      "definition_sha256": "c2c43421bf939f0b126c0ef78a303fdd3b460c025ad5d55d4b4980eebf995496",
+      "part": "aurelian.helmet@2",
+      "definition_sha256": "cca8d39be1ac05f40338fe9602103e105a9af40fe87c5d1461c3c23ffbbf30e0",
       "mount": [
         [
           0.943687357,
@@ -259,19 +259,19 @@
           0.989664824,
           0.137173646,
           0.041796251,
-          -8.140513408
+          -8.279438596094943
         ],
         [
           -0.13908832,
           0.98916514,
           0.046976212,
-          -0.860972985
+          -1.8627685713873479
         ],
         [
           -0.034899497,
           -0.052304075,
           0.998021197,
-          4.020693125
+          4.07366505998456
         ],
         [
           0.0,
@@ -283,8 +283,8 @@
     },
     {
       "instance_id": "elf-01/equipment-joins",
-      "part": "aurelian.equipment-joins@1",
-      "definition_sha256": "839bcf34f1027ebdfa8123c06c443bba283185cfc571ac817c790bdf3daf32c9",
+      "part": "aurelian.equipment-joins@2",
+      "definition_sha256": "a044fc6f7f721d5441fbaa205ab812762b701ae8564e87e3a474f58734c8bc91",
       "mount": [
         [
           0.992206031,
@@ -407,8 +407,8 @@
     },
     {
       "instance_id": "elf-01/left-arm",
-      "part": "aurelian.left-arm@1",
-      "definition_sha256": "9d6ba985e0ab4c85946b1307bf7d83b609826eff9dc744862f3fac6414928b5f",
+      "part": "aurelian.left-arm@2",
+      "definition_sha256": "6c9999c4c51cd4862687110b60832f618b7339d14a9bbf78b058ffd58fe2d056",
       "mount": [
         [
           0.992206031,
@@ -476,19 +476,19 @@
           0.989664824,
           0.137173646,
           0.041796251,
-          -8.140513408
+          -8.279438596094943
         ],
         [
           -0.13908832,
           0.98916514,
           0.046976212,
-          -0.860972985
+          -1.8627685713873479
         ],
         [
           -0.034899497,
           -0.052304075,
           0.998021197,
-          4.020693125
+          4.07366505998456
         ],
         [
           0.0,
@@ -500,8 +500,8 @@
     },
     {
       "instance_id": "elf-01/mail",
-      "part": "aurelian.chest-plate@2",
-      "definition_sha256": "1d16fc657c67c8bc0a7fd28ab85c08b9ffaae5e22cb846ef0cb781203a0710a9",
+      "part": "aurelian.chest-plate@4",
+      "definition_sha256": "0b63f168cab5f6c4ebd8920b730c9065282368eb0d236c5415b27f160a129318",
       "mount": [
         [
           0.992206031,
@@ -562,8 +562,8 @@
     },
     {
       "instance_id": "elf-02/left-leg",
-      "part": "aurelian.left-leg-b@1",
-      "definition_sha256": "f1132c8d6bc93d32e9fa4ddf1842d517bc0a27cc4a047a0a787c9c9814fe1fde",
+      "part": "aurelian.left-leg-b@3",
+      "definition_sha256": "ece52fde1e36283e1e479f55ddeb40ebe4947053d7be1693f2be31313e68edf0",
       "mount": [
         [
           0.994181098,
@@ -593,8 +593,8 @@
     },
     {
       "instance_id": "elf-02/right-leg",
-      "part": "aurelian.right-leg-b@1",
-      "definition_sha256": "6bf2cbbf9811de26a1f72fa85cf316708b481cc14938550d2f906a5094de607f",
+      "part": "aurelian.right-leg-b@3",
+      "definition_sha256": "4e5c5256548e9fd01d695491b1d12053b399b7e0c51fbcf92540da6c92487822",
       "mount": [
         [
           0.994181098,
@@ -624,8 +624,8 @@
     },
     {
       "instance_id": "elf-02/cape",
-      "part": "aurelian.cape-b@1",
-      "definition_sha256": "088a598e35e8286882d6d57134788a7416f6e1dbf5fe2a63c6b8e5e5d3c36b6e",
+      "part": "aurelian.cape-b@2",
+      "definition_sha256": "bb6eac758321e631d409e55a24781d76f7370d4ab306fdc18863c3e28d81eef7",
       "mount": [
         [
           0.994181098,
@@ -655,8 +655,8 @@
     },
     {
       "instance_id": "elf-02/skirt",
-      "part": "aurelian.skirt@2",
-      "definition_sha256": "7d478894b059457d97766f39842098441c6759bdfe2b10adc8cd4bcbcc008ccc",
+      "part": "aurelian.skirt@3",
+      "definition_sha256": "47fc22a5f9102f2dcd3a75f22774d1b70c91e418dade7b9880c3e50e2cc358ed",
       "mount": [
         [
           0.994181098,
@@ -717,8 +717,8 @@
     },
     {
       "instance_id": "elf-02/head",
-      "part": "aurelian.head@6",
-      "definition_sha256": "1cc5312fca8e867fff300c8bca8da6f5eb592f72c128fcb10fde88d01c44063d",
+      "part": "aurelian.head@12",
+      "definition_sha256": "539e53b2c3d83535370628a0464ba94cfdf613dbc8abbd580f6b16edc3f17efe",
       "mount": [
         [
           0.970093554,
@@ -748,8 +748,8 @@
     },
     {
       "instance_id": "elf-02/helmet",
-      "part": "aurelian.helmet@1",
-      "definition_sha256": "c2c43421bf939f0b126c0ef78a303fdd3b460c025ad5d55d4b4980eebf995496",
+      "part": "aurelian.helmet@2",
+      "definition_sha256": "cca8d39be1ac05f40338fe9602103e105a9af40fe87c5d1461c3c23ffbbf30e0",
       "mount": [
         [
           0.970093554,
@@ -786,19 +786,19 @@
           0.97755174,
           -0.20941334,
           -0.023208818,
-          -4.339395555
+          -4.218881303543839
         ],
         [
           0.207785037,
           0.976427333,
           -0.058438359,
-          -1.247866246
+          -1.809785601938982
         ],
         [
           0.034899497,
           0.052304075,
           0.998021197,
-          4.036741473
+          4.006641258530703
         ],
         [
           0.0,
@@ -810,8 +810,8 @@
     },
     {
       "instance_id": "elf-02/equipment-joins",
-      "part": "aurelian.equipment-joins-b@1",
-      "definition_sha256": "b778b0b9f7a7eacbf506ea0ba7fb3b7867b904691d2d3750f4b6b68240cc7b7d",
+      "part": "aurelian.equipment-joins-b@2",
+      "definition_sha256": "b7a4864563a5614a9d179d4602c3e4b946e99b25e9979b2239061d112de3c774",
       "mount": [
         [
           0.994181098,
@@ -934,8 +934,8 @@
     },
     {
       "instance_id": "elf-02/left-arm",
-      "part": "aurelian.left-arm-b@1",
-      "definition_sha256": "ffbb732a4324af7a1035cb26b610da7af8a4553fb5f1d19638eafc4ccb422ae4",
+      "part": "aurelian.left-arm-b@2",
+      "definition_sha256": "c81e9153b0a76590b23c3bf6740ec5377d63faa918f198fdfaa4346b4475f03a",
       "mount": [
         [
           0.994181098,
@@ -1003,19 +1003,19 @@
           0.97755174,
           -0.20941334,
           -0.023208818,
-          -4.339395555
+          -4.218881303543839
         ],
         [
           0.207785037,
           0.976427333,
           -0.058438359,
-          -1.247866246
+          -1.809785601938982
         ],
         [
           0.034899497,
           0.052304075,
           0.998021197,
-          4.036741473
+          4.006641258530703
         ],
         [
           0.0,
@@ -1027,8 +1027,8 @@
     },
     {
       "instance_id": "elf-02/mail",
-      "part": "aurelian.chest-plate@2",
-      "definition_sha256": "1d16fc657c67c8bc0a7fd28ab85c08b9ffaae5e22cb846ef0cb781203a0710a9",
+      "part": "aurelian.chest-plate@4",
+      "definition_sha256": "0b63f168cab5f6c4ebd8920b730c9065282368eb0d236c5415b27f160a129318",
       "mount": [
         [
           0.994181098,
@@ -1089,8 +1089,8 @@
     },
     {
       "instance_id": "elf-03/left-leg",
-      "part": "aurelian.left-leg-c@1",
-      "definition_sha256": "f76f170e10914e260b70e7b74a0b2feaa4cd039ed60ead95e26650c8ea775630",
+      "part": "aurelian.left-leg-c@3",
+      "definition_sha256": "96a3158b182542a184d5c2e4a63782be0547781d2d31503a0a6295bb2dba9861",
       "mount": [
         [
           0.999390827,
@@ -1120,8 +1120,8 @@
     },
     {
       "instance_id": "elf-03/right-leg",
-      "part": "aurelian.right-leg-c@1",
-      "definition_sha256": "84505f29a6210474ce9ab4e5d0c6f9ae4e48ef001d70a26c00256e773e82ca99",
+      "part": "aurelian.right-leg-c@3",
+      "definition_sha256": "0adaf7046a971f5a637cb6b745eada71eebb6b5bfbca68b822fd62fc2d237762",
       "mount": [
         [
           0.999390827,
@@ -1151,8 +1151,8 @@
     },
     {
       "instance_id": "elf-03/cape",
-      "part": "aurelian.cape-c@1",
-      "definition_sha256": "ffbd2688fe6c86ded06780114bf24f7d4929c410ed3cd5c58fdb19d1ecd2f21d",
+      "part": "aurelian.cape-c@2",
+      "definition_sha256": "10aef715beae098fcc781a9fcb0cb78bed11744714a8c38876b8406ffec15de5",
       "mount": [
         [
           0.999390827,
@@ -1182,8 +1182,8 @@
     },
     {
       "instance_id": "elf-03/skirt",
-      "part": "aurelian.skirt@2",
-      "definition_sha256": "7d478894b059457d97766f39842098441c6759bdfe2b10adc8cd4bcbcc008ccc",
+      "part": "aurelian.skirt@3",
+      "definition_sha256": "47fc22a5f9102f2dcd3a75f22774d1b70c91e418dade7b9880c3e50e2cc358ed",
       "mount": [
         [
           0.999390827,
@@ -1244,8 +1244,8 @@
     },
     {
       "instance_id": "elf-03/head",
-      "part": "aurelian.head@6",
-      "definition_sha256": "1cc5312fca8e867fff300c8bca8da6f5eb592f72c128fcb10fde88d01c44063d",
+      "part": "aurelian.head@12",
+      "definition_sha256": "539e53b2c3d83535370628a0464ba94cfdf613dbc8abbd580f6b16edc3f17efe",
       "mount": [
         [
           0.997434423,
@@ -1275,8 +1275,8 @@
     },
     {
       "instance_id": "elf-03/helmet",
-      "part": "aurelian.helmet@1",
-      "definition_sha256": "c2c43421bf939f0b126c0ef78a303fdd3b460c025ad5d55d4b4980eebf995496",
+      "part": "aurelian.helmet@2",
+      "definition_sha256": "cca8d39be1ac05f40338fe9602103e105a9af40fe87c5d1461c3c23ffbbf30e0",
       "mount": [
         [
           0.997434423,
@@ -1313,19 +1313,19 @@
           0.99722221,
           0.067764987,
           0.030915538,
-          -0.178166159
+          -0.25312444318832117
         ],
         [
           -0.06973257,
           0.995261411,
           0.067764987,
-          -0.904893042
+          -2.0058020953346896
         ],
         [
           -0.026176948,
           -0.06973257,
           0.99722221,
-          4.01833179
+          4.095466517396052
         ],
         [
           0.0,
@@ -1337,8 +1337,8 @@
     },
     {
       "instance_id": "elf-03/equipment-joins",
-      "part": "aurelian.equipment-joins-c@1",
-      "definition_sha256": "1518297cc1f3d0290ac8b4ef45c22c639ffc506bb5afe290e0eff1f02c8a6eb2",
+      "part": "aurelian.equipment-joins-c@2",
+      "definition_sha256": "f04364d326ea23a5909ab50a2f9b2b42f3fa2784e5fc83a6942194d18dcaaffc",
       "mount": [
         [
           0.999390827,
@@ -1461,8 +1461,8 @@
     },
     {
       "instance_id": "elf-03/left-arm",
-      "part": "aurelian.left-arm-c@1",
-      "definition_sha256": "fd97f86f2b904092c4a4ce56b845ac9369860704b11be8444fd17c7707c61a36",
+      "part": "aurelian.left-arm-c@2",
+      "definition_sha256": "f9207859f8938159367bbb19c9040c5befea86842c72cc53a50744cd89749518",
       "mount": [
         [
           0.999390827,
@@ -1530,19 +1530,19 @@
           0.99722221,
           0.067764987,
           0.030915538,
-          -0.178166159
+          -0.25312444318832117
         ],
         [
           -0.06973257,
           0.995261411,
           0.067764987,
-          -0.904893042
+          -2.0058020953346896
         ],
         [
           -0.026176948,
           -0.06973257,
           0.99722221,
-          4.01833179
+          4.095466517396052
         ],
         [
           0.0,
@@ -1554,8 +1554,8 @@
     },
     {
       "instance_id": "elf-03/mail",
-      "part": "aurelian.chest-plate@2",
-      "definition_sha256": "1d16fc657c67c8bc0a7fd28ab85c08b9ffaae5e22cb846ef0cb781203a0710a9",
+      "part": "aurelian.chest-plate@4",
+      "definition_sha256": "0b63f168cab5f6c4ebd8920b730c9065282368eb0d236c5415b27f160a129318",
       "mount": [
         [
           0.999390827,
@@ -1616,8 +1616,8 @@
     },
     {
       "instance_id": "elf-04/left-leg",
-      "part": "aurelian.left-leg-d@1",
-      "definition_sha256": "0e38625e46765cd359433571b4cc17f4b80fbe7e1e38ee7b70723c443c5f3eeb",
+      "part": "aurelian.left-leg-d@3",
+      "definition_sha256": "6e82ab23aac04fff5dc4c3fc15dcd7527d9507efa3c8778556d268127ad0d43f",
       "mount": [
         [
           0.990117246,
@@ -1647,8 +1647,8 @@
     },
     {
       "instance_id": "elf-04/right-leg",
-      "part": "aurelian.right-leg-d@1",
-      "definition_sha256": "507b2751003a48fc6ad89a634f0cc3aabc63ba6b44a10c413523a9512976f0d5",
+      "part": "aurelian.right-leg-d@3",
+      "definition_sha256": "ab8ffea170f528aa3290511e1e51c7354d7d109a2ad4ebbaf9a134a3cd24ea58",
       "mount": [
         [
           0.990117246,
@@ -1678,8 +1678,8 @@
     },
     {
       "instance_id": "elf-04/cape",
-      "part": "aurelian.cape-d@1",
-      "definition_sha256": "b222cf2846425c1121dd3c94a273ff8bea2d57dd6851106ec78db7e869d6c67e",
+      "part": "aurelian.cape-d@2",
+      "definition_sha256": "59947d7067667418fb04b50757e7c558848b403222560345ae0b6a33b17c6b3a",
       "mount": [
         [
           0.990117246,
@@ -1709,8 +1709,8 @@
     },
     {
       "instance_id": "elf-04/skirt",
-      "part": "aurelian.skirt@2",
-      "definition_sha256": "7d478894b059457d97766f39842098441c6759bdfe2b10adc8cd4bcbcc008ccc",
+      "part": "aurelian.skirt@3",
+      "definition_sha256": "47fc22a5f9102f2dcd3a75f22774d1b70c91e418dade7b9880c3e50e2cc358ed",
       "mount": [
         [
           0.990117246,
@@ -1771,8 +1771,8 @@
     },
     {
       "instance_id": "elf-04/head",
-      "part": "aurelian.head@6",
-      "definition_sha256": "1cc5312fca8e867fff300c8bca8da6f5eb592f72c128fcb10fde88d01c44063d",
+      "part": "aurelian.head@12",
+      "definition_sha256": "539e53b2c3d83535370628a0464ba94cfdf613dbc8abbd580f6b16edc3f17efe",
       "mount": [
         [
           0.933657817,
@@ -1802,8 +1802,8 @@
     },
     {
       "instance_id": "elf-04/helmet",
-      "part": "aurelian.helmet@1",
-      "definition_sha256": "c2c43421bf939f0b126c0ef78a303fdd3b460c025ad5d55d4b4980eebf995496",
+      "part": "aurelian.helmet@2",
+      "definition_sha256": "cca8d39be1ac05f40338fe9602103e105a9af40fe87c5d1461c3c23ffbbf30e0",
       "mount": [
         [
           0.933657817,
@@ -1840,19 +1840,19 @@
           0.95994432,
           -0.273713702,
           0.059897508,
-          3.908143972
+          4.111006592247704
         ],
         [
           0.275259604,
           0.961179573,
           -0.019130593,
-          -0.984532512
+          -1.69690973419456
         ],
         [
           -0.052335956,
           0.034851668,
           0.998021197,
-          4.023481365
+          3.99765108818586
         ],
         [
           0.0,
@@ -1864,8 +1864,8 @@
     },
     {
       "instance_id": "elf-04/equipment-joins",
-      "part": "aurelian.equipment-joins-d@1",
-      "definition_sha256": "62a9e3fddde638a1164d0b1a7e1dfb1cf490c16260f56784a8698eca385f8ea7",
+      "part": "aurelian.equipment-joins-d@2",
+      "definition_sha256": "e760c87d101e97f991faf517d2f33f489bf58f2571fa19230c3bd61c5a055c86",
       "mount": [
         [
           0.990117246,
@@ -1988,8 +1988,8 @@
     },
     {
       "instance_id": "elf-04/left-arm",
-      "part": "aurelian.left-arm-d@1",
-      "definition_sha256": "6b9eba14a403e8ff97df6140dd1501e6f5d681fdba0793267b0a0bbd207e0d7b",
+      "part": "aurelian.left-arm-d@2",
+      "definition_sha256": "e1b4e5d1ee9fec0f9140fdbd81b32089242261c6df6bec682fcf83447c7a1c17",
       "mount": [
         [
           0.990117246,
@@ -2057,19 +2057,19 @@
           0.95994432,
           -0.273713702,
           0.059897508,
-          3.908143972
+          4.111006592247704
         ],
         [
           0.275259604,
           0.961179573,
           -0.019130593,
-          -0.984532512
+          -1.69690973419456
         ],
         [
           -0.052335956,
           0.034851668,
           0.998021197,
-          4.023481365
+          3.99765108818586
         ],
         [
           0.0,
@@ -2081,8 +2081,8 @@
     },
     {
       "instance_id": "elf-04/mail",
-      "part": "aurelian.chest-plate@2",
-      "definition_sha256": "1d16fc657c67c8bc0a7fd28ab85c08b9ffaae5e22cb846ef0cb781203a0710a9",
+      "part": "aurelian.chest-plate@4",
+      "definition_sha256": "0b63f168cab5f6c4ebd8920b730c9065282368eb0d236c5415b27f160a129318",
       "mount": [
         [
           0.990117246,
@@ -2143,8 +2143,8 @@
     },
     {
       "instance_id": "elf-05/left-leg",
-      "part": "aurelian.left-leg-e@1",
-      "definition_sha256": "a5d4b80e803c641662154cdb031b534d6047a64d46f01380078d308536f01e6f",
+      "part": "aurelian.left-leg-e@3",
+      "definition_sha256": "6ebabf4c97a874deef60ae902ea06957433ab62145f049f4360cc1161da6657d",
       "mount": [
         [
           0.995703136,
@@ -2174,8 +2174,8 @@
     },
     {
       "instance_id": "elf-05/right-leg",
-      "part": "aurelian.right-leg-e@1",
-      "definition_sha256": "4d7194c6b8b53e623200363ff0fb208412ceb158a652075ca1c4e8b16f6f9356",
+      "part": "aurelian.right-leg-e@3",
+      "definition_sha256": "f8b555d9f755c252282547398239d743df3ca2bc29d048f08c32c02dc4e8d98f",
       "mount": [
         [
           0.995703136,
@@ -2205,8 +2205,8 @@
     },
     {
       "instance_id": "elf-05/cape",
-      "part": "aurelian.cape-e@1",
-      "definition_sha256": "e9b1b1d23aae4d2fef109a8bbaeca11786b87307b74182a8baf07db77ccf2bd6",
+      "part": "aurelian.cape-e@2",
+      "definition_sha256": "555a95b7a0bcc6853e58a3c4464df850b512d5cf051a5802835380c934bfc524",
       "mount": [
         [
           0.995703136,
@@ -2236,8 +2236,8 @@
     },
     {
       "instance_id": "elf-05/skirt",
-      "part": "aurelian.skirt@2",
-      "definition_sha256": "7d478894b059457d97766f39842098441c6759bdfe2b10adc8cd4bcbcc008ccc",
+      "part": "aurelian.skirt@3",
+      "definition_sha256": "47fc22a5f9102f2dcd3a75f22774d1b70c91e418dade7b9880c3e50e2cc358ed",
       "mount": [
         [
           0.995703136,
@@ -2298,8 +2298,8 @@
     },
     {
       "instance_id": "elf-05/head",
-      "part": "aurelian.head@6",
-      "definition_sha256": "1cc5312fca8e867fff300c8bca8da6f5eb592f72c128fcb10fde88d01c44063d",
+      "part": "aurelian.head@12",
+      "definition_sha256": "539e53b2c3d83535370628a0464ba94cfdf613dbc8abbd580f6b16edc3f17efe",
       "mount": [
         [
           0.990134252,
@@ -2329,8 +2329,8 @@
     },
     {
       "instance_id": "elf-05/helmet",
-      "part": "aurelian.helmet@1",
-      "definition_sha256": "c2c43421bf939f0b126c0ef78a303fdd3b460c025ad5d55d4b4980eebf995496",
+      "part": "aurelian.helmet@2",
+      "definition_sha256": "cca8d39be1ac05f40338fe9602103e105a9af40fe87c5d1461c3c23ffbbf30e0",
       "mount": [
         [
           0.990134252,
@@ -2367,19 +2367,19 @@
           0.977812414,
           0.208678635,
           -0.018333308,
-          7.711206203
+          7.521058741443188
         ],
         [
           -0.207840445,
           0.977361799,
           0.039576037,
-          -0.924802036
+          -1.8153717155575153
         ],
         [
           0.026176948,
           -0.034887538,
           0.999048361,
-          4.033550066
+          4.06533950525269
         ],
         [
           0.0,
@@ -2391,8 +2391,8 @@
     },
     {
       "instance_id": "elf-05/equipment-joins",
-      "part": "aurelian.equipment-joins-e@1",
-      "definition_sha256": "ff8e7ab9a6ba28efdb8428106a8734e2037beec184ae511f42aabe08749fc04a",
+      "part": "aurelian.equipment-joins-e@2",
+      "definition_sha256": "54ed1f1adbc57de07c7fb0edbc42faa64f4692b804205c6d18a3ccd3c256fbdc",
       "mount": [
         [
           0.995703136,
@@ -2515,8 +2515,8 @@
     },
     {
       "instance_id": "elf-05/left-arm",
-      "part": "aurelian.left-arm-e@1",
-      "definition_sha256": "d2ebb48194ccb3b5bd596480287d8b3b4813ec7aab76d6f73b3d8c8a9391ad84",
+      "part": "aurelian.left-arm-e@2",
+      "definition_sha256": "e3934a60bc85b987d274614f692da325e0a5daccf502f4f7319d4fa600535208",
       "mount": [
         [
           0.995703136,
@@ -2584,19 +2584,19 @@
           0.977812414,
           0.208678635,
           -0.018333308,
-          7.711206203
+          7.521058741443188
         ],
         [
           -0.207840445,
           0.977361799,
           0.039576037,
-          -0.924802036
+          -1.8153717155575153
         ],
         [
           0.026176948,
           -0.034887538,
           0.999048361,
-          4.033550066
+          4.06533950525269
         ],
         [
           0.0,
@@ -2608,8 +2608,8 @@
     },
     {
       "instance_id": "elf-05/mail",
-      "part": "aurelian.chest-plate@2",
-      "definition_sha256": "1d16fc657c67c8bc0a7fd28ab85c08b9ffaae5e22cb846ef0cb781203a0710a9",
+      "part": "aurelian.chest-plate@4",
+      "definition_sha256": "0b63f168cab5f6c4ebd8920b730c9065282368eb0d236c5415b27f160a129318",
       "mount": [
         [
           0.995703136,
@@ -2659,6 +2659,161 @@
           -0.006900866,
           0.999870192,
           8.198237487
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "elf-01/shield-torso-connector",
+      "part": "aurelian.shield-torso-connector@1",
+      "definition_sha256": "0942f15fbdc1b6ce8e8ac5427dd8faa0c3f65e14eb14cb3b217a025e0a21a258",
+      "mount": [
+        [
+          0.992206031,
+          0.122304228,
+          -0.023850959,
+          -8.03458389
+        ],
+        [
+          -0.121827582,
+          0.992339306,
+          0.020512,
+          0.029742401
+        ],
+        [
+          0.026176948,
+          -0.017446426,
+          0.999505072,
+          6.199282355
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "elf-02/shield-torso-connector",
+      "part": "aurelian.shield-torso-connector-b@1",
+      "definition_sha256": "c1df248ae150a8144f6b86d5df971b6770c3085b194bf3fbeb74077be9f3fc7f",
+      "mount": [
+        [
+          0.994181098,
+          -0.10355623,
+          0.02966568,
+          -3.956984764
+        ],
+        [
+          0.104492644,
+          0.994011553,
+          -0.031973744,
+          -0.046361929
+        ],
+        [
+          -0.026176948,
+          0.034887538,
+          0.999048361,
+          6.198620123
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "elf-03/shield-torso-connector",
+      "part": "aurelian.shield-torso-connector-c@1",
+      "definition_sha256": "8517abd23e2a4b6efe0eb9015dbdd62e8aced1a088684804fbc483cde1ee2351",
+      "mount": [
+        [
+          0.999390827,
+          0.034868884,
+          -0.001461439,
+          -0.002119087
+        ],
+        [
+          -0.034899497,
+          0.998514191,
+          -0.041850144,
+          -0.060682709
+        ],
+        [
+          0.0,
+          0.041875654,
+          0.99912283,
+          6.198728104
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "elf-04/shield-torso-connector",
+      "part": "aurelian.shield-torso-connector-d@1",
+      "definition_sha256": "015a659da7987002a8953b315c2236be84f0ec1942c3a700b8b5951b1dd03d89",
+      "mount": [
+        [
+          0.990117246,
+          -0.138780639,
+          -0.020193392,
+          3.970719582
+        ],
+        [
+          0.139151904,
+          0.990101754,
+          0.018310237,
+          0.026549843
+        ],
+        [
+          0.017452406,
+          -0.02093923,
+          0.999628412,
+          6.199461197
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "elf-05/shield-torso-connector",
+      "part": "aurelian.shield-torso-connector-e@1",
+      "definition_sha256": "be55a9e247d9adf56372bc6b64707a26904425d714b088eb8156dc78f0802711",
+      "mount": [
+        [
+          0.995703136,
+          0.087531523,
+          0.030224115,
+          8.043824966
+        ],
+        [
+          -0.087112737,
+          0.996086906,
+          -0.014907935,
+          -0.021616506
+        ],
+        [
+          -0.031410759,
+          0.012210972,
+          0.999431967,
+          6.199176352
         ],
         [
           0.0,

@@ -1,7 +1,10 @@
 # Elf proof repository rules
 
-- Reuse the existing Blender GUI window for review updates. Load the new saved
-  scene into that process; start a new GUI only when none is running.
+- Use the local Three.js viewer at http://127.0.0.1:8765 for visual review.
+  Successful atelier compositions publish automatically; publish an existing
+  saved review with `py -3.13 -m fdm_sculpt.viewer publish <output-directory>`.
+  Keep its server running and verify the loaded revision. Blender is a background
+  geometry tool; only open its GUI when explicitly requested, reusing any existing window.
 - Current phase is visual iteration across the army. Design reusable pieces
   independently in `fdm_sculpt/components/parts/`, pin positive integer revisions,
   and compose them through `specs/elf-modular-visual.json`. Use `atelier part`

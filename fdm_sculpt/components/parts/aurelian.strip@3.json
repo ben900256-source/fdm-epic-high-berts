@@ -1,0 +1,7607 @@
+{
+  "component_id": "aurelian.strip",
+  "version": 3,
+  "name": "Even rounded ground textured strip",
+  "family": "base",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "strip",
+    "ground_0_0",
+    "ground_0_1",
+    "ground_0_2",
+    "ground_0_3",
+    "ground_0_4",
+    "ground_0_5",
+    "ground_0_6",
+    "ground_0_7",
+    "ground_0_8",
+    "ground_0_9",
+    "ground_0_10",
+    "ground_0_11",
+    "ground_0_12",
+    "ground_0_13",
+    "ground_0_14",
+    "ground_0_15",
+    "ground_0_16",
+    "ground_0_17",
+    "ground_0_18",
+    "ground_0_19",
+    "ground_0_20",
+    "ground_0_21",
+    "ground_0_22",
+    "ground_0_23",
+    "ground_0_24",
+    "ground_0_25",
+    "ground_0_26",
+    "ground_0_27",
+    "ground_0_28",
+    "ground_0_29",
+    "ground_0_30",
+    "ground_0_31",
+    "ground_0_32",
+    "ground_0_33",
+    "ground_0_34",
+    "ground_0_35",
+    "ground_0_36",
+    "ground_0_37",
+    "ground_0_38",
+    "ground_0_39",
+    "ground_0_40",
+    "ground_0_41",
+    "ground_1_0",
+    "ground_1_1",
+    "ground_1_2",
+    "ground_1_3",
+    "ground_1_4",
+    "ground_1_5",
+    "ground_1_6",
+    "ground_1_7",
+    "ground_1_8",
+    "ground_1_9",
+    "ground_1_10",
+    "ground_1_11",
+    "ground_1_12",
+    "ground_1_13",
+    "ground_1_14",
+    "ground_1_15",
+    "ground_1_16",
+    "ground_1_17",
+    "ground_1_18",
+    "ground_1_19",
+    "ground_1_20",
+    "ground_1_21",
+    "ground_1_22",
+    "ground_1_23",
+    "ground_1_24",
+    "ground_1_25",
+    "ground_1_26",
+    "ground_1_27",
+    "ground_1_28",
+    "ground_1_29",
+    "ground_1_30",
+    "ground_1_31",
+    "ground_1_32",
+    "ground_1_33",
+    "ground_1_34",
+    "ground_1_35",
+    "ground_1_36",
+    "ground_1_37",
+    "ground_1_38",
+    "ground_1_39",
+    "ground_1_40",
+    "ground_1_41",
+    "ground_2_0",
+    "ground_2_1",
+    "ground_2_2",
+    "ground_2_3",
+    "ground_2_4",
+    "ground_2_5",
+    "ground_2_6",
+    "ground_2_7",
+    "ground_2_8",
+    "ground_2_9",
+    "ground_2_10",
+    "ground_2_11",
+    "ground_2_12",
+    "ground_2_13",
+    "ground_2_14",
+    "ground_2_15",
+    "ground_2_16",
+    "ground_2_17",
+    "ground_2_18",
+    "ground_2_19",
+    "ground_2_20",
+    "ground_2_21",
+    "ground_2_22",
+    "ground_2_23",
+    "ground_2_24",
+    "ground_2_25",
+    "ground_2_26",
+    "ground_2_27",
+    "ground_2_28",
+    "ground_2_29",
+    "ground_2_30",
+    "ground_2_31",
+    "ground_2_32",
+    "ground_2_33",
+    "ground_2_34",
+    "ground_2_35",
+    "ground_2_36",
+    "ground_2_37",
+    "ground_2_38",
+    "ground_2_39",
+    "ground_2_40",
+    "ground_2_41",
+    "ground_3_0",
+    "ground_3_1",
+    "ground_3_2",
+    "ground_3_3",
+    "ground_3_4",
+    "ground_3_5",
+    "ground_3_6",
+    "ground_3_7",
+    "ground_3_8",
+    "ground_3_9",
+    "ground_3_10",
+    "ground_3_11",
+    "ground_3_12",
+    "ground_3_13",
+    "ground_3_14",
+    "ground_3_15",
+    "ground_3_16",
+    "ground_3_17",
+    "ground_3_18",
+    "ground_3_19",
+    "ground_3_20",
+    "ground_3_21",
+    "ground_3_22",
+    "ground_3_23",
+    "ground_3_24",
+    "ground_3_25",
+    "ground_3_26",
+    "ground_3_27",
+    "ground_3_28",
+    "ground_3_29",
+    "ground_3_30",
+    "ground_3_31",
+    "ground_3_32",
+    "ground_3_33",
+    "ground_3_34",
+    "ground_3_35",
+    "ground_3_36",
+    "ground_3_37",
+    "ground_3_38",
+    "ground_3_39",
+    "ground_3_40",
+    "ground_3_41",
+    "ground_4_0",
+    "ground_4_1",
+    "ground_4_2",
+    "ground_4_3",
+    "ground_4_4",
+    "ground_4_5",
+    "ground_4_6",
+    "ground_4_7",
+    "ground_4_8",
+    "ground_4_9",
+    "ground_4_10",
+    "ground_4_11",
+    "ground_4_12",
+    "ground_4_13",
+    "ground_4_14",
+    "ground_4_15",
+    "ground_4_16",
+    "ground_4_17",
+    "ground_4_18",
+    "ground_4_19",
+    "ground_4_20",
+    "ground_4_21",
+    "ground_4_22",
+    "ground_4_23",
+    "ground_4_24",
+    "ground_4_25",
+    "ground_4_26",
+    "ground_4_27",
+    "ground_4_28",
+    "ground_4_29",
+    "ground_4_30",
+    "ground_4_31",
+    "ground_4_32",
+    "ground_4_33",
+    "ground_4_34",
+    "ground_4_35",
+    "ground_4_36",
+    "ground_4_37",
+    "ground_4_38",
+    "ground_4_39",
+    "ground_4_40",
+    "ground_4_41",
+    "ground_5_0",
+    "ground_5_1",
+    "ground_5_2",
+    "ground_5_3",
+    "ground_5_4",
+    "ground_5_5",
+    "ground_5_6",
+    "ground_5_7",
+    "ground_5_8",
+    "ground_5_9",
+    "ground_5_10",
+    "ground_5_11",
+    "ground_5_12",
+    "ground_5_13",
+    "ground_5_14",
+    "ground_5_15",
+    "ground_5_16",
+    "ground_5_17",
+    "ground_5_18",
+    "ground_5_19",
+    "ground_5_20",
+    "ground_5_21",
+    "ground_5_22",
+    "ground_5_23",
+    "ground_5_24",
+    "ground_5_25",
+    "ground_5_26",
+    "ground_5_27",
+    "ground_5_28",
+    "ground_5_29",
+    "ground_5_30",
+    "ground_5_31",
+    "ground_5_32",
+    "ground_5_33",
+    "ground_5_34",
+    "ground_5_35",
+    "ground_5_36",
+    "ground_5_37",
+    "ground_5_38",
+    "ground_5_39",
+    "ground_5_40",
+    "ground_5_41",
+    "ground_6_0",
+    "ground_6_1",
+    "ground_6_2",
+    "ground_6_3",
+    "ground_6_4",
+    "ground_6_5",
+    "ground_6_6",
+    "ground_6_7",
+    "ground_6_8",
+    "ground_6_9",
+    "ground_6_10",
+    "ground_6_11",
+    "ground_6_12",
+    "ground_6_13",
+    "ground_6_14",
+    "ground_6_15",
+    "ground_6_16",
+    "ground_6_17",
+    "ground_6_18",
+    "ground_6_19",
+    "ground_6_20",
+    "ground_6_21",
+    "ground_6_22",
+    "ground_6_23",
+    "ground_6_24",
+    "ground_6_25",
+    "ground_6_26",
+    "ground_6_27",
+    "ground_6_28",
+    "ground_6_29",
+    "ground_6_30",
+    "ground_6_31",
+    "ground_6_32",
+    "ground_6_33",
+    "ground_6_34",
+    "ground_6_35",
+    "ground_6_36",
+    "ground_6_37",
+    "ground_6_38",
+    "ground_6_39",
+    "ground_6_40",
+    "ground_6_41",
+    "ground_7_0",
+    "ground_7_1",
+    "ground_7_2",
+    "ground_7_3",
+    "ground_7_4",
+    "ground_7_5",
+    "ground_7_6",
+    "ground_7_7",
+    "ground_7_8",
+    "ground_7_9",
+    "ground_7_10",
+    "ground_7_11",
+    "ground_7_12",
+    "ground_7_13",
+    "ground_7_14",
+    "ground_7_15",
+    "ground_7_16",
+    "ground_7_17",
+    "ground_7_18",
+    "ground_7_19",
+    "ground_7_20",
+    "ground_7_21",
+    "ground_7_22",
+    "ground_7_23",
+    "ground_7_24",
+    "ground_7_25",
+    "ground_7_26",
+    "ground_7_27",
+    "ground_7_28",
+    "ground_7_29",
+    "ground_7_30",
+    "ground_7_31",
+    "ground_7_32",
+    "ground_7_33",
+    "ground_7_34",
+    "ground_7_35",
+    "ground_7_36",
+    "ground_7_37",
+    "ground_7_38",
+    "ground_7_39",
+    "ground_7_40",
+    "ground_7_41",
+    "ground_8_0",
+    "ground_8_1",
+    "ground_8_2",
+    "ground_8_3",
+    "ground_8_4",
+    "ground_8_5",
+    "ground_8_6",
+    "ground_8_7",
+    "ground_8_8",
+    "ground_8_9",
+    "ground_8_10",
+    "ground_8_11",
+    "ground_8_12",
+    "ground_8_13",
+    "ground_8_14",
+    "ground_8_15",
+    "ground_8_16",
+    "ground_8_17",
+    "ground_8_18",
+    "ground_8_19",
+    "ground_8_20",
+    "ground_8_21",
+    "ground_8_22",
+    "ground_8_23",
+    "ground_8_24",
+    "ground_8_25",
+    "ground_8_26",
+    "ground_8_27",
+    "ground_8_28",
+    "ground_8_29",
+    "ground_8_30",
+    "ground_8_31",
+    "ground_8_32",
+    "ground_8_33",
+    "ground_8_34",
+    "ground_8_35",
+    "ground_8_36",
+    "ground_8_37",
+    "ground_8_38",
+    "ground_8_39",
+    "ground_8_40",
+    "ground_8_41",
+    "ground_9_0",
+    "ground_9_1",
+    "ground_9_2",
+    "ground_9_3",
+    "ground_9_4",
+    "ground_9_5",
+    "ground_9_6",
+    "ground_9_7",
+    "ground_9_8",
+    "ground_9_9",
+    "ground_9_10",
+    "ground_9_11",
+    "ground_9_12",
+    "ground_9_13",
+    "ground_9_14",
+    "ground_9_15",
+    "ground_9_16",
+    "ground_9_17",
+    "ground_9_18",
+    "ground_9_19",
+    "ground_9_20",
+    "ground_9_21",
+    "ground_9_22",
+    "ground_9_23",
+    "ground_9_24",
+    "ground_9_25",
+    "ground_9_26",
+    "ground_9_27",
+    "ground_9_28",
+    "ground_9_29",
+    "ground_9_30",
+    "ground_9_31",
+    "ground_9_32",
+    "ground_9_33",
+    "ground_9_34",
+    "ground_9_35",
+    "ground_9_36",
+    "ground_9_37",
+    "ground_9_38",
+    "ground_9_39",
+    "ground_9_40",
+    "ground_9_41"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0,
+        "dimensions": [
+          20,
+          5,
+          1
+        ],
+        "export": true,
+        "location": [
+          0,
+          0,
+          0.5
+        ],
+        "primitive": "cube",
+        "role": "strip"
+      },
+      {
+        "dimensions": [
+          0.5684215796576682,
+          0.5690162992147628,
+          0.17547644207876686
+        ],
+        "export": true,
+        "location": [
+          -9.585167451602,
+          -2.1420686883625986,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_0",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.536601169891493,
+          0.5299578115726816,
+          0.2089415736974813
+        ],
+        "export": true,
+        "location": [
+          -9.111582695243293,
+          -2.105705197170294,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_1",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5547013755822957,
+          0.5040579116527073,
+          0.2142252805602543
+        ],
+        "export": true,
+        "location": [
+          -8.668368400842057,
+          -2.116394453868612,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_2",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5643445129933014,
+          0.5524617997484385,
+          0.21422642988137153
+        ],
+        "export": true,
+        "location": [
+          -8.184697632031652,
+          -2.098891377339846,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_3",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.580552686937437,
+          0.5741086650780717,
+          0.17113949428373387
+        ],
+        "export": true,
+        "location": [
+          -7.742452157204524,
+          -2.119901108170458,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_4",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.536597119061851,
+          0.5103662866947993,
+          0.22176127175176524
+        ],
+        "export": true,
+        "location": [
+          -7.2396500120880685,
+          -2.113185376412072,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_5",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5067753917639969,
+          0.5445188330364488,
+          0.19352082375702342
+        ],
+        "export": true,
+        "location": [
+          -6.802554079364922,
+          -2.115357050033984,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_6",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5031933858500283,
+          0.5698726487724801,
+          0.20646760398654254
+        ],
+        "export": true,
+        "location": [
+          -6.331620619761399,
+          -2.1366928025335943,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_7",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5689848858890048,
+          0.5160466902518652,
+          0.22575935547417852
+        ],
+        "export": true,
+        "location": [
+          -5.878375419949275,
+          -2.1160312430448958,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_8",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5889505132236663,
+          0.5174421623791319,
+          0.17230960416454838
+        ],
+        "export": true,
+        "location": [
+          -5.368252672776126,
+          -2.118064791990947,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_9",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5851612406168621,
+          0.509207362942734,
+          0.19117548787349886
+        ],
+        "export": true,
+        "location": [
+          -4.923557113957963,
+          -2.135888647797627,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_10",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5080288676251254,
+          0.5415111384337612,
+          0.1915625091505451
+        ],
+        "export": true,
+        "location": [
+          -4.430620731659493,
+          -2.1429385556227607,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_11",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5757351692071756,
+          0.5043972376827569,
+          0.1777084479394811
+        ],
+        "export": true,
+        "location": [
+          -4.004418879866676,
+          -2.1114718509639614,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_12",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5585129621915739,
+          0.5211737848869458,
+          0.21970372646816294
+        ],
+        "export": true,
+        "location": [
+          -3.5311282953244794,
+          -2.1212519121538844,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_13",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5201784534017808,
+          0.5092809232981256,
+          0.18208335824226501
+        ],
+        "export": true,
+        "location": [
+          -3.0640861867124687,
+          -2.0999925371893426,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_14",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5097052273610747,
+          0.5488815750647458,
+          0.20171447842443013
+        ],
+        "export": true,
+        "location": [
+          -2.572751233742064,
+          -2.10022845597129,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_15",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5226774065361833,
+          0.5720925008088945,
+          0.18980926580259472
+        ],
+        "export": true,
+        "location": [
+          -2.1085608768103667,
+          -2.1057666852077697,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_16",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5487260800596787,
+          0.5564938606129517,
+          0.21900536377682925
+        ],
+        "export": true,
+        "location": [
+          -1.6444889521601207,
+          -2.1198785045495545,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_17",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5165650171532037,
+          0.5614826036779438,
+          0.21704452899863105
+        ],
+        "export": true,
+        "location": [
+          -1.1503000116960593,
+          -2.1386906864854236,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_18",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5781643049970048,
+          0.5050176269479338,
+          0.17686915602009673
+        ],
+        "export": true,
+        "location": [
+          -0.7147613129344348,
+          -2.1008522965809253,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_19",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5782291222001263,
+          0.5198370335491344,
+          0.22341553899539635
+        ],
+        "export": true,
+        "location": [
+          -0.254377493815943,
+          -2.101717726556605,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_20",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5476465697863375,
+          0.5460689710824266,
+          0.17734056076139174
+        ],
+        "export": true,
+        "location": [
+          0.21919860837132532,
+          -2.1216520308688884,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_21",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5703686228959073,
+          0.540056681653991,
+          0.2096925471143435
+        ],
+        "export": true,
+        "location": [
+          0.6804294781587557,
+          -2.100495970199685,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_22",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5216780666876928,
+          0.5573898421223014,
+          0.20889848842760741
+        ],
+        "export": true,
+        "location": [
+          1.1855999209499908,
+          -2.1418265580190146,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_23",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5056522648774782,
+          0.5224178658360173,
+          0.20700828506066674
+        ],
+        "export": true,
+        "location": [
+          1.6361702844693002,
+          -2.1379847703887584,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_24",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5833643468536958,
+          0.5387210340006963,
+          0.1854208306765241
+        ],
+        "export": true,
+        "location": [
+          2.1047191879364857,
+          -2.1133423891380807,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_25",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5419699882915056,
+          0.5725037444641932,
+          0.19618319330895484
+        ],
+        "export": true,
+        "location": [
+          2.5952665112808764,
+          -2.096799985870175,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_26",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5829650854295011,
+          0.5551383315736991,
+          0.18279723222091346
+        ],
+        "export": true,
+        "location": [
+          3.0251781831915965,
+          -2.118780560020817,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_27",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5580460336533772,
+          0.5479909654654413,
+          0.21329012883843865
+        ],
+        "export": true,
+        "location": [
+          3.4920669585834796,
+          -2.0969212715575685,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_28",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.543432225675824,
+          0.5133727470123544,
+          0.1794564064712125
+        ],
+        "export": true,
+        "location": [
+          4.000235444530114,
+          -2.1064200079714537,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_29",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5810584889637075,
+          0.5312229870020709,
+          0.2207082713515499
+        ],
+        "export": true,
+        "location": [
+          4.450898446526148,
+          -2.1310180009094486,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_30",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.578201475971355,
+          0.5435471257285741,
+          0.1881970581056944
+        ],
+        "export": true,
+        "location": [
+          4.892183929157718,
+          -2.139075424740719,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_31",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5505283358744355,
+          0.5710646994779617,
+          0.20026249426483858
+        ],
+        "export": true,
+        "location": [
+          5.390476013641626,
+          -2.1264356490670266,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_32",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5359360159622985,
+          0.5475445509968487,
+          0.183152543612327
+        ],
+        "export": true,
+        "location": [
+          5.864193605364821,
+          -2.1226612217786167,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_33",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5663353147012705,
+          0.5282230803176872,
+          0.17744492111552018
+        ],
+        "export": true,
+        "location": [
+          6.323468577289247,
+          -2.1004672484379667,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_34",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5182804311408292,
+          0.5338054417474442,
+          0.18234457344980262
+        ],
+        "export": true,
+        "location": [
+          6.76764565693031,
+          -2.123965389371272,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_35",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5594898270214806,
+          0.5323334488353061,
+          0.2117958218754269
+        ],
+        "export": true,
+        "location": [
+          7.270871079083476,
+          -2.139024451962445,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_36",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5056721029465056,
+          0.5358264789738062,
+          0.22354041908756686
+        ],
+        "export": true,
+        "location": [
+          7.75050844485392,
+          -2.122769165172098,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_37",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5041706639448028,
+          0.5083645041903463,
+          0.17306193002497436
+        ],
+        "export": true,
+        "location": [
+          8.19366589285643,
+          -2.1141818758178093,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_38",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5802920966467253,
+          0.5494270263864823,
+          0.17416321734561233
+        ],
+        "export": true,
+        "location": [
+          8.674518680768438,
+          -2.127642694229121,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_39",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.502985602816655,
+          0.5108016295325339,
+          0.21927263249170306
+        ],
+        "export": true,
+        "location": [
+          9.156298405480138,
+          -2.115358492771998,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_40",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5152555832705804,
+          0.5261941053252294,
+          0.20626545344643815
+        ],
+        "export": true,
+        "location": [
+          9.619192999781937,
+          -2.1079895398962183,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_0_41",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.547736336535675,
+          0.5233447020800043,
+          0.20382079555196186
+        ],
+        "export": true,
+        "location": [
+          -9.580266133143793,
+          -1.6401372395436777,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_0",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5181315643831584,
+          0.5023818195944322,
+          0.1984303065248948
+        ],
+        "export": true,
+        "location": [
+          -9.136551348040332,
+          -1.6606559563865175,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_1",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.589498379373322,
+          0.5608607083175093,
+          0.21425046649253637
+        ],
+        "export": true,
+        "location": [
+          -8.648013761952235,
+          -1.6679337955943727,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_2",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5535132426631358,
+          0.539457480018742,
+          0.17120346035489012
+        ],
+        "export": true,
+        "location": [
+          -8.204145572694086,
+          -1.635242871545945,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_3",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5067789113556891,
+          0.5708432136672263,
+          0.175097963901758
+        ],
+        "export": true,
+        "location": [
+          -7.747996837646042,
+          -1.6413411119070953,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_4",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5556696682588111,
+          0.5469494352431803,
+          0.171455559502626
+        ],
+        "export": true,
+        "location": [
+          -7.242138566777148,
+          -1.6449604657972514,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_5",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5765694670904308,
+          0.5329846655752717,
+          0.1708276399445064
+        ],
+        "export": true,
+        "location": [
+          -6.784217713106812,
+          -1.6579032867921706,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_6",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5698594448533009,
+          0.5750455839627074,
+          0.22324079554182896
+        ],
+        "export": true,
+        "location": [
+          -6.319467763860879,
+          -1.6411401606877503,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_7",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.525099074934178,
+          0.5548171115892293,
+          0.20168526539645718
+        ],
+        "export": true,
+        "location": [
+          -5.856415345353453,
+          -1.6685681932643375,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_8",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5721625221131693,
+          0.5430702071042455,
+          0.20533638818047117
+        ],
+        "export": true,
+        "location": [
+          -5.39671633704519,
+          -1.6685775777061034,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_9",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.525315041328881,
+          0.5664220761766096,
+          0.20949082674827155
+        ],
+        "export": true,
+        "location": [
+          -4.90889969452199,
+          -1.6562495442208378,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_10",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5845485204475891,
+          0.5431201612977496,
+          0.17589649897027995
+        ],
+        "export": true,
+        "location": [
+          -4.46495587488871,
+          -1.625336254595544,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_11",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5696416432657002,
+          0.5458584436619265,
+          0.2134237616357149
+        ],
+        "export": true,
+        "location": [
+          -3.9704595773100957,
+          -1.6701434811982585,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_12",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5881537035256037,
+          0.5579085666062753,
+          0.21405271872209558
+        ],
+        "export": true,
+        "location": [
+          -3.4978341680457734,
+          -1.6268762088187605,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_13",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5597425752859096,
+          0.535471940280939,
+          0.19705767193823
+        ],
+        "export": true,
+        "location": [
+          -3.034535531236175,
+          -1.6444504383885121,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_14",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5688155205774973,
+          0.5328893069771987,
+          0.17268090268101957
+        ],
+        "export": true,
+        "location": [
+          -2.589148642470342,
+          -1.6364773806580546,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_15",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5885402295200894,
+          0.533431340791036,
+          0.1996082125419623
+        ],
+        "export": true,
+        "location": [
+          -2.1026561233314833,
+          -1.6525284437099876,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_16",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5037874927193271,
+          0.5684041283625241,
+          0.22560846812383528
+        ],
+        "export": true,
+        "location": [
+          -1.652601667314549,
+          -1.6306971111445216,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_17",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5231237614870508,
+          0.5030311754864604,
+          0.2149557695543417
+        ],
+        "export": true,
+        "location": [
+          -1.1734081165724313,
+          -1.6569123986522152,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_18",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.519790591728547,
+          0.521132633093131,
+          0.19632976110078373
+        ],
+        "export": true,
+        "location": [
+          -0.7177952469016102,
+          -1.639317033693543,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_19",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5427220357687755,
+          0.5274926448430297,
+          0.2266479098120368
+        ],
+        "export": true,
+        "location": [
+          -0.22614522994907194,
+          -1.633592039372217,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_20",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5497314405632787,
+          0.5047905444835151,
+          0.1743451294621036
+        ],
+        "export": true,
+        "location": [
+          0.25438135594302536,
+          -1.6560453921935514,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_21",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5265424711169059,
+          0.5132185925484936,
+          0.17177019953031217
+        ],
+        "export": true,
+        "location": [
+          0.725177711388215,
+          -1.6686941179814412,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_22",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5879541210240028,
+          0.5063842522032121,
+          0.1855066587104763
+        ],
+        "export": true,
+        "location": [
+          1.1739669745322723,
+          -1.633403059613793,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_23",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.504813246623493,
+          0.5137754788626104,
+          0.21079664177336632
+        ],
+        "export": true,
+        "location": [
+          1.615023671328585,
+          -1.643844423190635,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_24",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5414648797647261,
+          0.5367856328121767,
+          0.20527868441138986
+        ],
+        "export": true,
+        "location": [
+          2.128162677650443,
+          -1.6662693799868897,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_25",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5220585340592881,
+          0.5743548156583145,
+          0.1948195261278109
+        ],
+        "export": true,
+        "location": [
+          2.576991602190686,
+          -1.6643396167848339,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_26",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5286612867838566,
+          0.5550469459767245,
+          0.18256353829228433
+        ],
+        "export": true,
+        "location": [
+          3.023753331455837,
+          -1.6661566957819696,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_27",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5505857573157124,
+          0.5584002617827419,
+          0.22024280242041333
+        ],
+        "export": true,
+        "location": [
+          3.4927460848406993,
+          -1.6434528116273885,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_28",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5660074810494683,
+          0.555680021239215,
+          0.210240728788467
+        ],
+        "export": true,
+        "location": [
+          3.9972714782424354,
+          -1.646492873398667,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_29",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5467440495250508,
+          0.5669269207591832,
+          0.1707734040756131
+        ],
+        "export": true,
+        "location": [
+          4.424821305442919,
+          -1.649054182671052,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_30",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5580628852587688,
+          0.5407947184911087,
+          0.19498515821855852
+        ],
+        "export": true,
+        "location": [
+          4.899061079474024,
+          -1.6503895667850108,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_31",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5724101974446278,
+          0.5320031620830459,
+          0.2003421993848055
+        ],
+        "export": true,
+        "location": [
+          5.385708806281419,
+          -1.668551091030824,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_32",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5611100835070566,
+          0.5566264475466309,
+          0.21236697186837172
+        ],
+        "export": true,
+        "location": [
+          5.833937828583598,
+          -1.6304675314360249,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_33",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5433320030304878,
+          0.527211411286851,
+          0.2208311562581686
+        ],
+        "export": true,
+        "location": [
+          6.324502024739575,
+          -1.6253311986632892,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_34",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5638840453863567,
+          0.5069803107483697,
+          0.18114019249497756
+        ],
+        "export": true,
+        "location": [
+          6.798259024070072,
+          -1.6425704823979994,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_35",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5194842297106698,
+          0.5252470200631447,
+          0.1970020224675464
+        ],
+        "export": true,
+        "location": [
+          7.275745803137038,
+          -1.6461910044579717,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_36",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5750767389992218,
+          0.5556324759881631,
+          0.17108515164247673
+        ],
+        "export": true,
+        "location": [
+          7.737875967398572,
+          -1.6312446200215003,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_37",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5399932808965987,
+          0.5506701077315937,
+          0.19635913150502096
+        ],
+        "export": true,
+        "location": [
+          8.177723675256642,
+          -1.629269421240704,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_38",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5064176479900856,
+          0.5493915629914021,
+          0.18105951382956093
+        ],
+        "export": true,
+        "location": [
+          8.665060734816729,
+          -1.6248724256824543,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_39",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5679795374912441,
+          0.5502511361404469,
+          0.19056632749497587
+        ],
+        "export": true,
+        "location": [
+          9.137191884758748,
+          -1.6322528239752414,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_40",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5716887625518298,
+          0.5068048943634198,
+          0.2209848073410017
+        ],
+        "export": true,
+        "location": [
+          9.614628039633446,
+          -1.6676451139213655,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_1_41",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5148719438168335,
+          0.562517961508271,
+          0.19408906255972166
+        ],
+        "export": true,
+        "location": [
+          -9.589314193081565,
+          -1.1586108233143193,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_0",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5255695740969786,
+          0.5414349072512812,
+          0.18373224982689296
+        ],
+        "export": true,
+        "location": [
+          -9.113885602971335,
+          -1.1620004864332978,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_1",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5060451507653069,
+          0.5172769378198905,
+          0.18823195979760987
+        ],
+        "export": true,
+        "location": [
+          -8.673432274614827,
+          -1.1738030516515316,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_2",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5066022218402528,
+          0.5774862962442787,
+          0.1882362443340193
+        ],
+        "export": true,
+        "location": [
+          -8.195103550158112,
+          -1.1887221459364246,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_3",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5340694961850356,
+          0.5496479557724646,
+          0.1914425365088859
+        ],
+        "export": true,
+        "location": [
+          -7.726656786018539,
+          -1.1614450353571,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_4",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5879056207104402,
+          0.5679887639476733,
+          0.2091746210107848
+        ],
+        "export": true,
+        "location": [
+          -7.246603809087065,
+          -1.1576738559489856,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_5",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5314113857974785,
+          0.5484655675277247,
+          0.18970244552016127
+        ],
+        "export": true,
+        "location": [
+          -6.7783272196965605,
+          -1.170745426935689,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_6",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5127476298666785,
+          0.508071685027248,
+          0.2098270529566767
+        ],
+        "export": true,
+        "location": [
+          -6.3002717960145596,
+          -1.1536170286845904,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_7",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.502041411671378,
+          0.5644887396514576,
+          0.20367251721045682
+        ],
+        "export": true,
+        "location": [
+          -5.852204786038052,
+          -1.1701499669959972,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_8",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.523486552643589,
+          0.529373264843332,
+          0.21388116853305772
+        ],
+        "export": true,
+        "location": [
+          -5.372898387887766,
+          -1.1728708307113735,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_9",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5170629009091332,
+          0.5255785535938898,
+          0.1838331163409658
+        ],
+        "export": true,
+        "location": [
+          -4.892590981595732,
+          -1.1562373981099072,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_10",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5748866229825933,
+          0.5335327055612066,
+          0.21399352307579406
+        ],
+        "export": true,
+        "location": [
+          -4.428519069680387,
+          -1.1621428102211975,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_11",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.564039586137402,
+          0.5146602672590485,
+          0.17807529270195593
+        ],
+        "export": true,
+        "location": [
+          -3.9685795745148496,
+          -1.1709737479726925,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_12",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5859067590708958,
+          0.5211010345874958,
+          0.2210542014841396
+        ],
+        "export": true,
+        "location": [
+          -3.4982765263306064,
+          -1.1866277680712718,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_13",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5602734553631294,
+          0.5331784833053678,
+          0.21580860540521102
+        ],
+        "export": true,
+        "location": [
+          -3.020129817763231,
+          -1.157330154770421,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_14",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5418236167272875,
+          0.5401563157757512,
+          0.20537447165053388
+        ],
+        "export": true,
+        "location": [
+          -2.5564642738800663,
+          -1.189831966567883,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_15",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5499269057173434,
+          0.5189613516353699,
+          0.17006430194372238
+        ],
+        "export": true,
+        "location": [
+          -2.084318986556551,
+          -1.1916566859999878,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_16",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5101786860557536,
+          0.5651271683611256,
+          0.20128498376677897
+        ],
+        "export": true,
+        "location": [
+          -1.654912038279816,
+          -1.1908172217030373,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_17",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5065031864373009,
+          0.5540243623481327,
+          0.1891924164884392
+        ],
+        "export": true,
+        "location": [
+          -1.1734348053727124,
+          -1.180297768923074,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_18",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5178126159703573,
+          0.557995143606466,
+          0.17275345779144097
+        ],
+        "export": true,
+        "location": [
+          -0.7030632881421481,
+          -1.165126532168861,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_19",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5025436783544018,
+          0.5219569775607056,
+          0.22716935803645263
+        ],
+        "export": true,
+        "location": [
+          -0.23338628714518578,
+          -1.1885910811941884,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_20",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5839333016096637,
+          0.5174300786078208,
+          0.18804062005957778
+        ],
+        "export": true,
+        "location": [
+          0.24959754810369494,
+          -1.1963730534881833,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_21",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5177739925758894,
+          0.5761515804344107,
+          0.19973420190171806
+        ],
+        "export": true,
+        "location": [
+          0.6794984473658721,
+          -1.1531807473780782,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_22",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5748127305898528,
+          0.5348067289565512,
+          0.1938623497846033
+        ],
+        "export": true,
+        "location": [
+          1.1542010589872198,
+          -1.201403505374774,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_23",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5736539154205706,
+          0.5350288025699635,
+          0.21970800939228813
+        ],
+        "export": true,
+        "location": [
+          1.6500119202337884,
+          -1.1968977338152642,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_24",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5685347957796728,
+          0.537062023616819,
+          0.19246910467759357
+        ],
+        "export": true,
+        "location": [
+          2.114326044704522,
+          -1.1533627854777906,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_25",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5198991960607452,
+          0.5261985603941567,
+          0.20337869560476096
+        ],
+        "export": true,
+        "location": [
+          2.5686485860868946,
+          -1.157851039005804,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_26",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5788626808926677,
+          0.5397749278402907,
+          0.21987207876914672
+        ],
+        "export": true,
+        "location": [
+          3.0533601704145696,
+          -1.1882169131421796,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_27",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5464778522118157,
+          0.5760339837359401,
+          0.19978975709062796
+        ],
+        "export": true,
+        "location": [
+          3.5339193416629944,
+          -1.1865091546037727,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_28",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.505196379323259,
+          0.5138835351606946,
+          0.21075185524500514
+        ],
+        "export": true,
+        "location": [
+          3.9909890261537675,
+          -1.1770533667528853,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_29",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5083836569604792,
+          0.5742646338074227,
+          0.2161029090937685
+        ],
+        "export": true,
+        "location": [
+          4.467824920260978,
+          -1.1636956175118636,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_30",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.556478958599452,
+          0.5798409319709901,
+          0.20568203454166123
+        ],
+        "export": true,
+        "location": [
+          4.90306474489849,
+          -1.1689924012204147,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_31",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5697956990558857,
+          0.5581585293407917,
+          0.1965763150272718
+        ],
+        "export": true,
+        "location": [
+          5.380425787983225,
+          -1.1847005553058434,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_32",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5752139118654651,
+          0.5261264811047816,
+          0.1983790051830605
+        ],
+        "export": true,
+        "location": [
+          5.857970750313672,
+          -1.1921816648068424,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_33",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5162047425720149,
+          0.5470828338520435,
+          0.22022798197107163
+        ],
+        "export": true,
+        "location": [
+          6.311649959987897,
+          -1.1964916548151847,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_34",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5480629724370429,
+          0.5318853205639279,
+          0.19857334018925551
+        ],
+        "export": true,
+        "location": [
+          6.78159588021988,
+          -1.198031617121717,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_35",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5040816187725532,
+          0.5567523983812717,
+          0.21264120983219248
+        ],
+        "export": true,
+        "location": [
+          7.236536566024973,
+          -1.1792350618858602,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_36",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5203103576546665,
+          0.5452162327041693,
+          0.20479825466338922
+        ],
+        "export": true,
+        "location": [
+          7.724673599634197,
+          -1.155885378408225,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_37",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5616224199787541,
+          0.5642195191719498,
+          0.1997306712157097
+        ],
+        "export": true,
+        "location": [
+          8.174120111003502,
+          -1.1997193650569509,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_38",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5505825203909172,
+          0.5563193475207778,
+          0.220416975064126
+        ],
+        "export": true,
+        "location": [
+          8.680439877622945,
+          -1.1820436533472212,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_39",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5106511543934086,
+          0.52528638953119,
+          0.1856575891992789
+        ],
+        "export": true,
+        "location": [
+          9.132726871224573,
+          -1.1684138437086458,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_40",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.533383139764234,
+          0.5376494082342551,
+          0.2210324653437994
+        ],
+        "export": true,
+        "location": [
+          9.60929986961115,
+          -1.173713033451688,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_2_41",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5477893859283902,
+          0.5378281736188498,
+          0.17295148897377013
+        ],
+        "export": true,
+        "location": [
+          -9.57939137458946,
+          -0.7132299023300254,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_0",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5836018798649472,
+          0.5773418734654767,
+          0.20549291755756482
+        ],
+        "export": true,
+        "location": [
+          -9.114766225209113,
+          -0.7182464371501694,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_1",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5197619683693585,
+          0.5224547328168462,
+          0.20066404284123152
+        ],
+        "export": true,
+        "location": [
+          -8.651369555987413,
+          -0.6823774107646303,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_2",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5375472394836758,
+          0.5762412985976592,
+          0.1797477703663612
+        ],
+        "export": true,
+        "location": [
+          -8.212683728355321,
+          -0.7057760268844168,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_3",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5186474141477002,
+          0.5055136772698123,
+          0.2270445888267501
+        ],
+        "export": true,
+        "location": [
+          -7.726801829558116,
+          -0.6834742256609655,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_4",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5564477885190917,
+          0.5727485605388295,
+          0.22637018973727843
+        ],
+        "export": true,
+        "location": [
+          -7.234822872725485,
+          -0.7123258032291687,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_5",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5064859337920767,
+          0.562584658538591,
+          0.18487661647537584
+        ],
+        "export": true,
+        "location": [
+          -6.782240563631788,
+          -0.6862479329906104,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_6",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.549933334984738,
+          0.5347423487388896,
+          0.17350491613386793
+        ],
+        "export": true,
+        "location": [
+          -6.3025532410336265,
+          -0.7032422498879056,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_7",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5266191973600741,
+          0.553004176008836,
+          0.20678697717268604
+        ],
+        "export": true,
+        "location": [
+          -5.843283545627707,
+          -0.704145608300144,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_8",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5060456165864311,
+          0.5539446382581849,
+          0.211700218481579
+        ],
+        "export": true,
+        "location": [
+          -5.404690370981233,
+          -0.6903061541976351,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_9",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5769717631525324,
+          0.5124390840260337,
+          0.1814990880489822
+        ],
+        "export": true,
+        "location": [
+          -4.920859045477508,
+          -0.7248090678152664,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_10",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5537764273082857,
+          0.5424231748221905,
+          0.18994000044092357
+        ],
+        "export": true,
+        "location": [
+          -4.46748117248048,
+          -0.7020834276748688,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_11",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5873889467707503,
+          0.511423581892771,
+          0.18383769753754628
+        ],
+        "export": true,
+        "location": [
+          -3.9776709550210883,
+          -0.7166008210059511,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_12",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5412141666732894,
+          0.5724911552147722,
+          0.22862307566432405
+        ],
+        "export": true,
+        "location": [
+          -3.526827177139048,
+          -0.700864069478526,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_13",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5753894331844985,
+          0.5777501219932057,
+          0.19655327880822462
+        ],
+        "export": true,
+        "location": [
+          -3.060649020358226,
+          -0.7190945235357823,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_14",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5592276472976454,
+          0.5098319764506779,
+          0.18850555883022918
+        ],
+        "export": true,
+        "location": [
+          -2.562482421766275,
+          -0.6822276901400334,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_15",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5190333213582246,
+          0.5562949023508705,
+          0.1838779522134187
+        ],
+        "export": true,
+        "location": [
+          -2.0917536177423233,
+          -0.6892408914313111,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_16",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5793409961498137,
+          0.5151590837547777,
+          0.18250564052715024
+        ],
+        "export": true,
+        "location": [
+          -1.6253074179023328,
+          -0.6841773502359557,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_17",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5779053301101976,
+          0.5005958598218052,
+          0.22851464614976436
+        ],
+        "export": true,
+        "location": [
+          -1.1849727749007748,
+          -0.7098818110747831,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_18",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.525374593928899,
+          0.577055540990696,
+          0.18120851265983962
+        ],
+        "export": true,
+        "location": [
+          -0.6845233147464701,
+          -0.6826095751681049,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_19",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5401523178119803,
+          0.5711052543645592,
+          0.187176884896901
+        ],
+        "export": true,
+        "location": [
+          -0.21220643813535794,
+          -0.7062952032279147,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_20",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5161887660411747,
+          0.5589930568687943,
+          0.22738536761930464
+        ],
+        "export": true,
+        "location": [
+          0.25753827118806577,
+          -0.6914004234461237,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_21",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5605351102642883,
+          0.5194925591705897,
+          0.20470915227101918
+        ],
+        "export": true,
+        "location": [
+          0.6804142409627121,
+          -0.6930033966245877,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_22",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5714544010675346,
+          0.5505938867002652,
+          0.18644815014926583
+        ],
+        "export": true,
+        "location": [
+          1.1570266596252647,
+          -0.7151618132578553,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_23",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5131093741695535,
+          0.5214260562520139,
+          0.21758927103457926
+        ],
+        "export": true,
+        "location": [
+          1.614919435631872,
+          -0.7278164308852872,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_24",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5486357381893948,
+          0.5694005006884947,
+          0.21266386214295085
+        ],
+        "export": true,
+        "location": [
+          2.1080219995226854,
+          -0.7266829710376242,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_25",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5419640747619401,
+          0.5297564392675698,
+          0.216041724474626
+        ],
+        "export": true,
+        "location": [
+          2.5968824778794315,
+          -0.7203759465834347,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_26",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5621521297105254,
+          0.569416879211138,
+          0.20879531373498184
+        ],
+        "export": true,
+        "location": [
+          3.052639343065268,
+          -0.6874078582619231,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_27",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5334030045271788,
+          0.5119357509923899,
+          0.20665318446467595
+        ],
+        "export": true,
+        "location": [
+          3.4974980555024344,
+          -0.6941584149136472,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_28",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5827727561214371,
+          0.5266598793496232,
+          0.2265517237068136
+        ],
+        "export": true,
+        "location": [
+          3.9654836516202336,
+          -0.6839886371170795,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_29",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5215553085171823,
+          0.5005435637063935,
+          0.20982190785641552
+        ],
+        "export": true,
+        "location": [
+          4.431076664098323,
+          -0.6992729953656613,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_30",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5041676734738801,
+          0.5582188073934693,
+          0.2201397989113877
+        ],
+        "export": true,
+        "location": [
+          4.894182095521392,
+          -0.6856944130362801,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_31",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5766536428110098,
+          0.571631710965243,
+          0.21918963707774114
+        ],
+        "export": true,
+        "location": [
+          5.3995797531775755,
+          -0.7291092668953221,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_32",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5105708727206058,
+          0.5580734867965502,
+          0.20942825379497923
+        ],
+        "export": true,
+        "location": [
+          5.8775278378886355,
+          -0.6973651862810668,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_33",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5739807958772588,
+          0.5245016856360062,
+          0.1992852224982866
+        ],
+        "export": true,
+        "location": [
+          6.315206399484865,
+          -0.7133335291378768,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_34",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5115636528952193,
+          0.5299908691965991,
+          0.22998390615142145
+        ],
+        "export": true,
+        "location": [
+          6.811298875856389,
+          -0.7064716399395801,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_35",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5188682022429997,
+          0.5467506254429182,
+          0.17668568537372606
+        ],
+        "export": true,
+        "location": [
+          7.254723693055397,
+          -0.7190310550123061,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_36",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5683693463955988,
+          0.5440318851389035,
+          0.2241778415923716
+        ],
+        "export": true,
+        "location": [
+          7.740996886743108,
+          -0.7234695373079392,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_37",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5401073226175638,
+          0.5247642651916373,
+          0.19716545686830883
+        ],
+        "export": true,
+        "location": [
+          8.206727593175568,
+          -0.7232052745744676,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_38",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5833489817775785,
+          0.5448759727643961,
+          0.20695006603182023
+        ],
+        "export": true,
+        "location": [
+          8.645163142954912,
+          -0.7301902947513624,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_39",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.50929061944248,
+          0.5213691062473893,
+          0.1750408044226989
+        ],
+        "export": true,
+        "location": [
+          9.142759805076755,
+          -0.6895186390107838,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_40",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5017031747519742,
+          0.546836806425951,
+          0.22006443822346852
+        ],
+        "export": true,
+        "location": [
+          9.59981555903377,
+          -0.71998499231796,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_3_41",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5888699236151264,
+          0.5045336562320288,
+          0.17075138139847632
+        ],
+        "export": true,
+        "location": [
+          -9.621483351083254,
+          -0.2526460907255456,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_0",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5064211529194653,
+          0.5677725716096684,
+          0.17801932132964782
+        ],
+        "export": true,
+        "location": [
+          -9.132717032253536,
+          -0.23259852451556123,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_1",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5584211912954906,
+          0.576337886270649,
+          0.1707288520597532
+        ],
+        "export": true,
+        "location": [
+          -8.658055384511801,
+          -0.24553470732978258,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_2",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5318195781158025,
+          0.5705053806709095,
+          0.21160608340577997
+        ],
+        "export": true,
+        "location": [
+          -8.184907813723967,
+          -0.2431208474636093,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_3",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5805314882431265,
+          0.5469417679578117,
+          0.22755735095794544
+        ],
+        "export": true,
+        "location": [
+          -7.709798836579841,
+          -0.22890284368044697,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_4",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5722576197957876,
+          0.5038967976280994,
+          0.17761577546472498
+        ],
+        "export": true,
+        "location": [
+          -7.263018048807689,
+          -0.25539592990992416,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_5",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5574815494541248,
+          0.5250276844274998,
+          0.20908136864282886
+        ],
+        "export": true,
+        "location": [
+          -6.7701833499127,
+          -0.22425828876768295,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_6",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.560147774846951,
+          0.5319520427393911,
+          0.22472633145360835
+        ],
+        "export": true,
+        "location": [
+          -6.343004501819683,
+          -0.21876127331131354,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_7",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5196841826223869,
+          0.546506986088047,
+          0.19043791436144208
+        ],
+        "export": true,
+        "location": [
+          -5.8497509619274535,
+          -0.2418852744671414,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_8",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5885066004073801,
+          0.5355648092785734,
+          0.1707463968517337
+        ],
+        "export": true,
+        "location": [
+          -5.389163309282342,
+          -0.2600666145458527,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_9",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5652690762667878,
+          0.5556494089118117,
+          0.17072685526900072
+        ],
+        "export": true,
+        "location": [
+          -4.93328871501571,
+          -0.25785612809702024,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_10",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.563418901533637,
+          0.5677074007509377,
+          0.2082603419092372
+        ],
+        "export": true,
+        "location": [
+          -4.433227125021027,
+          -0.2465343753285833,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_11",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.506510760826366,
+          0.5130923033289136,
+          0.18680397402407642
+        ],
+        "export": true,
+        "location": [
+          -3.978899827613391,
+          -0.22230645851054764,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_12",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.535014915895209,
+          0.525979788312604,
+          0.2254148025836517
+        ],
+        "export": true,
+        "location": [
+          -3.502941840040861,
+          -0.23005425539700172,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_13",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5853923215667455,
+          0.5204512258268866,
+          0.20526426258022779
+        ],
+        "export": true,
+        "location": [
+          -3.060413682820069,
+          -0.2531516737687544,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_14",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5426148262353887,
+          0.5043746479137075,
+          0.17809634440530736
+        ],
+        "export": true,
+        "location": [
+          -2.557099455133607,
+          -0.2444403853201966,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_15",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5434450434271753,
+          0.5555787998887872,
+          0.20938697901414965
+        ],
+        "export": true,
+        "location": [
+          -2.11454778049688,
+          -0.2215942375190238,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_16",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5617781465958541,
+          0.5661766681338165,
+          0.19329932697806063
+        ],
+        "export": true,
+        "location": [
+          -1.634588975609086,
+          -0.23289188613091155,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_17",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5349384509991386,
+          0.5244384946944546,
+          0.17503953241048878
+        ],
+        "export": true,
+        "location": [
+          -1.1951918347277133,
+          -0.2128413034540914,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_18",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5832615121494935,
+          0.5134922889117979,
+          0.1885152068716709
+        ],
+        "export": true,
+        "location": [
+          -0.6955411428270435,
+          -0.23358048119840485,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_19",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5447880573842241,
+          0.5507381621306001,
+          0.19736499600492835
+        ],
+        "export": true,
+        "location": [
+          -0.25024709411002444,
+          -0.25250719426994594,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_20",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5741779044259339,
+          0.5053795963561037,
+          0.18916697686227585
+        ],
+        "export": true,
+        "location": [
+          0.2588945751056476,
+          -0.22480884184374123,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_21",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5441986937044175,
+          0.5257635985262389,
+          0.19851026686852624
+        ],
+        "export": true,
+        "location": [
+          0.7076459119021039,
+          -0.2528015903213569,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_22",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5479418788065049,
+          0.5431830678168879,
+          0.21086471866702408
+        ],
+        "export": true,
+        "location": [
+          1.1507378574358325,
+          -0.24570372350046732,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_23",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5003711823202149,
+          0.5188043185280748,
+          0.18600434629498377
+        ],
+        "export": true,
+        "location": [
+          1.618890035397375,
+          -0.25305735385558564,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_24",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5189730806580635,
+          0.5371436319571964,
+          0.1800205500021512
+        ],
+        "export": true,
+        "location": [
+          2.1002288178040587,
+          -0.2462066219203922,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_25",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5331041260940527,
+          0.519867050477733,
+          0.19025755538339353
+        ],
+        "export": true,
+        "location": [
+          2.580713252345451,
+          -0.2567436257138253,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_26",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5061399870361594,
+          0.5118596578002449,
+          0.17716613017759608
+        ],
+        "export": true,
+        "location": [
+          3.0222282193029715,
+          -0.2190543508502207,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_27",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5743328868233769,
+          0.5008556474080054,
+          0.20651509051029115
+        ],
+        "export": true,
+        "location": [
+          3.5070219352540817,
+          -0.2537665309454734,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_28",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5405993557788431,
+          0.5650400484552383,
+          0.19831796989763145
+        ],
+        "export": true,
+        "location": [
+          3.97522248016378,
+          -0.2557083274278739,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_29",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5133387848152388,
+          0.5625189643665094,
+          0.17233295936909082
+        ],
+        "export": true,
+        "location": [
+          4.4500225624675,
+          -0.2270498979713121,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_30",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5143120160722926,
+          0.5304361221018089,
+          0.20178000038866103
+        ],
+        "export": true,
+        "location": [
+          4.933101591208424,
+          -0.24910287620002497,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_31",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5056951148944306,
+          0.5077837009001127,
+          0.17151796340727396
+        ],
+        "export": true,
+        "location": [
+          5.389695061040098,
+          -0.23966247748082486,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_32",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5563771502854097,
+          0.5056750925445639,
+          0.20866987300145495
+        ],
+        "export": true,
+        "location": [
+          5.829927532033304,
+          -0.23692303167653758,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_33",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5521724471559044,
+          0.5145709009140822,
+          0.19291528371433983
+        ],
+        "export": true,
+        "location": [
+          6.343766420939297,
+          -0.25084465652787113,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_34",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5384893294466139,
+          0.5623671026456017,
+          0.2076726077667612
+        ],
+        "export": true,
+        "location": [
+          6.7881238960785835,
+          -0.22897918082096475,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_35",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5001340280929477,
+          0.5488376949837129,
+          0.19875285342746307
+        ],
+        "export": true,
+        "location": [
+          7.2510739838917,
+          -0.2588674949482932,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_36",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5109615589360974,
+          0.5612545842303235,
+          0.2277997674350091
+        ],
+        "export": true,
+        "location": [
+          7.702707755921029,
+          -0.21709655209383374,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_37",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5744465089123179,
+          0.5208950434359149,
+          0.1974950688239143
+        ],
+        "export": true,
+        "location": [
+          8.197450348521096,
+          -0.2196093104106584,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_38",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5005341479759736,
+          0.5104994813181682,
+          0.18913409922616045
+        ],
+        "export": true,
+        "location": [
+          8.675966615038023,
+          -0.2566490119196436,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_39",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5543783692091904,
+          0.5270229297761355,
+          0.21143192702836608
+        ],
+        "export": true,
+        "location": [
+          9.133671027497643,
+          -0.21814673045241725,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_40",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5043745517913791,
+          0.5217371284950215,
+          0.21133358522121495
+        ],
+        "export": true,
+        "location": [
+          9.596257041221731,
+          -0.22556331710354718,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_4_41",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5699589508207523,
+          0.5784199002705919,
+          0.21884233929047814
+        ],
+        "export": true,
+        "location": [
+          -9.596923935565377,
+          0.22045392735670408,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_0",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5256521498327317,
+          0.5063701194239694,
+          0.18046203502428074
+        ],
+        "export": true,
+        "location": [
+          -9.106881977549197,
+          0.24172568263779642,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_1",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5755267585197219,
+          0.5759314064087038,
+          0.18728546509303867
+        ],
+        "export": true,
+        "location": [
+          -8.66016729433642,
+          0.21077340645940956,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_2",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5399053934677244,
+          0.5053811051825484,
+          0.18449578180247364
+        ],
+        "export": true,
+        "location": [
+          -8.170137738596114,
+          0.24988765310010044,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_3",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5290887119554546,
+          0.5485462461197084,
+          0.20641856825932092
+        ],
+        "export": true,
+        "location": [
+          -7.751134993135542,
+          0.25687880258261864,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_4",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5719242580433274,
+          0.5765273013043714,
+          0.19026616842309682
+        ],
+        "export": true,
+        "location": [
+          -7.269386399622355,
+          0.22314445946578312,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_5",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5776969449833256,
+          0.557405289979815,
+          0.18074367958730495
+        ],
+        "export": true,
+        "location": [
+          -6.773580117414537,
+          0.23279582872005264,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_6",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5886468671446916,
+          0.5200288645611685,
+          0.22529766049107136
+        ],
+        "export": true,
+        "location": [
+          -6.312554119485323,
+          0.22442740427613117,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_7",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5475214858943485,
+          0.5280682923343747,
+          0.20085622278905443
+        ],
+        "export": true,
+        "location": [
+          -5.833893646065135,
+          0.2488047710121707,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_8",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5800251708246502,
+          0.5643430456952692,
+          0.2137562710723476
+        ],
+        "export": true,
+        "location": [
+          -5.389540483287414,
+          0.23261601064719759,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_9",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5422725205287652,
+          0.5094111663058954,
+          0.18174526303199
+        ],
+        "export": true,
+        "location": [
+          -4.898414728002729,
+          0.21230825633271413,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_10",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5075809442619287,
+          0.5488253132119127,
+          0.17901709453632592
+        ],
+        "export": true,
+        "location": [
+          -4.464953644524492,
+          0.21673553137066873,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_11",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5002869995041066,
+          0.5132590496425141,
+          0.1898983000550602
+        ],
+        "export": true,
+        "location": [
+          -3.9669591164011897,
+          0.23807184799482525,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_12",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5464626414878152,
+          0.5700605090022587,
+          0.18657366817961718
+        ],
+        "export": true,
+        "location": [
+          -3.5043745021266215,
+          0.22407596405199615,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_13",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5689348510821578,
+          0.5411571138923957,
+          0.2077559248596078
+        ],
+        "export": true,
+        "location": [
+          -3.0256678919253015,
+          0.2323902932553675,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_14",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5017898453841391,
+          0.5060718412117655,
+          0.1803524213131908
+        ],
+        "export": true,
+        "location": [
+          -2.584111258832494,
+          0.2502034062600906,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_15",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5569830565899244,
+          0.53683858336707,
+          0.17371427361728772
+        ],
+        "export": true,
+        "location": [
+          -2.096101717014244,
+          0.23788235165166935,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_16",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5601571108324994,
+          0.5096893741058877,
+          0.20162467545905283
+        ],
+        "export": true,
+        "location": [
+          -1.6614670514157066,
+          0.22853879293086202,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_17",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5470951812464658,
+          0.5602765855673294,
+          0.2137063003132268
+        ],
+        "export": true,
+        "location": [
+          -1.1642330401715966,
+          0.2313774397661068,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_18",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5696807163347836,
+          0.5307321614895817,
+          0.21054732945811033
+        ],
+        "export": true,
+        "location": [
+          -0.712424651696289,
+          0.24910630766092512,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_19",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.568682468391142,
+          0.5249694022709468,
+          0.1951410568376607
+        ],
+        "export": true,
+        "location": [
+          -0.24874345851434732,
+          0.22595975336497587,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_20",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5316849053925948,
+          0.5218634795580352,
+          0.18848174349917093
+        ],
+        "export": true,
+        "location": [
+          0.2117627645989745,
+          0.21580823120096543,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_21",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.576224402400039,
+          0.5125535340947613,
+          0.22271072431316824
+        ],
+        "export": true,
+        "location": [
+          0.7088418970420733,
+          0.2312938968738224,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_22",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5084718256113634,
+          0.5440008148626172,
+          0.18202171955584848
+        ],
+        "export": true,
+        "location": [
+          1.171356018425123,
+          0.22937546176720844,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_23",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5208159812661538,
+          0.5723581450308777,
+          0.2173064080447845
+        ],
+        "export": true,
+        "location": [
+          1.6560408396088129,
+          0.24798479075156948,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_24",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5489238718306251,
+          0.5623476421632062,
+          0.1789406029983123
+        ],
+        "export": true,
+        "location": [
+          2.082719303499227,
+          0.2493514028222258,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_25",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5493662436782017,
+          0.5387427859069152,
+          0.2277169215486598
+        ],
+        "export": true,
+        "location": [
+          2.5966188149974387,
+          0.22515382309029378,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_26",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5568687965115452,
+          0.5225891400156859,
+          0.21088957004934283
+        ],
+        "export": true,
+        "location": [
+          3.0254603896821983,
+          0.23720158219706594,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_27",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.564875766501085,
+          0.5299683515244641,
+          0.1906269577923474
+        ],
+        "export": true,
+        "location": [
+          3.498726279354394,
+          0.25595025262732435,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_28",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.532081470519818,
+          0.5518662295086376,
+          0.18228613576305586
+        ],
+        "export": true,
+        "location": [
+          4.003062110172073,
+          0.21415543415889285,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_29",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5295854657087168,
+          0.5779267154234017,
+          0.21271277710819125
+        ],
+        "export": true,
+        "location": [
+          4.460378366473617,
+          0.25409364158285147,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_30",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5392907811155279,
+          0.5747930320981745,
+          0.1919790773834057
+        ],
+        "export": true,
+        "location": [
+          4.928967727401989,
+          0.2237305957026705,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_31",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5393999288579617,
+          0.5029543637371174,
+          0.18207698319533713
+        ],
+        "export": true,
+        "location": [
+          5.40879367465371,
+          0.22898998909568924,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_32",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5116391810694365,
+          0.5015119348984869,
+          0.20491876756371358
+        ],
+        "export": true,
+        "location": [
+          5.86542951914058,
+          0.23939137914812267,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_33",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5827290167527558,
+          0.5265970150595424,
+          0.19282117973427232
+        ],
+        "export": true,
+        "location": [
+          6.304817224485879,
+          0.21849679343137118,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_34",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5125679865823297,
+          0.514389161325158,
+          0.18596949906129281
+        ],
+        "export": true,
+        "location": [
+          6.793378974815426,
+          0.2450339557514076,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_35",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5653096656909559,
+          0.5315680335981579,
+          0.2187272398734394
+        ],
+        "export": true,
+        "location": [
+          7.281245022054308,
+          0.2531691515915686,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_36",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5458602762635345,
+          0.5195398430254373,
+          0.210176010938471
+        ],
+        "export": true,
+        "location": [
+          7.735044146334615,
+          0.22754703952234828,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_37",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5636932486012678,
+          0.5765765984098462,
+          0.18793088214777445
+        ],
+        "export": true,
+        "location": [
+          8.175615667840077,
+          0.21646452123366522,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_38",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5498791707963259,
+          0.5011397839606706,
+          0.22229287973565953
+        ],
+        "export": true,
+        "location": [
+          8.64674590137308,
+          0.24105386133656306,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_39",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5359901012201438,
+          0.5194137516015394,
+          0.19135945039704969
+        ],
+        "export": true,
+        "location": [
+          9.118018527780572,
+          0.2541059711832961,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_40",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5580927073543342,
+          0.538670859234632,
+          0.2142372476015721
+        ],
+        "export": true,
+        "location": [
+          9.589794866820672,
+          0.22519355883723255,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_5_41",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5747208961124985,
+          0.565851652076819,
+          0.21572168638781505
+        ],
+        "export": true,
+        "location": [
+          -9.577479320750962,
+          0.6820572313449478,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_0",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5578699166633069,
+          0.5697146793343649,
+          0.21776169960623926
+        ],
+        "export": true,
+        "location": [
+          -9.15470689982478,
+          0.700443128190618,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_1",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5751820354537455,
+          0.5566885344219088,
+          0.18956207649718837
+        ],
+        "export": true,
+        "location": [
+          -8.6800423298942,
+          0.7132502747802254,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_2",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5630871123074417,
+          0.5791586466752888,
+          0.1764381167956064
+        ],
+        "export": true,
+        "location": [
+          -8.19163965108538,
+          0.6985316928023372,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_3",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5362496499101461,
+          0.5407270084508786,
+          0.22072079852823312
+        ],
+        "export": true,
+        "location": [
+          -7.7457669972532175,
+          0.7152466337756582,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_4",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5237541086042687,
+          0.5449547736422911,
+          0.20118972179967393
+        ],
+        "export": true,
+        "location": [
+          -7.251159033180632,
+          0.6925795969866321,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_5",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5363693850407095,
+          0.5239387042481296,
+          0.18792732009641236
+        ],
+        "export": true,
+        "location": [
+          -6.767666014757381,
+          0.7020764152111839,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_6",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5729285649110895,
+          0.5225120099760593,
+          0.19195512582604046
+        ],
+        "export": true,
+        "location": [
+          -6.320045848406884,
+          0.6858540673676389,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_7",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5030873141425126,
+          0.502268583122329,
+          0.2110867096264286
+        ],
+        "export": true,
+        "location": [
+          -5.870074591142945,
+          0.7140195865452328,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_8",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5229070164630728,
+          0.5445530694472732,
+          0.22676603633386783
+        ],
+        "export": true,
+        "location": [
+          -5.386639156207562,
+          0.7050165083165327,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_9",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5346174834472854,
+          0.5430793912607808,
+          0.18935618925905212
+        ],
+        "export": true,
+        "location": [
+          -4.914529886303531,
+          0.7256884991719621,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_10",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5055231657450457,
+          0.5250465563773395,
+          0.19903140067024902
+        ],
+        "export": true,
+        "location": [
+          -4.435741915544186,
+          0.7168494491029139,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_11",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5573953825443287,
+          0.5272671424077902,
+          0.2209936295321902
+        ],
+        "export": true,
+        "location": [
+          -3.9708511430606155,
+          0.683024445274651,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_12",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5247989988495019,
+          0.5469146342173662,
+          0.1703079500507792
+        ],
+        "export": true,
+        "location": [
+          -3.4970266118842877,
+          0.6905591728290734,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_13",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5738489969815231,
+          0.5765482598088222,
+          0.1939523256884632
+        ],
+        "export": true,
+        "location": [
+          -3.056938984919339,
+          0.6981896134237441,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_14",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5723052414551111,
+          0.5790367486121735,
+          0.21772393513463784
+        ],
+        "export": true,
+        "location": [
+          -2.5699170074653623,
+          0.7113679561263843,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_15",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5740663700955025,
+          0.5064100565571594,
+          0.2174043479034765
+        ],
+        "export": true,
+        "location": [
+          -2.1006949560710466,
+          0.7166474612720927,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_16",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5377696194980378,
+          0.5054202038311246,
+          0.17234114563412084
+        ],
+        "export": true,
+        "location": [
+          -1.6463426724941512,
+          0.7270319387231722,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_17",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5361817715216838,
+          0.5113870759963637,
+          0.19544240206756683
+        ],
+        "export": true,
+        "location": [
+          -1.151104720483303,
+          0.6934062692754641,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_18",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.55839683396175,
+          0.5577152703916419,
+          0.17543828300789258
+        ],
+        "export": true,
+        "location": [
+          -0.7186728318004326,
+          0.6890716128796979,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_19",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5234649877357335,
+          0.5306025408358683,
+          0.21816355536439402
+        ],
+        "export": true,
+        "location": [
+          -0.21229268156326414,
+          0.7140836727651487,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_20",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.534561265584752,
+          0.5396262319461784,
+          0.21211698996220885
+        ],
+        "export": true,
+        "location": [
+          0.21694003712854973,
+          0.7242758990590697,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_21",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5262595191959913,
+          0.5273972503286718,
+          0.20889419729757733
+        ],
+        "export": true,
+        "location": [
+          0.6802633282187396,
+          0.6839703240176728,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_22",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5311377363885549,
+          0.5582010757034659,
+          0.17828320016137694
+        ],
+        "export": true,
+        "location": [
+          1.172249427351734,
+          0.7125050080097981,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_23",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5614719721179008,
+          0.5165010976173335,
+          0.21225453492722876
+        ],
+        "export": true,
+        "location": [
+          1.650231429096576,
+          0.6964244018495084,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_24",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5711852242675709,
+          0.5214869220698919,
+          0.1817399472026544
+        ],
+        "export": true,
+        "location": [
+          2.087801847712594,
+          0.7067918623804632,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_25",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5310951387853972,
+          0.5273076781071984,
+          0.2258551184260011
+        ],
+        "export": true,
+        "location": [
+          2.5571611005445947,
+          0.688317609447562,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_26",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5086760477740061,
+          0.5669962519264422,
+          0.22988415034340537
+        ],
+        "export": true,
+        "location": [
+          3.047757096452613,
+          0.7034938828451088,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_27",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5810192133741654,
+          0.5208918631674582,
+          0.1828621762279882
+        ],
+        "export": true,
+        "location": [
+          3.5313311772129783,
+          0.6833454547588048,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_28",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.569651904321592,
+          0.5716178600178642,
+          0.18753847188375117
+        ],
+        "export": true,
+        "location": [
+          3.9867808912543263,
+          0.7236875729760907,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_29",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5672083433068964,
+          0.5761666484689054,
+          0.18452873229635272
+        ],
+        "export": true,
+        "location": [
+          4.43197616233118,
+          0.6869199338694589,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_30",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5536671495044314,
+          0.5138148718919249,
+          0.19864051327946022
+        ],
+        "export": true,
+        "location": [
+          4.9168628635418985,
+          0.7011207307503095,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_31",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5274173577926521,
+          0.5318898738500607,
+          0.22767760703518664
+        ],
+        "export": true,
+        "location": [
+          5.4024199741919645,
+          0.7037173610005003,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_32",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5080638718413857,
+          0.5222311825533691,
+          0.20027715311788363
+        ],
+        "export": true,
+        "location": [
+          5.830368972076827,
+          0.7003602406393092,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_33",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5331173888265882,
+          0.5284300193848732,
+          0.185203102457444
+        ],
+        "export": true,
+        "location": [
+          6.310079812989704,
+          0.6829815373126535,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_34",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5172547168735158,
+          0.5637252417829501,
+          0.19975713649277144
+        ],
+        "export": true,
+        "location": [
+          6.803635750985637,
+          0.6966437547843652,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_35",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5464640820820328,
+          0.5580131492471463,
+          0.20915294102819276
+        ],
+        "export": true,
+        "location": [
+          7.257987605661555,
+          0.722669899227026,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_36",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5502200540534231,
+          0.5401221720231003,
+          0.22175948644355628
+        ],
+        "export": true,
+        "location": [
+          7.720256388212927,
+          0.7256984891875222,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_37",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5013197930202747,
+          0.5600715915229176,
+          0.17606573758458338
+        ],
+        "export": true,
+        "location": [
+          8.1988897715199,
+          0.6983333353253333,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_38",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5601400074496429,
+          0.5717626665454163,
+          0.19028485035241
+        ],
+        "export": true,
+        "location": [
+          8.675556359679137,
+          0.7206613805889396,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_39",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5282862028324048,
+          0.5488473130610709,
+          0.19388567535346146
+        ],
+        "export": true,
+        "location": [
+          9.11219137209438,
+          0.7030107594603933,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_40",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5366157454522008,
+          0.5595668917452615,
+          0.19573778737615877
+        ],
+        "export": true,
+        "location": [
+          9.601849888558895,
+          0.6935410145844344,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_6_41",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5578890397079563,
+          0.5399772545373768,
+          0.2097908111410802
+        ],
+        "export": true,
+        "location": [
+          -9.581890144103916,
+          1.1775920338993966,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_0",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5601744339246006,
+          0.5606903451212578,
+          0.1879047368258472
+        ],
+        "export": true,
+        "location": [
+          -9.107967438527341,
+          1.2018338287436143,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_1",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5104253531555475,
+          0.5738188454401547,
+          0.1794014068082567
+        ],
+        "export": true,
+        "location": [
+          -8.650832761449449,
+          1.1937032633562392,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_2",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5112129782234791,
+          0.5598306292691702,
+          0.2094557930442307
+        ],
+        "export": true,
+        "location": [
+          -8.175353550550591,
+          1.1991784030186734,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_3",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5459950597352965,
+          0.5287512597289546,
+          0.19429337573394947
+        ],
+        "export": true,
+        "location": [
+          -7.728543767577657,
+          1.15323928118806,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_4",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5450347916470092,
+          0.551275378692731,
+          0.21398539801825325
+        ],
+        "export": true,
+        "location": [
+          -7.274272117786462,
+          1.1924065557141448,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_5",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5224987414048403,
+          0.5668980019437111,
+          0.17540955558140145
+        ],
+        "export": true,
+        "location": [
+          -6.792181186979742,
+          1.1774323803353888,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_6",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5378905509629505,
+          0.5366503673693883,
+          0.22360564442053618
+        ],
+        "export": true,
+        "location": [
+          -6.321672016579392,
+          1.1908882791891349,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_7",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5716296598503081,
+          0.5508676534117073,
+          0.18290778232744234
+        ],
+        "export": true,
+        "location": [
+          -5.858612061266283,
+          1.1594723669631997,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_8",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5252569426952924,
+          0.568591082395312,
+          0.22535521130534886
+        ],
+        "export": true,
+        "location": [
+          -5.402357400581136,
+          1.1660856764138539,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_9",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5562303938569834,
+          0.5397364062057518,
+          0.21193355534093142
+        ],
+        "export": true,
+        "location": [
+          -4.909343720572924,
+          1.1695062465400592,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_10",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5498330174760885,
+          0.5714695217141446,
+          0.21227435992099067
+        ],
+        "export": true,
+        "location": [
+          -4.437661941021238,
+          1.189244922892715,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_11",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5483990538782069,
+          0.5493026278559927,
+          0.19255762807609228
+        ],
+        "export": true,
+        "location": [
+          -3.997035649545457,
+          1.1687365475992888,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_12",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5549933938170998,
+          0.5323944509901852,
+          0.21732547308352818
+        ],
+        "export": true,
+        "location": [
+          -3.507659715118369,
+          1.1632454798701584,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_13",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5736049056377795,
+          0.5431535540772202,
+          0.21472572834208242
+        ],
+        "export": true,
+        "location": [
+          -3.0379645614499413,
+          1.154905734294185,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_14",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5688784231127623,
+          0.5678963555694032,
+          0.21243109202015203
+        ],
+        "export": true,
+        "location": [
+          -2.597471902701034,
+          1.1890367985444261,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_15",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5279440977029123,
+          0.5407675913132715,
+          0.2230474042635206
+        ],
+        "export": true,
+        "location": [
+          -2.09330391011758,
+          1.184564894127933,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_16",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5329312165479628,
+          0.5328877822409258,
+          0.20690590178374818
+        ],
+        "export": true,
+        "location": [
+          -1.632944783592918,
+          1.1875140033592744,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_17",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5367925375886455,
+          0.5025548406457605,
+          0.1717016368019193
+        ],
+        "export": true,
+        "location": [
+          -1.1680541014979886,
+          1.1923221451107913,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_18",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5858558855248623,
+          0.5559415606094292,
+          0.20650667538623046
+        ],
+        "export": true,
+        "location": [
+          -0.6881897677285009,
+          1.2003490766580753,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_19",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5590578826999711,
+          0.5312822234832806,
+          0.21490049334508413
+        ],
+        "export": true,
+        "location": [
+          -0.25821160087662126,
+          1.1633442929512419,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_20",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5469401569677454,
+          0.5436301049759095,
+          0.21193321717166794
+        ],
+        "export": true,
+        "location": [
+          0.2590467341116097,
+          1.1557962291648025,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_21",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.541500891959993,
+          0.5677618072769219,
+          0.172952243516486
+        ],
+        "export": true,
+        "location": [
+          0.7045173911963736,
+          1.155970312635274,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_22",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5318286721696501,
+          0.5629386275558319,
+          0.17354618756021564
+        ],
+        "export": true,
+        "location": [
+          1.1856680082868747,
+          1.1852009518669402,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_23",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5602932283581094,
+          0.5198467007813654,
+          0.20478234735597758
+        ],
+        "export": true,
+        "location": [
+          1.6266103635706792,
+          1.1983624061392566,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_24",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5736290901381893,
+          0.5578205523220305,
+          0.21565450380605145
+        ],
+        "export": true,
+        "location": [
+          2.1208560298196506,
+          1.1544765572311546,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_25",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5785265797252044,
+          0.5230758983422295,
+          0.18342020011425375
+        ],
+        "export": true,
+        "location": [
+          2.559851317713062,
+          1.1988700151231098,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_26",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5783116437217241,
+          0.5371586777501877,
+          0.19628016795810166
+        ],
+        "export": true,
+        "location": [
+          3.062454445228096,
+          1.2010348057723401,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_27",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5709764893026551,
+          0.572468913799381,
+          0.19343582441062693
+        ],
+        "export": true,
+        "location": [
+          3.5183056231760146,
+          1.1770353817014747,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_28",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.582779325676387,
+          0.5578500667986687,
+          0.18291832960770021
+        ],
+        "export": true,
+        "location": [
+          3.9994082607262564,
+          1.165616570245202,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_29",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5892618536167351,
+          0.5601415276769123,
+          0.2218750624646447
+        ],
+        "export": true,
+        "location": [
+          4.4279757037225345,
+          1.1945177906820599,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_30",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5125078157477648,
+          0.5518397488642555,
+          0.19084555360808955
+        ],
+        "export": true,
+        "location": [
+          4.919038567365338,
+          1.1777910598547823,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_31",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5738419959521736,
+          0.5298525099035585,
+          0.21274916155377244
+        ],
+        "export": true,
+        "location": [
+          5.404807687209322,
+          1.162970442431778,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_32",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5894778057218403,
+          0.5666488596105426,
+          0.19088825285664163
+        ],
+        "export": true,
+        "location": [
+          5.855183994545625,
+          1.1898255959514268,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_33",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5364350913793329,
+          0.5388802446745912,
+          0.2024721554881127
+        ],
+        "export": true,
+        "location": [
+          6.342201287041095,
+          1.154408546079387,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_34",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5853893373367096,
+          0.553772230095348,
+          0.18481698758033865
+        ],
+        "export": true,
+        "location": [
+          6.8013413534262765,
+          1.1667214158292478,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_35",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5600549739302689,
+          0.5476001741284987,
+          0.172542559838747
+        ],
+        "export": true,
+        "location": [
+          7.258717549231928,
+          1.1690033043855312,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_36",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5719668303240603,
+          0.5477445735652402,
+          0.2164405706411672
+        ],
+        "export": true,
+        "location": [
+          7.724198848633888,
+          1.1970426941500427,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_37",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5869221676625965,
+          0.5556122765814159,
+          0.18418941417320336
+        ],
+        "export": true,
+        "location": [
+          8.213720583851332,
+          1.157452356993446,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_38",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5360160972635883,
+          0.5068651393105811,
+          0.21929825340955994
+        ],
+        "export": true,
+        "location": [
+          8.64529775335176,
+          1.1573927098310988,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_39",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.501045166531399,
+          0.5496131118698103,
+          0.1825032594199265
+        ],
+        "export": true,
+        "location": [
+          9.14301453511908,
+          1.1803791664918073,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_40",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5234324759351541,
+          0.5338099046602427,
+          0.17039058489936137
+        ],
+        "export": true,
+        "location": [
+          9.575206993006727,
+          1.1925582550932017,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_7_41",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5804209345209608,
+          0.5442079513182738,
+          0.19489923013792512
+        ],
+        "export": true,
+        "location": [
+          -9.586891641606277,
+          1.6264300315438875,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_0",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5143056093481664,
+          0.561424077072767,
+          0.20423895222674276
+        ],
+        "export": true,
+        "location": [
+          -9.107934031635306,
+          1.6357836711111446,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_1",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5271788875825041,
+          0.5215175971017654,
+          0.1723091522596202
+        ],
+        "export": true,
+        "location": [
+          -8.644168430815919,
+          1.6416341181846565,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_2",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.517903143067521,
+          0.5640241611303155,
+          0.20844775563212736
+        ],
+        "export": true,
+        "location": [
+          -8.19952646701591,
+          1.6385034370199199,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_3",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5058241104550436,
+          0.549934111782534,
+          0.21783937866879158
+        ],
+        "export": true,
+        "location": [
+          -7.723342025900094,
+          1.6557580058623793,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_4",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5872776514467186,
+          0.5629039310361905,
+          0.1726143312155768
+        ],
+        "export": true,
+        "location": [
+          -7.2645720351371805,
+          1.6577247604839243,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_5",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5380468541489964,
+          0.5266624248507247,
+          0.1815341155098761
+        ],
+        "export": true,
+        "location": [
+          -6.8123026741802235,
+          1.6414852473372943,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_6",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5321817490030343,
+          0.5342849310335838,
+          0.19144181626494838
+        ],
+        "export": true,
+        "location": [
+          -6.330876328355656,
+          1.6318880980678827,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_7",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5263619449469294,
+          0.5500342636714238,
+          0.20357451797147208
+        ],
+        "export": true,
+        "location": [
+          -5.859147394013662,
+          1.672802498108715,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_8",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.512355839031581,
+          0.5391978894650543,
+          0.19439884872151716
+        ],
+        "export": true,
+        "location": [
+          -5.410190282253358,
+          1.6354204162370947,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_9",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5218560819727929,
+          0.5181065112278569,
+          0.19095481959839716
+        ],
+        "export": true,
+        "location": [
+          -4.900525689200166,
+          1.6471704030948702,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_10",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5086566457596492,
+          0.5067508990657055,
+          0.21192995074758839
+        ],
+        "export": true,
+        "location": [
+          -4.462981421517025,
+          1.661643332854984,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_11",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5320926284527439,
+          0.5183165757418735,
+          0.2015254974038715
+        ],
+        "export": true,
+        "location": [
+          -3.9788058316918957,
+          1.6612879677447836,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_12",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5210891570468487,
+          0.5294118671706567,
+          0.22754520200509262
+        ],
+        "export": true,
+        "location": [
+          -3.5100486597858,
+          1.6626497395137863,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_13",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5220108683063903,
+          0.55419578364182,
+          0.22996720992855105
+        ],
+        "export": true,
+        "location": [
+          -3.048621536514124,
+          1.635825959149203,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_14",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.567326202554751,
+          0.5119446557985193,
+          0.18955660386032144
+        ],
+        "export": true,
+        "location": [
+          -2.572828867174296,
+          1.6340235838743877,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_15",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.569825704731044,
+          0.5326004313512396,
+          0.223853945161432
+        ],
+        "export": true,
+        "location": [
+          -2.1087167934343944,
+          1.636630426485662,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_16",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5718877370692206,
+          0.5043492034435751,
+          0.17019373167043697
+        ],
+        "export": true,
+        "location": [
+          -1.6440230534934228,
+          1.6521805554004767,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_17",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5109785598512262,
+          0.5242417573609606,
+          0.18709971857153262
+        ],
+        "export": true,
+        "location": [
+          -1.1820257580576512,
+          1.6563000959685363,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_18",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.508520672750857,
+          0.5283544335011451,
+          0.18556935258434382
+        ],
+        "export": true,
+        "location": [
+          -0.6994563495280589,
+          1.6441879208974939,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_19",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5220789337483576,
+          0.5621876630909952,
+          0.2243540738774156
+        ],
+        "export": true,
+        "location": [
+          -0.23349456632865123,
+          1.6397579401452593,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_20",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5321823137166114,
+          0.5215743537171497,
+          0.22835092623731912
+        ],
+        "export": true,
+        "location": [
+          0.23614384681190592,
+          1.659425573584693,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_21",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5510949913980624,
+          0.5385671468393879,
+          0.20923518457486553
+        ],
+        "export": true,
+        "location": [
+          0.6865056509339461,
+          1.627850039988637,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_22",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5867563244790236,
+          0.5702570134209439,
+          0.2064842107196784
+        ],
+        "export": true,
+        "location": [
+          1.182652779656556,
+          1.6338319502493288,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_23",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5247195667322267,
+          0.5781437274758099,
+          0.22643591951467368
+        ],
+        "export": true,
+        "location": [
+          1.652938757981319,
+          1.6732267168186248,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_24",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5615164300501855,
+          0.5763693393889396,
+          0.2191692107526782
+        ],
+        "export": true,
+        "location": [
+          2.100333663000955,
+          1.6696248832742338,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_25",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5285925543088862,
+          0.5583729768166668,
+          0.21873785568154352
+        ],
+        "export": true,
+        "location": [
+          2.570554304695029,
+          1.6700494514336661,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_26",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5688947096292075,
+          0.5011723647822536,
+          0.22930503978434652
+        ],
+        "export": true,
+        "location": [
+          3.0193952422286174,
+          1.626657755865315,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_27",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5176866895998372,
+          0.5537644086736828,
+          0.20210070702545185
+        ],
+        "export": true,
+        "location": [
+          3.528694684698416,
+          1.6384000305411364,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_28",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5856358320858747,
+          0.518562886529083,
+          0.1935906999665393
+        ],
+        "export": true,
+        "location": [
+          3.996206076571413,
+          1.6573432582712015,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_29",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.574980162374093,
+          0.5259928450735089,
+          0.1794362776512247
+        ],
+        "export": true,
+        "location": [
+          4.459844908656405,
+          1.6263254565867808,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_30",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5803910720823829,
+          0.5435156567192507,
+          0.2042436870149666
+        ],
+        "export": true,
+        "location": [
+          4.915515772186032,
+          1.6518350240732513,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_31",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5153007791905521,
+          0.5758629413632405,
+          0.17243949221240473
+        ],
+        "export": true,
+        "location": [
+          5.403799099791872,
+          1.6310088513070204,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_32",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5158452965305271,
+          0.5474081095615917,
+          0.19134566851061988
+        ],
+        "export": true,
+        "location": [
+          5.853848219486301,
+          1.6517273723295558,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_33",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5120503129682406,
+          0.5159033465754852,
+          0.2090383645389206
+        ],
+        "export": true,
+        "location": [
+          6.31283101399142,
+          1.635910877344812,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_34",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5034118163349137,
+          0.5035600520458554,
+          0.17701838313216242
+        ],
+        "export": true,
+        "location": [
+          6.813475984454312,
+          1.6424203454845527,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_35",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5511080944234094,
+          0.5763639909564928,
+          0.19215713039896723
+        ],
+        "export": true,
+        "location": [
+          7.249814996568142,
+          1.6469100455865306,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_36",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5052148275099637,
+          0.5306149709777661,
+          0.20365997231875455
+        ],
+        "export": true,
+        "location": [
+          7.72511116387079,
+          1.6715118419842936,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_37",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5144894640740545,
+          0.5437954081832296,
+          0.17480994195473015
+        ],
+        "export": true,
+        "location": [
+          8.21205611658523,
+          1.6294398617574724,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_38",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5635454443376551,
+          0.5728642056728933,
+          0.1864653025218978
+        ],
+        "export": true,
+        "location": [
+          8.665086023676624,
+          1.6657533459992107,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_39",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5091178507917952,
+          0.5515044068349814,
+          0.21506137326698982
+        ],
+        "export": true,
+        "location": [
+          9.153605955171068,
+          1.650128502954825,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_40",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5117888581608189,
+          0.5323210660135194,
+          0.22524449476211164
+        ],
+        "export": true,
+        "location": [
+          9.612520422174475,
+          1.662718189398359,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_8_41",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5896962970043417,
+          0.5643893203611445,
+          0.17167774002339678
+        ],
+        "export": true,
+        "location": [
+          -9.584432625699657,
+          2.1098782883543175,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_0",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5791359272863695,
+          0.5562220866839956,
+          0.21665815466460037
+        ],
+        "export": true,
+        "location": [
+          -9.115694746826266,
+          2.105631875577094,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_1",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5647976351546724,
+          0.5673784135750172,
+          0.18554808272080728
+        ],
+        "export": true,
+        "location": [
+          -8.675033356480153,
+          2.099403359621894,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_2",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5022843047335585,
+          0.5301352355458597,
+          0.17089740890648697
+        ],
+        "export": true,
+        "location": [
+          -8.190328247664514,
+          2.126623720571584,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_3",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5863237300224826,
+          0.5075988518909474,
+          0.17430515176232883
+        ],
+        "export": true,
+        "location": [
+          -7.7115474090414065,
+          2.135679230421933,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_4",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5615024342371212,
+          0.5785054899694608,
+          0.20329500879241894
+        ],
+        "export": true,
+        "location": [
+          -7.278520261212121,
+          2.1226170609861126,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_5",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5736206002684344,
+          0.5558100917859305,
+          0.22162902934845552
+        ],
+        "export": true,
+        "location": [
+          -6.800102397894166,
+          2.132901249365055,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_6",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5708270875898677,
+          0.5503774456068439,
+          0.22017045142196412
+        ],
+        "export": true,
+        "location": [
+          -6.302572482976583,
+          2.109782927327001,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_7",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5363867713407546,
+          0.5275207549558724,
+          0.19643243122844498
+        ],
+        "export": true,
+        "location": [
+          -5.873382513704089,
+          2.130036825294016,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_8",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5269428551426207,
+          0.5722769017495262,
+          0.17559106453286175
+        ],
+        "export": true,
+        "location": [
+          -5.381972082781899,
+          2.1237762293665514,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_9",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5007264560470199,
+          0.5464821504143657,
+          0.22284566423601837
+        ],
+        "export": true,
+        "location": [
+          -4.93496988955055,
+          2.13304965621655,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_10",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5291564598009568,
+          0.5126120126519471,
+          0.189502199374066
+        ],
+        "export": true,
+        "location": [
+          -4.463967375141221,
+          2.127040858066913,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_11",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5807299341255934,
+          0.5328838798132018,
+          0.20559775393469373
+        ],
+        "export": true,
+        "location": [
+          -3.972899396873248,
+          2.1420863817775526,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_12",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5728476443969999,
+          0.5696533322626987,
+          0.21194461300045306
+        ],
+        "export": true,
+        "location": [
+          -3.5345082742029117,
+          2.0963176388727525,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_13",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5411493620489178,
+          0.5724850112707521,
+          0.19049757414050172
+        ],
+        "export": true,
+        "location": [
+          -3.023349275012491,
+          2.1381614752208624,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_14",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5430202537940099,
+          0.5480768088861022,
+          0.200825135451802
+        ],
+        "export": true,
+        "location": [
+          -2.600076034325681,
+          2.1343435615120416,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_15",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5503496332466659,
+          0.541916276949602,
+          0.1809677233373549
+        ],
+        "export": true,
+        "location": [
+          -2.114372527924431,
+          2.1062547044151625,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_16",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5025503995380677,
+          0.5716739420434523,
+          0.22680556288924356
+        ],
+        "export": true,
+        "location": [
+          -1.6272261667963261,
+          2.1408530255177167,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_17",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5164229415405046,
+          0.5390383687405774,
+          0.1794611776028181
+        ],
+        "export": true,
+        "location": [
+          -1.1608087908267468,
+          2.098683697266203,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_18",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5154496256662636,
+          0.5569606536806071,
+          0.22614608357373472
+        ],
+        "export": true,
+        "location": [
+          -0.7243573319183398,
+          2.1127966259407236,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_19",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.555388206842211,
+          0.5316704164856967,
+          0.2109158672035807
+        ],
+        "export": true,
+        "location": [
+          -0.2449510970422302,
+          2.119742188166202,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_20",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5368301138439133,
+          0.5499674971621822,
+          0.19737154786066208
+        ],
+        "export": true,
+        "location": [
+          0.2470116432197761,
+          2.111598812031455,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_21",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5420221883234517,
+          0.5103873096004637,
+          0.21701415023081033
+        ],
+        "export": true,
+        "location": [
+          0.7180644376821569,
+          2.134967956925492,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_22",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5082183784732964,
+          0.5230946683766693,
+          0.22165084958403317
+        ],
+        "export": true,
+        "location": [
+          1.1763726856166092,
+          2.1265604236733204,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_23",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5345727300446635,
+          0.531071629704723,
+          0.1810635063295094
+        ],
+        "export": true,
+        "location": [
+          1.6429841977633637,
+          2.138451053443973,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_24",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5217356096880983,
+          0.5245909995609188,
+          0.19757431990552043
+        ],
+        "export": true,
+        "location": [
+          2.1281370451223633,
+          2.117588478406071,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_25",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5387914288470764,
+          0.5293008734175094,
+          0.20789118461708622
+        ],
+        "export": true,
+        "location": [
+          2.5598656218254083,
+          2.1255334655139397,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_26",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5724887676062649,
+          0.5090382957132342,
+          0.1774167687141971
+        ],
+        "export": true,
+        "location": [
+          3.05304843080047,
+          2.1019708963626065,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_27",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5759151074482117,
+          0.5003942301536365,
+          0.22600199025586876
+        ],
+        "export": true,
+        "location": [
+          3.5360483833357486,
+          2.112749375138402,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_28",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5899801162492773,
+          0.5717877795926423,
+          0.2041688283694687
+        ],
+        "export": true,
+        "location": [
+          3.9934688144814436,
+          2.095850664973412,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_29",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5633530797872315,
+          0.5308087107134514,
+          0.17428067503887776
+        ],
+        "export": true,
+        "location": [
+          4.470298727337434,
+          2.126032286841909,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_30",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5036270423885066,
+          0.5661245880546975,
+          0.1855944802707134
+        ],
+        "export": true,
+        "location": [
+          4.921503686242128,
+          2.122454933341331,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_31",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5347161452108234,
+          0.5429403306472024,
+          0.19805236057189
+        ],
+        "export": true,
+        "location": [
+          5.363429281565518,
+          2.09561133074353,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_32",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5133035604228418,
+          0.5719325310409402,
+          0.21635133959187405
+        ],
+        "export": true,
+        "location": [
+          5.854505613567981,
+          2.0960797404177773,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_33",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5059066883972366,
+          0.5762701714122824,
+          0.21382020529351448
+        ],
+        "export": true,
+        "location": [
+          6.307632740321644,
+          2.138175878558881,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_34",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5179923769980118,
+          0.5282948388154346,
+          0.21482404927345908
+        ],
+        "export": true,
+        "location": [
+          6.807280044890962,
+          2.125515083430117,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_35",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5482177709077154,
+          0.5158409580037262,
+          0.17829236726874104
+        ],
+        "export": true,
+        "location": [
+          7.277469097131155,
+          2.110072442077393,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_36",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5561574534820601,
+          0.5504880883120762,
+          0.19717223862788633
+        ],
+        "export": true,
+        "location": [
+          7.716709456459296,
+          2.1398994710488877,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_37",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5542470582995799,
+          0.5259271919614434,
+          0.17002051634094997
+        ],
+        "export": true,
+        "location": [
+          8.188533740862436,
+          2.121803000521397,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_38",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5567020095353574,
+          0.5153419541718489,
+          0.17094897896337222
+        ],
+        "export": true,
+        "location": [
+          8.659415656596414,
+          2.1051376429025814,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_39",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5092661846055674,
+          0.5020664165237994,
+          0.21764774778992585
+        ],
+        "export": true,
+        "location": [
+          9.136555612305232,
+          2.0996189622444623,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_40",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.5746296685512077,
+          0.5677325247989771,
+          0.22903404315648018
+        ],
+        "export": true,
+        "location": [
+          9.576918517658903,
+          2.123902588265751,
+          0.995
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "ground_9_41",
+        "segments": 16
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [],
+    "texture": {
+      "seed": 1001,
+      "style": "even low rounded sandy ground"
+    }
+  }
+}

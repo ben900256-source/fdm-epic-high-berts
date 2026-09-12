@@ -1,0 +1,383 @@
+{
+  "component_id": "aurelian.head",
+  "version": 12,
+  "name": "Elven face with inward rotated nose",
+  "family": "head",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "cranium"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          1.44,
+          1.92,
+          2.02
+        ],
+        "export": true,
+        "location": [
+          0,
+          -0.08,
+          0.02
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "cranium",
+        "segments": 48
+      },
+      {
+        "dimensions": [
+          1.5,
+          1.76,
+          4.4
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          0.0
+        ],
+        "primitive": "sphere",
+        "ring_count": 30,
+        "role": "head_envelope",
+        "segments": 28
+      },
+      {
+        "dimensions": [
+          0.48,
+          0.62,
+          0.2
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9872272833756269,
+            0,
+            0.15931820661424598,
+            -0.3
+          ],
+          [
+            0,
+            1,
+            0,
+            -0.82
+          ],
+          [
+            -0.15931820661424598,
+            0,
+            0.9872272833756269,
+            0.36
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "left_eye_socket",
+        "segments": 48
+      },
+      {
+        "dimensions": [
+          0.48,
+          0.62,
+          0.2
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9872272833756269,
+            0,
+            -0.15931820661424598,
+            0.3
+          ],
+          [
+            0,
+            1,
+            0,
+            -0.82
+          ],
+          [
+            0.15931820661424598,
+            0,
+            0.9872272833756269,
+            0.36
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "right_eye_socket",
+        "segments": 48
+      },
+      {
+        "dimensions": [
+          0.34,
+          0.4,
+          0.9
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.0
+          ],
+          [
+            0,
+            0.9950041652780258,
+            0.09983341664682815,
+            -0.7771244084974054
+          ],
+          [
+            0,
+            -0.09983341664682815,
+            0.9950041652780258,
+            0.1613958408755663
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "nose_bridge",
+        "segments": 48
+      },
+      {
+        "dimensions": [
+          0.64,
+          0.34,
+          0.13
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.84,
+          -0.43
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "mouth_line",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          0.78,
+          0.7,
+          0.54
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.4,
+          -0.64
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "chin_contour",
+        "segments": 48
+      },
+      {
+        "dimensions": [
+          1.2,
+          1.45,
+          1.15
+        ],
+        "export": false,
+        "location": [
+          -1.02,
+          -0.44,
+          -0.34
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "left_cheek_hollow",
+        "segments": 48
+      },
+      {
+        "dimensions": [
+          1.2,
+          1.45,
+          1.15
+        ],
+        "export": false,
+        "location": [
+          1.02,
+          -0.44,
+          -0.34
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "right_cheek_hollow",
+        "segments": 48
+      }
+    ],
+    "face_style": {
+      "brow": "continuous forehead with angled upper eyelids",
+      "cheeks": "raised cheekbones defined by shallow curved hollows beneath",
+      "chin": "broad rounded chin integrated into the jaw",
+      "cranium": "oval",
+      "ears": "omitted",
+      "eyes": "elliptical recesses",
+      "facial_hair": "none",
+      "mouth": "single shallow horizontal groove",
+      "nose": "long rounded nose rotated inward around its upper attachment"
+    },
+    "landmarks": {
+      "chin_contour": [
+        0,
+        -0.4,
+        -0.64
+      ],
+      "cranium": [
+        0,
+        -0.08,
+        0.02
+      ],
+      "head_envelope": [
+        0,
+        0.08,
+        0.0
+      ],
+      "integrated_brow": [
+        0,
+        -0.78,
+        0.49
+      ],
+      "jaw_tip": [
+        0,
+        -0.4,
+        -0.91
+      ],
+      "left_cheek_hollow": [
+        -1.02,
+        -0.44,
+        -0.34
+      ],
+      "left_eye_socket": [
+        -0.3,
+        -0.82,
+        0.36
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "mouth_line": [
+        0,
+        -0.84,
+        -0.43
+      ],
+      "nose_bridge": [
+        0.0,
+        -0.7771244084974054,
+        0.1613958408755663
+      ],
+      "nose_lower_tip": [
+        0.0,
+        -0.8220494459884781,
+        -0.2863560334995453
+      ],
+      "nose_upper_attachment": [
+        0.0,
+        -0.7321993710063327,
+        0.6091477152506779
+      ],
+      "right_cheek_hollow": [
+        1.02,
+        -0.44,
+        -0.34
+      ],
+      "right_eye_socket": [
+        0.3,
+        -0.82,
+        0.36
+      ]
+    },
+    "operations": [
+      {
+        "operand": "head_envelope",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "chin_contour",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "left_cheek_hollow",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "right_cheek_hollow",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "left_eye_socket",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "right_eye_socket",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "nose_bridge",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "mouth_line",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      }
+    ]
+  }
+}

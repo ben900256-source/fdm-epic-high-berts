@@ -1,0 +1,76 @@
+{
+  "component_id": "aurelian.equipment-joins",
+  "version": 2,
+  "name": "Equipment joins without shield ground cone",
+  "family": "equipment-joins",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shield_spear_brace"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.03,
+        "end": [
+          1.05,
+          -0.650055198,
+          4.498656704
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.992206031,
+            -0.121827582,
+            0.026176948,
+            -0.098163556
+          ],
+          [
+            0.122304228,
+            0.992339306,
+            -0.017446426,
+            0.065424097
+          ],
+          [
+            -0.023850959,
+            0.020512,
+            0.999505072,
+            -5.198144021
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "primitive": "between",
+        "radius": 0.4,
+        "role": "shield_spear_brace",
+        "start": [
+          -0.1221886,
+          -0.928018759,
+          2.947932795
+        ]
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "shield_spear_brace": [
+        0.555717438,
+        -0.725788868,
+        -1.503941357
+      ]
+    },
+    "operations": [],
+    "provenance": "parameter recipe extracted from spearman revision 11"
+  }
+}

@@ -1,5 +1,7 @@
 /out/
 /dist/
+node_modules/
+test-results/
 /.venv/
 /.pytest_cache/
 __pycache__/

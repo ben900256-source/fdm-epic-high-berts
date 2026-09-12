@@ -1,0 +1,24 @@
+import { test, expect } from '@playwright/test';
+test.use({channel:'chrome', viewport:{width:1440,height:1000}});
+test('loads current parts, isolates a face, and reports failed refresh',async({page})=>{
+  const errors=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.goto('http://127.0.0.1:8765');
+  await expect(page.locator('#status')).toContainText('Current model loaded',{timeout:60000});
+  await expect(page.locator('body')).toHaveAttribute('data-revision',/[a-f0-9]{64}/);
+  await page.screenshot({path:'../out/viewer-regiment.png'});
+  await page.selectOption('#figure','elf-03');
+  const head = await page.locator('#part option').evaluateAll(options=>options.find(o=>o.value.startsWith('aurelian.head@')).value);
+  await page.selectOption('#part',head);
+  await page.click('[data-view="front"]');
+  await page.waitForTimeout(500);
+  await page.screenshot({path:'../out/viewer-head.png'});
+  const revision=await page.locator('body').getAttribute('data-revision');
+  await page.route('**/data/latest.json',route=>route.fulfill({status:503,body:'unavailable'}));
+  await page.click('#refresh');
+  await expect(page.locator('#status')).toContainText('showing previous model');
+  await expect(page.locator('body')).toHaveAttribute('data-revision',revision);
+  await page.unroute('**/data/latest.json');
+  await page.click('#refresh');
+  await expect(page.locator('#status')).toContainText('Current model loaded');
+  expect(errors).toEqual([]);
+});

@@ -33,7 +33,28 @@ py -3.13 -m fdm_sculpt.atelier part aurelian.crest@2 --seed 1001 --output out/cr
 py -3.13 -m fdm_sculpt.atelier compose specs/elf-modular-visual.json --seed 1001 --output out/army-review
 ```
 
-Open the resulting `assembly.blend`. Only missing or changed parts compile;
+Open the browser viewer at **http://127.0.0.1:8765**. First install its local
+dependency and start the server (no JavaScript build step):
+
+```powershell
+npm --prefix viewer ci
+py -3.13 -m fdm_sculpt.viewer serve
+```
+
+Each successful `atelier compose` or `atelier part` automatically updates the
+viewer. To load an existing saved review without recomputing geometry:
+
+```powershell
+py -3.13 -m fdm_sculpt.viewer publish out/army-review
+```
+
+Orbit, zoom, isolate a figure/component, or hide shields to inspect the mail.
+The page checks for updates every two seconds, verifies mesh checksums, and
+displays the loaded revision. Failed updates retain the previous model with an
+explicit warning. Blender runs in the background for geometry only; its GUI
+is optional. Controls use [Three.js OrbitControls](https://threejs.org/docs/pages/OrbitControls.html).
+
+Only missing or changed parts compile;
 unchanged pieces are shared collection instances. Renders are opt-in with
 `--render`. The full recipes below remain available for historical proofs.
 
