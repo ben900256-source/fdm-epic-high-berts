@@ -256,6 +256,8 @@ def analysis_source_hashes():
 def assess_build(output, *, automatic_supports=False):
     """Repeatable design feedback without claiming completed validation."""
     output=Path(output).resolve()
+    if (output/'visual-review.json').exists():
+        raise ValueError("visual previews have no print mesh or slice; run regiment build for print checks")
     mesh=formats.read_stl(output/'elf-spearman-proof.stl')
     layers,gcode=parse_gcode((output/'elf-spearman-proof.gcode').read_text())
     layer_evidence=inspect_layers(mesh,layers,output/'previews')
@@ -281,6 +283,8 @@ def assess_build(output, *, automatic_supports=False):
 
 def validate_build(output, compare):
     output,compare = Path(output).resolve(),Path(compare).resolve()
+    if any((path/'visual-review.json').exists() for path in (output, compare)):
+        raise ValueError("visual previews cannot be digitally validated; run regiment build first")
     if output == compare:
         raise ValueError("determinism requires an independent build directory")
     (output/"manifest.json").write_text(json.dumps(dict(passes=False,label="internal proof - validation pending"))+"\n")

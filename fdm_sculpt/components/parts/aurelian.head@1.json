@@ -1,0 +1,458 @@
+{
+  "component_id": "aurelian.head",
+  "version": 1,
+  "name": "head",
+  "family": "head",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "cranium"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.24,
+        "dimensions": [
+          1.48,
+          1.8,
+          1.88
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          -0.04,
+          7.37
+        ],
+        "primitive": "cube",
+        "role": "cranium"
+      },
+      {
+        "bevel": 0.22,
+        "dimensions": [
+          0.94,
+          1.27,
+          0.76
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          -0.05,
+          6.99
+        ],
+        "primitive": "cube",
+        "role": "chin"
+      },
+      {
+        "bevel": 0.0,
+        "depth": 0.7,
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          -0.9,
+          7.43
+        ],
+        "primitive": "cone",
+        "radius1": 0.24,
+        "radius2": 0.13,
+        "role": "nose_plane",
+        "rotation": [
+          0,
+          0,
+          0.7853981633974483
+        ],
+        "scale": [
+          0.85,
+          1.2,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "dimensions": [
+          1.5,
+          1.76,
+          4.4
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0.08,
+          7.2
+        ],
+        "primitive": "sphere",
+        "ring_count": 30,
+        "role": "head_envelope",
+        "segments": 28
+      },
+      {
+        "dimensions": [
+          0.38,
+          0.52,
+          0.5
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          -0.76,
+          7.1
+        ],
+        "primitive": "sphere",
+        "ring_count": 16,
+        "role": "nose_root",
+        "segments": 20
+      },
+      {
+        "bevel": 0.11,
+        "dimensions": [
+          0.44,
+          0.88,
+          0.32
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.31,
+          -0.86,
+          7.72
+        ],
+        "primitive": "cube",
+        "role": "left_eye_socket"
+      },
+      {
+        "bevel": 0.11,
+        "dimensions": [
+          0.44,
+          0.88,
+          0.32
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.31,
+          -0.86,
+          7.72
+        ],
+        "primitive": "cube",
+        "role": "right_eye_socket"
+      },
+      {
+        "bevel": 0.055,
+        "dimensions": [
+          0.64,
+          0.52,
+          0.18
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          -0.72,
+          6.85
+        ],
+        "primitive": "cube",
+        "role": "mouth_line"
+      }
+    ],
+    "landmarks": {
+      "chin": [
+        0.0,
+        -0.05,
+        -0.21
+      ],
+      "cranium": [
+        0.0,
+        -0.04,
+        0.17
+      ],
+      "head_envelope": [
+        0.0,
+        0.08,
+        0.0
+      ],
+      "left_eye_socket": [
+        -0.31,
+        -0.86,
+        0.52
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "mouth_line": [
+        0.0,
+        -0.72,
+        -0.35
+      ],
+      "nose_plane": [
+        0.0,
+        -0.9,
+        0.23
+      ],
+      "nose_root": [
+        0.0,
+        -0.76,
+        -0.1
+      ],
+      "right_eye_socket": [
+        0.31,
+        -0.86,
+        0.52
+      ]
+    },
+    "operations": [
+      {
+        "operand": "head_envelope",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "chin",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "nose_root",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "left_eye_socket",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "right_eye_socket",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "mouth_line",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "nose_plane",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "cranium"
+      }
+    ],
+    "provenance": "parameter recipe extracted from spearman revision 11"
+  }
+}

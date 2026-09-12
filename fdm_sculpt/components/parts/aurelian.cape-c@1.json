@@ -1,0 +1,299 @@
+{
+  "component_id": "aurelian.cape-c",
+  "version": 1,
+  "name": "cape-c",
+  "family": "cape",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "cloak",
+    "cape_left_sweep",
+    "cape_right_sweep",
+    "cape_left_shoulder_drape",
+    "cape_right_shoulder_drape"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.24,
+        "bevel_segments": 4,
+        "depth": 6.949999999999999,
+        "export": true,
+        "frame_mm": [
+          [
+            0.999876632,
+            -0.015707317,
+            0.0,
+            0.0
+          ],
+          [
+            0.015693539,
+            0.998999571,
+            0.041875654,
+            -0.157033701
+          ],
+          [
+            -0.000657754,
+            -0.041870488,
+            0.99912283,
+            -5.196710613
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0.63,
+          2.9
+        ],
+        "primitive": "cone",
+        "radius1": 1.76,
+        "radius2": 1.18,
+        "role": "cloak",
+        "rotation": [
+          0,
+          0,
+          0.19634954084936207
+        ],
+        "scale": [
+          1,
+          0.59,
+          1
+        ],
+        "vertices": 16
+      },
+      {
+        "bevel": 0.16,
+        "bevel_segments": 4,
+        "depth": 5.349401835719579,
+        "export": true,
+        "frame_mm": [
+          [
+            0.997339439,
+            -0.015311498,
+            0.071271323,
+            -0.99901273
+          ],
+          [
+            -0.004066733,
+            0.96448349,
+            0.264111829,
+            -0.141827127
+          ],
+          [
+            -0.072783962,
+            -0.263698985,
+            0.961855156,
+            -3.14554818
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.59,
+        "radius2": 0.28,
+        "role": "cape_left_sweep",
+        "rotation": [
+          0,
+          0,
+          0.1308996938995747
+        ],
+        "scale": [
+          1,
+          1.4,
+          1
+        ],
+        "vertices": 24
+      },
+      {
+        "bevel": 0.16,
+        "bevel_segments": 4,
+        "depth": 5.349401835719579,
+        "export": true,
+        "frame_mm": [
+          [
+            0.996815421,
+            -0.015311498,
+            -0.078259658,
+            1.000740535
+          ],
+          [
+            0.035365942,
+            0.96448349,
+            0.261764869,
+            -0.110440048
+          ],
+          [
+            0.071472136,
+            -0.263698985,
+            0.961953522,
+            -3.146863689
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.59,
+        "radius2": 0.28,
+        "role": "cape_right_sweep",
+        "rotation": [
+          0,
+          0,
+          0.1308996938995747
+        ],
+        "scale": [
+          1,
+          1.4,
+          1
+        ],
+        "vertices": 24
+      },
+      {
+        "dimensions": [
+          0.86,
+          0.9,
+          0.6
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.88,
+          0.42,
+          6.2
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "cape_left_shoulder_drape",
+        "segments": 20
+      },
+      {
+        "dimensions": [
+          0.86,
+          0.9,
+          0.6
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.88,
+          0.42,
+          6.2
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "cape_right_shoulder_drape",
+        "segments": 20
+      }
+    ],
+    "landmarks": {
+      "cape_left_shoulder_drape": [
+        -0.88,
+        0.42,
+        1.0
+      ],
+      "cape_left_sweep": [
+        -0.99901273,
+        -0.141827127,
+        -3.14554818
+      ],
+      "cape_right_shoulder_drape": [
+        0.88,
+        0.42,
+        1.0
+      ],
+      "cape_right_sweep": [
+        1.000740535,
+        -0.110440048,
+        -3.146863689
+      ],
+      "cloak": [
+        -0.00989561,
+        0.593775425,
+        -2.325632813
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [],
+    "provenance": "parameter recipe extracted from spearman revision 11"
+  }
+}

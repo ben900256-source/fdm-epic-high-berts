@@ -1,0 +1,161 @@
+{
+  "component_id": "aurelian.shield",
+  "version": 2,
+  "name": "Slightly broader and taller pointed shield",
+  "family": "shield",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shield"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          2.6784000000000003,
+          1.04,
+          4.823
+        ],
+        "export": true,
+        "location": [
+          0,
+          0,
+          0.1365000000000003
+        ],
+        "primitive": "cube",
+        "role": "shield"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          14,
+          4,
+          14
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.4983056209018035,
+            0,
+            0.8670014464680368,
+            -0.14
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            -0.8670014464680368,
+            0,
+            0.4983056209018035,
+            -2.275
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          7
+        ],
+        "primitive": "cube",
+        "role": "shield_left_point_halfspace"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          14,
+          4,
+          14
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.4983056209018035,
+            0,
+            -0.8670014464680368,
+            0.14
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0.8670014464680368,
+            0,
+            0.4983056209018035,
+            -2.275
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          7
+        ],
+        "primitive": "cube",
+        "role": "shield_right_point_halfspace"
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "point": [
+        0,
+        0,
+        -2.275
+      ],
+      "shield": [
+        0,
+        0,
+        0.1365000000000003
+      ],
+      "top": [
+        0,
+        0,
+        2.5480000000000005
+      ]
+    },
+    "operations": [
+      {
+        "operand": "shield_left_point_halfspace",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "shield_right_point_halfspace",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "shield"
+      }
+    ],
+    "provenance": "parameter recipe extracted from spearman revision 11",
+    "resize": {
+      "height_factor": 1.06,
+      "lower_tip_preserved": true,
+      "width_factor": 1.08
+    }
+  }
+}

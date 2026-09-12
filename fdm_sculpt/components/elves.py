@@ -206,4 +206,8 @@ from .elves_v10 import make_definitions as make_v10_definitions
 ELF_V10_DEFINITIONS = make_v10_definitions(ELF_V9_DEFINITIONS)
 for _entry in ELF_V10_DEFINITIONS:
     ELF_LIBRARY.register(_entry, build_elf)
+from .elves_v11 import make_definitions as make_v11_definitions
+ELF_V11_DEFINITIONS = make_v11_definitions(ELF_V10_DEFINITIONS)
+for _entry in ELF_V11_DEFINITIONS:
+    ELF_LIBRARY.register(_entry, build_elf)
 ELF_LIBRARY.freeze()

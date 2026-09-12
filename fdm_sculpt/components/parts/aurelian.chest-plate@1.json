@@ -1,0 +1,74 @@
+{
+  "component_id": "aurelian.chest-plate",
+  "version": 1,
+  "name": "Smooth breastplate",
+  "family": "chest-plate",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "smooth_chest_plate"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.16,
+        "dimensions": [
+          1.92,
+          0.75,
+          1.86
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          -0.64,
+          5.43
+        ],
+        "primitive": "cube",
+        "role": "smooth_chest_plate"
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "plate_center": [
+        0,
+        -0.64,
+        0.23
+      ]
+    },
+    "operations": []
+  }
+}

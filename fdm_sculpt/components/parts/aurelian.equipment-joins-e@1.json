@@ -1,0 +1,133 @@
+{
+  "component_id": "aurelian.equipment-joins-e",
+  "version": 1,
+  "name": "equipment joins-e",
+  "family": "equipment-joins",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shield_ground_heel",
+    "shield_spear_brace"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.0,
+        "depth": 1.35,
+        "export": true,
+        "frame_mm": [
+          [
+            0.990894199,
+            0.123737155,
+            -0.053082977,
+            0.384001993
+          ],
+          [
+            -0.121118089,
+            0.991377239,
+            0.050015782,
+            -0.166460017
+          ],
+          [
+            0.058814065,
+            -0.04313104,
+            0.997336763,
+            -5.353760629
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.42,
+          -1.05,
+          0.5
+        ],
+        "primitive": "cone",
+        "radius1": 0.59,
+        "radius2": 0.38,
+        "role": "shield_ground_heel",
+        "rotation": [
+          0,
+          0,
+          0.19634954084936207
+        ],
+        "scale": [
+          1,
+          0.85,
+          1
+        ],
+        "vertices": 16
+      },
+      {
+        "bevel": 0.03,
+        "end": [
+          1.05,
+          -0.610801697,
+          4.497525972
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.995703136,
+            -0.087112737,
+            -0.031410759,
+            0.117790347
+          ],
+          [
+            0.087531523,
+            0.996086906,
+            0.012210972,
+            -0.045791147
+          ],
+          [
+            0.030224115,
+            -0.014907935,
+            0.999431967,
+            -5.197869876
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "primitive": "between",
+        "radius": 0.4,
+        "role": "shield_spear_brace",
+        "start": [
+          -0.270605144,
+          -0.99264716,
+          2.9615
+        ]
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "shield_ground_heel": [
+        -0.188639072,
+        -1.13152863,
+        -4.834506563
+      ],
+      "shield_spear_brace": [
+        0.458506874,
+        -0.764726564,
+        -1.446745061
+      ]
+    },
+    "operations": [],
+    "provenance": "parameter recipe extracted from spearman revision 11"
+  }
+}

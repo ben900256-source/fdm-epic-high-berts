@@ -16,13 +16,25 @@ def verify(output):
     spec = RegimentSpec.load(internal/"regiment-spec.json")
     source = bpy.data.collections["SOURCE_PRIMITIVES"]
     export = bpy.data.collections["EVALUATED_EXPORT"]
+    visual = bpy.context.scene.get("regiment_mode") == "visual-preview"
     checks = dict(source_hidden=source.hide_viewport and source.hide_render,
-                  one_export=len([o for o in export.all_objects if o.type=="MESH"])==1,
                   millimeters=abs(bpy.context.scene.unit_settings.scale_length-0.001)<1e-9)
-    assembly = bpy.data.objects["elf_assembly_exact_source"]
-    checks["assembly_operation_order"] = [m.type for m in assembly.modifiers] == ["BOOLEAN","WELD"]
-    checks["assembly_exact"] = assembly.modifiers[0].solver=="EXACT" and assembly.modifiers[0].operation=="UNION"
-    checks["declared_numerical_weld"] = abs(assembly.modifiers[1].merge_threshold-0.00001)<1e-10
+    if visual:
+        previews = list(bpy.data.collections["VISUAL_PREVIEW"].all_objects)
+        expected = json.loads(bpy.context.scene["assembly_order_json"])
+        # Membership and uniqueness must agree with the retained order.
+        checks["preview_sources"] = (len(previews) == len(expected) and
+            {o.get("visual_source_object") for o in previews} == set(expected))
+        checks["preview_only"] = (not list(export.all_objects) and
+            bpy.context.scene.get("digitally_validated") is False and
+            all(o.type == "MESH" and len(o.data.vertices) > 0 and not o.modifiers and
+                o.get("export_geometry") is False for o in previews))
+    else:
+        checks["one_export"] = len([o for o in export.all_objects if o.type=="MESH"])==1
+        assembly = bpy.data.objects["elf_assembly_exact_source"]
+        checks["assembly_operation_order"] = [m.type for m in assembly.modifiers] == ["BOOLEAN","WELD"]
+        checks["assembly_exact"] = assembly.modifiers[0].solver=="EXACT" and assembly.modifiers[0].operation=="UNION"
+        checks["declared_numerical_weld"] = abs(assembly.modifiers[1].merge_threshold-0.00001)<1e-10
     records = []
     for instance in spec.instances:
         definition = ELF_LIBRARY.resolve(instance.component_id,instance.version)

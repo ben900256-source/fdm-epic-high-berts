@@ -1,0 +1,43 @@
+{
+  "component_id": "aurelian.strip",
+  "version": 1,
+  "name": "20 mm strip",
+  "family": "base",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "strip"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0,
+        "dimensions": [
+          20,
+          5,
+          1
+        ],
+        "export": true,
+        "location": [
+          0,
+          0,
+          0.5
+        ],
+        "primitive": "cube",
+        "role": "strip"
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": []
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "component_id": "aurelian.head",
+  "version": 3,
+  "name": "Integrated broad-plane helmeted face",
+  "family": "head",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "cranium"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.24,
+        "dimensions": [
+          1.48,
+          1.8,
+          1.88
+        ],
+        "export": true,
+        "location": [
+          0,
+          -0.04,
+          0.16999999999999993
+        ],
+        "primitive": "cube",
+        "role": "cranium"
+      },
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          1.12,
+          1.6,
+          0.94
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.12,
+          -0.43
+        ],
+        "primitive": "cube",
+        "role": "chin"
+      },
+      {
+        "bevel": 0.0,
+        "depth": 0.82,
+        "export": false,
+        "location": [
+          0,
+          -1.01,
+          0.19
+        ],
+        "primitive": "cone",
+        "radius1": 0.29,
+        "radius2": 0.14,
+        "role": "nose_plane",
+        "rotation": [
+          0,
+          0,
+          0.7853981633974483
+        ],
+        "scale": [
+          0.85,
+          1.2,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "dimensions": [
+          1.5,
+          1.76,
+          4.4
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          0.0
+        ],
+        "primitive": "sphere",
+        "ring_count": 30,
+        "role": "head_envelope",
+        "segments": 28
+      },
+      {
+        "bevel": 0.04,
+        "dimensions": [
+          0.4,
+          0.42,
+          0.5
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.85,
+          -0.04
+        ],
+        "primitive": "cube",
+        "role": "nose_root"
+      },
+      {
+        "bevel": 0.075,
+        "dimensions": [
+          0.43,
+          0.92,
+          0.26
+        ],
+        "export": false,
+        "location": [
+          -0.32,
+          -0.87,
+          0.49
+        ],
+        "primitive": "cube",
+        "role": "left_eye_socket"
+      },
+      {
+        "bevel": 0.075,
+        "dimensions": [
+          0.43,
+          0.92,
+          0.26
+        ],
+        "export": false,
+        "location": [
+          0.32,
+          -0.87,
+          0.49
+        ],
+        "primitive": "cube",
+        "role": "right_eye_socket"
+      },
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          0.52,
+          0.36,
+          0.6
+        ],
+        "export": false,
+        "location": [
+          -0.32,
+          -0.75,
+          0.015
+        ],
+        "primitive": "cube",
+        "role": "left_cheek_plane"
+      },
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          0.52,
+          0.36,
+          0.6
+        ],
+        "export": false,
+        "location": [
+          0.32,
+          -0.75,
+          0.015
+        ],
+        "primitive": "cube",
+        "role": "right_cheek_plane"
+      },
+      {
+        "bevel": 0.075,
+        "dimensions": [
+          1.14,
+          0.32,
+          0.25
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.81,
+          0.7
+        ],
+        "primitive": "cube",
+        "role": "brow_ridge"
+      }
+    ],
+    "face_style": {
+      "brow": "one broad beveled ridge blended into the temples",
+      "cheeks": "broad close-fitted beveled planes",
+      "chin": "wide angular silhouette",
+      "ears": "omitted",
+      "facial_hair": "none",
+      "mouth": "omitted under helmet",
+      "nose": "oversized four-plane wedge"
+    },
+    "landmarks": {
+      "brow_ridge": [
+        0,
+        -0.81,
+        0.7
+      ],
+      "chin": [
+        0,
+        -0.12,
+        -0.43
+      ],
+      "cranium": [
+        0,
+        -0.04,
+        0.16999999999999993
+      ],
+      "head_envelope": [
+        0,
+        0.08,
+        0.0
+      ],
+      "left_cheek_plane": [
+        -0.32,
+        -0.75,
+        0.015
+      ],
+      "left_eye_socket": [
+        -0.32,
+        -0.87,
+        0.49
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "nose_plane": [
+        0,
+        -1.01,
+        0.19
+      ],
+      "nose_root": [
+        0,
+        -0.85,
+        -0.04
+      ],
+      "right_cheek_plane": [
+        0.32,
+        -0.75,
+        0.015
+      ],
+      "right_eye_socket": [
+        0.32,
+        -0.87,
+        0.49
+      ]
+    },
+    "operations": [
+      {
+        "operand": "head_envelope",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "chin",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "nose_root",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "left_cheek_plane",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "right_cheek_plane",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "brow_ridge",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "left_eye_socket",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "right_eye_socket",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "nose_plane",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "cranium"
+      }
+    ],
+    "provenance": "parameter recipe extracted from spearman revision 11"
+  }
+}

@@ -1,6 +1,25 @@
 # Elf proof repository rules
 
-- Scope: five original 8 mm sole-to-eye high-elf spearmen on a 20 × 5 × 1 mm strip.
+- Reuse the existing Blender GUI window for review updates. Load the new saved
+  scene into that process; start a new GUI only when none is running.
+- Current phase is visual iteration across the army. Design reusable pieces
+  independently in `fdm_sculpt/components/parts/`, pin positive integer revisions,
+  and compose them through `specs/elf-modular-visual.json`. Use `atelier part`
+  for isolated edits and `atelier compose` for assembled review. Compile only
+  changed or missing parts; reuse immutable caches and place collection instances
+  for everything else. Repositioning parts must not regenerate their geometry.
+  Keep renders opt-in. Do not run whole-elf recipe generation for routine edits.
+  Use local Exact CSG, overlapping visual parts, saved provenance and optional
+  review images. Defer manufacturing builds until explicit publication/release
+  preparation or a request for print files. Skip full-strip fusion, independent
+  geometry repeats, mesh printability checks and slicing in this mode. Label
+  it visual-only; keep `EVALUATED_EXPORT` empty and use `VISUAL_PREVIEW`.
+  The manufacturing requirements below still apply to `regiment build` and
+  print-readiness work when the user resumes that phase.
+- Current reference model: five original 8 mm sole-to-eye high-elf spearmen on a
+  20 × 5 × 1 mm strip. The visual parts/assembly workflow also supports isolated
+  pieces, alternative models and other army units; the five-figure restrictions
+  apply to the historical spearman print-proof specification only.
 - Use Python 3.13, Blender 5.1.2 and PrusaSlicer 2.9.5. The target is a five-tool
   Prusa XL, tool 2 with a 0.25 mm nozzle, single-color PLA and 0.05 mm layers.
 - Generate only parameterized primitives, transforms, bevels and ordered Exact

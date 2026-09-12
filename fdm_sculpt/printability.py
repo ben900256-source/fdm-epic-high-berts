@@ -174,7 +174,7 @@ def assess_face_detail(layers, spec, output):
     masks={}
     records=[]
     for instance in spec.instances:
-        if instance.version!=10:
+        if instance.version not in (10,11):
             continue
         plan=resolve_elf(ELF_LIBRARY.resolve(instance.component_id,instance.version),instance)
         atoms={a['role']:a for a in plan['atoms']}

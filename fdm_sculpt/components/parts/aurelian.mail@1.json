@@ -1,0 +1,1724 @@
+{
+  "component_id": "aurelian.mail",
+  "version": 1,
+  "name": "mail",
+  "family": "mail",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "mail_panel",
+    "mail_link_0_0",
+    "mail_link_0_1",
+    "mail_link_0_2",
+    "mail_link_0_3",
+    "mail_link_1_0",
+    "mail_link_1_1",
+    "mail_link_1_2",
+    "mail_link_1_3",
+    "mail_link_2_0",
+    "mail_link_2_1",
+    "mail_link_2_2",
+    "mail_link_2_3",
+    "mail_link_3_0",
+    "mail_link_3_1",
+    "mail_link_3_2",
+    "mail_link_3_3"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.16,
+        "dimensions": [
+          1.92,
+          0.75,
+          1.86
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          -0.64,
+          5.43
+        ],
+        "primitive": "cube",
+        "role": "mail_panel"
+      },
+      {
+        "dimensions": [
+          0.46,
+          0.66,
+          0.48
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.7000000000000001,
+          -0.97,
+          4.8
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "mail_link_0_0",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.4,
+          0.22
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.7000000000000001,
+          -1.29,
+          4.8
+        ],
+        "primitive": "sphere",
+        "ring_count": 10,
+        "role": "mail_link_0_0_recess",
+        "segments": 12
+      },
+      {
+        "dimensions": [
+          0.46,
+          0.66,
+          0.48
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.26,
+          -0.97,
+          4.8
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "mail_link_0_1",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.4,
+          0.22
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.26,
+          -1.29,
+          4.8
+        ],
+        "primitive": "sphere",
+        "ring_count": 10,
+        "role": "mail_link_0_1_recess",
+        "segments": 12
+      },
+      {
+        "dimensions": [
+          0.46,
+          0.66,
+          0.48
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.17999999999999997,
+          -0.97,
+          4.8
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "mail_link_0_2",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.4,
+          0.22
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.17999999999999997,
+          -1.29,
+          4.8
+        ],
+        "primitive": "sphere",
+        "ring_count": 10,
+        "role": "mail_link_0_2_recess",
+        "segments": 12
+      },
+      {
+        "dimensions": [
+          0.46,
+          0.66,
+          0.48
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.62,
+          -0.97,
+          4.8
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "mail_link_0_3",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.4,
+          0.22
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.62,
+          -1.29,
+          4.8
+        ],
+        "primitive": "sphere",
+        "ring_count": 10,
+        "role": "mail_link_0_3_recess",
+        "segments": 12
+      },
+      {
+        "dimensions": [
+          0.46,
+          0.66,
+          0.48
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.62,
+          -0.97,
+          5.22
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "mail_link_1_0",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.4,
+          0.22
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.62,
+          -1.29,
+          5.22
+        ],
+        "primitive": "sphere",
+        "ring_count": 10,
+        "role": "mail_link_1_0_recess",
+        "segments": 12
+      },
+      {
+        "dimensions": [
+          0.46,
+          0.66,
+          0.48
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.18000000000000002,
+          -0.97,
+          5.22
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "mail_link_1_1",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.4,
+          0.22
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.18000000000000002,
+          -1.29,
+          5.22
+        ],
+        "primitive": "sphere",
+        "ring_count": 10,
+        "role": "mail_link_1_1_recess",
+        "segments": 12
+      },
+      {
+        "dimensions": [
+          0.46,
+          0.66,
+          0.48
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.25999999999999995,
+          -0.97,
+          5.22
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "mail_link_1_2",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.4,
+          0.22
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.25999999999999995,
+          -1.29,
+          5.22
+        ],
+        "primitive": "sphere",
+        "ring_count": 10,
+        "role": "mail_link_1_2_recess",
+        "segments": 12
+      },
+      {
+        "dimensions": [
+          0.46,
+          0.66,
+          0.48
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.7000000000000001,
+          -0.97,
+          5.22
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "mail_link_1_3",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.4,
+          0.22
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.7000000000000001,
+          -1.29,
+          5.22
+        ],
+        "primitive": "sphere",
+        "ring_count": 10,
+        "role": "mail_link_1_3_recess",
+        "segments": 12
+      },
+      {
+        "dimensions": [
+          0.46,
+          0.66,
+          0.48
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.7000000000000001,
+          -0.97,
+          5.64
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "mail_link_2_0",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.4,
+          0.22
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.7000000000000001,
+          -1.29,
+          5.64
+        ],
+        "primitive": "sphere",
+        "ring_count": 10,
+        "role": "mail_link_2_0_recess",
+        "segments": 12
+      },
+      {
+        "dimensions": [
+          0.46,
+          0.66,
+          0.48
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.26,
+          -0.97,
+          5.64
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "mail_link_2_1",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.4,
+          0.22
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.26,
+          -1.29,
+          5.64
+        ],
+        "primitive": "sphere",
+        "ring_count": 10,
+        "role": "mail_link_2_1_recess",
+        "segments": 12
+      },
+      {
+        "dimensions": [
+          0.46,
+          0.66,
+          0.48
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.17999999999999997,
+          -0.97,
+          5.64
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "mail_link_2_2",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.4,
+          0.22
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.17999999999999997,
+          -1.29,
+          5.64
+        ],
+        "primitive": "sphere",
+        "ring_count": 10,
+        "role": "mail_link_2_2_recess",
+        "segments": 12
+      },
+      {
+        "dimensions": [
+          0.46,
+          0.66,
+          0.48
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.62,
+          -0.97,
+          5.64
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "mail_link_2_3",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.4,
+          0.22
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.62,
+          -1.29,
+          5.64
+        ],
+        "primitive": "sphere",
+        "ring_count": 10,
+        "role": "mail_link_2_3_recess",
+        "segments": 12
+      },
+      {
+        "dimensions": [
+          0.46,
+          0.66,
+          0.48
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.62,
+          -0.97,
+          6.06
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "mail_link_3_0",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.4,
+          0.22
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.62,
+          -1.29,
+          6.06
+        ],
+        "primitive": "sphere",
+        "ring_count": 10,
+        "role": "mail_link_3_0_recess",
+        "segments": 12
+      },
+      {
+        "dimensions": [
+          0.46,
+          0.66,
+          0.48
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.18000000000000002,
+          -0.97,
+          6.06
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "mail_link_3_1",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.4,
+          0.22
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.18000000000000002,
+          -1.29,
+          6.06
+        ],
+        "primitive": "sphere",
+        "ring_count": 10,
+        "role": "mail_link_3_1_recess",
+        "segments": 12
+      },
+      {
+        "dimensions": [
+          0.46,
+          0.66,
+          0.48
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.25999999999999995,
+          -0.97,
+          6.06
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "mail_link_3_2",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.4,
+          0.22
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.25999999999999995,
+          -1.29,
+          6.06
+        ],
+        "primitive": "sphere",
+        "ring_count": 10,
+        "role": "mail_link_3_2_recess",
+        "segments": 12
+      },
+      {
+        "dimensions": [
+          0.46,
+          0.66,
+          0.48
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.7000000000000001,
+          -0.97,
+          6.06
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "mail_link_3_3",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.4,
+          0.22
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.7000000000000001,
+          -1.29,
+          6.06
+        ],
+        "primitive": "sphere",
+        "ring_count": 10,
+        "role": "mail_link_3_3_recess",
+        "segments": 12
+      }
+    ],
+    "landmarks": {
+      "mail_link_0_0": [
+        -0.7,
+        -0.97,
+        -0.4
+      ],
+      "mail_link_0_0_recess": [
+        -0.7,
+        -1.29,
+        -0.4
+      ],
+      "mail_link_0_1": [
+        -0.26,
+        -0.97,
+        -0.4
+      ],
+      "mail_link_0_1_recess": [
+        -0.26,
+        -1.29,
+        -0.4
+      ],
+      "mail_link_0_2": [
+        0.18,
+        -0.97,
+        -0.4
+      ],
+      "mail_link_0_2_recess": [
+        0.18,
+        -1.29,
+        -0.4
+      ],
+      "mail_link_0_3": [
+        0.62,
+        -0.97,
+        -0.4
+      ],
+      "mail_link_0_3_recess": [
+        0.62,
+        -1.29,
+        -0.4
+      ],
+      "mail_link_1_0": [
+        -0.62,
+        -0.97,
+        0.02
+      ],
+      "mail_link_1_0_recess": [
+        -0.62,
+        -1.29,
+        0.02
+      ],
+      "mail_link_1_1": [
+        -0.18,
+        -0.97,
+        0.02
+      ],
+      "mail_link_1_1_recess": [
+        -0.18,
+        -1.29,
+        0.02
+      ],
+      "mail_link_1_2": [
+        0.26,
+        -0.97,
+        0.02
+      ],
+      "mail_link_1_2_recess": [
+        0.26,
+        -1.29,
+        0.02
+      ],
+      "mail_link_1_3": [
+        0.7,
+        -0.97,
+        0.02
+      ],
+      "mail_link_1_3_recess": [
+        0.7,
+        -1.29,
+        0.02
+      ],
+      "mail_link_2_0": [
+        -0.7,
+        -0.97,
+        0.44
+      ],
+      "mail_link_2_0_recess": [
+        -0.7,
+        -1.29,
+        0.44
+      ],
+      "mail_link_2_1": [
+        -0.26,
+        -0.97,
+        0.44
+      ],
+      "mail_link_2_1_recess": [
+        -0.26,
+        -1.29,
+        0.44
+      ],
+      "mail_link_2_2": [
+        0.18,
+        -0.97,
+        0.44
+      ],
+      "mail_link_2_2_recess": [
+        0.18,
+        -1.29,
+        0.44
+      ],
+      "mail_link_2_3": [
+        0.62,
+        -0.97,
+        0.44
+      ],
+      "mail_link_2_3_recess": [
+        0.62,
+        -1.29,
+        0.44
+      ],
+      "mail_link_3_0": [
+        -0.62,
+        -0.97,
+        0.86
+      ],
+      "mail_link_3_0_recess": [
+        -0.62,
+        -1.29,
+        0.86
+      ],
+      "mail_link_3_1": [
+        -0.18,
+        -0.97,
+        0.86
+      ],
+      "mail_link_3_1_recess": [
+        -0.18,
+        -1.29,
+        0.86
+      ],
+      "mail_link_3_2": [
+        0.26,
+        -0.97,
+        0.86
+      ],
+      "mail_link_3_2_recess": [
+        0.26,
+        -1.29,
+        0.86
+      ],
+      "mail_link_3_3": [
+        0.7,
+        -0.97,
+        0.86
+      ],
+      "mail_link_3_3_recess": [
+        0.7,
+        -1.29,
+        0.86
+      ],
+      "mail_panel": [
+        0.0,
+        -0.64,
+        0.23
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "mail_link_0_0_recess",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "mail_link_0_0"
+      },
+      {
+        "operand": "mail_link_0_1_recess",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "mail_link_0_1"
+      },
+      {
+        "operand": "mail_link_0_2_recess",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "mail_link_0_2"
+      },
+      {
+        "operand": "mail_link_0_3_recess",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "mail_link_0_3"
+      },
+      {
+        "operand": "mail_link_1_0_recess",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "mail_link_1_0"
+      },
+      {
+        "operand": "mail_link_1_1_recess",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "mail_link_1_1"
+      },
+      {
+        "operand": "mail_link_1_2_recess",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "mail_link_1_2"
+      },
+      {
+        "operand": "mail_link_1_3_recess",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "mail_link_1_3"
+      },
+      {
+        "operand": "mail_link_2_0_recess",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "mail_link_2_0"
+      },
+      {
+        "operand": "mail_link_2_1_recess",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "mail_link_2_1"
+      },
+      {
+        "operand": "mail_link_2_2_recess",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "mail_link_2_2"
+      },
+      {
+        "operand": "mail_link_2_3_recess",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "mail_link_2_3"
+      },
+      {
+        "operand": "mail_link_3_0_recess",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "mail_link_3_0"
+      },
+      {
+        "operand": "mail_link_3_1_recess",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "mail_link_3_1"
+      },
+      {
+        "operand": "mail_link_3_2_recess",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "mail_link_3_2"
+      },
+      {
+        "operand": "mail_link_3_3_recess",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "mail_link_3_3"
+      }
+    ],
+    "provenance": "parameter recipe extracted from spearman revision 11"
+  }
+}

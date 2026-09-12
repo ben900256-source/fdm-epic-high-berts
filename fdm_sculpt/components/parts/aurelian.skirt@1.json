@@ -1,0 +1,312 @@
+{
+  "component_id": "aurelian.skirt",
+  "version": 1,
+  "name": "skirt",
+  "family": "skirt",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "skirt_core",
+    "skirt_rising_underlay",
+    "skirt_lame_0",
+    "skirt_lame_1",
+    "skirt_lame_2"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.0,
+        "depth": 2.0,
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          3.7
+        ],
+        "primitive": "cone",
+        "radius1": 1.3,
+        "radius2": 0.97,
+        "role": "skirt_core",
+        "rotation": [
+          0,
+          0,
+          0.19634954084936207
+        ],
+        "scale": [
+          1,
+          0.75,
+          1
+        ],
+        "vertices": 16
+      },
+      {
+        "bevel": 0.0,
+        "depth": 0.65,
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          -0.025,
+          2.65
+        ],
+        "primitive": "cone",
+        "radius1": 0.99,
+        "radius2": 1.3,
+        "role": "skirt_rising_underlay",
+        "rotation": [
+          0,
+          0,
+          0.19634954084936207
+        ],
+        "scale": [
+          1,
+          0.72,
+          1
+        ],
+        "vertices": 16
+      },
+      {
+        "bevel": 0.0,
+        "depth": 0.65,
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          -0.025,
+          2.95
+        ],
+        "primitive": "cone",
+        "radius1": 1.3,
+        "radius2": 1.0,
+        "role": "skirt_lame_0",
+        "rotation": [
+          0,
+          0,
+          0.19634954084936207
+        ],
+        "scale": [
+          1,
+          0.72,
+          1
+        ],
+        "vertices": 16
+      },
+      {
+        "bevel": 0.0,
+        "depth": 0.65,
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          -0.025,
+          3.48
+        ],
+        "primitive": "cone",
+        "radius1": 1.2,
+        "radius2": 0.925,
+        "role": "skirt_lame_1",
+        "rotation": [
+          0,
+          0,
+          0.19634954084936207
+        ],
+        "scale": [
+          1,
+          0.72,
+          1
+        ],
+        "vertices": 16
+      },
+      {
+        "bevel": 0.0,
+        "depth": 0.65,
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          -0.025,
+          4.01
+        ],
+        "primitive": "cone",
+        "radius1": 1.1,
+        "radius2": 0.85,
+        "role": "skirt_lame_2",
+        "rotation": [
+          0,
+          0,
+          0.19634954084936207
+        ],
+        "scale": [
+          1,
+          0.72,
+          1
+        ],
+        "vertices": 16
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "skirt_core": [
+        0.0,
+        0.0,
+        -1.5
+      ],
+      "skirt_lame_0": [
+        0.0,
+        -0.025,
+        -2.25
+      ],
+      "skirt_lame_1": [
+        0.0,
+        -0.025,
+        -1.72
+      ],
+      "skirt_lame_2": [
+        0.0,
+        -0.025,
+        -1.19
+      ],
+      "skirt_rising_underlay": [
+        0.0,
+        -0.025,
+        -2.55
+      ]
+    },
+    "operations": [],
+    "provenance": "parameter recipe extracted from spearman revision 11"
+  }
+}

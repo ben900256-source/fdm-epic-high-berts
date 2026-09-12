@@ -1,0 +1,182 @@
+{
+  "component_id": "aurelian.shield",
+  "version": 1,
+  "name": "shield",
+  "family": "shield",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shield"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          2.48,
+          1.04,
+          4.55
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.28
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.99
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -3.175
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.28,
+          -0.99,
+          3.175
+        ],
+        "primitive": "cube",
+        "role": "shield"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          14,
+          4,
+          14
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.491321187,
+            0.0,
+            0.870978468,
+            -0.14
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.870978468,
+            0.0,
+            0.491321187,
+            -2.275
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          7
+        ],
+        "primitive": "cube",
+        "role": "shield_left_point_halfspace"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          14,
+          4,
+          14
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.491321187,
+            0.0,
+            -0.870978468,
+            0.14
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.870978468,
+            0.0,
+            0.491321187,
+            -2.275
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          7
+        ],
+        "primitive": "cube",
+        "role": "shield_right_point_halfspace"
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "shield": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_left_point_halfspace": [
+        5.956849276,
+        0.0,
+        1.164248309
+      ],
+      "shield_right_point_halfspace": [
+        -5.956849276,
+        0.0,
+        1.164248309
+      ]
+    },
+    "operations": [
+      {
+        "operand": "shield_left_point_halfspace",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "shield_right_point_halfspace",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "shield"
+      }
+    ],
+    "provenance": "parameter recipe extracted from spearman revision 11"
+  }
+}

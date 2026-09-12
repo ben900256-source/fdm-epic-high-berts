@@ -1,0 +1,125 @@
+{
+  "component_id": "aurelian.crest",
+  "version": 1,
+  "name": "crest",
+  "family": "crest",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "helmet_leaf_crest",
+    "helmet_crest_spine"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          0.78,
+          0.72,
+          1.44
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          -0.56,
+          8.64
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "helmet_leaf_crest",
+        "segments": 20
+      },
+      {
+        "dimensions": [
+          0.3,
+          0.46,
+          1.2
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          -0.85,
+          8.62
+        ],
+        "primitive": "sphere",
+        "ring_count": 16,
+        "role": "helmet_crest_spine",
+        "segments": 16
+      }
+    ],
+    "landmarks": {
+      "helmet_crest_spine": [
+        0.0,
+        -0.85,
+        1.42
+      ],
+      "helmet_leaf_crest": [
+        0.0,
+        -0.56,
+        1.44
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [],
+    "provenance": "parameter recipe extracted from spearman revision 11"
+  }
+}

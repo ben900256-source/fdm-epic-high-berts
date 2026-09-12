@@ -6,6 +6,11 @@ trial-print files for a five-tool Prusa XL using tool 2's 0.25 mm nozzle.
 
 ![Five spearmen with seahorse shields](docs/images/three-quarter.png)
 
+Revision 11 adds a backed mail breast panel, short tunic sleeves with hems,
+and a raised leaf crest on each helmet. It preserves revision 10's crown and
+face recipes. Generate it with `specs/elf-spearman-proof-v11.json`; the images
+and published evidence below still document revision 10.
+
 Revision 10 has five individual poses, broad pointed shields with raised
 seahorse insignia, shoulder-hung flared capes, rounded torso and shoulder armor,
 continuous spear grips, and curved pointed helmets with integrated brows and
@@ -21,20 +26,38 @@ this build is not labeled **digitally validated**.
 
 ## Run a visual review
 
+The default workflow is now [reusable parts and cached assembly](docs/reusable-parts.md):
+
+```powershell
+py -3.13 -m fdm_sculpt.atelier part aurelian.crest@2 --seed 1001 --output out/crest-review
+py -3.13 -m fdm_sculpt.atelier compose specs/elf-modular-visual.json --seed 1001 --output out/army-review
+```
+
+Open the resulting `assembly.blend`. Only missing or changed parts compile;
+unchanged pieces are shared collection instances. Renders are opt-in with
+`--render`. The full recipes below remain available for historical proofs.
+
+Use `preview` during visual iteration. It evaluates local face and decoration
+cuts once, saves overlapping parts in `VISUAL_PREVIEW`, and skips the expensive
+whole-strip fusion, manufacturing checks, repeat build and slicing. Hidden
+recipes and saved-scene provenance remain available. These scenes are for
+appearance review only. Use `build` when preparing for printing.
+
 Use Python 3.13 and Blender **5.1.2**. Set `BLENDER_BIN` if Blender is outside the
 standard installation paths. From this repository:
 
 ```powershell
 py -m pip install -e ".[test]"
-py -m fdm_sculpt.regiment review specs/elf-spearman-proof-v10.json --seed 1001 --output out/elf-v10-review
+py -m fdm_sculpt.regiment preview specs/elf-spearman-proof-v11.json --seed 1001 --output out/elf-v11-preview
 py -m pytest
 ```
 
-Open `out/elf-v10-review/internal/elf-spearman-proof.blend` and orbit the selected
-fused strip with the middle mouse button. Technical PNGs appear in `previews/`.
+Open `out/elf-v11-preview/internal/elf-spearman-proof.blend` and orbit the selected
+figures with the middle mouse button. Three review PNGs appear in `previews/`;
+add `--no-renders` for the fastest scene-only iteration.
 Use a fresh output directory for every generation. Hidden `SOURCE_PRIMITIVES`
 retain the parameterized geometry and Exact CSG operands; `EVALUATED_EXPORT`
-contains the printable solid. Revise recipes and regenerate instead of editing
+is populated only by fused proof builds. Revise recipes and regenerate instead of editing
 mesh vertices.
 
 ## Prepare a trial print

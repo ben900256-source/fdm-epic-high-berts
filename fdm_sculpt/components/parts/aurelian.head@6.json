@@ -1,0 +1,247 @@
+{
+  "component_id": "aurelian.head",
+  "version": 6,
+  "name": "Organic face with integrated brow and mouth",
+  "family": "head",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "cranium"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          1.44,
+          1.92,
+          2.02
+        ],
+        "export": true,
+        "location": [
+          0,
+          -0.08,
+          0.02
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "cranium",
+        "segments": 48
+      },
+      {
+        "dimensions": [
+          1.5,
+          1.76,
+          4.4
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          0.0
+        ],
+        "primitive": "sphere",
+        "ring_count": 30,
+        "role": "head_envelope",
+        "segments": 28
+      },
+      {
+        "dimensions": [
+          0.32,
+          0.34,
+          0.46
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.75,
+          -0.04
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "nose_root",
+        "segments": 48
+      },
+      {
+        "dimensions": [
+          0.44,
+          0.62,
+          0.24
+        ],
+        "export": false,
+        "location": [
+          -0.3,
+          -0.82,
+          0.4
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "left_eye_socket",
+        "segments": 48
+      },
+      {
+        "dimensions": [
+          0.44,
+          0.62,
+          0.24
+        ],
+        "export": false,
+        "location": [
+          0.3,
+          -0.82,
+          0.4
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "right_eye_socket",
+        "segments": 48
+      },
+      {
+        "bevel": 0.0,
+        "depth": 0.82,
+        "export": false,
+        "location": [
+          0,
+          -1.01,
+          0.19
+        ],
+        "primitive": "cone",
+        "radius1": 0.29,
+        "radius2": 0.14,
+        "role": "nose_plane",
+        "rotation": [
+          0,
+          0,
+          0.7853981633974483
+        ],
+        "scale": [
+          0.85,
+          1.2,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "dimensions": [
+          0.64,
+          0.34,
+          0.13
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.84,
+          -0.43
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "mouth_line",
+        "segments": 40
+      }
+    ],
+    "face_style": {
+      "brow": "continuous forehead shaped by the eye socket cuts; no added oval",
+      "cheeks": "single continuous curved surface",
+      "chin": "continuous taper of the oval head",
+      "cranium": "oval",
+      "ears": "omitted",
+      "eyes": "elliptical recesses",
+      "facial_hair": "none",
+      "mouth": "single shallow horizontal groove",
+      "nose": "preserved long planar nose"
+    },
+    "landmarks": {
+      "cranium": [
+        0,
+        -0.08,
+        0.02
+      ],
+      "head_envelope": [
+        0,
+        0.08,
+        0.0
+      ],
+      "integrated_brow": [
+        0,
+        -0.72,
+        0.59
+      ],
+      "jaw_tip": [
+        0,
+        -0.08,
+        -0.99
+      ],
+      "left_eye_socket": [
+        -0.3,
+        -0.82,
+        0.4
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "mouth_line": [
+        0,
+        -0.84,
+        -0.43
+      ],
+      "nose_plane": [
+        0,
+        -1.01,
+        0.19
+      ],
+      "nose_root": [
+        0,
+        -0.75,
+        -0.04
+      ],
+      "right_eye_socket": [
+        0.3,
+        -0.82,
+        0.4
+      ]
+    },
+    "operations": [
+      {
+        "operand": "head_envelope",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "nose_root",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "left_eye_socket",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "right_eye_socket",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "nose_plane",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "mouth_line",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      }
+    ]
+  }
+}

@@ -30,8 +30,8 @@ def generate(spec_path, *, seed, output, operation="build", renders=True, slice_
                                                 "regiment_provenance_entry.py","blender_backend.py",
                                                 "components/elves.py","components/elves_v2.py",
                                                 "components/elves_v3.py","components/elves_v4.py","components/elves_v5.py","components/elves_v6.py","components/elves_v7.py","components/elves_v8.py","components/elves_v9.py",
-                                                "components/elves_v10.py","components/core.py","prusa.py",
-                                                "regiment_validation.py","printability.py")]
+                                                "components/elves_v10.py","components/elves_v11.py","components/core.py","prusa.py",
+                                                "regiment_validation.py","printability.py","regiment_visual.py")]
     generator_hashes = {str(p.relative_to(package)).replace('\\','/'):sha256(p) for p in sorted(generator_files)}
     (internal/"generator-hashes.json").write_text(json.dumps(generator_hashes,sort_keys=True,indent=2)+"\n")
     blender = find_blender()
@@ -64,13 +64,15 @@ def generate(spec_path, *, seed, output, operation="build", renders=True, slice_
         formats.read_3mf(output/"elf-spearman-proof.3mf")
         if slice_model:
             slice_build(output)
-    return dict(output=str(output), operation=operation, status="internal proof; validation pending")
+    return dict(output=str(output), operation=operation,
+                status="visual preview only; overlapping parts, not print validated" if operation == "preview"
+                else "internal proof; validation pending")
 
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="operation", required=True)
-    for operation in ("review", "build"):
+    for operation in ("preview", "review", "build"):
         command = sub.add_parser(operation)
         command.add_argument("spec", type=Path)
         command.add_argument("--seed", type=int, required=True)

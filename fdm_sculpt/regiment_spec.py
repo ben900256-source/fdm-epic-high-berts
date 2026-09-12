@@ -34,7 +34,7 @@ class RegimentSpec:
         if len(placements) != 5:
             raise ValueError("proof requires five figures")
         instances = []
-        individual_poses = any(all(p.get("version")==v for p in placements) for v in (2,3,4,5,6,7,8,9,10))
+        individual_poses = any(all(p.get("version")==v for p in placements) for v in (2,3,4,5,6,7,8,9,10,11))
         sequence = "abcde" if individual_poses else "abaca"
         for index, (placement, pose) in enumerate(zip(placements, sequence)):
             if set(placement) != {"component_id", "version", "instance_id", "x_mm"}:

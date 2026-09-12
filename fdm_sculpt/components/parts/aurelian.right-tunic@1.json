@@ -1,0 +1,123 @@
+{
+  "component_id": "aurelian.right-tunic",
+  "version": 1,
+  "name": "right tunic",
+  "family": "right-tunic",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "right_pauldron",
+    "right_tunic_hem"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.12,
+        "bevel_segments": 3,
+        "depth": 1.16,
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.59,
+        "radius2": 0.47,
+        "role": "right_pauldron",
+        "vertices": 24
+      },
+      {
+        "bevel": 0.07,
+        "bevel_segments": 3,
+        "depth": 0.28,
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0.44
+        ],
+        "primitive": "cone",
+        "radius1": 0.62,
+        "radius2": 0.59,
+        "role": "right_tunic_hem",
+        "vertices": 24
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "right_pauldron": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "right_tunic_hem": [
+        0.0,
+        0.0,
+        0.44
+      ]
+    },
+    "operations": [],
+    "provenance": "parameter recipe extracted from spearman revision 11"
+  }
+}

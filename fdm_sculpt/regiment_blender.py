@@ -12,6 +12,12 @@ from .regiment_spec import RegimentSpec
 
 
 class ElfBuilder(bb._PartBuilder):
+    def boolean(self, target, cutter, operation="DIFFERENCE", **kwargs):
+        if hasattr(self, "deferred_booleans"):
+            self.deferred_booleans.append((target, cutter, operation, kwargs))
+            return None
+        return super().boolean(target, cutter, operation, **kwargs)
+
     def recipe_atom(self, role, primitive, semantic, args):
         args = dict(args)
         rigid_frame = args.pop("frame_mm", None)
@@ -59,7 +65,7 @@ def measurements(master, spec, head_trees=None):
             ("neck_core", (x, -5, 7.4), (0, 1, 0), 0.75),
             ("right_grip", (x+1.15, -5, 6.4), (0, 1, 0), 0.75),
         )
-        if instance.version in (2,3,4,5,6,7,8,9,10):
+        if instance.version in (2,3,4,5,6,7,8,9,10,11):
             plan = resolve_elf(ELF_LIBRARY.resolve(instance.component_id,instance.version),instance)
             atoms = {a["role"]:a for a in plan["atoms"]}
             local_tests = (
@@ -71,7 +77,7 @@ def measurements(master, spec, head_trees=None):
             )
             tests = []
             for feature,role,start,direction,minimum in local_tests:
-                if instance.version in (3,4,5,6,7,8,9,10) and feature=="right_grip":
+                if instance.version in (3,4,5,6,7,8,9,10,11) and feature=="right_grip":
                     start = (atoms[role]["location"][0],-5,atoms[role]["location"][2])
                 matrix = Matrix(atoms[role]["frame_mm"])
                 tests.append((feature,tuple(matrix@Vector(start)),
@@ -87,12 +93,12 @@ def measurements(master, spec, head_trees=None):
     for instance in spec.instances:
         x = instance.anchors["sole"].translate_mm[0]
         front_start,field_start,direction = Vector((x-0.52,-5,4.1)),Vector((x-0.85,-5,4.1)),Vector((0,1,0))
-        if instance.version in (2,3,4,5,6,7,8,9,10):
+        if instance.version in (2,3,4,5,6,7,8,9,10,11):
             plan = resolve_elf(ELF_LIBRARY.resolve(instance.component_id,instance.version),instance)
             shield = next(a for a in plan["atoms"] if a["role"]=="shield")
             matrix = Matrix(shield["frame_mm"])
             front_start,field_start = matrix@Vector((-0.42,-5,3.1)),matrix@Vector((-0.85,-5,3.1))
-            if instance.version in (8,9,10):
+            if instance.version in (8,9,10,11):
                 emblem=plan["shield_insignia"]
                 front_x,front_z=emblem["belly_probe_local"]
                 field_x,field_z=emblem["field_probe_local"]
@@ -109,7 +115,7 @@ def measurements(master, spec, head_trees=None):
     gaps = [round(right[0]-left[1],6) for left,right in zip(envelopes,envelopes[1:])]
     grasps = []
     for instance in spec.instances:
-        if instance.version not in (3,4,5,6,7,8,9,10):
+        if instance.version not in (3,4,5,6,7,8,9,10,11):
             continue
         plan = resolve_elf(ELF_LIBRARY.resolve(instance.component_id,instance.version),instance)
         atoms = {a["role"]:a for a in plan["atoms"]}
@@ -128,7 +134,7 @@ def measurements(master, spec, head_trees=None):
     elbows=[]
     helmet_backs=[]
     for instance in spec.instances:
-        if instance.version not in (4,5,6,7,8,9,10):
+        if instance.version not in (4,5,6,7,8,9,10,11):
             continue
         plan=resolve_elf(ELF_LIBRARY.resolve(instance.component_id,instance.version),instance)
         atoms={a["role"]:a for a in plan["atoms"]}
@@ -151,7 +157,7 @@ def measurements(master, spec, head_trees=None):
                                   passes=projection is not None and projection>=0.25))
     wrist_joins=[]
     for instance in spec.instances:
-        if instance.version not in (5,6,7,8,9,10):
+        if instance.version not in (5,6,7,8,9,10,11):
             continue
         plan=resolve_elf(ELF_LIBRARY.resolve(instance.component_id,instance.version),instance)
         bridge=next(a for a in plan["atoms"] if a["role"]=="right_wrist_bridge")
@@ -161,7 +167,7 @@ def measurements(master, spec, head_trees=None):
                                 passes=width is not None and width>=0.90))
     cape_shoulders=[]
     for instance in spec.instances:
-        if instance.version not in (8,9,10):
+        if instance.version not in (8,9,10,11):
             continue
         plan=resolve_elf(ELF_LIBRARY.resolve(instance.component_id,instance.version),instance)
         cloth=next(a for a in plan["atoms"] if a["role"]=="cape_left_shoulder_drape")
@@ -179,7 +185,7 @@ def measurements(master, spec, head_trees=None):
                                        passes=width is not None and width>=0.75 and projection is not None and projection>=0.70))
     fitted_heads=[]
     for instance in spec.instances:
-        if instance.version!=10:
+        if instance.version not in (10,11):
             continue
         plan=resolve_elf(ELF_LIBRARY.resolve(instance.component_id,instance.version),instance)
         matrix=Matrix(next(a for a in plan['atoms'] if a['role']=='cranium')['frame_mm'])
@@ -224,6 +230,8 @@ def run(job):
                 variant="".join(i.component_id[-1] for i in spec.instances), position=[0,0,0])
     initial = context.begin_part(part)
     builder = ElfBuilder(context, part, initial.collection)
+    if job["operation"] == "preview":
+        builder.deferred_booleans = []
     base = builder.cube("strip", spec.strip_mm, (0,0,0.5), "ivory", bevel=0)
     sources = [base]
     plans = []
@@ -234,6 +242,12 @@ def run(job):
         sources.extend(obj for _,obj in result.objects)
         plans.append(resolve_elf(definition, instance))
     (internal / "resolved-plans.json").write_text(json.dumps(plans, sort_keys=True, indent=2)+"\n")
+    if job["operation"] == "preview":
+        for target, cutter, operation, kwargs in builder.deferred_booleans:
+            bb._PartBuilder.boolean(builder, target, cutter, operation, **kwargs)
+        from .regiment_visual import finish_visual
+        finish_visual(job, context, sources, plans)
+        return
     # Retain the complete assembly expression, including its numerical closure
     # modifier, as procedural source. No edit-mode or mesh-element cleanup.
     operands = bpy.data.collections.new("ELF_ORDERED_UNION_OPERANDS")
@@ -267,7 +281,7 @@ def run(job):
     master["seed"] = spec.seed
     master["status"] = "internal proof - awaiting digital validation and user review"
     head_trees={}
-    if all(i.version==10 for i in spec.instances):
+    if all(i.version in (10,11) for i in spec.instances):
         depsgraph=bpy.context.evaluated_depsgraph_get()
         for obj in context.source_objects['elf_strip']:
             if obj.get('component_geometry_role')=='cranium':
@@ -295,7 +309,7 @@ def run(job):
         "grip-detail": ((1,1,0.25), (1.1,-0.7,6.15), 3.5),
         "pose-detail": ((0.8,-1.8,0.35), (4,0,5.5), 11.5),
     }
-    if all(i.version in (3,4,5,6,7,8,9,10) for i in spec.instances):
+    if all(i.version in (3,4,5,6,7,8,9,10,11) for i in spec.instances):
         grip = plans[2]["spear_grip"]["center"]
         matrix = Matrix(next(a for a in plans[2]["atoms"] if a["role"]=="spear")["frame_mm"])
         focus = tuple(matrix@Vector(grip))
@@ -305,7 +319,7 @@ def run(job):
             "cape-back": ((0,1,0.15),(0,0,5.3),24),
             "cape-detail": ((0.7,1,0.25),(0,0.5,4.4),9),
         })
-    if all(i.version in (4,5,6,7,8,9,10) for i in spec.instances):
+    if all(i.version in (4,5,6,7,8,9,10,11) for i in spec.instances):
         elbow=plans[2]["arms"]["right"]["elbow"]
         anchor=spec.instances[2].anchors["sole"].translate_mm
         elbow_focus=tuple(a+b for a,b in zip(elbow,anchor))
@@ -314,15 +328,15 @@ def run(job):
         head_matrix=Matrix(next(a for a in plans[2]["atoms"] if a["role"]=="helmet_crown")["frame_mm"])
         views["helmet-back"] = ((0.4,1,0.1),tuple(head_matrix@Vector((0,0.2,7.5))),4.4)
         views["cape-top"] = ((0.3,1,0.3),(0,0.85,6.65),4.8)
-        if all(i.version in (5,6,7,8,9,10) for i in spec.instances):
+        if all(i.version in (5,6,7,8,9,10,11) for i in spec.instances):
             views["helmet-crown"] = ((0.6,-1,0.2),tuple(head_matrix@Vector((0,0,8.3))),4.3)
             wrist=plans[2]["arms"]["right"]["wrist"]
             views["wrist-join"] = ((1,-0.05,0.25),tuple(a+b for a,b in zip(wrist,anchor)),3.3)
-            if all(i.version in (6,7,8,9,10) for i in spec.instances):
+            if all(i.version in (6,7,8,9,10,11) for i in spec.instances):
                 views["cape-front"] = ((0,-1,0.03),(0,0,2.4),7.5)
                 views["cape-flare"] = ((0.8,-1,0.25),(0,0,2.4),8)
                 views["elbow-blend"] = ((1,0.5,0.18),elbow_focus,3.5)
-    if all(i.version in (8,9,10) for i in spec.instances):
+    if all(i.version in (8,9,10,11) for i in spec.instances):
         cloth=next(a for a in plans[2]["atoms"] if a["role"]=="cape_left_shoulder_drape")
         cape_focus=tuple(Matrix(cloth["frame_mm"])@Vector((0,0.45,6.0)))
         views["cape-shoulders"] = ((0.5,1,0.35),cape_focus,5.0)
@@ -331,7 +345,7 @@ def run(job):
         shield_matrix=Matrix(shield["frame_mm"])
         views["seahorse-shield"] = (tuple(shield_matrix.to_3x3()@Vector((0,-1,0))),
                                     tuple(shield_matrix@Vector((-0.42,-1.40,3.2))),5.8)
-    if all(i.version==10 for i in spec.instances):
+    if all(i.version in (10,11) for i in spec.instances):
         head_matrix=Matrix(next(a for a in plans[2]['atoms'] if a['role']=='cranium')['frame_mm'])
         for name,direction in [('face-front',(0,-1,0.08)),('face-three-quarter',(-0.55,-1,0.10))]:
             views[name]=(tuple(head_matrix.to_3x3()@Vector(direction)),
