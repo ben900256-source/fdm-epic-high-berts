@@ -1,5 +1,9 @@
 # Elf proof repository rules
 
+- Use [the design requirements](docs/design-requirements.md) when designing
+  new parts and army variants. Terminal-tip dimensions in
+  [the tip guidance](docs/printability.md#terminal-tips) are provisional targets;
+  they do not replace actual sliced-detail and physical-trial checks.
 - Use the local Three.js viewer at http://127.0.0.1:8765 for visual review.
   Successful atelier compositions publish automatically; publish an existing
   saved review with `py -3.13 -m fdm_sculpt.viewer publish <output-directory>`.

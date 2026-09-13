@@ -1,0 +1,258 @@
+{
+  "component_id": "aurelian.spear",
+  "version": 3,
+  "name": "Spear with rounded socket collar",
+  "family": "spear",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "spear",
+    "spear_leaf_lower",
+    "spear_leaf_tip"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.03,
+        "end": [
+          1.05,
+          -0.76,
+          13.6
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -1.05
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.22
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -6.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "primitive": "between",
+        "radius": 0.51,
+        "role": "spear",
+        "start": [
+          1.05,
+          -0.76,
+          -0.15
+        ]
+      },
+      {
+        "bevel": 0.0,
+        "depth": 0.58,
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -1.05
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.22
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -6.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          1.05,
+          -0.76,
+          13.49
+        ],
+        "primitive": "cone",
+        "radius1": 0.39,
+        "radius2": 0.7,
+        "role": "spear_leaf_lower",
+        "rotation": [
+          0,
+          0,
+          0.19634954084936207
+        ],
+        "scale": [
+          1,
+          0.67,
+          1
+        ],
+        "vertices": 16
+      },
+      {
+        "bevel": 0.0,
+        "depth": 1.0,
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -1.05
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.22
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -6.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          1.05,
+          -0.76,
+          14.25
+        ],
+        "primitive": "cone",
+        "radius1": 0.7,
+        "radius2": 0.34,
+        "role": "spear_leaf_tip",
+        "rotation": [
+          0,
+          0,
+          0.19634954084936207
+        ],
+        "scale": [
+          1,
+          0.85,
+          1
+        ],
+        "vertices": 16
+      },
+      {
+        "role": "spear_collar_ramp",
+        "primitive": "cone",
+        "location": [
+          0,
+          0.46,
+          7.0
+        ],
+        "depth": 0.3,
+        "radius1": 0.5,
+        "radius2": 0.69,
+        "vertices": 40,
+        "bevel": 0.025,
+        "bevel_segments": 3,
+        "export": false
+      },
+      {
+        "role": "spear_collar_band",
+        "primitive": "cone",
+        "location": [
+          0,
+          0.46,
+          7.235
+        ],
+        "depth": 0.2,
+        "radius1": 0.69,
+        "radius2": 0.69,
+        "vertices": 40,
+        "bevel": 0.025,
+        "bevel_segments": 3,
+        "export": false
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "spear": [
+        0.0,
+        0.46,
+        0.725
+      ],
+      "spear_leaf_lower": [
+        0.0,
+        0.46,
+        7.49
+      ],
+      "spear_leaf_tip": [
+        0.0,
+        0.46,
+        8.25
+      ],
+      "shaft_bottom": [
+        0,
+        0.46,
+        -6.15
+      ],
+      "shaft_top": [
+        0,
+        0.46,
+        7.6
+      ],
+      "collar": [
+        0,
+        0.46,
+        7.15
+      ]
+    },
+    "operations": [
+      {
+        "target": "spear",
+        "operand": "spear_collar_ramp",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "spear",
+        "operand": "spear_collar_band",
+        "operation": "UNION",
+        "solver": "EXACT"
+      }
+    ],
+    "provenance": "Revision 2 shaft and leaf preserved; rounded socket collar fused into shaft with a tapered underside.",
+    "design": {
+      "shaft_length_mm": 13.75,
+      "shaft_extension_mm": 2.75,
+      "shaft_length_factor": 1.25,
+      "shaft_diameter_mm": 1.02,
+      "note": "The foot and grip stay in place; the shaft extends upward and the unchanged leaf tip moves with it.",
+      "collar_diameter_mm": 1.38
+    }
+  }
+}

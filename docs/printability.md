@@ -35,6 +35,31 @@ nose and brow landmark check whether the actual deposited layer contains the
 expected recess or solid material. This creates 25 feature checks for the strip
 in `previews/face-layer-evidence.json`, supplementing whole-contour survival.
 
+## Terminal tips
+
+For future spear and banner-pole finial revisions, use an upward-narrowing
+taper ending in a small flat or rounded cap. A taper that stays over the
+material below it does not introduce an outward overhang; a sideways-pointing
+tip must be assessed in its actual printing orientation.
+
+Start around **0.3-0.4 mm across the narrowest dimension of the terminal cap**.
+This is a provisional design recommendation, not a validated minimum or a
+replacement for the release gates. Measure the resulting geometry after
+scaling and bevels, rather than using the primitive radius alone. Keep the
+supporting shaft at least 1.0 mm thick; the thinner region is a short terminal
+taper, not an extended thin stem.
+
+The intended next adjustment is moderately sharper ordinary spear tips and
+a slightly blunter banner finial. This recommendation has not yet changed
+`aurelian.spear@3` or `aurelian.standard-pole@4`.
+
+Inspect the last deposited layers for omitted detail and cooling artifacts,
+then check handling strength in a physical trial. A 0.05 mm layer height is
+vertical resolution, not a 0.05 mm printable width. Arachne may widen small
+features or omit features below its configured minimum; a sharp viewer
+silhouette alone is insufficient evidence.
+[Prusa Arachne documentation](https://help.prusa3d.com/article/arachne-perimeter-generator_352769)
+
 ## Support screen
 
 Prefer surfaces that grow no more than one layer height sideways per layer

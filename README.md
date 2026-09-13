@@ -26,6 +26,10 @@ this build is not labeled **digitally validated**.
 
 ## Run a visual review
 
+See [army design requirements](docs/design-requirements.md) for the printer,
+geometry targets, reusable-part rules and the distinction between visual
+review and print validation.
+
 The default workflow is now [reusable parts and cached assembly](docs/reusable-parts.md):
 
 ```powershell

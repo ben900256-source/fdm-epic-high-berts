@@ -27,9 +27,12 @@ def test_standard_parts_golden_and_shared_model():
     solo = indexed(load_assembly(ROOT/'specs/elf-standard-bearer.json', definitions))
     assert len(unit) == 94 and len(solo) == 18
     assert 'elf-03/spear' not in unit and 'bearer-01/spear' not in solo
-    assert len([p for p in unit.values() if p['part'] == 'aurelian.spear@2']) == 4
+    assert len([p for p in unit.values() if p['part'] == 'aurelian.spear@3']) == 4
     removed = {'spear','shield','shield-insignia','equipment-joins','shield-torso-connector','shield-lower-connector'}
     for name, p in base.items():
+        if name == 'elf-03/left-arm':
+            assert unit[name]['part'] == 'aurelian.horn-arm@3'
+            continue
         if not (name.startswith('elf-03/') and name.split('/')[1] in removed):
             assert unit[name] == p
         else:
@@ -77,7 +80,7 @@ def test_pole_rooted_banner_and_horn_grip():
     golden = json.loads((ROOT/'tests/fixtures/standard-bearer-v3-golden.json').read_text())
     assert {ref: definitions[ref].sha256 for ref in golden} == golden
     unit = indexed(load_assembly(ROOT/'specs/elf-unit-center-standard.json', definitions))
-    assert unit['elf-03/banner']['part'] == 'aurelian.standard-banner@9'
+    assert unit['elf-03/banner']['part'] == 'aurelian.standard-banner@10'
     assert unit['elf-03/standard-pole']['part'] == 'aurelian.standard-pole@4'
     assert unit['elf-03/horn']['part'] == 'aurelian.war-horn@6'
     horn_golden = json.loads((ROOT/'tests/fixtures/war-horn-v2-golden.json').read_text())
@@ -99,7 +102,7 @@ def test_pole_rooted_banner_and_horn_grip():
         return [sum(m[i][j]*point[j] for j in range(3))+m[i][3] for i in range(3)]
     horn = definitions[unit['elf-03/horn']['part']].to_dict()['parameters']
     arm = definitions[unit['elf-03/left-arm']['part']].to_dict()['parameters']
-    assert math.dist(world(unit['elf-03/horn'],horn['landmarks']['grip']),
+    assert math.dist(world(unit['elf-03/horn'],horn['landmarks']['mouthpiece']),
                      world(unit['elf-03/left-arm'],arm['landmarks']['left_palm'])) < .2
 
 
@@ -235,6 +238,46 @@ def test_centered_banner_and_short_root_taper():
     for name in ('bottom_left','bottom_right','root_contact'):
         point = [a+b for a,b in zip(banner['landmarks'][name],pole['landmarks']['banner_mount'])]
         assert math.hypot(point[0],point[1]-.46) < .51
+
+
+def test_raised_star_mount_preserves_banner_geometry():
+    definitions = catalog()
+    golden = json.loads((ROOT/'tests/fixtures/standard-banner-v10-golden.json').read_text())
+    assert {ref: definitions[ref].sha256 for ref in golden} == golden
+    old = definitions['aurelian.standard-banner@9'].to_dict()['parameters']
+    new = definitions['aurelian.standard-banner@10'].to_dict()['parameters']
+    assert new['atoms'] == old['atoms'] and new['operations'] == old['operations']
+    assert old['landmarks']['insignia_mount'][2] < new['landmarks']['insignia_mount'][2] < new['landmarks']['field_center'][2]
+
+
+def test_horn_arm_preserves_shoulder_and_extends_to_grip():
+    definitions = catalog()
+    golden = json.loads((ROOT/'tests/fixtures/horn-arm-v1-golden.json').read_text())
+    assert {ref: definitions[ref].sha256 for ref in golden} == golden
+    old = definitions['aurelian.left-arm-c@3'].to_dict()['parameters']
+    new = definitions['aurelian.horn-arm@1'].to_dict()['parameters']
+    assert new['atoms'][:3] == old['atoms'][:3]
+    assert new['landmarks']['left_cuff'][1] < old['landmarks']['left_cuff'][1]-.85
+
+
+def test_upright_horn_has_a_rising_forearm_and_outward_bell():
+    definitions = catalog()
+    for revision in (2,3):
+        golden = json.loads((ROOT/f'tests/fixtures/horn-arm-v{revision}-golden.json').read_text())
+        assert {ref: definitions[ref].sha256 for ref in golden} == golden
+    arm = definitions['aurelian.horn-arm@3'].to_dict()['parameters']
+    old = definitions['aurelian.horn-arm@1'].to_dict()['parameters']
+    assert arm['landmarks']['left_cuff'] == old['landmarks']['left_cuff']
+    placements = indexed(load_assembly(ROOT/'specs/elf-standard-bearer.json', definitions))
+    def point(m,p):
+        return [sum(m[i][j]*p[j] for j in range(3))+m[i][3] for i in range(3)]
+    m = placements['bearer-01/left-arm']['mount']
+    low,high = (point(m,arm['landmarks'][key]) for key in ('left_elbow','left_cuff'))
+    assert math.hypot(high[0]-low[0], high[1]-low[1]) < high[2]-low[2]
+    horn = definitions['aurelian.war-horn@6'].to_dict()['parameters']['landmarks']
+    m = placements['bearer-01/horn']['mount']
+    axis = [sum(m[i][j]*horn['bell_axis'][j] for j in range(3)) for i in range(3)]
+    assert axis[2] > .8 and axis[1] < -.3
 
 
 def test_organic_horn_retains_grip_and_uses_a_rounded_lip():

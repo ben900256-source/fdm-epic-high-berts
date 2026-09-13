@@ -64,7 +64,22 @@ def test_taller_spear_preserves_foot_width_and_tip_shape():
         assert {k:v for k,v in before.items() if k != 'location'} == {k:v for k,v in after.items() if k != 'location'}
         assert after['location'] == pytest.approx([*before['location'][:2],before['location'][2]+extension])
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()),definitions)
-    assert sum(p['part']=='aurelian.spear@2' for p in assembly['placements']) == 5
+    assert sum(p['part']=='aurelian.spear@3' for p in assembly['placements']) == 5
+
+
+def test_collared_spear_and_buried_helmet_join():
+    definitions = catalog()
+    for name in ('spear-v3-golden.json', 'helmet-v3-golden.json', 'helmet-v4-golden.json', 'helmet-v5-golden.json'):
+        golden = json.loads((ROOT/'tests/fixtures'/name).read_text())
+        assert {ref: definitions[ref].sha256 for ref in golden} == golden
+    spear = definitions['aurelian.spear@3'].to_dict()['parameters']
+    assert spear['atoms'][:3] == definitions['aurelian.spear@2'].to_dict()['parameters']['atoms']
+    old = definitions['aurelian.helmet@2'].to_dict()['parameters']['atoms']
+    new = definitions['aurelian.helmet@3'].to_dict()['parameters']['atoms']
+    assert new[:3] == old[:3]
+    before, after = old[-1], new[-1]
+    assert after['location'][2]+after['depth']/2 == pytest.approx(before['location'][2]+before['depth']/2)
+    assert (after['radius1']-after['radius2'])/after['depth'] == pytest.approx((before['radius1']-before['radius2'])/before['depth'])
 
 
 def cache_records(job):
@@ -232,7 +247,7 @@ def test_rounded_nose_and_lower_brim_revisions():
         assert after['location'][2]-after['dimensions'][2]/2 == pytest.approx(before['location'][2]-before['dimensions'][2]/2)
         assert after['location'][2]+after['dimensions'][2]/2 == pytest.approx(before['location'][2]+before['dimensions'][2]/2-.22)
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()), definitions)
-    for ref in ('aurelian.head@12', 'aurelian.helmet@2'):
+    for ref in ('aurelian.head@12', 'aurelian.helmet@5'):
         assert sum(p['part'] == ref for p in assembly['placements']) == 5
 
 

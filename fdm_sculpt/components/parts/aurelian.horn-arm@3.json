@@ -1,0 +1,529 @@
+{
+  "component_id": "aurelian.horn-arm",
+  "version": 3,
+  "name": "Lowered elbow with rising horn forearm",
+  "family": "left-arm",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "left_sleeve_root",
+    "left_upper_arm",
+    "left_elbow",
+    "left_forearm",
+    "left_palm",
+    "left_grouped_fingers",
+    "left_thumb",
+    "left_cuff",
+    "left_vambrace",
+    "left_elbow_transition",
+    "left_shoulder_slope"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.03,
+        "end": [
+          -1,
+          -0.15,
+          -2.2
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "primitive": "between",
+        "radius": 0.42,
+        "role": "left_sleeve_root",
+        "start": [
+          -0.7000000004478245,
+          0.24000000156739745,
+          -1.2500000005544938
+        ]
+      },
+      {
+        "bevel": 0.03,
+        "end": [
+          -1,
+          -0.15,
+          -2.2
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "primitive": "between",
+        "radius": 0.44,
+        "role": "left_upper_arm",
+        "start": [
+          -1.0000000004367868,
+          1.9143928109421893e-09,
+          0.7799999989123654
+        ]
+      },
+      {
+        "dimensions": [
+          0.94,
+          0.94,
+          0.94
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -1,
+          -0.15,
+          -2.2
+        ],
+        "primitive": "sphere",
+        "ring_count": 8,
+        "role": "left_elbow",
+        "segments": 16
+      },
+      {
+        "role": "left_forearm",
+        "primitive": "between",
+        "export": true,
+        "start": [
+          -1,
+          -0.15,
+          -2.2
+        ],
+        "end": [
+          -0.5429392877509086,
+          -1.5246403903778085,
+          -0.4897085279929675
+        ],
+        "radius": 0.42,
+        "bevel": 0.04
+      },
+      {
+        "dimensions": [
+          0.94,
+          0.96,
+          0.98
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.999048361,
+            0.032989584,
+            0.028531741,
+            0.2112448737908446
+          ],
+          [
+            -0.035953112,
+            0.993225435,
+            0.110501623,
+            -1.6839862525465037
+          ],
+          [
+            -0.024693048,
+            -0.111422271,
+            0.993466321,
+            -5.327732273348032
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.755,
+          -0.625,
+          4.9
+        ],
+        "primitive": "sphere",
+        "ring_count": 8,
+        "role": "left_palm",
+        "segments": 16
+      },
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          0.77,
+          0.36,
+          0.64
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.999048361,
+            0.032989584,
+            0.028531741,
+            0.2112448737908446
+          ],
+          [
+            -0.035953112,
+            0.993225435,
+            0.110501623,
+            -1.6839862525465037
+          ],
+          [
+            -0.024693048,
+            -0.111422271,
+            0.993466321,
+            -5.327732273348032
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.72,
+          -0.95,
+          4.9
+        ],
+        "primitive": "cube",
+        "role": "left_grouped_fingers"
+      },
+      {
+        "dimensions": [
+          0.45,
+          0.53,
+          0.58
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.999048361,
+            0.032989584,
+            0.028531741,
+            0.2112448737908446
+          ],
+          [
+            -0.035953112,
+            0.993225435,
+            0.110501623,
+            -1.6839862525465037
+          ],
+          [
+            -0.024693048,
+            -0.111422271,
+            0.993466321,
+            -5.327732273348032
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.97,
+          -0.74,
+          5.0600000000000005
+        ],
+        "primitive": "sphere",
+        "ring_count": 8,
+        "role": "left_thumb",
+        "segments": 16
+      },
+      {
+        "bevel": 0.06,
+        "bevel_segments": 4,
+        "depth": 0.24,
+        "export": true,
+        "frame_mm": [
+          [
+            0.8713716782024448,
+            -0.21486291632526702,
+            0.4410729255064931,
+            -0.5429392877509086
+          ],
+          [
+            0.4906234792859541,
+            0.38160721589253016,
+            -0.7833674325322039,
+            -1.5246403903778085
+          ],
+          [
+            0.0,
+            0.899004927665557,
+            0.437938511703466,
+            -0.4897085279929675
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.48,
+        "radius2": 0.48,
+        "role": "left_cuff",
+        "rotation": [
+          0,
+          0,
+          0.19634954084936207
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 16
+      },
+      {
+        "role": "left_vambrace",
+        "primitive": "between",
+        "export": true,
+        "start": [
+          -1,
+          -0.15,
+          -2.2
+        ],
+        "end": [
+          -0.5429392877509086,
+          -1.5246403903778085,
+          -0.4897085279929675
+        ],
+        "radius": 0.45,
+        "bevel": 0.04
+      },
+      {
+        "dimensions": [
+          0.98,
+          1.02,
+          1.4483735984582458
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -1,
+          -0.1,
+          -1.75
+        ],
+        "primitive": "sphere",
+        "ring_count": 14,
+        "role": "left_elbow_transition",
+        "segments": 20
+      },
+      {
+        "dimensions": [
+          0.9,
+          0.98,
+          1.3423857315849723
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.566624922,
+            0.034802551,
+            -0.823240536,
+            -0.715
+          ],
+          [
+            0.046662124,
+            -0.998859567,
+            -0.010109972,
+            0.0165
+          ],
+          [
+            -0.822653539,
+            -0.032685589,
+            -0.567602685,
+            0.8035
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "left_shoulder_slope",
+        "segments": 20
+      }
+    ],
+    "landmarks": {
+      "left_cuff": [
+        -0.5429392877509086,
+        -1.5246403903778085,
+        -0.4897085279929675
+      ],
+      "left_elbow": [
+        -1,
+        -0.15,
+        -2.2
+      ],
+      "left_elbow_transition": [
+        -1,
+        -0.1,
+        -1.75
+      ],
+      "left_forearm": [
+        -0.7714696438754542,
+        -0.8373201951889042,
+        -1.3448542639964838
+      ],
+      "left_grouped_fingers": [
+        -0.3996045200291554,
+        -2.060206222456504,
+        -0.336117148438032
+      ],
+      "left_palm": [
+        -0.4238495978641555,
+        -1.7361495971615035,
+        -0.3714651298330317
+      ],
+      "left_shoulder_slope": [
+        -0.715,
+        0.0165,
+        0.8035
+      ],
+      "left_sleeve_root": [
+        -0.8500000002239123,
+        0.04500000078369873,
+        -1.725000000277247
+      ],
+      "left_thumb": [
+        -0.6378737190791552,
+        -1.8249603434265036,
+        -0.19438795198803194
+      ],
+      "left_upper_arm": [
+        -1.0000000002183933,
+        -0.07499999904280359,
+        -0.7100000005438174
+      ],
+      "left_vambrace": [
+        -0.7714696438754542,
+        -0.8373201951889042,
+        -1.3448542639964838
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [],
+    "provenance": "Revision 1 shoulder and hand preserved. Lower the elbow into the skirt side so the forearm rises to the upright horn instead of projecting horizontally.",
+    "shield_fit": {
+      "contact_y_in_shield_frame_mm": 0.5,
+      "rear_surface_y_mm": 0.52
+    },
+    "design": {
+      "support_target": "No removable supports; rising forearm anchored at skirt and upper arm. Requires actual sliced validation."
+    }
+  }
+}

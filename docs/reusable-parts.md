@@ -3,6 +3,9 @@
 Design the part first, then place it in models. The visual workflow does not
 rebuild a regiment when one crest, helmet, torso, shield or weapon changes.
 
+Follow the [army design requirements](design-requirements.md) for printer,
+feature-size and support targets while creating or combining pieces.
+
 The library stores independently versioned parameter definitions in
 `fdm_sculpt/components/parts/`. These define primitives, transforms, bevels,
 ordered local Exact operations and named landmarks, including a local `mount`.
@@ -101,12 +104,24 @@ union retains the complete cloth solid after the root cut.
 
 The shared `aurelian.spear@2` lengthens each ordinary spear shaft by 25 percent,
 from 11 to 13.75 mm. Its foot, grip alignment and diameter stay fixed; the
-existing leaf tip moves upward 2.75 mm. Both spearman layouts use this revision.
+existing leaf tip moves upward 2.75 mm. Revision 3 retains that geometry and
+adds a rounded collar with a tapered underside below the leaf. Both spearman
+layouts use revision 3.
+
+The current helmet is `aurelian.helmet@5`: its cap base is inset into the crown
+to remove the exposed join, with finer primitive resolution on the curved shell.
+The shared bearer recipe uses banner revision 10 with a raised insignia mount
+and `aurelian.horn-arm@3`, extending the grip forward to keep the horn clear of
+the chest plate and mail skirt. The horn is carried upright with its bell facing
+outward and upward; its lower stem is seated in the hand so it grows from the
+hand instead of starting as a hanging island. The lowered elbow gives the
+forearm a rising connection from the skirt to the grip. This is a support-free design
+intent, pending sliced validation. These remain visual-only revisions.
 
 ```powershell
 py -3.13 -m fdm_sculpt.atelier compose specs/elf-standard-bearer.json --seed 1001 --output out/bearer-review
 py -3.13 -m fdm_sculpt.atelier compose specs/elf-unit-center-standard.json --seed 1001 --output out/center-standard-review
-py -3.13 -m fdm_sculpt.atelier part aurelian.standard-banner@9 --seed 1001 --output out/banner-review
+py -3.13 -m fdm_sculpt.atelier part aurelian.standard-banner@10 --seed 1001 --output out/banner-review
 py -3.13 -m fdm_sculpt.atelier part aurelian.standard-insignia@1 --seed 1001 --output out/insignia-review
 ```
 

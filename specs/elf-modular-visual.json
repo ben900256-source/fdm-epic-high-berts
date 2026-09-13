@@ -221,8 +221,8 @@
     },
     {
       "instance_id": "elf-01/helmet",
-      "part": "aurelian.helmet@2",
-      "definition_sha256": "cca8d39be1ac05f40338fe9602103e105a9af40fe87c5d1461c3c23ffbbf30e0",
+      "part": "aurelian.helmet@5",
+      "definition_sha256": "21c6ee3db6b2d03657dcc7352be3a39846921a6dfa81c81a4685aac9c137bbf9",
       "mount": [
         [
           0.943687357,
@@ -314,8 +314,8 @@
     },
     {
       "instance_id": "elf-01/spear",
-      "part": "aurelian.spear@2",
-      "definition_sha256": "797e02eebedc560a2fc78d2597c1d71e7dc1ad233cea353758dc267f0d918d2e",
+      "part": "aurelian.spear@3",
+      "definition_sha256": "9db3410cefc1e75f65c9853e653f569b9b465af8568e080a48836de1b1646722",
       "mount": [
         [
           1.0,
@@ -748,8 +748,8 @@
     },
     {
       "instance_id": "elf-02/helmet",
-      "part": "aurelian.helmet@2",
-      "definition_sha256": "cca8d39be1ac05f40338fe9602103e105a9af40fe87c5d1461c3c23ffbbf30e0",
+      "part": "aurelian.helmet@5",
+      "definition_sha256": "21c6ee3db6b2d03657dcc7352be3a39846921a6dfa81c81a4685aac9c137bbf9",
       "mount": [
         [
           0.970093554,
@@ -841,8 +841,8 @@
     },
     {
       "instance_id": "elf-02/spear",
-      "part": "aurelian.spear@2",
-      "definition_sha256": "797e02eebedc560a2fc78d2597c1d71e7dc1ad233cea353758dc267f0d918d2e",
+      "part": "aurelian.spear@3",
+      "definition_sha256": "9db3410cefc1e75f65c9853e653f569b9b465af8568e080a48836de1b1646722",
       "mount": [
         [
           1.0,
@@ -1275,8 +1275,8 @@
     },
     {
       "instance_id": "elf-03/helmet",
-      "part": "aurelian.helmet@2",
-      "definition_sha256": "cca8d39be1ac05f40338fe9602103e105a9af40fe87c5d1461c3c23ffbbf30e0",
+      "part": "aurelian.helmet@5",
+      "definition_sha256": "21c6ee3db6b2d03657dcc7352be3a39846921a6dfa81c81a4685aac9c137bbf9",
       "mount": [
         [
           0.997434423,
@@ -1368,8 +1368,8 @@
     },
     {
       "instance_id": "elf-03/spear",
-      "part": "aurelian.spear@2",
-      "definition_sha256": "797e02eebedc560a2fc78d2597c1d71e7dc1ad233cea353758dc267f0d918d2e",
+      "part": "aurelian.spear@3",
+      "definition_sha256": "9db3410cefc1e75f65c9853e653f569b9b465af8568e080a48836de1b1646722",
       "mount": [
         [
           1.0,
@@ -1802,8 +1802,8 @@
     },
     {
       "instance_id": "elf-04/helmet",
-      "part": "aurelian.helmet@2",
-      "definition_sha256": "cca8d39be1ac05f40338fe9602103e105a9af40fe87c5d1461c3c23ffbbf30e0",
+      "part": "aurelian.helmet@5",
+      "definition_sha256": "21c6ee3db6b2d03657dcc7352be3a39846921a6dfa81c81a4685aac9c137bbf9",
       "mount": [
         [
           0.933657817,
@@ -1895,8 +1895,8 @@
     },
     {
       "instance_id": "elf-04/spear",
-      "part": "aurelian.spear@2",
-      "definition_sha256": "797e02eebedc560a2fc78d2597c1d71e7dc1ad233cea353758dc267f0d918d2e",
+      "part": "aurelian.spear@3",
+      "definition_sha256": "9db3410cefc1e75f65c9853e653f569b9b465af8568e080a48836de1b1646722",
       "mount": [
         [
           1.0,
@@ -2329,8 +2329,8 @@
     },
     {
       "instance_id": "elf-05/helmet",
-      "part": "aurelian.helmet@2",
-      "definition_sha256": "cca8d39be1ac05f40338fe9602103e105a9af40fe87c5d1461c3c23ffbbf30e0",
+      "part": "aurelian.helmet@5",
+      "definition_sha256": "21c6ee3db6b2d03657dcc7352be3a39846921a6dfa81c81a4685aac9c137bbf9",
       "mount": [
         [
           0.990134252,
@@ -2422,8 +2422,8 @@
     },
     {
       "instance_id": "elf-05/spear",
-      "part": "aurelian.spear@2",
-      "definition_sha256": "797e02eebedc560a2fc78d2597c1d71e7dc1ad233cea353758dc267f0d918d2e",
+      "part": "aurelian.spear@3",
+      "definition_sha256": "9db3410cefc1e75f65c9853e653f569b9b465af8568e080a48836de1b1646722",
       "mount": [
         [
           1.0,
