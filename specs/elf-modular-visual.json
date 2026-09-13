@@ -407,8 +407,8 @@
     },
     {
       "instance_id": "elf-01/left-arm",
-      "part": "aurelian.left-arm@2",
-      "definition_sha256": "6c9999c4c51cd4862687110b60832f618b7339d14a9bbf78b058ffd58fe2d056",
+      "part": "aurelian.left-arm@3",
+      "definition_sha256": "ca3e16de88c50639cb522b89973415a1c7d2134593e79fec8c3a34f1c7093673",
       "mount": [
         [
           0.992206031,
@@ -531,8 +531,8 @@
     },
     {
       "instance_id": "elf-01/crest",
-      "part": "aurelian.crest@2",
-      "definition_sha256": "1d5344d3eb0790047cd90d7e3a0114431daeefdec8df8d4fc20effe7b94d4fc2",
+      "part": "aurelian.crest@4",
+      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
       "mount": [
         [
           0.943687357,
@@ -934,8 +934,8 @@
     },
     {
       "instance_id": "elf-02/left-arm",
-      "part": "aurelian.left-arm-b@2",
-      "definition_sha256": "c81e9153b0a76590b23c3bf6740ec5377d63faa918f198fdfaa4346b4475f03a",
+      "part": "aurelian.left-arm-b@3",
+      "definition_sha256": "61d6ef2203b5f5432006ed3755441ac9b8496d1e3cb071d3fed2475c86fca9e5",
       "mount": [
         [
           0.994181098,
@@ -1058,8 +1058,8 @@
     },
     {
       "instance_id": "elf-02/crest",
-      "part": "aurelian.crest@2",
-      "definition_sha256": "1d5344d3eb0790047cd90d7e3a0114431daeefdec8df8d4fc20effe7b94d4fc2",
+      "part": "aurelian.crest@4",
+      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
       "mount": [
         [
           0.970093554,
@@ -1461,8 +1461,8 @@
     },
     {
       "instance_id": "elf-03/left-arm",
-      "part": "aurelian.left-arm-c@2",
-      "definition_sha256": "f9207859f8938159367bbb19c9040c5befea86842c72cc53a50744cd89749518",
+      "part": "aurelian.left-arm-c@3",
+      "definition_sha256": "293cd18997da1cf3d95e08cb6a3d58ee363528fbd687a26801b205863342647b",
       "mount": [
         [
           0.999390827,
@@ -1585,8 +1585,8 @@
     },
     {
       "instance_id": "elf-03/crest",
-      "part": "aurelian.crest@2",
-      "definition_sha256": "1d5344d3eb0790047cd90d7e3a0114431daeefdec8df8d4fc20effe7b94d4fc2",
+      "part": "aurelian.crest@4",
+      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
       "mount": [
         [
           0.997434423,
@@ -1988,8 +1988,8 @@
     },
     {
       "instance_id": "elf-04/left-arm",
-      "part": "aurelian.left-arm-d@2",
-      "definition_sha256": "e1b4e5d1ee9fec0f9140fdbd81b32089242261c6df6bec682fcf83447c7a1c17",
+      "part": "aurelian.left-arm-d@3",
+      "definition_sha256": "eb3379b93e31003a059bf1a91f374567ff7d0eaf6e039d11d125b2a68fe83a76",
       "mount": [
         [
           0.990117246,
@@ -2112,8 +2112,8 @@
     },
     {
       "instance_id": "elf-04/crest",
-      "part": "aurelian.crest@2",
-      "definition_sha256": "1d5344d3eb0790047cd90d7e3a0114431daeefdec8df8d4fc20effe7b94d4fc2",
+      "part": "aurelian.crest@4",
+      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
       "mount": [
         [
           0.933657817,
@@ -2515,8 +2515,8 @@
     },
     {
       "instance_id": "elf-05/left-arm",
-      "part": "aurelian.left-arm-e@2",
-      "definition_sha256": "e3934a60bc85b987d274614f692da325e0a5daccf502f4f7319d4fa600535208",
+      "part": "aurelian.left-arm-e@3",
+      "definition_sha256": "a08508c5ea3685c30a87cd84c2b2b8e07585d7e30471d9e927fe17c67dd49d6e",
       "mount": [
         [
           0.995703136,
@@ -2639,8 +2639,8 @@
     },
     {
       "instance_id": "elf-05/crest",
-      "part": "aurelian.crest@2",
-      "definition_sha256": "1d5344d3eb0790047cd90d7e3a0114431daeefdec8df8d4fc20effe7b94d4fc2",
+      "part": "aurelian.crest@4",
+      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
       "mount": [
         [
           0.990134252,
@@ -2796,6 +2796,161 @@
       "instance_id": "elf-05/shield-torso-connector",
       "part": "aurelian.shield-torso-connector-e@1",
       "definition_sha256": "be55a9e247d9adf56372bc6b64707a26904425d714b088eb8156dc78f0802711",
+      "mount": [
+        [
+          0.995703136,
+          0.087531523,
+          0.030224115,
+          8.043824966
+        ],
+        [
+          -0.087112737,
+          0.996086906,
+          -0.014907935,
+          -0.021616506
+        ],
+        [
+          -0.031410759,
+          0.012210972,
+          0.999431967,
+          6.199176352
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "elf-01/shield-lower-connector",
+      "part": "aurelian.shield-lower-connector@1",
+      "definition_sha256": "e8491e9928e26c1472f5142de9a478d6d71b42c46b19a90986ad200f6e64a9c2",
+      "mount": [
+        [
+          0.992206031,
+          0.122304228,
+          -0.023850959,
+          -8.03458389
+        ],
+        [
+          -0.121827582,
+          0.992339306,
+          0.020512,
+          0.029742401
+        ],
+        [
+          0.026176948,
+          -0.017446426,
+          0.999505072,
+          6.199282355
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "elf-02/shield-lower-connector",
+      "part": "aurelian.shield-lower-connector-b@1",
+      "definition_sha256": "cbe273ba32900fc94713da83ac20d81c30a7a2182d20573d0d675c5d1a675c10",
+      "mount": [
+        [
+          0.994181098,
+          -0.10355623,
+          0.02966568,
+          -3.956984764
+        ],
+        [
+          0.104492644,
+          0.994011553,
+          -0.031973744,
+          -0.046361929
+        ],
+        [
+          -0.026176948,
+          0.034887538,
+          0.999048361,
+          6.198620123
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "elf-03/shield-lower-connector",
+      "part": "aurelian.shield-lower-connector-c@1",
+      "definition_sha256": "c8fa1d0b8e3e8fc5919ba230332d1be7cfe94afa7880b21c0ec4886c27bff528",
+      "mount": [
+        [
+          0.999390827,
+          0.034868884,
+          -0.001461439,
+          -0.002119087
+        ],
+        [
+          -0.034899497,
+          0.998514191,
+          -0.041850144,
+          -0.060682709
+        ],
+        [
+          0.0,
+          0.041875654,
+          0.99912283,
+          6.198728104
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "elf-04/shield-lower-connector",
+      "part": "aurelian.shield-lower-connector-d@1",
+      "definition_sha256": "f5032cbe922b6398eba7965dd2f3ad37c91186641007644761bd2eff47e87ad3",
+      "mount": [
+        [
+          0.990117246,
+          -0.138780639,
+          -0.020193392,
+          3.970719582
+        ],
+        [
+          0.139151904,
+          0.990101754,
+          0.018310237,
+          0.026549843
+        ],
+        [
+          0.017452406,
+          -0.02093923,
+          0.999628412,
+          6.199461197
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "elf-05/shield-lower-connector",
+      "part": "aurelian.shield-lower-connector-e@1",
+      "definition_sha256": "15800bbd06b94ba8af163de1edd7cb8349dc89e0d74cea068b2bd68cd38bac6b",
       "mount": [
         [
           0.995703136,

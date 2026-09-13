@@ -1,5 +1,9 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { OutlinePass } from 'three/addons/postprocessing/OutlinePass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
 const $ = id => document.getElementById(id);
 const renderer = new THREE.WebGLRenderer({antialias:true});
@@ -23,6 +27,49 @@ const edgeGeometries = new Map();
 let model = new THREE.Group(), manifest, busy=false;
 scene.add(model);
 const geometries = new Map();
+const composer=new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene,camera));
+const hoverOutline=new OutlinePass(new THREE.Vector2(innerWidth,innerHeight),scene,camera);
+hoverOutline.visibleEdgeColor.set('#ff8c20');
+hoverOutline.hiddenEdgeColor.set('#000000');
+hoverOutline.edgeStrength=4;
+hoverOutline.edgeThickness=2;
+composer.addPass(hoverOutline);
+composer.addPass(new OutputPass());
+const raycaster=new THREE.Raycaster(),pointer=new THREE.Vector2();
+let ctrlHeld=false,pointerOverModel=false,pointerX=0,pointerY=0;
+function clearHover(){
+  hoverOutline.selectedObjects=[];
+  $('piece-label').hidden=true;
+  delete document.body.dataset.hoveredPiece;
+}
+function pickPiece(){
+  if(!ctrlHeld||!pointerOverModel){clearHover();return;}
+  const bounds=renderer.domElement.getBoundingClientRect();
+  pointer.set((pointerX-bounds.left)/bounds.width*2-1,-(pointerY-bounds.top)/bounds.height*2+1);
+  scene.updateMatrixWorld();camera.updateMatrixWorld();
+  raycaster.setFromCamera(pointer,camera);
+  const hit=raycaster.intersectObjects(model.children.filter(mesh=>mesh.visible),false)[0];
+  if(!hit){clearHover();return;}
+  const mesh=hit.object,p=mesh.userData;
+  hoverOutline.selectedObjects=[mesh];
+  const [figure,part]=p.instance_id.split('/');
+  const name=(part||figure).replaceAll('-',' ');
+  $('piece-name').textContent=name.charAt(0).toUpperCase()+name.slice(1)+(part?' · '+figure.replace('elf-','Elf '):'');
+  $('piece-reference').textContent=p.part;
+  const label=$('piece-label');label.hidden=false;
+  label.style.left=Math.max(8,Math.min(pointerX+16,innerWidth-label.offsetWidth-12))+'px';
+  label.style.top=Math.max(8,Math.min(pointerY+16,innerHeight-label.offsetHeight-12))+'px';
+  document.body.dataset.hoveredPiece=p.instance_id;
+}
+renderer.domElement.addEventListener('pointermove',event=>{
+  pointerX=event.clientX;pointerY=event.clientY;pointerOverModel=true;ctrlHeld=event.ctrlKey;pickPiece();
+});
+renderer.domElement.addEventListener('pointerleave',()=>{pointerOverModel=false;clearHover();});
+addEventListener('keydown',event=>{if(event.key==='Control'){ctrlHeld=true;pickPiece();}});
+addEventListener('keyup',event=>{if(event.key==='Control'){ctrlHeld=false;clearHover();}});
+addEventListener('blur',()=>{ctrlHeld=false;clearHover();});
+controls.addEventListener('change',pickPiece);
 
 async function checkedFetch(url) {
   const response=await fetch(url,{cache:'no-store'});
@@ -47,6 +94,7 @@ function options(select, values, label) {
   select.value=values.includes(selected)?selected:'all';
 }
 function visibility() {
+  clearHover();
   for(const mesh of model.children) {
     const p=mesh.userData;
     mesh.visible=($('figure').value==='all'||p.instance_id.split('/')[0]===$('figure').value)
@@ -86,7 +134,7 @@ async function refresh() {
         replacement.add(mesh);
       }
       const first=!manifest;
-      scene.remove(model); model=replacement; scene.add(model); manifest=next;
+      clearHover();scene.remove(model); model=replacement; scene.add(model); manifest=next;
       options($('figure'),[...new Set(next.assembly.placements.map(p=>p.instance_id.split('/')[0]))].filter(v=>v!=='strip'),'Full regiment');
       options($('part'),Object.keys(next.assets).sort(),'All components');
       visibility();
@@ -110,6 +158,6 @@ $('wire').onchange=()=>material.wireframe=$('wire').checked;
 $('outlines').onchange=()=>{for(const mesh of model.children) mesh.children[0].visible=$('outlines').checked;};
 $('fit').onclick=()=>fit(); $('refresh').onclick=refresh;
 for(const button of document.querySelectorAll('[data-view]')) button.onclick=()=>fit(new THREE.Vector3(...({front:[0,-1,0],side:[1,0,0],back:[0,1,0]}[button.dataset.view])));
-addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);});
-renderer.setAnimationLoop(()=>{controls.update();renderer.render(scene,camera);});
+addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);composer.setSize(innerWidth,innerHeight);clearHover();});
+renderer.setAnimationLoop(()=>{controls.update();if(hoverOutline.selectedObjects.length) composer.render();else renderer.render(scene,camera);});
 refresh();setInterval(refresh,2000);

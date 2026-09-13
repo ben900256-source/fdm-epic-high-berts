@@ -1,0 +1,55 @@
+{
+  "component_id": "aurelian.shield-lower-connector-b",
+  "version": 1,
+  "name": "Lower shield to mail skirt connector",
+  "family": "shield-lower-connector",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shield_lower_connector"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.04,
+        "end": [
+          0,
+          -0.55,
+          -3.5842969835001934
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.42,
+        "role": "shield_lower_connector",
+        "start": [
+          -0.3393257371819905,
+          -1.4737315699683897,
+          -3.5842969835001934
+        ]
+      }
+    ],
+    "diameter_mm": 0.84,
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "shield_attachment": [
+        -0.3393257371819905,
+        -1.4737315699683897,
+        -3.5842969835001934
+      ],
+      "skirt_attachment": [
+        0,
+        -0.55,
+        -3.5842969835001934
+      ]
+    },
+    "operations": []
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "component_id": "aurelian.crest",
+  "version": 3,
+  "name": "Rounded triangular crest with flat lower edge",
+  "family": "crest",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "helmet_leaf_crest",
+    "helmet_crest_spine"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          1.88,
+          2.34,
+          4.72
+        ],
+        "export": true,
+        "location": [
+          0,
+          0.08,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "helmet_leaf_crest",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.58,
+          1.92,
+          4.34
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "helmet_leaf_crest_inner",
+        "segments": 32
+      },
+      {
+        "bevel": 0.06,
+        "bevel_segments": 4,
+        "depth": 1.38,
+        "export": false,
+        "location": [
+          0,
+          -0.65,
+          1.42
+        ],
+        "primitive": "cone",
+        "radius1": 0.46,
+        "radius2": 0.025,
+        "role": "helmet_leaf_crest_outline",
+        "scale": [
+          1,
+          12,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          4,
+          4,
+          6
+        ],
+        "export": false,
+        "location": [
+          0,
+          -2,
+          0
+        ],
+        "primitive": "cube",
+        "role": "helmet_leaf_crest_front"
+      },
+      {
+        "dimensions": [
+          1.98,
+          2.48,
+          4.84
+        ],
+        "export": true,
+        "location": [
+          0,
+          0.08,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "helmet_crest_spine",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.84,
+          2.3,
+          4.68
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "helmet_crest_spine_inner",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.19,
+          8,
+          1.14
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.65,
+          1.42
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "helmet_crest_spine_outline",
+        "segments": 32
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          4,
+          4,
+          6
+        ],
+        "export": false,
+        "location": [
+          0,
+          -2,
+          0
+        ],
+        "primitive": "cube",
+        "role": "helmet_crest_spine_front"
+      }
+    ],
+    "contour_reference": {
+      "ellipsoid_center": [
+        0,
+        0.08,
+        0
+      ],
+      "ellipsoid_dimensions": [
+        1.64,
+        2,
+        4.4
+      ],
+      "part": "aurelian.helmet@1"
+    },
+    "landmarks": {
+      "crest_center": [
+        0,
+        -0.65,
+        1.42
+      ],
+      "flat_lower_edge": [
+        0,
+        -0.65,
+        0.73
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "stripe_center": [
+        0,
+        -0.65,
+        1.42
+      ]
+    },
+    "operations": [
+      {
+        "operand": "helmet_leaf_crest_inner",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "helmet_leaf_crest"
+      },
+      {
+        "operand": "helmet_leaf_crest_outline",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "helmet_leaf_crest"
+      },
+      {
+        "operand": "helmet_leaf_crest_front",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "helmet_leaf_crest"
+      },
+      {
+        "operand": "helmet_crest_spine_inner",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "helmet_crest_spine"
+      },
+      {
+        "operand": "helmet_crest_spine_outline",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "helmet_crest_spine"
+      },
+      {
+        "operand": "helmet_crest_spine_front",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "helmet_crest_spine"
+      },
+      {
+        "operand": "helmet_leaf_crest_outline",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "helmet_crest_spine"
+      }
+    ],
+    "provenance": "Contour-following shells with rounded triangular mask and centered stripe clipped to the crest"
+  }
+}

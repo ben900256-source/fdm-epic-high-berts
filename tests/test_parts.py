@@ -120,7 +120,7 @@ def test_contoured_crest_revision_and_centered_masks():
     for role in crest.output_roles:
         assert [o['operation'] for o in p['operations'] if o['target'] == role] == ['DIFFERENCE','INTERSECT','INTERSECT']
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()), definitions)
-    assert sum(p['part'] == crest.reference for p in assembly['placements']) == 5
+    assert sum(p['part'] == 'aurelian.crest@4' for p in assembly['placements']) == 5
 
 
 def test_smooth_plate_and_chainmail_skirt_revisions():
@@ -287,7 +287,7 @@ def test_inward_nose_and_shield_hand_revisions():
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()), definitions)
     for suffix in ('', '-b', '-c', '-d', '-e'):
         ref = f'aurelian.left-arm{suffix}@2'
-        assert sum(p['part'] == ref for p in assembly['placements']) == 1
+        assert sum(p['part'] == ref.replace('@2','@3') for p in assembly['placements']) == 1
         previous = definitions[ref.replace('@2','@1')].to_dict()['parameters']['atoms']
         current = definitions[ref].to_dict()['parameters']['atoms']
         for old_atom,new_atom in zip(previous,current):
@@ -448,6 +448,81 @@ def test_shield_torso_connectors_overlap_both_attachments():
         assert (x/.92)**2+((y-.06)/.65)**2+(z/1.09)**2 < 1
 
 
+def test_arms_reach_shield_backs():
+    from fdm_sculpt.components.parts import inverse_rigid
+    definitions = catalog()
+    golden = json.loads((ROOT/'tests/fixtures/shield-arms-v3-golden.json').read_text())
+    assert {ref:definitions[ref].sha256 for ref in golden} == golden
+    assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()),definitions)
+    placements = {p['instance_id']:p for p in assembly['placements']}
+    for i in range(1,6):
+        prefix = f'elf-{i:02d}/'
+        arm,shield = placements[prefix+'left-arm'],placements[prefix+'shield']
+        assert arm['part'] in golden
+        p = definitions[arm['part']].to_dict()['parameters']
+        atoms = {a['role']:a for a in p['atoms']}
+        finger = atoms['left_grouped_fingers']
+        f = multiply(multiply(inverse_rigid(shield['mount']),arm['mount']),finger['frame_mm'])
+        center_y = sum(f[1][j]*finger['location'][j] for j in range(3))+f[1][3]
+        front_y = center_y-sum(abs(f[1][j])*finger['dimensions'][j]/2 for j in range(3))
+        assert front_y == pytest.approx(.50,abs=1e-7)
+        assert atoms['left_forearm']['start'] == p['landmarks']['left_elbow']
+        assert atoms['left_forearm']['end'] == p['landmarks']['left_cuff']
+
+
+def test_lower_shield_attachments():
+    from fdm_sculpt.components.parts import inverse_rigid
+    definitions = catalog()
+    golden = json.loads((ROOT/'tests/fixtures/shield-lower-connectors-v1-golden.json').read_text())
+    assert {ref:definitions[ref].sha256 for ref in golden} == golden
+    assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()),definitions)
+    placements = {p['instance_id']:p for p in assembly['placements']}
+    for i in range(1,6):
+        prefix = f'elf-{i:02d}/'
+        attachment = placements[prefix+'shield-lower-connector']
+        assert attachment['part'] in golden
+        assert attachment['mount'] == placements[prefix+'skirt']['mount']
+        atom = definitions[attachment['part']].to_dict()['parameters']['atoms'][0]
+        assert atom['radius'] == .42
+        f = multiply(inverse_rigid(placements[prefix+'shield']['mount']),attachment['mount'])
+        start = [sum(f[j][k]*atom['start'][k] for k in range(3))+f[j][3] for j in range(3)]
+        assert start == pytest.approx([0,.30,-1.45],abs=1e-7)
+        x,y,z = atom['end']
+        assert -4.85 < z < -.5
+        radius = 1.55-(z+4.85)*.58/4.35
+        assert (x/radius)**2+(y/(.75*radius))**2 < 1
+
+
+def test_rounded_triangle_crest_revision():
+    definitions = catalog()
+    crest = definitions['aurelian.crest@3']
+    golden = json.loads((ROOT/'tests/fixtures/crest-v3-golden.json').read_text())
+    assert golden == {crest.reference:crest.sha256}
+    p = crest.to_dict()['parameters']
+    atoms = {a['role']:a for a in p['atoms']}
+    mask = atoms['helmet_leaf_crest_outline']
+    assert mask['primitive']=='cone' and mask['radius1']>mask['radius2']
+    assert mask['bevel']>.0
+    assert mask['location'][0]==atoms['helmet_crest_spine_outline']['location'][0]==0
+    assert p['operations'][-1] == dict(target='helmet_crest_spine',operand='helmet_leaf_crest_outline',operation='INTERSECT',solver='EXACT')
+    assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()),definitions)
+    assert sum(a['part']=='aurelian.crest@4' for a in assembly['placements'])==5
+
+
+def test_soft_crest_with_tapered_underside():
+    definitions = catalog()
+    crest = definitions['aurelian.crest@4']
+    golden = json.loads((ROOT/'tests/fixtures/crest-v4-golden.json').read_text())
+    assert golden == {crest.reference:crest.sha256}
+    p = crest.to_dict()['parameters']
+    atoms = {a['role']:a for a in p['atoms']}
+    assert atoms['helmet_leaf_crest_outline']['bevel']==.14
+    rigid_matrix(atoms['crest_lower_taper']['frame_mm'])
+    assert p['landmarks']['lower_taper_front'][2] > p['landmarks']['lower_taper_start'][2]
+    for role in crest.output_roles:
+        assert [o for o in p['operations'] if o['target']==role][-1]['operand']=='crest_lower_taper'
+
+
 @pytest.mark.integration
 def test_saved_modular_provenance():
     output = os.environ.get('PARTS_PROOF_BUILD')
@@ -456,5 +531,5 @@ def test_saved_modular_provenance():
     output = Path(output)
     assert json.loads((output/'saved-provenance.json').read_text())['passes']
     review = json.loads((output/'visual-review.json').read_text())
-    assert review['placements'] == 91 and review['digitally_validated'] is False
-    assert len(review['reused_parts']) + len(review['compiled_parts']) == 47
+    assert review['placements'] == 96 and review['digitally_validated'] is False
+    assert len(review['reused_parts']) + len(review['compiled_parts']) == 52
