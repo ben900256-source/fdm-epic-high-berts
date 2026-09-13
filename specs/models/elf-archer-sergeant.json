@@ -79,8 +79,8 @@
     },
     {
       "instance_id": "horn-arm",
-      "part": "aurelian.archer-signal-horn-arm@1",
-      "definition_sha256": "097518efa22987bd0aac8a94a69cfde54998c86358a443a1edbbfbbbcdf94ff1",
+      "part": "aurelian.archer-signal-horn-arm@2",
+      "definition_sha256": "af7e295a012323296bfdcb64b73f94003c5dd283ea7c881e71822799f4771711",
       "mount": [
         [
           1.0,

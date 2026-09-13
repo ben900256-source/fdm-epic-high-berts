@@ -1,0 +1,292 @@
+{
+  "component_id": "aurelian.archer-signal-horn-arm",
+  "version": 2,
+  "name": "Archer sergeant signal-horn arm with aligned fist",
+  "family": "archer-signal-horn-arm",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "archer-draw-arm_shoulder"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          1.0,
+          1.05,
+          1.05
+        ],
+        "export": true,
+        "location": [
+          0.97,
+          0,
+          0.7000000000000002
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "archer-draw-arm_shoulder",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.6,
+          -0.85,
+          1.0499999999999998
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.43,
+        "role": "archer-draw-arm_upper_arm",
+        "start": [
+          0.97,
+          0,
+          0.7000000000000002
+        ]
+      },
+      {
+        "dimensions": [
+          0.9,
+          0.9,
+          0.9
+        ],
+        "export": false,
+        "location": [
+          1.6,
+          -0.85,
+          1.0499999999999998
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "archer-draw-arm_elbow",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.8047561378199999,
+          -2.3093150429231093,
+          2.328970846473214
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.4,
+        "role": "archer-draw-arm_forearm",
+        "start": [
+          1.6,
+          -0.85,
+          1.0499999999999998
+        ]
+      },
+      {
+        "bevel": 0.15,
+        "dimensions": [
+          1.3,
+          1.02,
+          1.2
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9329374044196834,
+            0.18672455913622318,
+            0.307833946227584,
+            -0.2317614176109799
+          ],
+          [
+            0.18672455913622318,
+            0.48009675612897973,
+            -0.8571120368830518,
+            0.645300829079424
+          ],
+          [
+            -0.307833946227584,
+            0.8571120368830518,
+            0.41303416054866315,
+            3.5940993058583395
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.8047561378199999,
+          -2.3093150429231093,
+          2.328970846473214
+        ],
+        "primitive": "cube",
+        "role": "archer-draw-arm_palm"
+      },
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          1.15,
+          0.42,
+          0.9
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9329374044196834,
+            0.18672455913622318,
+            0.307833946227584,
+            -0.2317614176109799
+          ],
+          [
+            0.18672455913622318,
+            0.48009675612897973,
+            -0.8571120368830518,
+            0.645300829079424
+          ],
+          [
+            -0.307833946227584,
+            0.8571120368830518,
+            0.41303416054866315,
+            3.5940993058583395
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.9247561378199999,
+          -2.669315042923109,
+          2.348970846473214
+        ],
+        "primitive": "cube",
+        "role": "archer-draw-arm_fingers"
+      },
+      {
+        "dimensions": [
+          0.55,
+          0.65,
+          0.65
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9329374044196834,
+            0.18672455913622318,
+            0.307833946227584,
+            -0.2317614176109799
+          ],
+          [
+            0.18672455913622318,
+            0.48009675612897973,
+            -0.8571120368830518,
+            0.645300829079424
+          ],
+          [
+            -0.307833946227584,
+            0.8571120368830518,
+            0.41303416054866315,
+            3.5940993058583395
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          1.32475613782,
+          -2.4293150429231094,
+          2.828970846473214
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "archer-draw-arm_thumb",
+        "segments": 32
+      }
+    ],
+    "design": {
+      "support_target": "No removable supports; pending sliced validation."
+    },
+    "grip_alignment": {
+      "direction": [
+        0.307833946227584,
+        -0.8571120368830518,
+        0.41303416054866315
+      ],
+      "parent_reference": "aurelian.archer-signal-horn-arm@1",
+      "parent_sha256": "097518efa22987bd0aac8a94a69cfde54998c86358a443a1edbbfbbbcdf94ff1"
+    },
+    "landmarks": {
+      "elbow": [
+        1.6,
+        -0.85,
+        1.0499999999999998
+      ],
+      "grip": [
+        0.8047561378199999,
+        -2.3093150429231093,
+        2.328970846473214
+      ],
+      "grip_axis": [
+        0.307833946227584,
+        -0.8571120368830518,
+        0.41303416054866315
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "shoulder": [
+        0.97,
+        0,
+        0.7000000000000002
+      ]
+    },
+    "operations": [
+      {
+        "operand": "archer-draw-arm_upper_arm",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "archer-draw-arm_shoulder"
+      },
+      {
+        "operand": "archer-draw-arm_elbow",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "archer-draw-arm_shoulder"
+      },
+      {
+        "operand": "archer-draw-arm_forearm",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "archer-draw-arm_shoulder"
+      },
+      {
+        "operand": "archer-draw-arm_palm",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "archer-draw-arm_shoulder"
+      },
+      {
+        "operand": "archer-draw-arm_fingers",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "archer-draw-arm_shoulder"
+      },
+      {
+        "operand": "archer-draw-arm_thumb",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "archer-draw-arm_shoulder"
+      }
+    ],
+    "provenance": "Reviewed shoulder, elbow and grip position preserved; fist aligned to local horn tangent with primitive frames. Visual-only."
+  }
+}

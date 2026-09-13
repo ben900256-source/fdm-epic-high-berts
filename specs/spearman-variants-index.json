@@ -1,0 +1,65 @@
+{
+  "seed": 1001,
+  "variants": [
+    {
+      "number": 1,
+      "label": "Standing guard",
+      "model": "models/spearmen/01-standing-guard.json",
+      "state": "spear"
+    },
+    {
+      "number": 2,
+      "label": "Watching left",
+      "model": "models/spearmen/02-watching-left.json",
+      "state": "spear"
+    },
+    {
+      "number": 3,
+      "label": "Watching right",
+      "model": "models/spearmen/03-watching-right.json",
+      "state": "spear"
+    },
+    {
+      "number": 4,
+      "label": "Spear angled forward",
+      "model": "models/spearmen/04-spear-forward.json",
+      "state": "spear"
+    },
+    {
+      "number": 5,
+      "label": "Spear carried outward",
+      "model": "models/spearmen/05-spear-outward.json",
+      "state": "spear"
+    },
+    {
+      "number": 6,
+      "label": "Rear rank ready",
+      "model": "models/spearmen/06-rear-rank-ready.json",
+      "state": "spear"
+    },
+    {
+      "number": 7,
+      "label": "Short sword at side",
+      "model": "models/spearmen/07-sword-low.json",
+      "state": "sword"
+    },
+    {
+      "number": 8,
+      "label": "Short sword guard",
+      "model": "models/spearmen/08-sword-guard.json",
+      "state": "sword"
+    },
+    {
+      "number": 9,
+      "label": "Short sword raised",
+      "model": "models/spearmen/09-sword-raised.json",
+      "state": "sword"
+    },
+    {
+      "number": 10,
+      "label": "Sergeant with hunting hawk and sword",
+      "model": "models/spearmen/10-hawk-sergeant.json",
+      "state": "hawk-sergeant"
+    }
+  ]
+}

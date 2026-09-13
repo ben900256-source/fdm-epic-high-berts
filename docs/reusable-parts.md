@@ -242,3 +242,26 @@ those old recipes to release a subsequently changed modular model.
 
 See [terrain and magnet bases](terrain-bases.md) for Blender-free generation,
 seeded surface presets, boot clearance and the current 2 mm army bases.
+
+## Spearman variants and hunting hawk
+
+`specs/elf-spearman-variants.json` contains ten visual variants: six spear
+poses, three short-sword poses and a sergeant carrying a hunting hawk and
+short sword. `specs/spearman-variants-index.json` names each reusable model.
+The sergeant also has a standalone review in
+`specs/elf-spearman-hawk-sergeant.json`.
+
+Generate the pinned definitions without Blender using
+`py -3.13 scripts/generate-spearman-variants.py --seed 1001`.
+The generator preserves existing recipes and refuses conflicting overwrites.
+`fdm_sculpt/components/spearmen.py` owns three sword arms, the falconry-glove
+arm and the perched hawk with folded wings, layered feathers and hooked beak.
+The models reuse the approved helmets, faces, armour, boots and short blade.
+Each model normalizes the inherited 1 mm height offset before the gallery
+adds it once; body and soil use the current magnet-ready solo bases.
+
+Compose through `atelier compose specs/elf-spearman-variants.json --seed 1001
+--output out/<fresh-review>`. Earlier reviews remain available on disk.
+Archer sergeant horn-arm revision 2 uses `components/hand_grips.py` to rotate
+the fist along the horn's local tangent while retaining shoulder, elbow,
+grip and mouthpiece positions. These remain visual-only reviews.
