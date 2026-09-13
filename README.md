@@ -62,6 +62,9 @@ of the five-elf unit (`specs/elf-unit-center-standard.json`). Both share
 through to either layout on its next composition. See the
 [model and unit workflow](docs/reusable-parts.md#reusable-models-and-unit-variants)
 for mixing pieces and placing future army variants without rebuilding meshes.
+Archers are available as `specs/elf-archer.json` and `specs/elf-unit-archers.json`,
+sharing `specs/models/elf-archer.json`. They wear cloth tunics, stand side-on,
+and aim raised bows forward. The viewer lists them as **Archer** and **Elf archers**.
 The page checks for updates every two seconds, verifies mesh checksums, and
 displays the loaded revision. Failed updates retain the previous model with an
 explicit warning. Blender runs in the background for geometry only; its GUI

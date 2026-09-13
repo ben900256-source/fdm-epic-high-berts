@@ -111,12 +111,15 @@ layouts use revision 3.
 The current helmet is `aurelian.helmet@5`: its cap base is inset into the crown
 to remove the exposed join, with finer primitive resolution on the curved shell.
 The shared bearer recipe uses banner revision 10 with a raised insignia mount
-and `aurelian.horn-arm@4`, keeping the grip forward to keep the horn clear of
+and `aurelian.horn-arm@6`, keeping the grip forward to keep the horn clear of
 the chest plate and mail skirt. The horn is carried upright with its bell facing
 outward and upward; its lower stem is seated in the hand so it grows from the
 hand instead of starting as a hanging island. Revision 4 raises the elbow and
 brings the hand closer to the shoulder, shortening both arm segments by about
-40 percent while retaining a rising forearm. This is a support-free design
+40 percent while retaining a rising forearm. Revision 5 enlarges the palm,
+grouped fingers and thumb by 30 percent without changing the pose; revision 6
+enlarges them another 30 percent, reaching 1.69 times the original dimensions.
+This is a support-free design
 intent, pending sliced validation. These remain visual-only revisions.
 
 ```powershell
@@ -133,6 +136,21 @@ layouts. Its `source` selects a reviewed figure from another assembly.
 hashes and local transforms. Body revisions inherited from the source and
 equipment revisions in this recipe are therefore shared by both layouts
 when they are next composed. Previously saved reviews retain their snapshots.
+
+The archer recipe `specs/models/elf-archer.json` reuses the reviewed head,
+helmet, crest and boots. Body and feet turn 90 degrees to the firing direction;
+the head remains aimed forward. Separate tunic, bow arm, drawing arm, longbow,
+arrow and quiver components replace the heavy spearman equipment. The current
+tunic has a wider flared skirt and shallow cloth creases; both fists use broad
+beveled knuckles and distinct rounded thumbs. The bow's lower tip meets the
+tunic, and the arrow spans the drawing hand and bow grip. These are visual
+design choices, pending manufacturing and sliced validation.
+
+```powershell
+py -3.13 -m fdm_sculpt.atelier compose specs/elf-archer.json --seed 1001 --output out/archer-review
+py -3.13 -m fdm_sculpt.atelier compose specs/elf-unit-archers.json --seed 1001 --output out/archer-unit-review
+py -3.13 -m fdm_sculpt.atelier part aurelian.archer-tunic@3 --seed 1001 --output out/archer-tunic-review
+```
 
 A unit layout can inherit a `base_assembly` and place `models`. Each model
 instance has a name, a recipe path and a rigid `mount`. Set `replace: true`

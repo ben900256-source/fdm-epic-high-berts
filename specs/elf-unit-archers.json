@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "assembly_id": "aurelian-archers",
+  "label": "Elf archers",
+  "placements": [
+    {
+      "instance_id": "strip",
+      "part": "aurelian.strip@4",
+      "definition_sha256": "ee33cf9d5d496770478e530ddc3f8056977d2e04c92225fbc320a171994bf4bf",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "models": [
+    {
+      "instance_id": "archer-01",
+      "model": "models/elf-archer.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "archer-02",
+      "model": "models/elf-archer.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "archer-03",
+      "model": "models/elf-archer.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "archer-04",
+      "model": "models/elf-archer.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "archer-05",
+      "model": "models/elf-archer.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

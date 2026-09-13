@@ -146,8 +146,8 @@
     },
     {
       "instance_id": "left-arm",
-      "part": "aurelian.horn-arm@4",
-      "definition_sha256": "692430d874e30dc55a8fe260a8b10c4380eb0f9d28b7b45fa021a129e8a5f3f5",
+      "part": "aurelian.horn-arm@6",
+      "definition_sha256": "a3fb4588360f0b309b8d21b69246262f4a5d33ecd275beb675fb0fc63127759c",
       "mount": [
         [
           0.999390827,

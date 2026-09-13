@@ -64,6 +64,8 @@ test('loads current parts, isolates a face, and reports failed refresh',async({p
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto('http://127.0.0.1:8765');
   await expect(page.locator('#status')).toContainText('Current model loaded',{timeout:60000});
+  await page.selectOption('#review','aurelian-spearmen-organic-faces');
+  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearmen-organic-faces');
   await expect(page.locator('body')).toHaveAttribute('data-revision',/[a-f0-9]{64}/);
   await page.screenshot({path:'../out/viewer-regiment.png'});
   await page.selectOption('#figure','elf-03');
@@ -86,12 +88,31 @@ test('loads current parts, isolates a face, and reports failed refresh',async({p
   await page.keyboard.up('Control');
   await expect(page.locator('#piece-label')).toBeHidden();
   const revision=await page.locator('body').getAttribute('data-revision');
-  await page.route('**/data/latest.json',route=>route.fulfill({status:503,body:'unavailable'}));
+  await page.route('**/data/reviews/*.json',route=>route.fulfill({status:503,body:'unavailable'}));
   await page.click('#refresh');
   await expect(page.locator('#status')).toContainText('showing previous model');
   await expect(page.locator('body')).toHaveAttribute('data-revision',revision);
-  await page.unroute('**/data/latest.json');
+  await page.unroute('**/data/reviews/*.json');
   await page.click('#refresh');
   await expect(page.locator('#status')).toContainText('Current model loaded');
+  expect(errors).toEqual([]);
+});
+
+test('reviews the archer unit and isolates its reusable tunic',async({page})=>{
+  const errors=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.goto('http://127.0.0.1:8765');
+  await expect(page.locator('#status')).toContainText('Current model loaded',{timeout:60000});
+  await page.selectOption('#review','aurelian-archers');
+  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-archers');
+  await expect(page.locator('#figure option')).toHaveCount(6);
+  await expect(page.locator('#part option[value^="aurelian.shield@"]')).toHaveCount(0);
+  await page.selectOption('#figure','archer-03');
+  await page.selectOption('#part','aurelian.archer-tunic@3');
+  await page.click('#fit');
+  await page.screenshot({path:'../out/viewer-archer-tunic.png'});
+  await page.selectOption('#review','aurelian-archer');
+  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-archer');
+  await expect(page.locator('#figure option')).toHaveCount(2);
+  await expect(page.locator('#part option[value="aurelian.archer-bow-arm@2"]')).toHaveCount(1);
   expect(errors).toEqual([]);
 });

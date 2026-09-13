@@ -31,7 +31,7 @@ def test_standard_parts_golden_and_shared_model():
     removed = {'spear','shield','shield-insignia','equipment-joins','shield-torso-connector','shield-lower-connector'}
     for name, p in base.items():
         if name == 'elf-03/left-arm':
-            assert unit[name]['part'] == 'aurelian.horn-arm@4'
+            assert unit[name]['part'] == 'aurelian.horn-arm@6'
             continue
         if not (name.startswith('elf-03/') and name.split('/')[1] in removed):
             assert unit[name] == p
@@ -262,10 +262,10 @@ def test_horn_arm_preserves_shoulder_and_extends_to_grip():
 
 def test_upright_horn_has_a_rising_forearm_and_outward_bell():
     definitions = catalog()
-    for revision in (2,3,4):
+    for revision in (2,3,4,5,6):
         golden = json.loads((ROOT/f'tests/fixtures/horn-arm-v{revision}-golden.json').read_text())
         assert {ref: definitions[ref].sha256 for ref in golden} == golden
-    arm = definitions['aurelian.horn-arm@4'].to_dict()['parameters']
+    arm = definitions['aurelian.horn-arm@6'].to_dict()['parameters']
     old = definitions['aurelian.horn-arm@3'].to_dict()['parameters']
     before = {a['role']:a for a in old['atoms']}
     after = {a['role']:a for a in arm['atoms']}
