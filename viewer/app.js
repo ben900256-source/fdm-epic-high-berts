@@ -25,6 +25,7 @@ const material = new THREE.MeshStandardMaterial({color:0xc5b797,roughness:.78,me
 const edgeMaterial = new THREE.LineBasicMaterial({color:0x302b25,transparent:true,opacity:.72});
 const edgeGeometries = new Map();
 let model = new THREE.Group(), manifest, busy=false;
+let reviewUrls=new Map(), reviewOptions='', pendingRefresh=false;
 scene.add(model);
 const geometries = new Map();
 const composer=new EffectComposer(renderer);
@@ -55,7 +56,8 @@ function pickPiece(){
   hoverOutline.selectedObjects=[mesh];
   const [figure,part]=p.instance_id.split('/');
   const name=(part||figure).replaceAll('-',' ');
-  $('piece-name').textContent=name.charAt(0).toUpperCase()+name.slice(1)+(part?' · '+figure.replace('elf-','Elf '):'');
+  const figureName=figure.charAt(0).toUpperCase()+figure.slice(1).replaceAll('-',' ');
+  $('piece-name').textContent=name.charAt(0).toUpperCase()+name.slice(1)+(part?' · '+figureName:'');
   $('piece-reference').textContent=p.part;
   const label=$('piece-label');label.hidden=false;
   label.style.left=Math.max(8,Math.min(pointerX+16,innerWidth-label.offsetWidth-12))+'px';
@@ -97,9 +99,11 @@ function visibility() {
   clearHover();
   for(const mesh of model.children) {
     const p=mesh.userData;
+    const slot=p.instance_id.split('/').at(-1);
+    const shieldPiece=slot.includes('shield')||(slot==='part'&&p.part.includes('shield'));
     mesh.visible=($('figure').value==='all'||p.instance_id.split('/')[0]===$('figure').value)
       && ($('part').value==='all'||p.part===$('part').value)
-      && ($('shields').checked||!p.part.includes('shield'));
+      && ($('shields').checked||!shieldPiece);
   }
 }
 function fit(direction) {
@@ -114,13 +118,26 @@ function fit(direction) {
   controls.update();
 }
 async function refresh() {
-  if(busy) return;
+  if(busy) {pendingRefresh=true;return;}
   busy=true;
+  const selected=$('review').value;
   try {
-    const next=await (await checkedFetch('/data/latest.json')).json();
+    const index=await (await checkedFetch('/data/reviews.json')).json();
+    if($('review').value!==selected){pendingRefresh=true;return;}
+    reviewUrls=new Map(index.reviews.map(r=>[r.id,r.url]));
+    const optionSignature=JSON.stringify(index.reviews.map(r=>[r.id,r.label]));
+    if(optionSignature!==reviewOptions){
+      $('review').replaceChildren(new Option('Latest update','latest'),
+        ...index.reviews.map(r=>new Option(r.label,r.id)));
+      $('review').value=reviewUrls.has(selected)?selected:'latest';
+      reviewOptions=optionSignature;
+    }
+    const next=await (await checkedFetch(reviewUrls.get(selected)||'/data/latest.json')).json();
     if(next.revision!==manifest?.revision) {
       $('status').textContent='Loading updated model…';
       const loaded=new Map(await Promise.all(Object.entries(next.assets).map(async([ref,a])=>[ref,await geometry(a)])));
+      // A selection made during loading wins over the earlier request.
+      if($('review').value!==selected) {pendingRefresh=true;return;}
       const replacement=new THREE.Group();
       for(const p of next.assembly.placements) {
         if(next.assets[p.part].definition_sha256!==p.definition_sha256) throw new Error('Component revision mismatch.');
@@ -133,25 +150,30 @@ async function refresh() {
         mesh.matrixAutoUpdate=false; mesh.matrix.set(...p.mount.flat()); mesh.userData=p;
         replacement.add(mesh);
       }
-      const first=!manifest;
+      const first=!manifest, changedAssembly=manifest?.assembly.assembly_id!==next.assembly.assembly_id;
       clearHover();scene.remove(model); model=replacement; scene.add(model); manifest=next;
-      options($('figure'),[...new Set(next.assembly.placements.map(p=>p.instance_id.split('/')[0]))].filter(v=>v!=='strip'),'Full regiment');
+      if(changedAssembly){$('figure').value='all';$('part').value='all';}
+      options($('figure'),[...new Set(next.assembly.placements.filter(p=>p.instance_id.includes('/')).map(p=>p.instance_id.split('/')[0]))],'All figures');
       options($('part'),Object.keys(next.assets).sort(),'All components');
       visibility();
-      if(first) fit(new THREE.Vector3(.45,-1,.35).normalize());
+      if(first||changedAssembly) fit(new THREE.Vector3(.45,-1,.35).normalize());
+      // Keep recently viewed pieces warm when switching between unit variants.
       const active=new Set(Object.values(next.assets).map(a=>a.url));
-      for(const [url,g] of geometries) if(!active.has(url)){g.dispose();geometries.delete(url);}
-      for(const [url,g] of edgeGeometries) if(!active.has(url)){g.dispose();edgeGeometries.delete(url);}
+      for(const [url,g] of geometries) if(geometries.size>128&&!active.has(url)){
+        g.dispose();geometries.delete(url);edgeGeometries.get(url)?.dispose();edgeGeometries.delete(url);
+      }
       $('details').textContent=`${next.build} · Revision ${next.revision.slice(0,8)}`;
       document.body.dataset.revision=next.revision;
+      document.body.dataset.assembly=next.assembly.assembly_id;
     }
     $('status').textContent='Current model loaded · '+new Date(manifest.updated).toLocaleTimeString();
     $('error').textContent='';
   } catch(error) {
     $('status').textContent=manifest?'Update unavailable · showing previous model':'Model unavailable';
     $('error').textContent=error.message;
-  } finally {busy=false;}
+  } finally {busy=false;if(pendingRefresh){pendingRefresh=false;refresh();}}
 }
+$('review').onchange=refresh;
 for(const id of ['figure','part']) $(id).onchange=()=>{visibility();fit();};
 $('shields').onchange=visibility;
 $('wire').onchange=()=>material.wireframe=$('wire').checked;

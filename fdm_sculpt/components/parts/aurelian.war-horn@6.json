@@ -1,0 +1,1306 @@
+{
+  "component_id": "aurelian.war-horn",
+  "version": 6,
+  "name": "Rounded organic war horn with a sweeping bell",
+  "family": "instrument",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "war_horn"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "role": "war_horn",
+        "primitive": "sphere",
+        "export": true,
+        "location": [
+          0.45,
+          0.14,
+          -0.7
+        ],
+        "dimensions": [
+          0.75,
+          0.75,
+          0.75
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_1",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          0.3998291015625,
+          0.12689208984375003,
+          -0.65205078125
+        ],
+        "dimensions": [
+          0.756875,
+          0.756875,
+          0.756875
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_2",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          0.35050781249999996,
+          0.11388671875,
+          -0.59484375
+        ],
+        "dimensions": [
+          0.76375,
+          0.76375,
+          0.76375
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_3",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          0.3019482421875,
+          0.10108642578125002,
+          -0.52896484375
+        ],
+        "dimensions": [
+          0.770625,
+          0.770625,
+          0.770625
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_4",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          0.25406249999999997,
+          0.08859375,
+          -0.45499999999999996
+        ],
+        "dimensions": [
+          0.7775,
+          0.7775,
+          0.7775
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_5",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          0.20676269531250002,
+          0.07651123046875001,
+          -0.37353515625
+        ],
+        "dimensions": [
+          0.784375,
+          0.784375,
+          0.784375
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_6",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          0.1599609375,
+          0.06494140625,
+          -0.28515625
+        ],
+        "dimensions": [
+          0.79125,
+          0.79125,
+          0.79125
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_7",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          0.1135693359375,
+          0.053986816406250006,
+          -0.19044921874999998
+        ],
+        "dimensions": [
+          0.798125,
+          0.798125,
+          0.798125
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_8",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          0.0675,
+          0.043750000000000004,
+          -0.08999999999999998
+        ],
+        "dimensions": [
+          0.805,
+          0.805,
+          0.805
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_9",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          0.021665039062499995,
+          0.034333496093750006,
+          0.01560546875000001
+        ],
+        "dimensions": [
+          0.811875,
+          0.811875,
+          0.811875
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_10",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.024023437499999998,
+          0.02583984375,
+          0.12578125
+        ],
+        "dimensions": [
+          0.81875,
+          0.81875,
+          0.81875
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_11",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.0696533203125,
+          0.01837158203125,
+          0.23994140625
+        ],
+        "dimensions": [
+          0.825625,
+          0.825625,
+          0.825625
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_12",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.1153125,
+          0.012031250000000002,
+          0.3575
+        ],
+        "dimensions": [
+          0.8325,
+          0.8325,
+          0.8325
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_13",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.1610888671875,
+          0.006921386718750001,
+          0.47787109375000003
+        ],
+        "dimensions": [
+          0.839375,
+          0.839375,
+          0.839375
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_14",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.2070703125,
+          0.0031445312500000006,
+          0.60046875
+        ],
+        "dimensions": [
+          0.84625,
+          0.84625,
+          0.84625
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_15",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.2533447265625,
+          0.0008032226562500001,
+          0.72470703125
+        ],
+        "dimensions": [
+          0.853125,
+          0.853125,
+          0.853125
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_16",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.3,
+          0.0,
+          0.85
+        ],
+        "dimensions": [
+          0.86,
+          0.86,
+          0.86
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_17",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.3144459259259259,
+          -0.0015994444444444444,
+          0.9135407407407407
+        ],
+        "dimensions": [
+          0.8604936521377803,
+          0.8604936521377803,
+          0.8604936521377803
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_18",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.3317007407407408,
+          -0.003395555555555556,
+          0.9780592592592593
+        ],
+        "dimensions": [
+          0.8621909653676081,
+          0.8621909653676081,
+          0.8621909653676081
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_19",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.35164000000000006,
+          -0.005385000000000001,
+          1.0434
+        ],
+        "dimensions": [
+          0.8652387988044427,
+          0.8652387988044427,
+          0.8652387988044427
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_20",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.37413925925925934,
+          -0.007564444444444446,
+          1.1094074074074076
+        ],
+        "dimensions": [
+          0.8697241131450233,
+          0.8697241131450233,
+          0.8697241131450233
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_21",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.39907407407407414,
+          -0.009930555555555555,
+          1.175925925925926
+        ],
+        "dimensions": [
+          0.8757110977760229,
+          0.8757110977760229,
+          0.8757110977760229
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_22",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.42632000000000014,
+          -0.012480000000000003,
+          1.2428000000000003
+        ],
+        "dimensions": [
+          0.8832512448948602,
+          0.8832512448948602,
+          0.8832512448948602
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_23",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.45575259259259254,
+          -0.015209444444444442,
+          1.3098740740740737
+        ],
+        "dimensions": [
+          0.8923878267981721,
+          0.8923878267981721,
+          0.8923878267981721
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_24",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.4872474074074075,
+          -0.01811555555555556,
+          1.3769925925925928
+        ],
+        "dimensions": [
+          0.903158316354606,
+          0.903158316354606,
+          0.903158316354606
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_25",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.5206799999999999,
+          -0.021194999999999995,
+          1.4439999999999997
+        ],
+        "dimensions": [
+          0.9155958554881118,
+          0.9155958554881118,
+          0.9155958554881118
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_26",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.555925925925926,
+          -0.024444444444444446,
+          1.510740740740741
+        ],
+        "dimensions": [
+          0.9297302178597917,
+          0.9297302178597917,
+          0.9297302178597917
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_27",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.5928607407407406,
+          -0.027860555555555548,
+          1.5770592592592587
+        ],
+        "dimensions": [
+          0.9455884763615704,
+          0.9455884763615704,
+          0.9455884763615704
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_28",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.63136,
+          -0.03144,
+          1.6428
+        ],
+        "dimensions": [
+          0.963195486091641,
+          0.963195486091641,
+          0.963195486091641
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_29",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.6712992592592593,
+          -0.035179444444444444,
+          1.7078074074074072
+        ],
+        "dimensions": [
+          0.9825742457529424,
+          0.9825742457529424,
+          0.9825742457529424
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_30",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.712554074074074,
+          -0.03907555555555556,
+          1.7719259259259257
+        ],
+        "dimensions": [
+          1.0037461755274906,
+          1.0037461755274906,
+          1.0037461755274906
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_31",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.755,
+          -0.043125,
+          1.835
+        ],
+        "dimensions": [
+          1.0267313355830037,
+          1.0267313355830037,
+          1.0267313355830037
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_32",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.7985125925925927,
+          -0.04732444444444445,
+          1.8968740740740742
+        ],
+        "dimensions": [
+          1.0515486011716686,
+          1.0515486011716686,
+          1.0515486011716686
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_33",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.8429674074074074,
+          -0.05167055555555555,
+          1.9573925925925924
+        ],
+        "dimensions": [
+          1.0782158052231154,
+          1.0782158052231154,
+          1.0782158052231154
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_34",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.8882399999999999,
+          -0.05615999999999999,
+          2.0163999999999995
+        ],
+        "dimensions": [
+          1.1067498560924178,
+          1.1067498560924178,
+          1.1067498560924178
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_35",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.9342059259259259,
+          -0.06078944444444444,
+          2.0737407407407407
+        ],
+        "dimensions": [
+          1.1371668359788425,
+          1.1371668359788425,
+          1.1371668359788425
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_36",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -0.9807407407407407,
+          -0.06555555555555555,
+          2.129259259259259
+        ],
+        "dimensions": [
+          1.1694820840714597,
+          1.1694820840714597,
+          1.1694820840714597
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_37",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -1.02772,
+          -0.07045499999999999,
+          2.1828
+        ],
+        "dimensions": [
+          1.2037102674602047,
+          1.2037102674602047,
+          1.2037102674602047
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_38",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -1.0750192592592591,
+          -0.07548444444444444,
+          2.234207407407407
+        ],
+        "dimensions": [
+          1.2398654421263955,
+          1.2398654421263955,
+          1.2398654421263955
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_39",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -1.1225140740740742,
+          -0.08064055555555556,
+          2.2833259259259258
+        ],
+        "dimensions": [
+          1.2779611058008862,
+          1.2779611058008862,
+          1.2779611058008862
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_40",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -1.1700800000000002,
+          -0.08592000000000001,
+          2.33
+        ],
+        "dimensions": [
+          1.3180102440899468,
+          1.3180102440899468,
+          1.3180102440899468
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_41",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -1.2175925925925928,
+          -0.09131944444444445,
+          2.374074074074074
+        ],
+        "dimensions": [
+          1.3600253709781756,
+          1.3600253709781756,
+          1.3600253709781756
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_42",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -1.2649274074074075,
+          -0.09683555555555556,
+          2.4153925925925925
+        ],
+        "dimensions": [
+          1.4040185645968264,
+          1.4040185645968264,
+          1.4040185645968264
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_43",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -1.31196,
+          -0.102465,
+          2.4537999999999998
+        ],
+        "dimensions": [
+          1.4500014989760373,
+          1.4500014989760373,
+          1.4500014989760373
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_44",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -1.358565925925926,
+          -0.10820444444444445,
+          2.4891407407407407
+        ],
+        "dimensions": [
+          1.4979854723672381,
+          1.4979854723672381,
+          1.4979854723672381
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_45",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -1.4046207407407407,
+          -0.11405055555555554,
+          2.521259259259259
+        ],
+        "dimensions": [
+          1.5479814326181116,
+          1.5479814326181116,
+          1.5479814326181116
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "organic_round_46",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -1.45,
+          -0.12,
+          2.55
+        ],
+        "dimensions": [
+          1.6,
+          1.6,
+          1.6
+        ],
+        "segments": 40,
+        "ring_count": 28
+      },
+      {
+        "role": "carrying_loop",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          0.32,
+          0.32,
+          -0.55
+        ],
+        "dimensions": [
+          0.84,
+          0.8,
+          1.05
+        ],
+        "segments": 40,
+        "ring_count": 24
+      },
+      {
+        "role": "bell_end_cut",
+        "primitive": "cube",
+        "export": false,
+        "dimensions": [
+          8,
+          8,
+          8
+        ],
+        "location": [
+          0,
+          0,
+          4.015
+        ],
+        "frame_mm": [
+          [
+            0.5144957554275266,
+            -0.09740465098831576,
+            -0.8519427513705973,
+            -1.45
+          ],
+          [
+            -0.0,
+            0.9935274400808207,
+            -0.11359236684941298,
+            -0.12
+          ],
+          [
+            0.8574929257125442,
+            0.05844279059298946,
+            0.5111656508223584,
+            2.55
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "bevel": 0
+      },
+      {
+        "role": "rounded_bell_lip",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          0,
+          0,
+          -0.025
+        ],
+        "frame_mm": [
+          [
+            0.5144957554275266,
+            -0.09740465098831576,
+            -0.8519427513705973,
+            -1.45
+          ],
+          [
+            -0.0,
+            0.9935274400808207,
+            -0.11359236684941298,
+            -0.12
+          ],
+          [
+            0.8574929257125442,
+            0.05844279059298946,
+            0.5111656508223584,
+            2.55
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "dimensions": [
+          1.6,
+          1.6,
+          0.26
+        ],
+        "segments": 48,
+        "ring_count": 24
+      },
+      {
+        "role": "bell_opening",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          0,
+          0,
+          0.2
+        ],
+        "frame_mm": [
+          [
+            0.5144957554275266,
+            -0.09740465098831576,
+            -0.8519427513705973,
+            -1.45
+          ],
+          [
+            -0.0,
+            0.9935274400808207,
+            -0.11359236684941298,
+            -0.12
+          ],
+          [
+            0.8574929257125442,
+            0.05844279059298946,
+            0.5111656508223584,
+            2.55
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "dimensions": [
+          1.12,
+          1.06,
+          0.8
+        ],
+        "segments": 48,
+        "ring_count": 28
+      }
+    ],
+    "design": {
+      "bell_outer_radius_mm": 0.8,
+      "flare_length_mm": 2.099184903389106,
+      "minimum_stem_diameter_mm": 0.75,
+      "note": "Smooth sweeping profile with gradual radius growth and an integrated rounded lip. The mount, grip and mouthpiece centers are retained; the opening is shallow decorative relief. Sliced print validation is pending.",
+      "curve": "two cubic centerlines sampled as overlapping rounded primitives",
+      "curve_segments": 46,
+      "curve_join": "Densely spaced round sections blend the silhouette without exposed frustum end caps."
+    },
+    "landmarks": {
+      "bell": [
+        -1.45,
+        -0.12,
+        2.55
+      ],
+      "bell_axis": [
+        -0.851942751370597,
+        -0.11359236684941296,
+        0.5111656508223583
+      ],
+      "carrying_loop": [
+        0.32,
+        0.32,
+        -0.55
+      ],
+      "grip": [
+        -0.3,
+        0,
+        0.85
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "mouthpiece": [
+        0.45,
+        0.14,
+        -0.7
+      ]
+    },
+    "operations": [
+      {
+        "target": "war_horn",
+        "operand": "organic_round_1",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_2",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_3",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_4",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_5",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_6",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_7",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_8",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_9",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_10",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_11",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_12",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_13",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_14",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_15",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_16",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_17",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_18",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_19",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_20",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_21",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_22",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_23",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_24",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_25",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_26",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_27",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_28",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_29",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_30",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_31",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_32",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_33",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_34",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_35",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_36",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_37",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_38",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_39",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_40",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_41",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_42",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_43",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_44",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_45",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "organic_round_46",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "carrying_loop",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "bell_end_cut",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "rounded_bell_lip",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "war_horn",
+        "operand": "bell_opening",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT"
+      }
+    ]
+  }
+}

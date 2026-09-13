@@ -59,6 +59,83 @@ empty `EVALUATED_EXPORT`. The saved scene is reopened to check definitions,
 local Exact operands, cached mesh hashes and placement transforms. No full
 solid union, mesh printability audit, repeat geometry build or slicer runs.
 
+## Reusable models and unit variants
+
+The first command model is a standard bearer with a leaf-tipped pole,
+crossbar, broad banner, eight-point star relief and a curved war horn. The pole and cloth are
+independent revisioned parts. The bearer reuses the existing gripping arm,
+armor, head and crest; the solo review adds a 4 × 5 mm ground
+base. The center-unit layout replaces only the third spearman's equipment.
+Standard revision 2 centers the cloth on a symmetrical crossbar, widens the
+top to 5.2 mm and tapers the lower edge to 3.1 mm. The cloth hangs in front of
+the shaft so the pole does not interrupt the seahorse.
+Revision 3 replaces the two hanging tips with a single point rooted in the
+shaft. The cloth expands gradually in width and depth, the crossbar rests
+on the cloth, and the seahorse is embedded to about 0.25 mm of relief. This
+targets an upright print without removable supports; sliced support validation
+remains part of release preparation. The reusable `aurelian.war-horn@6` replaces
+the bearer's shield and its attachment pieces while keeping the existing hand.
+The horn has a smooth sweeping curve, gradual flare and rounded lip, retaining
+the reviewed grip and mouthpiece centers. Banner revision 4 expands the design to a
+7 mm-wide, nearly rectangular field with a 6.6 mm lower hem and a 5.4 mm field
+height. Its tapered lower attachment still grows from the pole beneath the
+field; the taller shaft keeps the enlarged cloth clear of the helmets.
+Banner revision 5 retains that outline and adds a continuous rounded lining
+with an even inset and a flat emblem field. The separate reusable
+`aurelian.standard-insignia@1` is a centered eight-point elven star with
+0.25 mm attached relief. Shields retain their seahorses. Both bearer layouts
+mount the star at the center of the banner field through the shared recipe.
+Banner revision 6 extends this lining around the full tapered lower perimeter,
+replacing the horizontal divider with a continuous border that follows the
+root's depth ramp. The cloth shape and star placement are retained.
+Banner revision 7 makes the entire silhouette one flat tapestry. The lower
+section shares the upper face's depth, removing the transverse seams and
+letting the perimeter lining continue in one plane. The narrow root overlaps
+the pole at its back; this changed attachment still awaits sliced validation.
+Banner revision 8 centers the star vertically across the full banner height
+and restores a 1.18 mm depth taper at the bottom tip. The lining remains flat
+and closes straight across above this short ramp. The support-free design
+target still requires sliced validation during release preparation.
+Revision 9 joins each lining stroke directly to the tapestry so the Exact
+union retains the complete cloth solid after the root cut.
+
+The shared `aurelian.spear@2` lengthens each ordinary spear shaft by 25 percent,
+from 11 to 13.75 mm. Its foot, grip alignment and diameter stay fixed; the
+existing leaf tip moves upward 2.75 mm. Both spearman layouts use this revision.
+
+```powershell
+py -3.13 -m fdm_sculpt.atelier compose specs/elf-standard-bearer.json --seed 1001 --output out/bearer-review
+py -3.13 -m fdm_sculpt.atelier compose specs/elf-unit-center-standard.json --seed 1001 --output out/center-standard-review
+py -3.13 -m fdm_sculpt.atelier part aurelian.standard-banner@9 --seed 1001 --output out/banner-review
+py -3.13 -m fdm_sculpt.atelier part aurelian.standard-insignia@1 --seed 1001 --output out/insignia-review
+```
+
+`specs/models/elf-standard-bearer.json` is the shared model recipe for both
+layouts. Its `source` selects a reviewed figure from another assembly.
+`origin_mm` sets the model's local origin. `remove` names unwanted slots;
+`parts` adds or replaces slots with pinned component references, definition
+hashes and local transforms. Body revisions inherited from the source and
+equipment revisions in this recipe are therefore shared by both layouts
+when they are next composed. Previously saved reviews retain their snapshots.
+
+A unit layout can inherit a `base_assembly` and place `models`. Each model
+instance has a name, a recipe path and a rigid `mount`. Set `replace: true`
+to replace an existing figure with that name. New layouts can instead list
+base `placements` and any number of model instances. All paths are relative
+to the file containing them. Misspelled replacement names, duplicate slots,
+stale component hashes and recipe cycles are rejected before Blender starts.
+
+`atelier plan` expands these recipes without generating geometry. Composition
+saves the fully resolved placements and checked part provenance. Repositioning
+or combining cached models compiles zero geometry. Editing one banner revision
+compiles that banner once, and every model using it shares the cached mesh.
+
+The viewer's **Model / unit** selector switches between published layouts
+without running a build. **Latest update** follows whatever was just composed;
+selecting a named layout follows updates to that layout. Meshes shared by
+recently viewed layouts stay cached in the browser. Use Ctrl-hover to identify
+the **Standard pole**, **Banner**, and **Banner insignia** separately.
+
 ## Later publication or release
 
 Keep working models visual-only until release work is requested. Release

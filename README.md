@@ -51,6 +51,13 @@ py -3.13 -m fdm_sculpt.viewer publish out/army-review
 Orbit, zoom, isolate a figure/component, or hide shields to inspect the mail.
 Hold Ctrl and hover over a piece to outline it in orange and see its name,
 figure number, and component revision for discussing changes.
+Use **Model / unit** to switch between saved reviews. The reusable standard
+bearer is available alone (`specs/elf-standard-bearer.json`) and in the middle
+of the five-elf unit (`specs/elf-unit-center-standard.json`). Both share
+`specs/models/elf-standard-bearer.json`; changes to that model recipe carry
+through to either layout on its next composition. See the
+[model and unit workflow](docs/reusable-parts.md#reusable-models-and-unit-variants)
+for mixing pieces and placing future army variants without rebuilding meshes.
 The page checks for updates every two seconds, verifies mesh checksums, and
 displays the loaded revision. Failed updates retain the previous model with an
 explicit warning. Blender runs in the background for geometry only; its GUI

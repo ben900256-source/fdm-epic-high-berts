@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "assembly_id": "aurelian-spearmen-center-standard",
+  "label": "Spearmen - center standard",
+  "base_assembly": "elf-modular-visual.json",
+  "models": [
+    {
+      "instance_id": "elf-03",
+      "model": "models/elf-standard-bearer.json",
+      "replace": true,
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

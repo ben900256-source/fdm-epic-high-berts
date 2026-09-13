@@ -48,6 +48,25 @@ def test_standalone_parts_match_golden_and_original_assembly():
             assert [o for o in operations if o['target'] == role] == [o for o in source['operations'] if o['target'] == role]
 
 
+def test_taller_spear_preserves_foot_width_and_tip_shape():
+    definitions = catalog()
+    golden = json.loads((ROOT/'tests/fixtures/spear-v2-golden.json').read_text())
+    assert {ref: definitions[ref].sha256 for ref in golden} == golden
+    old = definitions['aurelian.spear@1'].to_dict()['parameters']
+    new = definitions['aurelian.spear@2'].to_dict()['parameters']
+    first,second = old['atoms'][0],new['atoms'][0]
+    assert second['start'] == first['start']
+    assert second['radius'] == first['radius']
+    assert second['frame_mm'] == first['frame_mm']
+    assert second['end'][2]-second['start'][2] == pytest.approx(1.25*(first['end'][2]-first['start'][2]))
+    extension = second['end'][2]-first['end'][2]
+    for before,after in zip(old['atoms'][1:],new['atoms'][1:]):
+        assert {k:v for k,v in before.items() if k != 'location'} == {k:v for k,v in after.items() if k != 'location'}
+        assert after['location'] == pytest.approx([*before['location'][:2],before['location'][2]+extension])
+    assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()),definitions)
+    assert sum(p['part']=='aurelian.spear@2' for p in assembly['placements']) == 5
+
+
 def cache_records(job):
     for asset in job['assets'].values():
         directory = Path(asset['directory'])

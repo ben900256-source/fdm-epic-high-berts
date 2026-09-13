@@ -1,0 +1,421 @@
+{
+  "component_id": "aurelian.standard-banner",
+  "version": 4,
+  "name": "Broad rectangular standard with a tapered lower attachment",
+  "family": "standard-banner",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "banner_cloth"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          7,
+          0.8,
+          5.4
+        ],
+        "export": true,
+        "location": [
+          0,
+          0,
+          2.65
+        ],
+        "primitive": "cube",
+        "role": "banner_cloth"
+      },
+      {
+        "bevel": 0.08,
+        "dimensions": [
+          6.8,
+          0.8,
+          4.1
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.1,
+          -1.8
+        ],
+        "primitive": "cube",
+        "role": "lower_attachment"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16,
+          5,
+          24
+        ],
+        "export": false,
+        "location": [
+          -9.681894427031505,
+          0,
+          -4.874458487696785
+        ],
+        "primitive": "cube",
+        "role": "lower_cut_left",
+        "rotation": [
+          0,
+          -0.6551867204330519,
+          0
+        ]
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16,
+          5,
+          24
+        ],
+        "export": false,
+        "location": [
+          9.681894427031505,
+          0,
+          -4.874458487696785
+        ],
+        "primitive": "cube",
+        "role": "lower_cut_right",
+        "rotation": [
+          0,
+          0.6551867204330519,
+          0
+        ]
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16,
+          5,
+          24
+        ],
+        "export": false,
+        "location": [
+          -11.296370521985988,
+          0,
+          -0.29609328407904234
+        ],
+        "primitive": "cube",
+        "role": "panel_cut_left",
+        "rotation": [
+          0,
+          -0.03702011587393006,
+          0
+        ]
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16,
+          5,
+          24
+        ],
+        "export": false,
+        "location": [
+          11.296370521985988,
+          0,
+          -0.29609328407904234
+        ],
+        "primitive": "cube",
+        "role": "panel_cut_right",
+        "rotation": [
+          0,
+          0.03702011587393006,
+          0
+        ]
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16,
+          16,
+          24
+        ],
+        "export": false,
+        "location": [
+          0,
+          -8.777227269413176,
+          -3.8553499981772474
+        ],
+        "primitive": "cube",
+        "role": "root_front_ramp",
+        "rotation": [
+          0.5028432109278609,
+          0,
+          0
+        ]
+      },
+      {
+        "bevel": 0.08,
+        "dimensions": [
+          0.45,
+          0.72,
+          1.1
+        ],
+        "export": false,
+        "location": [
+          -2.6,
+          0.05,
+          5.6
+        ],
+        "primitive": "cube",
+        "role": "hanging_tab_left"
+      },
+      {
+        "bevel": 0.04,
+        "end": [
+          -3.2914814814814815,
+          -0.37,
+          5.12
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.11,
+        "role": "woven_border_left",
+        "start": [
+          -3.107407407407407,
+          -0.37,
+          0.15
+        ]
+      },
+      {
+        "bevel": 0.08,
+        "dimensions": [
+          0.45,
+          0.72,
+          1.1
+        ],
+        "export": false,
+        "location": [
+          2.6,
+          0.05,
+          5.6
+        ],
+        "primitive": "cube",
+        "role": "hanging_tab_right"
+      },
+      {
+        "bevel": 0.04,
+        "end": [
+          3.2914814814814815,
+          -0.37,
+          5.12
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.11,
+        "role": "woven_border_right",
+        "start": [
+          3.107407407407407,
+          -0.37,
+          0.15
+        ]
+      },
+      {
+        "bevel": 0.07,
+        "dimensions": [
+          6.55,
+          0.2,
+          0.22
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.37,
+          5.12
+        ],
+        "primitive": "cube",
+        "role": "woven_top_border"
+      },
+      {
+        "bevel": 0.07,
+        "dimensions": [
+          6.2,
+          0.2,
+          0.22
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.37,
+          0.15
+        ],
+        "primitive": "cube",
+        "role": "woven_lower_hem"
+      },
+      {
+        "dimensions": [
+          1.4,
+          0.12,
+          4.8
+        ],
+        "export": false,
+        "location": [
+          1.3,
+          -0.38,
+          2.6
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "soft_fold",
+        "segments": 32
+      }
+    ],
+    "design": {
+      "cloth_thickness_mm": 0.8,
+      "field_height_mm": 5.4,
+      "field_lower_width_mm": 6.6,
+      "height_mm": 9.2,
+      "lower_width_mm": 0.76,
+      "nominal_layer_mm": 0.05,
+      "note": "Large nearly rectangular field above a recessed, pole-rooted lower attachment. Continuous backing under the lower hem avoids floating corners.",
+      "root_front_growth_per_height": 0.55,
+      "side_growth_per_height": 0.768421052631579,
+      "support_target": "upright, no removable supports; pending sliced validation",
+      "width_mm": 7.0
+    },
+    "landmarks": {
+      "bottom_left": [
+        -0.38,
+        0.35,
+        -3.85
+      ],
+      "bottom_right": [
+        0.38,
+        0.35,
+        -3.85
+      ],
+      "crossbar": [
+        0,
+        0.14,
+        5.45
+      ],
+      "field_bottom_left": [
+        -3.3,
+        0,
+        -0.05
+      ],
+      "field_bottom_right": [
+        3.3,
+        0,
+        -0.05
+      ],
+      "insignia_mount": [
+        0.12,
+        0.28,
+        2.2
+      ],
+      "lower_edge": [
+        0,
+        0.4,
+        -3.85
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "root_contact": [
+        0,
+        0.4,
+        -3.84
+      ],
+      "top_left": [
+        -3.5,
+        0,
+        5.35
+      ],
+      "top_right": [
+        3.5,
+        0,
+        5.35
+      ]
+    },
+    "operations": [
+      {
+        "operand": "lower_cut_left",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "lower_attachment"
+      },
+      {
+        "operand": "lower_cut_right",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "lower_attachment"
+      },
+      {
+        "operand": "root_front_ramp",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "lower_attachment"
+      },
+      {
+        "operand": "lower_attachment",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "banner_cloth"
+      },
+      {
+        "operand": "panel_cut_left",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "banner_cloth"
+      },
+      {
+        "operand": "panel_cut_right",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "banner_cloth"
+      },
+      {
+        "operand": "hanging_tab_left",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "banner_cloth"
+      },
+      {
+        "operand": "woven_border_left",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "banner_cloth"
+      },
+      {
+        "operand": "hanging_tab_right",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "banner_cloth"
+      },
+      {
+        "operand": "woven_border_right",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "banner_cloth"
+      },
+      {
+        "operand": "woven_top_border",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "banner_cloth"
+      },
+      {
+        "operand": "woven_lower_hem",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "banner_cloth"
+      },
+      {
+        "operand": "soft_fold",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "banner_cloth"
+      }
+    ]
+  }
+}

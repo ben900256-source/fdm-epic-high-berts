@@ -8,6 +8,7 @@ import time
 
 from .components.core import component_digest
 from .components.parts import catalog, cache_key, isolated_part, resolve_assembly
+from .army import load_assembly
 from .review import find_blender
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -106,7 +107,7 @@ def main(argv=None):
         if args.command == 'list':
             result = [dict(part=d.reference, name=d.name, family=d.family) for d in catalog().values()]
         else:
-            data = isolated_part(args.input) if args.command == 'part' else json.loads(Path(args.input).read_text())
+            data = isolated_part(args.input) if args.command == 'part' else load_assembly(args.input)
             if args.command == 'plan':
                 job = prepare(data, seed=args.seed, cache=args.cache)
                 result = dict(compile=[ref for ref, a in job['assets'].items() if not a['cached']],

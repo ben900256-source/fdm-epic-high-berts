@@ -1,0 +1,174 @@
+{
+  "component_id": "aurelian.standard-pole",
+  "version": 2,
+  "name": "Wide symmetrical standard crossbar",
+  "family": "standard-pole",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "standard_pole"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.035,
+        "end": [
+          0,
+          0.46,
+          10.15
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.51,
+        "role": "standard_pole",
+        "start": [
+          0,
+          0.46,
+          -6.15
+        ]
+      },
+      {
+        "bevel": 0.045,
+        "end": [
+          2.85,
+          0.46,
+          9.8
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.3,
+        "role": "crossbar",
+        "start": [
+          -2.85,
+          0.46,
+          9.8
+        ]
+      },
+      {
+        "bevel": 0.045,
+        "bevel_segments": 3,
+        "depth": 0.35,
+        "export": false,
+        "location": [
+          0,
+          0.46,
+          10.15
+        ],
+        "primitive": "cone",
+        "radius1": 0.62,
+        "radius2": 0.52,
+        "role": "finial_collar",
+        "vertices": 32
+      },
+      {
+        "bevel": 0.045,
+        "bevel_segments": 3,
+        "depth": 0.4,
+        "export": false,
+        "location": [
+          0,
+          0.46,
+          10.48
+        ],
+        "primitive": "cone",
+        "radius1": 0.38,
+        "radius2": 0.66,
+        "role": "leaf_finial_lower",
+        "scale": [
+          1,
+          0.68,
+          1
+        ],
+        "vertices": 24
+      },
+      {
+        "bevel": 0.04,
+        "bevel_segments": 3,
+        "depth": 0.86,
+        "export": false,
+        "location": [
+          0,
+          0.46,
+          11.05
+        ],
+        "primitive": "cone",
+        "radius1": 0.66,
+        "radius2": 0.13,
+        "role": "leaf_finial_tip",
+        "scale": [
+          1,
+          0.68,
+          1
+        ],
+        "vertices": 24
+      }
+    ],
+    "design": {
+      "compatible_mount": "aurelian.spear@1",
+      "note": "Symmetrical crossbar; banner centered on the shaft and suspended in front of it. Existing grip and shaft preserved.",
+      "shaft_diameter_mm": 1.02
+    },
+    "landmarks": {
+      "banner_mount": [
+        0,
+        -0.28,
+        7.35
+      ],
+      "crossbar_left": [
+        -2.85,
+        0.46,
+        9.8
+      ],
+      "crossbar_right": [
+        2.85,
+        0.46,
+        9.8
+      ],
+      "foot": [
+        0,
+        0.46,
+        -6.15
+      ],
+      "grip": [
+        0,
+        0.46,
+        -0.4
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "crossbar",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "standard_pole"
+      },
+      {
+        "operand": "finial_collar",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "standard_pole"
+      },
+      {
+        "operand": "leaf_finial_lower",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "standard_pole"
+      },
+      {
+        "operand": "leaf_finial_tip",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "standard_pole"
+      }
+    ]
+  }
+}

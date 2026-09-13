@@ -88,7 +88,12 @@ def resolve_assembly(data, definitions=None):
             raise ValueError(f"pinned definition changed: {definition.reference}")
         placements.append(dict(instance_id=name, part=definition.reference,
                                definition_sha256=definition.sha256, mount=rigid_matrix(item["mount"])))
-    return dict(schema_version=1, assembly_id=data["assembly_id"], placements=placements)
+    result = dict(schema_version=1, assembly_id=data["assembly_id"], placements=placements)
+    if 'label' in data:
+        if not isinstance(data['label'], str) or not data['label'].strip():
+            raise ValueError('assembly label must be nonempty text')
+        result['label'] = data['label']
+    return result
 
 
 def isolated_part(reference, definitions=None):

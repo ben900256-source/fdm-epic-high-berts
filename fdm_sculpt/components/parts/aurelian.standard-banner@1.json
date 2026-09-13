@@ -1,0 +1,225 @@
+{
+  "component_id": "aurelian.standard-banner",
+  "version": 1,
+  "name": "Soft-edged swallowtail banner",
+  "family": "standard-banner",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "banner_cloth"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.14,
+        "dimensions": [
+          3.5,
+          0.78,
+          4.5
+        ],
+        "export": true,
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cube",
+        "role": "banner_cloth"
+      },
+      {
+        "bevel": 0.12,
+        "dimensions": [
+          0.5,
+          0.9,
+          0.9
+        ],
+        "export": false,
+        "location": [
+          -1.15,
+          0,
+          2.2
+        ],
+        "primitive": "cube",
+        "role": "hanging_tab_left"
+      },
+      {
+        "bevel": 0.12,
+        "dimensions": [
+          0.5,
+          0.9,
+          0.9
+        ],
+        "export": false,
+        "location": [
+          1.15,
+          0,
+          2.2
+        ],
+        "primitive": "cube",
+        "role": "hanging_tab_right"
+      },
+      {
+        "bevel": 0.07,
+        "dimensions": [
+          0.22,
+          0.2,
+          4.15
+        ],
+        "export": false,
+        "location": [
+          -1.52,
+          -0.36,
+          0.05
+        ],
+        "primitive": "cube",
+        "role": "woven_border_left"
+      },
+      {
+        "bevel": 0.07,
+        "dimensions": [
+          0.22,
+          0.2,
+          4.15
+        ],
+        "export": false,
+        "location": [
+          1.52,
+          -0.36,
+          0.05
+        ],
+        "primitive": "cube",
+        "role": "woven_border_right"
+      },
+      {
+        "bevel": 0.07,
+        "dimensions": [
+          3.15,
+          0.2,
+          0.22
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.36,
+          1.98
+        ],
+        "primitive": "cube",
+        "role": "woven_top_border"
+      },
+      {
+        "dimensions": [
+          1.0,
+          0.18,
+          3.9
+        ],
+        "export": false,
+        "location": [
+          0.8,
+          -0.365,
+          0.14
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "soft_fold",
+        "segments": 32
+      },
+      {
+        "bevel": 0.06,
+        "dimensions": [
+          1.7,
+          2,
+          1.7
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          -2.65
+        ],
+        "primitive": "cube",
+        "role": "swallowtail_cut",
+        "rotation": [
+          0,
+          0.7853981633974483,
+          0
+        ]
+      }
+    ],
+    "design": {
+      "cloth_thickness_mm": 0.78,
+      "height_mm": 4.5,
+      "note": "Independent cloth; existing seahorse relief is a separately placed component.",
+      "width_mm": 3.5
+    },
+    "landmarks": {
+      "crossbar": [
+        0,
+        0,
+        2.45
+      ],
+      "insignia_mount": [
+        0.08,
+        0.06,
+        -0.2
+      ],
+      "lower_edge": [
+        0,
+        0,
+        -2.25
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "hanging_tab_left",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "banner_cloth"
+      },
+      {
+        "operand": "hanging_tab_right",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "banner_cloth"
+      },
+      {
+        "operand": "woven_border_left",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "banner_cloth"
+      },
+      {
+        "operand": "woven_border_right",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "banner_cloth"
+      },
+      {
+        "operand": "woven_top_border",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "banner_cloth"
+      },
+      {
+        "operand": "soft_fold",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "banner_cloth"
+      },
+      {
+        "operand": "swallowtail_cut",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "banner_cloth"
+      }
+    ]
+  }
+}

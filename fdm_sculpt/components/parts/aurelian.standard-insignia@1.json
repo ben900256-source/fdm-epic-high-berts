@@ -1,0 +1,287 @@
+{
+  "component_id": "aurelian.standard-insignia",
+  "version": 1,
+  "name": "Eight-point elven star standard insignia",
+  "family": "standard-insignia",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "elven_star"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "role": "elven_star",
+        "primitive": "cone",
+        "export": true,
+        "radius1": 1,
+        "radius2": 1,
+        "depth": 0.35,
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "vertices": 4,
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          0.48,
+          1.95,
+          1
+        ],
+        "frame_mm": [
+          [
+            1.0,
+            0,
+            0.0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            -0.075
+          ],
+          [
+            -0.0,
+            0,
+            1.0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "bevel": 0.025,
+        "bevel_segments": 3
+      },
+      {
+        "role": "star_rays_1",
+        "primitive": "cone",
+        "export": false,
+        "radius1": 1,
+        "radius2": 1,
+        "depth": 0.35,
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "vertices": 4,
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          2.25,
+          0.42,
+          1
+        ],
+        "frame_mm": [
+          [
+            1.0,
+            0,
+            0.0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            -0.075
+          ],
+          [
+            -0.0,
+            0,
+            1.0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "bevel": 0.025,
+        "bevel_segments": 3
+      },
+      {
+        "role": "star_rays_2",
+        "primitive": "cone",
+        "export": false,
+        "radius1": 1,
+        "radius2": 1,
+        "depth": 0.35,
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "vertices": 4,
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          0.3,
+          1.6,
+          1
+        ],
+        "frame_mm": [
+          [
+            0.7071067811865476,
+            0,
+            0.7071067811865476,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            -0.075
+          ],
+          [
+            -0.7071067811865476,
+            0,
+            0.7071067811865476,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "bevel": 0.025,
+        "bevel_segments": 3
+      },
+      {
+        "role": "star_rays_3",
+        "primitive": "cone",
+        "export": false,
+        "radius1": 1,
+        "radius2": 1,
+        "depth": 0.35,
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "vertices": 4,
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          0.3,
+          1.6,
+          1
+        ],
+        "frame_mm": [
+          [
+            0.7071067811865476,
+            0,
+            -0.7071067811865476,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            -0.075
+          ],
+          [
+            0.7071067811865476,
+            0,
+            0.7071067811865476,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "bevel": 0.025,
+        "bevel_segments": 3
+      }
+    ],
+    "operations": [
+      {
+        "target": "elven_star",
+        "operand": "star_rays_1",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "elven_star",
+        "operand": "star_rays_2",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "elven_star",
+        "operand": "star_rays_3",
+        "operation": "UNION",
+        "solver": "EXACT"
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "visual_center": [
+        0,
+        0,
+        0
+      ],
+      "top": [
+        0,
+        0,
+        1.95
+      ],
+      "bottom": [
+        0,
+        0,
+        -1.95
+      ],
+      "left": [
+        -2.25,
+        0,
+        0
+      ],
+      "right": [
+        2.25,
+        0,
+        0
+      ]
+    },
+    "design": {
+      "motif": "eight-point elven star",
+      "width_mm": 4.5,
+      "height_mm": 3.9,
+      "relief_mm": 0.25,
+      "backing_overlap_mm": 0.1,
+      "note": "Symmetric broad tapered rays, fused as one reusable attached relief; mount is the backing surface at the visual center."
+    }
+  }
+}

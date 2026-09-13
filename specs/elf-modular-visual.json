@@ -314,8 +314,8 @@
     },
     {
       "instance_id": "elf-01/spear",
-      "part": "aurelian.spear@1",
-      "definition_sha256": "78dcbd5542ad9489d2907965d418c9394ab6c2b2e65f7c38bbc4bdbd45695887",
+      "part": "aurelian.spear@2",
+      "definition_sha256": "797e02eebedc560a2fc78d2597c1d71e7dc1ad233cea353758dc267f0d918d2e",
       "mount": [
         [
           1.0,
@@ -841,8 +841,8 @@
     },
     {
       "instance_id": "elf-02/spear",
-      "part": "aurelian.spear@1",
-      "definition_sha256": "78dcbd5542ad9489d2907965d418c9394ab6c2b2e65f7c38bbc4bdbd45695887",
+      "part": "aurelian.spear@2",
+      "definition_sha256": "797e02eebedc560a2fc78d2597c1d71e7dc1ad233cea353758dc267f0d918d2e",
       "mount": [
         [
           1.0,
@@ -1368,8 +1368,8 @@
     },
     {
       "instance_id": "elf-03/spear",
-      "part": "aurelian.spear@1",
-      "definition_sha256": "78dcbd5542ad9489d2907965d418c9394ab6c2b2e65f7c38bbc4bdbd45695887",
+      "part": "aurelian.spear@2",
+      "definition_sha256": "797e02eebedc560a2fc78d2597c1d71e7dc1ad233cea353758dc267f0d918d2e",
       "mount": [
         [
           1.0,
@@ -1895,8 +1895,8 @@
     },
     {
       "instance_id": "elf-04/spear",
-      "part": "aurelian.spear@1",
-      "definition_sha256": "78dcbd5542ad9489d2907965d418c9394ab6c2b2e65f7c38bbc4bdbd45695887",
+      "part": "aurelian.spear@2",
+      "definition_sha256": "797e02eebedc560a2fc78d2597c1d71e7dc1ad233cea353758dc267f0d918d2e",
       "mount": [
         [
           1.0,
@@ -2422,8 +2422,8 @@
     },
     {
       "instance_id": "elf-05/spear",
-      "part": "aurelian.spear@1",
-      "definition_sha256": "78dcbd5542ad9489d2907965d418c9394ab6c2b2e65f7c38bbc4bdbd45695887",
+      "part": "aurelian.spear@2",
+      "definition_sha256": "797e02eebedc560a2fc78d2597c1d71e7dc1ad233cea353758dc267f0d918d2e",
       "mount": [
         [
           1.0,

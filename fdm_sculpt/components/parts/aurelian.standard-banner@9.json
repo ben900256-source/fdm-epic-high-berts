@@ -1,0 +1,604 @@
+{
+  "component_id": "aurelian.standard-banner",
+  "version": 9,
+  "name": "Centered tapestry and short root taper with directly fused lining",
+  "family": "standard-banner",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "banner_cloth"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          7,
+          0.8,
+          9.2
+        ],
+        "export": true,
+        "location": [
+          0,
+          0,
+          0.75
+        ],
+        "primitive": "cube",
+        "role": "banner_cloth"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16,
+          5,
+          24
+        ],
+        "export": false,
+        "location": [
+          -9.681894427031505,
+          0,
+          -4.874458487696785
+        ],
+        "primitive": "cube",
+        "role": "lower_cut_left",
+        "rotation": [
+          0,
+          -0.6551867204330519,
+          0
+        ]
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16,
+          5,
+          24
+        ],
+        "export": false,
+        "location": [
+          9.681894427031505,
+          0,
+          -4.874458487696785
+        ],
+        "primitive": "cube",
+        "role": "lower_cut_right",
+        "rotation": [
+          0,
+          0.6551867204330519,
+          0
+        ]
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16,
+          5,
+          24
+        ],
+        "export": false,
+        "location": [
+          -11.296370521985988,
+          0,
+          -0.29609328407904234
+        ],
+        "primitive": "cube",
+        "role": "panel_cut_left",
+        "rotation": [
+          0,
+          -0.03702011587393006,
+          0
+        ]
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16,
+          5,
+          24
+        ],
+        "export": false,
+        "location": [
+          11.296370521985988,
+          0,
+          -0.29609328407904234
+        ],
+        "primitive": "cube",
+        "role": "panel_cut_right",
+        "rotation": [
+          0,
+          0.03702011587393006,
+          0
+        ]
+      },
+      {
+        "bevel": 0.08,
+        "dimensions": [
+          0.45,
+          0.72,
+          1.1
+        ],
+        "export": false,
+        "location": [
+          -2.6,
+          0.05,
+          5.6
+        ],
+        "primitive": "cube",
+        "role": "hanging_tab_left"
+      },
+      {
+        "bevel": 0.08,
+        "dimensions": [
+          0.45,
+          0.72,
+          1.1
+        ],
+        "export": false,
+        "location": [
+          2.6,
+          0.05,
+          5.6
+        ],
+        "primitive": "cube",
+        "role": "hanging_tab_right"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16,
+          16,
+          24
+        ],
+        "export": false,
+        "location": [
+          0,
+          -8.877227269413176,
+          -3.8553499981772474
+        ],
+        "primitive": "cube",
+        "role": "root_front_ramp",
+        "rotation": [
+          0.5028432109278609,
+          0,
+          0
+        ]
+      },
+      {
+        "role": "lining_edge_0",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          -3.1264198377038324,
+          -0.49,
+          4.989999999999999
+        ],
+        "end": [
+          -2.944501303263271,
+          -0.49,
+          0.07819957010485432
+        ],
+        "radius": 0.16,
+        "bevel": 0
+      },
+      {
+        "role": "lining_edge_1",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          -2.944501303263271,
+          -0.49,
+          0.07819957010485432
+        ],
+        "end": [
+          -1.0262292891061437,
+          -0.49,
+          -2.4181818181818184
+        ],
+        "radius": 0.16,
+        "bevel": 0
+      },
+      {
+        "role": "lining_edge_2",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          -1.0262292891061437,
+          -0.49,
+          -2.4181818181818184
+        ],
+        "end": [
+          1.0262292891061437,
+          -0.49,
+          -2.4181818181818184
+        ],
+        "radius": 0.16,
+        "bevel": 0
+      },
+      {
+        "role": "lining_edge_3",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          1.0262292891061437,
+          -0.49,
+          -2.4181818181818184
+        ],
+        "end": [
+          2.944501303263271,
+          -0.49,
+          0.07819957010485432
+        ],
+        "radius": 0.16,
+        "bevel": 0
+      },
+      {
+        "role": "lining_edge_4",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          2.944501303263271,
+          -0.49,
+          0.07819957010485432
+        ],
+        "end": [
+          3.1264198377038324,
+          -0.49,
+          4.989999999999999
+        ],
+        "radius": 0.16,
+        "bevel": 0
+      },
+      {
+        "role": "lining_edge_5",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          3.1264198377038324,
+          -0.49,
+          4.989999999999999
+        ],
+        "end": [
+          -3.1264198377038324,
+          -0.49,
+          4.989999999999999
+        ],
+        "radius": 0.16,
+        "bevel": 0
+      },
+      {
+        "role": "lining_corner_0",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -3.1264198377038324,
+          -0.49,
+          4.989999999999999
+        ],
+        "dimensions": [
+          0.32,
+          0.32,
+          0.32
+        ],
+        "segments": 24,
+        "ring_count": 16
+      },
+      {
+        "role": "lining_corner_1",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -2.944501303263271,
+          -0.49,
+          0.07819957010485432
+        ],
+        "dimensions": [
+          0.32,
+          0.32,
+          0.32
+        ],
+        "segments": 24,
+        "ring_count": 16
+      },
+      {
+        "role": "lining_corner_2",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          -1.0262292891061437,
+          -0.49,
+          -2.4181818181818184
+        ],
+        "dimensions": [
+          0.32,
+          0.32,
+          0.32
+        ],
+        "segments": 24,
+        "ring_count": 16
+      },
+      {
+        "role": "lining_corner_3",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          1.0262292891061437,
+          -0.49,
+          -2.4181818181818184
+        ],
+        "dimensions": [
+          0.32,
+          0.32,
+          0.32
+        ],
+        "segments": 24,
+        "ring_count": 16
+      },
+      {
+        "role": "lining_corner_4",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          2.944501303263271,
+          -0.49,
+          0.07819957010485432
+        ],
+        "dimensions": [
+          0.32,
+          0.32,
+          0.32
+        ],
+        "segments": 24,
+        "ring_count": 16
+      },
+      {
+        "role": "lining_corner_5",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          3.1264198377038324,
+          -0.49,
+          4.989999999999999
+        ],
+        "dimensions": [
+          0.32,
+          0.32,
+          0.32
+        ],
+        "segments": 24,
+        "ring_count": 16
+      }
+    ],
+    "design": {
+      "cloth_thickness_mm": 0.8,
+      "field_height_mm": 5.4,
+      "field_lower_width_mm": 6.6,
+      "height_mm": 9.2,
+      "lower_width_mm": 0.76,
+      "nominal_layer_mm": 0.05,
+      "note": "Star centered between the top and bottom of the full banner. Only the bottom tip ramps back to the pole; the flat lining closes above that ramp. No removable supports remains the design target, pending sliced validation.",
+      "root_front_growth_per_height": 0.55,
+      "side_growth_per_height": 0.768421052631579,
+      "support_target": "upright, no removable supports; pending sliced validation",
+      "width_mm": 7.0,
+      "lining_stroke_mm": 0.32,
+      "lining_center_inset_mm": 0.36,
+      "lining_relief_mm": 0.25,
+      "lining_scope": "flat tapestry perimeter closed straight across above the bottom depth taper",
+      "front_face_y_mm": -0.4,
+      "root_taper_height_mm": 1.1818181818181817,
+      "lining_join": "Each rounded stroke and corner is joined directly to the tapestry after the root cut."
+    },
+    "landmarks": {
+      "bottom_left": [
+        -0.38,
+        0.25,
+        -3.85
+      ],
+      "bottom_right": [
+        0.38,
+        0.25,
+        -3.85
+      ],
+      "crossbar": [
+        0,
+        0.14,
+        5.45
+      ],
+      "field_bottom_left": [
+        -3.3,
+        0,
+        -0.05
+      ],
+      "field_bottom_right": [
+        3.3,
+        0,
+        -0.05
+      ],
+      "insignia_mount": [
+        0,
+        -0.4,
+        0.7499999999999998
+      ],
+      "lower_edge": [
+        0,
+        0.25,
+        -3.85
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "root_contact": [
+        0,
+        0.28,
+        -3.84
+      ],
+      "top_left": [
+        -3.5,
+        0,
+        5.35
+      ],
+      "top_right": [
+        3.5,
+        0,
+        5.35
+      ],
+      "field_center": [
+        0,
+        -0.4,
+        2.65
+      ],
+      "lining_bottom": [
+        0,
+        -0.49,
+        -2.4181818181818184
+      ],
+      "lining_taper_left": [
+        -2.944501303263271,
+        -0.49,
+        0.07819957010485432
+      ],
+      "lining_taper_right": [
+        2.944501303263271,
+        -0.49,
+        0.07819957010485432
+      ],
+      "tapestry_front": [
+        0,
+        -0.4,
+        0
+      ],
+      "tapestry_center": [
+        0,
+        -0.4,
+        0.7499999999999998
+      ],
+      "root_ramp_top": [
+        0,
+        -0.4,
+        -2.6681818181818184
+      ]
+    },
+    "operations": [
+      {
+        "target": "banner_cloth",
+        "operand": "lower_cut_left",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT"
+      },
+      {
+        "target": "banner_cloth",
+        "operand": "lower_cut_right",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT"
+      },
+      {
+        "target": "banner_cloth",
+        "operand": "panel_cut_left",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT"
+      },
+      {
+        "target": "banner_cloth",
+        "operand": "panel_cut_right",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT"
+      },
+      {
+        "target": "banner_cloth",
+        "operand": "hanging_tab_left",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "banner_cloth",
+        "operand": "hanging_tab_right",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "banner_cloth",
+        "operand": "root_front_ramp",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT"
+      },
+      {
+        "target": "banner_cloth",
+        "operand": "lining_edge_0",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "banner_cloth",
+        "operand": "lining_edge_1",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "banner_cloth",
+        "operand": "lining_edge_2",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "banner_cloth",
+        "operand": "lining_edge_3",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "banner_cloth",
+        "operand": "lining_edge_4",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "banner_cloth",
+        "operand": "lining_edge_5",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "banner_cloth",
+        "operand": "lining_corner_0",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "banner_cloth",
+        "operand": "lining_corner_1",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "banner_cloth",
+        "operand": "lining_corner_2",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "banner_cloth",
+        "operand": "lining_corner_3",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "banner_cloth",
+        "operand": "lining_corner_4",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "banner_cloth",
+        "operand": "lining_corner_5",
+        "operation": "UNION",
+        "solver": "EXACT"
+      }
+    ]
+  }
+}

@@ -1,5 +1,65 @@
 import { test, expect } from '@playwright/test';
 test.use({channel:'chrome', viewport:{width:1440,height:1000}});
+test.setTimeout(90000);
+
+test('switches between the shared bearer and center unit without refetching shared meshes',async({page})=>{
+  const errors=[],meshRequests=[];
+  page.on('pageerror',e=>errors.push(e.message));
+  page.on('request',r=>{if(r.url().endsWith('.bin'))meshRequests.push(r.url());});
+  await page.goto('http://127.0.0.1:8765');
+  await expect(page.locator('#status')).toContainText('Current model loaded',{timeout:60000});
+  await page.selectOption('#review','aurelian-spearmen-center-standard');
+  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearmen-center-standard');
+  await page.screenshot({path:'../out/viewer-center-standard.png'});
+  await page.click('[data-view="front"]');
+  await page.waitForTimeout(400);
+  await page.screenshot({path:'../out/viewer-center-standard-front.png'});
+  await page.selectOption('#review','aurelian-standard-bearer');
+  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-standard-bearer');
+  await expect(page.locator('#figure option')).toHaveCount(2);
+  await expect(page.locator('#part option[value^="aurelian.spear@"]')).toHaveCount(0);
+  await expect(page.locator('#part option[value="aurelian.shield@2"]')).toHaveCount(0);
+  const horn = await page.locator('#part option').evaluateAll(options=>options.find(o=>o.value.startsWith('aurelian.war-horn@')).value);
+  await page.selectOption('#part',horn);
+  await page.click('[data-view="front"]');
+  await page.waitForTimeout(400);
+  await page.mouse.move(720,500);
+  await page.keyboard.down('Control');
+  await expect(page.locator('#piece-name')).toHaveText('Horn · Bearer 01');
+  await page.keyboard.up('Control');
+  const banner = await page.locator('#part option').evaluateAll(options=>options.find(o=>o.value.startsWith('aurelian.standard-banner@')).value);
+  await page.selectOption('#part',banner);
+  await page.click('[data-view="front"]');
+  await page.waitForTimeout(400);
+  await page.mouse.move(720,500);
+  await page.keyboard.down('Control');
+  await expect(page.locator('#piece-name')).toHaveText('Banner · Bearer 01');
+  await page.keyboard.up('Control');
+  // The standard has its own emblem, which remains visible with shields hidden.
+  await page.selectOption('#part','aurelian.standard-insignia@1');
+  await page.uncheck('#shields');
+  await page.click('[data-view="front"]');
+  await page.waitForTimeout(400);
+  await page.mouse.move(720,500);
+  await page.keyboard.down('Control');
+  await expect(page.locator('body')).toHaveAttribute('data-hovered-piece','bearer-01/banner-insignia');
+  await page.keyboard.up('Control');
+  const requestedBeforeSwitch=meshRequests.length;
+  await page.selectOption('#review','aurelian-spearmen-center-standard');
+  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearmen-center-standard');
+  expect(meshRequests.length).toBe(requestedBeforeSwitch);
+  await expect(page.locator('#part')).toHaveValue('all');
+  const revision=await page.locator('body').getAttribute('data-revision');
+  await page.route('**/data/reviews/*.json',route=>route.fulfill({status:503,body:'unavailable'}));
+  await page.click('#refresh');
+  await expect(page.locator('#status')).toContainText('showing previous model');
+  await expect(page.locator('body')).toHaveAttribute('data-revision',revision);
+  await page.unroute('**/data/reviews/*.json');
+  await page.click('#refresh');
+  await expect(page.locator('#status')).toContainText('Current model loaded');
+  expect(errors).toEqual([]);
+});
+
 test('loads current parts, isolates a face, and reports failed refresh',async({page})=>{
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto('http://127.0.0.1:8765');

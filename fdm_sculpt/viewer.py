@@ -14,6 +14,12 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT/'out/viewer'
 
 
+def _write_json(path, value):
+    temporary = path.with_suffix('.tmp')
+    temporary.write_text(json.dumps(value))
+    temporary.replace(path)
+
+
 def publish(build, destination=DATA):
     build, destination = Path(build).resolve(), Path(destination).resolve()
     if not json.loads((build/'saved-provenance.json').read_text())['passes']:
@@ -50,9 +56,21 @@ def publish(build, destination=DATA):
                     visual_only=True)
     manifest['revision'] = hashlib.sha256(json.dumps(manifest, sort_keys=True).encode()).hexdigest()
     manifest['updated'] = datetime.now(timezone.utc).isoformat()
-    temporary = destination/'latest.tmp'
-    temporary.write_text(json.dumps(manifest))
-    temporary.replace(destination/'latest.json')
+    # Stable review slots let layouts update independently without discarding
+    # the other saved reviews. Geometry buffers remain shared across layouts.
+    assembly_id = job['assembly']['assembly_id']
+    review_key = hashlib.sha256(assembly_id.encode()).hexdigest()
+    reviews = destination/'reviews'
+    reviews.mkdir(exist_ok=True)
+    _write_json(reviews/f'{review_key}.json', manifest)
+    index_path = destination/'reviews.json'
+    index = json.loads(index_path.read_text()) if index_path.exists() else dict(reviews=[])
+    label = job['assembly'].get('label', assembly_id.removeprefix('aurelian-').replace('-', ' ').capitalize())
+    entry = dict(id=assembly_id, label=label,
+                 url=f'/data/reviews/{review_key}.json', revision=manifest['revision'])
+    index['reviews'] = [r for r in index['reviews'] if r['id'] != assembly_id]+[entry]
+    _write_json(index_path, index)
+    _write_json(destination/'latest.json', manifest)
     return dict(url='http://127.0.0.1:8765', exported_parts=len(missing), reused_parts=len(assets)-len(missing))
 
 

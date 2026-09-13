@@ -1,0 +1,445 @@
+{
+  "component_id": "aurelian.war-horn",
+  "version": 1,
+  "name": "Curved elven war horn",
+  "family": "instrument",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "war_horn"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.025,
+        "bevel_segments": 3,
+        "depth": 0.47673668849754747,
+        "export": true,
+        "frame_mm": [
+          [
+            0.6401843996644797,
+            -0.1355445340219619,
+            -0.7561690377971045,
+            0.3
+          ],
+          [
+            0.0,
+            0.984311497064247,
+            -0.17643944215265772,
+            0.10500000000000001
+          ],
+          [
+            0.768221279597376,
+            0.11295377835163488,
+            0.6301408648309202,
+            -0.575
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.375,
+        "radius2": 0.39,
+        "role": "war_horn",
+        "vertices": 40
+      },
+      {
+        "bevel": 0.025,
+        "bevel_segments": 3,
+        "depth": 0.9210707461325712,
+        "export": false,
+        "frame_mm": [
+          [
+            0.9544799780350297,
+            -0.024824605558478485,
+            -0.2972401562526757,
+            0.024999999999999994
+          ],
+          [
+            0.0,
+            0.9965305945617792,
+            -0.08322724375074919,
+            0.035
+          ],
+          [
+            0.2982749931359468,
+            0.07943873778713115,
+            0.9511685000085622,
+            -0.05000000000000002
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.39,
+        "radius2": 0.4,
+        "role": "horn_curve_1",
+        "vertices": 40
+      },
+      {
+        "bevel": 0.025,
+        "bevel_segments": 3,
+        "depth": 0.6185164807134503,
+        "export": false,
+        "frame_mm": [
+          [
+            0.9284766908852594,
+            0.0,
+            -0.3713906763541037,
+            -0.2
+          ],
+          [
+            0.0,
+            1.0000000000000002,
+            0.0,
+            0.0
+          ],
+          [
+            0.3713906763541037,
+            -0.0,
+            0.9284766908852594,
+            0.6
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.4,
+        "radius2": 0.43,
+        "role": "horn_curve_2",
+        "vertices": 40
+      },
+      {
+        "bevel": 0.025,
+        "bevel_segments": 3,
+        "depth": 0.650087712549569,
+        "export": false,
+        "frame_mm": [
+          [
+            0.7893522173763263,
+            0.0,
+            -0.6139406135149205,
+            -0.475
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.6139406135149205,
+            -0.0,
+            0.7893522173763263,
+            1.075
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.7,
+        "role": "horn_curve_3",
+        "vertices": 40
+      },
+      {
+        "bevel": 0.025,
+        "bevel_segments": 3,
+        "depth": 0.88,
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            -0.0,
+            0.0,
+            -0.65
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0,
+            1.7000000000000002
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.7,
+        "radius2": 1.12,
+        "role": "horn_curve_4",
+        "vertices": 40
+      },
+      {
+        "dimensions": [
+          0.78,
+          0.78,
+          0.78
+        ],
+        "export": false,
+        "location": [
+          0.15,
+          0.07,
+          -0.45
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "curve_blend_0",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "export": false,
+        "location": [
+          -0.1,
+          0,
+          0.35
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "curve_blend_1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.86,
+          0.86,
+          0.86
+        ],
+        "export": false,
+        "location": [
+          -0.3,
+          0,
+          0.85
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "curve_blend_2",
+        "segments": 32
+      },
+      {
+        "bevel": 0.03,
+        "bevel_segments": 3,
+        "depth": 0.14,
+        "export": false,
+        "location": [
+          -0.65,
+          0,
+          2.08
+        ],
+        "primitive": "cone",
+        "radius1": 1.1,
+        "radius2": 1.12,
+        "role": "bell_rim",
+        "vertices": 40
+      },
+      {
+        "dimensions": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "export": false,
+        "location": [
+          0.45,
+          0.14,
+          -0.7
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "mouthpiece",
+        "segments": 32
+      },
+      {
+        "bevel": 0.16,
+        "dimensions": [
+          0.8,
+          0.75,
+          0.9
+        ],
+        "export": false,
+        "location": [
+          0.32,
+          0.32,
+          -0.55
+        ],
+        "primitive": "cube",
+        "role": "carrying_loop"
+      },
+      {
+        "bevel": 0.015,
+        "bevel_segments": 3,
+        "depth": 0.8,
+        "export": false,
+        "location": [
+          -0.65,
+          0,
+          2.04
+        ],
+        "primitive": "cone",
+        "radius1": 0.01,
+        "radius2": 0.39,
+        "role": "bell_opening",
+        "vertices": 40
+      }
+    ],
+    "design": {
+      "bell_outer_radius_mm": 1.12,
+      "minimum_stem_diameter_mm": 0.75,
+      "note": "Curved solid horn with upward bell recess, gripped in the left hand and carried against the mail."
+    },
+    "landmarks": {
+      "bell": [
+        -0.65,
+        0,
+        2.1
+      ],
+      "carrying_loop": [
+        0.32,
+        0.32,
+        -0.55
+      ],
+      "grip": [
+        -0.3,
+        0,
+        0.85
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "mouthpiece": [
+        0.45,
+        0.14,
+        -0.7
+      ]
+    },
+    "operations": [
+      {
+        "operand": "horn_curve_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "war_horn"
+      },
+      {
+        "operand": "horn_curve_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "war_horn"
+      },
+      {
+        "operand": "horn_curve_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "war_horn"
+      },
+      {
+        "operand": "horn_curve_4",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "war_horn"
+      },
+      {
+        "operand": "curve_blend_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "war_horn"
+      },
+      {
+        "operand": "curve_blend_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "war_horn"
+      },
+      {
+        "operand": "curve_blend_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "war_horn"
+      },
+      {
+        "operand": "bell_rim",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "war_horn"
+      },
+      {
+        "operand": "mouthpiece",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "war_horn"
+      },
+      {
+        "operand": "carrying_loop",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "war_horn"
+      },
+      {
+        "operand": "bell_opening",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "war_horn"
+      }
+    ]
+  }
+}

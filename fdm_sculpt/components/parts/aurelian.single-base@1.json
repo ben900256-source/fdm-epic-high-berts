@@ -1,0 +1,1567 @@
+{
+  "component_id": "aurelian.single-base",
+  "version": 1,
+  "name": "Four-millimeter ground base",
+  "family": "single-base",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "base"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0,
+        "dimensions": [
+          4,
+          5,
+          1
+        ],
+        "export": true,
+        "location": [
+          0,
+          0,
+          0.5
+        ],
+        "primitive": "cube",
+        "role": "base"
+      },
+      {
+        "dimensions": [
+          1.0309030476245375,
+          1.128585223554972,
+          0.454903411337808
+        ],
+        "export": false,
+        "location": [
+          -2.3116723640142327,
+          -2.403595383509372,
+          0.8897052273610747
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_0_12",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.2088305526847452,
+          1.242333147922306,
+          0.30047308409648876
+        ],
+        "export": false,
+        "location": [
+          -1.515667466176156,
+          -2.2385701438371326,
+          0.9611040634100064
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_0_13",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.2265794408557955,
+          1.1207004447759932,
+          0.4094815818388552
+        ],
+        "export": false,
+        "location": [
+          -1.0134417282003279,
+          -2.293716495329749,
+          0.9535080456652438
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_0_14",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.01963623499536,
+          1.2342662729871487,
+          0.42817811599452416
+        ],
+        "export": false,
+        "location": [
+          -0.13310430434153644,
+          -2.399525491883388,
+          0.9028198806204576
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_0_15",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.9407682189519622,
+          0.9072429668341393,
+          0.26289046870786476
+        ],
+        "export": false,
+        "location": [
+          0.48140301589430823,
+          -2.102603088902201,
+          0.9579080921981111
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_0_16",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.4786683391167939,
+          0.9505226690791049,
+          0.35207025182933627
+        ],
+        "export": false,
+        "location": [
+          1.101163163731083,
+          -2.3508148322543283,
+          0.9276465697863375
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_0_17",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.9388758989906681,
+          1.295040298003149,
+          0.42764966105575286
+        ],
+        "export": false,
+        "location": [
+          1.5978954699856045,
+          -2.4010629282573888,
+          0.9250637668607399
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_0_18",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.9412547457528112,
+          0.9704337038205153,
+          0.4121695263669041
+        ],
+        "export": false,
+        "location": [
+          2.2614012594836796,
+          -2.131054290936653,
+          0.9383477326414111
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_0_19",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.5311842458134852,
+          1.3197140024866063,
+          0.36936048389324916
+        ],
+        "export": false,
+        "location": [
+          -2.1207231844911703,
+          -1.7365459538135066,
+          0.8888447484554199
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_1_12",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.4029674235856129,
+          1.1366152728870405,
+          0.4136950465428595
+        ],
+        "export": false,
+        "location": [
+          -1.4762677264342705,
+          -1.7771795956178131,
+          0.9508497170298025
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_1_13",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.3705071036759873,
+          1.2171059893507965,
+          0.4049611573834331
+        ],
+        "export": false,
+        "location": [
+          -0.7449980928022241,
+          -1.415348619251285,
+          0.9329892109006785
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_1_14",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.193124779330825,
+          0.9646111362721952,
+          0.4195752395080057
+        ],
+        "export": false,
+        "location": [
+          -0.24082841329755975,
+          -1.629783155738162,
+          0.9488155205774973
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_1_15",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.285592347910232,
+          1.063604451789015,
+          0.47610727872023845
+        ],
+        "export": false,
+        "location": [
+          0.2737944141810445,
+          -1.7892701726027267,
+          0.9176102583899156
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_1_16",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.461493110676778,
+          0.871041626218484,
+          0.4452123850875723
+        ],
+        "export": false,
+        "location": [
+          0.9358365693937437,
+          -1.7157610737080315,
+          0.9634127021857529
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_1_17",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.0670049440731442,
+          0.8689448467903775,
+          0.41982307821736675
+        ],
+        "export": false,
+        "location": [
+          1.540963727585101,
+          -1.6713309352494665,
+          0.8973587994795417
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_1_18",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.071702643881689,
+          1.0694146758398644,
+          0.3984053352688459
+        ],
+        "export": false,
+        "location": [
+          2.274554906364206,
+          -1.7191846716826482,
+          0.9525343291300099
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_1_19",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.9655824408463899,
+          1.1818921079723057,
+          0.366978002627104
+        ],
+        "export": false,
+        "location": [
+          -1.9777079886251123,
+          -1.1076295815449206,
+          0.938730059407205
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_2_12",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.2647856031132818,
+          1.2246746577077037,
+          0.38355334591874
+        ],
+        "export": false,
+        "location": [
+          -1.7745358941944103,
+          -0.8418420160284257,
+          0.903486552643589
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_2_13",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.5432684587676775,
+          1.3154037966787053,
+          0.2855010690910219
+        ],
+        "export": false,
+        "location": [
+          -0.9971567207810293,
+          -0.8717445907319962,
+          0.908775872793126
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_2_14",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.4282545782355451,
+          1.266036794347741,
+          0.34059811668361994
+        ],
+        "export": false,
+        "location": [
+          -0.4314603726393687,
+          -0.8021943692897877,
+          0.9459902846136911
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_2_15",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.362508122103459,
+          0.9416266703690528,
+          0.2723011708078237
+        ],
+        "export": false,
+        "location": [
+          0.41769565300260436,
+          -0.9098534758450308,
+          0.9500534721171027
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_2_16",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.0714459060234038,
+          1.2754516790344965,
+          0.474108582053564
+        ],
+        "export": false,
+        "location": [
+          0.8608297628366073,
+          -0.7824778961928435,
+          0.9618057214132423
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_2_17",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.396259891889786,
+          1.2914548221749524,
+          0.3021398938074957
+        ],
+        "export": false,
+        "location": [
+          1.639186355252002,
+          -0.9983932977588751,
+          0.9218236167272875
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_2_18",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.523975125984355,
+          0.9612109177779,
+          0.37313841524624913
+        ],
+        "export": false,
+        "location": [
+          2.1911823174117924,
+          -0.928455903282155,
+          0.9013315205897912
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_2_19",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.2253567035493687,
+          1.3319244100570102,
+          0.2897264377272005
+        ],
+        "export": false,
+        "location": [
+          -1.9909954383580355,
+          -0.4564434356528299,
+          0.8862028869285389
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_3_12",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.1514312246874714,
+          1.163598825106065,
+          0.4582456816164885
+        ],
+        "export": false,
+        "location": [
+          -1.3661891443027574,
+          -0.13171887030562457,
+          0.9645552846059176
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_3_13",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.9468428551649987,
+          1.2411541158661938,
+          0.29950646590150326
+        ],
+        "export": false,
+        "location": [
+          -0.8682802959156785,
+          -0.15807870202012214,
+          0.9599163612614244
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_3_14",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.182281583503478,
+          0.8792076344488993,
+          0.40979995659676344
+        ],
+        "export": false,
+        "location": [
+          -0.28276835815335455,
+          -0.29950263816306927,
+          0.9295379050597405
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_3_15",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.298525586037432,
+          0.9067548267730333,
+          0.4385304598513513
+        ],
+        "export": false,
+        "location": [
+          0.223041524011258,
+          -0.25640769138439123,
+          0.8860456165864311
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_3_16",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.175783628304595,
+          0.9185759885140007,
+          0.4452580350734199
+        ],
+        "export": false,
+        "location": [
+          1.0154051878393704,
+          -0.2434271148847112,
+          0.8939939695292879
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_3_17",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.2845821068933718,
+          1.1487579294904762,
+          0.3672695244665716
+        ],
+        "export": false,
+        "location": [
+          1.4288427747247943,
+          -0.4710340488333842,
+          0.9099100006613854
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_3_18",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.5311423933443078,
+          0.9213973868298192,
+          0.29535079015018506
+        ],
+        "export": false,
+        "location": [
+          2.215110859386412,
+          -0.4009018061428482,
+          0.8986623006619083
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_3_19",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.5418383372203575,
+          0.8783353514501805,
+          0.24300552559390523
+        ],
+        "export": false,
+        "location": [
+          -2.3793760701778015,
+          0.18470429006865072,
+          0.9231825126753391
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_4_12",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.4506521443285563,
+          0.916827677747065,
+          0.38572439824579907
+        ],
+        "export": false,
+        "location": [
+          -1.538494255880308,
+          0.14996702884841764,
+          0.9070375268063913
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_4_13",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.9078958973139927,
+          1.2021413749554561,
+          0.3236865988413419
+        ],
+        "export": false,
+        "location": [
+          -0.873094964419179,
+          0.5031180027818167,
+          0.9118195781158025
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_4_14",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.446395612266941,
+          1.1665271187510855,
+          0.4547506353150039
+        ],
+        "export": false,
+        "location": [
+          -0.14512363211644888,
+          0.398802460800438,
+          0.9328094889525381
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_4_15",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.9670751333932078,
+          1.251431221087709,
+          0.2516903928842979
+        ],
+        "export": false,
+        "location": [
+          0.5149904661647177,
+          0.28557686389388515,
+          0.8914236631970874
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_4_16",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.3151445238353452,
+          1.0064230276718735,
+          0.3963254745713154
+        ],
+        "export": false,
+        "location": [
+          1.115242539651006,
+          0.41180670573155226,
+          0.8871040918465223
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_4_17",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.1596103472575532,
+          1.3060527621134028,
+          0.37875635835797894
+        ],
+        "export": false,
+        "location": [
+          1.7123058127815873,
+          0.38875201519279823,
+          0.9136065059591454
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_4_18",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.1214107389156225,
+          1.062025443761946,
+          0.24234691684657328
+        ],
+        "export": false,
+        "location": [
+          2.066556362354608,
+          0.3539635018688067,
+          0.9685066004073801
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_4_19",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.3976934968713783,
+          1.3316647286250758,
+          0.37117630704761345
+        ],
+        "export": false,
+        "location": [
+          -2.653689801794913,
+          0.8130037540017027,
+          0.9537032412608148
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_5_11",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.1978632455924048,
+          1.2255198089168353,
+          0.25875140945237723
+        ],
+        "export": false,
+        "location": [
+          -2.0463618704071633,
+          0.8687609314652885,
+          0.8805341479759736
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_5_12",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.2505282355181482,
+          1.2740882510313827,
+          0.38500898455784105
+        ],
+        "export": false,
+        "location": [
+          -1.7267689817823326,
+          0.8918463757934507,
+          0.9104007959981525
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_5_13",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.3548990998761083,
+          0.874303065507662,
+          0.30521138548506466
+        ],
+        "export": false,
+        "location": [
+          -0.8548755458780043,
+          0.934342044059564,
+          0.9420003778318224
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_5_14",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.4052590892609889,
+          1.3401243766911994,
+          0.4353693571619125
+        ],
+        "export": false,
+        "location": [
+          -0.2858338587817635,
+          0.8434726886949028,
+          0.969685611143151
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_5_15",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.9517572203197511,
+          0.9371836252023394,
+          0.3755872310876237
+        ],
+        "export": false,
+        "location": [
+          0.3672003441301712,
+          0.8782952690978554,
+          0.8803921316269373
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_5_16",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.0872592051745855,
+          1.3498421262339808,
+          0.4287940682138156
+        ],
+        "export": false,
+        "location": [
+          1.0879516079602165,
+          1.1439427463292333,
+          0.9199053934677244
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_5_17",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.9090255770428314,
+          1.313232470270631,
+          0.31756989854787904
+        ],
+        "export": false,
+        "location": [
+          1.3741122075362744,
+          0.8609242596355386,
+          0.934614526884672
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_5_18",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.0636557508329587,
+          1.2495792113518187,
+          0.4695819039131143
+        ],
+        "export": false,
+        "location": [
+          2.237392081213514,
+          0.8774872002337007,
+          0.9103992526346452
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_5_19",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.348219202546077,
+          0.9198221476796098,
+          0.283167483975474
+        ],
+        "export": false,
+        "location": [
+          -2.2429672625938313,
+          1.632223436154067,
+          0.9039542485919392
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_6_12",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.3716809188791261,
+          1.0473002099884865,
+          0.4349089594937576
+        ],
+        "export": false,
+        "location": [
+          -1.3646818861738699,
+          1.7480516254309626,
+          0.9397867804754818
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_6_13",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.0587612245816782,
+          1.184800091153925,
+          0.2663698397787214
+        ],
+        "export": false,
+        "location": [
+          -1.0091846185115791,
+          1.610966307203011,
+          0.8906361382205975
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_6_14",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.0942512232675565,
+          0.933312672267407,
+          0.38639186774883627
+        ],
+        "export": false,
+        "location": [
+          -0.22151401042247534,
+          1.7900258491920888,
+          0.9298791707963259
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_6_15",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.0470457391962213,
+          1.2855041562774057,
+          0.3359736032537169
+        ],
+        "export": false,
+        "location": [
+          0.09917203759013968,
+          1.7557620553805877,
+          0.9018404705517319
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_6_16",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.0902940426618015,
+          1.1727372630796347,
+          0.35601257770389605
+        ],
+        "export": false,
+        "location": [
+          0.875345646997718,
+          1.52550179170824,
+          0.9463558714023581
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_6_17",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.4396509163680453,
+          1.261572825480119,
+          0.42288674555126016
+        ],
+        "export": false,
+        "location": [
+          1.7626981064237963,
+          1.410267374569104,
+          0.8836007510471031
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_6_18",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.4664317695917153,
+          1.248014163385327,
+          0.2801870604102861
+        ],
+        "export": false,
+        "location": [
+          2.13555544205593,
+          1.6643424867575547,
+          0.9368504946044051
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_6_19",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.01224583412189,
+          1.0886709439955018,
+          0.4418597785604561
+        ],
+        "export": false,
+        "location": [
+          -2.239126816709108,
+          2.2885206644641394,
+          0.9196912498008999
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_7_12",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.5248407428811885,
+          0.8671043549146161,
+          0.3297291550686828
+        ],
+        "export": false,
+        "location": [
+          -1.6504757131570702,
+          2.2094493692503034,
+          0.8880638718413857
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_7_13",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.0706717152076073,
+          0.863148706459866,
+          0.3283130368709018
+        ],
+        "export": false,
+        "location": [
+          -1.0364381733758257,
+          2.2518476874525577,
+          0.9119837718079824
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_7_14",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.094702145530077,
+          0.9458595381861987,
+          0.4311757253488505
+        ],
+        "export": false,
+        "location": [
+          -0.4214138077851952,
+          2.3571347883728975,
+          0.9246357047391571
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_7_15",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.2355739261480148,
+          1.2125821827946643,
+          0.396611764112771
+        ],
+        "export": false,
+        "location": [
+          0.30807220440860644,
+          2.378025860482872,
+          0.9131688158564417
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_7_16",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          1.2259926476876903,
+          1.2813290536963022,
+          0.37808553744187
+        ],
+        "export": false,
+        "location": [
+          1.1061897156028793,
+          2.273200240237436,
+          0.9100000035855992
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_7_17",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.9657121571663199,
+          1.221417255327954,
+          0.42717462682690827
+        ],
+        "export": false,
+        "location": [
+          1.3509684504647121,
+          2.3503579576145883,
+          0.9401400074496429
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_7_18",
+        "segments": 16
+      },
+      {
+        "dimensions": [
+          0.9712927152757119,
+          1.0634409279372623,
+          0.31542987421974605
+        ],
+        "export": false,
+        "location": [
+          2.36501724664495,
+          2.1852323356827332,
+          0.9349532271937049
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "noise_7_19",
+        "segments": 16
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          4,
+          5,
+          1.3
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          0.65
+        ],
+        "primitive": "cube",
+        "role": "base_boundary"
+      }
+    ],
+    "design": {
+      "depth_mm": 5,
+      "note": "Owns the central terrain primitives from strip revision 4; no runtime geometry dependency.",
+      "seed": 1001,
+      "width_mm": 4
+    },
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "noise_0_12",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_0_13",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_0_14",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_0_15",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_0_16",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_0_17",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_0_18",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_0_19",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_1_12",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_1_13",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_1_14",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_1_15",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_1_16",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_1_17",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_1_18",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_1_19",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_2_12",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_2_13",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_2_14",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_2_15",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_2_16",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_2_17",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_2_18",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_2_19",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_3_12",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_3_13",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_3_14",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_3_15",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_3_16",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_3_17",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_3_18",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_3_19",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_4_12",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_4_13",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_4_14",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_4_15",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_4_16",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_4_17",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_4_18",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_4_19",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_5_11",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_5_12",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_5_13",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_5_14",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_5_15",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_5_16",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_5_17",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_5_18",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_5_19",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_6_12",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_6_13",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_6_14",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_6_15",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_6_16",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_6_17",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_6_18",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_6_19",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_7_12",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_7_13",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_7_14",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_7_15",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_7_16",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_7_17",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_7_18",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "noise_7_19",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "base"
+      },
+      {
+        "operand": "base_boundary",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "base"
+      }
+    ]
+  }
+}
