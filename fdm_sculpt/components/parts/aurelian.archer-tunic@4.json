@@ -1,0 +1,422 @@
+{
+  "component_id": "aurelian.archer-tunic",
+  "version": 4,
+  "name": "Wide flared archer tunic",
+  "family": "archer-tunic",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "tunic_body"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          1.84,
+          1.3,
+          2.18
+        ],
+        "export": true,
+        "location": [
+          0,
+          0.06,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "tunic_body",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.34,
+          0.98,
+          0.78
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          1.15
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "tunic_collar",
+        "segments": 32
+      },
+      {
+        "role": "tunic_skirt",
+        "primitive": "cone",
+        "export": false,
+        "location": [
+          0,
+          0,
+          -2.0
+        ],
+        "radius1": 1.77,
+        "radius2": 0.92,
+        "depth": 3.0,
+        "vertices": 40,
+        "bevel": 0.045,
+        "bevel_segments": 3,
+        "scale": [
+          1,
+          0.72,
+          1
+        ]
+      },
+      {
+        "role": "tunic_hem",
+        "primitive": "cone",
+        "export": false,
+        "location": [
+          0,
+          0,
+          -3.4
+        ],
+        "radius1": 1.7935999999999999,
+        "radius2": 1.7464,
+        "depth": 0.2,
+        "vertices": 40,
+        "bevel": 0.045,
+        "bevel_segments": 3,
+        "scale": [
+          1,
+          0.72,
+          1
+        ]
+      },
+      {
+        "role": "belt",
+        "primitive": "cone",
+        "export": false,
+        "location": [
+          0,
+          0,
+          -0.56
+        ],
+        "radius1": 0.96,
+        "radius2": 0.96,
+        "depth": 0.24,
+        "vertices": 40,
+        "bevel": 0.045,
+        "bevel_segments": 3,
+        "scale": [
+          1,
+          0.8,
+          1
+        ]
+      },
+      {
+        "role": "belt_buckle",
+        "primitive": "cube",
+        "export": false,
+        "location": [
+          0,
+          -0.79,
+          -0.56
+        ],
+        "dimensions": [
+          0.45,
+          0.24,
+          0.33
+        ],
+        "bevel": 0.04
+      },
+      {
+        "role": "cloth_crease_0",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          1.0504,
+          0.0,
+          -0.96
+        ],
+        "end": [
+          1.7464,
+          0.0,
+          -3.34
+        ],
+        "radius": 0.125,
+        "bevel": 0.035
+      },
+      {
+        "role": "cloth_crease_1",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          0.8497914508914448,
+          0.44453493288576995,
+          -0.96
+        ],
+        "end": [
+          1.4128672789764083,
+          0.7390858785145739,
+          -3.34
+        ],
+        "radius": 0.125,
+        "bevel": 0.035
+      },
+      {
+        "role": "cloth_crease_2",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          0.32459145089144487,
+          0.7192726305958291,
+          -0.96
+        ],
+        "end": [
+          0.5396672789764082,
+          1.1958660720416563,
+          -3.34
+        ],
+        "radius": 0.125,
+        "bevel": 0.035
+      },
+      {
+        "role": "cloth_crease_3",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          -0.3245914508914447,
+          0.7192726305958291,
+          -0.96
+        ],
+        "end": [
+          -0.539667278976408,
+          1.1958660720416563,
+          -3.34
+        ],
+        "radius": 0.125,
+        "bevel": 0.035
+      },
+      {
+        "role": "cloth_crease_4",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          -0.8497914508914447,
+          0.44453493288577,
+          -0.96
+        ],
+        "end": [
+          -1.4128672789764078,
+          0.739085878514574,
+          -3.34
+        ],
+        "radius": 0.125,
+        "bevel": 0.035
+      },
+      {
+        "role": "cloth_crease_5",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          -1.0504,
+          9.261856784335535e-17,
+          -0.96
+        ],
+        "end": [
+          -1.7464,
+          1.539880682422275e-16,
+          -3.34
+        ],
+        "radius": 0.125,
+        "bevel": 0.035
+      },
+      {
+        "role": "cloth_crease_6",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          -0.8497914508914448,
+          -0.44453493288576984,
+          -0.96
+        ],
+        "end": [
+          -1.4128672789764083,
+          -0.7390858785145737,
+          -3.34
+        ],
+        "radius": 0.125,
+        "bevel": 0.035
+      },
+      {
+        "role": "cloth_crease_7",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          -0.324591450891445,
+          -0.7192726305958291,
+          -0.96
+        ],
+        "end": [
+          -0.5396672789764084,
+          -1.1958660720416563,
+          -3.34
+        ],
+        "radius": 0.125,
+        "bevel": 0.035
+      },
+      {
+        "role": "cloth_crease_8",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          0.3245914508914446,
+          -0.7192726305958291,
+          -0.96
+        ],
+        "end": [
+          0.5396672789764078,
+          -1.1958660720416563,
+          -3.34
+        ],
+        "radius": 0.125,
+        "bevel": 0.035
+      },
+      {
+        "role": "cloth_crease_9",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          0.8497914508914447,
+          -0.4445349328857701,
+          -0.96
+        ],
+        "end": [
+          1.4128672789764078,
+          -0.7390858785145743,
+          -3.34
+        ],
+        "radius": 0.125,
+        "bevel": 0.035
+      }
+    ],
+    "operations": [
+      {
+        "target": "tunic_body",
+        "operand": "tunic_collar",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "tunic_body",
+        "operand": "tunic_skirt",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "tunic_body",
+        "operand": "tunic_hem",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "tunic_body",
+        "operand": "belt",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "tunic_body",
+        "operand": "belt_buckle",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "tunic_body",
+        "operand": "cloth_crease_0",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT"
+      },
+      {
+        "target": "tunic_body",
+        "operand": "cloth_crease_1",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT"
+      },
+      {
+        "target": "tunic_body",
+        "operand": "cloth_crease_2",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT"
+      },
+      {
+        "target": "tunic_body",
+        "operand": "cloth_crease_3",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT"
+      },
+      {
+        "target": "tunic_body",
+        "operand": "cloth_crease_4",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT"
+      },
+      {
+        "target": "tunic_body",
+        "operand": "cloth_crease_5",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT"
+      },
+      {
+        "target": "tunic_body",
+        "operand": "cloth_crease_6",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT"
+      },
+      {
+        "target": "tunic_body",
+        "operand": "cloth_crease_7",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT"
+      },
+      {
+        "target": "tunic_body",
+        "operand": "cloth_crease_8",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT"
+      },
+      {
+        "target": "tunic_body",
+        "operand": "cloth_crease_9",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT"
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "waist": [
+        0,
+        0,
+        -0.56
+      ],
+      "hem": [
+        0,
+        0,
+        -3.5
+      ],
+      "collar": [
+        0,
+        0,
+        1.15
+      ]
+    },
+    "provenance": "Revision 3 upper garment retained; hem widened 18 percent with matching cloth creases.",
+    "design": {
+      "garment": "Cloth tunic with broad folds and belt; no mail or breastplate.",
+      "hem_height_local_mm": -3.5,
+      "support_target": "No removable supports; pending sliced validation."
+    }
+  }
+}

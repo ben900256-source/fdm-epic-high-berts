@@ -19,10 +19,14 @@ def file_hash(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
-def engine_hash():
+def engine_hash(definition=None):
     package = Path(__file__).parent
-    return component_digest({name: file_hash(package/name) for name in
-                             ('atelier_blender.py', 'regiment_blender.py', 'blender_backend.py')})
+    sources={name: file_hash(package/name) for name in
+             ('atelier_blender.py', 'regiment_blender.py', 'blender_backend.py')}
+    if definition is not None and any(a['primitive']=='heightfield' for a in definition.to_dict()['parameters']['atoms']):
+        for name in ('atelier_heightfield_blender.py','components/heightfield.py'):
+            sources[name]=file_hash(package/name)
+    return component_digest(sources)
 
 
 def prepare(data, *, seed, cache=DEFAULT_CACHE, definitions=None):
@@ -37,7 +41,7 @@ def prepare(data, *, seed, cache=DEFAULT_CACHE, definitions=None):
         if ref in assets:
             continue
         definition = definitions[ref]
-        key = cache_key(definition, engine)
+        key = cache_key(definition, engine_hash(definition))
         directory = Path(cache).resolve()/key
         manifest = directory/'asset.json'
         record = None
@@ -48,7 +52,7 @@ def prepare(data, *, seed, cache=DEFAULT_CACHE, definitions=None):
                 raise ValueError(f"cached part failed integrity check: {ref}; use a fresh cache directory")
         elif directory.exists():
             raise ValueError(f"incomplete cache entry: {directory}; use a fresh cache directory")
-        assets[ref] = dict(key=key, directory=str(directory), definition=definition.to_dict(),
+        assets[ref] = dict(key=key, engine_hash=engine_hash(definition), directory=str(directory), definition=definition.to_dict(),
                            cached=record is not None, manifest=record)
     return dict(assembly=assembly, seed=seed, engine_hash=engine, assets=assets)
 
@@ -70,6 +74,9 @@ def compose(data, *, seed, output, cache=DEFAULT_CACHE, render=False, definition
     if 'Blender 5.1.2' not in version.stdout:
         raise ValueError("Blender 5.1.2 is required")
     entry = Path(__file__).with_name('atelier_blender.py')
+    if any(atom['primitive']=='heightfield' for asset in job['assets'].values()
+           for atom in asset['definition']['parameters']['atoms']):
+        entry=entry.with_name('atelier_heightfield_blender.py')
     with (output/'atelier.log').open('w') as log:
         process = subprocess.run([str(blender), '--background', '--factory-startup', '--python-exit-code', '1',
                                   '--python', str(entry), '--', 'compose', str(path)],
@@ -79,7 +86,8 @@ def compose(data, *, seed, output, cache=DEFAULT_CACHE, render=False, definition
     with (output/'provenance.log').open('w') as log:
         check = subprocess.run([str(blender), '--background', str(output/'assembly.blend'),
                                 '--python-exit-code', '1', '--python', str(entry), '--', 'verify', str(path)],
-                               stdout=log, stderr=subprocess.STDOUT, timeout=120)
+                               stdout=log, stderr=subprocess.STDOUT,
+                               timeout=300 if entry.name=='atelier_heightfield_blender.py' else 120)
     if check.returncode:
         raise RuntimeError(f"saved part provenance failed; see {output/'provenance.log'}")
     result = json.loads((output/'visual-review.json').read_text())

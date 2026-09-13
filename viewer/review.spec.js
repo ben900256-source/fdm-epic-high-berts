@@ -116,3 +116,22 @@ test('reviews the archer unit and isolates its reusable tunic',async({page})=>{
   await expect(page.locator('#part option[value="aurelian.archer-bow-arm@2"]')).toHaveCount(1);
   expect(errors).toEqual([]);
 });
+
+test('selects ten archer variants and identifies the bow metalwork',async({page})=>{
+  const errors=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.goto('http://127.0.0.1:8765');
+  await expect(page.locator('#status')).toContainText('Current model loaded',{timeout:60000});
+  await page.selectOption('#review','aurelian-archer-variants');
+  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-archer-variants');
+  await expect(page.locator('#figure option')).toHaveCount(11);
+  await page.selectOption('#figure','variant-06-reaching-quiver');
+  await page.selectOption('#part','aurelian.archer-bow-ferrule@1');
+  await page.click('[data-view="front"]');
+  await page.click('#fit');
+  await page.waitForTimeout(300);
+  await page.mouse.move(720,500);
+  await page.keyboard.down('Control');
+  await expect(page.locator('body')).toHaveAttribute('data-hovered-piece','variant-06-reaching-quiver/bow-ferrule');
+  await page.keyboard.up('Control');
+  expect(errors).toEqual([]);
+});

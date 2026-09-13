@@ -1,0 +1,150 @@
+{
+  "component_id": "aurelian.cloth-waist-wrap",
+  "version": 1,
+  "name": "Pleated cloth waist wrap",
+  "family": "cloth-waist-wrap",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "cloth_waist_wrap"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "role": "cloth_waist_wrap",
+        "primitive": "cone",
+        "export": true,
+        "location": [
+          0,
+          -0.05,
+          -0.8
+        ],
+        "radius1": 1.24,
+        "radius2": 1.15,
+        "depth": 0.9,
+        "scale": [
+          1,
+          0.84,
+          1
+        ],
+        "vertices": 64,
+        "bevel": 0.1,
+        "bevel_segments": 3
+      },
+      {
+        "role": "cloth_fold_1",
+        "primitive": "cone",
+        "export": false,
+        "location": [
+          0,
+          -0.05,
+          -0.49
+        ],
+        "radius1": 1.1989999999999998,
+        "radius2": 1.1989999999999998,
+        "depth": 0.19,
+        "scale": [
+          1,
+          0.84,
+          1
+        ],
+        "vertices": 64,
+        "bevel": 0.08,
+        "bevel_segments": 3
+      },
+      {
+        "role": "cloth_fold_2",
+        "primitive": "cone",
+        "export": false,
+        "location": [
+          0,
+          -0.05,
+          -0.79
+        ],
+        "radius1": 1.2289999999999999,
+        "radius2": 1.2289999999999999,
+        "depth": 0.19,
+        "scale": [
+          1,
+          0.84,
+          1
+        ],
+        "vertices": 64,
+        "bevel": 0.08,
+        "bevel_segments": 3
+      },
+      {
+        "role": "cloth_fold_3",
+        "primitive": "cone",
+        "export": false,
+        "location": [
+          0,
+          -0.05,
+          -1.09
+        ],
+        "radius1": 1.259,
+        "radius2": 1.259,
+        "depth": 0.19,
+        "scale": [
+          1,
+          0.84,
+          1
+        ],
+        "vertices": 64,
+        "bevel": 0.08,
+        "bevel_segments": 3
+      }
+    ],
+    "operations": [
+      {
+        "target": "cloth_waist_wrap",
+        "operand": "cloth_fold_1",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "cloth_waist_wrap",
+        "operand": "cloth_fold_2",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "cloth_waist_wrap",
+        "operand": "cloth_fold_3",
+        "operation": "UNION",
+        "solver": "EXACT"
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "waist": [
+        0,
+        -0.05,
+        -0.8
+      ],
+      "upper_edge": [
+        0,
+        -0.05,
+        -0.35
+      ],
+      "lower_edge": [
+        0,
+        -0.05,
+        -1.25
+      ]
+    },
+    "provenance": "Original reusable cloth sash covering the chest plate and chainmail waist seam.",
+    "design": {
+      "style": "Soft beveled oval wrap with three shallow horizontal folds",
+      "coverage": "Overlaps the plate lower edge and the top of the chainmail skirt; visual review only."
+    }
+  }
+}

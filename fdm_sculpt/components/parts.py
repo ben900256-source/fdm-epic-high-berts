@@ -50,8 +50,13 @@ def validate_part(definition):
     if "mount" not in p["landmarks"]:
         raise ValueError("part needs its own mount landmark")
     for atom in atoms.values():
-        if atom["primitive"] not in {"cube", "sphere", "cone", "cylinder", "between"}:
+        if atom["primitive"] not in {"cube", "sphere", "cone", "cylinder", "between", "heightfield"}:
             raise ValueError("unsupported part primitive")
+        if atom['primitive']=='heightfield':
+            if definition.family!='terrain-surface':
+                raise ValueError('heightfields are restricted to terrain surfaces')
+            from .heightfield import validate_grid
+            validate_grid(atom['grid'])
         if "frame_mm" in atom:
             rigid_matrix(atom["frame_mm"])
     for operation in p["operations"]:

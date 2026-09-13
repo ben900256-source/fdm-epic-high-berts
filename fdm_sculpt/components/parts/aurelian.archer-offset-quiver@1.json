@@ -1,0 +1,198 @@
+{
+  "component_id": "aurelian.archer-offset-quiver",
+  "version": 1,
+  "name": "Outward quiver for reaching poses",
+  "family": "archer-quiver",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "quiver_body"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "role": "quiver_body",
+        "primitive": "cone",
+        "export": true,
+        "location": [
+          -1.65,
+          0.35,
+          -0.8500000000000005
+        ],
+        "radius1": 0.53,
+        "radius2": 0.62,
+        "depth": 2.7,
+        "vertices": 40,
+        "bevel": 0.045,
+        "bevel_segments": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "role": "quiver_rim",
+        "primitive": "cone",
+        "export": false,
+        "location": [
+          -1.65,
+          0.35,
+          0.47999999999999954
+        ],
+        "radius1": 0.68,
+        "radius2": 0.68,
+        "depth": 0.24,
+        "vertices": 40,
+        "bevel": 0.045,
+        "bevel_segments": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "role": "quiver_arrow_0",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          -1.65,
+          0.0,
+          0.14999999999999947
+        ],
+        "end": [
+          -1.65,
+          0.0,
+          1.3999999999999995
+        ],
+        "radius": 0.375,
+        "bevel": 0.035
+      },
+      {
+        "role": "quiver_fletching_0",
+        "primitive": "cube",
+        "export": false,
+        "location": [
+          -1.65,
+          0.0,
+          1.2299999999999995
+        ],
+        "dimensions": [
+          0.95,
+          0.3,
+          0.62
+        ],
+        "bevel": 0.06
+      },
+      {
+        "role": "quiver_arrow_1",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          -1.65,
+          0.65,
+          0.14999999999999947
+        ],
+        "end": [
+          -1.65,
+          0.65,
+          1.6499999999999995
+        ],
+        "radius": 0.375,
+        "bevel": 0.035
+      },
+      {
+        "role": "quiver_fletching_1",
+        "primitive": "cube",
+        "export": false,
+        "location": [
+          -1.65,
+          0.65,
+          1.4799999999999995
+        ],
+        "dimensions": [
+          0.95,
+          0.3,
+          0.62
+        ],
+        "bevel": 0.06
+      },
+      {
+        "role": "quiver_lower_strap",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          -0.8,
+          0.35,
+          -1.8
+        ],
+        "end": [
+          -1.65,
+          0.35,
+          -1.8
+        ],
+        "radius": 0.4,
+        "bevel": 0.04
+      }
+    ],
+    "operations": [
+      {
+        "target": "quiver_body",
+        "operand": "quiver_rim",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "quiver_body",
+        "operand": "quiver_arrow_0",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "quiver_body",
+        "operand": "quiver_fletching_0",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "quiver_body",
+        "operand": "quiver_arrow_1",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "quiver_body",
+        "operand": "quiver_fletching_1",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "quiver_body",
+        "operand": "quiver_lower_strap",
+        "operation": "UNION",
+        "solver": "EXACT"
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "back_mount": [
+        -1.65,
+        0.35,
+        -0.8500000000000005
+      ]
+    },
+    "provenance": "Reviewed quiver offset outward by 0.7 mm, with a lower attachment strap to the tunic, so the reaching hand clears the helmet.",
+    "design": {
+      "support_target": "No removable supports; pending sliced validation."
+    }
+  }
+}

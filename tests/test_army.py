@@ -25,7 +25,7 @@ def test_standard_parts_golden_and_shared_model():
     base = indexed(load_assembly(ROOT/'specs/elf-modular-visual.json', definitions))
     unit = indexed(load_assembly(ROOT/'specs/elf-unit-center-standard.json', definitions))
     solo = indexed(load_assembly(ROOT/'specs/elf-standard-bearer.json', definitions))
-    assert len(unit) == 94 and len(solo) == 18
+    assert len(unit) == 100 and len(solo) == 20
     assert 'elf-03/spear' not in unit and 'bearer-01/spear' not in solo
     assert len([p for p in unit.values() if p['part'] == 'aurelian.spear@3']) == 4
     removed = {'spear','shield','shield-insignia','equipment-joins','shield-torso-connector','shield-lower-connector'}
@@ -82,7 +82,7 @@ def test_pole_rooted_banner_and_horn_grip():
     unit = indexed(load_assembly(ROOT/'specs/elf-unit-center-standard.json', definitions))
     assert unit['elf-03/banner']['part'] == 'aurelian.standard-banner@10'
     assert unit['elf-03/standard-pole']['part'] == 'aurelian.standard-pole@4'
-    assert unit['elf-03/horn']['part'] == 'aurelian.war-horn@6'
+    assert unit['elf-03/horn']['part'] == 'aurelian.war-horn@7'
     horn_golden = json.loads((ROOT/'tests/fixtures/war-horn-v2-golden.json').read_text())
     assert {ref: definitions[ref].sha256 for ref in horn_golden} == horn_golden
     assert sum(p['part']=='aurelian.shield@2' for p in unit.values()) == 4

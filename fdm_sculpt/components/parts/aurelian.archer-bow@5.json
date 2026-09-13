@@ -1,0 +1,2380 @@
+{
+  "component_id": "aurelian.archer-bow",
+  "version": 5,
+  "name": "Undrawn elven longbow with recessed hand grip",
+  "family": "archer-bow",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "bow_curve_0"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": true,
+        "location": [
+          0.55,
+          -0.85,
+          -2.4000000000000004
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_0",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -0.8990786242326642,
+          -2.316666666666667
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -0.9481046938452146,
+          -2.233333333333334
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_2",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -0.9970257104943409,
+          -2.1500000000000004
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_3",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.0457892883300772,
+          -2.0666666666666673
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_4",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.094343210091883,
+          -1.9833333333333334
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_5",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.1426354830241925,
+          -1.9000000000000004
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_6",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.19061439455156,
+          -1.8166666666666673
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_7",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.2382285676537812,
+          -1.7333333333333334
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_8",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.2854270158816936,
+          -1.6500000000000004
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_9",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.3321591979547422,
+          -1.5666666666666673
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_10",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.3783750718818504,
+          -1.4833333333333334
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_11",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.4240251485476345,
+          -1.4000000000000004
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_12",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.469060544706592,
+          -1.3166666666666673
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_13",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.513433035328502,
+          -1.2333333333333334
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_14",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.5570951052389965,
+          -1.1500000000000004
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_15",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.5999999999999999,
+          -1.0666666666666673
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_16",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.642101775975552,
+          -0.9833333333333334
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_17",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.6833553495294034,
+          -0.9000000000000004
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_18",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.7237165453017034,
+          -0.8166666666666673
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_19",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.763142143513081,
+          -0.7333333333333334
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_20",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.8015899262454682,
+          -0.6500000000000004
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_21",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.8390187226501031,
+          -0.5666666666666673
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_22",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.875388453034307,
+          -0.4833333333333334
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_23",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.9106601717798215,
+          -0.40000000000000036
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_24",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.9447961090467536,
+          -0.3166666666666673
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_25",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.9777597112184657,
+          -0.2333333333333334
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_26",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.0095156800441054,
+          -0.15000000000000036
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_27",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.040030010436853,
+          -0.06666666666666732
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_28",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.069270026887423,
+          0.016666666666666607
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_29",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.097204418453818,
+          0.09999999999999964
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_30",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.1238032722898685,
+          0.18333333333333268
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_31",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.149038105676658,
+          0.2666666666666666
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_32",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.1728818965225325,
+          0.34999999999999964
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_33",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.1953091122990327,
+          0.4333333333333327
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_34",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.2162957373817638,
+          0.5166666666666666
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_35",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.23581929876693,
+          0.5999999999999996
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_36",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.2538588901359886,
+          0.6833333333333327
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_37",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.2703951942426586,
+          0.7666666666666666
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_38",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.2854105035983134,
+          0.8499999999999996
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_39",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.2988887394336026,
+          0.9333333333333327
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_40",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.3108154689160005,
+          1.0166666666666666
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_41",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.3211779206048457,
+          1.0999999999999996
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_42",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.3299649981273185,
+          1.1833333333333327
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_43",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.3371672920607156,
+          1.2666666666666666
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_44",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.3427770900082954,
+          1.3499999999999996
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_45",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.346788384857905,
+          1.4333333333333327
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_46",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.3491968812145485,
+          1.5166666666666666
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_47",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.35,
+          1.5999999999999996
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_48",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.3491968812145485,
+          1.6833333333333327
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_49",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.346788384857905,
+          1.7666666666666666
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_50",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.3427770900082954,
+          1.8500000000000005
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_51",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.3371672920607156,
+          1.9333333333333327
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_52",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.3299649981273185,
+          2.0166666666666666
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_53",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.3211779206048457,
+          2.1000000000000005
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_54",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.3108154689160005,
+          2.1833333333333327
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_55",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.2988887394336026,
+          2.2666666666666666
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_56",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.2854105035983134,
+          2.3500000000000005
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_57",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.2703951942426586,
+          2.4333333333333327
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_58",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.2538588901359886,
+          2.5166666666666666
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_59",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.23581929876693,
+          2.6000000000000005
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_60",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.2162957373817638,
+          2.6833333333333327
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_61",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.1953091122990327,
+          2.7666666666666666
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_62",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.1728818965225325,
+          2.8500000000000005
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_63",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.149038105676658,
+          2.9333333333333327
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_64",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.1238032722898685,
+          3.0166666666666666
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_65",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.097204418453818,
+          3.1000000000000005
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_66",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.069270026887423,
+          3.1833333333333327
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_67",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.040030010436853,
+          3.2666666666666666
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_68",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.009515680044106,
+          3.3500000000000005
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_69",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.9777597112184662,
+          3.4333333333333327
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_70",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.9447961090467532,
+          3.5166666666666666
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_71",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.9106601717798215,
+          3.6000000000000005
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_72",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.8753884530343075,
+          3.6833333333333327
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_73",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.8390187226501036,
+          3.7666666666666666
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_74",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.8015899262454682,
+          3.8500000000000005
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_75",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.7631421435130812,
+          3.9333333333333327
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_76",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.7237165453017034,
+          4.016666666666667
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_77",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.6833553495294034,
+          4.1000000000000005
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_78",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.642101775975552,
+          4.183333333333333
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_79",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.5999999999999999,
+          4.266666666666667
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_80",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.5570951052389965,
+          4.3500000000000005
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_81",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.513433035328502,
+          4.433333333333333
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_82",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.4690605447065919,
+          4.516666666666667
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_83",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.424025148547635,
+          4.6000000000000005
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_84",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.3783750718818508,
+          4.683333333333333
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_85",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.3321591979547427,
+          4.766666666666667
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_86",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.2854270158816936,
+          4.8500000000000005
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_87",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.2382285676537816,
+          4.933333333333333
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_88",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.19061439455156,
+          5.016666666666667
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_89",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.142635483024193,
+          5.1000000000000005
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_90",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.0943432100918833,
+          5.183333333333333
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_91",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -1.0457892883300772,
+          5.266666666666667
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_92",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -0.9970257104943412,
+          5.3500000000000005
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_93",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -0.9481046938452147,
+          5.433333333333333
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_94",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -0.8990786242326639,
+          5.516666666666667
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_95",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1,
+          1
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -0.8500000000000002,
+          5.6000000000000005
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_curve_96",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.05,
+          1.1,
+          1.2
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.35,
+          1.7000000000000002
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bow_grip",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.55,
+          -0.8500000000000002,
+          5.6000000000000005
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.375,
+        "role": "resting_string",
+        "start": [
+          0.55,
+          -0.85,
+          -2.4000000000000004
+        ]
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.8,
+          1.8,
+          1.8
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          -2.35,
+          1.7000000000000002
+        ],
+        "primitive": "cube",
+        "role": "hand_grip_trim_shell"
+      },
+      {
+        "bevel": 0,
+        "depth": 2.0,
+        "export": false,
+        "location": [
+          0.55,
+          -2.35,
+          1.7000000000000002
+        ],
+        "primitive": "cylinder",
+        "radius": 0.4,
+        "role": "hand_grip_keep_core",
+        "vertices": 64
+      }
+    ],
+    "design": {
+      "limb_diameter_mm": 1.0,
+      "limb_minimum_thickness_mm": 0.8,
+      "string_diameter_mm": 0.75,
+      "support_target": "Lower limb and string root overlap tunic; rising limbs, anchored strings. Pending sliced validation."
+    },
+    "grip_profile": {
+      "center": [
+        0.55,
+        -2.35,
+        1.7000000000000002
+      ],
+      "half_length_mm": 0.9,
+      "outer_trim_width_mm": 1.8,
+      "parent_reference": "aurelian.archer-bow@3",
+      "parent_sha256": "7651697646e621e48c0c44620d27917f26ef040f9645685f6fa702fefd461b89",
+      "radius_mm": 0.4
+    },
+    "landmarks": {
+      "bottom_tip": [
+        0.55,
+        -0.85,
+        -2.4000000000000004
+      ],
+      "grip": [
+        0.55,
+        -2.35,
+        1.7000000000000002
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "nock": [
+        0.55,
+        -0.85,
+        1.8
+      ],
+      "top_tip": [
+        0.55,
+        -0.8500000000000002,
+        5.6000000000000005
+      ]
+    },
+    "operations": [
+      {
+        "operand": "bow_curve_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_4",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_5",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_6",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_7",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_8",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_9",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_10",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_11",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_12",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_13",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_14",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_15",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_16",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_17",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_18",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_19",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_20",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_21",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_22",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_23",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_24",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_25",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_26",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_27",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_28",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_29",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_30",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_31",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_32",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_33",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_34",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_35",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_36",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_37",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_38",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_39",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_40",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_41",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_42",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_43",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_44",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_45",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_46",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_47",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_48",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_49",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_50",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_51",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_52",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_53",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_54",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_55",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_56",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_57",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_58",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_59",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_60",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_61",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_62",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_63",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_64",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_65",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_66",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_67",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_68",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_69",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_70",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_71",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_72",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_73",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_74",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_75",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_76",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_77",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_78",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_79",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_80",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_81",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_82",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_83",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_84",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_85",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_86",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_87",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_88",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_89",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_90",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_91",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_92",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_93",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_94",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_95",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_curve_96",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "bow_grip",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "resting_string",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      },
+      {
+        "operand": "hand_grip_keep_core",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hand_grip_trim_shell"
+      },
+      {
+        "operand": "hand_grip_trim_shell",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "bow_curve_0"
+      }
+    ],
+    "provenance": "Reviewed geometry retained outside the grip; Exact annular subtraction recesses the handle and fitting beneath the fingers. Visual-only."
+  }
+}

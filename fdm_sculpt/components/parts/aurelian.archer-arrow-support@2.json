@@ -1,0 +1,298 @@
+{
+  "component_id": "aurelian.archer-arrow-support",
+  "version": 2,
+  "name": "Arrow underside tube with rising tunic web",
+  "family": "archer-arrow-support",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "arrow_support_tube"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "role": "arrow_support_tube",
+        "primitive": "between",
+        "export": true,
+        "start": [
+          0.55,
+          -0.6,
+          7.55
+        ],
+        "end": [
+          0.55,
+          -2.7,
+          7.6
+        ],
+        "radius": 0.4,
+        "bevel": 0.035
+      },
+      {
+        "role": "rising_web_00",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          0,
+          -0.55,
+          4.65
+        ],
+        "end": [
+          0.55,
+          -0.6,
+          7.55
+        ],
+        "radius": 0.4,
+        "bevel": 0.035
+      },
+      {
+        "role": "rising_web_01",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          0,
+          -0.55,
+          4.65
+        ],
+        "end": [
+          0.55,
+          -0.8333333333333333,
+          7.555555555555555
+        ],
+        "radius": 0.4,
+        "bevel": 0.035
+      },
+      {
+        "role": "rising_web_02",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          0,
+          -0.55,
+          4.65
+        ],
+        "end": [
+          0.55,
+          -1.0666666666666667,
+          7.561111111111111
+        ],
+        "radius": 0.4,
+        "bevel": 0.035
+      },
+      {
+        "role": "rising_web_03",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          0,
+          -0.55,
+          4.65
+        ],
+        "end": [
+          0.55,
+          -1.3,
+          7.566666666666666
+        ],
+        "radius": 0.4,
+        "bevel": 0.035
+      },
+      {
+        "role": "rising_web_04",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          0,
+          -0.55,
+          4.65
+        ],
+        "end": [
+          0.55,
+          -1.5333333333333332,
+          7.572222222222222
+        ],
+        "radius": 0.4,
+        "bevel": 0.035
+      },
+      {
+        "role": "rising_web_05",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          0,
+          -0.55,
+          4.65
+        ],
+        "end": [
+          0.55,
+          -1.7666666666666666,
+          7.5777777777777775
+        ],
+        "radius": 0.4,
+        "bevel": 0.035
+      },
+      {
+        "role": "rising_web_06",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          0,
+          -0.55,
+          4.65
+        ],
+        "end": [
+          0.55,
+          -2.0,
+          7.583333333333333
+        ],
+        "radius": 0.4,
+        "bevel": 0.035
+      },
+      {
+        "role": "rising_web_07",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          0,
+          -0.55,
+          4.65
+        ],
+        "end": [
+          0.55,
+          -2.2333333333333334,
+          7.588888888888889
+        ],
+        "radius": 0.4,
+        "bevel": 0.035
+      },
+      {
+        "role": "rising_web_08",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          0,
+          -0.55,
+          4.65
+        ],
+        "end": [
+          0.55,
+          -2.466666666666667,
+          7.594444444444444
+        ],
+        "radius": 0.4,
+        "bevel": 0.035
+      },
+      {
+        "role": "rising_web_09",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          0,
+          -0.55,
+          4.65
+        ],
+        "end": [
+          0.55,
+          -2.7,
+          7.6
+        ],
+        "radius": 0.4,
+        "bevel": 0.035
+      }
+    ],
+    "operations": [
+      {
+        "target": "arrow_support_tube",
+        "operand": "rising_web_00",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "arrow_support_tube",
+        "operand": "rising_web_01",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "arrow_support_tube",
+        "operand": "rising_web_02",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "arrow_support_tube",
+        "operand": "rising_web_03",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "arrow_support_tube",
+        "operand": "rising_web_04",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "arrow_support_tube",
+        "operand": "rising_web_05",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "arrow_support_tube",
+        "operand": "rising_web_06",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "arrow_support_tube",
+        "operand": "rising_web_07",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "arrow_support_tube",
+        "operand": "rising_web_08",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "arrow_support_tube",
+        "operand": "rising_web_09",
+        "operation": "UNION",
+        "solver": "EXACT"
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "body_root": [
+        0,
+        -0.55,
+        4.65
+      ],
+      "arrow_nock": [
+        0.55,
+        -0.75,
+        8.0
+      ],
+      "tube_front": [
+        0.55,
+        -2.7,
+        7.6
+      ]
+    },
+    "provenance": {
+      "source": "Original parameterized arrow support for shared archer poses"
+    },
+    "design": {
+      "structural_diameter_mm": 0.8,
+      "purpose": "Permanent solid tube beneath the arrow, continuously supported by an overlapping fan of rising struts rooted inside the tunic. Bow cant follows the arrow. Visual prototype; actual layer support requires slicing.",
+      "root_revision": "Root sunk toward torso center to retain tunic overlap in canted aiming poses."
+    }
+  }
+}

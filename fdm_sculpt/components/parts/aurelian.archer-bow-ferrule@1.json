@@ -1,0 +1,164 @@
+{
+  "component_id": "aurelian.archer-bow-ferrule",
+  "version": 1,
+  "name": "Decorative metal bow socket with leaf plates",
+  "family": "archer-bow-ferrule",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "bow_socket"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "role": "bow_socket",
+        "primitive": "cone",
+        "export": true,
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "radius1": 0.58,
+        "radius2": 0.58,
+        "depth": 1.55,
+        "vertices": 32,
+        "bevel": 0.035,
+        "bevel_segments": 3
+      },
+      {
+        "role": "upper_leaf",
+        "primitive": "cone",
+        "export": false,
+        "location": [
+          0,
+          -0.4,
+          1.05
+        ],
+        "radius1": 0.55,
+        "radius2": 0.55,
+        "depth": 0.34,
+        "vertices": 4,
+        "bevel": 0.035,
+        "bevel_segments": 3,
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          0.72,
+          1,
+          1
+        ]
+      },
+      {
+        "role": "upper_boss",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          0,
+          -0.6,
+          1.05
+        ],
+        "dimensions": [
+          0.3,
+          0.25,
+          0.42
+        ],
+        "segments": 32,
+        "ring_count": 24
+      },
+      {
+        "role": "lower_leaf",
+        "primitive": "cone",
+        "export": false,
+        "location": [
+          0,
+          -0.4,
+          -1.05
+        ],
+        "radius1": 0.55,
+        "radius2": 0.55,
+        "depth": 0.34,
+        "vertices": 4,
+        "bevel": 0.035,
+        "bevel_segments": 3,
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          0.72,
+          1,
+          1
+        ]
+      },
+      {
+        "role": "lower_boss",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          0,
+          -0.6,
+          -1.05
+        ],
+        "dimensions": [
+          0.3,
+          0.25,
+          0.42
+        ],
+        "segments": 32,
+        "ring_count": 24
+      }
+    ],
+    "operations": [
+      {
+        "target": "bow_socket",
+        "operand": "upper_leaf",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "bow_socket",
+        "operand": "upper_boss",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "bow_socket",
+        "operand": "lower_leaf",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "bow_socket",
+        "operand": "lower_boss",
+        "operation": "UNION",
+        "solver": "EXACT"
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "grip": [
+        0,
+        0,
+        0
+      ]
+    },
+    "provenance": "Original reusable archer variant recipe; visual-only.",
+    "design": {
+      "material_intent": "Decorative metal sleeve, leaf plates and raised bosses; single-color geometry.",
+      "support_target": "Relief overlaps bow socket and limbs; pending sliced validation."
+    }
+  }
+}

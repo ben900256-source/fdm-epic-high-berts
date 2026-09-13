@@ -1,0 +1,1495 @@
+[
+  {
+    "kind": "body",
+    "component_id": "aurelian.base-body-20x5",
+    "revision": 1,
+    "parameters": {
+      "width": 20,
+      "length": 5,
+      "thickness": 2,
+      "magnet": "3x1",
+      "centers": [
+        [
+          -6,
+          0
+        ],
+        [
+          6,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-20x5-738fc95adfe0",
+    "revision": 1,
+    "parameters": {
+      "width": 20,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -9.500688,
+          -1.721001,
+          -8.012262,
+          0.555392
+        ],
+        [
+          -7.983828,
+          -1.33926,
+          -6.510258,
+          0.932346
+        ],
+        [
+          -5.508623,
+          -1.377754,
+          -4.118408,
+          0.86477
+        ],
+        [
+          -3.928489,
+          -1.828641,
+          -2.360086,
+          0.471297
+        ],
+        [
+          -1.463225,
+          -1.966445,
+          -0.012114,
+          0.297691
+        ],
+        [
+          -0.003524,
+          -1.20341,
+          1.507006,
+          1.079872
+        ],
+        [
+          2.552649,
+          -1.245313,
+          3.927418,
+          0.991425
+        ],
+        [
+          4.017878,
+          -1.669677,
+          5.600498,
+          0.634034
+        ],
+        [
+          6.460258,
+          -1.59926,
+          7.933828,
+          0.672346
+        ],
+        [
+          8.062262,
+          -1.221001,
+          9.550688,
+          1.055392
+        ]
+      ],
+      "substrate_margin": 0,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "body",
+    "component_id": "aurelian.base-body-4x5",
+    "revision": 1,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "thickness": 2,
+      "magnet": "2x1",
+      "centers": [
+        [
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-ccdc4b7debb8",
+    "revision": 1,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -1.463225,
+          -1.966445,
+          -0.012114,
+          0.297691
+        ],
+        [
+          -0.003524,
+          -1.20341,
+          1.507006,
+          1.079872
+        ]
+      ],
+      "substrate_margin": 0,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-7b09c46466de",
+    "revision": 1,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -1.079872,
+          -0.003524,
+          1.20341,
+          1.507006
+        ],
+        [
+          -0.297691,
+          -1.463225,
+          1.966445,
+          -0.012114
+        ]
+      ],
+      "substrate_margin": 0,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-20x5-86d8435965cc",
+    "revision": 1,
+    "parameters": {
+      "width": 20,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -9.079872,
+          -0.003524,
+          -6.79659,
+          1.507006
+        ],
+        [
+          -8.297691,
+          -1.463225,
+          -6.033555,
+          -0.012114
+        ],
+        [
+          -5.079872,
+          -0.003524,
+          -2.79659,
+          1.507006
+        ],
+        [
+          -4.297691,
+          -1.463225,
+          -2.033555,
+          -0.012114
+        ],
+        [
+          -1.079872,
+          -0.003524,
+          1.20341,
+          1.507006
+        ],
+        [
+          -0.297691,
+          -1.463225,
+          1.966445,
+          -0.012114
+        ],
+        [
+          2.920128,
+          -0.003524,
+          5.20341,
+          1.507006
+        ],
+        [
+          3.702309,
+          -1.463225,
+          5.966445,
+          -0.012114
+        ],
+        [
+          6.920128,
+          -0.003524,
+          9.20341,
+          1.507006
+        ],
+        [
+          7.702309,
+          -1.463225,
+          9.966445,
+          -0.012114
+        ]
+      ],
+      "substrate_margin": 0,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-40b8c474a4ce",
+    "revision": 1,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -0.824354,
+          0.016242,
+          1.406447,
+          1.375479
+        ],
+        [
+          -0.607169,
+          -1.921653,
+          1.738343,
+          0.002849
+        ]
+      ],
+      "substrate_margin": 0,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-9b1f24917b49",
+    "revision": 1,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -1.366812,
+          -0.276793,
+          0.968678,
+          1.731857
+        ],
+        [
+          -0.100653,
+          -1.148314,
+          2.173365,
+          0.332696
+        ]
+      ],
+      "substrate_margin": 0,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-40b4936704a9",
+    "revision": 1,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -0.930215,
+          0.103681,
+          1.261795,
+          1.367976
+        ],
+        [
+          -0.439259,
+          -1.686225,
+          1.886445,
+          -0.007002
+        ]
+      ],
+      "substrate_margin": 0,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-9fc4954147d7",
+    "revision": 1,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -1.406961,
+          -0.330217,
+          0.908298,
+          1.753964
+        ],
+        [
+          -0.091385,
+          -1.132891,
+          2.215942,
+          0.463845
+        ]
+      ],
+      "substrate_margin": 0,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-6a7cdf51f383",
+    "revision": 1,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -0.811664,
+          -0.025142,
+          1.441973,
+          1.3957
+        ],
+        [
+          -0.63913,
+          -1.962371,
+          1.702651,
+          0.005258
+        ]
+      ],
+      "substrate_margin": 0,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-28c945da997b",
+    "revision": 1,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -1.308108,
+          -0.20897,
+          1.038307,
+          1.693196
+        ],
+        [
+          -0.112367,
+          -1.16054,
+          2.106106,
+          0.167377
+        ]
+      ],
+      "substrate_margin": 0,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-b7be8359d2e0",
+    "revision": 1,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -0.841776,
+          0.077991,
+          1.350234,
+          1.342286
+        ],
+        [
+          -0.558125,
+          -1.856478,
+          1.788172,
+          -0.000496
+        ]
+      ],
+      "substrate_margin": 0,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-0a8e6616dcc4",
+    "revision": 1,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -0.760276,
+          -2.102339,
+          1.541069,
+          0.016259
+        ],
+        [
+          -0.752646,
+          -0.191329,
+          1.567566,
+          1.460826
+        ]
+      ],
+      "substrate_margin": 0,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-gallery",
+    "revision": 1,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [],
+      "substrate_margin": 0,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-sand-gallery",
+    "revision": 1,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "sand",
+      "seed": 1001,
+      "boots": [],
+      "substrate_margin": 0,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-rocky-gallery",
+    "revision": 1,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "rocky",
+      "seed": 1001,
+      "boots": [],
+      "substrate_margin": 0,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-meadow-gallery",
+    "revision": 1,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "meadow",
+      "seed": 1001,
+      "boots": [],
+      "substrate_margin": 0,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-20x5-738fc95adfe0",
+    "revision": 2,
+    "parameters": {
+      "width": 20,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -9.500688,
+          -1.721001,
+          -8.012262,
+          0.555392
+        ],
+        [
+          -7.983828,
+          -1.33926,
+          -6.510258,
+          0.932346
+        ],
+        [
+          -5.508623,
+          -1.377754,
+          -4.118408,
+          0.86477
+        ],
+        [
+          -3.928489,
+          -1.828641,
+          -2.360086,
+          0.471297
+        ],
+        [
+          -1.463225,
+          -1.966445,
+          -0.012114,
+          0.297691
+        ],
+        [
+          -0.003524,
+          -1.20341,
+          1.507006,
+          1.079872
+        ],
+        [
+          2.552649,
+          -1.245313,
+          3.927418,
+          0.991425
+        ],
+        [
+          4.017878,
+          -1.669677,
+          5.600498,
+          0.634034
+        ],
+        [
+          6.460258,
+          -1.59926,
+          7.933828,
+          0.672346
+        ],
+        [
+          8.062262,
+          -1.221001,
+          9.550688,
+          1.055392
+        ]
+      ],
+      "substrate_margin": 0.1,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-ccdc4b7debb8",
+    "revision": 2,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -1.463225,
+          -1.966445,
+          -0.012114,
+          0.297691
+        ],
+        [
+          -0.003524,
+          -1.20341,
+          1.507006,
+          1.079872
+        ]
+      ],
+      "substrate_margin": 0.1,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-7b09c46466de",
+    "revision": 2,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -1.079872,
+          -0.003524,
+          1.20341,
+          1.507006
+        ],
+        [
+          -0.297691,
+          -1.463225,
+          1.966445,
+          -0.012114
+        ]
+      ],
+      "substrate_margin": 0.1,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-20x5-86d8435965cc",
+    "revision": 2,
+    "parameters": {
+      "width": 20,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -9.079872,
+          -0.003524,
+          -6.79659,
+          1.507006
+        ],
+        [
+          -8.297691,
+          -1.463225,
+          -6.033555,
+          -0.012114
+        ],
+        [
+          -5.079872,
+          -0.003524,
+          -2.79659,
+          1.507006
+        ],
+        [
+          -4.297691,
+          -1.463225,
+          -2.033555,
+          -0.012114
+        ],
+        [
+          -1.079872,
+          -0.003524,
+          1.20341,
+          1.507006
+        ],
+        [
+          -0.297691,
+          -1.463225,
+          1.966445,
+          -0.012114
+        ],
+        [
+          2.920128,
+          -0.003524,
+          5.20341,
+          1.507006
+        ],
+        [
+          3.702309,
+          -1.463225,
+          5.966445,
+          -0.012114
+        ],
+        [
+          6.920128,
+          -0.003524,
+          9.20341,
+          1.507006
+        ],
+        [
+          7.702309,
+          -1.463225,
+          9.966445,
+          -0.012114
+        ]
+      ],
+      "substrate_margin": 0.1,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-40b8c474a4ce",
+    "revision": 2,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -0.824354,
+          0.016242,
+          1.406447,
+          1.375479
+        ],
+        [
+          -0.607169,
+          -1.921653,
+          1.738343,
+          0.002849
+        ]
+      ],
+      "substrate_margin": 0.1,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-9b1f24917b49",
+    "revision": 2,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -1.366812,
+          -0.276793,
+          0.968678,
+          1.731857
+        ],
+        [
+          -0.100653,
+          -1.148314,
+          2.173365,
+          0.332696
+        ]
+      ],
+      "substrate_margin": 0.1,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-40b4936704a9",
+    "revision": 2,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -0.930215,
+          0.103681,
+          1.261795,
+          1.367976
+        ],
+        [
+          -0.439259,
+          -1.686225,
+          1.886445,
+          -0.007002
+        ]
+      ],
+      "substrate_margin": 0.1,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-9fc4954147d7",
+    "revision": 2,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -1.406961,
+          -0.330217,
+          0.908298,
+          1.753964
+        ],
+        [
+          -0.091385,
+          -1.132891,
+          2.215942,
+          0.463845
+        ]
+      ],
+      "substrate_margin": 0.1,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-6a7cdf51f383",
+    "revision": 2,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -0.811664,
+          -0.025142,
+          1.441973,
+          1.3957
+        ],
+        [
+          -0.63913,
+          -1.962371,
+          1.702651,
+          0.005258
+        ]
+      ],
+      "substrate_margin": 0.1,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-28c945da997b",
+    "revision": 2,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -1.308108,
+          -0.20897,
+          1.038307,
+          1.693196
+        ],
+        [
+          -0.112367,
+          -1.16054,
+          2.106106,
+          0.167377
+        ]
+      ],
+      "substrate_margin": 0.1,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-b7be8359d2e0",
+    "revision": 2,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -0.841776,
+          0.077991,
+          1.350234,
+          1.342286
+        ],
+        [
+          -0.558125,
+          -1.856478,
+          1.788172,
+          -0.000496
+        ]
+      ],
+      "substrate_margin": 0.1,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-0a8e6616dcc4",
+    "revision": 2,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -0.760276,
+          -2.102339,
+          1.541069,
+          0.016259
+        ],
+        [
+          -0.752646,
+          -0.191329,
+          1.567566,
+          1.460826
+        ]
+      ],
+      "substrate_margin": 0.1,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-gallery",
+    "revision": 2,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [],
+      "substrate_margin": 0.1,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-sand-gallery",
+    "revision": 2,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "sand",
+      "seed": 1001,
+      "boots": [],
+      "substrate_margin": 0.1,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-rocky-gallery",
+    "revision": 2,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "rocky",
+      "seed": 1001,
+      "boots": [],
+      "substrate_margin": 0.1,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-meadow-gallery",
+    "revision": 2,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "meadow",
+      "seed": 1001,
+      "boots": [],
+      "substrate_margin": 0.1,
+      "method": "primitives"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-20x5-738fc95adfe0",
+    "revision": 3,
+    "parameters": {
+      "width": 20,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -9.500688,
+          -1.721001,
+          -8.012262,
+          0.555392
+        ],
+        [
+          -7.983828,
+          -1.33926,
+          -6.510258,
+          0.932346
+        ],
+        [
+          -5.508623,
+          -1.377754,
+          -4.118408,
+          0.86477
+        ],
+        [
+          -3.928489,
+          -1.828641,
+          -2.360086,
+          0.471297
+        ],
+        [
+          -1.463225,
+          -1.966445,
+          -0.012114,
+          0.297691
+        ],
+        [
+          -0.003524,
+          -1.20341,
+          1.507006,
+          1.079872
+        ],
+        [
+          2.552649,
+          -1.245313,
+          3.927418,
+          0.991425
+        ],
+        [
+          4.017878,
+          -1.669677,
+          5.600498,
+          0.634034
+        ],
+        [
+          6.460258,
+          -1.59926,
+          7.933828,
+          0.672346
+        ],
+        [
+          8.062262,
+          -1.221001,
+          9.550688,
+          1.055392
+        ]
+      ],
+      "method": "heightfield"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-ccdc4b7debb8",
+    "revision": 3,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -1.463225,
+          -1.966445,
+          -0.012114,
+          0.297691
+        ],
+        [
+          -0.003524,
+          -1.20341,
+          1.507006,
+          1.079872
+        ]
+      ],
+      "method": "heightfield"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-7b09c46466de",
+    "revision": 3,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -1.079872,
+          -0.003524,
+          1.20341,
+          1.507006
+        ],
+        [
+          -0.297691,
+          -1.463225,
+          1.966445,
+          -0.012114
+        ]
+      ],
+      "method": "heightfield"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-20x5-86d8435965cc",
+    "revision": 3,
+    "parameters": {
+      "width": 20,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -9.079872,
+          -0.003524,
+          -6.79659,
+          1.507006
+        ],
+        [
+          -8.297691,
+          -1.463225,
+          -6.033555,
+          -0.012114
+        ],
+        [
+          -5.079872,
+          -0.003524,
+          -2.79659,
+          1.507006
+        ],
+        [
+          -4.297691,
+          -1.463225,
+          -2.033555,
+          -0.012114
+        ],
+        [
+          -1.079872,
+          -0.003524,
+          1.20341,
+          1.507006
+        ],
+        [
+          -0.297691,
+          -1.463225,
+          1.966445,
+          -0.012114
+        ],
+        [
+          2.920128,
+          -0.003524,
+          5.20341,
+          1.507006
+        ],
+        [
+          3.702309,
+          -1.463225,
+          5.966445,
+          -0.012114
+        ],
+        [
+          6.920128,
+          -0.003524,
+          9.20341,
+          1.507006
+        ],
+        [
+          7.702309,
+          -1.463225,
+          9.966445,
+          -0.012114
+        ]
+      ],
+      "method": "heightfield"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-40b8c474a4ce",
+    "revision": 3,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -0.824354,
+          0.016242,
+          1.406447,
+          1.375479
+        ],
+        [
+          -0.607169,
+          -1.921653,
+          1.738343,
+          0.002849
+        ]
+      ],
+      "method": "heightfield"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-9b1f24917b49",
+    "revision": 3,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -1.366812,
+          -0.276793,
+          0.968678,
+          1.731857
+        ],
+        [
+          -0.100653,
+          -1.148314,
+          2.173365,
+          0.332696
+        ]
+      ],
+      "method": "heightfield"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-40b4936704a9",
+    "revision": 3,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -0.930215,
+          0.103681,
+          1.261795,
+          1.367976
+        ],
+        [
+          -0.439259,
+          -1.686225,
+          1.886445,
+          -0.007002
+        ]
+      ],
+      "method": "heightfield"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-9fc4954147d7",
+    "revision": 3,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -1.406961,
+          -0.330217,
+          0.908298,
+          1.753964
+        ],
+        [
+          -0.091385,
+          -1.132891,
+          2.215942,
+          0.463845
+        ]
+      ],
+      "method": "heightfield"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-6a7cdf51f383",
+    "revision": 3,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -0.811664,
+          -0.025142,
+          1.441973,
+          1.3957
+        ],
+        [
+          -0.63913,
+          -1.962371,
+          1.702651,
+          0.005258
+        ]
+      ],
+      "method": "heightfield"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-28c945da997b",
+    "revision": 3,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -1.308108,
+          -0.20897,
+          1.038307,
+          1.693196
+        ],
+        [
+          -0.112367,
+          -1.16054,
+          2.106106,
+          0.167377
+        ]
+      ],
+      "method": "heightfield"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-b7be8359d2e0",
+    "revision": 3,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -0.841776,
+          0.077991,
+          1.350234,
+          1.342286
+        ],
+        [
+          -0.558125,
+          -1.856478,
+          1.788172,
+          -0.000496
+        ]
+      ],
+      "method": "heightfield"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-4x5-0a8e6616dcc4",
+    "revision": 3,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [
+        [
+          -0.760276,
+          -2.102339,
+          1.541069,
+          0.016259
+        ],
+        [
+          -0.752646,
+          -0.191329,
+          1.567566,
+          1.460826
+        ]
+      ],
+      "method": "heightfield"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-gallery",
+    "revision": 3,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [],
+      "method": "heightfield"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-sand-gallery",
+    "revision": 3,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "sand",
+      "seed": 1001,
+      "boots": [],
+      "method": "heightfield"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-rocky-gallery",
+    "revision": 3,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "rocky",
+      "seed": 1001,
+      "boots": [],
+      "method": "heightfield"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-meadow-gallery",
+    "revision": 3,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "meadow",
+      "seed": 1001,
+      "boots": [],
+      "method": "heightfield"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-natural-strip",
+    "revision": 1,
+    "parameters": {
+      "width": 20,
+      "length": 5,
+      "style": "soil",
+      "seed": 1001,
+      "boots": [],
+      "method": "heightfield"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-gallery",
+    "revision": 4,
+    "parameters": {
+      "width": 4,
+      "length": 5,
+      "style": "soil",
+      "feature_scale": 1.5,
+      "relief_height": 0.6,
+      "seed": 1001,
+      "boots": [],
+      "method": "heightfield"
+    }
+  },
+  {
+    "kind": "surface",
+    "component_id": "aurelian.terrain-soil-natural-strip",
+    "revision": 2,
+    "parameters": {
+      "width": 20,
+      "length": 5,
+      "style": "soil",
+      "feature_scale": 1.5,
+      "relief_height": 0.6,
+      "seed": 1001,
+      "boots": [],
+      "method": "heightfield"
+    }
+  }
+]

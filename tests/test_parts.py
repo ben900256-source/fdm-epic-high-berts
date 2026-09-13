@@ -360,7 +360,7 @@ def test_rounded_projecting_boot_revisions():
                 assert new['bevel'] > old['bevel']
             else:
                 assert new == old
-        assert sum(p['part'] == ref.replace('@2', '@3') for p in assembly['placements']) == 1
+        assert sum(p['part'] == ref.replace('@2', '@4') for p in assembly['placements']) == 1
 
 
 def test_shaped_boot_revisions():
@@ -377,7 +377,19 @@ def test_shaped_boot_revisions():
         assert atoms[side+'_ankle']['primitive'] == 'cone'
         assert any(o['operation'] == 'UNION' and o['operand'] == side+'_boot_instep' for o in p['operations'])
         assert p['operations'][-1]['operand'] == side+'_sole_arch'
-        assert sum(placement['part'] == ref for placement in assembly['placements']) == 1
+        assert sum(placement['part'] == ref.replace('@3','@4') for placement in assembly['placements']) == 1
+
+
+def test_cloth_waist_wrap_shared_recipe():
+    definitions = catalog()
+    golden = json.loads((ROOT/'tests/fixtures/cloth-waist-wrap-v1-golden.json').read_text())
+    assert golden == {ref:definitions[ref].sha256 for ref in golden}
+    assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()), definitions)
+    wraps = [p for p in assembly['placements'] if p['part']=='aurelian.cloth-waist-wrap@1']
+    assert len(wraps)==5
+    for wrap in wraps:
+        plate = next(p for p in assembly['placements'] if p['instance_id']==wrap['instance_id'].replace('/waist-wrap','/mail'))
+        assert wrap['mount']==plate['mount']
 
 
 def test_central_breastplate_pleat():
@@ -426,7 +438,7 @@ def test_grass_base_revision_preserves_strip():
         assert abs(blade['location'][1])+.2 < 2.5
         assert blade['location'][2]-blade['depth']/2 < 1
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()), definitions)
-    assert assembly['placements'][0]['part'] == 'aurelian.strip@4'
+    assert assembly['placements'][0]['part'] == 'aurelian.base-body-20x5@1'
 
 
 def test_rounded_ground_texture():
@@ -457,7 +469,7 @@ def test_noise_ground_is_one_continuous_component():
     assert p['operations'][-1]['operand']=='strip_boundary'
     assert len({a['location'][2] for a in p['atoms'][1:-1]}) > 200
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()), definitions)
-    assert assembly['placements'][0]['part']==base.reference
+    assert assembly['placements'][0]['part']=='aurelian.base-body-20x5@1'
 
 
 def test_shield_torso_connectors_overlap_both_attachments():
@@ -565,5 +577,5 @@ def test_saved_modular_provenance():
     output = Path(output)
     assert json.loads((output/'saved-provenance.json').read_text())['passes']
     review = json.loads((output/'visual-review.json').read_text())
-    assert review['placements'] == 96 and review['digitally_validated'] is False
-    assert len(review['reused_parts']) + len(review['compiled_parts']) == 52
+    assert review['placements'] == 102 and review['digitally_validated'] is False
+    assert len(review['reused_parts']) + len(review['compiled_parts']) == 54

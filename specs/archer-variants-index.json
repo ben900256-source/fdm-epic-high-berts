@@ -1,0 +1,84 @@
+{
+  "variants": [
+    {
+      "number": 1,
+      "label": "Aiming forward",
+      "model": "models/archers/01-aiming-forward.json",
+      "state": "nocked",
+      "yaw_degrees": 0,
+      "bow_roll_degrees": 0
+    },
+    {
+      "number": 2,
+      "label": "Aiming left",
+      "model": "models/archers/02-aiming-left.json",
+      "state": "nocked",
+      "yaw_degrees": -18,
+      "bow_roll_degrees": -10
+    },
+    {
+      "number": 3,
+      "label": "Aiming right",
+      "model": "models/archers/03-aiming-right.json",
+      "state": "nocked",
+      "yaw_degrees": 20,
+      "bow_roll_degrees": 12
+    },
+    {
+      "number": 4,
+      "label": "Empty bow ready",
+      "model": "models/archers/04-ready-forward.json",
+      "state": "empty",
+      "yaw_degrees": -8,
+      "bow_roll_degrees": -10
+    },
+    {
+      "number": 5,
+      "label": "Empty bow turned",
+      "model": "models/archers/05-ready-turned.json",
+      "state": "empty",
+      "yaw_degrees": 24,
+      "bow_roll_degrees": 8
+    },
+    {
+      "number": 6,
+      "label": "Reaching into quiver",
+      "model": "models/archers/06-reaching-quiver.json",
+      "state": "reach",
+      "yaw_degrees": -20,
+      "bow_roll_degrees": -8
+    },
+    {
+      "number": 7,
+      "label": "Pulling an arrow",
+      "model": "models/archers/07-drawing-arrow.json",
+      "state": "pull",
+      "yaw_degrees": 15,
+      "bow_roll_degrees": 10
+    },
+    {
+      "number": 8,
+      "label": "Shortblade at side",
+      "model": "models/archers/08-shortblade-low.json",
+      "state": "blade",
+      "yaw_degrees": -15,
+      "bow_roll_degrees": -8
+    },
+    {
+      "number": 9,
+      "label": "Shortblade raised",
+      "model": "models/archers/09-shortblade-raised.json",
+      "state": "blade",
+      "yaw_degrees": 20,
+      "bow_roll_degrees": 10
+    },
+    {
+      "number": 10,
+      "label": "After release",
+      "model": "models/archers/10-after-release.json",
+      "state": "empty",
+      "yaw_degrees": -28,
+      "bow_roll_degrees": 12
+    }
+  ]
+}

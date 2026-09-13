@@ -7,7 +7,7 @@
     "origin_mm": [
       0,
       0,
-      0
+      1
     ]
   },
   "remove": [
@@ -24,7 +24,8 @@
     "shield-torso-connector",
     "skirt",
     "spear",
-    "torso"
+    "torso",
+    "waist-wrap"
   ],
   "parts": [
     {
@@ -60,8 +61,8 @@
     },
     {
       "instance_id": "left-leg",
-      "part": "aurelian.left-leg-c@3",
-      "definition_sha256": "96a3158b182542a184d5c2e4a63782be0547781d2d31503a0a6295bb2dba9861",
+      "part": "aurelian.left-leg-c@4",
+      "definition_sha256": "572bdc4275fa91b133c6340100d66284ad5e07a8f8415278c84d6203efe064ce",
       "mount": [
         [
           0.034899497,
@@ -153,8 +154,8 @@
     },
     {
       "instance_id": "right-leg",
-      "part": "aurelian.right-leg-c@3",
-      "definition_sha256": "0adaf7046a971f5a637cb6b745eada71eebb6b5bfbca68b822fd62fc2d237762",
+      "part": "aurelian.right-leg-c@4",
+      "definition_sha256": "f87d3ff742288dc628e6ba52d6201487a4b51997dc2e6e27ca28dd946c7deabe",
       "mount": [
         [
           0.034899497,
@@ -184,8 +185,8 @@
     },
     {
       "instance_id": "tunic",
-      "part": "aurelian.archer-tunic@3",
-      "definition_sha256": "e72d8424088984e3b35191d60560b352864cfc1a169d5bef55097d48b3a4a391",
+      "part": "aurelian.archer-tunic@4",
+      "definition_sha256": "2e45d11347b69ced9febeebb0383bd478a20a62928e2081f834d6b5528687f43",
       "mount": [
         [
           0.034899497,
@@ -277,8 +278,8 @@
     },
     {
       "instance_id": "bow",
-      "part": "aurelian.archer-bow@2",
-      "definition_sha256": "cdecd29cc36e4b0ea9f3090afde1d2bbf4cad52b0bf88f1d95e18c85b27f1343",
+      "part": "aurelian.archer-bow@4",
+      "definition_sha256": "7cfad1bc37db98dc26d0a948950c3d663fbc4c5d9e78484339ef420a9958ce22",
       "mount": [
         [
           1.0,
@@ -359,6 +360,37 @@
           0.0,
           1.0,
           8.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bow-ferrule",
+      "part": "aurelian.archer-bow-ferrule@3",
+      "definition_sha256": "d9b9388f9d9cd4998dd80db498ffb6ad5ef25da6ff51438d1ece116beca61631",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.55
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -2.35
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          7.9
         ],
         [
           0.0,

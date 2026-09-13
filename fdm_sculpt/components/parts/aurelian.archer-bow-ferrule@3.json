@@ -1,0 +1,264 @@
+{
+  "component_id": "aurelian.archer-bow-ferrule",
+  "version": 3,
+  "name": "Bow-hugging diamond fittings with enlarged gems with recessed hand grip",
+  "family": "archer-bow-ferrule",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "bow_socket"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.035,
+        "bevel_segments": 3,
+        "depth": 1.55,
+        "export": true,
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.58,
+        "radius2": 0.58,
+        "role": "bow_socket",
+        "vertices": 32
+      },
+      {
+        "dimensions": [
+          1.15,
+          1.32,
+          1.7
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.14,
+          1.05
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "upper_leaf",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          0.5,
+          0.38,
+          0.66
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.53,
+          1.05
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "upper_boss",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.15,
+          1.32,
+          1.7
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.14,
+          -1.05
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "lower_leaf",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          0.5,
+          0.38,
+          0.66
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.53,
+          -1.05
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "lower_boss",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "bevel_segments": 3,
+        "depth": 1.5,
+        "export": false,
+        "location": [
+          0,
+          0.14,
+          1.05
+        ],
+        "primitive": "cone",
+        "radius1": 0.65,
+        "radius2": 0.65,
+        "role": "upper_diamond_boundary",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          0.92,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.035,
+        "bevel_segments": 3,
+        "depth": 1.5,
+        "export": false,
+        "location": [
+          0,
+          0.14,
+          -1.05
+        ],
+        "primitive": "cone",
+        "radius1": 0.65,
+        "radius2": 0.65,
+        "role": "lower_diamond_boundary",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          0.92,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.8,
+          1.8,
+          1.8
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cube",
+        "role": "hand_grip_trim_shell"
+      },
+      {
+        "bevel": 0,
+        "depth": 2.0,
+        "export": false,
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cylinder",
+        "radius": 0.4,
+        "role": "hand_grip_keep_core",
+        "vertices": 64
+      }
+    ],
+    "design": {
+      "material_intent": "Larger raised gems on curved diamond fittings; rounded fittings sink into and wrap the bow limbs.",
+      "support_target": "Relief overlaps bow socket and limbs; pending sliced validation."
+    },
+    "grip_profile": {
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "half_length_mm": 0.9,
+      "outer_trim_width_mm": 1.8,
+      "parent_reference": "aurelian.archer-bow-ferrule@2",
+      "parent_sha256": "aa7cedf5b7d2f0efa374a51d324c8fd78251c8ce2d1745e66f5cc15236b33ee0",
+      "radius_mm": 0.4
+    },
+    "landmarks": {
+      "grip": [
+        0,
+        0,
+        0
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "upper_diamond_boundary",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "upper_leaf"
+      },
+      {
+        "operand": "lower_diamond_boundary",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "lower_leaf"
+      },
+      {
+        "operand": "upper_leaf",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_socket"
+      },
+      {
+        "operand": "upper_boss",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_socket"
+      },
+      {
+        "operand": "lower_leaf",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_socket"
+      },
+      {
+        "operand": "lower_boss",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "bow_socket"
+      },
+      {
+        "operand": "hand_grip_keep_core",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hand_grip_trim_shell"
+      },
+      {
+        "operand": "hand_grip_trim_shell",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "bow_socket"
+      }
+    ],
+    "provenance": "Reviewed geometry retained outside the grip; Exact annular subtraction recesses the handle and fitting beneath the fingers. Visual-only."
+  }
+}

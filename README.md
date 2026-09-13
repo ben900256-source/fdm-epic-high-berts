@@ -65,6 +65,10 @@ for mixing pieces and placing future army variants without rebuilding meshes.
 Archers are available as `specs/elf-archer.json` and `specs/elf-unit-archers.json`,
 sharing `specs/models/elf-archer.json`. They wear cloth tunics, stand side-on,
 and aim raised bows forward. The viewer lists them as **Archer** and **Elf archers**.
+**Archer sergeant** (`specs/elf-archer-sergeant.json`) carries a bow at the side
+and blows the shared war horn.
+**Archer variants (10)** (`specs/elf-archer-variants.json`) adds aiming, empty-bow,
+quiver-reaching and shortblade poses. Use the Figure selector to isolate one.
 The page checks for updates every two seconds, verifies mesh checksums, and
 displays the loaded revision. Failed updates retain the previous model with an
 explicit warning. Blender runs in the background for geometry only; its GUI

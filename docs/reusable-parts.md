@@ -152,6 +152,42 @@ py -3.13 -m fdm_sculpt.atelier compose specs/elf-unit-archers.json --seed 1001 -
 py -3.13 -m fdm_sculpt.atelier part aurelian.archer-tunic@3 --seed 1001 --output out/archer-tunic-review
 ```
 
+### Ten archer poses
+
+`specs/elf-archer-variants.json` displays ten reusable model recipes on separate
+bases in two rows. The viewer calls this **Archer variants (10)**; isolate a
+pose with the Figure selector. Recipe filenames and pose metadata live in
+`specs/archer-variants-index.json`.
+
+| Variant | Pose |
+| --- | --- |
+| 01 | Aiming forward, arrow nocked |
+| 02 | Aiming left, bow canted |
+| 03 | Aiming right, bow canted |
+| 04 | Empty bow at the ready |
+| 05 | Empty bow, turned stance |
+| 06 | Reaching into the quiver |
+| 07 | Pulling an arrow from the quiver |
+| 08 | Shortblade held at the side |
+| 09 | Shortblade raised |
+| 10 | Hand withdrawn after release |
+
+All bows share `aurelian.archer-bow-ferrule@1`, a metal-styled socket with
+leaf plates and raised bosses. Empty bows use the straight-string revision;
+the aiming poses retain the drawn string. Quiver-reaching poses use an outward
+quiver and matching arms that clear the head and helmet. These remain visual
+reviews, not sliced or physically tested print files.
+
+Model recipes can apply a rigid `transform` to the whole figure and a
+`transforms` map to individual slots. Slot transforms are applied in model
+coordinates after part overrides, then the whole-model transform is applied.
+This lets variants inherit new shared part revisions without copying their
+definitions or rebuilding geometry when only angles change.
+
+```powershell
+py -3.13 -m fdm_sculpt.atelier compose specs/elf-archer-variants.json --seed 1001 --output out/archer-variants-review
+```
+
 A unit layout can inherit a `base_assembly` and place `models`. Each model
 instance has a name, a recipe path and a rigid `mount`. Set `replace: true`
 to replace an existing figure with that name. New layouts can instead list
@@ -172,9 +208,37 @@ the **Standard pole**, **Banner**, and **Banner insignia** separately.
 
 ## Later publication or release
 
+Spearmen and their standard bearer share `aurelian.cloth-waist-wrap@1` in
+the `waist-wrap` slot. Its soft oval band and three horizontal cloth folds
+cover the plate/chainmail seam. The wrap uses the plate mount; archer recipes
+omit it because they wear a continuous tunic.
+
+Arrow support revisions 1–3 are preserved for later reuse but removed from
+current archer recipes at the user's request. Broader support-free modeling
+changes are deferred until the user supplies their intended policy.
+
+Archers now share tunic revision 4 (18 percent wider hem), bow fitting
+revision 3 (larger gems and curved diamond plates, recessed at the fist), and leg revision 4
+(boot uppers aligned with the soles). Variants 5 and 7 lower their bows by
+1.0 and 1.65 mm with matching reusable arm poses. The standalone
+`specs/elf-archer-sergeant.json` holds an undrawn bow at the side and places
+the shared horn mouthpiece at the face's mouth landmark.
+
+Bow revisions 4 (drawn) and 5 (undrawn) use the reusable
+`components/bow_grips.py` recipe with fitting revision 3. An ordered Exact
+annular subtraction keeps a 0.8 mm handle within the fist over a 1.8 mm
+grip length. The limbs, string, grip landmarks and poses retain their reviewed
+positions. `tests/bow_grip_scene_probe.py` checks the evaluated handle against
+the posed palm in every archer layout; this is visual geometry verification.
+
 Keep working models visual-only until release work is requested. Release
 preparation must materialize the selected modular composition, package its
 dependencies, and perform the applicable export/print checks. The historical
 `regiment build` commands still build their pinned whole-spearman recipes;
 they do not automatically include newer modular part revisions. Do not use
 those old recipes to release a subsequently changed modular model.
+
+## Terrain and bases
+
+See [terrain and magnet bases](terrain-bases.md) for Blender-free generation,
+seeded surface presets, boot clearance and the current 2 mm army bases.

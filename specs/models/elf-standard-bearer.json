@@ -7,7 +7,7 @@
     "origin_mm": [
       0,
       0,
-      0
+      1
     ]
   },
   "remove": [
@@ -115,8 +115,8 @@
     },
     {
       "instance_id": "horn",
-      "part": "aurelian.war-horn@6",
-      "definition_sha256": "80584715c9d7a86e0bf0fc6ba7126d41722fcdbe5c0ada7d207805f9762e5864",
+      "part": "aurelian.war-horn@7",
+      "definition_sha256": "81a07d9e7bd4b535d43f6bd45c500d2d19baffe5c48f7eab152bd5032188dfed",
       "mount": [
         [
           0.6508952239913498,

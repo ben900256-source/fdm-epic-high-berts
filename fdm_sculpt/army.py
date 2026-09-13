@@ -48,6 +48,13 @@ def load_model(path, definitions=None, _stack=()):
         if '/' in p['instance_id']:
             raise ValueError('Model slot names cannot contain slashes')
         slots[p['instance_id']] = deepcopy(p)
+    for name, transform in data.get('transforms', {}).items():
+        if name not in slots:
+            raise ValueError('Cannot transform unknown model slot: '+name)
+        slots[name]['mount'] = multiply(rigid_matrix(transform), slots[name]['mount'])
+    model_transform = rigid_matrix(data.get('transform', identity()))
+    for p in slots.values():
+        p['mount'] = multiply(model_transform, p['mount'])
     return resolve_assembly(dict(schema_version=1, assembly_id=data['model_id'],
                                  placements=list(slots.values())), definitions)
 

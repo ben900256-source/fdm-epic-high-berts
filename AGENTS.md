@@ -31,6 +31,10 @@
   Prusa XL, tool 2 with a 0.25 mm nozzle, single-color PLA and 0.05 mm layers.
 - Generate only parameterized primitives, transforms, bevels and ordered Exact
   CSG. Never sculpt, hand-edit mesh elements or import third-party meshes.
+  Terrain-specific exception requested by the user: continuous procedural
+  heightfields may replace the former dirt/sand primitive textures. Generate
+  these algorithmically from pinned seeded samples; no manual mesh edits or
+  imported heightmaps. Figures and base bodies retain the primitive/Exact rules.
 - Reusable recipes live in `fdm_sculpt/components/`, import no Blender modules,
   own their geometry and landmarks, and use explicit positive integer revisions.
   Preserve reviewed definitions and golden hashes; change geometry in a new revision.

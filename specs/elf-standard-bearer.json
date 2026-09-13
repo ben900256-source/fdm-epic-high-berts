@@ -5,8 +5,8 @@
   "placements": [
     {
       "instance_id": "base",
-      "part": "aurelian.single-base@1",
-      "definition_sha256": "e3691121e5d7c4d9db3ffa4eecf1a66938f86a0d9403be4a9385fd80e4d17957",
+      "part": "aurelian.base-body-4x5@1",
+      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
       "mount": [
         [
           1.0,
@@ -25,6 +25,37 @@
           0.0,
           1.0,
           0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-terrain",
+      "part": "aurelian.terrain-soil-4x5-ccdc4b7debb8@3",
+      "definition_sha256": "09fac69fce8b010be790ff0e75fde26700730052be2fa60c8e79526ae77716ee",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
         ],
         [
           0.0,
@@ -56,7 +87,7 @@
           0.0,
           0.0,
           1.0,
-          0.0
+          1.0
         ],
         [
           0.0,

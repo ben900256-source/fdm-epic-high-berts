@@ -1,0 +1,200 @@
+{
+  "component_id": "aurelian.archer-quiver-bow-arm",
+  "version": 1,
+  "name": "Archer sergeant quiver-bow arm",
+  "family": "archer-quiver-bow-arm",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "archer-bow-arm_shoulder"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "role": "archer-bow-arm_shoulder",
+        "primitive": "sphere",
+        "export": true,
+        "location": [
+          0.04,
+          -0.97,
+          0.7000000000000002
+        ],
+        "dimensions": [
+          1.0,
+          1.05,
+          1.05
+        ],
+        "segments": 32,
+        "ring_count": 24
+      },
+      {
+        "role": "archer-bow-arm_upper_arm",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          0.04,
+          -0.97,
+          0.7000000000000002
+        ],
+        "end": [
+          0.3,
+          -1.65,
+          -0.10000000000000053
+        ],
+        "radius": 0.43,
+        "bevel": 0.035
+      },
+      {
+        "role": "archer-bow-arm_elbow",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          0.3,
+          -1.65,
+          -0.10000000000000053
+        ],
+        "dimensions": [
+          0.9,
+          0.9,
+          0.9
+        ],
+        "segments": 32,
+        "ring_count": 24
+      },
+      {
+        "role": "archer-bow-arm_forearm",
+        "primitive": "between",
+        "export": false,
+        "start": [
+          0.3,
+          -1.65,
+          -0.10000000000000053
+        ],
+        "end": [
+          0.55,
+          -2.35,
+          0.04999999999999982
+        ],
+        "radius": 0.4,
+        "bevel": 0.035
+      },
+      {
+        "role": "archer-bow-arm_palm",
+        "primitive": "cube",
+        "export": false,
+        "location": [
+          0.55,
+          -2.35,
+          0.04999999999999982
+        ],
+        "dimensions": [
+          1.3,
+          1.02,
+          1.2
+        ],
+        "bevel": 0.15
+      },
+      {
+        "role": "archer-bow-arm_fingers",
+        "primitive": "cube",
+        "export": false,
+        "location": [
+          0.67,
+          -2.71,
+          0.06999999999999984
+        ],
+        "dimensions": [
+          1.15,
+          0.42,
+          0.9
+        ],
+        "bevel": 0.1
+      },
+      {
+        "role": "archer-bow-arm_thumb",
+        "primitive": "sphere",
+        "export": false,
+        "location": [
+          1.07,
+          -2.47,
+          0.5499999999999998
+        ],
+        "dimensions": [
+          0.55,
+          0.65,
+          0.65
+        ],
+        "segments": 32,
+        "ring_count": 24
+      }
+    ],
+    "operations": [
+      {
+        "target": "archer-bow-arm_shoulder",
+        "operand": "archer-bow-arm_upper_arm",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "archer-bow-arm_shoulder",
+        "operand": "archer-bow-arm_elbow",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "archer-bow-arm_shoulder",
+        "operand": "archer-bow-arm_forearm",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "archer-bow-arm_shoulder",
+        "operand": "archer-bow-arm_palm",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "archer-bow-arm_shoulder",
+        "operand": "archer-bow-arm_fingers",
+        "operation": "UNION",
+        "solver": "EXACT"
+      },
+      {
+        "target": "archer-bow-arm_shoulder",
+        "operand": "archer-bow-arm_thumb",
+        "operation": "UNION",
+        "solver": "EXACT"
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "shoulder": [
+        0.04,
+        -0.97,
+        0.7000000000000002
+      ],
+      "elbow": [
+        0.3,
+        -1.65,
+        -0.10000000000000053
+      ],
+      "grip": [
+        0.55,
+        -2.35,
+        0.04999999999999982
+      ]
+    },
+    "provenance": "Revision 1 arm pose retained; broader beveled palm and grouped knuckles with a distinct rounded thumb make the fist readable at miniature scale.",
+    "design": {
+      "support_target": "No removable supports; pending sliced validation."
+    }
+  }
+}
