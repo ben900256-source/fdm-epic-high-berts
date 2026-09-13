@@ -72,5 +72,5 @@ def test_saved_variant_and_horn_revisions():
         assert not review['digitally_validated']
         assert review['placements'] == len(job['assembly']['placements'])
         checked.update(job['assets'])
-    for fixture in ('spearman-variants-v1-golden.json', 'hunting-hawk-v2-golden.json', 'archer-horn-hand-v2-golden.json'):
+    for fixture in ('spearman-variants-v1-golden.json', 'hunting-hawk-v2-golden.json', 'archer-horn-hand-v2-golden.json', 'short-sword-v2-golden.json'):
         assert set(json.loads((ROOT/'tests/fixtures'/fixture).read_text())) <= checked

@@ -57,15 +57,15 @@ def generate(seed):
 
     variants = [
         ('standing-guard', 'Standing guard', 0, 0, 0, 0, None),
-        ('watching-left', 'Watching left', 1, -14, -24, 0, None),
-        ('watching-right', 'Watching right', 2, 16, 25, 0, None),
-        ('spear-forward', 'Spear angled forward', 3, -8, 0, 13, None),
-        ('spear-outward', 'Spear carried outward', 4, 10, -12, -11, None),
-        ('rear-rank-ready', 'Rear rank ready', 2, -20, 20, 7, None),
-        ('sword-low', 'Short sword at side', 0, -10, -12, 0, 'low'),
-        ('sword-guard', 'Short sword guard', 1, 14, 16, 0, 'guard'),
-        ('sword-raised', 'Short sword raised', 3, -14, -16, 0, 'raised'),
-        ('hawk-sergeant', 'Sergeant with hunting hawk and sword', 2, 8, -22, 0, 'raised'),
+        ('watching-left', 'Watching left', 1, -4, -6, 0, None),
+        ('watching-right', 'Watching right', 2, 4, 6, 0, None),
+        ('spear-forward', 'Spear angled forward', 3, -3, 0, 13, None),
+        ('spear-outward', 'Spear carried outward', 4, 3, -4, -11, None),
+        ('rear-rank-ready', 'Rear rank ready', 2, -5, 5, 7, None),
+        ('sword-low', 'Short sword at side', 0, -3, -4, 0, 'low'),
+        ('sword-guard', 'Short sword guard', 1, 4, 5, 0, 'guard'),
+        ('sword-raised', 'Short sword raised', 3, -4, -5, 0, 'raised'),
+        ('hawk-sergeant', 'Sergeant with hunting hawk and sword', 2, 3, -6, 0, 'raised'),
     ]
     gallery = dict(schema_version=1, assembly_id='aurelian-spearman-variants',
                    label='Spearman variants (10)', placements=[], models=[])
@@ -76,7 +76,9 @@ def generate(seed):
         slots = {p['instance_id'].split('/')[1]:dict(p, mount=multiply(translation([-v for v in origin]), p['mount']))
                  for p in source['placements'] if p['instance_id'].startswith(f'elf-{stance+1:02d}/')}
         head_center = point(slots['head']['mount'], [0, 0, 0])
-        head_turn = around(head_center, rotation('z', look))
+        head_mount = slots['head']['mount']
+        inherited_look = math.degrees(math.atan2(-head_mount[0][1], head_mount[1][1]))
+        head_turn = around(head_center, rotation('z', look-inherited_look))
         transforms = {slot:head_turn for slot in ('head', 'helmet', 'crest')}
         removes = []
         edits = []
@@ -92,7 +94,7 @@ def generate(seed):
             arm_mount = slots['torso']['mount']
             edits.append(placement('right-arm', arm_ref, arm_mount))
             grip = definitions[arm_ref].to_dict()['parameters']['landmarks']['grip']
-            edits.append(placement('shortblade', 'aurelian.shortblade@1', multiply(arm_mount,
+            edits.append(placement('shortblade', 'aurelian.shortblade@2', multiply(arm_mount,
                 multiply(translation(grip), rotation('y', 24 if sword=='low' else 12)))))
         if name == 'hawk-sergeant':
             removes += ['shield', 'shield-insignia', 'shield-torso-connector', 'shield-lower-connector', 'left-arm']

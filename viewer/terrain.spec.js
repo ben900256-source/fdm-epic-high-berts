@@ -11,7 +11,7 @@ test('current terrain reviews load and retain body/surface identification',async
   let checked=0;
   for(const entry of index.reviews){
     const manifest=await(await page.request.get('http://127.0.0.1:8765'+entry.url)).json();
-    if(!['-terrain-v3','-natural-ground-v1','-visible-soil-v1','-fitted-bow-grips-v1','-aligned-horn-hand-v1'].some(suffix=>manifest.build.endsWith(suffix))&&entry.id!=='aurelian-terrain-gallery')continue;
+    if(!['-terrain-v3','-natural-ground-v1','-visible-soil-v1','-fitted-bow-grips-v1','-aligned-horn-hand-v1','-longer-swords-v1'].some(suffix=>manifest.build.endsWith(suffix))&&entry.id!=='aurelian-terrain-gallery')continue;
     await page.selectOption('#review',entry.id);
     await expect(page.locator('body')).toHaveAttribute('data-assembly',entry.id);
     await expect(page.locator('body')).toHaveAttribute('data-revision',entry.revision);

@@ -265,3 +265,10 @@ Compose through `atelier compose specs/elf-spearman-variants.json --seed 1001
 Archer sergeant horn-arm revision 2 uses `components/hand_grips.py` to rotate
 the fist along the horn's local tangent while retaining shoulder, elbow,
 grip and mouthpiece positions. These remain visual-only reviews.
+
+Spearman variants now face predominantly forward: inherited head yaw is
+normalized before applying glances of at most 6 degrees and body turns of
+at most 5 degrees. Stances, arms and modest spear inclinations provide the
+main variation. Shared shortblade revision 2 has a 3.57 mm straight blade
+with a short tapered point, a 1.9 mm hilt, a wider crossguard and a visible
+pommel. Its grip origin is unchanged across spearmen and archers.
