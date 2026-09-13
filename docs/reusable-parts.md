@@ -111,11 +111,12 @@ layouts use revision 3.
 The current helmet is `aurelian.helmet@5`: its cap base is inset into the crown
 to remove the exposed join, with finer primitive resolution on the curved shell.
 The shared bearer recipe uses banner revision 10 with a raised insignia mount
-and `aurelian.horn-arm@3`, extending the grip forward to keep the horn clear of
+and `aurelian.horn-arm@4`, keeping the grip forward to keep the horn clear of
 the chest plate and mail skirt. The horn is carried upright with its bell facing
 outward and upward; its lower stem is seated in the hand so it grows from the
-hand instead of starting as a hanging island. The lowered elbow gives the
-forearm a rising connection from the skirt to the grip. This is a support-free design
+hand instead of starting as a hanging island. Revision 4 raises the elbow and
+brings the hand closer to the shoulder, shortening both arm segments by about
+40 percent while retaining a rising forearm. This is a support-free design
 intent, pending sliced validation. These remain visual-only revisions.
 
 ```powershell
