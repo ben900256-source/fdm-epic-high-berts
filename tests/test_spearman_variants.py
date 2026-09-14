@@ -34,7 +34,7 @@ def test_spearman_recipes_repeat_resolve_and_preserve_shared_parts(tmp_path):
         model = load_model(ROOT/'specs'/variant['model'], definitions)
         slots = {p['instance_id']:p for p in model['placements']}
         assert slots['head']['part'] == 'aurelian.head@12'
-        assert slots['helmet']['part'] == 'aurelian.helmet@5'
+        assert slots['helmet']['part'] == ('aurelian.sergeant-helmet@2' if variant['state']=='hawk-sergeant' else 'aurelian.helmet@5')
         assert slots['crest']['part'] == 'aurelian.crest@4'
         if variant['state'] != 'spear':
             assert 'spear' not in slots and 'equipment-joins' not in slots
@@ -72,5 +72,5 @@ def test_saved_variant_and_horn_revisions():
         assert not review['digitally_validated']
         assert review['placements'] == len(job['assembly']['placements'])
         checked.update(job['assets'])
-    for fixture in ('spearman-variants-v1-golden.json', 'hunting-hawk-v2-golden.json', 'archer-horn-hand-v2-golden.json', 'short-sword-v2-golden.json'):
+    for fixture in ('spearman-variants-v1-golden.json', 'hunting-hawk-v2-golden.json', 'archer-horn-hand-v2-golden.json', 'short-sword-v2-golden.json', 'sergeant-helmet-v1-golden.json'):
         assert set(json.loads((ROOT/'tests/fixtures'/fixture).read_text())) <= checked

@@ -97,6 +97,7 @@ def generate(seed):
             edits.append(placement('shortblade', 'aurelian.shortblade@2', multiply(arm_mount,
                 multiply(translation(grip), rotation('y', 24 if sword=='low' else 12)))))
         if name == 'hawk-sergeant':
+            edits.append(placement('helmet', 'aurelian.sergeant-helmet@2', slots['helmet']['mount']))
             removes += ['shield', 'shield-insignia', 'shield-torso-connector', 'shield-lower-connector', 'left-arm']
             arm_ref = 'aurelian.spearman-hawk-arm@1'
             arm_mount = slots['torso']['mount']

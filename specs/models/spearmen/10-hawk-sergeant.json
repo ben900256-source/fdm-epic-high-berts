@@ -84,6 +84,37 @@
       ]
     },
     {
+      "instance_id": "helmet",
+      "part": "aurelian.sergeant-helmet@2",
+      "definition_sha256": "6778ff1d921229bd035a12319d89e2380ec6c5bf39c6d4b525f4bcdab30bb18c",
+      "mount": [
+        [
+          0.997434423,
+          -0.070054632,
+          0.014728242,
+          0.002243391
+        ],
+        [
+          0.070384616,
+          0.997249471,
+          -0.023227086,
+          -0.136002621
+        ],
+        [
+          -0.013060567,
+          0.024204136,
+          0.999621719,
+          8.197198264
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
       "instance_id": "left-arm",
       "part": "aurelian.spearman-hawk-arm@1",
       "definition_sha256": "bd096b95432e72192ab8bfa1636662ba1efaa585aa4f56a0ac1522d0b66c8a3a",

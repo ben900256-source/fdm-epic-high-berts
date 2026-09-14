@@ -272,3 +272,35 @@ at most 5 degrees. Stances, arms and modest spear inclinations provide the
 main variation. Shared shortblade revision 2 has a 3.57 mm straight blade
 with a short tapered point, a 1.9 mm hilt, a wider crossguard and a visible
 pommel. Its grip origin is unchanged across spearmen and archers.
+
+Both sergeants wear `aurelian.sergeant-helmet@1`: the approved revision 5
+crown with paired swept feather wings and a brow jewel. The shared recipe
+in `components/sergeant_helmets.py` preserves the crown, face opening,
+mount and cap, and adds the ornaments with ordered Exact unions. Ordinary
+troops retain the plain helmet. Helmet, head and crest move together.
+
+Sergeant helmet revision 2 enlarges the feathers by 50 percent in length
+and 25 percent in width, with a more upright sweep and fixed attachment
+points. The crown, face opening and brow jewel retain their earlier shape.
+
+`components/garment_trims.py` owns the separate tunic and mail-skirt trim
+recipes. Revision 2 adds a 0.68 mm front band and 0.5 mm hem band, with
+recessed creases down the front and around the bottom. The edging overlaps
+the reviewed garment and keeps its crease outside the existing chain links.
+`tunic-trim` and `skirt-trim` slots share their garment's mount and pose;
+cloth figures remove inherited mail trim along with the mail skirt.
+
+Mail-skirt trim revision 4 stops at the waist wrap's lower edge (local
+Z = -1.25 mm) and ends the hem edging ahead of the cape-covered rear
+(local Y = -0.5 mm). Both limits are local Exact intersections. The front
+crease and hem height are retained; the evaluated trim clears all five
+reviewed cape variants. This revision remains available as a saved review.
+
+Mail-skirt trim revision 6 replaces the straight rear cutoff with Exact
+subtraction of the matching cape's pinned primitives. Five fitted trims
+follow the five cape shapes and meet their surfaces at both sides; the
+waist-wrap stop remains unchanged. A rear limit at local Y = 0.5 mm removes
+the unwanted band behind the cape while retaining contact on both sides.
+Cape definition hashes are recorded in
+the trim recipes. Archers now use their tunic's existing edging without
+the separate tunic-trim overlay.
