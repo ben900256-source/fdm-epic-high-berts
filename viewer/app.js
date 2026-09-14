@@ -6,6 +6,7 @@ import { OutlinePass } from 'three/addons/postprocessing/OutlinePass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
 const $ = id => document.getElementById(id);
+const displayName = text => text.replace(/swordmaster/gi, name => name[0]==='S'?'Bertmaster':'bertmaster');
 const renderer = new THREE.WebGLRenderer({antialias:true});
 renderer.setPixelRatio(Math.min(devicePixelRatio,2));
 renderer.setSize(innerWidth,innerHeight);
@@ -55,8 +56,8 @@ function pickPiece(){
   const mesh=hit.object,p=mesh.userData;
   hoverOutline.selectedObjects=[mesh];
   const [figure,part]=p.instance_id.split('/');
-  const name=(part||figure).replaceAll('-',' ');
-  const figureName=figure.charAt(0).toUpperCase()+figure.slice(1).replaceAll('-',' ');
+  const name=displayName((part||figure).replaceAll('-',' '));
+  const figureName=displayName(figure.charAt(0).toUpperCase()+figure.slice(1).replaceAll('-',' '));
   $('piece-name').textContent=name.charAt(0).toUpperCase()+name.slice(1)+(part?' · '+figureName:'');
   $('piece-reference').textContent=p.part;
   const label=$('piece-label');label.hidden=false;
@@ -92,7 +93,7 @@ async function geometry(asset) {
 }
 function options(select, values, label) {
   const selected=select.value;
-  select.replaceChildren(new Option(label,'all'),...values.map(v=>new Option(v,v)));
+  select.replaceChildren(new Option(label,'all'),...values.map(v=>new Option(displayName(v),v)));
   select.value=values.includes(selected)?selected:'all';
 }
 function visibility() {
@@ -128,7 +129,7 @@ async function refresh() {
     const optionSignature=JSON.stringify(index.reviews.map(r=>[r.id,r.label]));
     if(optionSignature!==reviewOptions){
       $('review').replaceChildren(new Option('Latest update','latest'),
-        ...index.reviews.map(r=>new Option(r.label,r.id)));
+        ...index.reviews.map(r=>new Option(displayName(r.label),r.id)));
       $('review').value=reviewUrls.has(selected)?selected:'latest';
       reviewOptions=optionSignature;
     }

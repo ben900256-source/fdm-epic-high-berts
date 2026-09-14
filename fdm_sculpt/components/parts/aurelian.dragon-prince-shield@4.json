@@ -1,0 +1,106 @@
+{
+  "component_id": "aurelian.dragon-prince-shield",
+  "version": 4,
+  "name": "Dragon Prince symmetrical great shield with central oval gem",
+  "family": "dragon-prince-shield",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shield"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.09,
+        "depth": 0.44,
+        "export": true,
+        "location": [
+          0.0,
+          0,
+          0.0
+        ],
+        "primitive": "cone",
+        "radius1": 1.1,
+        "radius2": 1.04,
+        "role": "shield",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1.6875,
+          2.4375,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "dimensions": [
+          1.02,
+          0.38,
+          1.65
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.28,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "oval_gem_setting",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.73,
+          0.32,
+          1.3
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.48,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "central_oval_gem",
+        "segments": 32
+      }
+    ],
+    "landmarks": {
+      "grip": [
+        0,
+        0.5,
+        0
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "oval_gem_setting",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "central_oval_gem",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      }
+    ],
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}

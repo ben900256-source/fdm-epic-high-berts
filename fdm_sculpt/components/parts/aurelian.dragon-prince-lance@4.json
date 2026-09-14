@@ -1,0 +1,234 @@
+{
+  "component_id": "aurelian.dragon-prince-lance",
+  "version": 4,
+  "name": "Dragon Prince lance with hanging attached tapestry seal",
+  "family": "dragon-prince-lance",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shaft"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.03,
+        "depth": 8.2,
+        "export": true,
+        "location": [
+          0,
+          0,
+          2.3
+        ],
+        "primitive": "cylinder",
+        "radius": 0.5,
+        "role": "shaft",
+        "vertices": 24
+      },
+      {
+        "bevel": 0.02,
+        "depth": 1.4,
+        "export": false,
+        "location": [
+          0,
+          0,
+          7.05
+        ],
+        "primitive": "cone",
+        "radius1": 0.57,
+        "radius2": 0.1,
+        "role": "point",
+        "vertices": 4
+      },
+      {
+        "bevel": 0.06,
+        "depth": 0.48,
+        "export": false,
+        "location": [
+          0,
+          0,
+          -0.55
+        ],
+        "primitive": "cone",
+        "radius1": 0.8,
+        "radius2": 0.51,
+        "role": "hand_guard",
+        "vertices": 24
+      },
+      {
+        "bevel": 0.055,
+        "dimensions": [
+          1.22,
+          0.86,
+          1.02
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.33,
+          5.48
+        ],
+        "primitive": "cube",
+        "role": "tapestry_fold_0"
+      },
+      {
+        "bevel": 0.055,
+        "dimensions": [
+          1.22,
+          0.86,
+          1.02
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.41,
+          4.78
+        ],
+        "primitive": "cube",
+        "role": "tapestry_fold_1"
+      },
+      {
+        "bevel": 0.055,
+        "dimensions": [
+          1.22,
+          0.86,
+          1.02
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.33,
+          4.08
+        ],
+        "primitive": "cube",
+        "role": "tapestry_fold_2"
+      },
+      {
+        "bevel": 0.03,
+        "depth": 0.68,
+        "export": false,
+        "location": [
+          0,
+          0.22,
+          3.53
+        ],
+        "primitive": "cone",
+        "radius1": 0.23,
+        "radius2": 0.68,
+        "role": "tapestry_lower_join",
+        "scale": [
+          0.91,
+          0.69,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "dimensions": [
+          1.08,
+          0.67,
+          0.84
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.65,
+          5.86
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "tapestry_seal",
+        "segments": 32
+      },
+      {
+        "bevel": 0.04,
+        "dimensions": [
+          1.1,
+          0.28,
+          0.22
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.75,
+          3.86
+        ],
+        "primitive": "cube",
+        "role": "woven_hem"
+      }
+    ],
+    "design_notes": "Downward folded tapestry, continuously shaft-backed with tapered lower join. Pending sliced/physical validation.",
+    "landmarks": {
+      "grip": [
+        0,
+        0,
+        0
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "tip": [
+        0,
+        0,
+        7.75
+      ]
+    },
+    "operations": [
+      {
+        "operand": "point",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shaft"
+      },
+      {
+        "operand": "hand_guard",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shaft"
+      },
+      {
+        "operand": "tapestry_fold_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shaft"
+      },
+      {
+        "operand": "tapestry_fold_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shaft"
+      },
+      {
+        "operand": "tapestry_fold_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shaft"
+      },
+      {
+        "operand": "tapestry_lower_join",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shaft"
+      },
+      {
+        "operand": "tapestry_seal",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shaft"
+      },
+      {
+        "operand": "woven_hem",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shaft"
+      }
+    ],
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}

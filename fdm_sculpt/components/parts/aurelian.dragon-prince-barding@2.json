@@ -1,0 +1,1081 @@
+{
+  "component_id": "aurelian.dragon-prince-barding",
+  "version": 2,
+  "name": "Dragon prince barding with narrow horse face plate",
+  "family": "dragon-prince-barding",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "chamfron"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          0.9,
+          1.45,
+          0.32
+        ],
+        "export": true,
+        "location": [
+          0,
+          -3.55,
+          7.55
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "chamfron",
+        "segments": 32
+      },
+      {
+        "bevel": 0.12,
+        "dimensions": [
+          1.2,
+          0.35,
+          1.0
+        ],
+        "export": false,
+        "location": [
+          0,
+          -4.05,
+          6.9
+        ],
+        "primitive": "cube",
+        "role": "noseband"
+      },
+      {
+        "dimensions": [
+          0.54,
+          4.6,
+          2.15
+        ],
+        "export": false,
+        "location": [
+          -1.14,
+          0.35,
+          4.75
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "flank_plate_-1",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.6,
+          -2.25,
+          7.4
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "bridle_-1",
+        "start": [
+          -0.59,
+          -4.06,
+          6.7
+        ]
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          -1.44,
+          -1.25,
+          5.12
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_-1_0_0",
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          -1.44,
+          -0.62,
+          5.12
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_-1_0_1",
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          -1.44,
+          0.010000000000000009,
+          5.12
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_-1_0_2",
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          -1.44,
+          0.6400000000000001,
+          5.12
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_-1_0_3",
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          -1.44,
+          1.27,
+          5.12
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_-1_0_4",
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          -1.44,
+          1.9,
+          5.12
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_-1_0_5",
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          -1.44,
+          -1.25,
+          4.46
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_-1_1_0",
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          -1.44,
+          -0.62,
+          4.46
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_-1_1_1",
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          -1.44,
+          0.010000000000000009,
+          4.46
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_-1_1_2",
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          -1.44,
+          0.6400000000000001,
+          4.46
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_-1_1_3",
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          -1.44,
+          1.27,
+          4.46
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_-1_1_4",
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          -1.44,
+          1.9,
+          4.46
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_-1_1_5",
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "dimensions": [
+          0.54,
+          4.6,
+          2.15
+        ],
+        "export": false,
+        "location": [
+          1.14,
+          0.35,
+          4.75
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "flank_plate_1",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.6,
+          -2.25,
+          7.4
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "bridle_1",
+        "start": [
+          0.59,
+          -4.06,
+          6.7
+        ]
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          1.44,
+          -1.25,
+          5.12
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_1_0_0",
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          1.44,
+          -0.62,
+          5.12
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_1_0_1",
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          1.44,
+          0.010000000000000009,
+          5.12
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_1_0_2",
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          1.44,
+          0.6400000000000001,
+          5.12
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_1_0_3",
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          1.44,
+          1.27,
+          5.12
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_1_0_4",
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          1.44,
+          1.9,
+          5.12
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_1_0_5",
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          1.44,
+          -1.25,
+          4.46
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_1_1_0",
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          1.44,
+          -0.62,
+          4.46
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_1_1_1",
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          1.44,
+          0.010000000000000009,
+          4.46
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_1_1_2",
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          1.44,
+          0.6400000000000001,
+          4.46
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_1_1_3",
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          1.44,
+          1.27,
+          4.46
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_1_1_4",
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          1.44,
+          1.9,
+          4.46
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "dragon_scale_1_1_5",
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1.0,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "dimensions": [
+          2.0,
+          0.55,
+          2.0
+        ],
+        "export": false,
+        "location": [
+          0,
+          -2.2,
+          4.6
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "chest_barding",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.7,
+          -2.48,
+          4.1
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "chest_ridge_4.1",
+        "start": [
+          -0.7,
+          -2.48,
+          4.1
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.7,
+          -2.48,
+          4.7
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "chest_ridge_4.7",
+        "start": [
+          -0.7,
+          -2.48,
+          4.7
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.7,
+          -2.48,
+          5.3
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "chest_ridge_5.3",
+        "start": [
+          -0.7,
+          -2.48,
+          5.3
+        ]
+      },
+      {
+        "bevel": 0.03,
+        "depth": 0.62,
+        "export": false,
+        "location": [
+          0,
+          -0.8,
+          6.0
+        ],
+        "primitive": "cone",
+        "radius1": 0.32,
+        "radius2": 0.07,
+        "role": "neck_spine_0",
+        "vertices": 4
+      },
+      {
+        "bevel": 0.03,
+        "depth": 0.62,
+        "export": false,
+        "location": [
+          0,
+          -1.1800000000000002,
+          6.42
+        ],
+        "primitive": "cone",
+        "radius1": 0.32,
+        "radius2": 0.07,
+        "role": "neck_spine_1",
+        "vertices": 4
+      },
+      {
+        "bevel": 0.03,
+        "depth": 0.62,
+        "export": false,
+        "location": [
+          0,
+          -1.56,
+          6.84
+        ],
+        "primitive": "cone",
+        "radius1": 0.32,
+        "radius2": 0.07,
+        "role": "neck_spine_2",
+        "vertices": 4
+      },
+      {
+        "bevel": 0.03,
+        "depth": 0.62,
+        "export": false,
+        "location": [
+          0,
+          -1.9400000000000002,
+          7.26
+        ],
+        "primitive": "cone",
+        "radius1": 0.32,
+        "radius2": 0.07,
+        "role": "neck_spine_3",
+        "vertices": 4
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "noseband",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "flank_plate_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "bridle_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_-1_0_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_-1_0_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_-1_0_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_-1_0_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_-1_0_4",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_-1_0_5",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_-1_1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_-1_1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_-1_1_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_-1_1_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_-1_1_4",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_-1_1_5",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "flank_plate_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "bridle_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_1_0_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_1_0_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_1_0_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_1_0_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_1_0_4",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_1_0_5",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_1_1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_1_1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_1_1_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_1_1_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_1_1_4",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "dragon_scale_1_1_5",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "chest_barding",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "chest_ridge_4.1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "chest_ridge_4.7",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "chest_ridge_5.3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "neck_spine_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "neck_spine_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "neck_spine_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "neck_spine_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      }
+    ],
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}

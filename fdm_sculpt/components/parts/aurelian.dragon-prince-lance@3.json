@@ -1,0 +1,168 @@
+{
+  "component_id": "aurelian.dragon-prince-lance",
+  "version": 3,
+  "name": "Dragon Prince lance with supported thick seal tab",
+  "family": "dragon-prince-lance",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shaft"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.03,
+        "depth": 8.2,
+        "export": true,
+        "location": [
+          0,
+          0,
+          2.3
+        ],
+        "primitive": "cylinder",
+        "radius": 0.5,
+        "role": "shaft",
+        "vertices": 24
+      },
+      {
+        "bevel": 0.02,
+        "depth": 1.4,
+        "export": false,
+        "location": [
+          0,
+          0,
+          7.05
+        ],
+        "primitive": "cone",
+        "radius1": 0.57,
+        "radius2": 0.1,
+        "role": "point",
+        "vertices": 4
+      },
+      {
+        "bevel": 0.06,
+        "depth": 0.48,
+        "export": false,
+        "location": [
+          0,
+          0,
+          -0.55
+        ],
+        "primitive": "cone",
+        "radius1": 0.8,
+        "radius2": 0.51,
+        "role": "hand_guard",
+        "vertices": 24
+      },
+      {
+        "bevel": 0.045,
+        "dimensions": [
+          1.0,
+          0.85,
+          1.3
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.3,
+          5.4
+        ],
+        "primitive": "cube",
+        "role": "supported_seal_tab"
+      },
+      {
+        "bevel": 0.025,
+        "depth": 0.7,
+        "export": false,
+        "location": [
+          0,
+          0.24,
+          4.56
+        ],
+        "primitive": "cone",
+        "radius1": 0.24,
+        "radius2": 0.65,
+        "role": "seal_lower_ramp",
+        "scale": [
+          0.77,
+          0.65,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "dimensions": [
+          1.02,
+          0.65,
+          0.8
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.64,
+          5.76
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "seal_boss",
+        "segments": 32
+      }
+    ],
+    "design_notes": "FDM-oriented shaft-backed seal; 1.0 x 0.85 mm tab, tapered lower join. Pending sliced and physical validation.",
+    "landmarks": {
+      "grip": [
+        0,
+        0,
+        0
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "tip": [
+        0,
+        0,
+        7.75
+      ]
+    },
+    "operations": [
+      {
+        "operand": "point",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shaft"
+      },
+      {
+        "operand": "hand_guard",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shaft"
+      },
+      {
+        "operand": "supported_seal_tab",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shaft"
+      },
+      {
+        "operand": "seal_lower_ramp",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shaft"
+      },
+      {
+        "operand": "seal_boss",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shaft"
+      }
+    ],
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}

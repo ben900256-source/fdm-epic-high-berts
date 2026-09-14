@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "assembly_id": "aurelian-archer-rear-ranks",
+  "label": "Rear-rank archers: 20, 30, 40 degrees",
+  "placements": [
+    {
+      "instance_id": "base-11",
+      "part": "aurelian.base-body-4x5@1",
+      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -6
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-11-terrain",
+      "part": "aurelian.terrain-soil-gallery@4",
+      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -6
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-12",
+      "part": "aurelian.base-body-4x5@1",
+      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-12-terrain",
+      "part": "aurelian.terrain-soil-gallery@4",
+      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-13",
+      "part": "aurelian.base-body-4x5@1",
+      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          6
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-13-terrain",
+      "part": "aurelian.terrain-soil-gallery@4",
+      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          6
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "models": [
+    {
+      "instance_id": "variant-11-aiming-up-20",
+      "model": "models/archers/11-aiming-up-20.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -6
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "variant-12-aiming-up-30",
+      "model": "models/archers/12-aiming-up-30.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "variant-13-aiming-up-40",
+      "model": "models/archers/13-aiming-up-40.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          6
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

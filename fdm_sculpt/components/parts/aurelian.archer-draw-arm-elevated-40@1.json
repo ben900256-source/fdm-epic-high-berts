@@ -1,0 +1,334 @@
+{
+  "component_id": "aurelian.archer-draw-arm-elevated-40",
+  "version": 1,
+  "name": "Archer Draw Arm with broad readable fist aiming upward 40 degrees",
+  "family": "archer-draw-arm",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "archer-draw-arm_shoulder"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          1.0,
+          1.05,
+          1.05
+        ],
+        "export": true,
+        "location": [
+          0.04,
+          0.97,
+          0.7000000000000002
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "archer-draw-arm_shoulder",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.55,
+          0.4237180313649547,
+          0.5540521749090873
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.43,
+        "role": "archer-draw-arm_upper_arm",
+        "start": [
+          0.04,
+          0.97,
+          0.7000000000000002
+        ]
+      },
+      {
+        "dimensions": [
+          0.9,
+          0.9,
+          0.9
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.0
+          ],
+          [
+            0,
+            0.766044443118978,
+            0.6427876096865393,
+            -1.332484365096537
+          ],
+          [
+            0,
+            -0.6427876096865393,
+            0.766044443118978,
+            -0.06097070487906486
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0.55,
+          0.95,
+          1.5999999999999996
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "archer-draw-arm_elbow",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.55,
+          -0.75,
+          1.7999999999999998
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.0
+          ],
+          [
+            0,
+            0.766044443118978,
+            0.6427876096865393,
+            -1.332484365096537
+          ],
+          [
+            0,
+            -0.6427876096865393,
+            0.766044443118978,
+            -0.06097070487906486
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "primitive": "between",
+        "radius": 0.4,
+        "role": "archer-draw-arm_forearm",
+        "start": [
+          0.55,
+          0.95,
+          1.5999999999999996
+        ]
+      },
+      {
+        "bevel": 0.15,
+        "dimensions": [
+          1.3,
+          1.02,
+          1.2
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.0
+          ],
+          [
+            0,
+            0.766044443118978,
+            0.6427876096865393,
+            -1.332484365096537
+          ],
+          [
+            0,
+            -0.6427876096865393,
+            0.766044443118978,
+            -0.06097070487906486
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0.55,
+          -0.75,
+          1.7999999999999998
+        ],
+        "primitive": "cube",
+        "role": "archer-draw-arm_palm"
+      },
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          1.15,
+          0.42,
+          0.9
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.0
+          ],
+          [
+            0,
+            0.766044443118978,
+            0.6427876096865393,
+            -1.332484365096537
+          ],
+          [
+            0,
+            -0.6427876096865393,
+            0.766044443118978,
+            -0.06097070487906486
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0.67,
+          -1.1099999999999999,
+          1.8199999999999998
+        ],
+        "primitive": "cube",
+        "role": "archer-draw-arm_fingers"
+      },
+      {
+        "dimensions": [
+          0.55,
+          0.65,
+          0.65
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.0
+          ],
+          [
+            0,
+            0.766044443118978,
+            0.6427876096865393,
+            -1.332484365096537
+          ],
+          [
+            0,
+            -0.6427876096865393,
+            0.766044443118978,
+            -0.06097070487906486
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          1.07,
+          -0.87,
+          2.3
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "archer-draw-arm_thumb",
+        "segments": 32
+      }
+    ],
+    "design": {
+      "support_target": "No removable supports; pending sliced validation."
+    },
+    "elevation_degrees": 40,
+    "landmarks": {
+      "elbow": [
+        0.55,
+        0.4237180313649547,
+        0.5540521749090873
+      ],
+      "grip": [
+        0.55,
+        -0.7500000000000001,
+        1.8
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "shoulder": [
+        0.04,
+        0.97,
+        0.7000000000000002
+      ]
+    },
+    "operations": [
+      {
+        "operand": "archer-draw-arm_upper_arm",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "archer-draw-arm_shoulder"
+      },
+      {
+        "operand": "archer-draw-arm_elbow",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "archer-draw-arm_shoulder"
+      },
+      {
+        "operand": "archer-draw-arm_forearm",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "archer-draw-arm_shoulder"
+      },
+      {
+        "operand": "archer-draw-arm_palm",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "archer-draw-arm_shoulder"
+      },
+      {
+        "operand": "archer-draw-arm_fingers",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "archer-draw-arm_shoulder"
+      },
+      {
+        "operand": "archer-draw-arm_thumb",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "archer-draw-arm_shoulder"
+      }
+    ],
+    "parent_definition_sha256": "14baaa0a0847ec67e8a5286e1da4e742565bf210b1322563d4ad054c44c8efb2",
+    "parent_reference": "aurelian.archer-draw-arm@2",
+    "provenance": "Revision 1 arm pose retained; broader beveled palm and grouped knuckles with a distinct rounded thumb make the fist readable at miniature scale.",
+    "seed": 1001
+  }
+}

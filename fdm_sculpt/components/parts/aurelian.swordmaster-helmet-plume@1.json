@@ -1,0 +1,1821 @@
+{
+  "component_id": "aurelian.swordmaster-helmet-plume",
+  "version": 1,
+  "name": "Swordmaster helmet plume",
+  "family": "swordmaster-helmet-plume",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "crown_socket"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          0.65,
+          0.65,
+          0.5
+        ],
+        "export": true,
+        "location": [
+          0,
+          0.08,
+          1.88
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "crown_socket",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.83,
+          0.7,
+          1.0794182110716777
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.0
+          ],
+          [
+            0,
+            0.8849182223819824,
+            0.46574643283262246,
+            0.18000000000000002
+          ],
+          [
+            0,
+            -0.46574643283262246,
+            0.8849182223819824,
+            2.07
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "flowing_plume_0",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          0.8094182110716777
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            -0.2407
+          ],
+          [
+            0,
+            0.8849182223819823,
+            0.4657464328326225,
+            0.47000000000000003
+          ],
+          [
+            0,
+            -0.4657464328326225,
+            0.8849182223819823,
+            2.07
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_0_-2",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          0.8094182110716777
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            -0.12035
+          ],
+          [
+            0,
+            0.8849182223819823,
+            0.4657464328326225,
+            0.47000000000000003
+          ],
+          [
+            0,
+            -0.4657464328326225,
+            0.8849182223819823,
+            2.07
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_0_-1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          0.8094182110716777
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.0
+          ],
+          [
+            0,
+            0.8849182223819823,
+            0.4657464328326225,
+            0.47000000000000003
+          ],
+          [
+            0,
+            -0.4657464328326225,
+            0.8849182223819823,
+            2.07
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_0_0",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          0.8094182110716777
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.12035
+          ],
+          [
+            0,
+            0.8849182223819823,
+            0.4657464328326225,
+            0.47000000000000003
+          ],
+          [
+            0,
+            -0.4657464328326225,
+            0.8849182223819823,
+            2.07
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_0_1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          0.8094182110716777
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.2407
+          ],
+          [
+            0,
+            0.8849182223819823,
+            0.4657464328326225,
+            0.47000000000000003
+          ],
+          [
+            0,
+            -0.4657464328326225,
+            0.8849182223819823,
+            2.07
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_0_2",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.05,
+          0.7,
+          1.0176955262170047
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.0
+          ],
+          [
+            0,
+            -0.3807498052542941,
+            0.9246780984747163,
+            0.45
+          ],
+          [
+            0,
+            -0.9246780984747163,
+            -0.3807498052542941,
+            2.19
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "flowing_plume_1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          0.7476955262170044
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            -0.3045
+          ],
+          [
+            0,
+            -0.3807498052542942,
+            0.9246780984747163,
+            0.74
+          ],
+          [
+            0,
+            -0.9246780984747163,
+            -0.3807498052542942,
+            2.19
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_1_-2",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          0.7476955262170044
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            -0.15225
+          ],
+          [
+            0,
+            -0.3807498052542942,
+            0.9246780984747163,
+            0.74
+          ],
+          [
+            0,
+            -0.9246780984747163,
+            -0.3807498052542942,
+            2.19
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_1_-1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          0.7476955262170044
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.0
+          ],
+          [
+            0,
+            -0.3807498052542942,
+            0.9246780984747163,
+            0.74
+          ],
+          [
+            0,
+            -0.9246780984747163,
+            -0.3807498052542942,
+            2.19
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_1_0",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          0.7476955262170044
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.15225
+          ],
+          [
+            0,
+            -0.3807498052542942,
+            0.9246780984747163,
+            0.74
+          ],
+          [
+            0,
+            -0.9246780984747163,
+            -0.3807498052542942,
+            2.19
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_1_1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          0.7476955262170044
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.3045
+          ],
+          [
+            0,
+            -0.3807498052542942,
+            0.9246780984747163,
+            0.74
+          ],
+          [
+            0,
+            -0.9246780984747163,
+            -0.3807498052542942,
+            2.19
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_1_2",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.06,
+          0.7,
+          1.223061951275776
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.0
+          ],
+          [
+            0,
+            -0.8725060159497201,
+            0.4886033689318433,
+            0.76
+          ],
+          [
+            0,
+            -0.4886033689318433,
+            -0.8725060159497201,
+            1.87
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "flowing_plume_2",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          0.9530619512757761
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            -0.3074
+          ],
+          [
+            0,
+            -0.8725060159497201,
+            0.4886033689318433,
+            1.0499999999999998
+          ],
+          [
+            0,
+            -0.4886033689318433,
+            -0.8725060159497201,
+            1.87
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_2_-2",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          0.9530619512757761
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            -0.1537
+          ],
+          [
+            0,
+            -0.8725060159497201,
+            0.4886033689318433,
+            1.0499999999999998
+          ],
+          [
+            0,
+            -0.4886033689318433,
+            -0.8725060159497201,
+            1.87
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_2_-1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          0.9530619512757761
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.0
+          ],
+          [
+            0,
+            -0.8725060159497201,
+            0.4886033689318433,
+            1.0499999999999998
+          ],
+          [
+            0,
+            -0.4886033689318433,
+            -0.8725060159497201,
+            1.87
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_2_0",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          0.9530619512757761
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.1537
+          ],
+          [
+            0,
+            -0.8725060159497201,
+            0.4886033689318433,
+            1.0499999999999998
+          ],
+          [
+            0,
+            -0.4886033689318433,
+            -0.8725060159497201,
+            1.87
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_2_1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          0.9530619512757761
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.3074
+          ],
+          [
+            0,
+            -0.8725060159497201,
+            0.4886033689318433,
+            1.0499999999999998
+          ],
+          [
+            0,
+            -0.4886033689318433,
+            -0.8725060159497201,
+            1.87
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_2_2",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.97,
+          0.7,
+          1.305209890035247
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.0
+          ],
+          [
+            0,
+            -0.9615239476408232,
+            0.27472112789737807,
+            0.99
+          ],
+          [
+            0,
+            -0.27472112789737807,
+            -0.9615239476408232,
+            1.3050000000000002
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "flowing_plume_3",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          1.0352098900352469
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            -0.2813
+          ],
+          [
+            0,
+            -0.9615239476408232,
+            0.27472112789737824,
+            1.28
+          ],
+          [
+            0,
+            -0.27472112789737824,
+            -0.9615239476408232,
+            1.3050000000000002
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_3_-2",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          1.0352098900352469
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            -0.14065
+          ],
+          [
+            0,
+            -0.9615239476408232,
+            0.27472112789737824,
+            1.28
+          ],
+          [
+            0,
+            -0.27472112789737824,
+            -0.9615239476408232,
+            1.3050000000000002
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_3_-1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          1.0352098900352469
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.0
+          ],
+          [
+            0,
+            -0.9615239476408232,
+            0.27472112789737824,
+            1.28
+          ],
+          [
+            0,
+            -0.27472112789737824,
+            -0.9615239476408232,
+            1.3050000000000002
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_3_0",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          1.0352098900352469
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.14065
+          ],
+          [
+            0,
+            -0.9615239476408232,
+            0.27472112789737824,
+            1.28
+          ],
+          [
+            0,
+            -0.27472112789737824,
+            -0.9615239476408232,
+            1.3050000000000002
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_3_1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          1.0352098900352469
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.2813
+          ],
+          [
+            0,
+            -0.9615239476408232,
+            0.27472112789737824,
+            1.28
+          ],
+          [
+            0,
+            -0.27472112789737824,
+            -0.9615239476408232,
+            1.3050000000000002
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_3_2",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.85,
+          0.7,
+          1.2919501538281613
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.0
+          ],
+          [
+            0,
+            -0.9969621413492435,
+            0.07788766729290937,
+            1.105
+          ],
+          [
+            0,
+            -0.07788766729290937,
+            -0.9969621413492435,
+            0.6699999999999999
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "flowing_plume_4",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          1.0219501538281612
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            -0.2465
+          ],
+          [
+            0,
+            -0.9969621413492435,
+            0.07788766729290937,
+            1.395
+          ],
+          [
+            0,
+            -0.07788766729290937,
+            -0.9969621413492435,
+            0.6699999999999999
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_4_-2",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          1.0219501538281612
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            -0.12325
+          ],
+          [
+            0,
+            -0.9969621413492435,
+            0.07788766729290937,
+            1.395
+          ],
+          [
+            0,
+            -0.07788766729290937,
+            -0.9969621413492435,
+            0.6699999999999999
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_4_-1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          1.0219501538281612
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.0
+          ],
+          [
+            0,
+            -0.9969621413492435,
+            0.07788766729290937,
+            1.395
+          ],
+          [
+            0,
+            -0.07788766729290937,
+            -0.9969621413492435,
+            0.6699999999999999
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_4_0",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          1.0219501538281612
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.12325
+          ],
+          [
+            0,
+            -0.9969621413492435,
+            0.07788766729290937,
+            1.395
+          ],
+          [
+            0,
+            -0.07788766729290937,
+            -0.9969621413492435,
+            0.6699999999999999
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_4_1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          1.0219501538281612
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.2465
+          ],
+          [
+            0,
+            -0.9969621413492435,
+            0.07788766729290937,
+            1.395
+          ],
+          [
+            0,
+            -0.07788766729290937,
+            -0.9969621413492435,
+            0.6699999999999999
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_4_2",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.62,
+          0.7,
+          1.2932728814430154
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.0
+          ],
+          [
+            0,
+            -0.979366639219671,
+            -0.20209152872786845,
+            1.065
+          ],
+          [
+            0,
+            0.20209152872786845,
+            -0.979366639219671,
+            0.034999999999999976
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "flowing_plume_5",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          1.0232728814430154
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            -0.17980000000000002
+          ],
+          [
+            0,
+            -0.979366639219671,
+            -0.20209152872786845,
+            1.355
+          ],
+          [
+            0,
+            0.20209152872786845,
+            -0.979366639219671,
+            0.034999999999999976
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_5_-2",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          1.0232728814430154
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            -0.08990000000000001
+          ],
+          [
+            0,
+            -0.979366639219671,
+            -0.20209152872786845,
+            1.355
+          ],
+          [
+            0,
+            0.20209152872786845,
+            -0.979366639219671,
+            0.034999999999999976
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_5_-1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          1.0232728814430154
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.0
+          ],
+          [
+            0,
+            -0.979366639219671,
+            -0.20209152872786845,
+            1.355
+          ],
+          [
+            0,
+            0.20209152872786845,
+            -0.979366639219671,
+            0.034999999999999976
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_5_0",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          1.0232728814430154
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.08990000000000001
+          ],
+          [
+            0,
+            -0.979366639219671,
+            -0.20209152872786845,
+            1.355
+          ],
+          [
+            0,
+            0.20209152872786845,
+            -0.979366639219671,
+            0.034999999999999976
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_5_1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.17,
+          1.0232728814430154
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.17980000000000002
+          ],
+          [
+            0,
+            -0.979366639219671,
+            -0.20209152872786845,
+            1.355
+          ],
+          [
+            0,
+            0.20209152872786845,
+            -0.979366639219671,
+            0.034999999999999976
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_ridge_5_2",
+        "segments": 32
+      }
+    ],
+    "landmarks": {
+      "crown": [
+        0,
+        0.08,
+        1.88
+      ],
+      "drape": [
+        0,
+        1.0,
+        -0.28
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "flowing_plume_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_0_-2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_0_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_0_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_0_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_0_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "flowing_plume_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_1_-2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_1_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_1_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "flowing_plume_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_2_-2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_2_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_2_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_2_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_2_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "flowing_plume_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_3_-2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_3_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_3_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_3_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_3_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "flowing_plume_4",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_4_-2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_4_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_4_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_4_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_4_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "flowing_plume_5",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_5_-2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_5_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_5_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_5_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      },
+      {
+        "operand": "hair_ridge_5_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_socket"
+      }
+    ],
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}

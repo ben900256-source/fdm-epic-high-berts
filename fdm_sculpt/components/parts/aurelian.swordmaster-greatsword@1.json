@@ -1,0 +1,350 @@
+{
+  "component_id": "aurelian.swordmaster-greatsword",
+  "version": 1,
+  "name": "Swordmaster greatsword",
+  "family": "swordmaster-greatsword",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "grip"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.04,
+        "depth": 2.4,
+        "export": true,
+        "location": [
+          0,
+          0,
+          -0.55
+        ],
+        "primitive": "cylinder",
+        "radius": 0.38,
+        "role": "grip",
+        "vertices": 32
+      },
+      {
+        "dimensions": [
+          0.95,
+          0.8,
+          0.65
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          -1.9
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "pommel",
+        "segments": 32
+      },
+      {
+        "bevel": 0.08,
+        "dimensions": [
+          2.1,
+          0.65,
+          0.34
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          0.75
+        ],
+        "primitive": "cube",
+        "role": "guard"
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.2,
+          0,
+          1.0
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.18,
+        "role": "guard_left",
+        "start": [
+          -0.95,
+          0,
+          0.75
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.2,
+          0,
+          1.0
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.18,
+        "role": "guard_right",
+        "start": [
+          0.95,
+          0,
+          0.75
+        ]
+      },
+      {
+        "bevel": 0.025,
+        "depth": 4.2,
+        "export": false,
+        "location": [
+          0,
+          0,
+          2.92
+        ],
+        "primitive": "cone",
+        "radius1": 0.68,
+        "radius2": 0.53,
+        "role": "blade",
+        "scale": [
+          1,
+          0.48,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.015,
+        "depth": 1.5,
+        "export": false,
+        "location": [
+          0,
+          0,
+          5.75
+        ],
+        "primitive": "cone",
+        "radius1": 0.54,
+        "radius2": 0.1,
+        "role": "point",
+        "scale": [
+          1,
+          0.48,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "dimensions": [
+          0.46,
+          0.26,
+          0.42
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.34,
+          0.78
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "guard_gem",
+        "segments": 32
+      },
+      {
+        "bevel": 0.025,
+        "depth": 0.1,
+        "export": false,
+        "location": [
+          0,
+          0,
+          -1.55
+        ],
+        "primitive": "cylinder",
+        "radius": 0.41,
+        "role": "hilt_wrap_0",
+        "vertices": 24
+      },
+      {
+        "bevel": 0.025,
+        "depth": 0.1,
+        "export": false,
+        "location": [
+          0,
+          0,
+          -1.17
+        ],
+        "primitive": "cylinder",
+        "radius": 0.41,
+        "role": "hilt_wrap_1",
+        "vertices": 24
+      },
+      {
+        "bevel": 0.025,
+        "depth": 0.1,
+        "export": false,
+        "location": [
+          0,
+          0,
+          -0.79
+        ],
+        "primitive": "cylinder",
+        "radius": 0.41,
+        "role": "hilt_wrap_2",
+        "vertices": 24
+      },
+      {
+        "bevel": 0.025,
+        "depth": 0.1,
+        "export": false,
+        "location": [
+          0,
+          0,
+          -0.4099999999999999
+        ],
+        "primitive": "cylinder",
+        "radius": 0.41,
+        "role": "hilt_wrap_3",
+        "vertices": 24
+      },
+      {
+        "bevel": 0.025,
+        "depth": 0.1,
+        "export": false,
+        "location": [
+          0,
+          0,
+          -0.030000000000000027
+        ],
+        "primitive": "cylinder",
+        "radius": 0.41,
+        "role": "hilt_wrap_4",
+        "vertices": 24
+      },
+      {
+        "bevel": 0.025,
+        "depth": 0.1,
+        "export": false,
+        "location": [
+          0,
+          0,
+          0.34999999999999987
+        ],
+        "primitive": "cylinder",
+        "radius": 0.41,
+        "role": "hilt_wrap_5",
+        "vertices": 24
+      }
+    ],
+    "landmarks": {
+      "guard": [
+        0,
+        0,
+        0.75
+      ],
+      "lower_grip": [
+        0,
+        0,
+        -1.15
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "tip": [
+        0,
+        0,
+        6.5
+      ],
+      "upper_grip": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "pommel",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "grip"
+      },
+      {
+        "operand": "guard",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "grip"
+      },
+      {
+        "operand": "guard_left",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "grip"
+      },
+      {
+        "operand": "guard_right",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "grip"
+      },
+      {
+        "operand": "blade",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "grip"
+      },
+      {
+        "operand": "point",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "grip"
+      },
+      {
+        "operand": "guard_gem",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "grip"
+      },
+      {
+        "operand": "hilt_wrap_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "grip"
+      },
+      {
+        "operand": "hilt_wrap_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "grip"
+      },
+      {
+        "operand": "hilt_wrap_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "grip"
+      },
+      {
+        "operand": "hilt_wrap_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "grip"
+      },
+      {
+        "operand": "hilt_wrap_4",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "grip"
+      },
+      {
+        "operand": "hilt_wrap_5",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "grip"
+      }
+    ],
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}

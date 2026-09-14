@@ -1,0 +1,534 @@
+{
+  "schema_version": 1,
+  "assembly_id": "aurelian-dragon-prince",
+  "label": "Dragon Prince cavalry",
+  "placements": [
+    {
+      "instance_id": "base",
+      "part": "aurelian.cavalry-base-body-6x12@1",
+      "definition_sha256": "125603238bbd7a68db0c3060d338a5167fd17aaf87637465534736de7b876662",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "terrain",
+      "part": "aurelian.cavalry-soil-6x12@1",
+      "definition_sha256": "7f149a9f7bacf9eca6c4734a8e03927b727252f465009af9e1c0e70bbc73bb7e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "prince-01/horse",
+      "part": "aurelian.dragon-prince-horse@5",
+      "definition_sha256": "36bef16e7ca274996013cd67a50f3c17d6de011989d559038bffba4516da5f31",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "prince-01/barding",
+      "part": "aurelian.dragon-prince-barding@8",
+      "definition_sha256": "e6a415e3f326347a34079cb7e1a3b10e34f096002801738f93488d9f228cafd8",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "prince-01/saddle",
+      "part": "aurelian.dragon-prince-saddle@1",
+      "definition_sha256": "840f5d9578d712ede23141c2309ee6f4ce1d5fe2e044c51e06c5c87a1798bf4f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "prince-01/riding-legs",
+      "part": "aurelian.dragon-prince-riding-legs@1",
+      "definition_sha256": "e4b3c2d643307b6fb871003d031a690bb88dc160fe873459ed558c6320cdad06",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "prince-01/reins",
+      "part": "aurelian.dragon-prince-reins@6",
+      "definition_sha256": "61cacc7e9eba3b5549422cd2f3de0e5d1e4baeb9e1728f3d59139acdbb5f2f69",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "prince-01/torso",
+      "part": "aurelian.torso@2",
+      "definition_sha256": "c16b3f70d2ca8bc86a2a6d03f8ad4f1de395fd6595f9c40938903c726271c8fa",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "prince-01/cuirass",
+      "part": "aurelian.swordmaster-cuirass@1",
+      "definition_sha256": "b89d0d422b55f553a005d11743d11a6066bf405ea0cc0f4d8da718de69a4f80c",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "prince-01/pauldrons",
+      "part": "aurelian.dragon-prince-winged-pauldrons@2",
+      "definition_sha256": "f6b3295ec6de0e52b8f3aacf1a6f8049f300f2b38d31bc24527480a1adcfede1",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "prince-01/waist-wrap",
+      "part": "aurelian.cloth-waist-wrap@1",
+      "definition_sha256": "141e6370b138414cba1e45d3c016e0ca559260653105754881419e76bab0da6b",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "prince-01/left-arm",
+      "part": "aurelian.dragon-prince-left-arm@1",
+      "definition_sha256": "dbd8e7cb55a6c98f3999e006a54320ee1484d65f82232e69eb54adca47479ff6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "prince-01/right-arm",
+      "part": "aurelian.dragon-prince-right-arm@1",
+      "definition_sha256": "4f03e81de0cc5ba6785077e5a8a1f2607e193a83658fd32c2e941678e514fbe6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "prince-01/head",
+      "part": "aurelian.head@12",
+      "definition_sha256": "539e53b2c3d83535370628a0464ba94cfdf613dbc8abbd580f6b16edc3f17efe",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          12
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "prince-01/helmet",
+      "part": "aurelian.dragon-prince-helmet@6",
+      "definition_sha256": "c095483693fccce814d2a0f455519076b7276234a1d6d36b568fd9089a65b0f4",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          12
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "prince-01/lance",
+      "part": "aurelian.dragon-prince-lance@1",
+      "definition_sha256": "857c0846830d0558a9b120cc83d7df09d3e7d9ca1b08c2811de1b9430189fa45",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.9659258262890683,
+          -0.25881904510252074,
+          -1.0
+        ],
+        [
+          0.0,
+          0.25881904510252074,
+          0.9659258262890683,
+          10.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "prince-01/shield",
+      "part": "aurelian.dragon-prince-shield@6",
+      "definition_sha256": "993ea1706245fc527feee5cbd4254c3ff3b2f8f602cebc46ee62c77593f7defc",
+      "mount": [
+        [
+          0.766044443118978,
+          0.6427876096865393,
+          0.0,
+          -1.8213938048432696
+        ],
+        [
+          -0.6427876096865393,
+          0.766044443118978,
+          0.0,
+          -1.383022221559489
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "component_id": "aurelian.cavalry-base-body-6x12",
+  "version": 1,
+  "name": "aurelian.cavalry-base-body-6x12",
+  "family": "base-body",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "body"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0,
+        "dimensions": [
+          6,
+          12,
+          2
+        ],
+        "export": true,
+        "location": [
+          0,
+          0,
+          1.0
+        ],
+        "primitive": "cube",
+        "role": "body"
+      },
+      {
+        "bevel": 0,
+        "depth": 1.2000000000000002,
+        "export": false,
+        "location": [
+          0,
+          0,
+          0.5
+        ],
+        "primitive": "cylinder",
+        "radius": 1.6,
+        "role": "magnet_0",
+        "vertices": 64
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "magnet_0",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "body"
+      }
+    ],
+    "recipe": {
+      "centers": [
+        [
+          0,
+          0
+        ]
+      ],
+      "depth_allowance": 0.1,
+      "diameter_allowance": 0.2,
+      "length": 12,
+      "magnet": "3x1",
+      "minimum_stock": 0.75,
+      "thickness": 2,
+      "visual_only": true,
+      "width": 6
+    }
+  }
+}

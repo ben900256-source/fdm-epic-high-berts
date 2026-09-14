@@ -1,0 +1,70 @@
+{
+  "component_id": "aurelian.dragon-prince-reins",
+  "version": 1,
+  "name": "Dragon prince reins",
+  "family": "dragon-prince-reins",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "reins_front"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.1,
+          -2.7,
+          7.2
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "reins_front",
+        "start": [
+          -0.6,
+          -4,
+          6.8
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.5,
+          -1,
+          8.4
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "reins_hand",
+        "start": [
+          -1.1,
+          -2.7,
+          7.2
+        ]
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "reins_hand",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "reins_front"
+      }
+    ],
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}

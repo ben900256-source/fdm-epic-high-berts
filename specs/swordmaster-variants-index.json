@@ -1,0 +1,65 @@
+{
+  "seed": 1001,
+  "variants": [
+    {
+      "number": 1,
+      "label": "Diagonal Guard",
+      "model": "models/swordmasters/01-diagonal-guard.json",
+      "yaw_degrees": 0
+    },
+    {
+      "number": 2,
+      "label": "High Guard",
+      "model": "models/swordmasters/02-high-guard.json",
+      "yaw_degrees": -3
+    },
+    {
+      "number": 3,
+      "label": "Left Guard",
+      "model": "models/swordmasters/03-left-guard.json",
+      "yaw_degrees": 3
+    },
+    {
+      "number": 4,
+      "label": "Wide Parry",
+      "model": "models/swordmasters/04-wide-parry.json",
+      "yaw_degrees": -4
+    },
+    {
+      "number": 5,
+      "label": "Left Parry",
+      "model": "models/swordmasters/05-left-parry.json",
+      "yaw_degrees": 4
+    },
+    {
+      "number": 6,
+      "label": "Forward Point",
+      "model": "models/swordmasters/06-forward-point.json",
+      "yaw_degrees": 0
+    },
+    {
+      "number": 7,
+      "label": "High Right",
+      "model": "models/swordmasters/07-high-right.json",
+      "yaw_degrees": -3
+    },
+    {
+      "number": 8,
+      "label": "Low Guard",
+      "model": "models/swordmasters/08-low-guard.json",
+      "yaw_degrees": 3
+    },
+    {
+      "number": 9,
+      "label": "Recovering",
+      "model": "models/swordmasters/09-recovering.json",
+      "yaw_degrees": -4
+    },
+    {
+      "number": 10,
+      "label": "Upright Guard",
+      "model": "models/swordmasters/10-upright-guard.json",
+      "yaw_degrees": 4
+    }
+  ]
+}

@@ -10,7 +10,7 @@ test('army garment trims load with matching poses and remain identifiable',async
   let checked=0;
   for(const entry of index.reviews){
     const manifest=await(await page.request.get('http://127.0.0.1:8765'+entry.url)).json();
-    if(!manifest.build.startsWith('elf-')||!manifest.build.endsWith('-trim-contact-v6'))continue;
+    if(!manifest.build.startsWith('elf-')||(!manifest.build.endsWith('-trim-contact-v6')&&manifest.build!=='elf-archer-variants-elevated-v1'))continue;
     const slots=new Map(manifest.assembly.placements.map(p=>[p.instance_id,p]));
     if(entry.id.includes('archer'))expect([...slots.values()].some(p=>p.part.includes('tunic-trim'))).toBe(false);
     for(const p of slots.values()){

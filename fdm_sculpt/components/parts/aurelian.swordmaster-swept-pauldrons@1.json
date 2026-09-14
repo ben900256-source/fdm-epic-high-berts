@@ -1,0 +1,512 @@
+{
+  "component_id": "aurelian.swordmaster-swept-pauldrons",
+  "version": 1,
+  "name": "Swordmaster swept pauldrons",
+  "family": "swordmaster-swept-pauldrons",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "left_cap"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          1.5,
+          1.45,
+          0.95
+        ],
+        "export": true,
+        "location": [
+          -1.06,
+          0,
+          1.08
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "left_cap",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.7,
+          0.76,
+          0.56
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9135454576426009,
+            0.0,
+            0.4067366430758002,
+            -0.5809041266631251
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.4067366430758002,
+            0.0,
+            0.9135454576426009,
+            -0.4929390450196234
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -1.45,
+          0.13,
+          1.12
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "left_swept_plate_0",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -2.12,
+          0.1,
+          1.57
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "left_raised_rim_0",
+        "start": [
+          -1.04,
+          -0.24,
+          1.05
+        ]
+      },
+      {
+        "dimensions": [
+          1.7,
+          0.76,
+          0.56
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9135454576426009,
+            0.0,
+            0.4067366430758002,
+            -0.660679261756011
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.4067366430758002,
+            0.0,
+            0.9135454576426009,
+            -0.5482515475653253
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -1.6199999999999999,
+          0.4,
+          1.28
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "left_swept_plate_1",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -2.25,
+          0.37,
+          1.72
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "left_raised_rim_1",
+        "start": [
+          -1.04,
+          0.030000000000000027,
+          1.2
+        ]
+      },
+      {
+        "dimensions": [
+          1.7,
+          0.76,
+          0.56
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9135454576426009,
+            0.0,
+            0.4067366430758002,
+            -0.7404543968488966
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.4067366430758002,
+            0.0,
+            0.9135454576426009,
+            -0.6035640501110275
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -1.79,
+          0.67,
+          1.4400000000000002
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "left_swept_plate_2",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -2.38,
+          0.64,
+          1.87
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "left_raised_rim_2",
+        "start": [
+          -1.04,
+          0.30000000000000004,
+          1.35
+        ]
+      },
+      {
+        "dimensions": [
+          1.5,
+          1.45,
+          0.95
+        ],
+        "export": false,
+        "location": [
+          1.06,
+          0,
+          1.08
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_cap",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.7,
+          0.76,
+          0.56
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9135454576426009,
+            0.0,
+            -0.4067366430758002,
+            0.5809041266631251
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.4067366430758002,
+            0.0,
+            0.9135454576426009,
+            -0.4929390450196234
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          1.45,
+          0.13,
+          1.12
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_swept_plate_0",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          2.12,
+          0.1,
+          1.57
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "right_raised_rim_0",
+        "start": [
+          1.04,
+          -0.24,
+          1.05
+        ]
+      },
+      {
+        "dimensions": [
+          1.7,
+          0.76,
+          0.56
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9135454576426009,
+            0.0,
+            -0.4067366430758002,
+            0.660679261756011
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.4067366430758002,
+            0.0,
+            0.9135454576426009,
+            -0.5482515475653253
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          1.6199999999999999,
+          0.4,
+          1.28
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_swept_plate_1",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          2.25,
+          0.37,
+          1.72
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "right_raised_rim_1",
+        "start": [
+          1.04,
+          0.030000000000000027,
+          1.2
+        ]
+      },
+      {
+        "dimensions": [
+          1.7,
+          0.76,
+          0.56
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9135454576426009,
+            0.0,
+            -0.4067366430758002,
+            0.7404543968488966
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.4067366430758002,
+            0.0,
+            0.9135454576426009,
+            -0.6035640501110275
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          1.79,
+          0.67,
+          1.4400000000000002
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_swept_plate_2",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          2.38,
+          0.64,
+          1.87
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "right_raised_rim_2",
+        "start": [
+          1.04,
+          0.30000000000000004,
+          1.35
+        ]
+      }
+    ],
+    "landmarks": {
+      "left_shoulder": [
+        -0.98,
+        0,
+        0.72
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "right_shoulder": [
+        0.98,
+        0,
+        0.72
+      ]
+    },
+    "operations": [
+      {
+        "operand": "left_swept_plate_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_cap"
+      },
+      {
+        "operand": "left_raised_rim_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_cap"
+      },
+      {
+        "operand": "left_swept_plate_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_cap"
+      },
+      {
+        "operand": "left_raised_rim_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_cap"
+      },
+      {
+        "operand": "left_swept_plate_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_cap"
+      },
+      {
+        "operand": "left_raised_rim_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_cap"
+      },
+      {
+        "operand": "right_cap",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_cap"
+      },
+      {
+        "operand": "right_swept_plate_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_cap"
+      },
+      {
+        "operand": "right_raised_rim_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_cap"
+      },
+      {
+        "operand": "right_swept_plate_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_cap"
+      },
+      {
+        "operand": "right_raised_rim_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_cap"
+      },
+      {
+        "operand": "right_swept_plate_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_cap"
+      },
+      {
+        "operand": "right_raised_rim_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_cap"
+      }
+    ],
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}

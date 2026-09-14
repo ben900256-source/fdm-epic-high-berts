@@ -1,0 +1,362 @@
+{
+  "component_id": "aurelian.swordmaster-swept-pauldrons",
+  "version": 2,
+  "name": "Swordmaster forged metal pauldrons with raised borders",
+  "family": "swordmaster-swept-pauldrons",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "left_forged_cap"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.18,
+        "dimensions": [
+          1.65,
+          1.72,
+          0.64
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.9510565162951535,
+            0.0,
+            -0.3090169943749474,
+            0.28118651336662626
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.3090169943749474,
+            0.0,
+            0.9510565162951535,
+            0.4246582253252681
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -1.2,
+          0,
+          1.1
+        ],
+        "primitive": "cube",
+        "role": "left_forged_cap"
+      },
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          1.25,
+          1.32,
+          0.18
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9510565162951535,
+            0.0,
+            -0.3090169943749474,
+            0.28118651336662626
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.3090169943749474,
+            0.0,
+            0.9510565162951535,
+            0.4246582253252681
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -1.2,
+          0,
+          1.43
+        ],
+        "primitive": "cube",
+        "role": "left_raised_panel"
+      },
+      {
+        "bevel": 0.14,
+        "dimensions": [
+          0.66,
+          1.66,
+          0.63
+        ],
+        "export": false,
+        "location": [
+          -1.62,
+          0,
+          0.66
+        ],
+        "primitive": "cube",
+        "role": "left_lower_lame"
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.2,
+          0.2
+        ],
+        "export": false,
+        "location": [
+          -1.72,
+          -0.62,
+          0.93
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "left_rivet_-0.62",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.2,
+          0.2
+        ],
+        "export": false,
+        "location": [
+          -1.72,
+          0.62,
+          0.93
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "left_rivet_0.62",
+        "segments": 32
+      },
+      {
+        "bevel": 0.18,
+        "dimensions": [
+          1.65,
+          1.72,
+          0.64
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9510565162951535,
+            0.0,
+            0.3090169943749474,
+            -0.28118651336662626
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.3090169943749474,
+            0.0,
+            0.9510565162951535,
+            0.4246582253252681
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          1.2,
+          0,
+          1.1
+        ],
+        "primitive": "cube",
+        "role": "right_forged_cap"
+      },
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          1.25,
+          1.32,
+          0.18
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9510565162951535,
+            0.0,
+            0.3090169943749474,
+            -0.28118651336662626
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.3090169943749474,
+            0.0,
+            0.9510565162951535,
+            0.4246582253252681
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          1.2,
+          0,
+          1.43
+        ],
+        "primitive": "cube",
+        "role": "right_raised_panel"
+      },
+      {
+        "bevel": 0.14,
+        "dimensions": [
+          0.66,
+          1.66,
+          0.63
+        ],
+        "export": false,
+        "location": [
+          1.62,
+          0,
+          0.66
+        ],
+        "primitive": "cube",
+        "role": "right_lower_lame"
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.2,
+          0.2
+        ],
+        "export": false,
+        "location": [
+          1.72,
+          -0.62,
+          0.93
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_rivet_-0.62",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.2,
+          0.2
+        ],
+        "export": false,
+        "location": [
+          1.72,
+          0.62,
+          0.93
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_rivet_0.62",
+        "segments": 32
+      }
+    ],
+    "landmarks": {
+      "left_shoulder": [
+        -0.98,
+        0,
+        0.72
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "right_shoulder": [
+        0.98,
+        0,
+        0.72
+      ]
+    },
+    "operations": [
+      {
+        "operand": "left_raised_panel",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_forged_cap"
+      },
+      {
+        "operand": "left_lower_lame",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_forged_cap"
+      },
+      {
+        "operand": "left_rivet_-0.62",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_forged_cap"
+      },
+      {
+        "operand": "left_rivet_0.62",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_forged_cap"
+      },
+      {
+        "operand": "right_forged_cap",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_forged_cap"
+      },
+      {
+        "operand": "right_raised_panel",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_forged_cap"
+      },
+      {
+        "operand": "right_lower_lame",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_forged_cap"
+      },
+      {
+        "operand": "right_rivet_-0.62",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_forged_cap"
+      },
+      {
+        "operand": "right_rivet_0.62",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_forged_cap"
+      }
+    ],
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}

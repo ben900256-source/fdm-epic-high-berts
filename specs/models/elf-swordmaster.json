@@ -1,0 +1,306 @@
+{
+  "schema_version": 1,
+  "model_id": "aurelian-swordmaster",
+  "source": {
+    "assembly": "../elf-modular-visual.json",
+    "figure": "elf-03",
+    "origin_mm": [
+      0,
+      0,
+      1
+    ]
+  },
+  "remove": [
+    "spear",
+    "equipment-joins",
+    "right-arm",
+    "left-arm",
+    "shield",
+    "shield-insignia",
+    "shield-torso-connector",
+    "shield-lower-connector",
+    "waist-wrap",
+    "crest"
+  ],
+  "parts": [
+    {
+      "instance_id": "left-arm",
+      "part": "aurelian.swordmaster-left-arm@1",
+      "definition_sha256": "52d8f59076c74b31f32f6b9cd3c358791f8a68de1df9ea92e46104f2321502f1",
+      "mount": [
+        [
+          0.999390827,
+          0.034868884,
+          -0.001461439,
+          -0.002119087
+        ],
+        [
+          -0.034899497,
+          0.998514191,
+          -0.041850144,
+          -0.060682709
+        ],
+        [
+          0.0,
+          0.041875654,
+          0.99912283,
+          6.198728104
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "right-arm",
+      "part": "aurelian.swordmaster-right-arm@1",
+      "definition_sha256": "90d5aca5294ea46c01028a52f9603064b841a4b06b3fc3b669f1a3704cf412e4",
+      "mount": [
+        [
+          0.999390827,
+          0.034868884,
+          -0.001461439,
+          -0.002119087
+        ],
+        [
+          -0.034899497,
+          0.998514191,
+          -0.041850144,
+          -0.060682709
+        ],
+        [
+          0.0,
+          0.041875654,
+          0.99912283,
+          6.198728104
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "greatsword",
+      "part": "aurelian.swordmaster-greatsword@1",
+      "definition_sha256": "5aa3a7854bfb1e074ca7123a392514479d2c9f455ea4c8a45e37ab8ca93bb41d",
+      "mount": [
+        [
+          0.8662285639911392,
+          0.034868884,
+          0.49842977019991863,
+          0.2875868082
+        ],
+        [
+          -0.009298778981298814,
+          0.998514191,
+          -0.05369303635603691,
+          -1.79338923685
+        ],
+        [
+          -0.49956141499999995,
+          0.041875654,
+          0.8652657522810011,
+          6.6770570487
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "head",
+      "part": "aurelian.head@12",
+      "definition_sha256": "539e53b2c3d83535370628a0464ba94cfdf613dbc8abbd580f6b16edc3f17efe",
+      "mount": [
+        [
+          1,
+          0,
+          0,
+          0.002243391
+        ],
+        [
+          0,
+          1,
+          0,
+          -0.136002621
+        ],
+        [
+          0,
+          0,
+          1,
+          8.197198264
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "instance_id": "helmet",
+      "part": "aurelian.helmet@5",
+      "definition_sha256": "21c6ee3db6b2d03657dcc7352be3a39846921a6dfa81c81a4685aac9c137bbf9",
+      "mount": [
+        [
+          1,
+          0,
+          0,
+          0.002243391
+        ],
+        [
+          0,
+          1,
+          0,
+          -0.136002621
+        ],
+        [
+          0,
+          0,
+          1,
+          8.197198264
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "instance_id": "mail",
+      "part": "aurelian.swordmaster-cuirass@1",
+      "definition_sha256": "b89d0d422b55f553a005d11743d11a6066bf405ea0cc0f4d8da718de69a4f80c",
+      "mount": [
+        [
+          0.999390827,
+          0.034868884,
+          -0.001461439,
+          -0.002119087
+        ],
+        [
+          -0.034899497,
+          0.998514191,
+          -0.041850144,
+          -0.060682709
+        ],
+        [
+          0.0,
+          0.041875654,
+          0.99912283,
+          6.198728104
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "pauldrons",
+      "part": "aurelian.swordmaster-swept-pauldrons@2",
+      "definition_sha256": "babfb0ca3df2b4bad47b799d72fd45bf221753be1015dd9ef1b4501056dc0d0c",
+      "mount": [
+        [
+          0.999390827,
+          0.034868884,
+          -0.001461439,
+          -0.002119087
+        ],
+        [
+          -0.034899497,
+          0.998514191,
+          -0.041850144,
+          -0.060682709
+        ],
+        [
+          0.0,
+          0.041875654,
+          0.99912283,
+          6.198728104
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "waist-armour",
+      "part": "aurelian.swordmaster-waist-armour@3",
+      "definition_sha256": "bcca470fd06ea43dc582712b0759e59ef4fba6a8d4ab66fcaf1b8c21e2dd1892",
+      "mount": [
+        [
+          0.999390827,
+          0.034868884,
+          -0.001461439,
+          -0.002119087
+        ],
+        [
+          -0.034899497,
+          0.998514191,
+          -0.041850144,
+          -0.060682709
+        ],
+        [
+          0.0,
+          0.041875654,
+          0.99912283,
+          6.198728104
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "helmet-plume",
+      "part": "aurelian.swordmaster-helmet-plume@3",
+      "definition_sha256": "40dc876b3eb65a30c0bae30ca5cadbdd1b674cbcb2cf073bfa8eace1139b5899",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.002243391
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.136002621
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.197198264
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

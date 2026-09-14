@@ -1,0 +1,1091 @@
+{
+  "component_id": "aurelian.dragon-prince-barding",
+  "version": 6,
+  "name": "Horse continuous swept dragon scale helmet",
+  "family": "dragon-prince-barding",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "chamfron"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          1.12,
+          2.0,
+          0.62
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0.9610554383107709,
+            0.27635564856411376,
+            -2.351120484928925
+          ],
+          [
+            0,
+            -0.27635564856411376,
+            0.9610554383107709,
+            -0.6438551592842161
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          -3.46,
+          8.02
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "chamfron",
+        "segments": 32
+      },
+      {
+        "bevel": 0.13,
+        "dimensions": [
+          1.13,
+          0.65,
+          0.53
+        ],
+        "export": false,
+        "location": [
+          0,
+          -4.14,
+          7.42
+        ],
+        "primitive": "cube",
+        "role": "armored_nose"
+      },
+      {
+        "dimensions": [
+          2.05,
+          0.75,
+          2.2
+        ],
+        "export": false,
+        "location": [
+          0,
+          -2.08,
+          4.65
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "chest_barding",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.55,
+          4.7,
+          2.45
+        ],
+        "export": false,
+        "location": [
+          -1.14,
+          0.45,
+          4.7
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "flank_plate_-1",
+        "segments": 32
+      },
+      {
+        "bevel": 0.025,
+        "depth": 2.1497906874856443,
+        "export": false,
+        "location": [
+          -1.38,
+          -0.8200000000000001,
+          4.3
+        ],
+        "primitive": "cone",
+        "radius1": 0.69,
+        "radius2": 0.055,
+        "role": "flank_panel_-1_0",
+        "rotation": [
+          -2.9259509436753235,
+          0,
+          0
+        ],
+        "scale": [
+          0.30434782608695654,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.6,
+          -0.65,
+          3.6
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "panel_rib_-1_0",
+        "start": [
+          -1.6,
+          -1.05,
+          5.3
+        ]
+      },
+      {
+        "bevel": 0.025,
+        "depth": 2.1497906874856443,
+        "export": false,
+        "location": [
+          -1.38,
+          0.23,
+          4.3
+        ],
+        "primitive": "cone",
+        "radius1": 0.69,
+        "radius2": 0.055,
+        "role": "flank_panel_-1_1",
+        "rotation": [
+          -2.9259509436753235,
+          0,
+          0
+        ],
+        "scale": [
+          0.30434782608695654,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.6,
+          0.4,
+          3.6
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "panel_rib_-1_1",
+        "start": [
+          -1.6,
+          0.0,
+          5.3
+        ]
+      },
+      {
+        "bevel": 0.025,
+        "depth": 2.1497906874856443,
+        "export": false,
+        "location": [
+          -1.38,
+          1.28,
+          4.3
+        ],
+        "primitive": "cone",
+        "radius1": 0.69,
+        "radius2": 0.055,
+        "role": "flank_panel_-1_2",
+        "rotation": [
+          -2.9259509436753235,
+          0,
+          0
+        ],
+        "scale": [
+          0.30434782608695654,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.6,
+          1.4500000000000002,
+          3.6
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "panel_rib_-1_2",
+        "start": [
+          -1.6,
+          1.05,
+          5.3
+        ]
+      },
+      {
+        "bevel": 0.025,
+        "depth": 1.8578482176970215,
+        "export": false,
+        "location": [
+          -1.38,
+          2.28,
+          4.449999999999999
+        ],
+        "primitive": "cone",
+        "radius1": 0.69,
+        "radius2": 0.055,
+        "role": "flank_panel_-1_3",
+        "rotation": [
+          -2.8913921058121526,
+          0,
+          0
+        ],
+        "scale": [
+          0.30434782608695654,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.6,
+          2.4499999999999997,
+          3.9
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "panel_rib_-1_3",
+        "start": [
+          -1.6,
+          2.05,
+          5.3
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.6,
+          -2.25,
+          8.1
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "bridle_-1",
+        "start": [
+          -0.59,
+          -4.06,
+          7.15
+        ]
+      },
+      {
+        "dimensions": [
+          0.52,
+          0.32,
+          0.64
+        ],
+        "export": false,
+        "location": [
+          -0.72,
+          -2.5,
+          5.25
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "chest_gem_-1",
+        "segments": 32
+      },
+      {
+        "bevel": 0.025,
+        "depth": 0.875556965593901,
+        "export": false,
+        "location": [
+          -0.72,
+          -1.255,
+          5.675
+        ],
+        "primitive": "cone",
+        "radius1": 0.44,
+        "radius2": 0.055,
+        "role": "neck_lame_-1_0",
+        "rotation": [
+          -2.8993840664801724,
+          0,
+          0
+        ],
+        "scale": [
+          0.3409090909090909,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.025,
+        "depth": 0.875556965593901,
+        "export": false,
+        "location": [
+          -0.72,
+          -1.5750000000000002,
+          6.075
+        ],
+        "primitive": "cone",
+        "radius1": 0.44,
+        "radius2": 0.055,
+        "role": "neck_lame_-1_1",
+        "rotation": [
+          -2.8993840664801724,
+          0,
+          0
+        ],
+        "scale": [
+          0.3409090909090909,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.025,
+        "depth": 0.875556965593901,
+        "export": false,
+        "location": [
+          -0.72,
+          -1.895,
+          6.475
+        ],
+        "primitive": "cone",
+        "radius1": 0.44,
+        "radius2": 0.055,
+        "role": "neck_lame_-1_2",
+        "rotation": [
+          -2.899384066480173,
+          0,
+          0
+        ],
+        "scale": [
+          0.3409090909090909,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "dimensions": [
+          0.55,
+          4.7,
+          2.45
+        ],
+        "export": false,
+        "location": [
+          1.14,
+          0.45,
+          4.7
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "flank_plate_1",
+        "segments": 32
+      },
+      {
+        "bevel": 0.025,
+        "depth": 2.1497906874856443,
+        "export": false,
+        "location": [
+          1.38,
+          -0.8200000000000001,
+          4.3
+        ],
+        "primitive": "cone",
+        "radius1": 0.69,
+        "radius2": 0.055,
+        "role": "flank_panel_1_0",
+        "rotation": [
+          -2.9259509436753235,
+          0,
+          0
+        ],
+        "scale": [
+          0.30434782608695654,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.6,
+          -0.65,
+          3.6
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "panel_rib_1_0",
+        "start": [
+          1.6,
+          -1.05,
+          5.3
+        ]
+      },
+      {
+        "bevel": 0.025,
+        "depth": 2.1497906874856443,
+        "export": false,
+        "location": [
+          1.38,
+          0.23,
+          4.3
+        ],
+        "primitive": "cone",
+        "radius1": 0.69,
+        "radius2": 0.055,
+        "role": "flank_panel_1_1",
+        "rotation": [
+          -2.9259509436753235,
+          0,
+          0
+        ],
+        "scale": [
+          0.30434782608695654,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.6,
+          0.4,
+          3.6
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "panel_rib_1_1",
+        "start": [
+          1.6,
+          0.0,
+          5.3
+        ]
+      },
+      {
+        "bevel": 0.025,
+        "depth": 2.1497906874856443,
+        "export": false,
+        "location": [
+          1.38,
+          1.28,
+          4.3
+        ],
+        "primitive": "cone",
+        "radius1": 0.69,
+        "radius2": 0.055,
+        "role": "flank_panel_1_2",
+        "rotation": [
+          -2.9259509436753235,
+          0,
+          0
+        ],
+        "scale": [
+          0.30434782608695654,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.6,
+          1.4500000000000002,
+          3.6
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "panel_rib_1_2",
+        "start": [
+          1.6,
+          1.05,
+          5.3
+        ]
+      },
+      {
+        "bevel": 0.025,
+        "depth": 1.8578482176970215,
+        "export": false,
+        "location": [
+          1.38,
+          2.28,
+          4.449999999999999
+        ],
+        "primitive": "cone",
+        "radius1": 0.69,
+        "radius2": 0.055,
+        "role": "flank_panel_1_3",
+        "rotation": [
+          -2.8913921058121526,
+          0,
+          0
+        ],
+        "scale": [
+          0.30434782608695654,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.6,
+          2.4499999999999997,
+          3.9
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "panel_rib_1_3",
+        "start": [
+          1.6,
+          2.05,
+          5.3
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.6,
+          -2.25,
+          8.1
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "bridle_1",
+        "start": [
+          0.59,
+          -4.06,
+          7.15
+        ]
+      },
+      {
+        "dimensions": [
+          0.52,
+          0.32,
+          0.64
+        ],
+        "export": false,
+        "location": [
+          0.72,
+          -2.5,
+          5.25
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "chest_gem_1",
+        "segments": 32
+      },
+      {
+        "bevel": 0.025,
+        "depth": 0.875556965593901,
+        "export": false,
+        "location": [
+          0.72,
+          -1.255,
+          5.675
+        ],
+        "primitive": "cone",
+        "radius1": 0.44,
+        "radius2": 0.055,
+        "role": "neck_lame_1_0",
+        "rotation": [
+          -2.8993840664801724,
+          0,
+          0
+        ],
+        "scale": [
+          0.3409090909090909,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.025,
+        "depth": 0.875556965593901,
+        "export": false,
+        "location": [
+          0.72,
+          -1.5750000000000002,
+          6.075
+        ],
+        "primitive": "cone",
+        "radius1": 0.44,
+        "radius2": 0.055,
+        "role": "neck_lame_1_1",
+        "rotation": [
+          -2.8993840664801724,
+          0,
+          0
+        ],
+        "scale": [
+          0.3409090909090909,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.025,
+        "depth": 0.875556965593901,
+        "export": false,
+        "location": [
+          0.72,
+          -1.895,
+          6.475
+        ],
+        "primitive": "cone",
+        "radius1": 0.44,
+        "radius2": 0.055,
+        "role": "neck_lame_1_2",
+        "rotation": [
+          -2.899384066480173,
+          0,
+          0
+        ],
+        "scale": [
+          0.3409090909090909,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.025,
+        "depth": 0.8547514258543245,
+        "export": false,
+        "location": [
+          0.0,
+          -2.505,
+          4.775
+        ],
+        "primitive": "cone",
+        "radius1": 0.775,
+        "radius2": 0.055,
+        "role": "breast_lame_0",
+        "rotation": [
+          3.036103345064703,
+          0,
+          0
+        ],
+        "scale": [
+          0.5483870967741935,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.025,
+        "depth": 0.8547514258543245,
+        "export": false,
+        "location": [
+          0.0,
+          -2.505,
+          4.275
+        ],
+        "primitive": "cone",
+        "radius1": 0.775,
+        "radius2": 0.055,
+        "role": "breast_lame_1",
+        "rotation": [
+          3.036103345064703,
+          0,
+          0
+        ],
+        "scale": [
+          0.5483870967741935,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.025,
+        "depth": 0.8547514258543245,
+        "export": false,
+        "location": [
+          0.0,
+          -2.505,
+          3.775
+        ],
+        "primitive": "cone",
+        "radius1": 0.775,
+        "radius2": 0.055,
+        "role": "breast_lame_2",
+        "rotation": [
+          3.036103345064703,
+          0,
+          0
+        ],
+        "scale": [
+          0.5483870967741935,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.075,
+        "depth": 2.0298029461009266,
+        "export": false,
+        "location": [
+          -0.42,
+          -2.025,
+          8.120000000000001
+        ],
+        "primitive": "cone",
+        "radius1": 0.69,
+        "radius2": 0.33119999999999994,
+        "role": "swept_scale_-1_0",
+        "rotation": [
+          -1.3724345836707839,
+          0,
+          0
+        ],
+        "scale": [
+          0.5652173913043479,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.075,
+        "depth": 1.9123022773609826,
+        "export": false,
+        "location": [
+          -0.55,
+          -2.085,
+          8.59
+        ],
+        "primitive": "cone",
+        "radius1": 0.69,
+        "radius2": 0.33119999999999994,
+        "role": "swept_scale_-1_1",
+        "rotation": [
+          -1.36006822365087,
+          0,
+          0
+        ],
+        "scale": [
+          0.5652173913043479,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.075,
+        "depth": 2.0298029461009266,
+        "export": false,
+        "location": [
+          0.42,
+          -2.025,
+          8.120000000000001
+        ],
+        "primitive": "cone",
+        "radius1": 0.69,
+        "radius2": 0.33119999999999994,
+        "role": "swept_scale_1_0",
+        "rotation": [
+          -1.3724345836707839,
+          0,
+          0
+        ],
+        "scale": [
+          0.5652173913043479,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.075,
+        "depth": 1.9123022773609826,
+        "export": false,
+        "location": [
+          0.55,
+          -2.085,
+          8.59
+        ],
+        "primitive": "cone",
+        "radius1": 0.69,
+        "radius2": 0.33119999999999994,
+        "role": "swept_scale_1_1",
+        "rotation": [
+          -1.36006822365087,
+          0,
+          0
+        ],
+        "scale": [
+          0.5652173913043479,
+          1,
+          1
+        ],
+        "vertices": 4
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "armored_nose",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "chest_barding",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "flank_plate_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "flank_panel_-1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "panel_rib_-1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "flank_panel_-1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "panel_rib_-1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "flank_panel_-1_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "panel_rib_-1_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "flank_panel_-1_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "panel_rib_-1_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "bridle_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "chest_gem_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "neck_lame_-1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "neck_lame_-1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "neck_lame_-1_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "flank_plate_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "flank_panel_1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "panel_rib_1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "flank_panel_1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "panel_rib_1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "flank_panel_1_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "panel_rib_1_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "flank_panel_1_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "panel_rib_1_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "bridle_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "chest_gem_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "neck_lame_1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "neck_lame_1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "neck_lame_1_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "breast_lame_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "breast_lame_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "breast_lame_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "swept_scale_-1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "swept_scale_-1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "swept_scale_1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      },
+      {
+        "operand": "swept_scale_1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "chamfron"
+      }
+    ],
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}

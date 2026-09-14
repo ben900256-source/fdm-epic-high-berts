@@ -1,0 +1,244 @@
+{
+  "component_id": "aurelian.dragon-prince-shield",
+  "version": 2,
+  "name": "Dragon Prince enlarged shield",
+  "family": "dragon-prince-shield",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shield"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.09,
+        "depth": 0.44,
+        "export": true,
+        "location": [
+          0.0,
+          0,
+          0.0
+        ],
+        "primitive": "cone",
+        "radius1": 1.1,
+        "radius2": 1.04,
+        "role": "shield",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1.35,
+          1.95,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "dimensions": [
+          0.783,
+          0.3,
+          1.4300000000000002
+        ],
+        "export": false,
+        "location": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "dragon_body",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.37800000000000006,
+          -0.28,
+          1.04
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.16,
+        "role": "dragon_neck",
+        "start": [
+          0.0,
+          -0.28,
+          0.39
+        ]
+      },
+      {
+        "dimensions": [
+          0.7425000000000002,
+          0.35,
+          0.45499999999999996
+        ],
+        "export": false,
+        "location": [
+          0.405,
+          -0.3,
+          1.079
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "dragon_head",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.54,
+          -0.28,
+          -1.04
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "dragon_tail",
+        "start": [
+          0.0,
+          -0.28,
+          -0.52
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.8370000000000001,
+          -0.28,
+          0.78
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.15,
+        "role": "wing_-1",
+        "start": [
+          0.0,
+          -0.28,
+          0.13
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.8370000000000001,
+          -0.28,
+          -0.13
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "wing_edge_-1",
+        "start": [
+          -0.8370000000000001,
+          -0.28,
+          0.78
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.8370000000000001,
+          -0.28,
+          0.78
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.15,
+        "role": "wing_1",
+        "start": [
+          0.0,
+          -0.28,
+          0.13
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.8370000000000001,
+          -0.28,
+          -0.13
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "wing_edge_1",
+        "start": [
+          0.8370000000000001,
+          -0.28,
+          0.78
+        ]
+      }
+    ],
+    "landmarks": {
+      "grip": [
+        0,
+        0.5,
+        0
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "dragon_body",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "dragon_neck",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "dragon_head",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "dragon_tail",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "wing_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "wing_edge_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "wing_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "wing_edge_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      }
+    ],
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}

@@ -48,14 +48,14 @@ def test_side_on_stance_and_bow_hand_alignment():
     assert world(model['arrow'],[0,0,0]) == pytest.approx(world(model['bow'],bow['nock']))
 
 
-def test_ten_variants_share_parts_and_have_the_requested_equipment():
+def test_thirteen_variants_share_parts_and_have_the_requested_equipment():
     definitions = catalog()
     for revision in (1,2,3):
         golden = json.loads((ROOT/f'tests/fixtures/archer-variants-v{revision}-golden.json').read_text())
         assert {ref:definitions[ref].sha256 for ref in golden} == golden
     index = json.loads((ROOT/'specs/archer-variants-index.json').read_text())['variants']
-    assert len(index) == 10
-    assert len({v['model'] for v in index}) == 10
+    assert len(index) == 13
+    assert len({v['model'] for v in index}) == 13
     counts = {'arrow':0,'held-arrow':0,'shortblade':0}
     for variant in index:
         model = {p['instance_id']:p for p in load_model(ROOT/'specs'/variant['model'],definitions)['placements']}
@@ -70,9 +70,9 @@ def test_ten_variants_share_parts_and_have_the_requested_equipment():
             assert world(model['draw-arm'],arm['grip']) == pytest.approx(world(model['bow'],bow['nock']))
         else:
             assert model['bow']['part'] == 'aurelian.archer-bow@5'
-    assert counts == {'arrow':3,'held-arrow':1,'shortblade':2}
+    assert counts == {'arrow':6,'held-arrow':1,'shortblade':2}
     gallery = load_assembly(ROOT/'specs/elf-archer-variants.json',definitions)
-    assert len(gallery['placements']) == 136
+    assert len(gallery['placements']) == 178
 
 
 def test_preserved_supports_removed_and_new_ferrule_golden():

@@ -1,0 +1,929 @@
+{
+  "schema_version": 1,
+  "assembly_id": "aurelian-swordmaster-variants",
+  "label": "Bertmaster variants (10)",
+  "placements": [
+    {
+      "instance_id": "base-01",
+      "part": "aurelian.base-body-4x5@1",
+      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -20.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-terrain-01",
+      "part": "aurelian.terrain-soil-gallery@4",
+      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -20.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-02",
+      "part": "aurelian.base-body-4x5@1",
+      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-terrain-02",
+      "part": "aurelian.terrain-soil-gallery@4",
+      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-03",
+      "part": "aurelian.base-body-4x5@1",
+      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-terrain-03",
+      "part": "aurelian.terrain-soil-gallery@4",
+      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-04",
+      "part": "aurelian.base-body-4x5@1",
+      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-terrain-04",
+      "part": "aurelian.terrain-soil-gallery@4",
+      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-05",
+      "part": "aurelian.base-body-4x5@1",
+      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-terrain-05",
+      "part": "aurelian.terrain-soil-gallery@4",
+      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-06",
+      "part": "aurelian.base-body-4x5@1",
+      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -20.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-terrain-06",
+      "part": "aurelian.terrain-soil-gallery@4",
+      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -20.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-07",
+      "part": "aurelian.base-body-4x5@1",
+      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-terrain-07",
+      "part": "aurelian.terrain-soil-gallery@4",
+      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-08",
+      "part": "aurelian.base-body-4x5@1",
+      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-terrain-08",
+      "part": "aurelian.terrain-soil-gallery@4",
+      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-09",
+      "part": "aurelian.base-body-4x5@1",
+      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-terrain-09",
+      "part": "aurelian.terrain-soil-gallery@4",
+      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-10",
+      "part": "aurelian.base-body-4x5@1",
+      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-terrain-10",
+      "part": "aurelian.terrain-soil-gallery@4",
+      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "models": [
+    {
+      "instance_id": "variant-01-diagonal-guard",
+      "model": "models/swordmasters/01-diagonal-guard.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -20
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "variant-02-high-guard",
+      "model": "models/swordmasters/02-high-guard.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "variant-03-left-guard",
+      "model": "models/swordmasters/03-left-guard.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "variant-04-wide-parry",
+      "model": "models/swordmasters/04-wide-parry.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          10
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "variant-05-left-parry",
+      "model": "models/swordmasters/05-left-parry.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          20
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "variant-06-forward-point",
+      "model": "models/swordmasters/06-forward-point.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -20
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "variant-07-high-right",
+      "model": "models/swordmasters/07-high-right.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "variant-08-low-guard",
+      "model": "models/swordmasters/08-low-guard.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "variant-09-recovering",
+      "model": "models/swordmasters/09-recovering.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          10
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "variant-10-upright-guard",
+      "model": "models/swordmasters/10-upright-guard.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          20
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

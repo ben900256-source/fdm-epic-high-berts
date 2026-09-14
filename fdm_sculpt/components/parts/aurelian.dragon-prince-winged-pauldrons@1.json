@@ -1,0 +1,440 @@
+{
+  "component_id": "aurelian.dragon-prince-winged-pauldrons",
+  "version": 1,
+  "name": "Dragon prince winged pauldrons",
+  "family": "dragon-prince-winged-pauldrons",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shoulder_shell_-1"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          1.15,
+          1.4,
+          0.9
+        ],
+        "export": true,
+        "location": [
+          -1.02,
+          0,
+          0.83
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "shoulder_shell_-1",
+        "segments": 32
+      },
+      {
+        "bevel": 0.025,
+        "depth": 1.5,
+        "export": false,
+        "location": [
+          -0.95,
+          0.32,
+          1.0
+        ],
+        "primitive": "cone",
+        "radius1": 0.56,
+        "radius2": 0.055,
+        "role": "pauldron_wing_-1_0",
+        "rotation": [
+          -0.9272952180016123,
+          0,
+          0
+        ],
+        "scale": [
+          0.35714285714285715,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.95,
+          0.82,
+          1.35
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "pauldron_rim_-1_0",
+        "start": [
+          -0.95,
+          -0.28,
+          0.61
+        ]
+      },
+      {
+        "bevel": 0.025,
+        "depth": 1.47648230602334,
+        "export": false,
+        "location": [
+          -1.17,
+          0.37,
+          0.9
+        ],
+        "primitive": "cone",
+        "radius1": 0.56,
+        "radius2": 0.055,
+        "role": "pauldron_wing_-1_1",
+        "rotation": [
+          -1.0768549578753155,
+          0,
+          0
+        ],
+        "scale": [
+          0.35714285714285715,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.17,
+          0.9199999999999999,
+          1.1500000000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "pauldron_rim_-1_1",
+        "start": [
+          -1.17,
+          -0.28,
+          0.61
+        ]
+      },
+      {
+        "bevel": 0.025,
+        "depth": 1.4866068747318506,
+        "export": false,
+        "location": [
+          -1.39,
+          0.42000000000000004,
+          0.7999999999999999
+        ],
+        "primitive": "cone",
+        "radius1": 0.56,
+        "radius2": 0.055,
+        "role": "pauldron_wing_-1_2",
+        "rotation": [
+          -1.2277723863741934,
+          0,
+          0
+        ],
+        "scale": [
+          0.35714285714285715,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.39,
+          1.02,
+          0.9500000000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "pauldron_rim_-1_2",
+        "start": [
+          -1.39,
+          -0.28,
+          0.61
+        ]
+      },
+      {
+        "dimensions": [
+          0.5,
+          0.32,
+          0.58
+        ],
+        "export": false,
+        "location": [
+          -1.05,
+          -0.64,
+          0.86
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "shoulder_jewel_-1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.15,
+          1.4,
+          0.9
+        ],
+        "export": false,
+        "location": [
+          1.02,
+          0,
+          0.83
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "shoulder_shell_1",
+        "segments": 32
+      },
+      {
+        "bevel": 0.025,
+        "depth": 1.5,
+        "export": false,
+        "location": [
+          0.95,
+          0.32,
+          1.0
+        ],
+        "primitive": "cone",
+        "radius1": 0.56,
+        "radius2": 0.055,
+        "role": "pauldron_wing_1_0",
+        "rotation": [
+          -0.9272952180016123,
+          0,
+          0
+        ],
+        "scale": [
+          0.35714285714285715,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.95,
+          0.82,
+          1.35
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "pauldron_rim_1_0",
+        "start": [
+          0.95,
+          -0.28,
+          0.61
+        ]
+      },
+      {
+        "bevel": 0.025,
+        "depth": 1.47648230602334,
+        "export": false,
+        "location": [
+          1.17,
+          0.37,
+          0.9
+        ],
+        "primitive": "cone",
+        "radius1": 0.56,
+        "radius2": 0.055,
+        "role": "pauldron_wing_1_1",
+        "rotation": [
+          -1.0768549578753155,
+          0,
+          0
+        ],
+        "scale": [
+          0.35714285714285715,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.17,
+          0.9199999999999999,
+          1.1500000000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "pauldron_rim_1_1",
+        "start": [
+          1.17,
+          -0.28,
+          0.61
+        ]
+      },
+      {
+        "bevel": 0.025,
+        "depth": 1.4866068747318506,
+        "export": false,
+        "location": [
+          1.39,
+          0.42000000000000004,
+          0.7999999999999999
+        ],
+        "primitive": "cone",
+        "radius1": 0.56,
+        "radius2": 0.055,
+        "role": "pauldron_wing_1_2",
+        "rotation": [
+          -1.2277723863741934,
+          0,
+          0
+        ],
+        "scale": [
+          0.35714285714285715,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.39,
+          1.02,
+          0.9500000000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "pauldron_rim_1_2",
+        "start": [
+          1.39,
+          -0.28,
+          0.61
+        ]
+      },
+      {
+        "dimensions": [
+          0.5,
+          0.32,
+          0.58
+        ],
+        "export": false,
+        "location": [
+          1.05,
+          -0.64,
+          0.86
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "shoulder_jewel_1",
+        "segments": 32
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "pauldron_wing_-1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder_shell_-1"
+      },
+      {
+        "operand": "pauldron_rim_-1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder_shell_-1"
+      },
+      {
+        "operand": "pauldron_wing_-1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder_shell_-1"
+      },
+      {
+        "operand": "pauldron_rim_-1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder_shell_-1"
+      },
+      {
+        "operand": "pauldron_wing_-1_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder_shell_-1"
+      },
+      {
+        "operand": "pauldron_rim_-1_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder_shell_-1"
+      },
+      {
+        "operand": "shoulder_jewel_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder_shell_-1"
+      },
+      {
+        "operand": "shoulder_shell_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder_shell_-1"
+      },
+      {
+        "operand": "pauldron_wing_1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder_shell_-1"
+      },
+      {
+        "operand": "pauldron_rim_1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder_shell_-1"
+      },
+      {
+        "operand": "pauldron_wing_1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder_shell_-1"
+      },
+      {
+        "operand": "pauldron_rim_1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder_shell_-1"
+      },
+      {
+        "operand": "pauldron_wing_1_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder_shell_-1"
+      },
+      {
+        "operand": "pauldron_rim_1_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder_shell_-1"
+      },
+      {
+        "operand": "shoulder_jewel_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder_shell_-1"
+      }
+    ],
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}

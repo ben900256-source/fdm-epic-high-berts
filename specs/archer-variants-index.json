@@ -79,6 +79,33 @@
       "state": "empty",
       "yaw_degrees": -28,
       "bow_roll_degrees": 12
+    },
+    {
+      "number": 11,
+      "label": "Aiming upward 20 degrees",
+      "model": "models/archers/11-aiming-up-20.json",
+      "state": "nocked",
+      "yaw_degrees": 0,
+      "bow_roll_degrees": 0,
+      "elevation_degrees": 20
+    },
+    {
+      "number": 12,
+      "label": "Aiming upward 30 degrees",
+      "model": "models/archers/12-aiming-up-30.json",
+      "state": "nocked",
+      "yaw_degrees": 0,
+      "bow_roll_degrees": 0,
+      "elevation_degrees": 30
+    },
+    {
+      "number": 13,
+      "label": "Aiming upward 40 degrees",
+      "model": "models/archers/13-aiming-up-40.json",
+      "state": "nocked",
+      "yaw_degrees": 0,
+      "bow_roll_degrees": 0,
+      "elevation_degrees": 40
     }
   ]
 }

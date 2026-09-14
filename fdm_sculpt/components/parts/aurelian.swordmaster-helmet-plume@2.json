@@ -1,0 +1,1948 @@
+{
+  "component_id": "aurelian.swordmaster-helmet-plume",
+  "version": 2,
+  "name": "Swordmaster flowing hair plume with shallow strand grooves",
+  "family": "swordmaster-helmet-plume",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "hair_mass"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          1.05,
+          0.9,
+          3.0
+        ],
+        "export": true,
+        "location": [
+          0,
+          0.95,
+          0.95
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "hair_mass",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.85,
+          1.35,
+          0.8
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.4,
+          1.95
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "crown_sweep",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.65,
+          0.65,
+          0.5
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.1,
+          1.88
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "crown_socket",
+        "segments": 32
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.2408376287138542,
+          1.195977104881957,
+          -0.13562499999999997
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-2_0",
+        "start": [
+          -0.19285649193270318,
+          1.1558073782230285,
+          -0.29
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.27773954700692893,
+          1.2243379924133513,
+          0.018750000000000044
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-2_1",
+        "start": [
+          -0.2408376287138542,
+          1.195977104881957,
+          -0.13562499999999997
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.30654144448772375,
+          1.2453261606560215,
+          0.17312500000000003
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-2_2",
+        "start": [
+          -0.27773954700692893,
+          1.2243379924133513,
+          0.018750000000000044
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.3284658583465669,
+          1.261251488176138,
+          0.32750000000000007
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-2_3",
+        "start": [
+          -0.30654144448772375,
+          1.2453261606560215,
+          0.17312500000000003
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.3441076131998294,
+          1.2734869467577654,
+          0.4818750000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-2_4",
+        "start": [
+          -0.3284658583465669,
+          1.261251488176138,
+          0.32750000000000007
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.3538201623250031,
+          1.2828496630183261,
+          0.63625
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-2_5",
+        "start": [
+          -0.3441076131998294,
+          1.2734869467577654,
+          0.4818750000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.357878889721743,
+          1.2897550565911018,
+          0.7906250000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-2_6",
+        "start": [
+          -0.3538201623250031,
+          1.2828496630183261,
+          0.63625
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.35655376370657227,
+          1.29429636164006,
+          0.9450000000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-2_7",
+        "start": [
+          -0.357878889721743,
+          1.2897550565911018,
+          0.7906250000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.3501350270205584,
+          1.2962986367424305,
+          1.099375
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-2_8",
+        "start": [
+          -0.35655376370657227,
+          1.29429636164006,
+          0.9450000000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.3389283148422873,
+          1.2953611073796345,
+          1.2537500000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-2_9",
+        "start": [
+          -0.3501350270205584,
+          1.2962986367424305,
+          1.099375
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.32322457477831446,
+          1.2908859633719676,
+          1.408125
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-2_10",
+        "start": [
+          -0.3389283148422873,
+          1.2953611073796345,
+          1.2537500000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.3032429232659678,
+          1.2820821097660537,
+          1.5625
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-2_11",
+        "start": [
+          -0.32322457477831446,
+          1.2908859633719676,
+          1.408125
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.2790345472671669,
+          1.2679206740664213,
+          1.716875
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-2_12",
+        "start": [
+          -0.3032429232659678,
+          1.2820821097660537,
+          1.5625
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.25031211730558545,
+          1.2469907509433584,
+          1.8712500000000003
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-2_13",
+        "start": [
+          -0.2790345472671669,
+          1.2679206740664213,
+          1.716875
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.21609464560297628,
+          1.2171103590452927,
+          2.0256250000000002
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-2_14",
+        "start": [
+          -0.25031211730558545,
+          1.2469907509433584,
+          1.8712500000000003
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.17374270249630047,
+          1.174145529741874,
+          2.18
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-2_15",
+        "start": [
+          -0.21609464560297628,
+          1.2171103590452927,
+          2.0256250000000002
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.13588925203896282,
+          1.2518556528615898,
+          -0.13562499999999997
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-1_0",
+        "start": [
+          -0.10884645892439454,
+          1.19939684866314,
+          -0.29
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.1559769909762974,
+          1.2904588381613817,
+          0.018750000000000044
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-1_1",
+        "start": [
+          -0.13588925203896282,
+          1.2518556528615898,
+          -0.13562499999999997
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.17063928716731613,
+          1.3200747483981887,
+          0.17312500000000003
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-1_2",
+        "start": [
+          -0.1559769909762974,
+          1.2904588381613817,
+          0.018750000000000044
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.18054469048990068,
+          1.343046267381933,
+          0.32750000000000007
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-1_3",
+        "start": [
+          -0.17063928716731613,
+          1.3200747483981887,
+          0.17312500000000003
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.18611108355629827,
+          1.360647791276037,
+          0.4818750000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-1_4",
+        "start": [
+          -0.18054469048990068,
+          1.343046267381933,
+          0.32750000000000007
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.18770525273536026,
+          1.3735788355953618,
+          0.63625
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-1_5",
+        "start": [
+          -0.18611108355629827,
+          1.360647791276037,
+          0.4818750000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.18571724390144986,
+          1.3821790474059765,
+          0.7906250000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-1_6",
+        "start": [
+          -0.18770525273536026,
+          1.3735788355953618,
+          0.63625
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.18058249990484396,
+          1.3865391742788462,
+          0.9450000000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-1_7",
+        "start": [
+          -0.18571724390144986,
+          1.3821790474059765,
+          0.7906250000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.1727764976109183,
+          1.386563563622904,
+          1.099375
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-1_8",
+        "start": [
+          -0.18058249990484396,
+          1.3865391742788462,
+          0.9450000000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.1627919671465949,
+          1.3820023288663401,
+          1.2537500000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-1_9",
+        "start": [
+          -0.1727764976109183,
+          1.386563563622904,
+          1.099375
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.15110304062476482,
+          1.372456005329477,
+          1.408125
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-1_10",
+        "start": [
+          -0.1627919671465949,
+          1.3820023288663401,
+          1.2537500000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.1381171157025355,
+          1.3573454830329923,
+          1.5625
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-1_11",
+        "start": [
+          -0.15110304062476482,
+          1.372456005329477,
+          1.408125
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.12411056524796427,
+          1.3358258175700908,
+          1.716875
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-1_12",
+        "start": [
+          -0.1381171157025355,
+          1.3573454830329923,
+          1.5625
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.10913378971975417,
+          1.3065879742002688,
+          1.8712500000000003
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-1_13",
+        "start": [
+          -0.12411056524796427,
+          1.3358258175700908,
+          1.716875
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.09283815550926763,
+          1.2673817847162312,
+          2.0256250000000002
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-1_14",
+        "start": [
+          -0.10913378971975417,
+          1.3065879742002688,
+          1.8712500000000003
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.07403963950614102,
+          1.2136227252926852,
+          2.18
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_-1_15",
+        "start": [
+          -0.09283815550926763,
+          1.2673817847162312,
+          2.0256250000000002
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.02516727296831169,
+          1.2737778290841362,
+          -0.13562499999999997
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_0_0",
+        "start": [
+          -0.020608532738729465,
+          1.2165944713802224,
+          -0.29
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.027263490613951828,
+          1.3159993081579051,
+          0.018750000000000044
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_0_1",
+        "start": [
+          -0.02516727296831169,
+          1.2737778290841362,
+          -0.13562499999999997
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.02704493721065466,
+          1.3482453577577194,
+          0.17312500000000003
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_0_2",
+        "start": [
+          -0.027263490613951828,
+          1.3159993081579051,
+          0.018750000000000044
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.024673426728484073,
+          1.3728730512524783,
+          0.32750000000000007
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_0_3",
+        "start": [
+          -0.02704493721065466,
+          1.3482453577577194,
+          0.17312500000000003
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.020404782990382772,
+          1.3911667297441173,
+          0.4818750000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_0_4",
+        "start": [
+          -0.024673426728484073,
+          1.3728730512524783,
+          0.32750000000000007
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.014599014259084261,
+          1.403868046321289,
+          0.63625
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_0_5",
+        "start": [
+          -0.020404782990382772,
+          1.3911667297441173,
+          0.4818750000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.007706860442227978,
+          1.4114039865581973,
+          0.7906250000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_0_6",
+        "start": [
+          -0.014599014259084261,
+          1.403868046321289,
+          0.63625
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          -0.00024499682408440324,
+          1.413997450994051,
+          0.9450000000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_0_7",
+        "start": [
+          -0.007706860442227978,
+          1.4114039865581973,
+          0.7906250000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.007234937933384732,
+          1.4117202059179952,
+          1.099375
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_0_8",
+        "start": [
+          -0.00024499682408440324,
+          1.413997450994051,
+          0.9450000000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.014180192682391814,
+          1.404509368457736,
+          1.2537500000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_0_9",
+        "start": [
+          0.007234937933384732,
+          1.4117202059179952,
+          1.099375
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.020070842880006167,
+          1.3921529755149473,
+          1.408125
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_0_10",
+        "start": [
+          0.014180192682391814,
+          1.404509368457736,
+          1.2537500000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.024451039632133617,
+          1.374239805860055,
+          1.5625
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_0_11",
+        "start": [
+          0.020070842880006167,
+          1.3921529755149473,
+          1.408125
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.026954329491042074,
+          1.3500537069270715,
+          1.716875
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_0_12",
+        "start": [
+          0.024451039632133617,
+          1.374239805860055,
+          1.5625
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.027318083667785768,
+          1.318356562971994,
+          1.8712500000000003
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_0_13",
+        "start": [
+          0.026954329491042074,
+          1.3500537069270715,
+          1.716875
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.02537558068481765,
+          1.2768892666619518,
+          2.0256250000000002
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_0_14",
+        "start": [
+          0.027318083667785768,
+          1.318356562971994,
+          1.8712500000000003
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.020984011155665547,
+          1.220934803368937,
+          2.18
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_0_15",
+        "start": [
+          0.02537558068481765,
+          1.2768892666619518,
+          2.0256250000000002
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.09171653226431223,
+          1.264412157773979,
+          -0.13562499999999997
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_1_0",
+        "start": [
+          0.0726750810090829,
+          1.2094294018617098,
+          -0.29
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.10812506309816544,
+          1.3043825520617565,
+          0.018750000000000044
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_1_1",
+        "start": [
+          0.09171653226431223,
+          1.264412157773979,
+          -0.13562499999999997
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.12317095660033497,
+          1.3341834250195064,
+          0.17312500000000003
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_1_2",
+        "start": [
+          0.10812506309816544,
+          1.3043825520617565,
+          0.018750000000000044
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.13723875241190578,
+          1.3561566828583107,
+          0.32750000000000007
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_1_3",
+        "start": [
+          0.12317095660033497,
+          1.3341834250195064,
+          0.17312500000000003
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.15029732009326383,
+          1.3716531609429945,
+          0.4818750000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_1_4",
+        "start": [
+          0.13723875241190578,
+          1.3561566828583107,
+          0.32750000000000007
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.16208157206623777,
+          1.38154012487743,
+          0.63625
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_1_5",
+        "start": [
+          0.15029732009326383,
+          1.3716531609429945,
+          0.4818750000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.1721904312394059,
+          1.386410494597736,
+          0.7906250000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_1_6",
+        "start": [
+          0.16208157206623777,
+          1.38154012487743,
+          0.63625
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.18015249002377395,
+          1.3866740105898283,
+          0.9450000000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_1_7",
+        "start": [
+          0.1721904312394059,
+          1.386410494597736,
+          0.7906250000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.18547500834431352,
+          1.382590075606393,
+          1.099375
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_1_8",
+        "start": [
+          0.18015249002377395,
+          1.3866740105898283,
+          0.9450000000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.18768054679121998,
+          1.3742650196033408,
+          1.2537500000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_1_9",
+        "start": [
+          0.18547500834431352,
+          1.382590075606393,
+          1.099375
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.18633068405263473,
+          1.3616216868954847,
+          1.408125
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_1_10",
+        "start": [
+          0.18768054679121998,
+          1.3742650196033408,
+          1.2537500000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.1810327277050372,
+          1.344339225372434,
+          1.5625
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_1_11",
+        "start": [
+          0.18633068405263473,
+          1.3616216868954847,
+          1.408125
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.17141986430553613,
+          1.3217463285216908,
+          1.716875
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_1_12",
+        "start": [
+          0.1810327277050372,
+          1.344339225372434,
+          1.5625
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.15708153742197614,
+          1.29261615133572,
+          1.8712500000000003
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_1_13",
+        "start": [
+          0.17141986430553613,
+          1.3217463285216908,
+          1.716875
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.1373764897229439,
+          1.2547015894880906,
+          2.0256250000000002
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_1_14",
+        "start": [
+          0.15708153742197614,
+          1.29261615133572,
+          1.8712500000000003
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.11087004404359127,
+          1.203390936354085,
+          2.18
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_1_15",
+        "start": [
+          0.1373764897229439,
+          1.2547015894880906,
+          2.0256250000000002
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.21364175747947078,
+          1.2147870934348999,
+          -0.13562499999999997
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_2_0",
+        "start": [
+          0.17058681641411402,
+          1.1707281054895242,
+          -0.29
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.24827849331746377,
+          1.2453564552485474,
+          0.018750000000000044
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_2_1",
+        "start": [
+          0.21364175747947078,
+          1.2147870934348999,
+          -0.13562499999999997
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.2773165606137722,
+          1.2667880848196988,
+          0.17312500000000003
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_2_2",
+        "start": [
+          0.24827849331746377,
+          1.2453564552485474,
+          0.018750000000000044
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.30180363963642987,
+          1.281339762206266,
+          0.32750000000000007
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_2_3",
+        "start": [
+          0.2773165606137722,
+          1.2667880848196988,
+          0.17312500000000003
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.3220581105989438,
+          1.2904564465560306,
+          0.4818750000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_2_4",
+        "start": [
+          0.30180363963642987,
+          1.281339762206266,
+          0.32750000000000007
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.33804440018983295,
+          1.295185845243276,
+          0.63625
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_2_5",
+        "start": [
+          0.3220581105989438,
+          1.2904564465560306,
+          0.4818750000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.3495508207858635,
+          1.296332398455903,
+          0.7906250000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_2_6",
+        "start": [
+          0.33804440018983295,
+          1.295185845243276,
+          0.63625
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.35628901900860593,
+          1.2945061859194433,
+          0.9450000000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_2_7",
+        "start": [
+          0.3495508207858635,
+          1.296332398455903,
+          0.7906250000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.35795313431699965,
+          1.2901214273392172,
+          1.099375
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_2_8",
+        "start": [
+          0.35628901900860593,
+          1.2945061859194433,
+          0.9450000000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.35425149645018894,
+          1.2833688631212257,
+          1.2537500000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_2_9",
+        "start": [
+          0.35795313431699965,
+          1.2901214273392172,
+          1.099375
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.3449132201558834,
+          1.2741741145765804,
+          1.408125
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_2_10",
+        "start": [
+          0.35425149645018894,
+          1.2833688631212257,
+          1.2537500000000001
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.3296648294541979,
+          1.2621446213053988,
+          1.5625
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_2_11",
+        "start": [
+          0.3449132201558834,
+          1.2741741145765804,
+          1.408125
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.3081615200214462,
+          1.2464927035866242,
+          1.716875
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_2_12",
+        "start": [
+          0.3296648294541979,
+          1.2621446213053988,
+          1.5625
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.2798321645007923,
+          1.2258890814815735,
+          1.8712500000000003
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_2_13",
+        "start": [
+          0.3081615200214462,
+          1.2464927035866242,
+          1.716875
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.24351561511647626,
+          1.198105824529087,
+          2.0256250000000002
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_2_14",
+        "start": [
+          0.2798321645007923,
+          1.2258890814815735,
+          1.8712500000000003
+        ]
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0.19641812172383816,
+          1.158921657339833,
+          2.18
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.058,
+        "role": "strand_groove_2_15",
+        "start": [
+          0.24351561511647626,
+          1.198105824529087,
+          2.0256250000000002
+        ]
+      }
+    ],
+    "design": {
+      "description": "Shallow flowing grooves in one continuous hair mass; no separate raised locks.",
+      "groove_depth_mm": 0.044,
+      "groove_radius_mm": 0.058
+    },
+    "landmarks": {
+      "crown": [
+        0,
+        0.1,
+        1.88
+      ],
+      "drape": [
+        0,
+        0.95,
+        -0.55
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "crown_sweep",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "crown_socket",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-2_0",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-2_1",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-2_2",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-2_3",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-2_4",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-2_5",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-2_6",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-2_7",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-2_8",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-2_9",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-2_10",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-2_11",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-2_12",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-2_13",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-2_14",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-2_15",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-1_0",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-1_1",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-1_2",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-1_3",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-1_4",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-1_5",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-1_6",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-1_7",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-1_8",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-1_9",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-1_10",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-1_11",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-1_12",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-1_13",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-1_14",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_-1_15",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_0_0",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_0_1",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_0_2",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_0_3",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_0_4",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_0_5",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_0_6",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_0_7",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_0_8",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_0_9",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_0_10",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_0_11",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_0_12",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_0_13",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_0_14",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_0_15",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_1_0",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_1_1",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_1_2",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_1_3",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_1_4",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_1_5",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_1_6",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_1_7",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_1_8",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_1_9",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_1_10",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_1_11",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_1_12",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_1_13",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_1_14",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_1_15",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_2_0",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_2_1",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_2_2",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_2_3",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_2_4",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_2_5",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_2_6",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_2_7",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_2_8",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_2_9",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_2_10",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_2_11",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_2_12",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_2_13",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_2_14",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      },
+      {
+        "operand": "strand_groove_2_15",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hair_mass"
+      }
+    ],
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}

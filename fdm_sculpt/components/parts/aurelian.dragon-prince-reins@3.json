@@ -1,0 +1,241 @@
+{
+  "component_id": "aurelian.dragon-prince-reins",
+  "version": 3,
+  "name": "Dragon Prince reins routed below cheek armor and behind shield",
+  "family": "dragon-prince-reins",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "rein_segment_0"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.12,
+          -3.7,
+          6.85
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "rein_segment_0",
+        "start": [
+          -0.6,
+          -4,
+          7.25
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.18,
+          -2.75,
+          6.3
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "rein_segment_1",
+        "start": [
+          -1.12,
+          -3.7,
+          6.85
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.0,
+          -1.35,
+          6.5
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "rein_segment_2",
+        "start": [
+          -1.18,
+          -2.75,
+          6.3
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.9,
+          -1.25,
+          7.7
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "rein_segment_3",
+        "start": [
+          -1.0,
+          -1.35,
+          6.5
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.5,
+          -1,
+          8.4
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.12,
+        "role": "rein_segment_4",
+        "start": [
+          -0.9,
+          -1.25,
+          7.7
+        ]
+      },
+      {
+        "dimensions": [
+          0.24,
+          0.24,
+          0.24
+        ],
+        "export": false,
+        "location": [
+          -1.12,
+          -3.7,
+          6.85
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "rein_bend_0",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.24,
+          0.24,
+          0.24
+        ],
+        "export": false,
+        "location": [
+          -1.18,
+          -2.75,
+          6.3
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "rein_bend_1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.24,
+          0.24,
+          0.24
+        ],
+        "export": false,
+        "location": [
+          -1.0,
+          -1.35,
+          6.5
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "rein_bend_2",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.24,
+          0.24,
+          0.24
+        ],
+        "export": false,
+        "location": [
+          -0.9,
+          -1.25,
+          7.7
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "rein_bend_3",
+        "segments": 32
+      }
+    ],
+    "landmarks": {
+      "bit": [
+        -0.6,
+        -4,
+        7.25
+      ],
+      "grip": [
+        -1.5,
+        -1,
+        8.4
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "rein_segment_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "rein_segment_0"
+      },
+      {
+        "operand": "rein_segment_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "rein_segment_0"
+      },
+      {
+        "operand": "rein_segment_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "rein_segment_0"
+      },
+      {
+        "operand": "rein_segment_4",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "rein_segment_0"
+      },
+      {
+        "operand": "rein_bend_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "rein_segment_0"
+      },
+      {
+        "operand": "rein_bend_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "rein_segment_0"
+      },
+      {
+        "operand": "rein_bend_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "rein_segment_0"
+      },
+      {
+        "operand": "rein_bend_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "rein_segment_0"
+      }
+    ],
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}

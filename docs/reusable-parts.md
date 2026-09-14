@@ -304,3 +304,190 @@ the unwanted band behind the cape while retaining contact on both sides.
 Cape definition hashes are recorded in
 the trim recipes. Archers now use their tunic's existing edging without
 the separate tunic-trim overlay.
+
+Archer variants 11–13 aim upward at 20, 30 and 40 degrees for rear ranks.
+`scripts/generate-elevated-archers.py` creates pinned arm definitions and
+model placements without Blender. The shoulder anchors stay fixed while
+the bow, ferrule, arrow and hands share a rotation around the nock. Head,
+helmet and crest tilt together; legs, tunic and quiver retain their poses.
+The main archer gallery now has 13 variants, with a separate three-model
+review in `specs/elf-archer-rear-ranks.json`. These remain visual-only.
+
+`specs/elf-swordmaster.json` reviews a two-handed swordmaster on the solo
+soil and magnet base. `components/swordmasters.py` owns a long diamond-section
+greatsword with a wrapped two-hand hilt, swept guard and pommel, plus two
+arms with broader pauldrons. The hands share the sword's grip axis and its
+upper/lower grip landmarks. `scripts/generate-swordmaster.py` writes the
+pinned model, preserving the infantry's face, helmet, cape, mail trim and
+stance while removing the shield and spear. Visual-only; no print validation.
+
+The armored swordmaster adds a heavier ridged cuirass, layered swept
+pauldrons, jeweled waist plates and a crown-mounted hair braid. These are
+independent recipes in `components/swordmaster_armour.py`, pinned by
+`scripts/armour-swordmaster.py`. Braid revision 2 uses rounded interwoven
+locks. The cloth waist wrap and original crest are replaced; the helmet
+outline, face and two-handed sword pose remain intact.
+
+The current swordmaster replaces the braid with a fuller flowing helmet
+plume that drapes close to the helmet's rear. Pauldron revision 2 uses
+broad beveled metal caps, raised border panels and overlapping lower
+plates instead of the earlier feather-like sweep. Both are independently
+cached; the sword pose and other armor retain their geometry.
+
+Helmet plume revision 2 replaces the segmented locks with one smooth
+hair envelope and shallow engraved strand lines. It remains attached at
+the crown and drapes down the helmet's back; all other pieces are reused.
+
+Plume revision 3 customizes the silhouette with an asymmetric swept crown,
+a tapered sideways fall, and seven finer curved grooves with staggered
+ends. The crown attachment and helmet placement are retained. Its isolated
+part review can be composed with `atelier part` before the assembled review.
+
+`specs/elf-swordmaster-variants.json` presents ten two-handed guards, from
+upright and high guards to wide parries, low guard, recovery and a forward
+point. `scripts/generate-swordmaster-variants.py` pins the poses and paired
+arm recipes from `components/swordmaster_variants.py`. Shoulder anchors
+stay fixed, both hands follow the hilt, and whole-figure turns stay within
+four degrees. Armor, hair, legs, cape and sword reuse the approved caches.
+
+`specs/elf-swordmaster-sergeant.json` presents the officer in the upright
+two-handed guard with the shared enlarged sergeant helmet and swordmaster
+hair plume. `scripts/generate-swordmaster-sergeant.py` normalizes the gallery
+origin and pins that helmet change; all geometry comes from existing caches.
+
+The swordmaster sergeant now wears a dedicated forged helmet with angular
+temple plates, a reinforced brow and a metal rank badge. His waist armor
+has a larger central plate, layered side panels, double chevron relief and
+engraved detail. `components/swordmaster_helmets.py` owns these officer parts;
+the hair plume and two-handed pose retain their reviewed placements.
+
+Officer helmet revision 2 seats an oval gem above the brow in a crown-backed
+setting. Both swordmaster waist variants now use revision 2: side plates
+turn 38 degrees around the skirt, follow its flare by 8 degrees and have
+reduced depth so they sit embedded in the chainmail. All ten poses inherit
+the shared fit; the sergeant retains his larger central decoration.
+
+Waist revision 3 enlarges the fitted side plates by 25 percent in width
+and 22 percent in length, retaining their recessed depth and skirt angles.
+
+The unit is now named **Bertmasters**. Viewer labels and new review labels
+use Bertmaster, Bertmaster variants (10), and Bertmaster sergeant. Existing
+component IDs, filenames and saved provenance retain `swordmaster` for
+compatibility with reviewed geometry and caches.
+
+`specs/elf-dragon-prince.json` introduces mounted Dragon Prince cavalry.
+`components/dragon_princes.py` owns the horse, scaled barding, saddle,
+riding legs, arms, reins, lance, dragon shield and horned helmet. The rider
+reuses the approved head and heavy torso armor. A 6 × 12 × 2 mm soil base
+has one centered 3 × 1 mm magnet recess. `scripts/generate-dragon-prince.py`
+pins the recipes without Blender; barding revision 2 narrows the horse's
+face plate to expose its ears and eyes. This is a visual prototype only.
+
+## Dragon Prince reference pass
+
+The cavalry now uses the [official Old World Dragon Princes image](https://assets.warhammer-community.com/preorders-apr19-tow_03-dragonprinces-hiahpptwh9.jpg)
+from [Warhammer Community's April 2025 announcement](https://www.warhammer-community.com/en-gb/articles/gslgtn17/saturday-pre-orders-the-next-wave-of-high-elves-land/)
+as a visual reference. Original primitive recipes in `dragon_prince_reference.py`
+provide tall solid helmet wings, swept shoulder membranes, layered draped barding,
+horse cheek fins, a flowing mane and a broad lance pennant. They replace the
+prototype's plain horns and checkerboard scales. Horse @2, barding @3, helmet @2,
+lance @2 and winged pauldrons @1 retain the existing assembly mounts and grip
+landmarks. Earlier definitions and saved scenes remain available.
+
+Generate with `py -3.13 -m scripts.generate-dragon-prince`, then compose
+`specs/elf-dragon-prince.json` with seed 1001 into a fresh output directory.
+The reference review is `out/elf-dragon-prince-reference-v2`. It is visual-only;
+five changed parts compile while twelve unchanged parts reuse cached geometry.
+
+The subsequent connected-head review (`out/elf-dragon-prince-connected-heads-v2`)
+pins horse @3, barding @5, helmet @3 and reins @2. The horse skull is taller,
+with raised eyes, ears and muzzle and an overlapping upper neck. Both helmets
+use broad embedded roots and backward-swept overlapping plates. The reins follow
+the raised bit while retaining the rider's grip. All assembly mounts remain
+unchanged; thirteen components reuse their existing geometry. Barding @4 was an
+unpublished failed prototype; @5 uses the supported frame transform. Visual-only.
+
+The continuous-scale helmet review (`out/elf-dragon-prince-scale-helmets-v1`)
+pins rider helmet @4 and horse barding @6. Two large overlapping solid scales
+per side replace the pointed fins and rounded attachment pads. Broad roots,
+planar ridges and blunt tapered ends create continuous backward-swept metal
+surfaces. Only these two components rebuild; all fifteen other cached parts
+and every assembly mount remain unchanged. Golden definitions are stored in
+`dragon-prince-scale-helmets-golden.json`. This remains a visual-only review.
+
+The upright-scale review (`out/elf-dragon-prince-upright-helmets-v1`) pins
+rider helmet @5 and barding @7. The rider helmet is a new independent eight-sided
+crown with cheek guards, an angular brow and an Exact-cut face opening. Both
+helmets carry tall continuous plates with three rows of large diamond scale
+relief. The prior head, pose and equipment mounts are preserved. Two revised
+components compile and fifteen cached parts are reused; the corresponding
+goldens are in `dragon-prince-upright-helmets-golden.json`. Visual-only.
+
+Rider helmet @6 replaces the straight brow bar with two joined visor plates
+that rise and recede toward the temples. The eye opening and other helmet
+details are retained. Review: `out/elf-dragon-prince-visor-v1`; golden:
+`dragon-prince-visor-golden.json`. Only the helmet recompiles; sixteen cached
+parts and all placement transforms are reused. Visual-only.
+
+`out/elf-dragon-prince-scalp-shield-legs-v1` combines shield @2 (35% wider,
+30% taller, turned 40 degrees outward about its unchanged grip), horse @4
+(revised forelegs and distinct hind stifle/hock/cannon segments, with unchanged
+hoof locations), and barding @8 (a fitted scalp dome and metal ridge). Other
+placements remain unchanged. The three new recipes have separate golden
+fixtures and saved-scene provenance checks. This is a visual-only review.
+
+Shield @3 enlarges the plate and emblem another 25% in width and height, retaining
+the thickness, grip and outward-facing placement. Review:
+`out/elf-dragon-prince-great-shield-v1`. Only the shield recompiles; sixteen
+parts reuse their geometry. Golden: `dragon-prince-great-shield-golden.json`.
+
+`out/elf-dragon-prince-gem-shield-reins-v1` pins shield @4 and reins @3.
+The shield retains its large symmetrical plate and replaces the dragon emblem
+with a centered oval gem and setting. The reins follow the lower cheek, pass
+behind the shield and return to the original grip. `check-dragon-prince-reins.py`
+runs in the saved Blender scene, probes at 0.02 mm intervals against cached
+meshes with the rein radius included, and records `reins-clearance.json`.
+Only localized bridle and fist contacts are exempt. The final review clears
+the shield by at least 0.144 mm and other unrelated surfaces by at least
+0.049 mm in that probe. These are visual clearances, not print validation.
+Separate golden fixtures cover both new revisions; all assembly mounts remain
+unchanged. Previous definitions and scenes are preserved.
+
+Shield @6 adds a dense symmetrical field of shallow, flat-faced scales around
+the exposed central gem. The sparse @5 study remains preserved. Review:
+`out/elf-dragon-prince-scaled-shield-v2`; golden recipes cover both revisions.
+Only the shield rebuilds; grip, placement and rein clearance are preserved.
+Saved-scene provenance and the rein clearance probe pass. Visual-only.
+
+Lance @3 replaces the thin horizontal pennant with a shaft-backed seal tab,
+1.0 x 0.85 mm in section, with a tapered lower join and attached seal boss.
+The main tab retains at least 0.76 mm after its bevel allowance; the 1.0 mm
+shaft and grip are preserved. Review: `out/elf-dragon-prince-supported-seal-v1`.
+Only the lance recompiles. This improves the design for FDM but is not sliced
+or physically validated; it remains a visual-only review.
+
+`out/elf-dragon-prince-tapestry-fitted-v1` combines three subsequent changes:
+reins @6 follow the cheek/neck ellipsoid surfaces as shallow attached relief,
+with local offsets over the bridle and neck plate; pauldrons @2 replace oval
+caps with sharply sloping flat metal; lance @4 carries a longer downward
+tapestry with three broad folds, a seal boss and hem. The tapestry is backed
+by the shaft along its length, retaining a nominal 0.86 mm section and at least
+0.75 mm after bevel allowance. All mounts, the rider grip and other cached
+parts are preserved. Golden fixtures cover the intermediate rein revisions.
+The saved-scene clearance probe allows the intentional shallow cheek/armor
+contacts and still rejects intersections with equipment. It passes with the
+updated review. This remains visual-only, pending slicing and physical trials.
+
+`out/elf-dragon-prince-plain-lance-v1` restores plain lance @1, removing the
+tapestry and seal. All seventeen components reuse existing geometry; the
+lance grip, angle, and other assembly placements remain unchanged.
+
+Horse @5 is the heroic-proportion study in `out/elf-dragon-prince-heroic-steed-v1`.
+Visual references are GW's [Mounted Yeomen](https://assets.warhammer-community.com/articles/2316f34e-ad93-436e-b569-c5d47048cca1/cmbx2kbt3mukp5lt.jpg)
+and [Dragon Princes](https://assets.warhammer-community.com/preorders-apr19-tow_03-dragonprinces-hiahpptwh9.jpg).
+Lower leg diameter grows from 0.62 to 0.86 mm; upper limbs gain muscle forms,
+joints grow 22%, shoulders/haunches fill out, and rounded broad hooves replace
+the small rectangular feet. Joint centers, hoof X/Y locations, ground height,
+saddle landmarks and all assembly mounts remain unchanged. The plain lance
+is retained. Only the horse recompiles; recipe/golden, resolver, saved-scene
+provenance, rein-fit and viewer checks cover the update. Visual-only.

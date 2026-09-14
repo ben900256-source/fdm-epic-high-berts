@@ -1,0 +1,895 @@
+{
+  "component_id": "aurelian.dragon-prince-horse",
+  "version": 3,
+  "name": "Dragon Prince taller upright horse head",
+  "family": "dragon-prince-horse",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "barrel"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          2.5,
+          5.3,
+          2.7
+        ],
+        "export": true,
+        "location": [
+          0,
+          0.3,
+          4.55
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "barrel",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          2.35,
+          2.3,
+          2.9
+        ],
+        "export": false,
+        "location": [
+          0,
+          -1.4,
+          4.65
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "shoulders",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          2.5,
+          2.1,
+          2.8
+        ],
+        "export": false,
+        "location": [
+          0,
+          2,
+          4.55
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "haunches",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.55,
+          2.15,
+          3.6
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0.9063077870366499,
+            -0.42261826174069944,
+            2.3576943658138316
+          ],
+          [
+            0,
+            0.42261826174069944,
+            0.9063077870366499,
+            1.3651279750874292
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          -1.9,
+          6.0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "arched_neck",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.22,
+          2.3,
+          1.85
+        ],
+        "export": false,
+        "location": [
+          0,
+          -3.05,
+          7.65
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "head",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.02,
+          1.45,
+          0.85
+        ],
+        "export": false,
+        "location": [
+          0,
+          -4.1,
+          7.180000000000001
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "muzzle",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.98,
+          -1.75,
+          2.2
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.44,
+        "role": "-1_fore_upper",
+        "start": [
+          -0.78,
+          -1.45,
+          4.4
+        ]
+      },
+      {
+        "dimensions": [
+          0.8,
+          0.85,
+          0.9
+        ],
+        "export": false,
+        "location": [
+          -0.98,
+          -1.75,
+          2.2
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "-1_fore_knee",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.03,
+          -2.13,
+          0.7
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.31,
+        "role": "-1_fore_lower",
+        "start": [
+          -0.98,
+          -1.75,
+          2.2
+        ]
+      },
+      {
+        "bevel": 0.14,
+        "dimensions": [
+          0.85,
+          1.05,
+          0.7
+        ],
+        "export": false,
+        "location": [
+          -1.03,
+          -2.29,
+          0.35
+        ],
+        "primitive": "cube",
+        "role": "-1_fore_hoof"
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.98,
+          2.35,
+          2.2
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.44,
+        "role": "-1_hind_upper",
+        "start": [
+          -0.78,
+          1.8,
+          4.4
+        ]
+      },
+      {
+        "dimensions": [
+          0.8,
+          0.85,
+          0.9
+        ],
+        "export": false,
+        "location": [
+          -0.98,
+          2.35,
+          2.2
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "-1_hind_knee",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.03,
+          2.55,
+          0.7
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.31,
+        "role": "-1_hind_lower",
+        "start": [
+          -0.98,
+          2.35,
+          2.2
+        ]
+      },
+      {
+        "bevel": 0.14,
+        "dimensions": [
+          0.85,
+          1.05,
+          0.7
+        ],
+        "export": false,
+        "location": [
+          -1.03,
+          2.3899999999999997,
+          0.35
+        ],
+        "primitive": "cube",
+        "role": "-1_hind_hoof"
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.85,
+        "export": false,
+        "location": [
+          -0.46,
+          -2.65,
+          8.81
+        ],
+        "primitive": "cone",
+        "radius1": 0.28,
+        "radius2": 0.07,
+        "role": "ear_-1",
+        "scale": [
+          0.7,
+          1,
+          1
+        ],
+        "vertices": 12
+      },
+      {
+        "dimensions": [
+          0.23,
+          0.32,
+          0.24
+        ],
+        "export": false,
+        "location": [
+          -0.63,
+          -3.18,
+          8.049999999999999
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "eye_-1",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.98,
+          -1.75,
+          2.2
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.44,
+        "role": "1_fore_upper",
+        "start": [
+          0.78,
+          -1.45,
+          4.4
+        ]
+      },
+      {
+        "dimensions": [
+          0.8,
+          0.85,
+          0.9
+        ],
+        "export": false,
+        "location": [
+          0.98,
+          -1.75,
+          2.2
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "1_fore_knee",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.03,
+          -2.13,
+          0.7
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.31,
+        "role": "1_fore_lower",
+        "start": [
+          0.98,
+          -1.75,
+          2.2
+        ]
+      },
+      {
+        "bevel": 0.14,
+        "dimensions": [
+          0.85,
+          1.05,
+          0.7
+        ],
+        "export": false,
+        "location": [
+          1.03,
+          -2.29,
+          0.35
+        ],
+        "primitive": "cube",
+        "role": "1_fore_hoof"
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.98,
+          2.35,
+          2.2
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.44,
+        "role": "1_hind_upper",
+        "start": [
+          0.78,
+          1.8,
+          4.4
+        ]
+      },
+      {
+        "dimensions": [
+          0.8,
+          0.85,
+          0.9
+        ],
+        "export": false,
+        "location": [
+          0.98,
+          2.35,
+          2.2
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "1_hind_knee",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.03,
+          2.55,
+          0.7
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.31,
+        "role": "1_hind_lower",
+        "start": [
+          0.98,
+          2.35,
+          2.2
+        ]
+      },
+      {
+        "bevel": 0.14,
+        "dimensions": [
+          0.85,
+          1.05,
+          0.7
+        ],
+        "export": false,
+        "location": [
+          1.03,
+          2.3899999999999997,
+          0.35
+        ],
+        "primitive": "cube",
+        "role": "1_hind_hoof"
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.85,
+        "export": false,
+        "location": [
+          0.46,
+          -2.65,
+          8.81
+        ],
+        "primitive": "cone",
+        "radius1": 0.28,
+        "radius2": 0.07,
+        "role": "ear_1",
+        "scale": [
+          0.7,
+          1,
+          1
+        ],
+        "vertices": 12
+      },
+      {
+        "dimensions": [
+          0.23,
+          0.32,
+          0.24
+        ],
+        "export": false,
+        "location": [
+          0.63,
+          -3.18,
+          8.049999999999999
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "eye_1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.85,
+          1.4,
+          1.35
+        ],
+        "export": false,
+        "location": [
+          0,
+          2.75,
+          4.55
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "tail_root",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.73,
+          1.0,
+          2.6
+        ],
+        "export": false,
+        "location": [
+          0,
+          3.12,
+          3.2
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "tail_fall",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.68,
+          1.15,
+          0.85
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.72,
+          6.85
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "mane_lock_0",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.68,
+          1.15,
+          0.85
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.57,
+          6.47
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "mane_lock_1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.68,
+          1.15,
+          0.85
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.42,
+          6.09
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "mane_lock_2",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.68,
+          1.15,
+          0.85
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.27,
+          5.709999999999999
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "mane_lock_3",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.68,
+          1.15,
+          0.85
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.12,
+          5.33
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "mane_lock_4",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.9,
+          1.65,
+          1.85
+        ],
+        "export": false,
+        "location": [
+          0,
+          3.38,
+          3.8
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "swept_tail",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          1.0,
+          1.25
+        ],
+        "export": false,
+        "location": [
+          0,
+          3.78,
+          3.15
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "tail_end",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.5,
+          1.9,
+          2.35
+        ],
+        "export": false,
+        "location": [
+          0,
+          -2.13,
+          7.12
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "upper_neck",
+        "segments": 32
+      }
+    ],
+    "landmarks": {
+      "ground": [
+        0,
+        0,
+        0
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "muzzle": [
+        0,
+        -4.3,
+        7.25
+      ],
+      "saddle": [
+        0,
+        0.3,
+        5.8
+      ]
+    },
+    "operations": [
+      {
+        "operand": "shoulders",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "haunches",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "arched_neck",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "head",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "muzzle",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "-1_fore_upper",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "-1_fore_knee",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "-1_fore_lower",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "-1_fore_hoof",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "-1_hind_upper",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "-1_hind_knee",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "-1_hind_lower",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "-1_hind_hoof",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "ear_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "eye_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "1_fore_upper",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "1_fore_knee",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "1_fore_lower",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "1_fore_hoof",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "1_hind_upper",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "1_hind_knee",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "1_hind_lower",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "1_hind_hoof",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "ear_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "eye_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "tail_root",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "tail_fall",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "mane_lock_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "mane_lock_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "mane_lock_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "mane_lock_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "mane_lock_4",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "swept_tail",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "tail_end",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      },
+      {
+        "operand": "upper_neck",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "barrel"
+      }
+    ],
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}

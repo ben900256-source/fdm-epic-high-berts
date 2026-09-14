@@ -1,0 +1,701 @@
+{
+  "component_id": "aurelian.swordmaster-crown-braid",
+  "version": 1,
+  "name": "Swordmaster crown braid",
+  "family": "swordmaster-crown-braid",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "crown_binding"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          0.73,
+          0.73,
+          0.56
+        ],
+        "export": true,
+        "location": [
+          0,
+          0.08,
+          1.84
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "crown_binding",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0,
+          0.16,
+          2.35
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.27,
+        "role": "braid_core_0",
+        "start": [
+          0,
+          0.08,
+          1.84
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.22,
+          0.16,
+          2.35
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.2,
+        "role": "plait_0_-1",
+        "start": [
+          -0.22,
+          0.08,
+          1.84
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.22,
+          0.16,
+          2.35
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.2,
+        "role": "plait_0_1",
+        "start": [
+          0.22,
+          0.08,
+          1.84
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0,
+          0.55,
+          2.69
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.27,
+        "role": "braid_core_1",
+        "start": [
+          0,
+          0.16,
+          2.35
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.22,
+          0.55,
+          2.69
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.2,
+        "role": "plait_1_-1",
+        "start": [
+          -0.22,
+          0.16,
+          2.35
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.22,
+          0.55,
+          2.69
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.2,
+        "role": "plait_1_1",
+        "start": [
+          0.22,
+          0.16,
+          2.35
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0,
+          1.08,
+          2.63
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.27,
+        "role": "braid_core_2",
+        "start": [
+          0,
+          0.55,
+          2.69
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.22,
+          1.08,
+          2.63
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.2,
+        "role": "plait_2_-1",
+        "start": [
+          -0.22,
+          0.55,
+          2.69
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.22,
+          1.08,
+          2.63
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.2,
+        "role": "plait_2_1",
+        "start": [
+          0.22,
+          0.55,
+          2.69
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0,
+          1.6,
+          2.33
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.27,
+        "role": "braid_core_3",
+        "start": [
+          0,
+          1.08,
+          2.63
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.22,
+          1.6,
+          2.33
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.2,
+        "role": "plait_3_-1",
+        "start": [
+          -0.22,
+          1.08,
+          2.63
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.22,
+          1.6,
+          2.33
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.2,
+        "role": "plait_3_1",
+        "start": [
+          0.22,
+          1.08,
+          2.63
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0,
+          2.0,
+          1.9
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.27,
+        "role": "braid_core_4",
+        "start": [
+          0,
+          1.6,
+          2.33
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.22,
+          2.0,
+          1.9
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.2,
+        "role": "plait_4_-1",
+        "start": [
+          -0.22,
+          1.6,
+          2.33
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.22,
+          2.0,
+          1.9
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.2,
+        "role": "plait_4_1",
+        "start": [
+          0.22,
+          1.6,
+          2.33
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0,
+          2.22,
+          1.39
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.27,
+        "role": "braid_core_5",
+        "start": [
+          0,
+          2.0,
+          1.9
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.22,
+          2.22,
+          1.39
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.2,
+        "role": "plait_5_-1",
+        "start": [
+          -0.22,
+          2.0,
+          1.9
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.22,
+          2.22,
+          1.39
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.2,
+        "role": "plait_5_1",
+        "start": [
+          0.22,
+          2.0,
+          1.9
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0,
+          2.27,
+          0.88
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.22,
+        "role": "braid_core_6",
+        "start": [
+          0,
+          2.22,
+          1.39
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.22,
+          2.27,
+          0.88
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.16,
+        "role": "plait_6_-1",
+        "start": [
+          -0.22,
+          2.22,
+          1.39
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.22,
+          2.27,
+          0.88
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.16,
+        "role": "plait_6_1",
+        "start": [
+          0.22,
+          2.22,
+          1.39
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0,
+          2.12,
+          0.4
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.22,
+        "role": "braid_core_7",
+        "start": [
+          0,
+          2.27,
+          0.88
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.22,
+          2.12,
+          0.4
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.16,
+        "role": "plait_7_-1",
+        "start": [
+          -0.22,
+          2.27,
+          0.88
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.22,
+          2.12,
+          0.4
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.16,
+        "role": "plait_7_1",
+        "start": [
+          0.22,
+          2.27,
+          0.88
+        ]
+      },
+      {
+        "dimensions": [
+          0.52,
+          0.52,
+          0.45
+        ],
+        "export": false,
+        "location": [
+          0,
+          2.12,
+          0.4
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "tail_binding",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.17,
+          1.98,
+          -0.14
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "tassel_-1",
+        "start": [
+          -0.12,
+          2.12,
+          0.37
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.0,
+          1.98,
+          -0.14
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "tassel_0",
+        "start": [
+          0.0,
+          2.12,
+          0.37
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.17,
+          1.98,
+          -0.14
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "tassel_1",
+        "start": [
+          0.12,
+          2.12,
+          0.37
+        ]
+      }
+    ],
+    "landmarks": {
+      "crown": [
+        0,
+        0.08,
+        1.84
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "tail": [
+        0,
+        2.12,
+        0.4
+      ]
+    },
+    "operations": [
+      {
+        "operand": "braid_core_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "plait_0_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "plait_0_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "braid_core_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "plait_1_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "plait_1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "braid_core_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "plait_2_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "plait_2_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "braid_core_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "plait_3_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "plait_3_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "braid_core_4",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "plait_4_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "plait_4_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "braid_core_5",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "plait_5_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "plait_5_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "braid_core_6",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "plait_6_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "plait_6_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "braid_core_7",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "plait_7_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "plait_7_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "tail_binding",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "tassel_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "tassel_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      },
+      {
+        "operand": "tassel_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "crown_binding"
+      }
+    ],
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}

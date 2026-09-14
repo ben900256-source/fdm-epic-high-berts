@@ -1,0 +1,96 @@
+{
+  "component_id": "aurelian.dragon-prince-saddle",
+  "version": 1,
+  "name": "Dragon prince saddle",
+  "family": "dragon-prince-saddle",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "saddle"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          2.65,
+          2.1,
+          0.75
+        ],
+        "export": true,
+        "location": [
+          0,
+          0.3,
+          5.86
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "saddle",
+        "segments": 32
+      },
+      {
+        "bevel": 0.14,
+        "dimensions": [
+          1.7,
+          0.4,
+          0.7
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.57,
+          6.13
+        ],
+        "primitive": "cube",
+        "role": "pommel"
+      },
+      {
+        "bevel": 0.16,
+        "dimensions": [
+          1.9,
+          0.4,
+          0.85
+        ],
+        "export": false,
+        "location": [
+          0,
+          1.12,
+          6.2
+        ],
+        "primitive": "cube",
+        "role": "cantle"
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "seat": [
+        0,
+        0.3,
+        6.2
+      ]
+    },
+    "operations": [
+      {
+        "operand": "pommel",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "saddle"
+      },
+      {
+        "operand": "cantle",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "saddle"
+      }
+    ],
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}
