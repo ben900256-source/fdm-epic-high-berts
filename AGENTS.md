@@ -23,6 +23,11 @@
   it visual-only; keep `EVALUATED_EXPORT` empty and use `VISUAL_PREVIEW`.
   The manufacturing requirements below still apply to `regiment build` and
   print-readiness work when the user resumes that phase.
+- Viewer row-export exception explicitly requested by the user: use Blender's
+  Manifold Boolean Union and native STL exporter, accepting Blender's result
+  without geometry validation, independent repeat builds or slicing. Label these
+  downloads unchecked Blender output. Keep the existing model recipes unchanged;
+  the historical manufacturing gates below still apply to validated proof builds.
 - Current reference model: five original 8 mm sole-to-eye high-elf spearmen on a
   20 × 5 × 1 mm strip. The visual parts/assembly workflow also supports isolated
   pieces, alternative models and other army units; the five-figure restrictions

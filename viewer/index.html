@@ -5,10 +5,12 @@
 </style>
 <style>@media(min-width:651px){aside{width:270px}}#piece-label{position:fixed;z-index:5;pointer-events:none;background:#20262bef;border:1px solid #ff8c20;border-radius:7px;padding:10px 13px;box-shadow:0 4px 20px #0008}#piece-name{color:#ffb66b;display:block}#piece-reference{display:block;font-size:12px;color:#cad2d8;margin-top:4px}#piece-label[hidden]{display:none}</style>
 <script type="importmap">{"imports":{"three":"/vendor/build/three.module.js","three/addons/":"/vendor/examples/jsm/"}}</script></head>
-<body><header><div><h1>Elf workshop</h1><small>Model review</small></div><span>Visual preview</span></header>
+<link rel="stylesheet" href="/workshop.css">
+<body><header><div><h1>Elf workshop</h1><small>Model review &amp; row exports</small></div><span>Visual preview</span></header>
 <aside><strong>Review model</strong><label for="review">Model / unit</label><select id="review"><option value="latest">Latest update</option></select><label for="figure">Figure</label><select id="figure"><option value="all">All figures</option></select><label for="part">Component</label><select id="part"><option value="all">All components</option></select>
 <label class="check"><input type="checkbox" id="shields" checked> Show shields</label><label class="check"><input type="checkbox" id="outlines" checked> Edge outlines</label><label class="check"><input type="checkbox" id="wire"> Wireframe</label>
 <div class="views"><button id="fit">Fit</button><button data-view="front">Front</button><button data-view="side">Side</button><button data-view="back">Back</button></div>
 <div class="views"><button id="refresh">Refresh</button></div><div id="status" role="status">Loading current model…</div><div id="error" role="alert"></div><div id="details"></div></aside>
+<style>#downloads{margin-top:16px;border-top:1px solid #43505a;padding-top:14px}#download-stl{display:block;text-align:center;color:#eee9df;background:#394d40;border:1px solid #71866c;border-radius:6px;padding:10px;text-decoration:none}#download-stl:hover{background:#4a6252}#download-status{font-size:12px;line-height:1.5;color:#c7bda8;margin:9px 0 0}aside{max-height:calc(100vh - 145px);overflow-y:auto}</style>
 <div id="piece-label" role="tooltip" hidden><strong id="piece-name"></strong><span id="piece-reference"></span></div>
 <footer><span>Drag to orbit · Scroll to zoom · Right drag to pan · Ctrl-hover to identify a piece</span><span>Changes appear automatically</span></footer><script type="module" src="/app.js"></script></body></html>

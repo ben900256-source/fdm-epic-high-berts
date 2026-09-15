@@ -61,13 +61,18 @@ def cape_fitted_mail_trim(cape, *, seed, revision=6):
     data=garment_trim('mail-skirt',seed=seed,revision=3).to_dict()
     suffix=cape.component_id.removeprefix('aurelian.cape')
     data['component_id']='aurelian.mail-skirt-trim'+suffix
-    if revision not in (5,6):raise ValueError('unsupported cape contact revision')
+    if revision not in (5,6,7):raise ValueError('unsupported cape contact revision')
     data['version']=revision
     params=data['parameters']
     source=cape.to_dict()['parameters']
     roles={a['role']:'cape_contact_'+a['role'] for a in source['atoms']}
     for atom in source['atoms']:
         copy=deepcopy(atom);copy['role']=roles[atom['role']];copy['export']=False
+        if revision>=7:
+            # Move the cutout rearward, leaving attached relief inside the cape.
+            frame=copy.get('frame_mm',[[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]])
+            frame[1][3]+=.04
+            copy['frame_mm']=frame
         params['atoms'].append(copy)
     for operation in source['operations']:
         copy=deepcopy(operation)
@@ -81,4 +86,6 @@ def cape_fitted_mail_trim(cape, *, seed, revision=6):
         params['operations'].append(dict(target='hem_trim',operand='cape_rear_limit',operation='INTERSECT',solver='EXACT'))
     params['cape_reference']=cape.reference
     params['cape_definition_sha256']=cape.sha256
+    if revision>=7:
+        params['cape_contact_overlap_mm']=.04
     return validate_part(ComponentDefinition.from_dict(data))

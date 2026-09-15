@@ -6,6 +6,7 @@ test.setTimeout(90000);
 test('current terrain reviews load and retain body/surface identification',async({page})=>{
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto('http://127.0.0.1:8765');
+  await page.locator('#saved-reviews').evaluate(el=>el.open=true);
   await expect(page.locator('#status')).toContainText('Current model loaded');
   const index=await(await page.request.get('http://127.0.0.1:8765/data/reviews.json')).json();
   let checked=0;

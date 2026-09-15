@@ -4,8 +4,28 @@ import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { OutlinePass } from 'three/addons/postprocessing/OutlinePass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+import { initWorkshop } from './workshop-ui.js';
 
 const $ = id => document.getElementById(id);
+const downloads=document.createElement('section');downloads.id='downloads';
+const downloadLink=document.createElement('a');downloadLink.id='download-stl';
+downloadLink.textContent='Download STL';downloadLink.hidden=true;
+const downloadStatus=document.createElement('p');downloadStatus.id='download-status';
+downloads.append(downloadLink,downloadStatus);document.querySelector('aside').append(downloads);
+function updateDownload(review){
+  const file=review.stl_download;
+  const available=file && /^\/data\/downloads\/[a-f0-9]{64}\.stl$/.test(file.url);
+  downloadLink.hidden=!available;
+  downloadLink.style.display=available?'block':'none';
+  if(available){
+    downloadLink.href=file.url;downloadLink.download=file.filename;
+    downloadLink.textContent=`Download STL · ${(file.bytes/1e6).toFixed(1)} MB`;
+    downloadStatus.textContent=file.status+' Downloads the complete stand.';
+  }else{
+    downloadLink.removeAttribute('href');downloadLink.removeAttribute('download');
+    downloadStatus.textContent='No print STL published for this visual review.';
+  }
+}
 const displayName = text => text.replace(/swordmaster/gi, name => name[0]==='S'?'Bertmaster':'bertmaster');
 const renderer = new THREE.WebGLRenderer({antialias:true});
 renderer.setPixelRatio(Math.min(devicePixelRatio,2));
@@ -26,6 +46,8 @@ const material = new THREE.MeshStandardMaterial({color:0xc5b797,roughness:.78,me
 const edgeMaterial = new THREE.LineBasicMaterial({color:0x302b25,transparent:true,opacity:.72});
 const edgeGeometries = new Map();
 let model = new THREE.Group(), manifest, busy=false;
+let workshopReview=null;
+let workshopSource=null;
 let reviewUrls=new Map(), reviewOptions='', pendingRefresh=false;
 scene.add(model);
 const geometries = new Map();
@@ -122,6 +144,7 @@ async function refresh() {
   if(busy) {pendingRefresh=true;return;}
   busy=true;
   const selected=$('review').value;
+  const requestedWorkshop=workshopReview;
   try {
     const index=await (await checkedFetch('/data/reviews.json')).json();
     if($('review').value!==selected){pendingRefresh=true;return;}
@@ -133,12 +156,16 @@ async function refresh() {
       $('review').value=reviewUrls.has(selected)?selected:'latest';
       reviewOptions=optionSignature;
     }
-    const next=await (await checkedFetch(reviewUrls.get(selected)||'/data/latest.json')).json();
+    const next=requestedWorkshop ? (workshopSource ? await (await checkedFetch(workshopSource)).json() : requestedWorkshop)
+      : await (await checkedFetch(reviewUrls.get(selected)||'/data/latest.json')).json();
     if(next.revision!==manifest?.revision) {
       $('status').textContent='Loading updated model…';
-      const loaded=new Map(await Promise.all(Object.entries(next.assets).map(async([ref,a])=>[ref,await geometry(a)])));
+      const loaded=new Map(),pending=Object.entries(next.assets);
+      await Promise.all(Array.from({length:4},async()=>{
+        while(pending.length){const [ref,asset]=pending.shift();loaded.set(ref,await geometry(asset));}
+      }));
       // A selection made during loading wins over the earlier request.
-      if($('review').value!==selected) {pendingRefresh=true;return;}
+      if($('review').value!==selected || requestedWorkshop!==workshopReview) {pendingRefresh=true;return;}
       const replacement=new THREE.Group();
       for(const p of next.assembly.placements) {
         if(next.assets[p.part].definition_sha256!==p.definition_sha256) throw new Error('Component revision mismatch.');
@@ -153,6 +180,7 @@ async function refresh() {
       }
       const first=!manifest, changedAssembly=manifest?.assembly.assembly_id!==next.assembly.assembly_id;
       clearHover();scene.remove(model); model=replacement; scene.add(model); manifest=next;
+      updateDownload(next);
       if(changedAssembly){$('figure').value='all';$('part').value='all';}
       options($('figure'),[...new Set(next.assembly.placements.filter(p=>p.instance_id.includes('/')).map(p=>p.instance_id.split('/')[0]))],'All figures');
       options($('part'),Object.keys(next.assets).sort(),'All components');
@@ -169,12 +197,14 @@ async function refresh() {
     }
     $('status').textContent='Current model loaded · '+new Date(manifest.updated).toLocaleTimeString();
     $('error').textContent='';
+    return true;
   } catch(error) {
     $('status').textContent=manifest?'Update unavailable · showing previous model':'Model unavailable';
     $('error').textContent=error.message;
+    return false;
   } finally {busy=false;if(pendingRefresh){pendingRefresh=false;refresh();}}
 }
-$('review').onchange=refresh;
+$('review').onchange=()=>{workshopReview=null;workshopSource=null;refresh();};
 for(const id of ['figure','part']) $(id).onchange=()=>{visibility();fit();};
 $('shields').onchange=visibility;
 $('wire').onchange=()=>material.wireframe=$('wire').checked;
@@ -183,4 +213,17 @@ $('fit').onclick=()=>fit(); $('refresh').onclick=refresh;
 for(const button of document.querySelectorAll('[data-view]')) button.onclick=()=>fit(new THREE.Vector3(...({front:[0,-1,0],side:[1,0,0],back:[0,1,0]}[button.dataset.view])));
 addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);composer.setSize(innerWidth,innerHeight);clearHover();});
 renderer.setAnimationLoop(()=>{controls.update();if(hoverOutline.selectedObjects.length) composer.render();else renderer.render(scene,camera);});
-refresh();setInterval(refresh,2000);
+initWorkshop({
+  showReview:async (review,source=null)=>{
+    workshopReview=review;workshopSource=source;
+    if(await refresh()===false)throw new Error($('error').textContent);
+    const deadline=Date.now()+90000;
+    while(manifest?.revision!==review.revision){
+      if(workshopReview!==review) return;
+      if(Date.now()>deadline)throw new Error('The requested preview could not be loaded.');
+      await new Promise(resolve=>setTimeout(resolve,100));
+    }
+  },
+  context:()=>({model:manifest?.assembly.assembly_id,revision:manifest?.revision,
+    component:$('part').value,camera:camera.position.toArray(),target:controls.target.toArray()})
+}).finally(()=>{refresh();setInterval(refresh,2000);});

@@ -2,7 +2,9 @@ import {test,expect} from '@playwright/test';
 test.use({channel:'chrome',viewport:{width:1400,height:1000}});
 test('Dragon Prince cavalry loads and identifies the mount',async({page})=>{
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
-  await page.goto('http://127.0.0.1:8765');await expect(page.locator('#status')).toContainText('Current model loaded');
+  await page.goto('http://127.0.0.1:8765');
+  await page.locator('#saved-reviews').evaluate(el=>el.open=true);
+  await expect(page.locator('#status')).toContainText('Current model loaded');
   await page.selectOption('#review','aurelian-dragon-prince');
   await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-dragon-prince');
   await expect(page.locator('body')).toContainText('elf-dragon-prince-heroic-steed-v1');

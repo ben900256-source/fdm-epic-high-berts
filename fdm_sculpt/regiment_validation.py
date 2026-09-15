@@ -256,6 +256,9 @@ def analysis_source_hashes():
 def assess_build(output, *, automatic_supports=False):
     """Repeatable design feedback without claiming completed validation."""
     output=Path(output).resolve()
+    if (output/'modular-print.json').exists():
+        from .modular_print import assess
+        return assess(output, automatic_supports=automatic_supports)
     if (output/'visual-review.json').exists():
         raise ValueError("visual previews have no print mesh or slice; run regiment build for print checks")
     mesh=formats.read_stl(output/'elf-spearman-proof.stl')

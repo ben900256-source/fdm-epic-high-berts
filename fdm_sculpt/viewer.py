@@ -6,12 +6,14 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 import json
 from pathlib import Path
 import subprocess
-from urllib.parse import unquote, urlsplit
+from urllib.parse import unquote, urlsplit, parse_qs
+import secrets
 
 from .review import find_blender
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT/'out/viewer'
+API_TOKEN = secrets.token_urlsafe(32)
 
 
 def _write_json(path, value):
@@ -74,7 +76,101 @@ def publish(build, destination=DATA):
     return dict(url='http://127.0.0.1:8765', exported_parts=len(missing), reused_parts=len(assets)-len(missing))
 
 
+def attach_stl(build, destination=DATA):
+    """Publish the exact STL represented by an exported manufacturing review."""
+    build, destination = Path(build), Path(destination)
+    manifest = json.loads((build/'viewer-review.json').read_text())
+    payload = (build/'elf-spearman-proof.stl').read_bytes()
+    digest = hashlib.sha256(payload).hexdigest()
+    if digest != manifest.get('source_stl_sha256'):
+        raise ValueError('STL does not match the displayed manufacturing review')
+    downloads = destination/'downloads'
+    downloads.mkdir(parents=True, exist_ok=True)
+    (downloads/f'{digest}.stl').write_bytes(payload)
+    manifest['stl_download'] = dict(
+        url=f'/data/downloads/{digest}.stl', filename=f'{build.name}.stl',
+        sha256=digest, bytes=len(payload),
+        status='Trial STL — not digitally validated. Sliced support and detail checks failed; no physical trial yet.')
+    manifest.pop('revision', None)
+    manifest.pop('updated', None)
+    manifest['revision'] = hashlib.sha256(json.dumps(manifest, sort_keys=True).encode()).hexdigest()
+    manifest['updated'] = datetime.now(timezone.utc).isoformat()
+    assembly_id = manifest['assembly']['assembly_id']
+    key = hashlib.sha256(assembly_id.encode()).hexdigest()
+    index = json.loads((destination/'reviews.json').read_text())
+    entry = next(r for r in index['reviews'] if r['id'] == assembly_id)
+    entry['revision'] = manifest['revision']
+    _write_json(destination/'reviews'/f'{key}.json', manifest)
+    _write_json(destination/'reviews.json', index)
+    _write_json(destination/'latest.json', manifest)
+    _write_json(build/'viewer-review.json', manifest)
+    return dict(revision=manifest['revision'], stl_download=manifest['stl_download'])
+
+
 class Handler(SimpleHTTPRequestHandler):
+    def json_response(self, value, status=200):
+        payload = json.dumps(value).encode()
+        self.send_response(status)
+        self.send_header('Content-Type', 'application/json')
+        self.send_header('Content-Length', str(len(payload)))
+        self.end_headers()
+        self.wfile.write(payload)
+
+    def local_request(self):
+        host = self.headers.get('Host', '')
+        allowed = (f'127.0.0.1:{self.server.server_port}', f'localhost:{self.server.server_port}')
+        return host in allowed and self.headers.get('Origin', 'http://'+host) == 'http://'+host
+
+    def do_GET(self):
+        if not self.local_request():
+            self.send_error(403)
+            return
+        path = urlsplit(self.path)
+        if not path.path.startswith('/api/'):
+            return super().do_GET()
+        from . import workshop
+        try:
+            if path.path == '/api/catalog':
+                result = dict(models=workshop.public_models(), token=API_TOKEN)
+            elif path.path == '/api/model':
+                result = workshop.model_review(parse_qs(path.query).get('id',[''])[0])
+            elif path.path == '/api/jobs':
+                result = workshop.jobs()
+            elif path.path.startswith('/api/jobs/'):
+                result = workshop.job_status(path.path.removeprefix('/api/jobs/'))
+            else:
+                return self.json_response(dict(error='Unknown endpoint'),404)
+            self.json_response(result)
+        except (ValueError,KeyError,OSError) as exc:
+            self.json_response(dict(error=str(exc)),400)
+
+    def do_POST(self):
+        if not self.local_request() or self.headers.get('X-Workshop-Token') != API_TOKEN:
+            return self.json_response(dict(error='Reload the local viewer to reconnect'),403)
+        from . import workshop
+        try:
+            length = int(self.headers.get('Content-Length','0'))
+            if not 0 < length <= 65536:
+                raise ValueError('Invalid request size')
+            request = json.loads(self.rfile.read(length))
+            if not isinstance(request,dict):
+                raise ValueError('Expected an object')
+            route = urlsplit(self.path).path
+            if route == '/api/rows/plan':
+                pinned = workshop.plan(request)
+                result = dict(plan=pinned,review=workshop.manifest(pinned['assembly'],pinned['seed']))
+            elif route == '/api/rows/export':
+                result = workshop.start_export(request)
+            elif route == '/api/feedback':
+                result = workshop.feedback(request)
+            elif route == '/api/jobs/cancel':
+                result = workshop.cancel_export(request.get('id'))
+            else:
+                return self.json_response(dict(error='Unknown endpoint'),404)
+            self.json_response(result)
+        except (ValueError,KeyError,OSError,TypeError,subprocess.SubprocessError) as exc:
+            self.json_response(dict(error=str(exc)),400)
+
     def translate_path(self, path):
         path = unquote(urlsplit(path).path)
         if path.startswith('/data/'):
@@ -93,17 +189,25 @@ class Handler(SimpleHTTPRequestHandler):
         super().end_headers()
 
 
+class ViewerServer(ThreadingHTTPServer):
+    request_queue_size = 128
+    daemon_threads = True
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest='command', required=True)
     commands.add_parser('publish').add_argument('build', type=Path)
+    commands.add_parser('attach-stl').add_argument('build', type=Path)
     commands.add_parser('serve').add_argument('--port', type=int, default=8765)
     args = parser.parse_args()
     if args.command == 'publish':
         print(json.dumps(publish(args.build), indent=2))
+    elif args.command == 'attach-stl':
+        print(json.dumps(attach_stl(args.build), indent=2))
     else:
         print(f'Elf review: http://127.0.0.1:{args.port}', flush=True)
-        ThreadingHTTPServer(('127.0.0.1', args.port), Handler).serve_forever()
+        ViewerServer(('127.0.0.1', args.port), Handler).serve_forever()
 
 
 if __name__ == '__main__':

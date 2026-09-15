@@ -51,3 +51,11 @@ def test_server_rejects_directory_traversal():
     handler = object.__new__(viewer.Handler)
     for url in ('/data/../../.env', '/vendor/../../../.env', '/%2e%2e/.env'):
         assert handler.translate_path(url).endswith('nonexistent-viewer-path')
+
+
+def test_download_rejects_stl_that_does_not_match_review(tmp_path):
+    (tmp_path/'viewer-review.json').write_text(json.dumps({'source_stl_sha256': 'wrong'}))
+    (tmp_path/'elf-spearman-proof.stl').write_bytes(b'different model')
+    with pytest.raises(ValueError, match='does not match'):
+        viewer.attach_stl(tmp_path, tmp_path/'published')
+    assert not (tmp_path/'published').exists()

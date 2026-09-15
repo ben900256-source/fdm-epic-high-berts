@@ -7,6 +7,7 @@ test('switches between the shared bearer and center unit without refetching shar
   page.on('pageerror',e=>errors.push(e.message));
   page.on('request',r=>{if(r.url().endsWith('.bin'))meshRequests.push(r.url());});
   await page.goto('http://127.0.0.1:8765');
+  await page.locator('#saved-reviews').evaluate(el=>el.open=true);
   await expect(page.locator('#status')).toContainText('Current model loaded',{timeout:60000});
   await page.selectOption('#review','aurelian-spearmen-center-standard');
   await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearmen-center-standard');
@@ -63,6 +64,7 @@ test('switches between the shared bearer and center unit without refetching shar
 test('loads current parts, isolates a face, and reports failed refresh',async({page})=>{
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto('http://127.0.0.1:8765');
+  await page.locator('#saved-reviews').evaluate(el=>el.open=true);
   await expect(page.locator('#status')).toContainText('Current model loaded',{timeout:60000});
   await page.selectOption('#review','aurelian-spearmen-organic-faces');
   await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearmen-organic-faces');
@@ -101,6 +103,7 @@ test('loads current parts, isolates a face, and reports failed refresh',async({p
 test('reviews the archer unit and isolates its reusable tunic',async({page})=>{
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto('http://127.0.0.1:8765');
+  await page.locator('#saved-reviews').evaluate(el=>el.open=true);
   await expect(page.locator('#status')).toContainText('Current model loaded',{timeout:60000});
   await page.selectOption('#review','aurelian-archers');
   await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-archers');
@@ -120,6 +123,7 @@ test('reviews the archer unit and isolates its reusable tunic',async({page})=>{
 test('selects ten archer variants and identifies the bow metalwork',async({page})=>{
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto('http://127.0.0.1:8765');
+  await page.locator('#saved-reviews').evaluate(el=>el.open=true);
   await expect(page.locator('#status')).toContainText('Current model loaded',{timeout:60000});
   await page.selectOption('#review','aurelian-archer-variants');
   await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-archer-variants');

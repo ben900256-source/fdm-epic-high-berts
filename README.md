@@ -45,6 +45,31 @@ npm --prefix viewer ci
 py -3.13 -m fdm_sculpt.viewer serve
 ```
 
+The viewer opens on an **individual model**. Select Spearmen, Archers or
+Bertmasters and a variant, then orbit or isolate a component for review.
+**Sculpting feedback** saves your note, model revision, selected component and
+camera angle under `out/sculpt-feedback/`. Saved unit, cavalry and part reviews
+remain available in **Saved unit / part reviews**.
+
+**Build a row** places five chosen infantry on the existing 20 × 5 × 2 mm
+base with 4 mm spacing. Choose each slot or use **Randomize row** with a seed
+and a selectable variant pool. Defaults allow duplicates and at most one command
+model. Optional uniqueness and command limits apply to manual selections too.
+Preview the row, then choose **Generate STL**. Editing the row invalidates its
+export preview; the server also checks that all pinned model revisions still match.
+
+Exports run in the background while model review remains available. **STL exports**
+shows progress and downloadable reports. At the user's request, the worker loads
+cached parts, performs one collection-wide **Manifold Boolean Union** in Blender,
+and uses Blender's native STL exporter. Downloads are labeled **unchecked Blender
+output**. This path does not run geometry validation, independent repeat builds,
+or slicing. The saved scene, selected variants, union order and timing remain
+available in each job. Historical validated-proof workflows are separate.
+Jobs and their pinned selections are preserved under `out/workshop-jobs/`.
+Running exports can be cancelled from their job card, retaining build evidence.
+The row builder preserves model geometry; it does not automatically repair poses
+or alter decoration to make a failing row pass.
+
 Each successful `atelier compose` or `atelier part` automatically updates the
 viewer. To load an existing saved review without recomputing geometry:
 

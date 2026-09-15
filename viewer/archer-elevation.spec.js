@@ -3,6 +3,7 @@ test.use({channel:'chrome',viewport:{width:1400,height:1000}});
 test('upward archer variants load in both galleries',async({page})=>{
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto('http://127.0.0.1:8765');
+  await page.locator('#saved-reviews').evaluate(el=>el.open=true);
   await expect(page.locator('#status')).toContainText('Current model loaded');
   for(const [id,count,build] of [['aurelian-archer-variants',13,'elf-archer-variants-elevated-v1'],['aurelian-archer-rear-ranks',3,'elf-archer-rear-ranks-v1']]){
     await page.selectOption('#review',id);

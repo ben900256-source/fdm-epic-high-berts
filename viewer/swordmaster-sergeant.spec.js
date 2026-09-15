@@ -3,6 +3,7 @@ test.use({channel:'chrome',viewport:{width:1400,height:1000}});
 test('swordmaster sergeant loads his distinctive helmet and plume',async({page})=>{
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto('http://127.0.0.1:8765');
+  await page.locator('#saved-reviews').evaluate(el=>el.open=true);
   await expect(page.locator('#status')).toContainText('Current model loaded');
   await page.selectOption('#review','aurelian-swordmaster-sergeant');
   await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-swordmaster-sergeant');
