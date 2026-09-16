@@ -127,7 +127,11 @@ def assets_for(assembly):
     available = {}
     for path in sorted((DATA/'reviews').glob('*.json')):
         for ref, asset in json.loads(path.read_text())['assets'].items():
-            available[(ref,asset['definition_sha256'])] = asset
+            key = ref,asset['definition_sha256']
+            # Older saved reviews lack exact-piece ranges. Do not let one
+            # replace a newer export for the same immutable component.
+            if key not in available or asset.get('pieces') or not available[key].get('pieces'):
+                available[key] = asset
     result = {}
     for p in assembly['placements']:
         key = p['part'], p['definition_sha256']

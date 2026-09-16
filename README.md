@@ -78,8 +78,13 @@ py -3.13 -m fdm_sculpt.viewer publish out/army-review
 ```
 
 Orbit, zoom, isolate a figure/component, or hide shields to inspect the mail.
-Hold Ctrl and hover over a piece to outline it in orange and see its name,
-figure number, and component revision for discussing changes.
+Hold Ctrl and hover to outline the exact geometry piece in orange and see both
+its name (such as a sole, shoe upper, or shin) and its component name, figure,
+and revision. The remaining pieces of that component are outlined in yellow.
+Both outlines remain visible through covering model geometry.
+Alt-hover works the same way. Fused surfaces use their final geometry role;
+hidden construction cutters are not selectable. Older saved exports retain
+component-level identification until republished.
 Use **Model / unit** to switch between saved reviews. The reusable standard
 bearer is available alone (`specs/elf-standard-bearer.json`) and in the middle
 of the five-elf unit (`specs/elf-unit-center-standard.json`). Both share

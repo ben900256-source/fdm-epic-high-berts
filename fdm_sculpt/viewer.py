@@ -40,7 +40,7 @@ def publish(build, destination=DATA):
         key = hashlib.sha256((record['blend_sha256']+exporter_hash).encode()).hexdigest()
         target = destination/'assets'/f'{key}.bin'
         assets[ref] = dict(url=f'/data/assets/{key}.bin', definition_sha256=record['definition_sha256'])
-        if not target.exists():
+        if not target.exists() or not target.with_suffix('.json').exists():
             missing.append(dict(reference=ref, blend=str(blend), collection=record['visual_collection'], target=str(target)))
     if missing:
         task = build/'viewer-job.json'
@@ -54,6 +54,17 @@ def publish(build, destination=DATA):
         if not payload or len(payload) % 72:
             raise ValueError('Invalid browser triangle buffer')
         asset['sha256'] = hashlib.sha256(payload).hexdigest()
+        pieces = json.loads((destination/'assets'/Path(asset['url']).name).with_suffix('.json').read_text())['pieces']
+        offset = 0
+        for piece in pieces:
+            if (not isinstance(piece.get('role'),str) or not piece['role'] or
+                    type(piece.get('first_triangle')) is not int or piece['first_triangle'] != offset or
+                    type(piece.get('triangle_count')) is not int or piece['triangle_count'] <= 0):
+                raise ValueError('Invalid browser piece ranges')
+            offset += piece['triangle_count']
+        if offset != len(payload)//72:
+            raise ValueError('Browser piece ranges do not cover geometry')
+        asset['pieces'] = pieces
     manifest = dict(assembly=job['assembly'], assets=assets, seed=job['seed'], build=build.name,
                     visual_only=True)
     manifest['revision'] = hashlib.sha256(json.dumps(manifest, sort_keys=True).encode()).hexdigest()

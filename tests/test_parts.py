@@ -360,7 +360,7 @@ def test_rounded_projecting_boot_revisions():
                 assert new['bevel'] > old['bevel']
             else:
                 assert new == old
-        assert sum(p['part'] == ref.replace('@2', '@4') for p in assembly['placements']) == 1
+        assert sum(p['part'] == ref.replace('@2', '@5') for p in assembly['placements']) == 1
 
 
 def test_shaped_boot_revisions():
@@ -377,7 +377,7 @@ def test_shaped_boot_revisions():
         assert atoms[side+'_ankle']['primitive'] == 'cone'
         assert any(o['operation'] == 'UNION' and o['operand'] == side+'_boot_instep' for o in p['operations'])
         assert p['operations'][-1]['operand'] == side+'_sole_arch'
-        assert sum(placement['part'] == ref.replace('@3','@4') for placement in assembly['placements']) == 1
+        assert sum(placement['part'] == ref.replace('@3','@5') for placement in assembly['placements']) == 1
 
 
 def test_cloth_waist_wrap_shared_recipe():
