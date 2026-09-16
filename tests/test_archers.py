@@ -60,7 +60,7 @@ def test_thirteen_variants_share_parts_and_have_the_requested_equipment():
     for variant in index:
         model = {p['instance_id']:p for p in load_model(ROOT/'specs'/variant['model'],definitions)['placements']}
         assert model['bow-ferrule']['part'] == 'aurelian.archer-bow-ferrule@3'
-        assert model['tunic']['part'] == 'aurelian.archer-tunic@4'
+        assert model['tunic']['part'] == 'aurelian.archer-tunic@5'
         for slot in counts:
             counts[slot] += slot in model
         if variant['state'] == 'nocked':
@@ -114,7 +114,14 @@ def test_pose_transforms_preserve_shared_geometry_cache_keys(tmp_path):
     assert turned['head']['mount'] == multiply(recipe['transform'],base['head']['mount'])
     assert turned['bow']['mount'] == multiply(recipe['transform'],multiply(recipe['transforms']['bow'],base['bow']['mount']))
     jobs = [prepare(model,seed=1001,cache=tmp_path) for model in (first,second)]
-    assert {ref:a['key'] for ref,a in jobs[0]['assets'].items()} == {ref:a['key'] for ref,a in jobs[1]['assets'].items()}
+    # The turned bow needs a hand-only grip revision; every other part is reused.
+    for slot in base:
+        if slot=='bow-arm':
+            assert base[slot]['part'] != turned[slot]['part']
+        else:
+            ref=base[slot]['part']
+            assert ref==turned[slot]['part']
+            assert jobs[0]['assets'][ref]['key']==jobs[1]['assets'][ref]['key']
 
 
 def test_model_transforms_reject_unknown_slots_and_nonrigid_matrices(tmp_path):

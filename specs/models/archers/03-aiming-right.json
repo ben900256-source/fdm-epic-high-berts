@@ -7,11 +7,43 @@
     "origin_mm": [
       0,
       0,
-      1
+      0
     ]
   },
   "remove": [],
-  "parts": [],
+  "parts": [
+    {
+      "instance_id": "bow-arm",
+      "part": "aurelian.archer-bow-arm@9",
+      "definition_sha256": "391eff36a1bcd2216598f6a3b0bfbe8bf6c2aba9b85854e6326ed6c329f9a02d",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
   "transforms": {
     "bow": [
       [

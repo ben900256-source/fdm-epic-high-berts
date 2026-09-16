@@ -7,7 +7,7 @@
     "origin_mm": [
       0,
       0,
-      1
+      0
     ]
   },
   "remove": [
@@ -23,20 +23,20 @@
   "parts": [
     {
       "instance_id": "right-arm",
-      "part": "aurelian.spearman-sword-raised-arm@1",
-      "definition_sha256": "db596940618b012ad45cf762154a2a5e809d6716abe586e70d55a0aa734fb6d1",
+      "part": "aurelian.spearman-sword-raised-arm@6",
+      "definition_sha256": "c582b142769241402fdca8002d12e271d8aae337a125f5cad38e0865fe32daab",
       "mount": [
         [
-          0.999390827,
-          0.034868884,
-          -0.001461439,
-          -0.002119087
+          0.9993908269999999,
+          0.034868883999999996,
+          -0.0014614389999999997,
+          -0.0021190869999999995
         ],
         [
-          -0.034899497,
-          0.998514191,
-          -0.041850144,
-          -0.060682709
+          -0.03489949699999999,
+          0.9985141909999998,
+          -0.04185014399999999,
+          -0.060682708999999994
         ],
         [
           0.0,
@@ -116,8 +116,8 @@
     },
     {
       "instance_id": "left-arm",
-      "part": "aurelian.spearman-hawk-arm@1",
-      "definition_sha256": "bd096b95432e72192ab8bfa1636662ba1efaa585aa4f56a0ac1522d0b66c8a3a",
+      "part": "aurelian.spearman-hawk-arm@5",
+      "definition_sha256": "76729ec0d0c082f559553f7f039ce5c0fe20e8460e743949143c03a19be46b2c",
       "mount": [
         [
           0.999390827,

@@ -67,7 +67,8 @@ def test_trial_skirt_recipe_golden_and_outward_open_recesses():
             assert atom['location'][1]-atom['dimensions'][1]/2 >= .099
             assert atom['location'][1]+atom['dimensions'][1]/2 > .21
     trial = resolve_assembly(json.loads((root/'specs/elf-spearmen-print-trial.json').read_text()), definitions)
-    source = resolve_assembly(json.loads((root/'specs/elf-modular-visual.json').read_text()), definitions)
+    # The manufacturing trial predates later visual revisions; its source is pinned.
+    source = resolve_assembly(json.loads((root/'tests/fixtures/print-trial-source-assembly.json').read_text()), definitions)
     assert len(trial['placements']) == len(source['placements'])+10
     source_parts = {p['instance_id']:p for p in source['placements']}
     for left in trial['placements']:

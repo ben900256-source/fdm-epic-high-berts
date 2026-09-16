@@ -2,7 +2,15 @@ aside{width:310px!important;top:80px;max-height:calc(100vh - 130px)}
 aside>strong{display:none}.tabs{display:flex;gap:5px}.tabs button{flex:1;padding:9px 4px}.tabs button[aria-pressed=true]{background:#53694e;border-color:#91a482}
 [hidden]{display:none!important}.hint{font-size:12px;line-height:1.5;color:#aebdc7}details{margin-top:16px}summary{cursor:pointer;color:#d3ddca;font-size:13px;padding:6px 0}
 input[type=number],textarea{width:100%;background:#18232c;border:1px solid #53616a;border-radius:6px;color:#eee9df;padding:9px;font:inherit}textarea{resize:vertical}
-.row-slot{display:grid;grid-template-columns:1fr 30px;gap:5px}.row-slot label{grid-column:1/-1;margin:9px 0 0;font-size:12px}.row-slot select{font-size:12px;padding:8px 4px}.row-slot button{padding:3px}
+.row-slot{display:grid;grid-template-columns:1fr;gap:5px}.row-slot label{margin:9px 0 0;font-size:12px}.row-slot select{font-size:12px;padding:8px 4px}
 .primary{margin-top:12px;width:100%;background:#4e6748}button:disabled{opacity:.45;cursor:default}#workshop-error{color:#ffc1a7;font-size:12px}#row-status,#feedback-status{font-size:12px;line-height:1.5;color:#d9e7cc}#variant-pool label{font-size:12px;margin:7px 0}
 #export-jobs{position:absolute;right:20px;top:85px;width:255px;max-height:calc(100vh - 145px);overflow:auto;padding:15px;background:#222b33ed;border:1px solid #43505a;border-radius:12px}#export-jobs h2{font-size:15px;margin:0}.job{border-top:1px solid #43505a;margin-top:12px;padding-top:12px;font-size:12px;line-height:1.5}.job p{overflow-wrap:anywhere}.job a{display:block;color:#c6deb6;margin-top:8px}
 @media(max-width:950px){#export-jobs{position:static;width:auto;margin:14px 12px;background:#222b33}body{overflow:auto}aside{width:250px!important}#export-jobs:empty{display:none}}
+progress{display:block;width:100%;height:9px;border:0;border-radius:8px;overflow:hidden;accent-color:#b5ce94;background:#35434a}
+progress::-webkit-progress-bar{background:#35434a;border-radius:8px}progress::-webkit-progress-value{background:#b5ce94;border-radius:8px}progress::-moz-progress-bar{background:#b5ce94;border-radius:8px}
+progress:indeterminate{background:linear-gradient(90deg,#35434a 25%,#b5ce94 50%,#35434a 75%);background-size:200% 100%;animation:activity 1.6s linear infinite}
+progress:indeterminate::-webkit-progress-bar{background:transparent}
+@keyframes activity{from{background-position:100% 0}to{background-position:-100% 0}}
+#activity-progress{position:fixed;z-index:10;bottom:48px;left:50%;transform:translateX(-50%);width:min(430px,calc(100vw - 40px));padding:13px 16px;border:1px solid #71866c;border-radius:10px;background:#222b33f5;box-shadow:0 6px 24px #0005;pointer-events:none}
+#activity-label{margin:0 0 9px;font-size:13px;color:#e0ead8}.job progress{margin:10px 0}
+@media(prefers-reduced-motion:reduce){progress:indeterminate{animation:none}}

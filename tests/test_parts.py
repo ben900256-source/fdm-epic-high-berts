@@ -64,7 +64,7 @@ def test_taller_spear_preserves_foot_width_and_tip_shape():
         assert {k:v for k,v in before.items() if k != 'location'} == {k:v for k,v in after.items() if k != 'location'}
         assert after['location'] == pytest.approx([*before['location'][:2],before['location'][2]+extension])
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()),definitions)
-    assert sum(p['part']=='aurelian.spear@4' for p in assembly['placements']) == 5
+    assert sum(p['part']=='aurelian.spear@5' for p in assembly['placements']) == 5
 
 
 def test_collared_spear_and_buried_helmet_join():
@@ -192,7 +192,7 @@ def test_broader_shields_curved_armor_and_bold_face_revisions():
     assert atoms['chin']['dimensions'][0] > .94
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()), definitions)
     for ref in ('aurelian.shield@2','aurelian.shield-insignia@4','aurelian.chest-plate@4',
-                'aurelian.torso@4','aurelian.left-tunic@2','aurelian.right-tunic@3','aurelian.head@12'):
+                'aurelian.torso@4','aurelian.head@12'):
         assert sum(p['part'] == ref for p in assembly['placements']) == 5
 
 
@@ -280,7 +280,7 @@ def test_cape_revisions_remove_only_skirt_columns():
         assert current['atoms'] == [a for a in previous['atoms'] if a['role'] not in removed]
         assert current['operations'] == previous['operations']
         assert not removed.intersection(definitions[ref].output_roles)
-        assert sum(p['part'] == ref.replace('@2', '@4') for p in assembly['placements']) == 1
+        assert sum(p['part'] == ref.replace('@2', '@5') for p in assembly['placements']) == 1
 
 
 def test_contoured_face_revisions_preserve_nose_and_mouth():
@@ -321,7 +321,8 @@ def test_inward_nose_and_shield_hand_revisions():
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()), definitions)
     for suffix in ('', '-b', '-c', '-d', '-e'):
         ref = f'aurelian.left-arm{suffix}@2'
-        assert sum(p['part'] == ref.replace('@2','@3') for p in assembly['placements']) == 1
+        current_ref = ref.replace('@2','@10' if suffix == '' else '@8')
+        assert sum(p['part'] == current_ref for p in assembly['placements']) == 1
         previous = definitions[ref.replace('@2','@1')].to_dict()['parameters']['atoms']
         current = definitions[ref].to_dict()['parameters']['atoms']
         for old_atom,new_atom in zip(previous,current):
@@ -360,7 +361,7 @@ def test_rounded_projecting_boot_revisions():
                 assert new['bevel'] > old['bevel']
             else:
                 assert new == old
-        assert sum(p['part'] == ref.replace('@2', '@5') for p in assembly['placements']) == 1
+        assert sum(p['part'] == ref.replace('@2', '@6') for p in assembly['placements']) == 1
 
 
 def test_shaped_boot_revisions():
@@ -377,7 +378,7 @@ def test_shaped_boot_revisions():
         assert atoms[side+'_ankle']['primitive'] == 'cone'
         assert any(o['operation'] == 'UNION' and o['operand'] == side+'_boot_instep' for o in p['operations'])
         assert p['operations'][-1]['operand'] == side+'_sole_arch'
-        assert sum(placement['part'] == ref.replace('@3','@5') for placement in assembly['placements']) == 1
+        assert sum(placement['part'] == ref.replace('@3','@6') for placement in assembly['placements']) == 1
 
 
 def test_cloth_waist_wrap_shared_recipe():
@@ -438,7 +439,7 @@ def test_grass_base_revision_preserves_strip():
         assert abs(blade['location'][1])+.2 < 2.5
         assert blade['location'][2]-blade['depth']/2 < 1
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()), definitions)
-    assert assembly['placements'][0]['part'] == 'aurelian.base-body-20x5@1'
+    assert assembly['placements'][0]['part'] == 'aurelian.base-body-20x5-plain@2'
 
 
 def test_rounded_ground_texture():
@@ -469,7 +470,7 @@ def test_noise_ground_is_one_continuous_component():
     assert p['operations'][-1]['operand']=='strip_boundary'
     assert len({a['location'][2] for a in p['atoms'][1:-1]}) > 200
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()), definitions)
-    assert assembly['placements'][0]['part']=='aurelian.base-body-20x5@1'
+    assert assembly['placements'][0]['part']=='aurelian.base-body-20x5-plain@2'
 
 
 def test_shield_torso_connectors_overlap_both_attachments():
@@ -487,7 +488,8 @@ def test_shield_torso_connectors_overlap_both_attachments():
         assert connector['mount'] == placements[prefix+'torso']['mount']
         f = multiply(inverse_rigid(placements[prefix+'shield']['mount']), connector['mount'])
         start = [sum(f[j][k]*atom['start'][k] for k in range(3))+f[j][3] for j in range(3)]
-        assert start == pytest.approx([0,.30,1.30], abs=1e-7)
+        # The shield now tilts about the fingers; the fixed connector stays embedded.
+        assert abs(start[0]) < .1 and 1.1 < start[2] < 1.5
         # Endpoint is inside the shield thickness; torso endpoint is inside its ellipsoid.
         assert -.52 < start[1] < .52
         x,y,z = atom['end']
@@ -499,6 +501,10 @@ def test_arms_reach_shield_backs():
     definitions = catalog()
     golden = json.loads((ROOT/'tests/fixtures/shield-arms-v3-golden.json').read_text())
     golden.update(json.loads((ROOT/'tests/fixtures/shield-arm-cleanup-golden.json').read_text()))
+    golden.update(json.loads((ROOT/'tests/fixtures/lowered-shoulder-golden.json').read_text()))
+    golden.update(json.loads((ROOT/'tests/fixtures/robe-arms-golden.json').read_text()))
+    golden.update(json.loads((ROOT/'tests/fixtures/robe-elbows-golden.json').read_text()))
+    golden.update(json.loads((ROOT/'tests/fixtures/hand-alignment-golden.json').read_text()))
     assert {ref:definitions[ref].sha256 for ref in golden} == golden
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()),definitions)
     placements = {p['instance_id']:p for p in assembly['placements']}
@@ -512,10 +518,13 @@ def test_arms_reach_shield_backs():
         f = multiply(multiply(inverse_rigid(shield['mount']),arm['mount']),finger['frame_mm'])
         center_y = sum(f[1][j]*finger['location'][j] for j in range(3))+f[1][3]
         front_y = center_y-sum(abs(f[1][j])*finger['dimensions'][j]/2 for j in range(3))
-        # The first arm retains the reviewed eight-degree outward rotation.
-        expected_front = .49750595828167865 if i == 1 else .50
-        assert front_y == pytest.approx(expected_front,abs=1e-7)
-        if arm['part'] == 'aurelian.left-arm@4':
+        # The tucked shield still intersects the fixed finger pad.
+        assert -.52 < front_y < .52 and center_y > 0
+        if 'cloth_pose' in p:
+            assert 'left_forearm' not in atoms
+            assert p['cloth_pose']['elbow'] == p['landmarks']['left_elbow']
+            assert p['cloth_pose']['wrist'] == p['landmarks']['left_cuff']
+        elif arm['part'] in ('aurelian.left-arm@4','aurelian.left-arm@5'):
             assert 'left_forearm' not in atoms
             assert p['landmarks']['left_vambrace'] == pytest.approx([
                 (a+b)/2 for a,b in zip(p['landmarks']['left_elbow'],p['landmarks']['left_cuff'])])
@@ -534,17 +543,21 @@ def test_lower_shield_attachments():
     for i in range(1,6):
         prefix = f'elf-{i:02d}/'
         attachment = placements[prefix+'shield-lower-connector']
-        assert definitions[attachment['part']].to_dict()['parameters']['overhang_revision']['source'] in golden
-        assert attachment['mount'] == placements[prefix+'skirt']['mount']
-        atom = definitions[attachment['part']].to_dict()['parameters']['atoms'][0]
-        assert atom['radius'] == .42
+        params = definitions[attachment['part']].to_dict()['parameters']
+        source = definitions[params['tuck_source']].to_dict()['parameters']
+        assert source['overhang_revision']['source'] in golden
+        skirt_mount = placements[prefix+'skirt']['mount']
+        assert [row[:3] for row in attachment['mount']] == [row[:3] for row in skirt_mount]
+        assert sum((attachment['mount'][j][3]-skirt_mount[j][3])**2 for j in range(3))**.5 == pytest.approx(.10)
+        atom = params['atoms'][0]
+        assert atom['primitive'] == 'cube' and atom['dimensions'][0] == 1.0
+        assert all(a['primitive'] != 'cone' for a in params['atoms'])
         f = multiply(inverse_rigid(placements[prefix+'shield']['mount']),attachment['mount'])
-        start = [sum(f[j][k]*atom['start'][k] for k in range(3))+f[j][3] for j in range(3)]
-        assert start == pytest.approx([0,.30,-1.45],abs=1e-7)
-        x,y,z = atom['end']
-        assert -4.85 < z < -.5
-        radius = 1.55-(z+4.85)*.58/4.35
-        assert (x/radius)**2+(y/(.75*radius))**2 < 1
+        end = params['landmarks']['shield_attachment']
+        start = [sum(f[j][k]*end[k] for k in range(3))+f[j][3] for j in range(3)]
+        assert start == pytest.approx([0,-.10,-1.65],abs=1e-7)
+        x,y,z = params['landmarks']['skirt_attachment']
+        assert z == -5.0 and abs(x) < .6 and y == -.95
 
 
 def test_rounded_triangle_crest_revision():

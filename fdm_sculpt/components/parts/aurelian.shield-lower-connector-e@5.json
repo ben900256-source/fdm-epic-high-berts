@@ -1,0 +1,323 @@
+{
+  "component_id": "aurelian.shield-lower-connector-e",
+  "version": 5,
+  "name": "Flat concealed backing for near-upright shield",
+  "family": "shield-lower-connector",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "concealed_hem_join"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.025,
+        "dimensions": [
+          1.0,
+          1.012992181,
+          1.6755308829999997
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.9908941992577948,
+            0.1207894281809964,
+            -0.05948613037040152,
+            -0.21239495882985904
+          ],
+          [
+            -0.12111809001691322,
+            0.9926362140964664,
+            -0.001937439220210189,
+            -1.1903206279784906
+          ],
+          [
+            0.0588140653232914,
+            0.009124642972737917,
+            0.9982272524069874,
+            -2.1749591293774717
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0.016496090500000005,
+          -2.2877654415
+        ],
+        "primitive": "cube",
+        "role": "concealed_hem_join"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16,
+          16,
+          16
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9908941992577948,
+            0.13332109619069116,
+            0.018819430842854208,
+            -0.13238423357180773
+          ],
+          [
+            -0.12111809001691322,
+            0.8215549982143293,
+            0.5571156003160845,
+            -1.6721787651104674
+          ],
+          [
+            0.0588140653232914,
+            -0.554321991444491,
+            0.8302216790462634,
+            -4.515281975066464
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          8
+        ],
+        "primitive": "cube",
+        "role": "web_rising_underside"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16,
+          16,
+          16
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.05948613037040152,
+            -0.33510400865971546,
+            0.9403013896954676,
+            -0.46976061849010625
+          ],
+          [
+            0.001937439220210189,
+            0.9420064771756449,
+            0.33558909729644415,
+            -1.6524887548823766
+          ],
+          [
+            -0.9982272524069874,
+            -0.018141120836215444,
+            0.056685563629888636,
+            -2.1911930174987715
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          8
+        ],
+        "primitive": "cube",
+        "role": "web_left_taper"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16,
+          16,
+          16
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            -0.05948613037040152,
+            0.5511787065605448,
+            -0.8322640407450529,
+            -0.07340293878698831
+          ],
+          [
+            -0.001937439220210189,
+            0.8336751641425422,
+            0.5522517233626494,
+            -1.7009359908891417
+          ],
+          [
+            0.9982272524069874,
+            0.034463778402181636,
+            -0.04852423484690553,
+            -2.167667391369455
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          8
+        ],
+        "primitive": "cube",
+        "role": "web_right_taper"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16,
+          16,
+          16
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.08
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          8
+        ],
+        "primitive": "cube",
+        "role": "web_hem_floor"
+      }
+    ],
+    "design": {
+      "embedded_width_mm": 1.0,
+      "front_tip_width_mm": 0.4,
+      "inward_angle_degrees": 3,
+      "offset_shield_mm": [
+        0,
+        0.6,
+        0
+      ],
+      "pivot_shield_mm": [
+        -0.320000003,
+        0.500000001,
+        1.425
+      ],
+      "style": "flat tapered backing; no cone"
+    },
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "shield_attachment": [
+        -0.138400729,
+        -1.385651096,
+        -3.823859024
+      ],
+      "shield_tip_front": [
+        -0.127795572,
+        -1.602820164,
+        -4.449758479
+      ],
+      "skirt_attachment": [
+        -0.127795572,
+        -0.95,
+        -5.0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "web_rising_underside",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "concealed_hem_join"
+      },
+      {
+        "operand": "web_left_taper",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "concealed_hem_join"
+      },
+      {
+        "operand": "web_right_taper",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "concealed_hem_join"
+      },
+      {
+        "operand": "web_hem_floor",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "concealed_hem_join"
+      }
+    ],
+    "provenance": "Near-upright shield moved toward the body. Flat Exact-cut backing rooted inside the mail hem meets the lower tip; tapered sides stay behind the shield. No round cone or ground foot. Visual-only.",
+    "seed": 1001,
+    "shield_mount": [
+      [
+        0.977812414,
+        0.2074331569779931,
+        -0.029229578748749555,
+        7.662415847272404
+      ],
+      [
+        -0.207840445,
+        0.9780936083629644,
+        -0.01162936492924907,
+        -1.1563528430905494
+      ],
+      [
+        0.026176948,
+        0.017446425464208243,
+        0.9995050726049416,
+        5.01758918663121
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "tuck_source": "aurelian.shield-lower-connector-e@2",
+    "tuck_source_sha256": "834dfa09ff42d77cf4b2e5a803950a9c4c078f44dc40b229dffb4fc06ca58535"
+  }
+}

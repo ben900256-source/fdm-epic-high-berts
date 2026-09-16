@@ -5,6 +5,7 @@ import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { OutlinePass } from 'three/addons/postprocessing/OutlinePass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { initWorkshop } from './workshop-ui.js';
+import { beginProgress } from './progress.js';
 
 const $ = id => document.getElementById(id);
 const downloads=document.createElement('section');downloads.id='downloads';
@@ -187,6 +188,7 @@ async function refresh() {
   busy=true;
   const selected=$('review').value;
   const requestedWorkshop=workshopReview;
+  let activity;
   try {
     const index=await (await checkedFetch('/data/reviews.json')).json();
     if($('review').value!==selected){pendingRefresh=true;return;}
@@ -203,12 +205,21 @@ async function refresh() {
     if(next.revision!==manifest?.revision) {
       $('status').textContent='Loading updated model…';
       const loaded=new Map(),pending=Object.entries(next.assets);
+      const total=pending.length;let completed=0;
+      activity=beginProgress('Loading preview parts…');
+      activity.update(`Loading parts · 0 of ${total}`,0,total);
       await Promise.all(Array.from({length:4},async()=>{
-        while(pending.length){const [ref,asset]=pending.shift();loaded.set(ref,await geometry(asset));}
+        while(pending.length){
+          const [ref,asset]=pending.shift();loaded.set(ref,await geometry(asset));
+          activity.update(`Loading parts · ${++completed} of ${total}`,completed,total);
+        }
       }));
       // A selection made during loading wins over the earlier request.
       if($('review').value!==selected || requestedWorkshop!==workshopReview) {pendingRefresh=true;return;}
       const replacement=new THREE.Group();
+      let assembled=0;
+      activity.update('Drawing preview…',0,next.assembly.placements.length);
+      await new Promise(requestAnimationFrame);
       for(const p of next.assembly.placements) {
         if(next.assets[p.part].definition_sha256!==p.definition_sha256) throw new Error('Component revision mismatch.');
         for(const [pieceIndex,piece] of loaded.get(p.part).entries()){
@@ -222,7 +233,11 @@ async function refresh() {
         mesh.matrixAutoUpdate=false; mesh.matrix.set(...p.mount.flat()); mesh.userData={...p,geometry_role:piece.role,piece_id:pieceId};
         replacement.add(mesh);
         }
+        assembled++;
+        activity.update(`Drawing preview · ${assembled} of ${next.assembly.placements.length} components`,assembled,next.assembly.placements.length);
+        if(assembled%8===0)await new Promise(requestAnimationFrame);
       }
+      if($('review').value!==selected || requestedWorkshop!==workshopReview) {pendingRefresh=true;return;}
       const first=!manifest, changedAssembly=manifest?.assembly.assembly_id!==next.assembly.assembly_id;
       clearHover();scene.remove(model); model=replacement; scene.add(model); manifest=next;
       updateDownload(next);
@@ -248,7 +263,7 @@ async function refresh() {
     $('status').textContent=manifest?'Update unavailable · showing previous model':'Model unavailable';
     $('error').textContent=error.message;
     return false;
-  } finally {busy=false;if(pendingRefresh){pendingRefresh=false;refresh();}}
+  } finally {activity?.finish();busy=false;if(pendingRefresh){pendingRefresh=false;refresh();}}
 }
 $('review').onchange=()=>{workshopReview=null;workshopSource=null;refresh();};
 for(const id of ['figure','part']) $(id).onchange=()=>{visibility();fit();};

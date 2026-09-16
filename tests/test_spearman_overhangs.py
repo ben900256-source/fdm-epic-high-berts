@@ -24,11 +24,17 @@ def test_underside_revisions_match_goldens_and_resolve():
         assert {p.reference:p.sha256 for p in refined_parts(definitions, 1001)} == refined
     assert {ref:definitions[ref].sha256 for ref in refined} == refined
     superseded = {p.to_dict()['parameters']['overhang_revision']['source'] for p in refined_parts(definitions, 1001)}
-    assert (set(golden)-superseded-{'aurelian.torso@3'}) | (set(refined)-{'aurelian.shield@4'}) <= refs
+    expected = (set(golden)-superseded-{'aurelian.torso@3'}) | (set(refined)-{'aurelian.shield@4'})
+    replacements = {'aurelian.skirt@7':'aurelian.skirt@8', 'aurelian.spear@4':'aurelian.spear@5'}
+    for suffix in ('','-b','-c','-d','-e'):
+        replacements[f'aurelian.right-arm{suffix}@3']=f'aurelian.right-arm{suffix}@{8 if suffix in ("-d","-e") else 7}'
+        replacements[f'aurelian.shield-lower-connector{suffix}@2']=f'aurelian.shield-lower-connector{suffix}@6'
+    assert {replacements.get(ref,ref) for ref in expected} <= refs
     sleeve_golden = json.loads((ROOT/'tests/fixtures/spearman-overhang-sleeve-golden.json').read_text())
     sleeve = sleeve_part(definitions, 1001)
     assert {sleeve.reference:sleeve.sha256} == sleeve_golden
-    assert sleeve.reference in refs and definitions[sleeve.reference].sha256 == sleeve.sha256
+    assert definitions[sleeve.reference].sha256 == sleeve.sha256
+    assert not any(p['instance_id'].endswith(('/left-tunic','/right-tunic')) for p in assembly['placements'])
     shield_golden = json.loads((ROOT/'tests/fixtures/spearman-overhang-shield-v5-golden.json').read_text())
     shield = deposited_shield_part(definitions, 1001)
     assert {shield.reference:shield.sha256} == shield_golden
@@ -37,8 +43,8 @@ def test_underside_revisions_match_goldens_and_resolve():
     for path in sorted((ROOT/'specs/models/spearmen').glob('*.json')):
         assert load_model(path, definitions)['placements']
     study = load_assembly(ROOT/'specs/elf-spearmen-overhang-study.json', definitions)
-    assert len(study['placements']) == 105
-    assert next(p['part'] for p in study['placements'] if p['instance_id']=='strip') == 'aurelian.base-body-20x5-plain@1'
+    assert len(study['placements']) == 95
+    assert next(p['part'] for p in study['placements'] if p['instance_id']=='strip') == 'aurelian.base-body-20x5-plain@2'
 
 
 def test_approved_face_and_helmet_and_spear_grip_are_preserved():

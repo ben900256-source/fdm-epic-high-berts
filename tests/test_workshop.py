@@ -12,12 +12,13 @@ def request(**changes):
     return value
 
 
-def test_defaults_allow_duplicates_and_reject_two_command_models():
+def test_manual_slots_override_randomization_limits():
     assert w.choose(request()) == request()['slots']
-    with pytest.raises(ValueError,match='command-model'):
-        w.choose(request(slots=['spearmen/10-hawk-sergeant']*2+request()['slots'][:3]))
-    with pytest.raises(ValueError,match='Repeated'):
-        w.choose(request(unique=True))
+    slots=['spearmen/10-hawk-sergeant']*2+request()['slots'][:3]
+    value=request(slots=slots,unique=True,max_command=0)
+    assert w.choose(value)==slots
+    assert w.plan(value)['slots']==slots
+    assert w.choose(request(unique=True))==request()['slots']
 
 
 def test_random_is_deterministic_pool_limited_and_order_independent():
@@ -30,6 +31,26 @@ def test_random_is_deterministic_pool_limited_and_order_independent():
     assert w.choose(dict(value,seed=27))!=first
     with pytest.raises(ValueError,match='cannot fill'):
         w.choose(dict(value,pool=pool[-2:]))
+
+
+def test_swordsmen_are_separate_and_spearman_sword_sergeant_is_command():
+    entries=w.models()
+    swords=[m['id'] for m in entries if m['family']=='swordsmen']
+    assert len(swords)==3
+    spears=[m for m in entries if m['family']=='spearmen']
+    assert not any('-sword-' in m['id'] for m in spears if not m['command'])
+    sergeant=next(m for m in spears if m['label']=='Sword sergeant')
+    assert sergeant['command']
+    assert w.choose(request(slots=[sergeant['id']]+request()['slots'][:4]))[0]==sergeant['id']
+    slots=[sergeant['id']]*2+request()['slots'][:3]
+    assert w.choose(request(slots=slots))==slots
+    with pytest.raises(ValueError,match='selected unit type'):
+        w.choose(request(slots=[swords[0]]+request()['slots'][:4]))
+    assert w.choose(request(family='swordsmen',slots=(swords*2)[:5]))==(swords*2)[:5]
+    pool=[m['id'] for m in spears]
+    for seed in range(20):
+        row=w.choose(request(mode='random',pool=pool,seed=seed,max_command=0))
+        assert all('-sword-' not in item for item in row)
 
 
 @pytest.mark.parametrize('changes',[
@@ -46,7 +67,8 @@ def test_plan_pins_models_and_moves_whole_figures_without_geometry_changes():
     value=request()
     a=w.plan(value);b=w.plan(value)
     assert a==b
-    assert a['base_mm']==[20,5,2] and a['spacing_mm']==4
+    assert a['base_mm']==[20,5,1] and a['spacing_mm']==4
+    assert a['terrain_relief_mm']==.5
     groups=[[p for p in a['assembly']['placements'] if p['instance_id'].startswith(f'row-{i:02}/')] for i in (1,2)]
     assert len(groups[0])==len(groups[1])>10
     for left,right in zip(*groups):
@@ -60,6 +82,43 @@ def test_export_requires_exact_preview(monkeypatch):
     monkeypatch.setattr(w,'plan',lambda _:dict(plan_sha256='current'))
     with pytest.raises(ValueError,match='Preview this exact'):
         w.start_export(dict(plan_sha256='old'))
+
+
+def test_magnet_holes_are_opt_in_and_raise_the_terrain_and_figures():
+    solid=w.plan(request())
+    magnets=w.plan(request(magnet_holes=True))
+    assert solid['magnet_holes'] is False and magnets['magnet_holes'] is True
+    assert solid['plan_sha256']!=magnets['plan_sha256']
+    assert solid['slots']==magnets['slots']
+    left={p['instance_id']:p for p in solid['assembly']['placements']}
+    right={p['instance_id']:p for p in magnets['assembly']['placements']}
+    assert left['strip']['part']=='aurelian.base-body-20x5-plain@2'
+    assert right['strip']['part']=='aurelian.base-body-20x5@1'
+    assert left['strip']['mount']==right['strip']['mount']
+    assert solid['base_mm']==[20,5,1] and magnets['base_mm']==[20,5,2]
+    for key in left.keys()-{'strip'}:
+        expected=deepcopy(left[key])
+        expected['mount'][2][3]+=1
+        assert expected==right[key]
+
+
+@pytest.mark.parametrize('value',[None,1,'true'])
+def test_magnet_option_rejects_non_booleans(value):
+    with pytest.raises(ValueError,match='Magnet holes'):
+        w.plan(request(magnet_holes=value))
+
+
+def test_solid_base_recipe_golden_and_resolver():
+    from fdm_sculpt.components.terrain import base_body
+    from fdm_sculpt.components.parts import isolated_part,resolve_assembly,catalog
+    part=base_body('aurelian.base-body-20x5-plain',1,width=20,length=5,thickness=2,magnet='none')
+    golden=json.loads((w.ROOT/'tests/fixtures/workshop-bases-golden.json').read_text())
+    definitions=catalog()
+    assert part.sha256==golden[part.reference]==definitions[part.reference].sha256
+    parameters=part.to_dict()['parameters']
+    assert len(parameters['atoms'])==1 and parameters['operations']==[]
+    assert parameters['recipe']['centers']==[]
+    resolve_assembly(isolated_part(part.reference,definitions),definitions)
 
 
 def test_worker_failure_exposes_report_but_no_download(tmp_path,monkeypatch):

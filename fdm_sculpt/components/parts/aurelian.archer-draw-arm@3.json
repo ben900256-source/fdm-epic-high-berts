@@ -1,0 +1,1121 @@
+{
+  "component_id": "aurelian.archer-draw-arm",
+  "version": 3,
+  "name": "Archer Draw Arm with broad readable fist \u2014 posed robe arm",
+  "family": "archer-draw-arm",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "robe_sleeve",
+    "archer-draw-arm_palm",
+    "archer-draw-arm_fingers",
+    "archer-draw-arm_thumb"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.08,
+        "bevel_segments": 3,
+        "depth": 1.0346496991735894,
+        "export": true,
+        "frame_mm": [
+          [
+            0.8700221858486121,
+            0.009530038473401524,
+            0.4929204545338917,
+            0.29500000000000004
+          ],
+          [
+            0.0,
+            0.999813153959505,
+            -0.019330213903289886,
+            0.96
+          ],
+          [
+            -0.49301257198088055,
+            0.0168177149530615,
+            0.8698596256480436,
+            1.15
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.39,
+        "radius2": 0.53,
+        "role": "robe_sleeve",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 48
+      },
+      {
+        "dimensions": [
+          0.79,
+          0.79,
+          0.6199999999999999
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.8700221858486121,
+            0.009530038473401536,
+            0.4929204545338918,
+            0.099150454544067
+          ],
+          [
+            0.0,
+            0.9998131539595052,
+            -0.019330213903289907,
+            0.9676803743316051
+          ],
+          [
+            -0.49301257198088067,
+            0.016817714953061516,
+            0.8698596256480436,
+            0.8043831550777654
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "cloth_shoulder",
+        "segments": 24
+      },
+      {
+        "bevel": 0.07,
+        "bevel_segments": 3,
+        "depth": 1.471724276862369,
+        "export": false,
+        "frame_mm": [
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.55
+          ],
+          [
+            -0.11684124756739735,
+            0.0,
+            -0.9931506043228762,
+            0.2191780725187451
+          ],
+          [
+            -0.9931506043228763,
+            0.0,
+            0.11684124756739733,
+            1.685979050291912
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.53,
+        "radius2": 0.33,
+        "role": "cloth_forearm",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 48
+      },
+      {
+        "dimensions": [
+          1.04,
+          1.04,
+          1.12
+        ],
+        "export": false,
+        "location": [
+          0.55,
+          0.95,
+          1.5199999999999996
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "cloth_elbow",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.72,
+          0.72,
+          0.7413895281800749
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9099281078752879,
+            0.34712971006353566,
+            0.2270061736819163,
+            0.46585
+          ],
+          [
+            0.0,
+            0.547311426714528,
+            -0.8369290305561804,
+            0.646354790457873
+          ],
+          [
+            -0.4147660045115784,
+            0.7615452491998842,
+            0.4980140509288747,
+            1.367611201122603
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "elbow_drape",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.29,
+          0.29,
+          0.7891576229509681
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.8263894150993659,
+            -0.08083419294459178,
+            0.5572668731072434,
+            0.6041236446116395
+          ],
+          [
+            0.0,
+            0.9896427243832575,
+            0.1435523530816673,
+            1.1385824761904257
+          ],
+          [
+            -0.5630990451170452,
+            -0.1186301450992967,
+            0.817830272160423,
+            0.9847456564131913
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "upper_cloth_fold_0",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.16,
+          0.16,
+          0.6082511043761303
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.8675857747540711,
+            -0.07161956754162739,
+            0.4921032015639896,
+            0.5566929216136036
+          ],
+          [
+            0.0,
+            0.9895747150423436,
+            0.14402042684586355,
+            1.3420519984582238
+          ],
+          [
+            -0.49728756614697117,
+            -0.12495007360548055,
+            0.8585409458270508,
+            1.0339862777180295
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "upper_cloth_valley_0",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.29,
+          0.29,
+          0.7891576229509681
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9387161697146779,
+            -0.0215814800058042,
+            0.3440148142696232,
+            0.14540271592367632
+          ],
+          [
+            0.0,
+            0.9980380019533794,
+            0.06261107455479586,
+            1.310251423935349
+          ],
+          [
+            -0.3446910975296639,
+            -0.0587740280877981,
+            0.9368744104233664,
+            1.24850238150848
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "upper_cloth_fold_1",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.16,
+          0.16,
+          0.6082511043761302
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9387959605537785,
+            0.004892476746521846,
+            0.34443897590022154,
+            -0.024889038289530152
+          ],
+          [
+            0.0,
+            0.9998991357519814,
+            -0.014202757564669417,
+            1.2444216435489497
+          ],
+          [
+            -0.34447372098305074,
+            0.01333349143043627,
+            0.9387012696051741,
+            1.361379824887377
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "upper_cloth_valley_1",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.29,
+          0.29,
+          0.7891576229509681
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9079460424240006,
+            0.07609262442132544,
+            0.41212121585192624,
+            -0.009023644611639459
+          ],
+          [
+            0.0,
+            0.983378470734878,
+            -0.18156757225653689,
+            0.781217523809574
+          ],
+          [
+            -0.41908708408467427,
+            0.16485355866285642,
+            0.8928545907086984,
+            1.3242543435868084
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "upper_cloth_fold_2",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.16,
+          0.16,
+          0.6082511043761303
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.872452955326399,
+            0.08902250274376468,
+            0.48052141965522094,
+            0.0537070783863965
+          ],
+          [
+            0.0,
+            0.9832684264779097,
+            -0.18216256885445967,
+            0.577148001541776
+          ],
+          [
+            -0.4886981079789776,
+            0.158928271546922,
+            0.8578554445597903,
+            1.3020137222819703
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "upper_cloth_valley_2",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.29,
+          0.29,
+          0.7891576229509681
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.7777581247221484,
+            0.06325003346054557,
+            0.6253732746895464,
+            0.4496972840763238
+          ],
+          [
+            0.0,
+            0.994924293104873,
+            -0.10062629372966515,
+            0.6095485760646508
+          ],
+          [
+            -0.6285636796925884,
+            0.07826291750892446,
+            0.7738104524457552,
+            1.0604976184915196
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "upper_cloth_fold_3",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.16,
+          0.16,
+          0.6082511043761301
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.7779180628647174,
+            0.015042688721480995,
+            0.6281856453189887,
+            0.6352890382895303
+          ],
+          [
+            0.0,
+            0.9997134118698447,
+            -0.023939384443927254,
+            0.6747783564510506
+          ],
+          [
+            -0.6283657274778801,
+            0.01862287957279364,
+            0.7776951207816671,
+            0.9746201751126227
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "upper_cloth_valley_3",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.29,
+          0.29,
+          1.1153968905091967
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.0,
+            0.9999553283382442,
+            0.00945205416584528,
+            0.7022836532992107
+          ],
+          [
+            -0.25821165635649246,
+            0.009131519611392708,
+            -0.9660452141961179,
+            0.1735131664922092
+          ],
+          [
+            -0.966088370969052,
+            -0.0024406305621341943,
+            0.2582001216127183,
+            1.3608070034051831
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "fore_cloth_fold_0",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.16,
+          0.16,
+          0.8630399072172231
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.0,
+            0.9975229547516522,
+            -0.0703416998908424,
+            0.8996187998188467
+          ],
+          [
+            -0.24492826789410063,
+            -0.06819917630681296,
+            -0.9671396051953761,
+            0.15868923378365365
+          ],
+          [
+            -0.9695412026244143,
+            0.017228670714990676,
+            0.2443215694919275,
+            1.4237425383989388
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "fore_cloth_valley_0",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.29,
+          0.29,
+          1.1153968905091964
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.0,
+            0.9896419518505248,
+            -0.1435576787827235,
+            0.87828035946465
+          ],
+          [
+            -0.12632148348966818,
+            -0.14240768935286974,
+            -0.9817142826821591,
+            0.2296628652795333
+          ],
+          [
+            -0.9919893561974188,
+            0.018134418950166892,
+            0.12501303948136908,
+            1.8380794430974376
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "fore_cloth_fold_1",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.16,
+          0.16,
+          0.8630399072172231
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.0,
+            0.991560302078302,
+            -0.12964631634715348,
+            0.8175079416437405
+          ],
+          [
+            -0.046092355867852514,
+            -0.1295085259830314,
+            -0.9905064545111524,
+            0.23079509216334504
+          ],
+          [
+            -0.998937182574836,
+            0.005975704150029183,
+            0.04570335030782843,
+            2.0366423346263147
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "fore_cloth_valley_1",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.29,
+          0.29,
+          1.1153968905091967
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.0,
+            0.9999553283382444,
+            -0.00945205416584528,
+            0.39771634670078937
+          ],
+          [
+            0.02694987315940226,
+            -0.009448621049392652,
+            -0.9995921307698241,
+            0.25022653999565586
+          ],
+          [
+            -0.9996367862062161,
+            -0.00025473166086533003,
+            -0.026948669263784125,
+            2.0128706781844796
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "fore_cloth_fold_2",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.16,
+          0.16,
+          0.8630399072172231
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.0,
+            0.9975229547516521,
+            0.07034169989084234,
+            0.20038120018115332
+          ],
+          [
+            0.013227831301564982,
+            0.0703355455838261,
+            -0.9974356798844137,
+            0.221201157055336
+          ],
+          [
+            -0.9999125084121397,
+            0.0009304681396213744,
+            -0.013195065364893491,
+            1.955093886208238
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "fore_cloth_valley_2",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.29,
+          0.29,
+          1.1153968905091964
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.0,
+            0.9896419518505247,
+            0.1435576787827235,
+            0.22171964053535015
+          ],
+          [
+            -0.10735035299272741,
+            0.14272809540675502,
+            -0.983923062283783,
+            0.19407684120833177
+          ],
+          [
+            -0.9942212539029412,
+            -0.015410967492141941,
+            0.10623841286756558,
+            1.5355982384922247
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "fore_cloth_fold_3",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.16,
+          0.16,
+          0.863039907217223
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.0,
+            0.9915603020783021,
+            0.12964631634715332,
+            0.2824920583562597
+          ],
+          [
+            -0.1870013890537575,
+            0.1273593098544911,
+            -0.9740688305686374,
+            0.1490952986756446
+          ],
+          [
+            -0.9823596492588472,
+            -0.024244041242620536,
+            0.18542315381920585,
+            1.3421940899808622
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "fore_cloth_valley_3",
+        "segments": 24
+      },
+      {
+        "bevel": 0.15,
+        "dimensions": [
+          1.3,
+          1.02,
+          1.2
+        ],
+        "export": true,
+        "location": [
+          0.55,
+          -0.75,
+          1.7999999999999998
+        ],
+        "primitive": "cube",
+        "role": "archer-draw-arm_palm"
+      },
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          1.15,
+          0.42,
+          0.9
+        ],
+        "export": true,
+        "location": [
+          0.67,
+          -1.1099999999999999,
+          1.8199999999999998
+        ],
+        "primitive": "cube",
+        "role": "archer-draw-arm_fingers"
+      },
+      {
+        "dimensions": [
+          0.55,
+          0.65,
+          0.65
+        ],
+        "export": true,
+        "location": [
+          1.07,
+          -0.87,
+          2.3
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "archer-draw-arm_thumb",
+        "segments": 32
+      }
+    ],
+    "cloth_pose": {
+      "elbow": [
+        0.55,
+        0.95,
+        1.5999999999999996
+      ],
+      "shoulder": [
+        0.04,
+        0.97,
+        0.7000000000000002
+      ],
+      "wrist": [
+        0.55,
+        -0.5116438549625097,
+        1.7719581005838245
+      ]
+    },
+    "landmarks": {
+      "elbow": [
+        0.55,
+        0.95,
+        1.5999999999999996
+      ],
+      "grip": [
+        0.55,
+        -0.75,
+        1.7999999999999998
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "shoulder": [
+        0.04,
+        0.97,
+        0.7000000000000002
+      ]
+    },
+    "operations": [
+      {
+        "operand": "cloth_shoulder",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "cloth_forearm",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "cloth_elbow",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "elbow_drape",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "upper_cloth_fold_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "upper_cloth_valley_0",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "upper_cloth_fold_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "upper_cloth_valley_1",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "upper_cloth_fold_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "upper_cloth_valley_2",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "upper_cloth_fold_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "upper_cloth_valley_3",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "fore_cloth_fold_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "fore_cloth_valley_0",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "fore_cloth_fold_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "fore_cloth_valley_1",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "fore_cloth_fold_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "fore_cloth_valley_2",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "fore_cloth_fold_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "fore_cloth_valley_3",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      }
+    ],
+    "provenance": "Continuous posed robe sleeve with elbow fullness, tension folds and gathered wrist. Original hands and mounts retained. Visual-only.",
+    "robe_source": "aurelian.archer-draw-arm@2",
+    "robe_source_sha256": "14baaa0a0847ec67e8a5286e1da4e742565bf210b1322563d4ad054c44c8efb2",
+    "seed": 1001
+  }
+}

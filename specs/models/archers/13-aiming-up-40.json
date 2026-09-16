@@ -7,15 +7,15 @@
     "origin_mm": [
       0,
       0,
-      1
+      0
     ]
   },
   "remove": [],
   "parts": [
     {
       "instance_id": "bow-arm",
-      "part": "aurelian.archer-bow-arm-elevated-40@1",
-      "definition_sha256": "d0e3b07604e6359191695ac2bd40c0f33107184e8b27bc2705f07e87f8d0b63a",
+      "part": "aurelian.archer-bow-arm-elevated-40@6",
+      "definition_sha256": "09ecc1474ef79cf7ca5a5c2a2a28f7d904d20f7d42d1237461f8587b04ffaea8",
       "mount": [
         [
           1.0,
@@ -45,8 +45,8 @@
     },
     {
       "instance_id": "draw-arm",
-      "part": "aurelian.archer-draw-arm-elevated-40@1",
-      "definition_sha256": "bc01cfe1b5b6d590b0a5c8d6dcd5dd5a2f1706f4806e69651c76dfca2c2ec119",
+      "part": "aurelian.archer-draw-arm-elevated-40@5",
+      "definition_sha256": "c4219f88625901ba75e25c568797ef9f51fd7dcd870dc095e03b860a1d66f840",
       "mount": [
         [
           1.0,

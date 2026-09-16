@@ -12,6 +12,8 @@ Use this as the starting point when designing a new piece or army variant.
 - Python 3.13, Blender 5.1.2 and PrusaSlicer 2.9.5 are the pinned tools.
 - The reference infantry are 8 mm sole-to-eye, five figures on a
   20 x 5 x 1 mm strip. New army layouts may compose other figures and bases.
+- Current infantry previews use a 1 mm base with 0.5 mm terrain relief.
+  Optional 3 x 1 mm magnet pockets use a 2 mm base to retain roof stock.
 
 ## Geometry targets
 

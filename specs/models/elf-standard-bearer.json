@@ -7,7 +7,7 @@
     "origin_mm": [
       0,
       0,
-      1
+      0
     ]
   },
   "remove": [
@@ -146,8 +146,8 @@
     },
     {
       "instance_id": "left-arm",
-      "part": "aurelian.horn-arm@6",
-      "definition_sha256": "a3fb4588360f0b309b8d21b69246262f4a5d33ecd275beb675fb0fc63127759c",
+      "part": "aurelian.horn-arm@12",
+      "definition_sha256": "e8412d16e1ca8af6701b5295e33534341bb7b2ccc15cfea6e174de97602ec573",
       "mount": [
         [
           0.999390827,

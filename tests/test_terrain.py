@@ -82,13 +82,20 @@ def test_seed_and_cache_independence(definitions,tmp_path):
         write_definition(terrain_surface('test.surface',1,seed=42),tmp_path)
 
 
-def test_migrated_figure_placement_and_boot_clearance(definitions):
+def test_historical_terrain_migration_keeps_figure_placement_and_boot_clearance(definitions):
     baseline=json.loads((ROOT/'tests/fixtures/terrain-migration-baseline.json').read_text())
+    historical=json.loads((ROOT/'tests/fixtures/terrain-migration-layouts.json').read_text())
     for name,hashes in baseline.items():
-        layout=load_assembly(ROOT/f'specs/{name}.json',definitions)
+        layout=resolve_assembly(historical['assemblies'][name],definitions)
         placements={p['instance_id']:p for p in layout['placements']}
         for instance,digest in hashes.items():
             original=deepcopy(placements[instance])
+            # Fitted bow handles were added after this placement baseline in
+            # the same historical commit; their source revision keeps the pose.
+            grip=definitions[original['part']].to_dict()['parameters'].get('grip_profile')
+            if grip:
+                parent=definitions[grip['parent_reference']]
+                original.update(part=parent.reference,definition_sha256=parent.sha256)
             original['mount'][2][3]-=1
             original['mount']=[[round(v,8) for v in row] for row in original['mount']]
             assert component_digest(original)==digest

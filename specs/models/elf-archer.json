@@ -7,17 +7,15 @@
     "origin_mm": [
       0,
       0,
-      1
+      0
     ]
   },
   "remove": [
     "cape",
     "equipment-joins",
     "left-arm",
-    "left-tunic",
     "mail",
     "right-arm",
-    "right-tunic",
     "shield",
     "shield-insignia",
     "shield-lower-connector",
@@ -62,8 +60,8 @@
     },
     {
       "instance_id": "left-leg",
-      "part": "aurelian.left-leg-c@4",
-      "definition_sha256": "572bdc4275fa91b133c6340100d66284ad5e07a8f8415278c84d6203efe064ce",
+      "part": "aurelian.left-leg-c@7",
+      "definition_sha256": "7f039e8310fdf3b602a19bbb35858e98a404f47b1b6e84bf3be0b1f8a861e948",
       "mount": [
         [
           0.034899497,
@@ -155,8 +153,8 @@
     },
     {
       "instance_id": "right-leg",
-      "part": "aurelian.right-leg-c@4",
-      "definition_sha256": "f87d3ff742288dc628e6ba52d6201487a4b51997dc2e6e27ca28dd946c7deabe",
+      "part": "aurelian.right-leg-c@7",
+      "definition_sha256": "cb2faa7eed63ac9278173975858ee1792d2927a379a045b8466b063132e5631e",
       "mount": [
         [
           0.034899497,
@@ -186,8 +184,8 @@
     },
     {
       "instance_id": "tunic",
-      "part": "aurelian.archer-tunic@4",
-      "definition_sha256": "2e45d11347b69ced9febeebb0383bd478a20a62928e2081f834d6b5528687f43",
+      "part": "aurelian.archer-tunic@5",
+      "definition_sha256": "5b825d943b80277b1eb801f2f3a4e70f0ce33709ccb9c436f5f1e2bf4b2ac381",
       "mount": [
         [
           0.034899497,
@@ -217,8 +215,8 @@
     },
     {
       "instance_id": "bow-arm",
-      "part": "aurelian.archer-bow-arm@2",
-      "definition_sha256": "ada7e1f6d8105b98518a15c25d45cae983410d1aa7b00b8d67d4a6c557b3d8c1",
+      "part": "aurelian.archer-bow-arm@7",
+      "definition_sha256": "3824884521c6cbb08b9b1e26c1d48cad0f8820da7d468c61242b841d04e93bbb",
       "mount": [
         [
           1.0,
@@ -248,8 +246,8 @@
     },
     {
       "instance_id": "draw-arm",
-      "part": "aurelian.archer-draw-arm@2",
-      "definition_sha256": "14baaa0a0847ec67e8a5286e1da4e742565bf210b1322563d4ad054c44c8efb2",
+      "part": "aurelian.archer-draw-arm@6",
+      "definition_sha256": "4f0b2f69e3a24929f1ba0bb79ef7b2d015c994a972f9e6e14f362b4f1dddfeab",
       "mount": [
         [
           1.0,

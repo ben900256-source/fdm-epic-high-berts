@@ -26,14 +26,15 @@ def test_trim_recipes_and_army_mounts():
         assembly=load_assembly(ROOT/f'specs/{name}.json',definitions)
         slots={p['instance_id']:p for p in assembly['placements']}
         for p in assembly['placements']:
-            if p['part'] != 'aurelian.archer-tunic@4' and not p['part'].startswith('aurelian.skirt@'):continue
-            if p['part']=='aurelian.archer-tunic@4':
+            if not p['part'].startswith(('aurelian.archer-tunic@','aurelian.skirt@')):continue
+            if p['part'].startswith('aurelian.archer-tunic@'):
                 assert p['instance_id']+'-trim' not in slots
                 continue
             trim=slots[p['instance_id']+'-trim']
             assert trim['mount']==p['mount']
             cape=slots[p['instance_id'].replace('/skirt','/cape')]
-            assert definitions[trim['part']].to_dict()['parameters']['cape_reference']==cape['part']
+            cape_source=definitions[cape['part']].to_dict()['parameters'].get('robe_source',cape['part'])
+            assert definitions[trim['part']].to_dict()['parameters']['cape_reference']==cape_source
             count+=1
         if 'archer' in name:
             assert not any('skirt-trim' in p['instance_id'] for p in assembly['placements'])

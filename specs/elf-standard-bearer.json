@@ -5,8 +5,8 @@
   "placements": [
     {
       "instance_id": "base",
-      "part": "aurelian.base-body-4x5@1",
-      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
       "mount": [
         [
           1.0,
@@ -55,7 +55,7 @@
           0.0,
           0.0,
           1.0,
-          2.0
+          1.0
         ],
         [
           0.0,
@@ -87,7 +87,7 @@
           0.0,
           0.0,
           1.0,
-          1.0
+          0.0
         ],
         [
           0.0,

@@ -1,0 +1,129 @@
+{
+  "component_id": "aurelian.shield-lower-connector-b",
+  "version": 4,
+  "name": "Concealed mail hem to tucked shield join",
+  "family": "shield-lower-connector",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "concealed_hem_join"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0,
+        "depth": 1.1080261823157471,
+        "export": true,
+        "frame_mm": [
+          [
+            0.999307658388974,
+            -0.005345231951886581,
+            -0.036818913353416166,
+            -0.342487757
+          ],
+          [
+            -0.0,
+            0.989625631249611,
+            -0.14367014294490432,
+            -1.02959514
+          ],
+          [
+            0.037204890607900415,
+            0.1435706741266815,
+            0.9889404722457589,
+            -4.402114032
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.42,
+        "radius2": 0.46,
+        "role": "concealed_hem_join",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 48
+      }
+    ],
+    "design": {
+      "inward_angle_degrees": 16,
+      "pivot_shield_mm": [
+        -0.320000002,
+        0.5,
+        1.374999998
+      ],
+      "root_radius_mm": 0.42,
+      "upper_radius_mm": 0.46
+    },
+    "diameter_mm": 0.84,
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "shield_attachment": [
+        -0.362885917,
+        -1.10919028,
+        -3.854228064
+      ],
+      "shield_tip_front": [
+        -0.322089597,
+        -1.13436115,
+        -4.515081367
+      ],
+      "skirt_attachment": [
+        -0.322089597,
+        -0.95,
+        -4.95
+      ]
+    },
+    "operations": [],
+    "provenance": "Permanent tapered join rooted inside the existing mail hem, beneath the inward-tucked shield point. Replaces the elevated round lower connector; no ground foot or removable support. Visual-only.",
+    "seed": 1001,
+    "shield_mount": [
+      [
+        0.97755174,
+        -0.20769823958566577,
+        0.03541239155900244,
+        -4.300343016777392
+      ],
+      [
+        0.207785037,
+        0.922494399327065,
+        -0.32531440429575686,
+        -1.415864573354601
+      ],
+      [
+        0.034899497,
+        0.32536982762938144,
+        0.944942591479157,
+        4.943091464701014
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "tuck_source": "aurelian.shield-lower-connector-b@2",
+    "tuck_source_sha256": "c49f5c9b4f0d64a206293d0175546f9774a53ce9ef42ec7e20112cd55a15db5e"
+  }
+}

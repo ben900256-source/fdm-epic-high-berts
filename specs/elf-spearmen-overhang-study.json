@@ -5,8 +5,8 @@
   "placements": [
     {
       "instance_id": "strip",
-      "part": "aurelian.base-body-20x5-plain@1",
-      "definition_sha256": "2bc595da1bc975c5094b63b48bfe41710065b54d463fe152f780d8bcc7b1c0cd",
+      "part": "aurelian.base-body-20x5-plain@2",
+      "definition_sha256": "e58ab09532c20a71f089321be82b5ea2a5cf08ca4aaa8e3b10b5049b0035d608",
       "mount": [
         [
           1.0,
@@ -36,8 +36,8 @@
     },
     {
       "instance_id": "strip-terrain",
-      "part": "aurelian.terrain-soil-20x5-738fc95adfe0@3",
-      "definition_sha256": "d27ba6ab66a6293100c6c58d7a252bd100d85901e85948610123a64256b50420",
+      "part": "aurelian.terrain-soil-20x5-738fc95adfe0@4",
+      "definition_sha256": "6d7a2d91b068d6232cc3dde88754e346beca5d60cf4ca59c6942ab5234c60527",
       "mount": [
         [
           1.0,
@@ -55,7 +55,7 @@
           0.0,
           0.0,
           1.0,
-          2.0
+          1.0
         ],
         [
           0.0,
@@ -87,7 +87,7 @@
           0.0,
           0.0,
           1.0,
-          1
+          0
         ],
         [
           0.0,
@@ -117,7 +117,7 @@
           0.0,
           0.0,
           1.0,
-          1
+          0
         ],
         [
           0.0,
@@ -147,7 +147,7 @@
           0.0,
           0.0,
           1.0,
-          1
+          0
         ],
         [
           0.0,
@@ -177,7 +177,7 @@
           0.0,
           0.0,
           1.0,
-          1
+          0
         ],
         [
           0.0,
@@ -207,7 +207,7 @@
           0.0,
           0.0,
           1.0,
-          1
+          0
         ],
         [
           0.0,

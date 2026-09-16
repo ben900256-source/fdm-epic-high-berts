@@ -55,7 +55,8 @@ def center_shoulders(assembly, definitions):
         if side+'_armhole' not in anchors:
             continue
         target = point(plate['mount'], anchors[side+'_armhole'])
-        source = point(pad['mount'], definitions[pad['part']].to_dict()['parameters']['landmarks'][side+'_pauldron'])
+        landmarks = definitions[pad['part']].to_dict()['parameters']['landmarks']
+        source = point(pad['mount'], landmarks.get(side+'_shoulder', landmarks.get(side+'_pauldron')))
         for axis in range(3):
             pad['mount'][axis][3] = round(pad['mount'][axis][3]+target[axis]-source[axis], 9)
     return result

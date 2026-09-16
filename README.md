@@ -45,23 +45,34 @@ npm --prefix viewer ci
 py -3.13 -m fdm_sculpt.viewer serve
 ```
 
-The viewer opens on an **individual model**. Select Spearmen, Archers or
+The viewer opens on an **individual model**. Select Spearmen, Swordsmen, Archers or
 Bertmasters and a variant, then orbit or isolate a component for review.
 **Sculpting feedback** saves your note, model revision, selected component and
 camera angle under `out/sculpt-feedback/`. Saved unit, cavalry and part reviews
 remain available in **Saved unit / part reviews**.
 
-**Build a row** places five chosen infantry on the existing 20 × 5 × 2 mm
-base with 4 mm spacing. Choose each slot or use **Randomize row** with a seed
+Short-sword infantry have their own Swordsmen unit type. Spearmen retain a
+sword-armed sergeant, which counts toward the row's command-model limit.
+
+**Build a row** places five chosen infantry on a 20 × 5 × 1 mm
+base with 0.5 mm terrain relief and 4 mm spacing. **Magnet holes** is off by
+default. Enabling it uses a 2 mm base with two underside pockets for 3 × 1 mm
+magnets (3.2 mm diameter, 1.1 mm deep), raising the terrain and figures together.
+Choose each slot or use **Randomize row** with a seed
 and a selectable variant pool. Defaults allow duplicates and at most one command
-model. Optional uniqueness and command limits apply to manual selections too.
+model. Uniqueness and command limits apply to randomization; manual slot choices
+override them, including when previewing and exporting the selected row.
 Preview the row, then choose **Generate STL**. Editing the row invalidates its
 export preview; the server also checks that all pinned model revisions still match.
 
 Exports run in the background while model review remains available. **STL exports**
 shows progress and downloadable reports. At the user's request, the worker loads
 cached parts, performs one collection-wide **Manifold Boolean Union** in Blender,
-and uses Blender's native STL exporter. Downloads are labeled **unchecked Blender
+and uses Blender's native STL exporter. Sleeve CSG is evaluated on temporary
+copies using Manifold too, avoiding
+Exact-cache slivers that can make the row union fail. A rejected Boolean stops
+the export; it must never publish only the unchanged base. Source recipes and
+visual caches remain unchanged. Downloads are labeled **unchecked Blender
 output**. This path does not run geometry validation, independent repeat builds,
 or slicing. The saved scene, selected variants, union order and timing remain
 available in each job. Historical validated-proof workflows are separate.

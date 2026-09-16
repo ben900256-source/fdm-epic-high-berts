@@ -1,0 +1,374 @@
+{
+  "component_id": "aurelian.right-tunic",
+  "version": 6,
+  "name": "Right robe sleeve emerging through the armhole",
+  "family": "right-tunic",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "right_robe_sleeve"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.1,
+        "bevel_segments": 4,
+        "depth": 1.16,
+        "export": true,
+        "location": [
+          0,
+          0,
+          0.29
+        ],
+        "primitive": "cone",
+        "radius1": 0.28,
+        "radius2": 0.43,
+        "role": "right_robe_sleeve",
+        "scale": [
+          1,
+          1.05,
+          1
+        ],
+        "vertices": 48
+      },
+      {
+        "dimensions": [
+          0.65,
+          0.72,
+          0.77
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          -0.04
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_cloth_shoulder",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.12,
+          0.15,
+          0.9093691494657162
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9905091155828147,
+            -0.021160369484477533,
+            -0.1358084338715034,
+            -0.12825
+          ],
+          [
+            -0.0,
+            0.988078190521936,
+            -0.15395288050210912,
+            -0.36
+          ],
+          [
+            0.13744705143199734,
+            0.15249173150757087,
+            0.9787004546205508,
+            0.36500000000000005
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "right_sleeve_crease_0",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.12,
+          0.15,
+          0.9017876690219268
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9990412744493546,
+            0.006796444497462832,
+            0.043247431008120965,
+            0.040499999999999994
+          ],
+          [
+            0.0,
+            0.9878756554067671,
+            -0.1552471882342804,
+            -0.36
+          ],
+          [
+            -0.0437782131500279,
+            0.15509834878825435,
+            0.9869285537750682,
+            0.36500000000000005
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "right_sleeve_crease_1",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.12,
+          0.15,
+          0.9132635161879621
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9861834867593333,
+            0.025394568596861237,
+            0.1636986448599474,
+            0.15525
+          ],
+          [
+            0.0,
+            0.9881802552487235,
+            -0.15329638983540222,
+            -0.36
+          ],
+          [
+            -0.16565666434889925,
+            0.151178368235495,
+            0.9745270496679141,
+            0.36500000000000005
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "right_sleeve_crease_2",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.18,
+          0.9093691494657162
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9905091155828147,
+            0.021160369484477533,
+            -0.1358084338715034,
+            -0.12825
+          ],
+          [
+            -0.0,
+            0.988078190521936,
+            0.15395288050210912,
+            0.36
+          ],
+          [
+            0.13744705143199734,
+            -0.15249173150757087,
+            0.9787004546205508,
+            0.36500000000000005
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "right_sleeve_front_crease_0",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.18,
+          0.9017876690219268
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9990412744493546,
+            -0.006796444497462832,
+            0.043247431008120965,
+            0.040499999999999994
+          ],
+          [
+            0.0,
+            0.9878756554067671,
+            0.1552471882342804,
+            0.36
+          ],
+          [
+            -0.0437782131500279,
+            -0.15509834878825435,
+            0.9869285537750682,
+            0.36500000000000005
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "right_sleeve_front_crease_1",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.14,
+          0.18,
+          0.9132635161879621
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9861834867593333,
+            -0.025394568596861237,
+            0.1636986448599474,
+            0.15525
+          ],
+          [
+            0.0,
+            0.9881802552487235,
+            0.15329638983540222,
+            0.36
+          ],
+          [
+            -0.16565666434889925,
+            -0.151178368235495,
+            0.9745270496679141,
+            0.36500000000000005
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "right_sleeve_front_crease_2",
+        "segments": 24
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "right_shoulder": [
+        0,
+        0,
+        -0.03
+      ]
+    },
+    "operations": [
+      {
+        "operand": "right_cloth_shoulder",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "right_robe_sleeve"
+      },
+      {
+        "operand": "right_sleeve_crease_0",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "right_robe_sleeve"
+      },
+      {
+        "operand": "right_sleeve_crease_1",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "right_robe_sleeve"
+      },
+      {
+        "operand": "right_sleeve_crease_2",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "right_robe_sleeve"
+      },
+      {
+        "operand": "right_sleeve_front_crease_0",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "right_robe_sleeve"
+      },
+      {
+        "operand": "right_sleeve_front_crease_1",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "right_robe_sleeve"
+      },
+      {
+        "operand": "right_sleeve_front_crease_2",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "right_robe_sleeve"
+      }
+    ],
+    "provenance": "Fitted cloth sleeve with shallow gathers on both front and back of the posed arm. Visual-only.",
+    "robe_source": "aurelian.right-tunic@5",
+    "seed": 1001
+  }
+}

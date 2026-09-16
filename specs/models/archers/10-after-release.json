@@ -7,7 +7,7 @@
     "origin_mm": [
       0,
       0,
-      1
+      0
     ]
   },
   "remove": [
@@ -47,8 +47,8 @@
     },
     {
       "instance_id": "draw-arm",
-      "part": "aurelian.archer-release-arm@1",
-      "definition_sha256": "3b29c84603d38162cd705fba2b954d7974e57e421db1765e9e26fcb16ada40b0",
+      "part": "aurelian.archer-release-arm@5",
+      "definition_sha256": "4f09940ea2304b8b24a669ba9a6e687ba9bd6fe36f3a51e3f49820b044686caa",
       "mount": [
         [
           1.0,
@@ -61,6 +61,37 @@
           1.0,
           0.0,
           0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bow-arm",
+      "part": "aurelian.archer-bow-arm@13",
+      "definition_sha256": "83a61a02a29287979574be8499050558588ed99b71d7aa3927e064b614b5cc0a",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
         ],
         [
           0.0,

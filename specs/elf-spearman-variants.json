@@ -5,8 +5,8 @@
   "placements": [
     {
       "instance_id": "base-01",
-      "part": "aurelian.base-body-4x5@1",
-      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
       "mount": [
         [
           1.0,
@@ -36,8 +36,8 @@
     },
     {
       "instance_id": "base-01-terrain",
-      "part": "aurelian.terrain-soil-gallery@4",
-      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
       "mount": [
         [
           1.0,
@@ -55,7 +55,7 @@
           0.0,
           0.0,
           1.0,
-          2
+          1
         ],
         [
           0.0,
@@ -67,8 +67,8 @@
     },
     {
       "instance_id": "base-02",
-      "part": "aurelian.base-body-4x5@1",
-      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
       "mount": [
         [
           1.0,
@@ -98,8 +98,8 @@
     },
     {
       "instance_id": "base-02-terrain",
-      "part": "aurelian.terrain-soil-gallery@4",
-      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
       "mount": [
         [
           1.0,
@@ -117,7 +117,7 @@
           0.0,
           0.0,
           1.0,
-          2
+          1
         ],
         [
           0.0,
@@ -129,8 +129,8 @@
     },
     {
       "instance_id": "base-03",
-      "part": "aurelian.base-body-4x5@1",
-      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
       "mount": [
         [
           1.0,
@@ -160,8 +160,8 @@
     },
     {
       "instance_id": "base-03-terrain",
-      "part": "aurelian.terrain-soil-gallery@4",
-      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
       "mount": [
         [
           1.0,
@@ -179,7 +179,7 @@
           0.0,
           0.0,
           1.0,
-          2
+          1
         ],
         [
           0.0,
@@ -191,8 +191,8 @@
     },
     {
       "instance_id": "base-04",
-      "part": "aurelian.base-body-4x5@1",
-      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
       "mount": [
         [
           1.0,
@@ -222,8 +222,8 @@
     },
     {
       "instance_id": "base-04-terrain",
-      "part": "aurelian.terrain-soil-gallery@4",
-      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
       "mount": [
         [
           1.0,
@@ -241,7 +241,7 @@
           0.0,
           0.0,
           1.0,
-          2
+          1
         ],
         [
           0.0,
@@ -253,8 +253,8 @@
     },
     {
       "instance_id": "base-05",
-      "part": "aurelian.base-body-4x5@1",
-      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
       "mount": [
         [
           1.0,
@@ -284,8 +284,8 @@
     },
     {
       "instance_id": "base-05-terrain",
-      "part": "aurelian.terrain-soil-gallery@4",
-      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
       "mount": [
         [
           1.0,
@@ -303,7 +303,7 @@
           0.0,
           0.0,
           1.0,
-          2
+          1
         ],
         [
           0.0,
@@ -315,8 +315,8 @@
     },
     {
       "instance_id": "base-06",
-      "part": "aurelian.base-body-4x5@1",
-      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
       "mount": [
         [
           1.0,
@@ -346,8 +346,8 @@
     },
     {
       "instance_id": "base-06-terrain",
-      "part": "aurelian.terrain-soil-gallery@4",
-      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
       "mount": [
         [
           1.0,
@@ -365,7 +365,7 @@
           0.0,
           0.0,
           1.0,
-          2
+          1
         ],
         [
           0.0,
@@ -377,8 +377,8 @@
     },
     {
       "instance_id": "base-07",
-      "part": "aurelian.base-body-4x5@1",
-      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
       "mount": [
         [
           1.0,
@@ -408,8 +408,8 @@
     },
     {
       "instance_id": "base-07-terrain",
-      "part": "aurelian.terrain-soil-gallery@4",
-      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
       "mount": [
         [
           1.0,
@@ -427,7 +427,7 @@
           0.0,
           0.0,
           1.0,
-          2
+          1
         ],
         [
           0.0,
@@ -439,8 +439,8 @@
     },
     {
       "instance_id": "base-08",
-      "part": "aurelian.base-body-4x5@1",
-      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
       "mount": [
         [
           1.0,
@@ -470,8 +470,8 @@
     },
     {
       "instance_id": "base-08-terrain",
-      "part": "aurelian.terrain-soil-gallery@4",
-      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
       "mount": [
         [
           1.0,
@@ -489,7 +489,7 @@
           0.0,
           0.0,
           1.0,
-          2
+          1
         ],
         [
           0.0,
@@ -501,8 +501,8 @@
     },
     {
       "instance_id": "base-09",
-      "part": "aurelian.base-body-4x5@1",
-      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
       "mount": [
         [
           1.0,
@@ -532,8 +532,8 @@
     },
     {
       "instance_id": "base-09-terrain",
-      "part": "aurelian.terrain-soil-gallery@4",
-      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
       "mount": [
         [
           1.0,
@@ -551,7 +551,7 @@
           0.0,
           0.0,
           1.0,
-          2
+          1
         ],
         [
           0.0,
@@ -563,8 +563,8 @@
     },
     {
       "instance_id": "base-10",
-      "part": "aurelian.base-body-4x5@1",
-      "definition_sha256": "41196d38860fd0a4144179882bd123d092fcbf4c868228a971e0b69baf2c72ec",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
       "mount": [
         [
           1.0,
@@ -594,8 +594,8 @@
     },
     {
       "instance_id": "base-10-terrain",
-      "part": "aurelian.terrain-soil-gallery@4",
-      "definition_sha256": "293ff79f43e29c382344b8159d2353838f8c33d4f23108184fcf0b4b1f15f85e",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
       "mount": [
         [
           1.0,
@@ -613,7 +613,7 @@
           0.0,
           0.0,
           1.0,
-          2
+          1
         ],
         [
           0.0,
@@ -645,7 +645,7 @@
           0.0,
           0.0,
           1.0,
-          1
+          0
         ],
         [
           0.0,
@@ -675,7 +675,7 @@
           0.0,
           0.0,
           1.0,
-          1
+          0
         ],
         [
           0.0,
@@ -705,7 +705,7 @@
           0.0,
           0.0,
           1.0,
-          1
+          0
         ],
         [
           0.0,
@@ -735,7 +735,7 @@
           0.0,
           0.0,
           1.0,
-          1
+          0
         ],
         [
           0.0,
@@ -765,7 +765,7 @@
           0.0,
           0.0,
           1.0,
-          1
+          0
         ],
         [
           0.0,
@@ -795,7 +795,7 @@
           0.0,
           0.0,
           1.0,
-          1
+          0
         ],
         [
           0.0,
@@ -825,7 +825,7 @@
           0.0,
           0.0,
           1.0,
-          1
+          0
         ],
         [
           0.0,
@@ -855,7 +855,7 @@
           0.0,
           0.0,
           1.0,
-          1
+          0
         ],
         [
           0.0,
@@ -885,7 +885,7 @@
           0.0,
           0.0,
           1.0,
-          1
+          0
         ],
         [
           0.0,
@@ -915,7 +915,7 @@
           0.0,
           0.0,
           1.0,
-          1
+          0
         ],
         [
           0.0,

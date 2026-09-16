@@ -1,0 +1,66 @@
+{
+  "seed": 1001,
+  "toe_projection_mm": 0.04,
+  "sources": [
+    {
+      "source": "aurelian.left-leg@5",
+      "definition_sha256": "5155a220792b6bb413300828aff787177d8b87bf5f328181d53b71448d7b6235",
+      "version": 6
+    },
+    {
+      "source": "aurelian.right-leg@5",
+      "definition_sha256": "14f8984972a2816ac39ff2c1fcc131582ecd9ecfb9f012416a9ed312dc3639c7",
+      "version": 6
+    },
+    {
+      "source": "aurelian.left-leg-b@5",
+      "definition_sha256": "bed34594b850a695dc23d373e569eb7afba80097bed2238e15eb15b5a0841d77",
+      "version": 6
+    },
+    {
+      "source": "aurelian.right-leg-b@5",
+      "definition_sha256": "06c16522a07473dd80344b7e97dc1dc4226707f991f8f41678334f84fe838ca2",
+      "version": 6
+    },
+    {
+      "source": "aurelian.left-leg-c@5",
+      "definition_sha256": "20fb3d642fd47a6e014167079cbdc377625c042634ef9047219f5979eb21af58",
+      "version": 6
+    },
+    {
+      "source": "aurelian.right-leg-c@5",
+      "definition_sha256": "245c56e74cc6f73f09ec50c0e2774af696348ef62f7a687d1eb63422d5269c20",
+      "version": 6
+    },
+    {
+      "source": "aurelian.left-leg-d@5",
+      "definition_sha256": "6fa1ba75470e7fe2973717785e2de1017812cd757e2ab805c78193ab9638105c",
+      "version": 6
+    },
+    {
+      "source": "aurelian.right-leg-d@5",
+      "definition_sha256": "993c949af9120222b09809063a4ddcf91229acd937f0aa0fa47f4318be00a37d",
+      "version": 6
+    },
+    {
+      "source": "aurelian.left-leg-e@5",
+      "definition_sha256": "84456075692ab47d520baf6a9397ebf53dddf9a1c1081baa45075b5c661be4a0",
+      "version": 6
+    },
+    {
+      "source": "aurelian.right-leg-e@5",
+      "definition_sha256": "8b9b799abc9082a8237e95184a92d95a7e5c32896dc2c9aeabaa0a6e86f71159",
+      "version": 6
+    },
+    {
+      "source": "aurelian.left-leg-c@4",
+      "definition_sha256": "572bdc4275fa91b133c6340100d66284ad5e07a8f8415278c84d6203efe064ce",
+      "version": 7
+    },
+    {
+      "source": "aurelian.right-leg-c@4",
+      "definition_sha256": "f87d3ff742288dc628e6ba52d6201487a4b51997dc2e6e27ca28dd946c7deabe",
+      "version": 7
+    }
+  ]
+}

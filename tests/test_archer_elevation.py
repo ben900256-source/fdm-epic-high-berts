@@ -17,8 +17,10 @@ def test_elevated_archers_keep_shoulders_and_grips_aligned():
         m={p['instance_id']:p for p in load_model(ROOT/f'specs/models/archers/{number}-aiming-up-{degrees}.json',d)['placements']}
         def anchor(slot,name):return world(m[slot],d[m[slot]['part']].to_dict()['parameters']['landmarks'][name])
         for slot,name in [('bow-arm','grip'),('draw-arm','nock')]:
+            historical=d[f'aurelian.archer-{slot}-elevated-{degrees}@1']
+            parent=d[historical.to_dict()['parameters']['parent_reference']]
             for _ in range(2):
-                arm=elevated_arm(d[base[slot]['part']],degrees=degrees,seed=1001)
+                arm=elevated_arm(parent,degrees=degrees,seed=1001)
                 assert arm.sha256==d[arm.reference].sha256==golden[arm.reference]
             shoulder=d[base[slot]['part']].to_dict()['parameters']['landmarks']['shoulder']
             assert anchor(slot,'shoulder')==pytest.approx(world(base[slot],shoulder))

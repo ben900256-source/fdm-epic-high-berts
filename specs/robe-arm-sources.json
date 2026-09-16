@@ -1,0 +1,165 @@
+{
+  "seed": 1001,
+  "sources": [
+    {
+      "source": "aurelian.archer-blade-raised-arm@1",
+      "definition_sha256": "b6a040fda6bfb134c59c9f756bff1ad967407725c74c1751b245115771c2020a",
+      "version": 2
+    },
+    {
+      "source": "aurelian.archer-bow-arm-elevated-20@1",
+      "definition_sha256": "470d7b0f271d8d2693fcb3a7981a973f07267857f3bd832c523cda58b256f95c",
+      "version": 2
+    },
+    {
+      "source": "aurelian.archer-bow-arm-elevated-30@1",
+      "definition_sha256": "4684cff66bafe97de9054ffe9134d7ce362f5508cb59872e37d1dab2ca4dba6b",
+      "version": 2
+    },
+    {
+      "source": "aurelian.archer-bow-arm-elevated-40@1",
+      "definition_sha256": "d0e3b07604e6359191695ac2bd40c0f33107184e8b27bc2705f07e87f8d0b63a",
+      "version": 2
+    },
+    {
+      "source": "aurelian.archer-bow-arm@2",
+      "definition_sha256": "ada7e1f6d8105b98518a15c25d45cae983410d1aa7b00b8d67d4a6c557b3d8c1",
+      "version": 3
+    },
+    {
+      "source": "aurelian.archer-draw-arm-elevated-20@1",
+      "definition_sha256": "91bf96c3111d3983ed0ecf46865665c0c54e951492f661fb69a558e5701e5de4",
+      "version": 2
+    },
+    {
+      "source": "aurelian.archer-draw-arm-elevated-30@1",
+      "definition_sha256": "460e804d0e458319f10e5fd66154a1d9b08438d7dd28c014ce66ef30d866b5de",
+      "version": 2
+    },
+    {
+      "source": "aurelian.archer-draw-arm-elevated-40@1",
+      "definition_sha256": "bc01cfe1b5b6d590b0a5c8d6dcd5dd5a2f1706f4806e69651c76dfca2c2ec119",
+      "version": 2
+    },
+    {
+      "source": "aurelian.archer-draw-arm@2",
+      "definition_sha256": "14baaa0a0847ec67e8a5286e1da4e742565bf210b1322563d4ad054c44c8efb2",
+      "version": 3
+    },
+    {
+      "source": "aurelian.archer-quiver-bow-arm@1",
+      "definition_sha256": "3b82a36c04dbe3db65e3274310fe4057387377b377faca842f08d554a40b26ae",
+      "version": 2
+    },
+    {
+      "source": "aurelian.archer-quiver-pull-arm@3",
+      "definition_sha256": "77f38cb45f11e5a1d00916c73c6f6480966260f70a4fafa8ef6ceeeed798bcf1",
+      "version": 4
+    },
+    {
+      "source": "aurelian.archer-quiver-reach-arm@2",
+      "definition_sha256": "3413f65ae383a1c26a4829bacbb01a027faa8f8547c5191a9ca1098ea6277941",
+      "version": 3
+    },
+    {
+      "source": "aurelian.archer-ready-arm@1",
+      "definition_sha256": "330b69db790d96ea33b0f7ddb2e1a9b3f34710d26694c58263ecc4c5e198acc4",
+      "version": 2
+    },
+    {
+      "source": "aurelian.archer-relaxed-bow-arm@1",
+      "definition_sha256": "996b625a2acbdef2d7644c919d14cce0a9fc9fed23295875611b4a8d0cd7ced9",
+      "version": 2
+    },
+    {
+      "source": "aurelian.archer-release-arm@1",
+      "definition_sha256": "3b29c84603d38162cd705fba2b954d7974e57e421db1765e9e26fcb16ada40b0",
+      "version": 2
+    },
+    {
+      "source": "aurelian.archer-side-bow-arm@3",
+      "definition_sha256": "0202b2ae7a18c834d3c0474ba2e9deded5ab485a49be67695cef246b432d5fc1",
+      "version": 4
+    },
+    {
+      "source": "aurelian.archer-signal-horn-arm@2",
+      "definition_sha256": "af7e295a012323296bfdcb64b73f94003c5dd283ea7c881e71822799f4771711",
+      "version": 3
+    },
+    {
+      "source": "aurelian.horn-arm@6",
+      "definition_sha256": "a3fb4588360f0b309b8d21b69246262f4a5d33ecd275beb675fb0fc63127759c",
+      "version": 7
+    },
+    {
+      "source": "aurelian.left-arm-b@3",
+      "definition_sha256": "61d6ef2203b5f5432006ed3755441ac9b8496d1e3cb071d3fed2475c86fca9e5",
+      "version": 4
+    },
+    {
+      "source": "aurelian.left-arm-c@3",
+      "definition_sha256": "293cd18997da1cf3d95e08cb6a3d58ee363528fbd687a26801b205863342647b",
+      "version": 4
+    },
+    {
+      "source": "aurelian.left-arm-d@3",
+      "definition_sha256": "eb3379b93e31003a059bf1a91f374567ff7d0eaf6e039d11d125b2a68fe83a76",
+      "version": 4
+    },
+    {
+      "source": "aurelian.left-arm-e@3",
+      "definition_sha256": "a08508c5ea3685c30a87cd84c2b2b8e07585d7e30471d9e927fe17c67dd49d6e",
+      "version": 4
+    },
+    {
+      "source": "aurelian.left-arm@5",
+      "definition_sha256": "27a66fdca48f8d62b4ce0b72719d6f448dff0f02bfab3243c99a77820bd37ab9",
+      "version": 6
+    },
+    {
+      "source": "aurelian.right-arm-b@3",
+      "definition_sha256": "3d76209104c96e030003c05c88084a45441a09fcfd00e0e245eb184bb7f37565",
+      "version": 4
+    },
+    {
+      "source": "aurelian.right-arm-c@3",
+      "definition_sha256": "a5d442bf5fcd329cb6916206afd53f533a1590ab9e47818a219fcd9f85c9a371",
+      "version": 4
+    },
+    {
+      "source": "aurelian.right-arm-d@3",
+      "definition_sha256": "661ab941c70791c958d3985cdaf089967e70ddd500d344a70d5e2469081166d0",
+      "version": 4
+    },
+    {
+      "source": "aurelian.right-arm-e@3",
+      "definition_sha256": "6ac383c1eebc9af8af0db6177f83c1f0262543524cefc30ae056cf62ff145e40",
+      "version": 4
+    },
+    {
+      "source": "aurelian.right-arm@3",
+      "definition_sha256": "8a5a88997e9fc778fa5d293b2ab90d8030dbddb99830a1a7e091b74a48e1505b",
+      "version": 4
+    },
+    {
+      "source": "aurelian.spearman-hawk-arm@1",
+      "definition_sha256": "bd096b95432e72192ab8bfa1636662ba1efaa585aa4f56a0ac1522d0b66c8a3a",
+      "version": 2
+    },
+    {
+      "source": "aurelian.spearman-sword-guard-arm@1",
+      "definition_sha256": "8ddf2ede41ac2097b3027882fb4e3f8804c176fe39775024d758b4cb41389bca",
+      "version": 2
+    },
+    {
+      "source": "aurelian.spearman-sword-low-arm@1",
+      "definition_sha256": "205eca6806992443352d3319092e3c6a5d1c7614839b85468a269f5796cbbe87",
+      "version": 2
+    },
+    {
+      "source": "aurelian.spearman-sword-raised-arm@1",
+      "definition_sha256": "db596940618b012ad45cf762154a2a5e809d6716abe586e70d55a0aa734fb6d1",
+      "version": 2
+    }
+  ]
+}

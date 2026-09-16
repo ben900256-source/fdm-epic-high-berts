@@ -1,0 +1,54 @@
+{
+  "component_id": "aurelian.base-body-20x5-plain",
+  "version": 2,
+  "name": "aurelian.base-body-20x5-plain",
+  "family": "base-body",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "body"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0,
+        "dimensions": [
+          20,
+          5,
+          1
+        ],
+        "export": true,
+        "location": [
+          0,
+          0,
+          0.5
+        ],
+        "primitive": "cube",
+        "role": "body"
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [],
+    "recipe": {
+      "centers": [],
+      "depth_allowance": 0.1,
+      "diameter_allowance": 0.2,
+      "length": 5,
+      "magnet": "none",
+      "minimum_stock": 0.75,
+      "thickness": 1,
+      "visual_only": true,
+      "width": 20
+    }
+  }
+}

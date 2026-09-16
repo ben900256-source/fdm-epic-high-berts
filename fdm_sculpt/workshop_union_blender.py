@@ -11,6 +11,50 @@ sys.path.insert(0,str(Path(__file__).resolve().parent.parent))
 from fdm_sculpt.atelier_blender import compile_missing
 
 
+def export_sleeve(source):
+    """Evaluate the pinned sleeve CSG with the export solver on temporary copies.
+
+    The visual Exact cache can contain coincident slivers around cloth creases
+    that Manifold refuses as inputs. Preserve every primitive, transform and
+    Boolean operation; use Manifold for the local sleeve operations as well as
+    the row union. Reviewed definitions and immutable visual caches stay intact.
+    """
+    staging=bpy.data.collections.new('EXPORT_SLEEVE_STAGING')
+    bpy.context.scene.collection.children.link(staging)
+    copies={}
+    try:
+        for original in source.objects:
+            obj=original.copy()
+            obj.data=original.data.copy()
+            obj.matrix_world=original.matrix_basis
+            obj.hide_viewport=obj.hide_render=False
+            staging.objects.link(obj)
+            copies[original]=obj
+        for obj in copies.values():
+            for modifier in obj.modifiers:
+                if modifier.type=='BOOLEAN':
+                    modifier.object=copies[modifier.object]
+                    modifier.solver='MANIFOLD'
+        target=next(o for o in copies.values() if o.get('component_geometry_role')=='robe_sleeve')
+        depsgraph=bpy.context.evaluated_depsgraph_get()
+        return bpy.data.meshes.new_from_object(target.evaluated_get(depsgraph),depsgraph=depsgraph)
+    finally:
+        for obj in copies.values():
+            mesh=obj.data
+            bpy.data.objects.remove(obj,do_unlink=True)
+            if mesh.users==0:
+                bpy.data.meshes.remove(mesh)
+        bpy.data.collections.remove(staging)
+
+
+def apply_union(target, boolean):
+    """Blender may report a cancelled Boolean without raising a Python error."""
+    name=boolean.name
+    result=bpy.ops.object.modifier_apply(modifier=name)
+    if 'FINISHED' not in result or target.modifiers.get(name) is not None:
+        raise RuntimeError('Blender could not apply the Manifold row union; no STL was exported')
+
+
 def run(job_path):
     started=time.perf_counter()
     if bpy.app.version != (5,1,2):
@@ -32,11 +76,14 @@ def run(job_path):
         scene.collection.children.link(collection)
     sources.hide_viewport=sources.hide_render=True
     loaded={}
+    sleeves={}
     for ref,asset in job['assets'].items():
         record=asset['manifest']
         with bpy.data.libraries.load(str(Path(asset['directory'])/'part.blend'),link=True) as (_,data):
             data.collections=[record['source_collection'],record['visual_collection']]
         loaded[ref]=data.collections
+        if 'robe_sleeve' in asset['definition']['output_roles']:
+            sleeves[ref]=export_sleeve(data.collections[0])
     target=None
     order=[]
     for placement in job['assembly']['placements']:
@@ -50,7 +97,8 @@ def run(job_path):
         for original in sorted(visual.objects,key=lambda o:o.name):
             if original.type!='MESH':
                 continue
-            obj=bpy.data.objects.new(placement['instance_id']+'/'+original.name,original.data)
+            mesh=sleeves[placement['part']] if original.get('component_geometry_role')=='robe_sleeve' else original.data
+            obj=bpy.data.objects.new(placement['instance_id']+'/'+original.name,mesh)
             # Cached collections are not linked into this scene. Their world
             # matrices may still be identity; matrix_basis is the saved local
             # transform used by the visual viewer and the atelier composer.
@@ -74,7 +122,7 @@ def run(job_path):
     boolean.collection=operands
     print('MANIFOLD_UNION',len(order),'mesh objects',flush=True)
     union_started=time.perf_counter()
-    bpy.ops.object.modifier_apply(modifier=boolean.name)
+    apply_union(target,boolean)
     union_seconds=time.perf_counter()-union_started
     print('MANIFOLD_UNION_FINISHED',round(union_seconds,3),'seconds',flush=True)
     target.name='Row — unchecked Blender union'
@@ -95,7 +143,8 @@ def run(job_path):
     result=dict(solver='MANIFOLD',operation='UNION',validation_performed=False,digitally_validated=False,
                 input_objects=len(order),union_seconds=round(union_seconds,3),
                 elapsed_seconds=round(time.perf_counter()-started,3),
-                label='Unchecked Blender output',union_order=order)
+                label='Unchecked Blender output',union_order=order,
+                export_sleeve_solver='MANIFOLD',export_sleeve_parts=sorted(sleeves))
     (output/'union-result.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
     print('BLENDER_STL_EXPORTED',flush=True)
 

@@ -18,7 +18,7 @@ def test_shoes_repeat_resolve_and_preserve_heel_and_leg_geometry():
         assert {p.reference:p.sha256 for p in parts}==golden
     assert {ref:definitions[ref].sha256 for ref in golden}==golden
     assembly=load_assembly(ROOT/'specs/elf-spearmen-overhang-study.json',definitions)
-    assert set(golden)<={p['part'] for p in assembly['placements']}
+    assert set(golden)<={definitions[p['part']].to_dict()['parameters'].get('sole_fit',{}).get('source',p['part']) for p in assembly['placements']}
     for part in parts:
         p=part.to_dict()['parameters'];old=definitions[p['shoe_fit']['source']].to_dict()['parameters']
         before={a['role']:a for a in old['atoms']};after={a['role']:a for a in p['atoms']}

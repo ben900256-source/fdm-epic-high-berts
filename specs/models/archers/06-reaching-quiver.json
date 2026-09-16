@@ -7,7 +7,7 @@
     "origin_mm": [
       0,
       0,
-      1
+      0
     ]
   },
   "remove": [
@@ -47,8 +47,8 @@
     },
     {
       "instance_id": "draw-arm",
-      "part": "aurelian.archer-quiver-reach-arm@2",
-      "definition_sha256": "3413f65ae383a1c26a4829bacbb01a027faa8f8547c5191a9ca1098ea6277941",
+      "part": "aurelian.archer-quiver-reach-arm@6",
+      "definition_sha256": "f5ab1dd9fc73f048a2bbcb757e84e8f9dbea8f7b8010713f284869e03fc47b1a",
       "mount": [
         [
           1.0,
@@ -92,6 +92,37 @@
           1.0,
           0.0,
           0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bow-arm",
+      "part": "aurelian.archer-bow-arm@11",
+      "definition_sha256": "d3f59b251f40357bd5cbaa8e69a099b34de0f7fac68c8cc0c7dbb31c29b1b416",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
         ],
         [
           0.0,

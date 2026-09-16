@@ -18,7 +18,7 @@ def test_horn_hand_follows_local_tangent_and_retains_pose():
     definitions = catalog()
     model = {p['instance_id']:p for p in load_model(ROOT/'specs/models/elf-archer-sergeant.json', definitions)['placements']}
     old = definitions['aurelian.archer-signal-horn-arm@1']
-    new = definitions[model['horn-arm']['part']]
+    new = definitions['aurelian.archer-signal-horn-arm@2']
     atoms = {a['role']:a for a in definitions[model['horn']['part']].to_dict()['parameters']['atoms']}
     tangent = [b-a for a,b in zip(atoms['organic_round_15']['location'],atoms['organic_round_17']['location'])]
     direction = vector(inverse_rigid(model['horn-arm']['mount']), vector(model['horn']['mount'], tangent))

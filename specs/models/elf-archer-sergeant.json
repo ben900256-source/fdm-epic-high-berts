@@ -7,7 +7,7 @@
     "origin_mm": [
       0,
       0,
-      1
+      0
     ]
   },
   "remove": [
@@ -48,8 +48,8 @@
     },
     {
       "instance_id": "bow-arm",
-      "part": "aurelian.archer-side-bow-arm@3",
-      "definition_sha256": "0202b2ae7a18c834d3c0474ba2e9deded5ab485a49be67695cef246b432d5fc1",
+      "part": "aurelian.archer-side-bow-arm@7",
+      "definition_sha256": "c35abfa412903c0ed46948618e90e4ee9cda1facf8cc96a9e825301a976b545a",
       "mount": [
         [
           1.0,
@@ -79,20 +79,20 @@
     },
     {
       "instance_id": "horn-arm",
-      "part": "aurelian.archer-signal-horn-arm@2",
-      "definition_sha256": "af7e295a012323296bfdcb64b73f94003c5dd283ea7c881e71822799f4771711",
+      "part": "aurelian.archer-signal-horn-arm@7",
+      "definition_sha256": "65e468be0a11ac5e98724482d01fea726d240682d12e570693c81868993955aa",
       "mount": [
         [
           1.0,
           0.0,
           0.0,
-          0
+          0.0
         ],
         [
           0.0,
           1.0,
           0.0,
-          0
+          0.0
         ],
         [
           0.0,

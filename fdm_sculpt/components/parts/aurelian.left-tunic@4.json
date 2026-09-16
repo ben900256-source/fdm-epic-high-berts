@@ -1,0 +1,249 @@
+{
+  "component_id": "aurelian.left-tunic",
+  "version": 4,
+  "name": "Left softly folded robe sleeve",
+  "family": "left-tunic",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "left_robe_sleeve"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          0.82,
+          0.88,
+          1.48
+        ],
+        "export": true,
+        "location": [
+          0,
+          0,
+          0.15
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "left_robe_sleeve",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.13,
+          0.18,
+          0.9501284123738223
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9893947550348747,
+            -0.0015287572556336156,
+            -0.14524352519383954,
+            -0.161
+          ],
+          [
+            -0.0,
+            0.9999446117783735,
+            -0.010524893129988323,
+            -0.405
+          ],
+          [
+            0.14525157042001355,
+            0.010413274060113033,
+            0.9893399542189069,
+            0.18000000000000002
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "left_sleeve_crease_0",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.13,
+          0.18,
+          0.9403595057210832
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9996742199290944,
+            0.0002714238219456355,
+            0.025522153871987932,
+            0.028
+          ],
+          [
+            0.0,
+            0.9999434549691886,
+            -0.010634230779994923,
+            -0.405
+          ],
+          [
+            -0.025523597104572627,
+            0.01063076635953739,
+            0.9996176933195272,
+            0.18000000000000002
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "left_sleeve_crease_1",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.13,
+          0.18,
+          0.9519453765841819
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9875061031301207,
+            0.001655355076183296,
+            0.15757206630724707,
+            0.175
+          ],
+          [
+            0.0,
+            0.9999448230197943,
+            -0.01050480442048309,
+            -0.405
+          ],
+          [
+            -0.1575807611377852,
+            0.010373558477415322,
+            0.9874516155254149,
+            0.18000000000000002
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "left_sleeve_crease_2",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.2,
+          0.2,
+          0.5203844732503075
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.38461538461538447,
+            0.03547672809341947,
+            0.9223949304289055,
+            -0.009999999999999995
+          ],
+          [
+            0.0,
+            0.9992611746313143,
+            -0.038433122101204434,
+            -0.31
+          ],
+          [
+            -0.923076923076923,
+            0.014781970038924777,
+            0.38433122101204387,
+            0.47
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "left_sleeve_gather",
+        "segments": 24
+      }
+    ],
+    "landmarks": {
+      "left_shoulder": [
+        0,
+        0,
+        -0.03
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "left_sleeve_crease_0",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "left_robe_sleeve"
+      },
+      {
+        "operand": "left_sleeve_crease_1",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "left_robe_sleeve"
+      },
+      {
+        "operand": "left_sleeve_crease_2",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "left_robe_sleeve"
+      },
+      {
+        "operand": "left_sleeve_gather",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_robe_sleeve"
+      }
+    ],
+    "provenance": "Soft close-fitting shoulder emerging from the plate armhole; no pauldron cap or raised hem band. Visual-only.",
+    "robe_source": "aurelian.left-tunic@2",
+    "seed": 1001
+  }
+}

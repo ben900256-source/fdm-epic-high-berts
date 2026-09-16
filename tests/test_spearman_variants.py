@@ -52,9 +52,9 @@ def test_spearman_recipes_repeat_resolve_and_preserve_shared_parts(tmp_path):
     assert len(shared) > 30
     assert all(new_job['assets'][r]['key'] == old_job['assets'][r]['key'] for r in shared)
     for instance in json.loads((ROOT/'specs/elf-spearman-variants.json').read_text())['models']:
-        assert instance['mount'][2][3] == 1
+        assert instance['mount'][2][3] == 0
     for v in variants:
-        assert json.loads((ROOT/'specs'/v['model']).read_text())['source']['origin_mm'][2] == 1
+        assert json.loads((ROOT/'specs'/v['model']).read_text())['source']['origin_mm'][2] == 0
 
 
 @pytest.mark.integration

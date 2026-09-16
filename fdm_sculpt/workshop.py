@@ -54,10 +54,13 @@ def models():
     for family in ('spearmen', 'archers', 'swordmasters'):
         for path in sorted((ROOT/'specs/models'/family).glob('*.json')):
             slug = path.stem
+            unit_family = 'swordsmen' if family=='spearmen' and slug in (
+                '07-sword-low', '08-sword-guard', '09-sword-raised') else family
             label = slug.split('-', 1)[1].replace('-', ' ').capitalize()
-            result.append(dict(id=family+'/'+slug, family=family, label=label,
+            result.append(dict(id=unit_family+'/'+slug, family=unit_family, label=label,
                                command='sergeant' in slug, path=str(path)))
     for family, name, label in [('spearmen','elf-standard-bearer','Standard bearer'),
+                                ('spearmen','elf-spearman-sword-sergeant','Sword sergeant'),
                                 ('archers','elf-archer-sergeant','Horn sergeant'),
                                 ('swordmasters','elf-swordmaster-sergeant','Sergeant')]:
         result.append(dict(id=family+'/'+name, family=family, label=label, command=True,
@@ -76,7 +79,7 @@ def choose(request, entries=None):
     if type(seed) is not int or not 0 <= seed <= 2147483647:
         raise ValueError('Seed must be an integer from 0 to 2147483647')
     family = request.get('family')
-    if family not in ('spearmen','archers','swordmasters'):
+    if family not in ('spearmen','swordsmen','archers','swordmasters'):
         raise ValueError('Choose an infantry unit type')
     unique = request.get('unique', False)
     maximum = request.get('max_command', 1)
@@ -109,6 +112,8 @@ def choose(request, entries=None):
         if not fill():
             raise ValueError('The pool cannot fill five slots with these constraints')
     elif request.get('mode', 'manual') == 'manual':
+        # Explicit slot choices override randomization preferences, including
+        # when an already-previewed manual row is checked again for export.
         slots = request.get('slots')
     else:
         raise ValueError('Unknown row selection mode')
@@ -116,10 +121,6 @@ def choose(request, entries=None):
         raise ValueError('Choose a known model for each of the five slots')
     if any(by_id[i]['family'] != family for i in slots):
         raise ValueError('All row models must belong to the selected unit type')
-    if unique and len(set(slots)) != 5:
-        raise ValueError('Repeated variants are disabled')
-    if sum(by_id[i]['command'] for i in slots) > maximum:
-        raise ValueError('This row exceeds the command-model limit')
     return slots
 
 
@@ -162,14 +163,24 @@ def model_review(model_id):
 
 def plan(request):
     slots = choose(request)
+    magnet_holes=request.get('magnet_holes',False)
+    if type(magnet_holes) is not bool:
+        raise ValueError('Magnet holes must be enabled or disabled')
     revision = source_revision()
     by_id = {m['id']:m for m in models()}
     # Reuse the reviewed strip and terrain. Geometry is never scaled to fit.
     source = json.loads((ROOT/'specs/elf-modular-visual.json').read_text())
     placements = deepcopy([p for p in source['placements'] if '/' not in p['instance_id']])
+    base_ref='aurelian.base-body-20x5@1' if magnet_holes else 'aurelian.base-body-20x5-plain@2'
+    base=definitions_at(revision)[base_ref]
+    next(p for p in placements if p['instance_id']=='strip').update(part=base_ref,definition_sha256=base.sha256)
+    thickness=base.to_dict()['parameters']['recipe']['thickness']
+    for p in placements:
+        if p['instance_id']!='strip':
+            p['mount'][2][3]+=thickness-1
     for index, model_id in enumerate(slots):
         model = resolved_model(by_id[model_id]['path'], revision)
-        mount = translation([-8+4*index,0,1])
+        mount = translation([-8+4*index,0,thickness-1])
         for p in model['placements']:
             placements.append(dict(p, instance_id=f'row-{index+1:02}/'+p['instance_id'],
                                    mount=multiply(mount,p['mount'])))
@@ -177,7 +188,7 @@ def plan(request):
     pinned = dict(assembly=assembly, seed=request['seed'], slots=slots,
                   constraints=dict(family=request['family'], unique=request.get('unique',False),
                                    max_command=request.get('max_command',1)),
-                  base_mm=[20,5,2], spacing_mm=4)
+                  base_mm=[20,5,thickness], terrain_relief_mm=.5, spacing_mm=4,magnet_holes=magnet_holes)
     pinned['plan_sha256'] = digest(pinned)
     return pinned
 

@@ -29,7 +29,9 @@ def test_swordmaster_goldens_and_two_handed_grip():
     for p in assembled['placements']:
         slot=p['instance_id'].split('/')[-1]
         if slot in ('left-leg','right-leg','skirt','cape','torso'):
-            assert p['mount']==old[slot]['mount'] and p['part']==old[slot]['part']
+            assert p['mount']==old[slot]['mount']
+            expected='aurelian.cape-c@4' if slot=='cape' else old[slot]['part']
+            assert p['part']==expected
 
 @pytest.mark.integration
 def test_saved_swordmaster_provenance():

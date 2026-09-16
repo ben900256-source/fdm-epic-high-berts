@@ -25,13 +25,13 @@ def test_standard_parts_golden_and_shared_model():
     base = indexed(load_assembly(ROOT/'specs/elf-modular-visual.json', definitions))
     unit = indexed(load_assembly(ROOT/'specs/elf-unit-center-standard.json', definitions))
     solo = indexed(load_assembly(ROOT/'specs/elf-standard-bearer.json', definitions))
-    assert len(unit) == 105 and len(solo) == 21
+    assert len(unit) == 95 and len(solo) == 19
     assert 'elf-03/spear' not in unit and 'bearer-01/spear' not in solo
-    assert len([p for p in unit.values() if p['part'] == 'aurelian.spear@4']) == 4
+    assert len([p for p in unit.values() if p['part'] == 'aurelian.spear@5']) == 4
     removed = {'spear','shield','shield-insignia','equipment-joins','shield-torso-connector','shield-lower-connector'}
     for name, p in base.items():
         if name == 'elf-03/left-arm':
-            assert unit[name]['part'] == 'aurelian.horn-arm@6'
+            assert unit[name]['part'] == 'aurelian.horn-arm@12'
             continue
         if not (name.startswith('elf-03/') and name.split('/')[1] in removed):
             assert unit[name] == p
@@ -103,7 +103,7 @@ def test_pole_rooted_banner_and_horn_grip():
     horn = definitions[unit['elf-03/horn']['part']].to_dict()['parameters']
     arm = definitions[unit['elf-03/left-arm']['part']].to_dict()['parameters']
     assert math.dist(world(unit['elf-03/horn'],horn['landmarks']['mouthpiece']),
-                     world(unit['elf-03/left-arm'],arm['landmarks']['left_palm'])) < .2
+                         world(unit['elf-03/left-arm'],arm['landmarks']['left_grouped_fingers'])) < .2
 
 
 def test_slender_horn_preserves_grip_and_broad_banner_keeps_root():

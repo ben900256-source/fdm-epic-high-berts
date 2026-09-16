@@ -1,0 +1,599 @@
+{
+  "component_id": "aurelian.left-leg-c",
+  "version": 6,
+  "name": "Left leg with roomier fitted shoe with close-fitting sole",
+  "family": "left-leg",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "left_sole",
+    "left_toe",
+    "left_shin",
+    "left_knee",
+    "left_thigh",
+    "left_hip"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.065,
+        "dimensions": [
+          1.12,
+          2.2150000000000003,
+          0.28
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.991444861,
+            0.130526192,
+            0.0,
+            0.065809249
+          ],
+          [
+            -0.130411699,
+            0.990575196,
+            0.041875654,
+            -0.27118546
+          ],
+          [
+            0.00546587,
+            -0.041517402,
+            0.99912283,
+            -5.191926237
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.67,
+          -0.9975000000000003,
+          0.065
+        ],
+        "primitive": "cube",
+        "role": "left_sole"
+      },
+      {
+        "bevel": 0.2,
+        "dimensions": [
+          1.08,
+          2.04,
+          0.52
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.991444861,
+            0.130526192,
+            0.0,
+            0.065809249
+          ],
+          [
+            -0.130411699,
+            0.990575196,
+            0.041875654,
+            -0.27118546
+          ],
+          [
+            0.00546587,
+            -0.041517402,
+            0.99912283,
+            -5.191926237
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.67,
+          -1.0450000000000002,
+          0.33999999999999997
+        ],
+        "primitive": "cube",
+        "role": "left_toe"
+      },
+      {
+        "bevel": 0.04,
+        "bevel_segments": 3,
+        "depth": 1.12,
+        "export": false,
+        "frame_mm": [
+          [
+            0.991444861,
+            0.130526192,
+            0.0,
+            0.065809249
+          ],
+          [
+            -0.130411699,
+            0.990575196,
+            0.041875654,
+            -0.27118546
+          ],
+          [
+            0.00546587,
+            -0.041517402,
+            0.99912283,
+            -5.191926237
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.67,
+          -0.4300000000000001,
+          0.86
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.35,
+        "role": "left_ankle",
+        "scale": [
+          1,
+          0.95,
+          1
+        ],
+        "vertices": 40
+      },
+      {
+        "bevel": 0.03,
+        "end": [
+          -0.72,
+          -0.27,
+          2.24
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.999390827,
+            -0.034899497,
+            0.0,
+            0.0
+          ],
+          [
+            0.034868884,
+            0.998514191,
+            0.041875654,
+            -0.157033701
+          ],
+          [
+            -0.001461439,
+            -0.041850144,
+            0.99912283,
+            -5.196710613
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "primitive": "between",
+        "radius": 0.43,
+        "role": "left_shin",
+        "start": [
+          -0.67,
+          -0.43,
+          0.72
+        ]
+      },
+      {
+        "dimensions": [
+          0.88,
+          0.93,
+          0.92
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.999390827,
+            -0.034899497,
+            0.0,
+            0.0
+          ],
+          [
+            0.034868884,
+            0.998514191,
+            0.041875654,
+            -0.157033701
+          ],
+          [
+            -0.001461439,
+            -0.041850144,
+            0.99912283,
+            -5.196710613
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.72,
+          -0.27,
+          2.24
+        ],
+        "primitive": "sphere",
+        "ring_count": 8,
+        "role": "left_knee",
+        "segments": 16
+      },
+      {
+        "bevel": 0.03,
+        "end": [
+          -0.509689322,
+          0.017798743,
+          3.75
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.999390827,
+            -0.034899497,
+            0.0,
+            0.0
+          ],
+          [
+            0.034868884,
+            0.998514191,
+            0.041875654,
+            -0.157033701
+          ],
+          [
+            -0.001461439,
+            -0.041850144,
+            0.99912283,
+            -5.196710613
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "primitive": "between",
+        "radius": 0.48,
+        "role": "left_thigh",
+        "start": [
+          -0.72,
+          -0.27,
+          2.24
+        ]
+      },
+      {
+        "dimensions": [
+          1.02,
+          1.02,
+          1.15
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.999390827,
+            -0.034899497,
+            0.0,
+            0.0
+          ],
+          [
+            0.034868884,
+            0.998514191,
+            0.041875654,
+            -0.157033701
+          ],
+          [
+            -0.001461439,
+            -0.041850144,
+            0.99912283,
+            -5.196710613
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.509689322,
+          0.017798743,
+          3.75
+        ],
+        "primitive": "sphere",
+        "ring_count": 8,
+        "role": "left_hip",
+        "segments": 16
+      },
+      {
+        "bevel": 0.17,
+        "dimensions": [
+          0.76,
+          1.02,
+          0.64
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.991444861,
+            0.130526192,
+            0.0,
+            0.065809249
+          ],
+          [
+            -0.130411699,
+            0.990575196,
+            0.041875654,
+            -0.27118546
+          ],
+          [
+            0.00546587,
+            -0.041517402,
+            0.99912283,
+            -5.191926237
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.67,
+          -0.56,
+          0.64
+        ],
+        "primitive": "cube",
+        "role": "left_boot_instep",
+        "rotation": [
+          0.35,
+          0,
+          0
+        ]
+      },
+      {
+        "bevel": 0.04,
+        "dimensions": [
+          1.2,
+          0.4,
+          0.2
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.991444861,
+            0.130526192,
+            0.0,
+            0.065809249
+          ],
+          [
+            -0.130411699,
+            0.990575196,
+            0.041875654,
+            -0.27118546
+          ],
+          [
+            0.00546587,
+            -0.041517402,
+            0.99912283,
+            -5.191926237
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.67,
+          -0.6000000000000001,
+          -0.065
+        ],
+        "primitive": "cube",
+        "role": "left_sole_arch"
+      },
+      {
+        "bevel": 0,
+        "depth": 0.6999999999999993,
+        "export": false,
+        "location": [
+          0,
+          0,
+          -4.6
+        ],
+        "primitive": "cone",
+        "radius1": 2.1033333333333335,
+        "radius2": 2.0100000000000002,
+        "role": "shoe_trim_clearance",
+        "scale": [
+          1,
+          0.75,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.8999999999999986,
+        "export": false,
+        "location": [
+          0,
+          0,
+          -4.6
+        ],
+        "primitive": "cone",
+        "radius1": 1.3866666666666663,
+        "radius2": 1.2666666666666668,
+        "role": "shoe_trim_clearance_inner",
+        "scale": [
+          1,
+          0.75,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.06,
+        "dimensions": [
+          0.8800000000000001,
+          0.8200000000000001,
+          4.33965099472163
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.9804999999999999,
+          -2.63
+        ],
+        "primitive": "cube",
+        "role": "shoe_front_band_clearance",
+        "rotation": [
+          -0.09966865249116204,
+          0,
+          0
+        ]
+      }
+    ],
+    "boot_style": "Broader, longer forefoot with preserved heel and a recessed seat beneath the skirt edging.",
+    "landmarks": {
+      "left_ankle": [
+        -0.65458507043,
+        -0.5737438935100001,
+        -4.318490253239999
+      ],
+      "left_boot_instep": [
+        -0.6715534753900001,
+        -0.71173131287,
+        -4.53290001358
+      ],
+      "left_hip": [
+        -0.51,
+        1e-09,
+        -1.450000001
+      ],
+      "left_knee": [
+        -0.710138531,
+        -0.357936664,
+        -2.946323699
+      ],
+      "left_shin": [
+        -0.682361801,
+        -0.468771574,
+        -3.702345574
+      ],
+      "left_sole": [
+        -0.728658684,
+        -1.169186462,
+        -5.089231777
+      ],
+      "left_sole_arch": [
+        -0.6767745230700001,
+        -0.7808766567800001,
+        -5.23562091265
+      ],
+      "left_thigh": [
+        -0.610069266,
+        -0.178968331,
+        -2.19816185
+      ],
+      "left_toe": [
+        -0.7348586785100001,
+        -1.20472297913,
+        -4.81250092261
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "left_boot_instep",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_toe"
+      },
+      {
+        "operand": "left_ankle",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "left_toe"
+      },
+      {
+        "operand": "left_sole_arch",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "left_sole"
+      },
+      {
+        "operand": "shoe_trim_clearance_inner",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "shoe_trim_clearance"
+      },
+      {
+        "operand": "shoe_trim_clearance",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "left_sole"
+      },
+      {
+        "operand": "shoe_front_band_clearance",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "left_sole"
+      },
+      {
+        "operand": "shoe_trim_clearance",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "left_toe"
+      },
+      {
+        "operand": "shoe_front_band_clearance",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "left_toe"
+      }
+    ],
+    "provenance": "Shorten the sole at the toe, leaving a small 0.04 mm front rim. Heel, toe upper, width, thickness, stance and skirt clearance cuts preserved. Visual-only.",
+    "shoe_fit": {
+      "clearance_mm": 0.1,
+      "seed": 1001,
+      "sole_length_mm": 2.2150000000000003,
+      "sole_width_mm": 1.12,
+      "source": "aurelian.left-leg-c@4",
+      "toe_length_mm": 2.04,
+      "toe_width_mm": 1.08,
+      "trim_definition_sha256": "eb5a69b227244473217a848b7dcc6c36117b4684144b050b1e076567f2c25fc5",
+      "trim_reference": "aurelian.mail-skirt-trim-c@6"
+    },
+    "sole_fit": {
+      "removed_front_mm": 0.1349999999999998,
+      "seed": 1001,
+      "source": "aurelian.left-leg-c@5",
+      "source_sha256": "20fb3d642fd47a6e014167079cbdc377625c042634ef9047219f5979eb21af58",
+      "toe_projection_mm": 0.04
+    }
+  }
+}
