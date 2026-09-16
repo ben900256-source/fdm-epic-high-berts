@@ -1,0 +1,929 @@
+{
+  "schema_version": 1,
+  "assembly_id": "aurelian-forward-spearmen",
+  "label": "Forward spear variants (10)",
+  "placements": [
+    {
+      "instance_id": "base-01",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -16
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-01-terrain",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -16
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-02",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-02-terrain",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-03",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-03-terrain",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-04",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-04-terrain",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-05",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          16
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-05-terrain",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          16
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-06",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -16
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-06-terrain",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -16
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-07",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-07-terrain",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-08",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-08-terrain",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-09",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-09-terrain",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-10",
+      "part": "aurelian.base-body-4x5-plain@1",
+      "definition_sha256": "a247057c3d08f998d541c7e8d639b15cfea7b7b4e05d0eb3dd3599254086f886",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          16
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "base-10-terrain",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          16
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "models": [
+    {
+      "instance_id": "forward-01",
+      "model": "models/spearmen/11-forward-spear-00-degrees.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -16
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "forward-02",
+      "model": "models/spearmen/12-forward-spear-05-degrees.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "forward-03",
+      "model": "models/spearmen/13-forward-spear-10-degrees.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "forward-04",
+      "model": "models/spearmen/14-forward-spear-15-degrees.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "forward-05",
+      "model": "models/spearmen/15-forward-spear-20-degrees.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          16
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "forward-06",
+      "model": "models/spearmen/16-forward-spear-25-degrees.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -16
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "forward-07",
+      "model": "models/spearmen/17-forward-spear-30-degrees.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "forward-08",
+      "model": "models/spearmen/18-forward-spear-35-degrees.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "forward-09",
+      "model": "models/spearmen/19-forward-spear-40-degrees.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "forward-10",
+      "model": "models/spearmen/20-forward-spear-45-degrees.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          16
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

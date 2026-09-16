@@ -57,6 +57,24 @@ for name,p in placements.items():
  prefix=name.rsplit('/',1)[0]+'/'
  skirt=geometry(placements[prefix+'skirt'])
  shield=geometry(p)
+ # The forward shield face must never be crossed by the decorative trim.
+ # Intentional contact at the rear remains separate from this visual check.
+ shield_inverse=Matrix(p['mount']).inverted()
+ front_vertices=[]
+ front_faces=[]
+ for obj in loaded[p['part']].objects:
+  matrix=Matrix(p['mount'])@obj.matrix_basis
+  for face in obj.data.polygons:
+   verts=[matrix@obj.data.vertices[i].co for i in face.vertices]
+   if all((shield_inverse@v).y < -.519 for v in verts):
+    n=len(front_vertices)
+    front_vertices.extend(verts)
+    front_faces.append(list(range(n,n+len(verts))))
+ trim=geometry(placements[prefix+'skirt-trim'])
+ trim_inverse=Matrix(placements[prefix+'skirt-trim']['mount']).inverted()
+ trim_x=[(trim_inverse@v).x for v in trim[0]]
+ assert max(trim_x)-min(trim_x)>3.9, 'Recess must preserve the surrounding hem band'
+ front_crossings=len(BVHTree.FromPolygons(front_vertices,front_faces).overlap(trim[1]))
  join=geometry(placements[prefix+'shield-lower-connector'])
  hand=geometry(placements[prefix+'left-arm'],lambda r: any(k in r for k in ('palm','fingers','thumb')))
  torso_join=geometry(placements[prefix+'shield-torso-connector'])
@@ -76,9 +94,9 @@ for name,p in placements.items():
   if v.z>low+.10 or (shield_inverse@v).y<0: continue
   q,n,_,dist=join[1].find_nearest(v)
   offsets.append((v-q).dot(n))
- c=dict(figure=prefix, shield_join=touches(shield,join),skirt_join=touches(skirt,join),hand=touches(shield,hand),torso_join=touches(shield,torso_join),front_inset_mm=inset,rear_tip_to_join_max_offset=max(offsets),bottom_edge_to_join_max_offset=max(bottom_offsets))
+ c=dict(figure=prefix, trim_front_crossings=front_crossings, shield_join=touches(shield,join),skirt_join=touches(skirt,join),hand=touches(shield,hand),torso_join=touches(shield,torso_join),front_inset_mm=inset,rear_tip_to_join_max_offset=max(offsets),bottom_edge_to_join_max_offset=max(bottom_offsets))
  checks.append(c)
 report=dict(label='Visual fit only; no slicing or manufacturing validation',checks=checks)
 (output/'shield-tuck-contact.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2),flush=True)
-assert checks and all(all(c[k] for k in ('shield_join','skirt_join','hand','torso_join')) and c['rear_tip_to_join_max_offset'] < 0 and c['bottom_edge_to_join_max_offset'] < 0 and c['front_inset_mm'] > .08 for c in checks)
+assert checks and all(all(c[k] for k in ('shield_join','skirt_join','hand','torso_join')) and c['rear_tip_to_join_max_offset'] < 0 and c['bottom_edge_to_join_max_offset'] < 0 and c['front_inset_mm'] > .08 and c['trim_front_crossings'] == 0 for c in checks)

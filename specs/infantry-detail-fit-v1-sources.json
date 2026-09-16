@@ -1,0 +1,85 @@
+{
+  "seed": 1001,
+  "sources": {
+    "aurelian.helmet@7": "dfe68cc0dc09d3266256cdd940a5d949991086da043c3a61b828228108688317",
+    "aurelian.hunting-hawk@2": "23e31e189b0b1f430fe17635b69c38342c1f46f44d6cc91c77703cac12840908",
+    "aurelian.left-arm-b@8": "b82653b31ecedfa5122203ede845b7b9064b38b2b544fdc921f910fd2f3b52d2",
+    "aurelian.left-arm-c@8": "27052fb7fb5cc148f7f658384b83c3f4739e1d9e5323325b98e850f011fd46de",
+    "aurelian.left-arm-d@8": "c19e6f72ae9f898b35434b14171cb5b85eb790fb624e3fdaa3840e835a87e3df",
+    "aurelian.left-arm-e@8": "801d2109a2a87b4d48dfaad57a9e69e6f3fca1f54e5e2fbfa5d47eb7b5702b9e",
+    "aurelian.left-arm@10": "e2929d836fde413bc72c2ad3ec32dca7101638f2e61044492c3e3c4964780c13",
+    "aurelian.right-arm-b@7": "048638edb51c998a6cd6b961bd7469088df9b734f9ce68f402ee2b6ac4e8580a",
+    "aurelian.right-arm-c@7": "71de60230acef15d972d3303bf4373535288fb366bedfa76a9632f5c6513eedb",
+    "aurelian.right-arm-c@8": "52f9b257490b14ffe925174e34521c35c314f945c08189e2893334e5051e54ed",
+    "aurelian.right-arm-d@8": "66e062b3830d7bb8b9400cf7ebc7a8bf24cfa2aecb4735568313148156338080",
+    "aurelian.right-arm-e@8": "7be9f973dfc5800eea098f3e48584b3503adffe8271edbf3bb4242e82dfbc691",
+    "aurelian.right-arm@7": "557529e78064bc948269a5719b1e97f1db84b7329c7fb00a44ba7947f134def9",
+    "aurelian.sergeant-helmet@2": "6778ff1d921229bd035a12319d89e2380ec6c5bf39c6d4b525f4bcdab30bb18c",
+    "aurelian.spearman-hawk-arm@5": "76729ec0d0c082f559553f7f039ce5c0fe20e8460e743949143c03a19be46b2c",
+    "aurelian.spearman-sword-guard-arm@6": "75856184cfca28c81e452d2f00661bb2be3a9e31f66dbfd1d3a110c87813a360",
+    "aurelian.spearman-sword-low-arm@6": "0173268519138d1534283caa54eb28edb82d17accf8ffcb4ceccd3d2b6142c1f",
+    "aurelian.spearman-sword-raised-arm@6": "c582b142769241402fdca8002d12e271d8aae337a125f5cad38e0865fe32daab"
+  },
+  "hands": [
+    {
+      "source": "aurelian.left-arm-b@8",
+      "version": 9
+    },
+    {
+      "source": "aurelian.left-arm-c@8",
+      "version": 9
+    },
+    {
+      "source": "aurelian.left-arm-d@8",
+      "version": 9
+    },
+    {
+      "source": "aurelian.left-arm-e@8",
+      "version": 9
+    },
+    {
+      "source": "aurelian.left-arm@10",
+      "version": 11
+    },
+    {
+      "source": "aurelian.right-arm-b@7",
+      "version": 8
+    },
+    {
+      "source": "aurelian.right-arm-c@7",
+      "version": 9
+    },
+    {
+      "source": "aurelian.right-arm-c@8",
+      "version": 10
+    },
+    {
+      "source": "aurelian.right-arm-d@8",
+      "version": 9
+    },
+    {
+      "source": "aurelian.right-arm-e@8",
+      "version": 9
+    },
+    {
+      "source": "aurelian.right-arm@7",
+      "version": 8
+    },
+    {
+      "source": "aurelian.spearman-hawk-arm@5",
+      "version": 6
+    },
+    {
+      "source": "aurelian.spearman-sword-guard-arm@6",
+      "version": 7
+    },
+    {
+      "source": "aurelian.spearman-sword-low-arm@6",
+      "version": 7
+    },
+    {
+      "source": "aurelian.spearman-sword-raised-arm@6",
+      "version": 7
+    }
+  ]
+}

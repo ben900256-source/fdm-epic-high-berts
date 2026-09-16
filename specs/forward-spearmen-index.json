@@ -1,0 +1,385 @@
+{
+  "seed": 1001,
+  "variants": [
+    {
+      "model": "models/spearmen/11-forward-spear-00-degrees.json",
+      "number": 1,
+      "elevation": 0,
+      "arm": "aurelian.forward-spear-arm-01@2",
+      "support": "aurelian.forward-spear-deadwood-01@2",
+      "spear_mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.05
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          -1.0,
+          -5.429287845999999
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          5.888402971
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "tip": [
+        1.05,
+        -14.179287846,
+        6.348402971
+      ]
+    },
+    {
+      "model": "models/spearmen/12-forward-spear-05-degrees.json",
+      "number": 2,
+      "elevation": 5,
+      "arm": "aurelian.forward-spear-arm-02@2",
+      "support": "aurelian.forward-spear-deadwood-02@2",
+      "spear_mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.05
+        ],
+        [
+          0.0,
+          0.08715574274765814,
+          -0.9961946980917455,
+          -5.451114038504301
+        ],
+        [
+          0.0,
+          0.9961946980917455,
+          0.08715574274765814,
+          6.308500975066556
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "tip": [
+        1.05,
+        -14.127726005,
+        7.529363285
+      ]
+    },
+    {
+      "model": "models/spearmen/13-forward-spear-10-degrees.json",
+      "number": 3,
+      "elevation": 10,
+      "arm": "aurelian.forward-spear-arm-03@2",
+      "support": "aurelian.forward-spear-deadwood-03@2",
+      "spear_mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.05
+        ],
+        [
+          0.0,
+          0.17364817766693041,
+          -0.984807753012208,
+          -5.436243222185386
+        ],
+        [
+          0.0,
+          0.984807753012208,
+          0.17364817766693041,
+          6.72890265741565
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "tip": [
+        1.05,
+        -13.973432899,
+        8.701335778
+      ]
+    },
+    {
+      "model": "models/spearmen/14-forward-spear-15-degrees.json",
+      "number": 4,
+      "elevation": 15,
+      "arm": "aurelian.forward-spear-arm-04@2",
+      "support": "aurelian.forward-spear-deadwood-04@2",
+      "spear_mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.05
+        ],
+        [
+          0.0,
+          0.25881904510252074,
+          -0.9659258262890683,
+          -5.3847885729346885
+        ],
+        [
+          0.0,
+          0.9659258262890683,
+          0.25881904510252074,
+          7.146408507399128
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "tip": [
+        1.05,
+        -13.717582792,
+        9.855401032
+      ]
+    },
+    {
+      "model": "models/spearmen/15-forward-spear-20-degrees.json",
+      "number": 5,
+      "elevation": 20,
+      "arm": "aurelian.forward-spear-arm-05@2",
+      "support": "aurelian.forward-spear-deadwood-05@2",
+      "spear_mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.05
+        ],
+        [
+          0.0,
+          0.3420201433256688,
+          -0.9396926207859083,
+          -5.297141691702167
+        ],
+        [
+          0.0,
+          0.9396926207859083,
+          0.3420201433256688,
+          7.557841053401692
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "tip": [
+        1.05,
+        -13.362122858,
+        10.982775913
+      ]
+    },
+    {
+      "model": "models/spearmen/16-forward-spear-25-degrees.json",
+      "number": 6,
+      "elevation": 25,
+      "arm": "aurelian.forward-spear-arm-06@2",
+      "support": "aurelian.forward-spear-deadwood-06@2",
+      "spear_mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.05
+        ],
+        [
+          0.0,
+          0.42261826174069944,
+          -0.9063077870366499,
+          -5.173969624176641
+        ],
+        [
+          0.0,
+          0.9063077870366499,
+          0.42261826174069944,
+          7.960069045318498
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "tip": [
+        1.05,
+        -12.90975836,
+        12.074880418
+      ]
+    },
+    {
+      "model": "models/spearmen/17-forward-spear-30-degrees.json",
+      "number": 7,
+      "elevation": 30,
+      "arm": "aurelian.forward-spear-arm-07@2",
+      "support": "aurelian.forward-spear-deadwood-07@2",
+      "spear_mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.05
+        ],
+        [
+          0.0,
+          0.5000000000000001,
+          -0.8660254037844386,
+          -5.016209784165305
+        ],
+        [
+          0.0,
+          0.8660254037844386,
+          0.5000000000000001,
+          8.350031285259158
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "tip": [
+        1.05,
+        -12.363932067,
+        13.123402971
+      ]
+    },
+    {
+      "model": "models/spearmen/18-forward-spear-35-degrees.json",
+      "number": 8,
+      "elevation": 35,
+      "arm": "aurelian.forward-spear-arm-08@2",
+      "support": "aurelian.forward-spear-deadwood-08@2",
+      "spear_mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.05
+        ],
+        [
+          0.0,
+          0.573576436351046,
+          -0.8191520442889918,
+          -4.825062819308641
+        ],
+        [
+          0.0,
+          0.8191520442889918,
+          0.573576436351046,
+          8.724759925112085
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "tip": [
+        1.05,
+        -11.728798046,
+        14.120363684
+      ]
+    },
+    {
+      "model": "models/spearmen/19-forward-spear-40-degrees.json",
+      "number": 9,
+      "elevation": 40,
+      "arm": "aurelian.forward-spear-arm-09@2",
+      "support": "aurelian.forward-spear-deadwood-09@2",
+      "spear_mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.05
+        ],
+        [
+          0.0,
+          0.6427876096865394,
+          -0.766044443118978,
+          -4.601983473426902
+        ],
+        [
+          0.0,
+          0.766044443118978,
+          0.6427876096865394,
+          9.081403053660658
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "tip": [
+        1.05,
+        -11.00919005,
+        15.058175082
+      ]
+    },
+    {
+      "model": "models/spearmen/20-forward-spear-45-degrees.json",
+      "number": 10,
+      "elevation": 45,
+      "arm": "aurelian.forward-spear-arm-10@2",
+      "support": "aurelian.forward-spear-deadwood-10@2",
+      "spear_mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.05
+        ],
+        [
+          0.0,
+          0.7071067811865476,
+          -0.7071067811865476,
+          -4.34866951504124
+        ],
+        [
+          0.0,
+          0.7071067811865476,
+          0.7071067811865476,
+          9.417246401349615
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "tip": [
+        1.05,
+        -10.210584731,
+        15.929699856
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "seed": 1001,
+  "helmets": [],
+  "sword": {
+    "source": "aurelian.shortblade@2",
+    "sha256": "47cc9c7bb9cd0b4a2684679e900a465a2bb1e125aa2e4fb79fcf21bce707a032",
+    "version": 4
+  },
+  "pommel_raise_mm": 0.77,
+  "previous_sword_refs": [
+    "aurelian.shortblade@3"
+  ],
+  "golden": "crown-and-hilt-v3-golden.json",
+  "plume": {
+    "source": "aurelian.sergeant-helmet@4",
+    "sha256": "1198002fbcf16c0734aa8076ae6688558bbaba495fc74b2509176caf1dec8e95",
+    "version": 6,
+    "length_factor": 1.35
+  }
+}

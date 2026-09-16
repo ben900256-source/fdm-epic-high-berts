@@ -14,8 +14,8 @@
   "parts": [
     {
       "instance_id": "left-arm",
-      "part": "aurelian.left-arm-c@8",
-      "definition_sha256": "27052fb7fb5cc148f7f658384b83c3f4739e1d9e5323325b98e850f011fd46de",
+      "part": "aurelian.left-arm-c@10",
+      "definition_sha256": "77feccd609d69e989c7176e0b12f5df36611671f217bb2df372957e6d568aff5",
       "mount": [
         [
           0.9993908269999999,

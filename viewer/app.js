@@ -167,7 +167,10 @@ function visibility() {
     const p=mesh.userData;
     const slot=p.instance_id.split('/').at(-1);
     const shieldPiece=slot.includes('shield')||(slot==='part'&&p.part.includes('shield'));
-    mesh.visible=($('figure').value==='all'||p.instance_id.split('/')[0]===$('figure').value)
+    const selected=$('figure').value;
+    const forwardBase=selected.startsWith('forward-')?'base-'+selected.slice('forward-'.length):null;
+    mesh.visible=(selected==='all'||p.instance_id.split('/')[0]===selected
+      ||(forwardBase&&(p.instance_id===forwardBase||p.instance_id===forwardBase+'-terrain')))
       && ($('part').value==='all'||p.part===$('part').value)
       && ($('shields').checked||!shieldPiece);
   }

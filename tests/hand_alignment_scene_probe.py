@@ -55,9 +55,18 @@ manifest=json.loads(Path('specs/hand-alignment-sources.json').read_text())
 records={r['source'].split('@')[0]+'@'+str(r['version']):r for r in manifest['parts']}
 checks=[]
 for name,p in placements.items():
- if p['part'] not in records: continue
- record=records[p['part']]
  prefix=name.rsplit('/',1)[0]+'/' if '/' in name else ''
+ params=job['assets'][p['part']]['definition']['parameters']
+ fit=params.get('additive_fist_fit',params.get('fist_fit'))
+ reference=fit['source'] if fit else p['part']
+ if reference in records:
+  record=records[reference]
+ elif fit:
+  slots=('hunting-hawk','shield') if name.endswith('/left-arm') else ('spear','shortblade')
+  slot=next((slot for slot in slots if prefix+slot in placements),None)
+  if slot is None: raise AssertionError('Missing held item for '+name)
+  record=dict(item_slot=slot)
+ else: continue
  item=placements[prefix+record['item_slot']]
  hand=geometry(p,lambda role:any(k in role for k in ('palm','fingers','thumb','knuckle_plate','falconry_glove')))
  sleeve=geometry(p,lambda role:role=='robe_sleeve')

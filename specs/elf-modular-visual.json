@@ -376,8 +376,8 @@
     },
     {
       "instance_id": "elf-01/right-arm",
-      "part": "aurelian.right-arm@7",
-      "definition_sha256": "557529e78064bc948269a5719b1e97f1db84b7329c7fb00a44ba7947f134def9",
+      "part": "aurelian.right-arm@9",
+      "definition_sha256": "65bb1fee9bb223adfe90442eb0c6d0754314d36e4ab80469038cc7c4f06f42b5",
       "mount": [
         [
           0.992206031,
@@ -407,8 +407,8 @@
     },
     {
       "instance_id": "elf-01/left-arm",
-      "part": "aurelian.left-arm@10",
-      "definition_sha256": "e2929d836fde413bc72c2ad3ec32dca7101638f2e61044492c3e3c4964780c13",
+      "part": "aurelian.left-arm@12",
+      "definition_sha256": "5754420d681240c63c6ea607b1df4643453b08bc8edd5dfba242b224bca1c839",
       "mount": [
         [
           0.9858693620370101,
@@ -841,8 +841,8 @@
     },
     {
       "instance_id": "elf-02/right-arm",
-      "part": "aurelian.right-arm-b@7",
-      "definition_sha256": "048638edb51c998a6cd6b961bd7469088df9b734f9ce68f402ee2b6ac4e8580a",
+      "part": "aurelian.right-arm-b@9",
+      "definition_sha256": "a04c2c9a656dcd3a2787461dd8e47b5432bc828a71aa64898ebce1491e7f2d87",
       "mount": [
         [
           0.994181098,
@@ -872,8 +872,8 @@
     },
     {
       "instance_id": "elf-02/left-arm",
-      "part": "aurelian.left-arm-b@8",
-      "definition_sha256": "b82653b31ecedfa5122203ede845b7b9064b38b2b544fdc921f910fd2f3b52d2",
+      "part": "aurelian.left-arm-b@10",
+      "definition_sha256": "d4786c412ec12b90f4b989379c37cdb41a98fe631d283f73693ea28cff345262",
       "mount": [
         [
           0.994181098,
@@ -1306,8 +1306,8 @@
     },
     {
       "instance_id": "elf-03/right-arm",
-      "part": "aurelian.right-arm-c@7",
-      "definition_sha256": "71de60230acef15d972d3303bf4373535288fb366bedfa76a9632f5c6513eedb",
+      "part": "aurelian.right-arm-c@12",
+      "definition_sha256": "f679e8fe9ad57a127e4f537d61616b12aba1cf1ffb4c9e7a7b2f8e60daec0aed",
       "mount": [
         [
           0.999390827,
@@ -1337,8 +1337,8 @@
     },
     {
       "instance_id": "elf-03/left-arm",
-      "part": "aurelian.left-arm-c@8",
-      "definition_sha256": "27052fb7fb5cc148f7f658384b83c3f4739e1d9e5323325b98e850f011fd46de",
+      "part": "aurelian.left-arm-c@10",
+      "definition_sha256": "77feccd609d69e989c7176e0b12f5df36611671f217bb2df372957e6d568aff5",
       "mount": [
         [
           0.999390827,
@@ -1771,8 +1771,8 @@
     },
     {
       "instance_id": "elf-04/right-arm",
-      "part": "aurelian.right-arm-d@8",
-      "definition_sha256": "66e062b3830d7bb8b9400cf7ebc7a8bf24cfa2aecb4735568313148156338080",
+      "part": "aurelian.right-arm-d@10",
+      "definition_sha256": "65bb48dccd671035c8815535e3b4c71edce0b455d3261a36b9086460c3952f31",
       "mount": [
         [
           0.990117246,
@@ -1802,8 +1802,8 @@
     },
     {
       "instance_id": "elf-04/left-arm",
-      "part": "aurelian.left-arm-d@8",
-      "definition_sha256": "c19e6f72ae9f898b35434b14171cb5b85eb790fb624e3fdaa3840e835a87e3df",
+      "part": "aurelian.left-arm-d@10",
+      "definition_sha256": "24c2c3297b6ffef6c4d8f95c3d9beefc7b0b67105868125c62b335a9b8b52189",
       "mount": [
         [
           0.990117246,
@@ -2236,8 +2236,8 @@
     },
     {
       "instance_id": "elf-05/right-arm",
-      "part": "aurelian.right-arm-e@8",
-      "definition_sha256": "7be9f973dfc5800eea098f3e48584b3503adffe8271edbf3bb4242e82dfbc691",
+      "part": "aurelian.right-arm-e@10",
+      "definition_sha256": "444a7bfa7ad6b56ad343787182a24a6c034425310f02d2ec8fc85bd8f1a86271",
       "mount": [
         [
           0.995703136,
@@ -2267,8 +2267,8 @@
     },
     {
       "instance_id": "elf-05/left-arm",
-      "part": "aurelian.left-arm-e@8",
-      "definition_sha256": "801d2109a2a87b4d48dfaad57a9e69e6f3fca1f54e5e2fbfa5d47eb7b5702b9e",
+      "part": "aurelian.left-arm-e@10",
+      "definition_sha256": "3fe57b255b72cd3a1239e4c73d3fc4993a8fbd96647ace50d10d723fe67d4526",
       "mount": [
         [
           0.995703136,
@@ -2856,8 +2856,8 @@
     },
     {
       "instance_id": "elf-01/skirt-trim",
-      "part": "aurelian.mail-skirt-trim@8",
-      "definition_sha256": "6a729677235916840a23becbe5094ec573b855f95631b6af890e098a83ed1ba7",
+      "part": "aurelian.mail-skirt-trim@11",
+      "definition_sha256": "2a6c4e1f85eecbcf416f30c08bc00ddd05a495d9334163692674738b5658be53",
       "mount": [
         [
           0.992206031,
@@ -2887,8 +2887,8 @@
     },
     {
       "instance_id": "elf-02/skirt-trim",
-      "part": "aurelian.mail-skirt-trim-b@8",
-      "definition_sha256": "9a8d40539653c8fc86ce2457410b593fd223d3086b66c52197a95dc9f7632747",
+      "part": "aurelian.mail-skirt-trim-b@11",
+      "definition_sha256": "437bdaa1ee2947094af32a851b64b4a8a53c1d5caefdc2a2e946d2515c68a5d1",
       "mount": [
         [
           0.994181098,
@@ -2918,8 +2918,8 @@
     },
     {
       "instance_id": "elf-03/skirt-trim",
-      "part": "aurelian.mail-skirt-trim-c@8",
-      "definition_sha256": "2d73a4f553d775f1d0e274ccfd43f9d16be0220ed0742885abf737c52c67d945",
+      "part": "aurelian.mail-skirt-trim-c@11",
+      "definition_sha256": "53daaf2c75f51faa9d13d1d25b000b42a76ed77a588bad1678d5230ca1c5aa3d",
       "mount": [
         [
           0.999390827,
@@ -2949,8 +2949,8 @@
     },
     {
       "instance_id": "elf-04/skirt-trim",
-      "part": "aurelian.mail-skirt-trim-d@8",
-      "definition_sha256": "197aa8e61e6e22912e9af40f137b6e8041395d6c692b4ddc6e88d4ea221f0ec7",
+      "part": "aurelian.mail-skirt-trim-d@11",
+      "definition_sha256": "17a2589e9beb7bf4bacf2d01270942c0aceb95ec92f68f09ea2cda6cdbf15b4a",
       "mount": [
         [
           0.990117246,
@@ -2980,8 +2980,8 @@
     },
     {
       "instance_id": "elf-05/skirt-trim",
-      "part": "aurelian.mail-skirt-trim-e@8",
-      "definition_sha256": "bee2e4da910e58a231c841ad01b305ef88930e180c14a24f513333cd4ef0f1b6",
+      "part": "aurelian.mail-skirt-trim-e@11",
+      "definition_sha256": "5bd5350bef8e1e13ff7356281000e46437ed6c1df6b90a250f7f59024307554c",
       "mount": [
         [
           0.995703136,

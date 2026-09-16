@@ -1,0 +1,130 @@
+{
+  "seed": 1001,
+  "hands": [
+    {
+      "source": "aurelian.forward-spear-arm-01@1",
+      "sha256": "e4e8bdd45d672a5942e64ca57de23ff08918df73c4d3b64e50b0dfeb32490cf8",
+      "version": 2
+    },
+    {
+      "source": "aurelian.forward-spear-arm-02@1",
+      "sha256": "c53fe55bdee3ce3c0c5716528c55a9888c75e41a925e1541108c5153c00902ed",
+      "version": 2
+    },
+    {
+      "source": "aurelian.forward-spear-arm-03@1",
+      "sha256": "e84b3bc7edcd97639384474204d883214fe566cd63bf8fe195d9a9488715088f",
+      "version": 2
+    },
+    {
+      "source": "aurelian.forward-spear-arm-04@1",
+      "sha256": "e8304c9b1c356510c1cec51e66738caf5165f8f4dba92368682b570e3279b98c",
+      "version": 2
+    },
+    {
+      "source": "aurelian.forward-spear-arm-05@1",
+      "sha256": "e10d0927e62c6204fb8a117c43ebb3055efe9df7c1ab454c69e721f0660d63cf",
+      "version": 2
+    },
+    {
+      "source": "aurelian.forward-spear-arm-06@1",
+      "sha256": "e484739a18f26c75cdb487168c12c1aa9018ffbdd330052a690376410bf2d843",
+      "version": 2
+    },
+    {
+      "source": "aurelian.forward-spear-arm-07@1",
+      "sha256": "6b7f7de8d6a966557cab1fe9f30917d71aac53d385398b183e8c92c86fb8f1e3",
+      "version": 2
+    },
+    {
+      "source": "aurelian.forward-spear-arm-08@1",
+      "sha256": "bcf2bde15ecd6ae402395b6ef56ed61049cccb9527d6d1de0b22a4cc2fc8fa30",
+      "version": 2
+    },
+    {
+      "source": "aurelian.forward-spear-arm-09@1",
+      "sha256": "3bef7f7fafad2f0c60c5d1431f24d15b08ff08495b26fa9e4e9bdd33a0f062d5",
+      "version": 2
+    },
+    {
+      "source": "aurelian.forward-spear-arm-10@1",
+      "sha256": "c575ec01047d0fccc265af05674ea72377b3ce2c17aa8c152e93af1b95bca3a9",
+      "version": 2
+    },
+    {
+      "source": "aurelian.left-arm-b@9",
+      "sha256": "aaf7ae7a717ab7bfb455e7f754dfa9de7e939b9d1ecde0decd5c495342d78482",
+      "version": 10
+    },
+    {
+      "source": "aurelian.left-arm-c@9",
+      "sha256": "fa0c53eabc7145754f54bdcbf20aeee124c858d9170d872c03ce88b3fc363df9",
+      "version": 10
+    },
+    {
+      "source": "aurelian.left-arm-d@9",
+      "sha256": "c238fd1048cfde2090a80528e6624a0025b932e3839e8e9e5e5bbdf868b1f534",
+      "version": 10
+    },
+    {
+      "source": "aurelian.left-arm-e@9",
+      "sha256": "82152029ccd92003a5c8b1962fdf5d1d2b06f7fa9481c9e2ea0effa2cb0fa23f",
+      "version": 10
+    },
+    {
+      "source": "aurelian.left-arm@11",
+      "sha256": "9f05dbc5c2e003d066115fdbb80e253a321526fc263d0c7aa54fdd767211ce3e",
+      "version": 12
+    },
+    {
+      "source": "aurelian.right-arm-b@8",
+      "sha256": "763f8f641defd82a1cda9ff500fe1ef16d87b9e91295bd37dbe83e000055b4c6",
+      "version": 9
+    },
+    {
+      "source": "aurelian.right-arm-c@10",
+      "sha256": "100e47607d62c89bfe7bb0ed75d57c9cab17d2463a1b90b2ba3b962899e7cc18",
+      "version": 11
+    },
+    {
+      "source": "aurelian.right-arm-c@9",
+      "sha256": "0ea9adfd6ea020bc08d5926164a72016692367ef061609f839adea1866095cfc",
+      "version": 12
+    },
+    {
+      "source": "aurelian.right-arm-d@9",
+      "sha256": "852d5b4262881fc1aa8e76a81055a83724cff15e4b10e1964db4c64854241b62",
+      "version": 10
+    },
+    {
+      "source": "aurelian.right-arm-e@9",
+      "sha256": "9f65009f8140514a81966d16c4579396cae45a440b7252ec25f6530dd2deecc3",
+      "version": 10
+    },
+    {
+      "source": "aurelian.right-arm@8",
+      "sha256": "4dcb4be9a6426678ae5fe46724b3a1aabb9e890ea0fe922a84904cdf3694f300",
+      "version": 9
+    },
+    {
+      "source": "aurelian.spearman-hawk-arm@6",
+      "sha256": "d7e36cf00b555869ea33f9eab1b7dc4e9900b7a11e37c0456ecce26cb395e3fc",
+      "version": 7
+    },
+    {
+      "source": "aurelian.spearman-sword-guard-arm@7",
+      "sha256": "e1c0b0cabbb404bfca4e2fe44bbeb61302b34d9f90fe71eea8e0be459fdd90cf",
+      "version": 8
+    },
+    {
+      "source": "aurelian.spearman-sword-low-arm@7",
+      "sha256": "43329c3d9742036f0125d8649b60d62e56cea3e3685e30ebb3bda25c9838d5c7",
+      "version": 8
+    },
+    {
+      "source": "aurelian.spearman-sword-raised-arm@7",
+      "sha256": "bd9d60a6edb876001e549afb66cdeab00cb02031f2004279caaf548ac558886b",
+      "version": 8
+    }
+  ]
+}

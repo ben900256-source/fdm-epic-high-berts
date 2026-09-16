@@ -155,6 +155,12 @@ def model_review(model_id):
     if entry is None:
         raise ValueError('Unknown model')
     assembly = deepcopy(resolved_model(entry['path'],source_revision()))
+    if any(p['part']=='aurelian.forward-base-extension@1' for p in assembly['placements']):
+        definitions=definitions_at(source_revision())
+        for name,ref,z in [('base-underfoot','aurelian.base-body-4x5-plain@1',0),
+                           ('terrain-underfoot','aurelian.terrain-soil-gallery@5',1)]:
+            assembly['placements'].append(dict(instance_id=name,part=ref,
+                definition_sha256=definitions[ref].sha256,mount=translation([0,0,z])))
     for p in assembly['placements']:
         p['instance_id'] = 'model/'+p['instance_id']
     assembly['label'] = entry['label']
@@ -182,13 +188,19 @@ def plan(request):
         model = resolved_model(by_id[model_id]['path'], revision)
         mount = translation([-8+4*index,0,thickness-1])
         for p in model['placements']:
-            placements.append(dict(p, instance_id=f'row-{index+1:02}/'+p['instance_id'],
-                                   mount=multiply(mount,p['mount'])))
+            item=dict(p, instance_id=f'row-{index+1:02}/'+p['instance_id'],
+                      mount=multiply(mount,p['mount']))
+            if magnet_holes and p['part']=='aurelian.forward-base-extension@1':
+                extension=definitions_at(revision)['aurelian.forward-base-extension@2']
+                item.update(part=extension.reference,definition_sha256=extension.sha256)
+                item['mount'][2][3]-=thickness-1
+            placements.append(item)
     assembly = dict(schema_version=1, assembly_id='workshop-row', label='Custom infantry row', placements=placements)
+    has_forward_extension=any(p['part'].startswith('aurelian.forward-base-extension@') for p in placements)
     pinned = dict(assembly=assembly, seed=request['seed'], slots=slots,
                   constraints=dict(family=request['family'], unique=request.get('unique',False),
                                    max_command=request.get('max_command',1)),
-                  base_mm=[20,5,thickness], terrain_relief_mm=.5, spacing_mm=4,magnet_holes=magnet_holes)
+                  base_mm=[20,18 if has_forward_extension else 5,thickness], terrain_relief_mm=.5, spacing_mm=4,magnet_holes=magnet_holes)
     pinned['plan_sha256'] = digest(pinned)
     return pinned
 

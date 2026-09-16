@@ -1,0 +1,392 @@
+{
+  "component_id": "aurelian.shortblade",
+  "version": 4,
+  "name": "Short sword with rising guard underside",
+  "family": "shortblade",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "blade_grip"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.035,
+        "depth": 1.25,
+        "export": true,
+        "location": [
+          0,
+          0,
+          0.325
+        ],
+        "primitive": "cylinder",
+        "radius": 0.4,
+        "role": "blade_grip",
+        "vertices": 40
+      },
+      {
+        "dimensions": [
+          1,
+          0.85,
+          0.45
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          -0.25
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "blade_pommel",
+        "segments": 32
+      },
+      {
+        "bevel": 0.08,
+        "dimensions": [
+          1.85,
+          0.8,
+          0.3
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          1.0
+        ],
+        "primitive": "cube",
+        "role": "blade_guard"
+      },
+      {
+        "bevel": 0.02,
+        "depth": 2.7,
+        "export": false,
+        "location": [
+          0,
+          0,
+          2.4
+        ],
+        "primitive": "cone",
+        "radius1": 0.56,
+        "radius2": 0.48,
+        "role": "blade_body",
+        "scale": [
+          1,
+          0.7,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.015,
+        "depth": 0.9,
+        "export": false,
+        "location": [
+          0,
+          0,
+          4.17
+        ],
+        "primitive": "cone",
+        "radius1": 0.48,
+        "radius2": 0.12,
+        "role": "blade_point",
+        "scale": [
+          1,
+          0.7,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.02,
+        "dimensions": [
+          1.85,
+          0.8,
+          1.78
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          0.14
+        ],
+        "primitive": "cube",
+        "role": "guard_rising_underside"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16,
+          16,
+          16
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.3598720682262375,
+            -0.0,
+            0.9330016583643194,
+            -0.25
+          ],
+          [
+            0.0,
+            0.9999999999999999,
+            0.0,
+            0
+          ],
+          [
+            -0.9330016583643195,
+            0.0,
+            0.35987206822623746,
+            -0.75
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          8
+        ],
+        "primitive": "cube",
+        "role": "guard_left_rise"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16,
+          16,
+          16
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.3598720682262375,
+            0.0,
+            -0.9330016583643194,
+            0.25
+          ],
+          [
+            -0.0,
+            0.9999999999999999,
+            0.0,
+            0
+          ],
+          [
+            0.9330016583643195,
+            0.0,
+            0.35987206822623746,
+            -0.75
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          8
+        ],
+        "primitive": "cube",
+        "role": "guard_right_rise"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16,
+          16,
+          16
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.0,
+            1.0000000000000002,
+            0.0,
+            0
+          ],
+          [
+            -0.11354659116073196,
+            0.0,
+            0.9935326726564043,
+            -0.2
+          ],
+          [
+            0.9935326726564043,
+            -0.0,
+            0.11354659116073196,
+            -0.75
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          8
+        ],
+        "primitive": "cube",
+        "role": "guard_front_rise"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16,
+          16,
+          16
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.0,
+            1.0000000000000002,
+            0.0,
+            0
+          ],
+          [
+            -0.11354659116073196,
+            0.0,
+            -0.9935326726564043,
+            0.2
+          ],
+          [
+            -0.9935326726564043,
+            0.0,
+            0.11354659116073196,
+            -0.75
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          8
+        ],
+        "primitive": "cube",
+        "role": "guard_rear_rise"
+      }
+    ],
+    "design": {
+      "blade_length_mm": 3.57,
+      "grip_diameter_mm": 0.8,
+      "grip_length_mm": 1.25,
+      "guard_width_mm": 1.85,
+      "note": "Broad straight blade and rising guard; lower hilt shortened to seat the pommel into the fist heel.",
+      "overall_length_mm": 5.095000000000001
+    },
+    "hilt_fit": {
+      "guard_z_mm": 1,
+      "pommel_raise_mm": 0.77,
+      "root_z_mm": -0.75,
+      "seed": 1001,
+      "side_growth_per_height": 0.38571428571428573,
+      "source": "aurelian.shortblade@2",
+      "source_sha256": "47cc9c7bb9cd0b4a2684679e900a465a2bb1e125aa2e4fb79fcf21bce707a032"
+    },
+    "landmarks": {
+      "grip": [
+        0,
+        0,
+        0
+      ],
+      "guard": [
+        0,
+        0,
+        1
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "pommel": [
+        0,
+        0,
+        -0.25
+      ],
+      "tip": [
+        0,
+        0,
+        4.62
+      ]
+    },
+    "operations": [
+      {
+        "operand": "blade_pommel",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "blade_grip"
+      },
+      {
+        "operand": "blade_guard",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "blade_grip"
+      },
+      {
+        "operand": "blade_body",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "blade_grip"
+      },
+      {
+        "operand": "blade_point",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "blade_grip"
+      },
+      {
+        "operand": "guard_left_rise",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "guard_rising_underside"
+      },
+      {
+        "operand": "guard_right_rise",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "guard_rising_underside"
+      },
+      {
+        "operand": "guard_front_rise",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "guard_rising_underside"
+      },
+      {
+        "operand": "guard_rear_rise",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "guard_rising_underside"
+      },
+      {
+        "operand": "guard_rising_underside",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "blade_grip"
+      }
+    ],
+    "provenance": "Original primitive and ordered Exact short-sword revision; existing grip origin retained. Visual-only. Exact-cut rising guard underside grows from inside the grip and backs both quillons. Visual-only.",
+    "seed": 1001
+  }
+}

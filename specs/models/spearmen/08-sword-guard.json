@@ -18,8 +18,8 @@
   "parts": [
     {
       "instance_id": "right-arm",
-      "part": "aurelian.spearman-sword-guard-arm@6",
-      "definition_sha256": "75856184cfca28c81e452d2f00661bb2be3a9e31f66dbfd1d3a110c87813a360",
+      "part": "aurelian.spearman-sword-guard-arm@8",
+      "definition_sha256": "27c87766c3506eb68ee0f689a8ab170e002009b25a6f872886df8f92df291cdb",
       "mount": [
         [
           0.9941810979999999,
@@ -49,8 +49,8 @@
     },
     {
       "instance_id": "shortblade",
-      "part": "aurelian.shortblade@2",
-      "definition_sha256": "47cc9c7bb9cd0b4a2684679e900a465a2bb1e125aa2e4fb79fcf21bce707a032",
+      "part": "aurelian.shortblade@7",
+      "definition_sha256": "ac505a763b6f80b5ec98df579953eb328213993ef90cfd769944d9c4368c0faf",
       "mount": [
         [
           0.9662880140155419,
@@ -80,8 +80,8 @@
     },
     {
       "instance_id": "left-arm",
-      "part": "aurelian.left-arm-b@8",
-      "definition_sha256": "b82653b31ecedfa5122203ede845b7b9064b38b2b544fdc921f910fd2f3b52d2",
+      "part": "aurelian.left-arm-b@10",
+      "definition_sha256": "d4786c412ec12b90f4b989379c37cdb41a98fe631d283f73693ea28cff345262",
       "mount": [
         [
           0.9941810979999999,

@@ -16,8 +16,8 @@
   "parts": [
     {
       "instance_id": "right-arm",
-      "part": "aurelian.right-arm-d@8",
-      "definition_sha256": "66e062b3830d7bb8b9400cf7ebc7a8bf24cfa2aecb4735568313148156338080",
+      "part": "aurelian.right-arm-d@10",
+      "definition_sha256": "65bb48dccd671035c8815535e3b4c71edce0b455d3261a36b9086460c3952f31",
       "mount": [
         [
           0.9901172459999998,
@@ -47,8 +47,8 @@
     },
     {
       "instance_id": "left-arm",
-      "part": "aurelian.left-arm-d@8",
-      "definition_sha256": "c19e6f72ae9f898b35434b14171cb5b85eb790fb624e3fdaa3840e835a87e3df",
+      "part": "aurelian.left-arm-d@10",
+      "definition_sha256": "24c2c3297b6ffef6c4d8f95c3d9beefc7b0b67105868125c62b335a9b8b52189",
       "mount": [
         [
           0.9901172459999998,

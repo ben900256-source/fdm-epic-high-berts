@@ -78,8 +78,8 @@
     },
     {
       "instance_id": "shortblade",
-      "part": "aurelian.shortblade@2",
-      "definition_sha256": "47cc9c7bb9cd0b4a2684679e900a465a2bb1e125aa2e4fb79fcf21bce707a032",
+      "part": "aurelian.shortblade@7",
+      "definition_sha256": "ac505a763b6f80b5ec98df579953eb328213993ef90cfd769944d9c4368c0faf",
       "mount": [
         [
           0.9781476007338057,

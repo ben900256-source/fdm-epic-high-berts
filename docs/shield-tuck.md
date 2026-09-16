@@ -42,3 +42,22 @@ These are visual fit checks only. The joins are intended to address the
 previous hanging shield tips; support-free printing has not been established.
 Actual sliced layers, rim and insignia undersides, followed by a physical print
 trial, remain to be checked during manufacturing preparation.
+
+## Trim behind the shield
+
+The shield-bearing figures now use mail-skirt-trim revision 11. An Exact
+shield-shaped recess removes the vertical edging where it previously pierced
+the visible shield face, including piece `#12B1`. It retains 0.10 mm of hidden
+rear contact and the surrounding hem band. Shield pose, insignia, hand grip
+and revision 6 lower backing remain in place. Figures without shields keep
+the complete revision 8 edging.
+
+The new cut precedes the cape and waist limits: appending it after those cuts
+caused Exact to discard most of the hem in the intermediate revisions 9 and
+10. Those saved definitions remain available, but live models use revision 11.
+The visual probe checks both zero front-face crossings and preservation of
+the hem span, along with the existing grip and backing contacts.
+
+Recreate the definitions with `scripts/generate-shield-trim-fit.py --seed 1001`.
+Sources and all three sets of golden hashes are pinned; geometry remains
+visual-only. Final review is in `out/infantry-detail-fit-v2-gallery`.

@@ -23,8 +23,8 @@
   "parts": [
     {
       "instance_id": "right-arm",
-      "part": "aurelian.spearman-sword-raised-arm@6",
-      "definition_sha256": "c582b142769241402fdca8002d12e271d8aae337a125f5cad38e0865fe32daab",
+      "part": "aurelian.spearman-sword-raised-arm@8",
+      "definition_sha256": "c072fe6ffdf6da5fef963b18b0de587f703e444684a57c9007d4d24d0252ce1d",
       "mount": [
         [
           0.9993908269999999,
@@ -54,8 +54,8 @@
     },
     {
       "instance_id": "shortblade",
-      "part": "aurelian.shortblade@2",
-      "definition_sha256": "47cc9c7bb9cd0b4a2684679e900a465a2bb1e125aa2e4fb79fcf21bce707a032",
+      "part": "aurelian.shortblade@7",
+      "definition_sha256": "ac505a763b6f80b5ec98df579953eb328213993ef90cfd769944d9c4368c0faf",
       "mount": [
         [
           0.977855589878941,
@@ -85,8 +85,8 @@
     },
     {
       "instance_id": "helmet",
-      "part": "aurelian.sergeant-helmet@2",
-      "definition_sha256": "6778ff1d921229bd035a12319d89e2380ec6c5bf39c6d4b525f4bcdab30bb18c",
+      "part": "aurelian.sergeant-helmet@6",
+      "definition_sha256": "9011ca3d257f71b1cfb82738b922b4cbb20cebceb30aaaea91130a3ec3f4856d",
       "mount": [
         [
           0.997434423,
@@ -116,8 +116,8 @@
     },
     {
       "instance_id": "left-arm",
-      "part": "aurelian.spearman-hawk-arm@5",
-      "definition_sha256": "76729ec0d0c082f559553f7f039ce5c0fe20e8460e743949143c03a19be46b2c",
+      "part": "aurelian.spearman-hawk-arm@7",
+      "definition_sha256": "9fb06b97c41c7f2324db19783c4412ea87bf594545b14ededfda17a90f921540",
       "mount": [
         [
           0.999390827,
@@ -147,8 +147,8 @@
     },
     {
       "instance_id": "hunting-hawk",
-      "part": "aurelian.hunting-hawk@2",
-      "definition_sha256": "23e31e189b0b1f430fe17635b69c38342c1f46f44d6cc91c77703cac12840908",
+      "part": "aurelian.hunting-hawk@3",
+      "definition_sha256": "68cbcb8b17f206805f90209e5c4267c5fd3468fcf7d0d66aa2688e3d878bb74a",
       "mount": [
         [
           0.9397020806130638,
@@ -167,6 +167,37 @@
           0.03982611361082121,
           0.99912283,
           7.623469227399999
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "skirt-trim",
+      "part": "aurelian.mail-skirt-trim-c@8",
+      "definition_sha256": "2d73a4f553d775f1d0e274ccfd43f9d16be0220ed0742885abf737c52c67d945",
+      "mount": [
+        [
+          0.999390827,
+          0.034868884,
+          -0.001461439,
+          -0.002119087
+        ],
+        [
+          -0.034899497,
+          0.998514191,
+          -0.041850144,
+          -0.060682709
+        ],
+        [
+          0.0,
+          0.041875654,
+          0.99912283,
+          6.198728104
         ],
         [
           0.0,

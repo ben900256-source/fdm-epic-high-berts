@@ -1,0 +1,760 @@
+{
+  "component_id": "aurelian.hunting-hawk",
+  "version": 3,
+  "name": "Perched hawk with sturdy shanks and attached talons",
+  "family": "hunting-hawk",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "body"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          1.32,
+          1.46,
+          1.85
+        ],
+        "export": true,
+        "location": [
+          0,
+          0.08,
+          1.32
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "body",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.05,
+          0.9,
+          1.35
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.38,
+          1.3
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "breast",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.85,
+          0.9,
+          0.95
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.12,
+          2.05
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "neck",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.95,
+          0.98,
+          0.8
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.3,
+          2.4
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "head",
+        "segments": 32
+      },
+      {
+        "bevel": 0.025,
+        "depth": 0.5,
+        "export": false,
+        "location": [
+          0,
+          -0.92,
+          2.3
+        ],
+        "primitive": "cone",
+        "radius1": 0.23,
+        "radius2": 0.09,
+        "role": "beak_root",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          0.8,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0,
+          -1.14,
+          2.1
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.105,
+        "role": "hooked_beak",
+        "start": [
+          0,
+          -1.08,
+          2.3
+        ]
+      },
+      {
+        "bevel": 0.02,
+        "end": [
+          -0.34,
+          0.06,
+          0.68
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.38,
+        "role": "left_leg",
+        "start": [
+          -0.34,
+          0,
+          -0.04
+        ]
+      },
+      {
+        "dimensions": [
+          0.76,
+          0.8,
+          0.34
+        ],
+        "export": false,
+        "location": [
+          -0.34,
+          -0.14,
+          0.1
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "left_foot",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.6,
+          1.4,
+          1.68
+        ],
+        "export": false,
+        "location": [
+          -0.54,
+          0.35,
+          1.28
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "left_folded_wing",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.16,
+          0.22,
+          0.15
+        ],
+        "export": false,
+        "location": [
+          -0.43,
+          -0.44,
+          2.45
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "left_eye",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.44,
+          -0.2,
+          2.52
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.105,
+        "role": "left_brow",
+        "start": [
+          -0.33,
+          -0.66,
+          2.58
+        ]
+      },
+      {
+        "dimensions": [
+          0.28,
+          0.66,
+          1.05
+        ],
+        "export": false,
+        "location": [
+          -0.65,
+          0.48,
+          0.95
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "left_flight_feather_0",
+        "segments": 32
+      },
+      {
+        "bevel": 0.02,
+        "end": [
+          -0.51,
+          -0.46,
+          0.07
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "left_toe_0",
+        "start": [
+          -0.48000000000000004,
+          -0.05,
+          0.1
+        ]
+      },
+      {
+        "dimensions": [
+          0.28,
+          0.66,
+          1.05
+        ],
+        "export": false,
+        "location": [
+          -0.605,
+          0.7,
+          0.84
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "left_flight_feather_1",
+        "segments": 32
+      },
+      {
+        "bevel": 0.02,
+        "end": [
+          -0.34,
+          -0.46,
+          0.07
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "left_toe_1",
+        "start": [
+          -0.34,
+          -0.05,
+          0.1
+        ]
+      },
+      {
+        "dimensions": [
+          0.28,
+          0.66,
+          1.05
+        ],
+        "export": false,
+        "location": [
+          -0.56,
+          0.9199999999999999,
+          0.73
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "left_flight_feather_2",
+        "segments": 32
+      },
+      {
+        "bevel": 0.02,
+        "end": [
+          -0.17,
+          -0.46,
+          0.07
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "left_toe_2",
+        "start": [
+          -0.2,
+          -0.05,
+          0.1
+        ]
+      },
+      {
+        "bevel": 0.02,
+        "end": [
+          0.34,
+          0.06,
+          0.68
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.38,
+        "role": "right_leg",
+        "start": [
+          0.34,
+          0,
+          -0.04
+        ]
+      },
+      {
+        "dimensions": [
+          0.76,
+          0.8,
+          0.34
+        ],
+        "export": false,
+        "location": [
+          0.34,
+          -0.14,
+          0.1
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_foot",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.6,
+          1.4,
+          1.68
+        ],
+        "export": false,
+        "location": [
+          0.54,
+          0.35,
+          1.28
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_folded_wing",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.16,
+          0.22,
+          0.15
+        ],
+        "export": false,
+        "location": [
+          0.43,
+          -0.44,
+          2.45
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_eye",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.44,
+          -0.2,
+          2.52
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.105,
+        "role": "right_brow",
+        "start": [
+          0.33,
+          -0.66,
+          2.58
+        ]
+      },
+      {
+        "dimensions": [
+          0.28,
+          0.66,
+          1.05
+        ],
+        "export": false,
+        "location": [
+          0.65,
+          0.48,
+          0.95
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_flight_feather_0",
+        "segments": 32
+      },
+      {
+        "bevel": 0.02,
+        "end": [
+          0.17,
+          -0.46,
+          0.07
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "right_toe_0",
+        "start": [
+          0.2,
+          -0.05,
+          0.1
+        ]
+      },
+      {
+        "dimensions": [
+          0.28,
+          0.66,
+          1.05
+        ],
+        "export": false,
+        "location": [
+          0.605,
+          0.7,
+          0.84
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_flight_feather_1",
+        "segments": 32
+      },
+      {
+        "bevel": 0.02,
+        "end": [
+          0.34,
+          -0.46,
+          0.07
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "right_toe_1",
+        "start": [
+          0.34,
+          -0.05,
+          0.1
+        ]
+      },
+      {
+        "dimensions": [
+          0.28,
+          0.66,
+          1.05
+        ],
+        "export": false,
+        "location": [
+          0.56,
+          0.9199999999999999,
+          0.73
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_flight_feather_2",
+        "segments": 32
+      },
+      {
+        "bevel": 0.02,
+        "end": [
+          0.51,
+          -0.46,
+          0.07
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "right_toe_2",
+        "start": [
+          0.48000000000000004,
+          -0.05,
+          0.1
+        ]
+      },
+      {
+        "dimensions": [
+          0.4,
+          1.4,
+          0.45
+        ],
+        "export": false,
+        "location": [
+          -0.26,
+          0.97,
+          0.72
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "tail_feather_0",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.4,
+          1.4,
+          0.45
+        ],
+        "export": false,
+        "location": [
+          0.0,
+          0.97,
+          0.72
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "tail_feather_1",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.4,
+          1.4,
+          0.45
+        ],
+        "export": false,
+        "location": [
+          0.26,
+          0.97,
+          0.72
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "tail_feather_2",
+        "segments": 32
+      }
+    ],
+    "detail_source": {
+      "definition_sha256": "23e31e189b0b1f430fe17635b69c38342c1f46f44d6cc91c77703cac12840908",
+      "reference": "aurelian.hunting-hawk@2"
+    },
+    "landmarks": {
+      "head": [
+        0,
+        -0.3,
+        2.4
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "perch": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "breast",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "neck",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "head",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "beak_root",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "hooked_beak",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "left_leg",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "left_foot",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "left_folded_wing",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "left_eye",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "left_brow",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "left_flight_feather_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "left_toe_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "left_flight_feather_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "left_toe_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "left_flight_feather_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "left_toe_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "right_leg",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "right_foot",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "right_folded_wing",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "right_eye",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "right_brow",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "right_flight_feather_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "right_toe_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "right_flight_feather_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "right_toe_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "right_flight_feather_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "right_toe_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "tail_feather_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "tail_feather_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      },
+      {
+        "operand": "tail_feather_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "body"
+      }
+    ],
+    "provenance": "Broaden both shanks to 0.76 mm and embed their roots into the glove. Feet and attached talons are enlarged locally; body, head and perched pose are preserved. Visual-only, pending sliced-detail review.",
+    "seed": 1001,
+    "shank_diameter_mm": 0.76
+  }
+}

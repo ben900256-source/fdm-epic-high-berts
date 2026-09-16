@@ -1,0 +1,573 @@
+{
+  "component_id": "aurelian.mail-skirt-trim-e",
+  "version": 9,
+  "name": "Mail edging recessed behind the shield",
+  "family": "garment-trim",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "hem_trim"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0,
+        "depth": 0.5,
+        "export": true,
+        "location": [
+          0,
+          0,
+          -4.6
+        ],
+        "primitive": "cone",
+        "radius1": 1.99,
+        "radius2": 1.9233333333333333,
+        "role": "hem_trim",
+        "scale": [
+          1,
+          0.75,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.6999999999999993,
+        "export": false,
+        "location": [
+          0,
+          0,
+          -4.6
+        ],
+        "primitive": "cone",
+        "radius1": 1.4733333333333332,
+        "radius2": 1.3800000000000001,
+        "role": "hem_inner",
+        "scale": [
+          1,
+          0.75,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.06,
+        "dimensions": [
+          0.68,
+          0.62,
+          4.13965099472163
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.9804999999999999,
+          -2.63
+        ],
+        "primitive": "cube",
+        "role": "front_trim",
+        "rotation": [
+          -0.09966865249116204,
+          0,
+          0
+        ]
+      },
+      {
+        "bevel": 0,
+        "depth": 0.15000000000000036,
+        "export": false,
+        "location": [
+          0,
+          0,
+          -4.6
+        ],
+        "primitive": "cone",
+        "radius1": 2.1766666666666667,
+        "radius2": 2.1566666666666667,
+        "role": "hem_crease_outer",
+        "scale": [
+          1,
+          0.75,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.2400000000000002,
+        "export": false,
+        "location": [
+          0,
+          0,
+          -4.6
+        ],
+        "primitive": "cone",
+        "radius1": 1.8526666666666667,
+        "radius2": 1.8206666666666667,
+        "role": "hem_crease_inner",
+        "scale": [
+          1,
+          0.75,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "end": [
+          0,
+          -1.0835,
+          -0.62
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.105,
+        "role": "front_crease",
+        "start": [
+          0,
+          -1.4775,
+          -4.6
+        ]
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          8,
+          8,
+          8
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          -5.25
+        ],
+        "primitive": "cube",
+        "role": "waist_wrap_limit"
+      },
+      {
+        "bevel": 0.24,
+        "bevel_segments": 4,
+        "depth": 6.374999999999999,
+        "export": false,
+        "frame_mm": [
+          [
+            0.998735977,
+            -0.039240443,
+            -0.031410759,
+            0.117790347
+          ],
+          [
+            0.039640335,
+            0.999139398,
+            0.012210972,
+            0.104208853
+          ],
+          [
+            0.030904563,
+            -0.013440671,
+            0.999431967,
+            -5.197869876
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0.63,
+          3.1875
+        ],
+        "primitive": "cone",
+        "radius1": 1.7120143884892087,
+        "radius2": 1.18,
+        "role": "cape_contact_cloak",
+        "rotation": [
+          0,
+          0,
+          0.19634954084936207
+        ],
+        "scale": [
+          1,
+          0.59,
+          1
+        ],
+        "vertices": 16
+      },
+      {
+        "dimensions": [
+          0.86,
+          0.9,
+          0.6
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.15
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -0.88,
+          0.42,
+          6.2
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "cape_contact_cape_left_shoulder_drape",
+        "segments": 20
+      },
+      {
+        "dimensions": [
+          0.86,
+          0.9,
+          0.6
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.15
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.88,
+          0.42,
+          6.2
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "cape_contact_cape_right_shoulder_drape",
+        "segments": 20
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          8,
+          8,
+          8
+        ],
+        "export": false,
+        "location": [
+          0,
+          -2.9,
+          -3
+        ],
+        "primitive": "cube",
+        "role": "cape_rear_limit"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          2.8384000000000005,
+          6.42,
+          4.9830000000000005
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9908941992577948,
+            0.1207894281809964,
+            -0.05948613037040152,
+            -0.21239495882985984
+          ],
+          [
+            -0.12111809001691322,
+            0.9926362140964664,
+            -0.001937439220210189,
+            -1.1903206279784906
+          ],
+          [
+            0.0588140653232914,
+            0.009124642972737917,
+            0.9982272524069874,
+            -2.1749591293774726
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          -2.79,
+          0.1365000000000003
+        ],
+        "primitive": "cube",
+        "role": "shield_recess_shield"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          14,
+          14,
+          14
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.5453427102850752,
+            0.1207894281809964,
+            0.8294644309240266,
+            -0.21103030970365555
+          ],
+          [
+            -0.058674062441952335,
+            0.9926362140964664,
+            -0.10597499609169599,
+            -1.1688014260125277
+          ],
+          [
+            -0.8361570924019901,
+            0.009124642972737917,
+            0.5484141305197244,
+            -4.534018277941189
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          7
+        ],
+        "primitive": "cube",
+        "role": "shield_recess_shield_left_point_halfspace"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          14,
+          14,
+          14
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.4421935881332265,
+            0.1207894281809964,
+            -0.8887489771825637,
+            0.06642006608852702
+          ],
+          [
+            -0.06203358765468461,
+            0.9926362140964664,
+            0.1040441223845233,
+            -1.2027144912172634
+          ],
+          [
+            0.8947718510793541,
+            0.009124642972737917,
+            0.44643037110380596,
+            -4.517550339650667
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          7
+        ],
+        "primitive": "cube",
+        "role": "shield_recess_shield_right_point_halfspace"
+      }
+    ],
+    "cape_contact_overlap_mm": 0.15,
+    "cape_definition_sha256": "eca646650555935406b38d5b02f42bfd7cee3173f617b48e4e8647b367bced61",
+    "cape_reference": "aurelian.cape-e@4",
+    "design": {
+      "front_band_width_mm": 0.68,
+      "front_crease_width_mm": 0.21,
+      "hem_band_height_mm": 0.5,
+      "hem_crease_height_mm": 0.15
+    },
+    "fit_source": "aurelian.mail-skirt-trim-e@6",
+    "garment": "mail-skirt",
+    "landmarks": {
+      "hem": [
+        0,
+        0,
+        -4.85
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "hem_inner",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hem_trim"
+      },
+      {
+        "operand": "front_trim",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "hem_trim"
+      },
+      {
+        "operand": "hem_crease_inner",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hem_crease_outer"
+      },
+      {
+        "operand": "hem_crease_outer",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hem_trim"
+      },
+      {
+        "operand": "front_crease",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hem_trim"
+      },
+      {
+        "operand": "waist_wrap_limit",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "hem_trim"
+      },
+      {
+        "operand": "cape_contact_cloak",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hem_trim"
+      },
+      {
+        "operand": "cape_contact_cape_left_shoulder_drape",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hem_trim"
+      },
+      {
+        "operand": "cape_contact_cape_right_shoulder_drape",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hem_trim"
+      },
+      {
+        "operand": "cape_rear_limit",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "hem_trim"
+      },
+      {
+        "operand": "shield_recess_shield_left_point_halfspace",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "shield_recess_shield"
+      },
+      {
+        "operand": "shield_recess_shield_right_point_halfspace",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "shield_recess_shield"
+      },
+      {
+        "operand": "shield_recess_shield",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "hem_trim"
+      }
+    ],
+    "provenance": "Rear edging extends 0.60 mm farther back; cape cutout offset 0.15 mm to leave embedded contact. Visual-only. Shield-shaped recess hides the vertical trim behind the shield while retaining rear contact. Shield pose and concealed lower join unchanged. Visual-only.",
+    "seed": 1001,
+    "shield_trim_fit": {
+      "edge_recess_mm": 0.08,
+      "rear_overlap_mm": 0.1,
+      "seed": 1001,
+      "shield": "aurelian.shield@2",
+      "shield_in_trim_frame": [
+        [
+          0.9908941992577948,
+          0.1207894281809964,
+          -0.05948613037040152,
+          -0.21239495882985984
+        ],
+        [
+          -0.12111809001691322,
+          0.9926362140964664,
+          -0.001937439220210189,
+          -1.1903206279784906
+        ],
+        [
+          0.0588140653232914,
+          0.009124642972737917,
+          0.9982272524069874,
+          -2.1749591293774726
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "shield_sha256": "e6980ec88fb0d4e35ed0d5fe3668c871eff7d091bb6fb9f264923318badebf7d",
+      "source": "aurelian.mail-skirt-trim-e@8",
+      "source_sha256": "bee2e4da910e58a231c841ad01b305ef88930e180c14a24f513333cd4ef0f1b6"
+    }
+  }
+}
