@@ -82,6 +82,11 @@ Hold Ctrl and hover to outline the exact geometry piece in orange and see both
 its name (such as a sole, shoe upper, or shin) and its component name, figure,
 and revision. The remaining pieces of that component are outlined in yellow.
 Both outlines remain visible through covering model geometry.
+The hover label leads with a short hex ID (for example `#00A7`) that you can
+type in feedback. IDs distinguish figure instances and persist across updates
+to the same component slot and geometry role. Resolve one from the CLI with
+`py -3.13 -m fdm_sculpt.viewer piece 00A7`. The local registry is saved in
+`out/viewer/piece-ids.json`; keep it to preserve previously assigned IDs.
 Alt-hover works the same way. Fused surfaces use their final geometry role;
 hidden construction cutters are not selectable. Older saved exports retain
 component-level identification until republished.

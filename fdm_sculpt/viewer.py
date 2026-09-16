@@ -10,6 +10,7 @@ from urllib.parse import unquote, urlsplit, parse_qs
 import secrets
 
 from .review import find_blender
+from . import piece_ids
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT/'out/viewer'
@@ -120,6 +121,11 @@ def attach_stl(build, destination=DATA):
 
 class Handler(SimpleHTTPRequestHandler):
     def json_response(self, value, status=200):
+        if status == 200 and isinstance(value, dict):
+            if 'assembly' in value and 'assets' in value:
+                value = piece_ids.annotate(value, DATA)
+            elif isinstance(value.get('review'), dict):
+                value = dict(value, review=piece_ids.annotate(value['review'], DATA))
         payload = json.dumps(value).encode()
         self.send_response(status)
         self.send_header('Content-Type', 'application/json')
@@ -137,6 +143,11 @@ class Handler(SimpleHTTPRequestHandler):
             self.send_error(403)
             return
         path = urlsplit(self.path)
+        if path.path == '/data/latest.json' or (path.path.startswith('/data/reviews/') and path.path.endswith('.json')):
+            try:
+                return self.json_response(json.loads(Path(self.translate_path(self.path)).read_text()))
+            except (ValueError, KeyError, OSError) as exc:
+                return self.json_response(dict(error=str(exc)), 400)
         if not path.path.startswith('/api/'):
             return super().do_GET()
         from . import workshop
@@ -147,6 +158,8 @@ class Handler(SimpleHTTPRequestHandler):
                 result = workshop.model_review(parse_qs(path.query).get('id',[''])[0])
             elif path.path == '/api/jobs':
                 result = workshop.jobs()
+            elif path.path == '/api/piece':
+                result = piece_ids.lookup(parse_qs(path.query).get('id',[''])[0], DATA)
             elif path.path.startswith('/api/jobs/'):
                 result = workshop.job_status(path.path.removeprefix('/api/jobs/'))
             else:
@@ -211,11 +224,14 @@ def main():
     commands.add_parser('publish').add_argument('build', type=Path)
     commands.add_parser('attach-stl').add_argument('build', type=Path)
     commands.add_parser('serve').add_argument('--port', type=int, default=8765)
+    commands.add_parser('piece').add_argument('id')
     args = parser.parse_args()
     if args.command == 'publish':
         print(json.dumps(publish(args.build), indent=2))
     elif args.command == 'attach-stl':
         print(json.dumps(attach_stl(args.build), indent=2))
+    elif args.command == 'piece':
+        print(json.dumps(piece_ids.lookup(args.id, DATA), indent=2))
     else:
         print(f'Elf review: http://127.0.0.1:{args.port}', flush=True)
         ViewerServer(('127.0.0.1', args.port), Handler).serve_forever()

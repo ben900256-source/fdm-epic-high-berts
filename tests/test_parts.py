@@ -168,7 +168,7 @@ def test_smooth_plate_and_chainmail_skirt_revisions():
     assert all(o['operation'] == 'DIFFERENCE' and o['solver'] == 'EXACT' for o in skirt['operations'])
     assert not any('lame' in a['role'] for a in skirt['atoms'])
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()), definitions)
-    for ref in ('aurelian.chest-plate@4', 'aurelian.skirt@7'):
+    for ref in ('aurelian.chest-plate@4', 'aurelian.skirt@8'):
         assert sum(p['part'] == ref for p in assembly['placements']) == 5
     assert not any(p['part'] == 'aurelian.mail@1' for p in assembly['placements'])
 
@@ -265,7 +265,7 @@ def test_full_length_mail_skirt_revision():
     assert min(c[2] for c in front) < -4.6
     assert max(c[2] for c in front) > -.8
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()), definitions)
-    assert sum(p['part'] == 'aurelian.skirt@7' for p in assembly['placements']) == 5
+    assert sum(p['part'] == 'aurelian.skirt@8' for p in assembly['placements']) == 5
 
 
 def test_cape_revisions_remove_only_skirt_columns():
@@ -498,6 +498,7 @@ def test_arms_reach_shield_backs():
     from fdm_sculpt.components.parts import inverse_rigid
     definitions = catalog()
     golden = json.loads((ROOT/'tests/fixtures/shield-arms-v3-golden.json').read_text())
+    golden.update(json.loads((ROOT/'tests/fixtures/shield-arm-cleanup-golden.json').read_text()))
     assert {ref:definitions[ref].sha256 for ref in golden} == golden
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()),definitions)
     placements = {p['instance_id']:p for p in assembly['placements']}
@@ -511,9 +512,16 @@ def test_arms_reach_shield_backs():
         f = multiply(multiply(inverse_rigid(shield['mount']),arm['mount']),finger['frame_mm'])
         center_y = sum(f[1][j]*finger['location'][j] for j in range(3))+f[1][3]
         front_y = center_y-sum(abs(f[1][j])*finger['dimensions'][j]/2 for j in range(3))
-        assert front_y == pytest.approx(.50,abs=1e-7)
-        assert atoms['left_forearm']['start'] == p['landmarks']['left_elbow']
-        assert atoms['left_forearm']['end'] == p['landmarks']['left_cuff']
+        # The first arm retains the reviewed eight-degree outward rotation.
+        expected_front = .49750595828167865 if i == 1 else .50
+        assert front_y == pytest.approx(expected_front,abs=1e-7)
+        if arm['part'] == 'aurelian.left-arm@4':
+            assert 'left_forearm' not in atoms
+            assert p['landmarks']['left_vambrace'] == pytest.approx([
+                (a+b)/2 for a,b in zip(p['landmarks']['left_elbow'],p['landmarks']['left_cuff'])])
+        else:
+            assert atoms['left_forearm']['start'] == p['landmarks']['left_elbow']
+            assert atoms['left_forearm']['end'] == p['landmarks']['left_cuff']
 
 
 def test_lower_shield_attachments():

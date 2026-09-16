@@ -74,6 +74,7 @@ function clearHover(){
   $('piece-label').hidden=true;
   delete document.body.dataset.hoveredPiece;
   delete document.body.dataset.hoveredRole;
+  delete document.body.dataset.hoveredId;
 }
 function pickPiece(){
   if(!(ctrlHeld||altHeld)||!pointerOverModel){clearHover();return;}
@@ -97,10 +98,12 @@ function pickPiece(){
   const figureName=displayName(figure.charAt(0).toUpperCase()+figure.slice(1).replaceAll('-',' '));
   $('piece-name').textContent=[pieceName,componentName,part?figureName:null].filter((name,index,names)=>name&&names.indexOf(name)===index).join(' · ');
   $('piece-reference').textContent=p.part;
+  $('piece-id').textContent='#'+p.piece_id;
   const label=$('piece-label');label.hidden=false;
   label.style.left=Math.max(8,Math.min(pointerX+16,innerWidth-label.offsetWidth-12))+'px';
   label.style.top=Math.max(8,Math.min(pointerY+16,innerHeight-label.offsetHeight-12))+'px';
   document.body.dataset.hoveredPiece=p.instance_id;
+  document.body.dataset.hoveredId=p.piece_id;
   if(p.geometry_role) document.body.dataset.hoveredRole=p.geometry_role;
   else delete document.body.dataset.hoveredRole;
 }
@@ -208,13 +211,15 @@ async function refresh() {
       const replacement=new THREE.Group();
       for(const p of next.assembly.placements) {
         if(next.assets[p.part].definition_sha256!==p.definition_sha256) throw new Error('Component revision mismatch.');
-        for(const piece of loaded.get(p.part)){
+        for(const [pieceIndex,piece] of loaded.get(p.part).entries()){
         const mesh=new THREE.Mesh(piece.geometry,material);
         if(!edgeGeometries.has(piece.key)) edgeGeometries.set(piece.key,new THREE.EdgesGeometry(mesh.geometry,25));
         const edges=new THREE.LineSegments(edgeGeometries.get(piece.key),edgeMaterial);
         edges.visible=$('outlines').checked;
         mesh.add(edges);
-        mesh.matrixAutoUpdate=false; mesh.matrix.set(...p.mount.flat()); mesh.userData={...p,geometry_role:piece.role};
+        const pieceId=next.piece_ids?.[p.instance_id]?.[pieceIndex];
+        if(!pieceId)throw new Error('Piece IDs unavailable. Restart the viewer server.');
+        mesh.matrixAutoUpdate=false; mesh.matrix.set(...p.mount.flat()); mesh.userData={...p,geometry_role:piece.role,piece_id:pieceId};
         replacement.add(mesh);
         }
       }

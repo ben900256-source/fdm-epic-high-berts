@@ -26,7 +26,7 @@ def test_trim_recipes_and_army_mounts():
         assembly=load_assembly(ROOT/f'specs/{name}.json',definitions)
         slots={p['instance_id']:p for p in assembly['placements']}
         for p in assembly['placements']:
-            if p['part'] not in ('aurelian.archer-tunic@4','aurelian.skirt@3'):continue
+            if p['part'] != 'aurelian.archer-tunic@4' and not p['part'].startswith('aurelian.skirt@'):continue
             if p['part']=='aurelian.archer-tunic@4':
                 assert p['instance_id']+'-trim' not in slots
                 continue
