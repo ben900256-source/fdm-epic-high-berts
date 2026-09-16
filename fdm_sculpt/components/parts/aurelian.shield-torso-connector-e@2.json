@@ -1,0 +1,106 @@
+{
+  "component_id": "aurelian.shield-torso-connector-e",
+  "version": 2,
+  "name": "Solid shield to torso connector - tapered undersides",
+  "family": "shield-torso-connector",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shield_torso_connector",
+    "connector_lower_transition"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.04,
+        "end": [
+          0,
+          -0.25,
+          -0.65
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.46,
+        "role": "shield_torso_connector",
+        "start": [
+          -0.3291223316486296,
+          -1.4961171352160338,
+          -0.8380852367359699
+        ]
+      },
+      {
+        "bevel": 0,
+        "depth": 1.6130807245357703,
+        "export": true,
+        "frame_mm": [
+          [
+            0.9469741885694128,
+            -0.24821414377462955,
+            -0.20403339190811293,
+            -0.1645611658243148
+          ],
+          [
+            -0.0,
+            0.6350055058996679,
+            -0.7725076099800615,
+            -0.8730585676080169
+          ],
+          [
+            0.3213096422196229,
+            0.7315447671245652,
+            0.6013338236864475,
+            -1.3030852367359698
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.3,
+        "radius2": 0.46,
+        "role": "connector_lower_transition",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 48
+      }
+    ],
+    "diameter_mm": 0.92,
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "shield_attachment": [
+        -0.3291223316486296,
+        -1.4961171352160338,
+        -0.8380852367359699
+      ],
+      "torso_attachment": [
+        0,
+        -0.25,
+        -0.65
+      ]
+    },
+    "operations": [],
+    "overhang_revision": {
+      "intent": "Replace the round hanging underside with a lower angled permanent join.",
+      "source": "aurelian.shield-torso-connector-e@1"
+    }
+  }
+}

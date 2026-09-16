@@ -64,7 +64,7 @@ def test_taller_spear_preserves_foot_width_and_tip_shape():
         assert {k:v for k,v in before.items() if k != 'location'} == {k:v for k,v in after.items() if k != 'location'}
         assert after['location'] == pytest.approx([*before['location'][:2],before['location'][2]+extension])
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()),definitions)
-    assert sum(p['part']=='aurelian.spear@3' for p in assembly['placements']) == 5
+    assert sum(p['part']=='aurelian.spear@4' for p in assembly['placements']) == 5
 
 
 def test_collared_spear_and_buried_helmet_join():
@@ -168,7 +168,7 @@ def test_smooth_plate_and_chainmail_skirt_revisions():
     assert all(o['operation'] == 'DIFFERENCE' and o['solver'] == 'EXACT' for o in skirt['operations'])
     assert not any('lame' in a['role'] for a in skirt['atoms'])
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()), definitions)
-    for ref in ('aurelian.chest-plate@4', 'aurelian.skirt@3'):
+    for ref in ('aurelian.chest-plate@4', 'aurelian.skirt@7'):
         assert sum(p['part'] == ref for p in assembly['placements']) == 5
     assert not any(p['part'] == 'aurelian.mail@1' for p in assembly['placements'])
 
@@ -191,8 +191,8 @@ def test_broader_shields_curved_armor_and_bold_face_revisions():
     assert atoms['nose_plane']['vertices'] == 4 and atoms['nose_plane']['radius1'] > .24
     assert atoms['chin']['dimensions'][0] > .94
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()), definitions)
-    for ref in ('aurelian.shield@2','aurelian.shield-insignia@2','aurelian.chest-plate@4',
-                'aurelian.torso@2','aurelian.left-tunic@2','aurelian.right-tunic@2','aurelian.head@12'):
+    for ref in ('aurelian.shield@2','aurelian.shield-insignia@4','aurelian.chest-plate@4',
+                'aurelian.torso@4','aurelian.left-tunic@2','aurelian.right-tunic@3','aurelian.head@12'):
         assert sum(p['part'] == ref for p in assembly['placements']) == 5
 
 
@@ -247,7 +247,7 @@ def test_rounded_nose_and_lower_brim_revisions():
         assert after['location'][2]-after['dimensions'][2]/2 == pytest.approx(before['location'][2]-before['dimensions'][2]/2)
         assert after['location'][2]+after['dimensions'][2]/2 == pytest.approx(before['location'][2]+before['dimensions'][2]/2-.22)
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()), definitions)
-    for ref in ('aurelian.head@12', 'aurelian.helmet@5'):
+    for ref in ('aurelian.head@12', 'aurelian.helmet@7'):
         assert sum(p['part'] == ref for p in assembly['placements']) == 5
 
 
@@ -265,7 +265,7 @@ def test_full_length_mail_skirt_revision():
     assert min(c[2] for c in front) < -4.6
     assert max(c[2] for c in front) > -.8
     assembly = resolve_assembly(json.loads((ROOT/'specs/elf-modular-visual.json').read_text()), definitions)
-    assert sum(p['part'] == skirt.reference for p in assembly['placements']) == 5
+    assert sum(p['part'] == 'aurelian.skirt@7' for p in assembly['placements']) == 5
 
 
 def test_cape_revisions_remove_only_skirt_columns():
@@ -280,7 +280,7 @@ def test_cape_revisions_remove_only_skirt_columns():
         assert current['atoms'] == [a for a in previous['atoms'] if a['role'] not in removed]
         assert current['operations'] == previous['operations']
         assert not removed.intersection(definitions[ref].output_roles)
-        assert sum(p['part'] == ref for p in assembly['placements']) == 1
+        assert sum(p['part'] == ref.replace('@2', '@4') for p in assembly['placements']) == 1
 
 
 def test_contoured_face_revisions_preserve_nose_and_mouth():
@@ -526,7 +526,7 @@ def test_lower_shield_attachments():
     for i in range(1,6):
         prefix = f'elf-{i:02d}/'
         attachment = placements[prefix+'shield-lower-connector']
-        assert attachment['part'] in golden
+        assert definitions[attachment['part']].to_dict()['parameters']['overhang_revision']['source'] in golden
         assert attachment['mount'] == placements[prefix+'skirt']['mount']
         atom = definitions[attachment['part']].to_dict()['parameters']['atoms'][0]
         assert atom['radius'] == .42

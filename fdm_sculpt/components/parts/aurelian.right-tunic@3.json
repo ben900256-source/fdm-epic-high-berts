@@ -1,0 +1,97 @@
+{
+  "component_id": "aurelian.right-tunic",
+  "version": 3,
+  "name": "Rounded right tunic shoulder - tapered undersides",
+  "family": "right-tunic",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "right_pauldron",
+    "right_tunic_hem",
+    "sleeve_underside_transition"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          1.1,
+          1.12,
+          1.3
+        ],
+        "export": true,
+        "location": [
+          0,
+          0,
+          -0.03
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_pauldron",
+        "segments": 32
+      },
+      {
+        "bevel": 0.065,
+        "bevel_segments": 3,
+        "depth": 0.23,
+        "export": true,
+        "location": [
+          0,
+          0,
+          0.44
+        ],
+        "primitive": "cone",
+        "radius1": 0.5,
+        "radius2": 0.48,
+        "role": "right_tunic_hem",
+        "vertices": 32
+      },
+      {
+        "bevel": 0,
+        "depth": 0.6,
+        "export": true,
+        "location": [
+          0,
+          0,
+          0.65
+        ],
+        "primitive": "cone",
+        "radius1": 0.52,
+        "radius2": 0.18,
+        "role": "sleeve_underside_transition",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 48
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "right_pauldron": [
+        0,
+        0,
+        -0.03
+      ],
+      "right_tunic_hem": [
+        0.0,
+        0.0,
+        0.44
+      ]
+    },
+    "operations": [],
+    "overhang_revision": {
+      "intent": "Taper the lower pauldron hem into the arm; the mount points local Z downward.",
+      "source": "aurelian.right-tunic@2"
+    },
+    "provenance": "parameter recipe extracted from spearman revision 11"
+  }
+}

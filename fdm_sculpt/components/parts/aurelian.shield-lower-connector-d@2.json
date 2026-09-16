@@ -1,0 +1,106 @@
+{
+  "component_id": "aurelian.shield-lower-connector-d",
+  "version": 2,
+  "name": "Lower shield to mail skirt connector - tapered undersides",
+  "family": "shield-lower-connector",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shield_lower_connector",
+    "connector_lower_transition"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.04,
+        "end": [
+          0,
+          -0.55,
+          -3.662323421974029
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.42,
+        "role": "shield_lower_connector",
+        "start": [
+          -0.28773309456444407,
+          -1.3132687869294477,
+          -3.662323421974029
+        ]
+      },
+      {
+        "bevel": 0,
+        "depth": 1.2673869080941236,
+        "export": true,
+        "frame_mm": [
+          [
+            0.9587103877792692,
+            -0.17126704376882862,
+            -0.22702861511890837,
+            -0.14386654728222203
+          ],
+          [
+            -0.0,
+            0.7983164614416287,
+            -0.6022381816119903,
+            -0.9316343934647239
+          ],
+          [
+            0.2843842336771209,
+            0.5773720006287132,
+            0.7653542843192778,
+            -4.127323421974029
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.3,
+        "radius2": 0.42,
+        "role": "connector_lower_transition",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 48
+      }
+    ],
+    "diameter_mm": 0.84,
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "shield_attachment": [
+        -0.28773309456444407,
+        -1.3132687869294477,
+        -3.662323421974029
+      ],
+      "skirt_attachment": [
+        0,
+        -0.55,
+        -3.662323421974029
+      ]
+    },
+    "operations": [],
+    "overhang_revision": {
+      "intent": "Replace the round hanging underside with a lower angled permanent join.",
+      "source": "aurelian.shield-lower-connector-d@1"
+    }
+  }
+}

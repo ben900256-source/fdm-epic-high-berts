@@ -36,6 +36,9 @@ The current composition includes curved breastplates, rounded tunic shoulders,
 chainmail skirts, broader shields with thicker seahorses, fitted helmet crests,
 and organic faces with an integrated brow and mouth groove. Earlier part
 revisions and the original modular assembly remain pinned for comparison.
+The [spearman underside study](spearman-overhang-study.md) adds permanent
+tapers beneath the neck, hems, grips, sleeves, shield details and spearheads,
+with separate CLI slice comparisons and preserved earlier revisions.
 
 On Windows, `scripts/open-review.ps1 -Scene out/army-review/assembly.blend`
 loads a saved review into the existing Blender window, or starts Blender if
@@ -105,11 +108,14 @@ union retains the complete cloth solid after the root cut.
 The shared `aurelian.spear@2` lengthens each ordinary spear shaft by 25 percent,
 from 11 to 13.75 mm. Its foot, grip alignment and diameter stay fixed; the
 existing leaf tip moves upward 2.75 mm. Revision 3 retains that geometry and
-adds a rounded collar with a tapered underside below the leaf. Both spearman
-layouts use revision 3.
+adds a rounded collar with a tapered underside below the leaf. The current
+spearman layouts use revision 4, which lengthens the lower ramps and matches
+the depth of the two blade sections without changing the shaft or terminal tip.
 
-The current helmet is `aurelian.helmet@5`: its cap base is inset into the crown
-to remove the exposed join, with finer primitive resolution on the curved shell.
+The current helmet is `aurelian.helmet@7`: its lower nape blends into the crown.
+It preserves revision 5's inset cap base and upper shell. The
+[current design notes](helmet-flush-nape.md) also record the outward left-arm
+placement, ground-contact cape hems and removal of the shield feet.
 The shared bearer recipe uses banner revision 10 with a raised insignia mount
 and `aurelian.horn-arm@6`, keeping the grip forward to keep the horn clear of
 the chest plate and mail skirt. The horn is carried upright with its bell facing

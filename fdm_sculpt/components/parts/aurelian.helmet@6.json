@@ -1,0 +1,964 @@
+{
+  "component_id": "aurelian.helmet",
+  "version": 6,
+  "name": "Helmet with flush curved nape",
+  "family": "helmet",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "helmet_crown"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          1.64,
+          2.0,
+          4.4
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0.08,
+          7.2
+        ],
+        "primitive": "sphere",
+        "ring_count": 64,
+        "role": "helmet_crown",
+        "segments": 64
+      },
+      {
+        "bevel": 0.12,
+        "dimensions": [
+          1.08,
+          2.3,
+          1.74
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          -0.95,
+          7.01
+        ],
+        "primitive": "cube",
+        "role": "helmet_face_opening"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          3.5,
+          3.5,
+          4.0
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0.08,
+          8.65
+        ],
+        "primitive": "cube",
+        "role": "helmet_nape_clip"
+      },
+      {
+        "bevel": 0.06,
+        "bevel_segments": 4,
+        "depth": 0.9,
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0.08,
+          9.15
+        ],
+        "primitive": "cone",
+        "radius1": 0.55,
+        "radius2": 0.14,
+        "role": "helmet_tapered_tip",
+        "rotation": [
+          0,
+          0,
+          0.1308996938995747
+        ],
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "dimensions": [
+          1.64,
+          2.0,
+          4.4
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0.08,
+          7.2
+        ],
+        "primitive": "sphere",
+        "ring_count": 64,
+        "role": "nape_envelope",
+        "segments": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.037416666666666654,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -1.3812916666666666
+        ],
+        "primitive": "cone",
+        "radius1": 0.38,
+        "radius2": 0.4061208047385445,
+        "role": "nape_band_00",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666655,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -1.3468749999999998
+        ],
+        "primitive": "cone",
+        "radius1": 0.40333624491563413,
+        "radius2": 0.4306686027187398,
+        "role": "nape_band_01",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666655,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -1.3114583333333334
+        ],
+        "primitive": "cone",
+        "radius1": 0.4279068870312588,
+        "radius2": 0.45497763559780574,
+        "role": "nape_band_02",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666655,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -1.2760416666666665
+        ],
+        "primitive": "cone",
+        "radius1": 0.45224617194130057,
+        "radius2": 0.4789823126339246,
+        "role": "nape_band_03",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666655,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -1.240625
+        ],
+        "primitive": "cone",
+        "radius1": 0.4762885089039417,
+        "radius2": 0.5026170430852789,
+        "role": "nape_band_04",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666655,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -1.2052083333333332
+        ],
+        "primitive": "cone",
+        "radius1": 0.4999683071773647,
+        "radius2": 0.5258162362100507,
+        "role": "nape_band_05",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666655,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -1.1697916666666668
+        ],
+        "primitive": "cone",
+        "radius1": 0.5232199760197516,
+        "radius2": 0.5485143012664225,
+        "role": "nape_band_06",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666655,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -1.134375
+        ],
+        "primitive": "cone",
+        "radius1": 0.5459779246892851,
+        "radius2": 0.5706456475125766,
+        "role": "nape_band_07",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666655,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -1.0989583333333335
+        ],
+        "primitive": "cone",
+        "radius1": 0.5681765624441474,
+        "radius2": 0.5921446842066955,
+        "role": "nape_band_08",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666655,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -1.0635416666666666
+        ],
+        "primitive": "cone",
+        "radius1": 0.5897502985425209,
+        "radius2": 0.6129458206069613,
+        "role": "nape_band_09",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666655,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -1.0281250000000002
+        ],
+        "primitive": "cone",
+        "radius1": 0.6106335422425878,
+        "radius2": 0.6329834659715565,
+        "role": "nape_band_10",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.03941666666666688,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -0.9927083333333333
+        ],
+        "primitive": "cone",
+        "radius1": 0.6307607028025306,
+        "radius2": 0.6521920295586636,
+        "role": "nape_band_11",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666655,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -0.9572916666666665
+        ],
+        "primitive": "cone",
+        "radius1": 0.6500661894805316,
+        "radius2": 0.6705059206264649,
+        "role": "nape_band_12",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666655,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -0.9218749999999999
+        ],
+        "primitive": "cone",
+        "radius1": 0.6684844115347732,
+        "radius2": 0.6878595484331422,
+        "role": "nape_band_13",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666544,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -0.8864583333333333
+        ],
+        "primitive": "cone",
+        "radius1": 0.6859497782234375,
+        "radius2": 0.7041873222368783,
+        "role": "nape_band_14",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666655,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -0.8510416666666667
+        ],
+        "primitive": "cone",
+        "radius1": 0.7023966988047072,
+        "radius2": 0.7194236512958557,
+        "role": "nape_band_15",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666655,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -0.815625
+        ],
+        "primitive": "cone",
+        "radius1": 0.7177595825367644,
+        "radius2": 0.7335029448682566,
+        "role": "nape_band_16",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666655,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -0.7802083333333334
+        ],
+        "primitive": "cone",
+        "radius1": 0.7319728386777916,
+        "radius2": 0.7463596122122633,
+        "role": "nape_band_17",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666766,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -0.7447916666666667
+        ],
+        "primitive": "cone",
+        "radius1": 0.7449708764859709,
+        "radius2": 0.757928062586058,
+        "role": "nape_band_18",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666544,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -0.7093750000000001
+        ],
+        "primitive": "cone",
+        "radius1": 0.756688105219485,
+        "radius2": 0.7681427052478235,
+        "role": "nape_band_19",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666766,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -0.6739583333333334
+        ],
+        "primitive": "cone",
+        "radius1": 0.7670589341365159,
+        "radius2": 0.7769379494557416,
+        "role": "nape_band_20",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666544,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -0.6385416666666668
+        ],
+        "primitive": "cone",
+        "radius1": 0.7760177724952464,
+        "radius2": 0.7842482044679949,
+        "role": "nape_band_21",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.039416666666666766,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -0.6031250000000001
+        ],
+        "primitive": "cone",
+        "radius1": 0.7834990295538583,
+        "radius2": 0.7900078795427657,
+        "role": "nape_band_22",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 0.05741666666666678,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -0.5587083333333334
+        ],
+        "primitive": "cone",
+        "radius1": 0.7894371145705342,
+        "radius2": 0.7956168125616936,
+        "role": "nape_band_23",
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.08,
+          2.3,
+          1.2
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.95,
+          -1.5
+        ],
+        "primitive": "cube",
+        "role": "nape_front_clearance"
+      }
+    ],
+    "landmarks": {
+      "front_brim": [
+        0,
+        -0.85,
+        0.68
+      ],
+      "helmet_crown": [
+        0.0,
+        0.08,
+        0.0
+      ],
+      "helmet_face_opening": [
+        0.0,
+        -0.95,
+        -0.19
+      ],
+      "helmet_nape_clip": [
+        0.0,
+        0.08,
+        1.45
+      ],
+      "helmet_tapered_tip": [
+        0.0,
+        0.08,
+        1.9500000000000002
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "nape_join": [
+        0,
+        0.08,
+        -0.55
+      ],
+      "nape_root": [
+        0,
+        0.08,
+        -1.4
+      ]
+    },
+    "nape_profile": {
+      "join_z": -0.55,
+      "root_radius": 0.38,
+      "root_slope": 0.7,
+      "root_z": -1.4,
+      "seed": 1001,
+      "segments": 24
+    },
+    "operations": [
+      {
+        "operand": "helmet_nape_clip",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "nape_band_01",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_02",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_03",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_04",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_05",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_06",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_07",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_08",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_09",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_10",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_11",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_12",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_13",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_14",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_15",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_16",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_17",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_18",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_19",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_20",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_21",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_22",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_23",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_envelope",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "nape_band_00"
+      },
+      {
+        "operand": "nape_band_00",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "helmet_tapered_tip",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "helmet_face_opening",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "nape_front_clearance",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      }
+    ],
+    "provenance": "Revision 5 upper crown, cap and face opening retained. Lower nape is a tangent profile clipped to the original crown envelope, locally fused into the helmet instead of a separate torso collar. Visual-only."
+  }
+}

@@ -34,7 +34,7 @@ def test_spearman_recipes_repeat_resolve_and_preserve_shared_parts(tmp_path):
         model = load_model(ROOT/'specs'/variant['model'], definitions)
         slots = {p['instance_id']:p for p in model['placements']}
         assert slots['head']['part'] == 'aurelian.head@12'
-        assert slots['helmet']['part'] == ('aurelian.sergeant-helmet@2' if variant['state']=='hawk-sergeant' else 'aurelian.helmet@5')
+        assert slots['helmet']['part'] == ('aurelian.sergeant-helmet@2' if variant['state']=='hawk-sergeant' else 'aurelian.helmet@7')
         assert slots['crest']['part'] == 'aurelian.crest@4'
         if variant['state'] != 'spear':
             assert 'spear' not in slots and 'equipment-joins' not in slots

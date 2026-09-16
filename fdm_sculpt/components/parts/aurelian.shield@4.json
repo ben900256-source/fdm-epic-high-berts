@@ -1,0 +1,191 @@
+{
+  "component_id": "aurelian.shield",
+  "version": 4,
+  "name": "Slightly broader and taller pointed shield - tapered undersides - tapered undersides",
+  "family": "shield",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shield",
+    "shield_ground_transition"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          2.6784000000000003,
+          1.04,
+          4.823
+        ],
+        "export": true,
+        "location": [
+          0,
+          0,
+          0.1365000000000003
+        ],
+        "primitive": "cube",
+        "role": "shield"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          14,
+          4,
+          14
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.4983056209018035,
+            0,
+            0.8670014464680368,
+            -0.14
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            -0.8670014464680368,
+            0,
+            0.4983056209018035,
+            -2.275
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          7
+        ],
+        "primitive": "cube",
+        "role": "shield_left_point_halfspace"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          14,
+          4,
+          14
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.4983056209018035,
+            0,
+            -0.8670014464680368,
+            0.14
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0.8670014464680368,
+            0,
+            0.4983056209018035,
+            -2.275
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          7
+        ],
+        "primitive": "cube",
+        "role": "shield_right_point_halfspace"
+      },
+      {
+        "bevel": 0,
+        "depth": 1.0,
+        "export": true,
+        "location": [
+          0,
+          0,
+          -2.75
+        ],
+        "primitive": "cone",
+        "radius1": 0.22,
+        "radius2": 0.8,
+        "role": "shield_ground_transition",
+        "rotation": [
+          0,
+          0,
+          0.7853981633974483
+        ],
+        "scale": [
+          0.35,
+          1.03,
+          1
+        ],
+        "vertices": 4
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "point": [
+        0,
+        0,
+        -2.275
+      ],
+      "shield": [
+        0,
+        0,
+        0.1365000000000003
+      ],
+      "top": [
+        0,
+        0,
+        2.5480000000000005
+      ]
+    },
+    "operations": [
+      {
+        "operand": "shield_left_point_halfspace",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "shield_right_point_halfspace",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "shield"
+      }
+    ],
+    "overhang_revision": {
+      "intent": "Reach the full shield thickness before the lower point begins, retaining its broad outline.",
+      "source": "aurelian.shield@3"
+    },
+    "provenance": "parameter recipe extracted from spearman revision 11",
+    "resize": {
+      "height_factor": 1.06,
+      "lower_tip_preserved": true,
+      "width_factor": 1.08
+    }
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "assembly_id": "aurelian-spearmen-overhang-study",
+  "label": "Spearmen - tapered underside study",
+  "placements": [
+    {
+      "instance_id": "strip",
+      "part": "aurelian.base-body-20x5-plain@1",
+      "definition_sha256": "2bc595da1bc975c5094b63b48bfe41710065b54d463fe152f780d8bcc7b1c0cd",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "strip-terrain",
+      "part": "aurelian.terrain-soil-20x5-738fc95adfe0@3",
+      "definition_sha256": "d27ba6ab66a6293100c6c58d7a252bd100d85901e85948610123a64256b50420",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "models": [
+    {
+      "instance_id": "row-01",
+      "model": "models/spearmen/01-standing-guard.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "row-02",
+      "model": "models/spearmen/02-watching-left.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "row-03",
+      "model": "models/spearmen/03-watching-right.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "row-04",
+      "model": "models/spearmen/04-spear-forward.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "row-05",
+      "model": "models/spearmen/05-spear-outward.json",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

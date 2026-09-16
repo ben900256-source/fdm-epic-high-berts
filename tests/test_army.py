@@ -27,7 +27,7 @@ def test_standard_parts_golden_and_shared_model():
     solo = indexed(load_assembly(ROOT/'specs/elf-standard-bearer.json', definitions))
     assert len(unit) == 105 and len(solo) == 21
     assert 'elf-03/spear' not in unit and 'bearer-01/spear' not in solo
-    assert len([p for p in unit.values() if p['part'] == 'aurelian.spear@3']) == 4
+    assert len([p for p in unit.values() if p['part'] == 'aurelian.spear@4']) == 4
     removed = {'spear','shield','shield-insignia','equipment-joins','shield-torso-connector','shield-lower-connector'}
     for name, p in base.items():
         if name == 'elf-03/left-arm':

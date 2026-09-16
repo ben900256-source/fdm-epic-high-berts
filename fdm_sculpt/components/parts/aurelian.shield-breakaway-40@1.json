@@ -1,0 +1,129 @@
+{
+  "component_id": "aurelian.shield-breakaway-40",
+  "version": 1,
+  "name": "Shield breakaway pedestal - 0.40 mm neck trial",
+  "family": "sacrificial-support",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "pedestal_foot"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0,
+        "dimensions": [
+          0.8,
+          0.85,
+          0.2
+        ],
+        "export": true,
+        "location": [
+          0,
+          0,
+          -3.24
+        ],
+        "primitive": "cube",
+        "role": "pedestal_foot"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          0.55,
+          0.4,
+          0.4
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          -3.05
+        ],
+        "primitive": "cube",
+        "role": "base_breakaway_neck"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          0.7,
+          0.85,
+          0.4
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          -2.75
+        ],
+        "primitive": "cube",
+        "role": "pedestal_body"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          0.55,
+          0.4,
+          0.54
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          -2.37
+        ],
+        "primitive": "cube",
+        "role": "shield_breakaway_neck"
+      }
+    ],
+    "landmarks": {
+      "lower_cut": [
+        0,
+        0,
+        -3.03
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "upper_cut": [
+        0,
+        0,
+        -2.45
+      ]
+    },
+    "operations": [
+      {
+        "operand": "base_breakaway_neck",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "pedestal_foot"
+      },
+      {
+        "operand": "pedestal_body",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "pedestal_foot"
+      },
+      {
+        "operand": "shield_breakaway_neck",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "pedestal_foot"
+      }
+    ],
+    "provenance": "Independent visual prototype, mounted in shield coordinates. Nominal necks require sliced and physical trials.",
+    "trial": {
+      "neck_depth_mm": 0.4,
+      "neck_width_mm": 0.55,
+      "removable": true,
+      "removal": "clip upper neck, then lower neck; do not twist shield",
+      "seed": 1001,
+      "validated": false
+    }
+  }
+}
