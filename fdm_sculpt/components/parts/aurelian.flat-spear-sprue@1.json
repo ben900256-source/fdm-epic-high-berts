@@ -1,0 +1,386 @@
+{
+  "component_id": "aurelian.flat-spear-sprue",
+  "version": 1,
+  "name": "Flat spear sprue with clip-off gates",
+  "family": "spear-kit-trial",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "frame"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0,
+        "dimensions": [
+          21,
+          1,
+          0.8
+        ],
+        "export": true,
+        "location": [
+          7.5,
+          -1,
+          0.4
+        ],
+        "primitive": "cube",
+        "role": "frame"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          21,
+          1,
+          0.8
+        ],
+        "export": false,
+        "location": [
+          7.5,
+          16.5,
+          0.4
+        ],
+        "primitive": "cube",
+        "role": "top_rail"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          0.8,
+          18.5,
+          0.8
+        ],
+        "export": false,
+        "location": [
+          -2.5,
+          7.75,
+          0.4
+        ],
+        "primitive": "cube",
+        "role": "rail_0"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          0.8,
+          18.5,
+          0.8
+        ],
+        "export": false,
+        "location": [
+          2.5,
+          7.75,
+          0.4
+        ],
+        "primitive": "cube",
+        "role": "rail_1"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          0.8,
+          18.5,
+          0.8
+        ],
+        "export": false,
+        "location": [
+          7.5,
+          7.75,
+          0.4
+        ],
+        "primitive": "cube",
+        "role": "rail_2"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          0.8,
+          18.5,
+          0.8
+        ],
+        "export": false,
+        "location": [
+          12.5,
+          7.75,
+          0.4
+        ],
+        "primitive": "cube",
+        "role": "rail_3"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          0.8,
+          18.5,
+          0.8
+        ],
+        "export": false,
+        "location": [
+          17.5,
+          7.75,
+          0.4
+        ],
+        "primitive": "cube",
+        "role": "rail_4"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          2.18,
+          0.45,
+          0.4
+        ],
+        "export": false,
+        "location": [
+          -1.41,
+          1.2,
+          0.2
+        ],
+        "primitive": "cube",
+        "role": "clip_gate_0_0"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          2.18,
+          0.45,
+          0.4
+        ],
+        "export": false,
+        "location": [
+          -1.41,
+          10.8,
+          0.2
+        ],
+        "primitive": "cube",
+        "role": "clip_gate_0_1"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          2.08,
+          0.45,
+          0.4
+        ],
+        "export": false,
+        "location": [
+          3.54,
+          1.2,
+          0.2
+        ],
+        "primitive": "cube",
+        "role": "clip_gate_1_0"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          2.08,
+          0.45,
+          0.4
+        ],
+        "export": false,
+        "location": [
+          3.54,
+          10.8,
+          0.2
+        ],
+        "primitive": "cube",
+        "role": "clip_gate_1_1"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          2.1799999999999997,
+          0.45,
+          0.4
+        ],
+        "export": false,
+        "location": [
+          8.59,
+          3.1,
+          0.2
+        ],
+        "primitive": "cube",
+        "role": "clip_gate_2_0"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          2.1799999999999997,
+          0.45,
+          0.4
+        ],
+        "export": false,
+        "location": [
+          8.59,
+          8.0,
+          0.2
+        ],
+        "primitive": "cube",
+        "role": "clip_gate_2_1"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          2.08,
+          0.45,
+          0.4
+        ],
+        "export": false,
+        "location": [
+          13.54,
+          3.1,
+          0.2
+        ],
+        "primitive": "cube",
+        "role": "clip_gate_3_0"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          2.08,
+          0.45,
+          0.4
+        ],
+        "export": false,
+        "location": [
+          13.54,
+          8.0,
+          0.2
+        ],
+        "primitive": "cube",
+        "role": "clip_gate_3_1"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.5,
+          3.5,
+          0.8
+        ],
+        "export": false,
+        "location": [
+          7.5,
+          18,
+          0.4
+        ],
+        "primitive": "cube",
+        "role": "coupon_link"
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "top_rail",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "frame"
+      },
+      {
+        "operand": "rail_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "frame"
+      },
+      {
+        "operand": "rail_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "frame"
+      },
+      {
+        "operand": "rail_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "frame"
+      },
+      {
+        "operand": "rail_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "frame"
+      },
+      {
+        "operand": "rail_4",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "frame"
+      },
+      {
+        "operand": "clip_gate_0_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "frame"
+      },
+      {
+        "operand": "clip_gate_0_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "frame"
+      },
+      {
+        "operand": "clip_gate_1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "frame"
+      },
+      {
+        "operand": "clip_gate_1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "frame"
+      },
+      {
+        "operand": "clip_gate_2_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "frame"
+      },
+      {
+        "operand": "clip_gate_2_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "frame"
+      },
+      {
+        "operand": "clip_gate_3_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "frame"
+      },
+      {
+        "operand": "clip_gate_3_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "frame"
+      },
+      {
+        "operand": "coupon_link",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "frame"
+      }
+    ],
+    "provenance": "Flat sprue and keyed socket experiment. Physical fit and strength untested.",
+    "seed": 1001,
+    "trial": {
+      "columns": [
+        "full-1.0",
+        "full-1.2",
+        "upper-1.0",
+        "upper-1.2"
+      ],
+      "gate_height_mm": 0.4,
+      "gate_width_mm": 0.45
+    }
+  }
+}

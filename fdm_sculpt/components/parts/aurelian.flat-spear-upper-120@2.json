@@ -1,0 +1,171 @@
+{
+  "component_id": "aurelian.flat-spear-upper-120",
+  "version": 2,
+  "name": "Flat upper spear, 1.2 x 0.8 mm with insertion stop",
+  "family": "spear-kit-trial",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shaft",
+    "head"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          1.2,
+          7.9,
+          0.8
+        ],
+        "export": true,
+        "location": [
+          0,
+          5.95,
+          0.4
+        ],
+        "primitive": "cube",
+        "role": "shaft"
+      },
+      {
+        "bevel": 0.08,
+        "dimensions": [
+          0.8,
+          2.25,
+          0.8
+        ],
+        "export": false,
+        "location": [
+          0,
+          1.125,
+          0.4
+        ],
+        "primitive": "cube",
+        "role": "keyed_pin"
+      },
+      {
+        "bevel": 0.04,
+        "dimensions": [
+          1.414213562373095,
+          1.414213562373095,
+          0.8
+        ],
+        "export": true,
+        "location": [
+          0,
+          10.55,
+          0.4
+        ],
+        "primitive": "cube",
+        "role": "head",
+        "rotation": [
+          0,
+          0,
+          0.7853981633974483
+        ]
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          10,
+          10,
+          10
+        ],
+        "export": false,
+        "location": [
+          0,
+          16.35,
+          0
+        ],
+        "primitive": "cube",
+        "role": "tip_clip"
+      },
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          1.5,
+          0.65,
+          0.8
+        ],
+        "export": false,
+        "location": [
+          0,
+          9.85,
+          0.4
+        ],
+        "primitive": "cube",
+        "role": "socket_band"
+      },
+      {
+        "bevel": 0.05,
+        "dimensions": [
+          1.6,
+          0.6,
+          0.8
+        ],
+        "export": false,
+        "location": [
+          0,
+          2.3,
+          0.4
+        ],
+        "primitive": "cube",
+        "role": "insertion_stop"
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "keyed_pin",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shaft"
+      },
+      {
+        "operand": "tip_clip",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "head"
+      },
+      {
+        "operand": "socket_band",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shaft"
+      },
+      {
+        "operand": "insertion_stop",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shaft"
+      }
+    ],
+    "provenance": "Flat sprue and keyed socket experiment. Physical fit and strength untested.",
+    "seed": 1001,
+    "trial": {
+      "cap_width_mm": 0.4,
+      "insertion_stop_width_mm": 1.6,
+      "kind": "upper",
+      "length_mm": 11.350000000000001,
+      "pin_mm": [
+        0.8,
+        0.8,
+        2.0
+      ],
+      "source": "aurelian.flat-spear-upper-120@1",
+      "source_sha256": "416fd1e6f2de4216120cf03589dd66adc7175b5fbadba3db464984583d3a9bfd",
+      "thickness_mm": 0.8,
+      "width_mm": 1.2
+    }
+  }
+}

@@ -12,7 +12,9 @@ const downloads=document.createElement('section');downloads.id='downloads';
 const downloadLink=document.createElement('a');downloadLink.id='download-stl';
 downloadLink.textContent='Download STL';downloadLink.hidden=true;
 const downloadStatus=document.createElement('p');downloadStatus.id='download-status';
-downloads.append(downloadLink,downloadStatus);document.querySelector('aside').append(downloads);
+const projectLink=document.createElement('a');projectLink.id='download-project';projectLink.hidden=true;
+projectLink.textContent='Download PrusaSlicer project';
+downloads.append(downloadLink,projectLink,downloadStatus);document.querySelector('aside').append(downloads);
 function updateDownload(review){
   const file=review.stl_download;
   const available=file && /^\/data\/downloads\/[a-f0-9]{64}\.stl$/.test(file.url);
@@ -21,11 +23,16 @@ function updateDownload(review){
   if(available){
     downloadLink.href=file.url;downloadLink.download=file.filename;
     downloadLink.textContent=`Download STL · ${(file.bytes/1e6).toFixed(1)} MB`;
-    downloadStatus.textContent=file.status+' Downloads the complete stand.';
+    downloadStatus.textContent=file.status;
   }else{
     downloadLink.removeAttribute('href');downloadLink.removeAttribute('download');
     downloadStatus.textContent='No print STL published for this visual review.';
   }
+  const project=review.project_download;
+  const projectAvailable=project&&/^\/data\/downloads\/[a-f0-9]{64}\.3mf$/.test(project.url);
+  projectLink.hidden=!projectAvailable;
+  if(projectAvailable){projectLink.href=project.url;projectLink.download=project.filename;}
+  else{projectLink.removeAttribute('href');projectLink.removeAttribute('download');}
 }
 const displayName = text => text.replace(/swordmaster/gi, name => name[0]==='S'?'Bertmaster':'bertmaster');
 const renderer = new THREE.WebGLRenderer({antialias:true});
@@ -248,7 +255,8 @@ async function refresh() {
       options($('figure'),[...new Set(next.assembly.placements.filter(p=>p.instance_id.includes('/')).map(p=>p.instance_id.split('/')[0]))],'All figures');
       options($('part'),Object.keys(next.assets).sort(),'All components');
       visibility();
-      if(first||changedAssembly) fit(new THREE.Vector3(.45,-1,.35).normalize());
+      if(first||changedAssembly) fit(next.assembly.assembly_id.startsWith('flat-spear-kit')
+        ?new THREE.Vector3(.1,-.35,1).normalize():new THREE.Vector3(.45,-1,.35).normalize());
       // Keep recently viewed pieces warm when switching between unit variants.
       const active=new Set(Object.values(next.assets).map(a=>a.url));
       for(const [url,pieces] of geometries) if(geometries.size>128&&!active.has(url)){
@@ -274,11 +282,20 @@ $('shields').onchange=visibility;
 $('wire').onchange=()=>material.wireframe=$('wire').checked;
 $('outlines').onchange=()=>{for(const mesh of model.children) mesh.children[0].visible=$('outlines').checked;};
 $('fit').onclick=()=>fit(); $('refresh').onclick=refresh;
-for(const button of document.querySelectorAll('[data-view]')) button.onclick=()=>fit(new THREE.Vector3(...({front:[0,-1,0],side:[1,0,0],back:[0,1,0]}[button.dataset.view])));
+for(const button of document.querySelectorAll('[data-view]')) button.onclick=()=>fit(new THREE.Vector3(...({front:[0,-1,0],side:[1,0,0],back:[0,1,0],top:[0,-.001,1]}[button.dataset.view])));
 addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);composer.setSize(innerWidth,innerHeight);clearHover();});
 renderer.setAnimationLoop(()=>{controls.update();if(hoverOutline.selectedObjects.length) composer.render();else renderer.render(scene,camera);});
 initWorkshop({
+  initialReview:new URL(location.href).searchParams.get('review'),
+  showSavedReview:async id=>{
+    workshopReview=null;workshopSource=null;
+    if(![...$('review').options].some(option=>option.value===id))$('review').add(new Option(id,id));
+    $('review').value=id;
+    const url=new URL(location.href);url.searchParams.set('review',id);history.replaceState(null,'',url);
+    if(await refresh()===false)throw new Error($('error').textContent);
+  },
   showReview:async (review,source=null)=>{
+    const url=new URL(location.href);url.searchParams.delete('review');history.replaceState(null,'',url);
     workshopReview=review;workshopSource=source;
     if(await refresh()===false)throw new Error($('error').textContent);
     const deadline=Date.now()+90000;

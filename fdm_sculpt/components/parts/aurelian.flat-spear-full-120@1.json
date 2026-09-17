@@ -1,0 +1,120 @@
+{
+  "component_id": "aurelian.flat-spear-full-120",
+  "version": 1,
+  "name": "Flat full spear, 1.2 x 0.8 mm",
+  "family": "spear-kit-trial",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shaft",
+    "head"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          1.2,
+          13.35,
+          0.8
+        ],
+        "export": true,
+        "location": [
+          0,
+          6.675,
+          0.4
+        ],
+        "primitive": "cube",
+        "role": "shaft"
+      },
+      {
+        "bevel": 0.04,
+        "dimensions": [
+          1.414213562373095,
+          1.414213562373095,
+          0.8
+        ],
+        "export": true,
+        "location": [
+          0,
+          14.0,
+          0.4
+        ],
+        "primitive": "cube",
+        "role": "head",
+        "rotation": [
+          0,
+          0,
+          0.7853981633974483
+        ]
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          10,
+          10,
+          10
+        ],
+        "export": false,
+        "location": [
+          0,
+          19.8,
+          0
+        ],
+        "primitive": "cube",
+        "role": "tip_clip"
+      },
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          1.5,
+          0.65,
+          0.8
+        ],
+        "export": false,
+        "location": [
+          0,
+          13.299999999999999,
+          0.4
+        ],
+        "primitive": "cube",
+        "role": "socket_band"
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "tip_clip",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "head"
+      },
+      {
+        "operand": "socket_band",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shaft"
+      }
+    ],
+    "provenance": "Flat sprue and keyed socket experiment. Physical fit and strength untested.",
+    "seed": 1001,
+    "trial": {
+      "cap_width_mm": 0.4,
+      "kind": "full",
+      "length_mm": 14.8,
+      "pin_mm": null,
+      "thickness_mm": 0.8,
+      "width_mm": 1.2
+    }
+  }
+}

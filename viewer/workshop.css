@@ -1,4 +1,5 @@
 aside{width:310px!important;top:80px;max-height:calc(100vh - 130px)}
+#download-project{display:block;margin-top:8px;padding:10px;text-align:center;color:#d9e7cc;border:1px solid #71866c;border-radius:6px;text-decoration:none}
 aside>strong{display:none}.tabs{display:flex;gap:5px}.tabs button{flex:1;padding:9px 4px}.tabs button[aria-pressed=true]{background:#53694e;border-color:#91a482}
 [hidden]{display:none!important}.hint{font-size:12px;line-height:1.5;color:#aebdc7}details{margin-top:16px}summary{cursor:pointer;color:#d3ddca;font-size:13px;padding:6px 0}
 input[type=number],textarea{width:100%;background:#18232c;border:1px solid #53616a;border-radius:6px;color:#eee9df;padding:9px;font:inherit}textarea{resize:vertical}

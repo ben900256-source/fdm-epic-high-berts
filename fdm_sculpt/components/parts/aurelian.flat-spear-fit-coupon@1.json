@@ -1,0 +1,927 @@
+{
+  "component_id": "aurelian.flat-spear-fit-coupon",
+  "version": 1,
+  "name": "Nine keyed fit sockets: 0.15 / 0.25 / 0.35 mm clearance",
+  "family": "spear-kit-trial",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "coupon"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0,
+        "dimensions": [
+          21,
+          15.5,
+          1
+        ],
+        "export": true,
+        "location": [
+          7.5,
+          26.75,
+          0.5
+        ],
+        "primitive": "cube",
+        "role": "coupon"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          3.3,
+          3.3,
+          2.65
+        ],
+        "export": false,
+        "location": [
+          1.5,
+          21.5,
+          2.275
+        ],
+        "primitive": "cube",
+        "role": "socket_0_0"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.15,
+          0.9500000000000001,
+          3.0
+        ],
+        "export": false,
+        "location": [
+          1.5,
+          21.5,
+          2.7
+        ],
+        "primitive": "cube",
+        "role": "socket_0_0_hole"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.39,
+          1.19,
+          0.3
+        ],
+        "export": false,
+        "location": [
+          1.5,
+          21.5,
+          3.6
+        ],
+        "primitive": "cube",
+        "role": "socket_0_0_lead"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          3.3,
+          3.3,
+          2.65
+        ],
+        "export": false,
+        "location": [
+          7.5,
+          21.5,
+          2.275
+        ],
+        "primitive": "cube",
+        "role": "socket_0_1"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.25,
+          1.05,
+          3.0
+        ],
+        "export": false,
+        "location": [
+          7.5,
+          21.5,
+          2.7
+        ],
+        "primitive": "cube",
+        "role": "socket_0_1_hole"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.49,
+          1.29,
+          0.3
+        ],
+        "export": false,
+        "location": [
+          7.5,
+          21.5,
+          3.6
+        ],
+        "primitive": "cube",
+        "role": "socket_0_1_lead"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          3.3,
+          3.3,
+          2.65
+        ],
+        "export": false,
+        "location": [
+          13.5,
+          21.5,
+          2.275
+        ],
+        "primitive": "cube",
+        "role": "socket_0_2"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.35,
+          1.15,
+          3.0
+        ],
+        "export": false,
+        "location": [
+          13.5,
+          21.5,
+          2.7
+        ],
+        "primitive": "cube",
+        "role": "socket_0_2_hole"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.59,
+          1.39,
+          0.3
+        ],
+        "export": false,
+        "location": [
+          13.5,
+          21.5,
+          3.6
+        ],
+        "primitive": "cube",
+        "role": "socket_0_2_lead"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          0.4,
+          0.8,
+          0.3
+        ],
+        "export": false,
+        "location": [
+          -1.7,
+          21.5,
+          1.15
+        ],
+        "primitive": "cube",
+        "role": "row_0_tick_0"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          3.3,
+          3.3,
+          2.65
+        ],
+        "export": false,
+        "location": [
+          1.5,
+          26.5,
+          2.275
+        ],
+        "primitive": "cube",
+        "role": "socket_1_0"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.3499999999999999,
+          0.9500000000000001,
+          3.0
+        ],
+        "export": false,
+        "location": [
+          1.5,
+          26.5,
+          2.7
+        ],
+        "primitive": "cube",
+        "role": "socket_1_0_hole"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.5899999999999999,
+          1.19,
+          0.3
+        ],
+        "export": false,
+        "location": [
+          1.5,
+          26.5,
+          3.6
+        ],
+        "primitive": "cube",
+        "role": "socket_1_0_lead"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          3.3,
+          3.3,
+          2.65
+        ],
+        "export": false,
+        "location": [
+          7.5,
+          26.5,
+          2.275
+        ],
+        "primitive": "cube",
+        "role": "socket_1_1"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.45,
+          1.05,
+          3.0
+        ],
+        "export": false,
+        "location": [
+          7.5,
+          26.5,
+          2.7
+        ],
+        "primitive": "cube",
+        "role": "socket_1_1_hole"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.69,
+          1.29,
+          0.3
+        ],
+        "export": false,
+        "location": [
+          7.5,
+          26.5,
+          3.6
+        ],
+        "primitive": "cube",
+        "role": "socket_1_1_lead"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          3.3,
+          3.3,
+          2.65
+        ],
+        "export": false,
+        "location": [
+          13.5,
+          26.5,
+          2.275
+        ],
+        "primitive": "cube",
+        "role": "socket_1_2"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.5499999999999998,
+          1.15,
+          3.0
+        ],
+        "export": false,
+        "location": [
+          13.5,
+          26.5,
+          2.7
+        ],
+        "primitive": "cube",
+        "role": "socket_1_2_hole"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.7899999999999998,
+          1.39,
+          0.3
+        ],
+        "export": false,
+        "location": [
+          13.5,
+          26.5,
+          3.6
+        ],
+        "primitive": "cube",
+        "role": "socket_1_2_lead"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          0.4,
+          0.8,
+          0.3
+        ],
+        "export": false,
+        "location": [
+          -1.7,
+          26.5,
+          1.15
+        ],
+        "primitive": "cube",
+        "role": "row_1_tick_0"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          0.4,
+          0.8,
+          0.3
+        ],
+        "export": false,
+        "location": [
+          -1.1,
+          26.5,
+          1.15
+        ],
+        "primitive": "cube",
+        "role": "row_1_tick_1"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          3.3,
+          3.3,
+          2.65
+        ],
+        "export": false,
+        "location": [
+          1.5,
+          31.5,
+          2.275
+        ],
+        "primitive": "cube",
+        "role": "socket_2_0"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          0.9500000000000001,
+          0.9500000000000001,
+          3.0
+        ],
+        "export": false,
+        "location": [
+          1.5,
+          31.5,
+          2.7
+        ],
+        "primitive": "cube",
+        "role": "socket_2_0_hole"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.19,
+          1.19,
+          0.3
+        ],
+        "export": false,
+        "location": [
+          1.5,
+          31.5,
+          3.6
+        ],
+        "primitive": "cube",
+        "role": "socket_2_0_lead"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          3.3,
+          3.3,
+          2.65
+        ],
+        "export": false,
+        "location": [
+          7.5,
+          31.5,
+          2.275
+        ],
+        "primitive": "cube",
+        "role": "socket_2_1"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.05,
+          1.05,
+          3.0
+        ],
+        "export": false,
+        "location": [
+          7.5,
+          31.5,
+          2.7
+        ],
+        "primitive": "cube",
+        "role": "socket_2_1_hole"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.29,
+          1.29,
+          0.3
+        ],
+        "export": false,
+        "location": [
+          7.5,
+          31.5,
+          3.6
+        ],
+        "primitive": "cube",
+        "role": "socket_2_1_lead"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          3.3,
+          3.3,
+          2.65
+        ],
+        "export": false,
+        "location": [
+          13.5,
+          31.5,
+          2.275
+        ],
+        "primitive": "cube",
+        "role": "socket_2_2"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.15,
+          1.15,
+          3.0
+        ],
+        "export": false,
+        "location": [
+          13.5,
+          31.5,
+          2.7
+        ],
+        "primitive": "cube",
+        "role": "socket_2_2_hole"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.39,
+          1.39,
+          0.3
+        ],
+        "export": false,
+        "location": [
+          13.5,
+          31.5,
+          3.6
+        ],
+        "primitive": "cube",
+        "role": "socket_2_2_lead"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          0.4,
+          0.8,
+          0.3
+        ],
+        "export": false,
+        "location": [
+          -1.7,
+          31.5,
+          1.15
+        ],
+        "primitive": "cube",
+        "role": "row_2_tick_0"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          0.4,
+          0.8,
+          0.3
+        ],
+        "export": false,
+        "location": [
+          -1.1,
+          31.5,
+          1.15
+        ],
+        "primitive": "cube",
+        "role": "row_2_tick_1"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          0.4,
+          0.8,
+          0.3
+        ],
+        "export": false,
+        "location": [
+          -0.5,
+          31.5,
+          1.15
+        ],
+        "primitive": "cube",
+        "role": "row_2_tick_2"
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "socket_0_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_0_0_hole",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_0_0_lead",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_0_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_0_1_hole",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_0_1_lead",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_0_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_0_2_hole",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_0_2_lead",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "row_0_tick_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_1_0_hole",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_1_0_lead",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_1_1_hole",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_1_1_lead",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_1_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_1_2_hole",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_1_2_lead",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "row_1_tick_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "row_1_tick_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_2_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_2_0_hole",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_2_0_lead",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_2_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_2_1_hole",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_2_1_lead",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_2_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_2_2_hole",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "socket_2_2_lead",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "row_2_tick_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "row_2_tick_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "coupon"
+      },
+      {
+        "operand": "row_2_tick_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "coupon"
+      }
+    ],
+    "provenance": "Flat sprue and keyed socket experiment. Physical fit and strength untested.",
+    "seed": 1001,
+    "trial": {
+      "clearances_mm": [
+        0.15,
+        0.25,
+        0.35
+      ],
+      "minimum_socket_wall_mm": 0.755,
+      "socket_depth_mm": 2.4,
+      "sockets": [
+        {
+          "column": 1,
+          "floor_z_mm": 1.2,
+          "kind": "full-1.0",
+          "opening_mm": [
+            1.15,
+            0.9500000000000001
+          ],
+          "row": 1,
+          "top_z_mm": 3.6,
+          "total_clearance_mm": 0.15,
+          "xy": [
+            1.5,
+            21.5
+          ]
+        },
+        {
+          "column": 2,
+          "floor_z_mm": 1.2,
+          "kind": "full-1.0",
+          "opening_mm": [
+            1.25,
+            1.05
+          ],
+          "row": 1,
+          "top_z_mm": 3.6,
+          "total_clearance_mm": 0.25,
+          "xy": [
+            7.5,
+            21.5
+          ]
+        },
+        {
+          "column": 3,
+          "floor_z_mm": 1.2,
+          "kind": "full-1.0",
+          "opening_mm": [
+            1.35,
+            1.15
+          ],
+          "row": 1,
+          "top_z_mm": 3.6,
+          "total_clearance_mm": 0.35,
+          "xy": [
+            13.5,
+            21.5
+          ]
+        },
+        {
+          "column": 1,
+          "floor_z_mm": 1.2,
+          "kind": "full-1.2",
+          "opening_mm": [
+            1.3499999999999999,
+            0.9500000000000001
+          ],
+          "row": 2,
+          "top_z_mm": 3.6,
+          "total_clearance_mm": 0.15,
+          "xy": [
+            1.5,
+            26.5
+          ]
+        },
+        {
+          "column": 2,
+          "floor_z_mm": 1.2,
+          "kind": "full-1.2",
+          "opening_mm": [
+            1.45,
+            1.05
+          ],
+          "row": 2,
+          "top_z_mm": 3.6,
+          "total_clearance_mm": 0.25,
+          "xy": [
+            7.5,
+            26.5
+          ]
+        },
+        {
+          "column": 3,
+          "floor_z_mm": 1.2,
+          "kind": "full-1.2",
+          "opening_mm": [
+            1.5499999999999998,
+            1.15
+          ],
+          "row": 2,
+          "top_z_mm": 3.6,
+          "total_clearance_mm": 0.35,
+          "xy": [
+            13.5,
+            26.5
+          ]
+        },
+        {
+          "column": 1,
+          "floor_z_mm": 1.2,
+          "kind": "shared-upper-pin",
+          "opening_mm": [
+            0.9500000000000001,
+            0.9500000000000001
+          ],
+          "row": 3,
+          "top_z_mm": 3.6,
+          "total_clearance_mm": 0.15,
+          "xy": [
+            1.5,
+            31.5
+          ]
+        },
+        {
+          "column": 2,
+          "floor_z_mm": 1.2,
+          "kind": "shared-upper-pin",
+          "opening_mm": [
+            1.05,
+            1.05
+          ],
+          "row": 3,
+          "top_z_mm": 3.6,
+          "total_clearance_mm": 0.25,
+          "xy": [
+            7.5,
+            31.5
+          ]
+        },
+        {
+          "column": 3,
+          "floor_z_mm": 1.2,
+          "kind": "shared-upper-pin",
+          "opening_mm": [
+            1.15,
+            1.15
+          ],
+          "row": 3,
+          "top_z_mm": 3.6,
+          "total_clearance_mm": 0.35,
+          "xy": [
+            13.5,
+            31.5
+          ]
+        }
+      ]
+    }
+  }
+}
