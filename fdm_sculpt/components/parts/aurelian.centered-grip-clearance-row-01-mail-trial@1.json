@@ -1,0 +1,346 @@
+{
+  "component_id": "aurelian.centered-grip-clearance-row-01-mail-trial",
+  "version": 1,
+  "name": "Curved breastplate with shallow central fold; centered spear insertion clearance",
+  "family": "chest-plate",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "smooth_chest_plate"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          2.22,
+          1.76,
+          2.3
+        ],
+        "export": true,
+        "location": [
+          0,
+          -0.2,
+          0.15
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "smooth_chest_plate",
+        "segments": 48
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          4,
+          1.3,
+          4
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.75,
+          0
+        ],
+        "primitive": "cube",
+        "role": "plate_front_extent"
+      },
+      {
+        "dimensions": [
+          1.04,
+          2.6,
+          1.32
+        ],
+        "export": false,
+        "location": [
+          -1.24,
+          0,
+          0.8
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "left_armhole",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.04,
+          2.6,
+          1.32
+        ],
+        "export": false,
+        "location": [
+          1.24,
+          0,
+          0.8
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_armhole",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.9,
+          1.9,
+          0.78
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          1.37
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "neckline",
+        "segments": 32
+      },
+      {
+        "bevel": 0.025,
+        "dimensions": [
+          0.58,
+          0.58,
+          2.3
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.82,
+          0.15
+        ],
+        "primitive": "cube",
+        "role": "central_pleat",
+        "rotation": [
+          0,
+          0,
+          0.7853981633974483
+        ]
+      },
+      {
+        "dimensions": [
+          2.22,
+          2.02,
+          2.3
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.2,
+          0.15
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "pleat_contour",
+        "segments": 48
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16.0,
+          1.2,
+          12.099999999999998
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.12243077510152992,
+            0.992206031,
+            0.023192620750518922,
+            1.2170239275126702
+          ],
+          [
+            -0.9924693369792617,
+            0.122304228,
+            0.006803792493213726,
+            -0.8569511527374927
+          ],
+          [
+            0.003914208868126819,
+            -0.023850959,
+            0.9997078625760932,
+            0.7608013590161596
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          7.6,
+          0,
+          1.1
+        ],
+        "primitive": "cube",
+        "role": "spear_1_insertion_0"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16.24,
+          2.04,
+          2.299999999999999
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.12243077510152992,
+            0.992206031,
+            0.023192620750518922,
+            1.2170239275126702
+          ],
+          [
+            -0.9924693369792617,
+            0.122304228,
+            0.006803792493213726,
+            -0.8569511527374927
+          ],
+          [
+            0.003914208868126819,
+            -0.023850959,
+            0.9997078625760932,
+            0.7608013590161596
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          7.72,
+          0,
+          7.7
+        ],
+        "primitive": "cube",
+        "role": "spear_1_insertion_1"
+      }
+    ],
+    "centered_grip_clearance": {
+      "cuts": [
+        {
+          "frame_mm": [
+            [
+              0.12243077510152992,
+              0.992206031,
+              0.023192620750518922,
+              1.2170239275126702
+            ],
+            [
+              -0.9924693369792617,
+              0.122304228,
+              0.006803792493213726,
+              -0.8569511527374927
+            ],
+            [
+              0.003914208868126819,
+              -0.023850959,
+              0.9997078625760932,
+              0.7608013590161596
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "pose": "1",
+          "roles": [
+            "smooth_chest_plate"
+          ]
+        }
+      ],
+      "source": "aurelian.chest-plate@4",
+      "source_sha256": "0b63f168cab5f6c4ebd8920b730c9065282368eb0d236c5415b27f160a129318"
+    },
+    "landmarks": {
+      "central_pleat": [
+        0,
+        -1.21,
+        0.15
+      ],
+      "left_armhole": [
+        -1.24,
+        0,
+        0.8
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "neckline": [
+        0,
+        0,
+        1.37
+      ],
+      "plate_center": [
+        0,
+        -0.2,
+        0.15
+      ],
+      "right_armhole": [
+        1.24,
+        0,
+        0.8
+      ]
+    },
+    "operations": [
+      {
+        "operand": "pleat_contour",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "central_pleat"
+      },
+      {
+        "operand": "central_pleat",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "smooth_chest_plate"
+      },
+      {
+        "operand": "plate_front_extent",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "smooth_chest_plate"
+      },
+      {
+        "operand": "left_armhole",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "smooth_chest_plate"
+      },
+      {
+        "operand": "right_armhole",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "smooth_chest_plate"
+      },
+      {
+        "operand": "neckline",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "smooth_chest_plate"
+      },
+      {
+        "operand": "spear_1_insertion_0",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "smooth_chest_plate"
+      },
+      {
+        "operand": "spear_1_insertion_1",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "smooth_chest_plate"
+      }
+    ],
+    "provenance": "Reviewed neighboring part with local Exact swept-spear clearance; visual-only."
+  }
+}

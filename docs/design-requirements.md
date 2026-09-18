@@ -9,9 +9,13 @@ Use this as the starting point when designing a new piece or army variant.
 
 - Five-tool Prusa XL, tool 2, 0.25 mm nozzle, single-color PLA, 0.05 mm layers.
 - Preserve the nozzle array `0.4,0.25,0.4,0.4,0.4` and installed presets.
-- Python 3.13, Blender 5.1.2 and PrusaSlicer 2.9.5 are the pinned tools.
-- The reference infantry are 8 mm sole-to-eye, five figures on a
-  20 x 5 x 1 mm strip. New army layouts may compose other figures and bases.
+- Python 3.13, Blender 5.1.2 and the installed PrusaSlicer 2.9.6 are the pinned tools.
+- The accepted print target is [130% intact spearmen](../specs/elf-print-target.json):
+  10.4 mm sole-to-eye, 1.56 mm intact shafts, five figures on a 26 x 6.5 x 1.3 mm strip.
+  Source recipes remain 8 mm sole-to-eye on a 20 x 5 x 1 mm strip; apply the
+  target's 1.3 scale exactly once at export or in the slicer. The user physically
+  printed this version and accepted the improvement. Open-grip/separate-spear
+  experiments are retired. New army layouts may compose other figures and bases.
 - Current infantry previews use a 1 mm base with 0.5 mm terrain relief.
   Optional 3 x 1 mm magnet pockets use a 2 mm base to retain roof stock.
 
@@ -20,7 +24,7 @@ Use this as the starting point when designing a new piece or army variant.
 | Feature | Prototype target |
 | --- | --- |
 | Structural stock | At least 0.75 mm |
-| Spear shafts | At least 1.0 mm diameter |
+| Spear shafts | Accepted intact design: 1.2 mm source, 1.56 mm at print scale |
 | Attached raised detail | 0.25 mm relief |
 | Intentional open gaps | At least 0.5 mm |
 | Removable supports | Zero |

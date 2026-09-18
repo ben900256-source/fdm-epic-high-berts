@@ -50,7 +50,7 @@ underside study** in the local viewer's saved reviews.
 
 ## Sliced evidence
 
-The diagnostic uses PrusaSlicer 2.9.5 CLI with the same saved stock
+This historical diagnostic used PrusaSlicer 2.9.5 CLI with the same saved stock
 `0.05mm ULTRADETAIL @XL 0.25` settings as the baseline: tool 2, 0.25 mm
 nozzle, 0.05 mm layers, 0.20 mm first layer, supports off and no brim.
 The nozzle array remains `0.4,0.25,0.4,0.4,0.4`. Installed presets are

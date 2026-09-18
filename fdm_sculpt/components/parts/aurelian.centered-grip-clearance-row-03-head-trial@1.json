@@ -1,0 +1,518 @@
+{
+  "component_id": "aurelian.centered-grip-clearance-row-03-head-trial",
+  "version": 1,
+  "name": "Elven face with inward rotated nose; centered spear insertion clearance",
+  "family": "head",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "cranium"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          1.44,
+          1.92,
+          2.02
+        ],
+        "export": true,
+        "location": [
+          0,
+          -0.08,
+          0.02
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "cranium",
+        "segments": 48
+      },
+      {
+        "dimensions": [
+          1.5,
+          1.76,
+          4.4
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          0.0
+        ],
+        "primitive": "sphere",
+        "ring_count": 30,
+        "role": "head_envelope",
+        "segments": 28
+      },
+      {
+        "dimensions": [
+          0.48,
+          0.62,
+          0.2
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9872272833756269,
+            0,
+            0.15931820661424598,
+            -0.3
+          ],
+          [
+            0,
+            1,
+            0,
+            -0.82
+          ],
+          [
+            -0.15931820661424598,
+            0,
+            0.9872272833756269,
+            0.36
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "left_eye_socket",
+        "segments": 48
+      },
+      {
+        "dimensions": [
+          0.48,
+          0.62,
+          0.2
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9872272833756269,
+            0,
+            -0.15931820661424598,
+            0.3
+          ],
+          [
+            0,
+            1,
+            0,
+            -0.82
+          ],
+          [
+            0.15931820661424598,
+            0,
+            0.9872272833756269,
+            0.36
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "right_eye_socket",
+        "segments": 48
+      },
+      {
+        "dimensions": [
+          0.34,
+          0.4,
+          0.9
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1,
+            0,
+            0,
+            0.0
+          ],
+          [
+            0,
+            0.9950041652780258,
+            0.09983341664682815,
+            -0.7771244084974054
+          ],
+          [
+            0,
+            -0.09983341664682815,
+            0.9950041652780258,
+            0.1613958408755663
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "nose_bridge",
+        "segments": 48
+      },
+      {
+        "dimensions": [
+          0.64,
+          0.34,
+          0.13
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.84,
+          -0.43
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "mouth_line",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          0.78,
+          0.7,
+          0.54
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.4,
+          -0.64
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "chin_contour",
+        "segments": 48
+      },
+      {
+        "dimensions": [
+          1.2,
+          1.45,
+          1.15
+        ],
+        "export": false,
+        "location": [
+          -1.02,
+          -0.44,
+          -0.34
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "left_cheek_hollow",
+        "segments": 48
+      },
+      {
+        "dimensions": [
+          1.2,
+          1.45,
+          1.15
+        ],
+        "export": false,
+        "location": [
+          1.02,
+          -0.44,
+          -0.34
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "right_cheek_hollow",
+        "segments": 48
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16.0,
+          1.2,
+          12.099999999999998
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            -0.10474028865717269,
+            0.9944039672418349,
+            -0.01379212229545989,
+            0.9521122281032522
+          ],
+          [
+            -0.9943752837388103,
+            -0.10449784024565281,
+            0.017262564292235116,
+            -1.1385997274816808
+          ],
+          [
+            0.015724716226272268,
+            0.01552263115658789,
+            0.9997558609677921,
+            -1.1601630273927406
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          7.6,
+          0,
+          1.1
+        ],
+        "primitive": "cube",
+        "role": "spear_3_insertion_0"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16.24,
+          2.04,
+          2.299999999999999
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            -0.10474028865717269,
+            0.9944039672418349,
+            -0.01379212229545989,
+            0.9521122281032522
+          ],
+          [
+            -0.9943752837388103,
+            -0.10449784024565281,
+            0.017262564292235116,
+            -1.1385997274816808
+          ],
+          [
+            0.015724716226272268,
+            0.01552263115658789,
+            0.9997558609677921,
+            -1.1601630273927406
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          7.72,
+          0,
+          7.7
+        ],
+        "primitive": "cube",
+        "role": "spear_3_insertion_1"
+      }
+    ],
+    "centered_grip_clearance": {
+      "cuts": [
+        {
+          "frame_mm": [
+            [
+              -0.10474028865717269,
+              0.9944039672418349,
+              -0.01379212229545989,
+              0.9521122281032522
+            ],
+            [
+              -0.9943752837388103,
+              -0.10449784024565281,
+              0.017262564292235116,
+              -1.1385997274816808
+            ],
+            [
+              0.015724716226272268,
+              0.01552263115658789,
+              0.9997558609677921,
+              -1.1601630273927406
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "pose": "3",
+          "roles": [
+            "cranium"
+          ]
+        }
+      ],
+      "source": "aurelian.head@12",
+      "source_sha256": "539e53b2c3d83535370628a0464ba94cfdf613dbc8abbd580f6b16edc3f17efe"
+    },
+    "face_style": {
+      "brow": "continuous forehead with angled upper eyelids",
+      "cheeks": "raised cheekbones defined by shallow curved hollows beneath",
+      "chin": "broad rounded chin integrated into the jaw",
+      "cranium": "oval",
+      "ears": "omitted",
+      "eyes": "elliptical recesses",
+      "facial_hair": "none",
+      "mouth": "single shallow horizontal groove",
+      "nose": "long rounded nose rotated inward around its upper attachment"
+    },
+    "landmarks": {
+      "chin_contour": [
+        0,
+        -0.4,
+        -0.64
+      ],
+      "cranium": [
+        0,
+        -0.08,
+        0.02
+      ],
+      "head_envelope": [
+        0,
+        0.08,
+        0.0
+      ],
+      "integrated_brow": [
+        0,
+        -0.78,
+        0.49
+      ],
+      "jaw_tip": [
+        0,
+        -0.4,
+        -0.91
+      ],
+      "left_cheek_hollow": [
+        -1.02,
+        -0.44,
+        -0.34
+      ],
+      "left_eye_socket": [
+        -0.3,
+        -0.82,
+        0.36
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "mouth_line": [
+        0,
+        -0.84,
+        -0.43
+      ],
+      "nose_bridge": [
+        0.0,
+        -0.7771244084974054,
+        0.1613958408755663
+      ],
+      "nose_lower_tip": [
+        0.0,
+        -0.8220494459884781,
+        -0.2863560334995453
+      ],
+      "nose_upper_attachment": [
+        0.0,
+        -0.7321993710063327,
+        0.6091477152506779
+      ],
+      "right_cheek_hollow": [
+        1.02,
+        -0.44,
+        -0.34
+      ],
+      "right_eye_socket": [
+        0.3,
+        -0.82,
+        0.36
+      ]
+    },
+    "operations": [
+      {
+        "operand": "head_envelope",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "chin_contour",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "left_cheek_hollow",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "right_cheek_hollow",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "left_eye_socket",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "right_eye_socket",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "nose_bridge",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "mouth_line",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "spear_3_insertion_0",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      },
+      {
+        "operand": "spear_3_insertion_1",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cranium"
+      }
+    ],
+    "provenance": "Reviewed neighboring part with local Exact swept-spear clearance; visual-only."
+  }
+}

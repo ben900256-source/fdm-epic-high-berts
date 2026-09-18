@@ -1,0 +1,148 @@
+{
+  "component_id": "aurelian.full-rounded-grip-spear-trial",
+  "version": 1,
+  "name": "Full rounded spear, flat only underneath",
+  "family": "spear-kit-trial",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shaft",
+    "head_root",
+    "head_tip"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0,
+        "depth": 12.5,
+        "export": true,
+        "location": [
+          0,
+          6.25,
+          0.3
+        ],
+        "primitive": "cone",
+        "radius1": 0.5,
+        "radius2": 0.5,
+        "role": "shaft",
+        "rotation": [
+          -1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 48
+      },
+      {
+        "bevel": 0,
+        "depth": 0.9499999999999993,
+        "export": true,
+        "location": [
+          0,
+          12.575000000000001,
+          0.3
+        ],
+        "primitive": "cone",
+        "radius1": 0.45,
+        "radius2": 0.9,
+        "role": "head_root",
+        "rotation": [
+          -1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          0.8,
+          1
+        ],
+        "vertices": 48
+      },
+      {
+        "bevel": 0,
+        "depth": 1.25,
+        "export": true,
+        "location": [
+          0,
+          13.575,
+          0.3
+        ],
+        "primitive": "cone",
+        "radius1": 0.92,
+        "radius2": 0.4,
+        "role": "head_tip",
+        "rotation": [
+          -1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          0.8,
+          1
+        ],
+        "vertices": 48
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          10,
+          40,
+          10
+        ],
+        "export": false,
+        "location": [
+          0,
+          10,
+          -5
+        ],
+        "primitive": "cube",
+        "role": "bed_cut"
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "bed_cut",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "shaft"
+      },
+      {
+        "operand": "bed_cut",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "head_root"
+      },
+      {
+        "operand": "bed_cut",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "head_tip"
+      }
+    ],
+    "provenance": "Flat sprue and keyed socket experiment. Physical fit and strength untested.",
+    "seed": 1001,
+    "trial": {
+      "attachment": "Open palm channel and glue; no pin or collar",
+      "length_mm": 14.2,
+      "shaft_bed_width_mm": 0.8,
+      "shaft_diameter_mm": 1,
+      "shaft_height_mm": 0.8
+    }
+  }
+}

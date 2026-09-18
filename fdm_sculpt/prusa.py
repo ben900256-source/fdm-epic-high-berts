@@ -1,4 +1,4 @@
-"""PrusaSlicer 2.9.5 proof adapter; installed presets are read-only inputs."""
+"""PrusaSlicer proof adapter; installed presets are read-only inputs."""
 from __future__ import annotations
 
 import configparser
@@ -17,6 +17,7 @@ PRINTER = "Original Prusa XL - 5T 0.25 nozzle - Miniatures"
 PRINT = "0.05mm ULTRADETAIL @XLIS 0.25 - Balanced Miniatures"
 FILAMENT = "Generic PLA @XL"
 EXECUTABLE = Path("C:/Program Files/Prusa3D/PrusaSlicer/prusa-slicer-console.exe")
+VERSION = "2.9.6"
 NOZZLES = [0.4, 0.25, 0.4, 0.4, 0.4]
 TOOL_FIELDS = ("perimeter_extruder", "infill_extruder", "solid_infill_extruder",
                "support_material_extruder", "support_material_interface_extruder")
@@ -156,7 +157,7 @@ def inspect_project(path):
 
 
 def assemble_project(geometry, normalized_ini, destination, thumbnail=None):
-    """CLI 2.9.5 exports geometry without config; add its saved resolved config.
+    """The CLI exports geometry without config; add its saved resolved config.
 
     The second slicer invocation must consume this archive without --load.
     No mesh coordinates or printer macros are changed here.
@@ -193,8 +194,8 @@ def slice_build(output, executable=EXECUTABLE):
     folder = output / "prusa"
     folder.mkdir(exist_ok=True)
     version = subprocess.run([str(executable), "--help"], capture_output=True, text=True, timeout=30)
-    if "PrusaSlicer-2.9.5 " not in version.stdout:
-        raise ValueError("PrusaSlicer 2.9.5 is required")
+    if version.returncode or f"PrusaSlicer-{VERSION} " not in version.stdout:
+        raise ValueError(f"PrusaSlicer {VERSION} is required")
     ini = resolve_profile(folder/"profile")
     project = output/"elf-spearman-proof-prusa.3mf"
     geometry = folder/"assembled.3mf"
@@ -216,7 +217,7 @@ def slice_build(output, executable=EXECUTABLE):
     slice_record = run_slicer(common + ["--export-gcode", "--output", gcode, project],
                              folder/"slice.log", gcode,
                              ["Slicing process finished", "Exporting G-code finished", "Slicing result exported to"])
-    record = dict(version="2.9.5", export=build_record, reopen_slice=slice_record,
+    record = dict(version=VERSION, export=build_record, reopen_slice=slice_record,
                   project={k:v for k,v in project_record.items() if k != "config"})
     profile_record = json.loads((folder/"profile/profile-manifest.json").read_text())
     record["installed_inputs_unchanged"] = all(sha256(p["source"])==p["sha256"] for p in profile_record["inputs"])
@@ -250,7 +251,7 @@ def support_audit(output, executable=EXECUTABLE):
                        ['Slicing process finished','Exporting G-code finished','Slicing result exported to'])
     lengths=filament_by_role(gcode.read_text(encoding='utf-8'))
     result=dict(label='diagnostic automatic-support estimate; not approved print G-code',
-                method='PrusaSlicer 2.9.5 organic supports, 45-degree threshold, same machine/nozzle/layers/material',
+                method=f'PrusaSlicer {VERSION} organic supports, 45-degree threshold, same machine/nozzle/layers/material',
                 support_threshold_degrees_from_bed=45,
                 filament_length_mm={k:round(v,4) for k,v in lengths.items()},
                 support_to_model_filament_ratio=lengths['support']/lengths['model'] if lengths['model'] else None,

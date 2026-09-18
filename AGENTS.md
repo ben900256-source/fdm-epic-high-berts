@@ -28,11 +28,17 @@
   without geometry validation, independent repeat builds or slicing. Label these
   downloads unchecked Blender output. Keep the existing model recipes unchanged;
   the historical manufacturing gates below still apply to validated proof builds.
-- Current reference model: five original 8 mm sole-to-eye high-elf spearmen on a
-  20 × 5 × 1 mm strip. The visual parts/assembly workflow also supports isolated
+- Current accepted print target: [130% intact spearmen](specs/elf-print-target.json),
+  five 10.4 mm sole-to-eye figures with 1.56 mm intact spear shafts on a
+  26 × 6.5 × 1.3 mm strip. The user physically printed and accepted this target.
+  Keep source recipes at 8 mm sole-to-eye and apply the pinned 1.3 export scale
+  exactly once, including terrain and base. The separate-spear/open-grip experiment
+  is retired; preserve its historical definitions but do not resume it by default.
+  See [the accepted trial](docs/intact-spears-130-trial.md) for source and evidence.
+  The visual parts/assembly workflow also supports isolated
   pieces, alternative models and other army units; the five-figure restrictions
   apply to the historical spearman print-proof specification only.
-- Use Python 3.13, Blender 5.1.2 and PrusaSlicer 2.9.5. The target is a five-tool
+- Use Python 3.13, Blender 5.1.2 and the installed PrusaSlicer 2.9.6. The target is a five-tool
   Prusa XL, tool 2 with a 0.25 mm nozzle, single-color PLA and 0.05 mm layers.
 - Generate only parameterized primitives, transforms, bevels and ordered Exact
   CSG. Never sculpt, hand-edit mesh elements or import third-party meshes.

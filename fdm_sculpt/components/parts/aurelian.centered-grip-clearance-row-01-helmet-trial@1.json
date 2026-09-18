@@ -1,0 +1,471 @@
+{
+  "component_id": "aurelian.centered-grip-clearance-row-01-helmet-trial",
+  "version": 1,
+  "name": "Helmet with flush elliptical nape; centered spear insertion clearance",
+  "family": "helmet",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "helmet_crown"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          1.64,
+          2.0,
+          4.4
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0.08,
+          7.2
+        ],
+        "primitive": "sphere",
+        "ring_count": 64,
+        "role": "helmet_crown",
+        "segments": 64
+      },
+      {
+        "bevel": 0.12,
+        "dimensions": [
+          1.08,
+          2.3,
+          1.74
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          -0.95,
+          7.01
+        ],
+        "primitive": "cube",
+        "role": "helmet_face_opening"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          3.5,
+          3.5,
+          4.0
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0.08,
+          8.65
+        ],
+        "primitive": "cube",
+        "role": "helmet_nape_clip"
+      },
+      {
+        "bevel": 0.06,
+        "bevel_segments": 4,
+        "depth": 0.9,
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0.08,
+          9.15
+        ],
+        "primitive": "cone",
+        "radius1": 0.55,
+        "radius2": 0.14,
+        "role": "helmet_tapered_tip",
+        "rotation": [
+          0,
+          0,
+          0.1308996938995747
+        ],
+        "scale": [
+          1,
+          1.2195121951219512,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "dimensions": [
+          1.602774157384416,
+          1.954602630956605,
+          2.283062200238199
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -0.3949628211265359
+        ],
+        "primitive": "sphere",
+        "ring_count": 96,
+        "role": "nape_ellipsoid",
+        "segments": 64
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          4,
+          4,
+          0.9499999999999998
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          -0.9249999999999999
+        ],
+        "primitive": "cube",
+        "role": "nape_limits"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.08,
+          2.3,
+          1.2
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.95,
+          -1.5
+        ],
+        "primitive": "cube",
+        "role": "nape_front_clearance"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16.0,
+          1.2,
+          12.099999999999998
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.0008212177759264586,
+            0.9979434175878297,
+            0.06409572110239244,
+            1.0676539621637329
+          ],
+          [
+            -0.9999179321891051,
+            -1.1102230246251565e-16,
+            0.012811311204145429,
+            -1.0152652303451433
+          ],
+          [
+            0.012784964022612961,
+            -0.06410098148703938,
+            0.9978615185543099,
+            -1.2739826214269825
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          7.6,
+          0,
+          1.1
+        ],
+        "primitive": "cube",
+        "role": "spear_1_insertion_0"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16.24,
+          2.04,
+          2.299999999999999
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.0008212177759264586,
+            0.9979434175878297,
+            0.06409572110239244,
+            1.0676539621637329
+          ],
+          [
+            -0.9999179321891051,
+            -1.1102230246251565e-16,
+            0.012811311204145429,
+            -1.0152652303451433
+          ],
+          [
+            0.012784964022612961,
+            -0.06410098148703938,
+            0.9978615185543099,
+            -1.2739826214269825
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          7.72,
+          0,
+          7.7
+        ],
+        "primitive": "cube",
+        "role": "spear_1_insertion_1"
+      }
+    ],
+    "centered_grip_clearance": {
+      "cuts": [
+        {
+          "frame_mm": [
+            [
+              0.0008212177759264586,
+              0.9979434175878297,
+              0.06409572110239244,
+              1.0676539621637329
+            ],
+            [
+              -0.9999179321891051,
+              -1.1102230246251565e-16,
+              0.012811311204145429,
+              -1.0152652303451433
+            ],
+            [
+              0.012784964022612961,
+              -0.06410098148703938,
+              0.9978615185543099,
+              -1.2739826214269825
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "pose": "1",
+          "roles": [
+            "helmet_crown"
+          ]
+        }
+      ],
+      "source": "aurelian.helmet@7",
+      "source_sha256": "dfe68cc0dc09d3266256cdd940a5d949991086da043c3a61b828228108688317"
+    },
+    "landmarks": {
+      "front_brim": [
+        0,
+        -0.85,
+        0.68
+      ],
+      "helmet_crown": [
+        0.0,
+        0.08,
+        0.0
+      ],
+      "helmet_face_opening": [
+        0.0,
+        -0.95,
+        -0.19
+      ],
+      "helmet_nape_clip": [
+        0.0,
+        0.08,
+        1.45
+      ],
+      "helmet_tapered_tip": [
+        0.0,
+        0.08,
+        1.9500000000000002
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "nape_join": [
+        0,
+        0.08,
+        -0.55
+      ],
+      "nape_root": [
+        0,
+        0.08,
+        -1.4
+      ]
+    },
+    "nape_profile": {
+      "center_z": -0.3949628211265359,
+      "join_z": -0.55,
+      "radius_x": 0.801387078692208,
+      "radius_z": 1.1415311001190995,
+      "root_radius": 0.38,
+      "root_z": -1.4,
+      "seed": 1001
+    },
+    "operations": [
+      {
+        "operand": "helmet_nape_clip",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "nape_limits",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "nape_ellipsoid"
+      },
+      {
+        "operand": "nape_ellipsoid",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "helmet_tapered_tip",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "helmet_face_opening",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "nape_front_clearance",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "spear_1_insertion_0",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "spear_1_insertion_1",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      }
+    ],
+    "provenance": "Reviewed neighboring part with local Exact swept-spear clearance; visual-only."
+  }
+}

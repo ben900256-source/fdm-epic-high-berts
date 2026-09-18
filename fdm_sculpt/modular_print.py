@@ -248,7 +248,7 @@ def assess(output, automatic_supports=False):
     (output/'PRINT-TRIAL.md').write_text(
         '# Current spearman stand — physical trial\n\n'
         '**Not digitally validated.** Inspect the failed checks below before attempting a print.\n\n'
-        'Open `elf-spearman-proof-prusa.3mf` as a project in PrusaSlicer 2.9.5. '
+        'Open `elf-spearman-proof-prusa.3mf` as a project in PrusaSlicer 2.9.6. '
         'It contains the exported stand and the saved five-tool Prusa XL profile: '
         'tool 2, 0.25 mm nozzle, PLA, 0.05 mm layers, 0.14 mm first layer and 6 mm brim. '
         'The nozzle array is `0.4,0.25,0.4,0.4,0.4`. The project was reopened and sliced without an external configuration.\n\n'

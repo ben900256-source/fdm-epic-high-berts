@@ -177,7 +177,7 @@ function visibility() {
     const selected=$('figure').value;
     const forwardBase=selected.startsWith('forward-')?'base-'+selected.slice('forward-'.length):null;
     mesh.visible=(selected==='all'||p.instance_id.split('/')[0]===selected
-      ||(forwardBase&&(p.instance_id===forwardBase||p.instance_id===forwardBase+'-terrain')))
+      ||(forwardBase!==null&&(p.instance_id===forwardBase||p.instance_id===forwardBase+'-terrain')))
       && ($('part').value==='all'||p.part===$('part').value)
       && ($('shields').checked||!shieldPiece);
   }
@@ -255,7 +255,7 @@ async function refresh() {
       options($('figure'),[...new Set(next.assembly.placements.filter(p=>p.instance_id.includes('/')).map(p=>p.instance_id.split('/')[0]))],'All figures');
       options($('part'),Object.keys(next.assets).sort(),'All components');
       visibility();
-      if(first||changedAssembly) fit(next.assembly.assembly_id.startsWith('flat-spear-kit')
+      if(first||changedAssembly) fit(/^(flat-spear-kit|full-rounded-spear-kit)/.test(next.assembly.assembly_id)
         ?new THREE.Vector3(.1,-.35,1).normalize():new THREE.Vector3(.45,-1,.35).normalize());
       // Keep recently viewed pieces warm when switching between unit variants.
       const active=new Set(Object.values(next.assets).map(a=>a.url));

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "target_id": "intact-spearmen-130",
+  "status": "user-accepted-physical-print",
+  "source_assembly": "specs/experiments/intact-spears-130-print-trial-source.json",
+  "source_sha256": "6071eb19b30cfa64e0657a3c246460509ac901cc26f50ba5bd154ef1f8268bc7",
+  "source_hash_format": "Canonical JSON: sorted keys, compact separators, UTF-8",
+  "seed": 1001,
+  "export_scale": 1.3,
+  "scale_scope": "Complete row, terrain and base; apply exactly once",
+  "source_spear": "aurelian.spear-shaft-trial-120@1",
+  "source_shaft_diameter_mm": 1.2,
+  "nominal_sole_to_eye_mm": 10.4,
+  "shaft_diameter_mm": 1.56,
+  "base_mm": [
+    26,
+    6.5,
+    1.3
+  ],
+  "printer": "Prusa XL five-tool",
+  "slicer_version": "2.9.6",
+  "tool": 2,
+  "nozzle_mm": 0.25,
+  "nozzle_configuration_mm": [
+    0.4,
+    0.25,
+    0.4,
+    0.4,
+    0.4
+  ],
+  "material": "PLA",
+  "layer_mm": 0.05,
+  "supports": false,
+  "evidence": "docs/evidence/intact-spears-130-accepted.json",
+  "retired_reviews": [
+    "open-grip-spear-row-trial",
+    "open-grip-spear-assembled-trial",
+    "full-rounded-spear-kit-trial"
+  ]
+}

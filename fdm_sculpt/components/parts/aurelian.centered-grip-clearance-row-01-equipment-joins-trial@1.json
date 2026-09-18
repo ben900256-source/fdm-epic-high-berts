@@ -1,0 +1,211 @@
+{
+  "component_id": "aurelian.centered-grip-clearance-row-01-equipment-joins-trial",
+  "version": 1,
+  "name": "Equipment joins without shield ground cone; centered spear insertion clearance",
+  "family": "equipment-joins",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shield_spear_brace"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.03,
+        "end": [
+          1.05,
+          -0.650055198,
+          4.498656704
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.992206031,
+            -0.121827582,
+            0.026176948,
+            -0.098163556
+          ],
+          [
+            0.122304228,
+            0.992339306,
+            -0.017446426,
+            0.065424097
+          ],
+          [
+            -0.023850959,
+            0.020512,
+            0.999505072,
+            -5.198144021
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "primitive": "between",
+        "radius": 0.4,
+        "role": "shield_spear_brace",
+        "start": [
+          -0.1221886,
+          -0.928018759,
+          2.947932795
+        ]
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16.0,
+          1.2,
+          12.099999999999998
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.12243077510152992,
+            0.992206031,
+            0.023192620750518922,
+            1.2170239275126702
+          ],
+          [
+            -0.9924693369792617,
+            0.122304228,
+            0.006803792493213726,
+            -0.8569511527374927
+          ],
+          [
+            0.003914208868126819,
+            -0.023850959,
+            0.9997078625760932,
+            0.7608013590161596
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          7.6,
+          0,
+          1.1
+        ],
+        "primitive": "cube",
+        "role": "spear_1_insertion_0"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16.24,
+          2.04,
+          2.299999999999999
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.12243077510152992,
+            0.992206031,
+            0.023192620750518922,
+            1.2170239275126702
+          ],
+          [
+            -0.9924693369792617,
+            0.122304228,
+            0.006803792493213726,
+            -0.8569511527374927
+          ],
+          [
+            0.003914208868126819,
+            -0.023850959,
+            0.9997078625760932,
+            0.7608013590161596
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          7.72,
+          0,
+          7.7
+        ],
+        "primitive": "cube",
+        "role": "spear_1_insertion_1"
+      }
+    ],
+    "centered_grip_clearance": {
+      "cuts": [
+        {
+          "frame_mm": [
+            [
+              0.12243077510152992,
+              0.992206031,
+              0.023192620750518922,
+              1.2170239275126702
+            ],
+            [
+              -0.9924693369792617,
+              0.122304228,
+              0.006803792493213726,
+              -0.8569511527374927
+            ],
+            [
+              0.003914208868126819,
+              -0.023850959,
+              0.9997078625760932,
+              0.7608013590161596
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "pose": "1",
+          "roles": [
+            "shield_spear_brace"
+          ]
+        }
+      ],
+      "source": "aurelian.equipment-joins@2",
+      "source_sha256": "a044fc6f7f721d5441fbaa205ab812762b701ae8564e87e3a474f58734c8bc91"
+    },
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "shield_spear_brace": [
+        0.555717438,
+        -0.725788868,
+        -1.503941357
+      ]
+    },
+    "operations": [
+      {
+        "operand": "spear_1_insertion_0",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "shield_spear_brace"
+      },
+      {
+        "operand": "spear_1_insertion_1",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "shield_spear_brace"
+      }
+    ],
+    "provenance": "Reviewed neighboring part with local Exact swept-spear clearance; visual-only."
+  }
+}

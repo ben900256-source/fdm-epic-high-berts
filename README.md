@@ -1,7 +1,14 @@
 # Epic High Berts
 
-Five original high-elf spearmen, approximately 8 mm sole-to-eye, fused to a
-20 × 5 × 1 mm strip. Python recipes generate an orbitable Blender scene and
+The accepted target is five high-elf spearmen, **10.4 mm sole-to-eye**, with
+**1.56 mm intact spear shafts** on a **26 × 6.5 × 1.3 mm strip**. The user printed
+the 130% enlargement and accepted the improved result. The
+[pinned print target](specs/elf-print-target.json) and
+[trial record](docs/intact-spears-130-trial.md) identify the exact source and scale.
+The separate-spear/open-grip experiment is retired.
+
+Reusable source recipes remain at 8 mm sole-to-eye; the accepted print applies
+1.3 scale once to the complete intact row. Python recipes generate an orbitable Blender scene and
 trial-print files for a five-tool Prusa XL using tool 2's 0.25 mm nozzle.
 
 ![Five spearmen with seahorse shields](docs/images/three-quarter.png)
@@ -18,11 +25,12 @@ cheek guards. Fuller heads fill the space beneath the approved helmet brow,
 with carved eyes and mouth lines and the shared long planar nose.
 Earlier recipes remain pinned for reproducibility.
 
-Current status: **visual proof; printability screen failed**. Geometry and
+Historical revision 10 status: **visual proof; printability screen failed**. Geometry and
 head-fill checks pass, but sliced nose detail and unsupported paths require
 refinement. The conservative automatic-support estimate fell from 36.2% to
-31.3% of model filament, excluding the brim. No physical trial has been run;
-this build is not labeled **digitally validated**.
+31.3% of model filament, excluding the brim. That historical build had no physical
+trial. The current 130% target has user-reported physical acceptance, but has not
+passed the complete formal gates and is not labeled **digitally validated**.
 
 ## Run a visual review
 
@@ -54,10 +62,12 @@ remain available in **Saved unit / part reviews**.
 Short-sword infantry have their own Swordsmen unit type. Spearmen retain a
 sword-armed sergeant, which counts toward the row's command-model limit.
 
-**Build a row** places five chosen infantry on a 20 × 5 × 1 mm
+**Build a row** still works in source dimensions: it places five chosen infantry on a 20 × 5 × 1 mm
 base with 0.5 mm terrain relief and 4 mm spacing. **Magnet holes** is off by
 default. Enabling it uses a 2 mm base with two underside pockets for 3 × 1 mm
 magnets (3.2 mm diameter, 1.1 mm deep), raising the terrain and figures together.
+Use the pinned print target for the accepted intact-spear row; an arbitrary row
+builder export is not that tested target. Do not enlarge an already scaled STL again.
 Choose each slot or use **Randomize row** with a seed
 and a selectable variant pool. Defaults allow duplicates and at most one command
 model. Uniqueness and command limits apply to randomization; manual slot choices
@@ -149,7 +159,7 @@ mesh vertices.
 
 ## Prepare a trial print
 
-The print adapter currently targets Windows and PrusaSlicer **2.9.5**, with
+The print adapter currently targets Windows and the installed PrusaSlicer **2.9.6**, with
 these existing installed presets:
 
 - Printer: `Original Prusa XL - 5T 0.25 nozzle - Miniatures`

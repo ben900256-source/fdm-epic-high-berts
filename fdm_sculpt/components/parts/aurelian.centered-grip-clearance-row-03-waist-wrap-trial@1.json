@@ -1,0 +1,284 @@
+{
+  "component_id": "aurelian.centered-grip-clearance-row-03-waist-wrap-trial",
+  "version": 1,
+  "name": "Pleated cloth waist wrap; centered spear insertion clearance",
+  "family": "cloth-waist-wrap",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "cloth_waist_wrap"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.1,
+        "bevel_segments": 3,
+        "depth": 0.9,
+        "export": true,
+        "location": [
+          0,
+          -0.05,
+          -0.8
+        ],
+        "primitive": "cone",
+        "radius1": 1.24,
+        "radius2": 1.15,
+        "role": "cloth_waist_wrap",
+        "scale": [
+          1,
+          0.84,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.08,
+        "bevel_segments": 3,
+        "depth": 0.19,
+        "export": false,
+        "location": [
+          0,
+          -0.05,
+          -0.49
+        ],
+        "primitive": "cone",
+        "radius1": 1.1989999999999998,
+        "radius2": 1.1989999999999998,
+        "role": "cloth_fold_1",
+        "scale": [
+          1,
+          0.84,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.08,
+        "bevel_segments": 3,
+        "depth": 0.19,
+        "export": false,
+        "location": [
+          0,
+          -0.05,
+          -0.79
+        ],
+        "primitive": "cone",
+        "radius1": 1.2289999999999999,
+        "radius2": 1.2289999999999999,
+        "role": "cloth_fold_2",
+        "scale": [
+          1,
+          0.84,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.08,
+        "bevel_segments": 3,
+        "depth": 0.19,
+        "export": false,
+        "location": [
+          0,
+          -0.05,
+          -1.09
+        ],
+        "primitive": "cone",
+        "radius1": 1.259,
+        "radius2": 1.259,
+        "role": "cloth_fold_3",
+        "scale": [
+          1,
+          0.84,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16.0,
+          1.2,
+          12.099999999999998
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.0348986465341576,
+            0.9993908269999999,
+            0.00024364246242622,
+            1.089211377160291
+          ],
+          [
+            -0.9987822030359235,
+            0.03486888400000001,
+            0.03490374635112701,
+            -1.0094556308146876
+          ],
+          [
+            0.03487398790567505,
+            -0.0014614389999999995,
+            0.9993906491120571,
+            0.8417620339626847
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          7.6,
+          0,
+          1.1
+        ],
+        "primitive": "cube",
+        "role": "spear_3_insertion_0"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16.24,
+          2.04,
+          2.299999999999999
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.0348986465341576,
+            0.9993908269999999,
+            0.00024364246242622,
+            1.089211377160291
+          ],
+          [
+            -0.9987822030359235,
+            0.03486888400000001,
+            0.03490374635112701,
+            -1.0094556308146876
+          ],
+          [
+            0.03487398790567505,
+            -0.0014614389999999995,
+            0.9993906491120571,
+            0.8417620339626847
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          7.72,
+          0,
+          7.7
+        ],
+        "primitive": "cube",
+        "role": "spear_3_insertion_1"
+      }
+    ],
+    "centered_grip_clearance": {
+      "cuts": [
+        {
+          "frame_mm": [
+            [
+              0.0348986465341576,
+              0.9993908269999999,
+              0.00024364246242622,
+              1.089211377160291
+            ],
+            [
+              -0.9987822030359235,
+              0.03486888400000001,
+              0.03490374635112701,
+              -1.0094556308146876
+            ],
+            [
+              0.03487398790567505,
+              -0.0014614389999999995,
+              0.9993906491120571,
+              0.8417620339626847
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "pose": "3",
+          "roles": [
+            "cloth_waist_wrap"
+          ]
+        }
+      ],
+      "source": "aurelian.cloth-waist-wrap@1",
+      "source_sha256": "141e6370b138414cba1e45d3c016e0ca559260653105754881419e76bab0da6b"
+    },
+    "design": {
+      "coverage": "Overlaps the plate lower edge and the top of the chainmail skirt; visual review only.",
+      "style": "Soft beveled oval wrap with three shallow horizontal folds"
+    },
+    "landmarks": {
+      "lower_edge": [
+        0,
+        -0.05,
+        -1.25
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "upper_edge": [
+        0,
+        -0.05,
+        -0.35
+      ],
+      "waist": [
+        0,
+        -0.05,
+        -0.8
+      ]
+    },
+    "operations": [
+      {
+        "operand": "cloth_fold_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "cloth_waist_wrap"
+      },
+      {
+        "operand": "cloth_fold_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "cloth_waist_wrap"
+      },
+      {
+        "operand": "cloth_fold_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "cloth_waist_wrap"
+      },
+      {
+        "operand": "spear_3_insertion_0",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cloth_waist_wrap"
+      },
+      {
+        "operand": "spear_3_insertion_1",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "cloth_waist_wrap"
+      }
+    ],
+    "provenance": "Reviewed neighboring part with local Exact swept-spear clearance; visual-only."
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "component_id": "aurelian.centered-grip-clearance-row-05-shield-trial",
+  "version": 1,
+  "name": "Slightly broader and taller pointed shield; centered spear insertion clearance",
+  "family": "shield",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shield"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          2.6784000000000003,
+          1.04,
+          4.823
+        ],
+        "export": true,
+        "location": [
+          0,
+          0,
+          0.1365000000000003
+        ],
+        "primitive": "cube",
+        "role": "shield"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          14,
+          4,
+          14
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.4983056209018035,
+            0,
+            0.8670014464680368,
+            -0.14
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            -0.8670014464680368,
+            0,
+            0.4983056209018035,
+            -2.275
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          7
+        ],
+        "primitive": "cube",
+        "role": "shield_left_point_halfspace"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          14,
+          4,
+          14
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.4983056209018035,
+            0,
+            -0.8670014464680368,
+            0.14
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0.8670014464680368,
+            0,
+            0.4983056209018035,
+            -2.275
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          7
+        ],
+        "primitive": "cube",
+        "role": "shield_right_point_halfspace"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16.0,
+          1.2,
+          12.099999999999998
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.20792705671057607,
+            0.9779516508000905,
+            0.019414117180753695,
+            1.5019828455005158
+          ],
+          [
+            -0.9766161258083317,
+            0.20645225806075646,
+            0.059986724659317564,
+            0.617123736306637
+          ],
+          [
+            0.0546560285979586,
+            -0.03143300339662636,
+            0.9980103634188535,
+            2.9519206376526546
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          7.6,
+          0,
+          1.1
+        ],
+        "primitive": "cube",
+        "role": "spear_5_insertion_0"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          16.24,
+          2.04,
+          2.299999999999999
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.20792705671057607,
+            0.9779516508000905,
+            0.019414117180753695,
+            1.5019828455005158
+          ],
+          [
+            -0.9766161258083317,
+            0.20645225806075646,
+            0.059986724659317564,
+            0.617123736306637
+          ],
+          [
+            0.0546560285979586,
+            -0.03143300339662636,
+            0.9980103634188535,
+            2.9519206376526546
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          7.72,
+          0,
+          7.7
+        ],
+        "primitive": "cube",
+        "role": "spear_5_insertion_1"
+      }
+    ],
+    "centered_grip_clearance": {
+      "cuts": [
+        {
+          "frame_mm": [
+            [
+              0.20792705671057607,
+              0.9779516508000905,
+              0.019414117180753695,
+              1.5019828455005158
+            ],
+            [
+              -0.9766161258083317,
+              0.20645225806075646,
+              0.059986724659317564,
+              0.617123736306637
+            ],
+            [
+              0.0546560285979586,
+              -0.03143300339662636,
+              0.9980103634188535,
+              2.9519206376526546
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "pose": "5",
+          "roles": [
+            "shield"
+          ]
+        }
+      ],
+      "source": "aurelian.shield@2",
+      "source_sha256": "e6980ec88fb0d4e35ed0d5fe3668c871eff7d091bb6fb9f264923318badebf7d"
+    },
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "point": [
+        0,
+        0,
+        -2.275
+      ],
+      "shield": [
+        0,
+        0,
+        0.1365000000000003
+      ],
+      "top": [
+        0,
+        0,
+        2.5480000000000005
+      ]
+    },
+    "operations": [
+      {
+        "operand": "shield_left_point_halfspace",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "shield_right_point_halfspace",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "spear_5_insertion_0",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "spear_5_insertion_1",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "shield"
+      }
+    ],
+    "provenance": "Reviewed neighboring part with local Exact swept-spear clearance; visual-only.",
+    "resize": {
+      "height_factor": 1.06,
+      "lower_tip_preserved": true,
+      "width_factor": 1.08
+    }
+  }
+}
