@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "kit_id": "glue-in-spearmen",
+  "seed": 1001,
+  "export_scale": 1.3,
+  "source_target": "specs/elf-print-target.json",
+  "figure_assemblies": [
+    "specs/experiments/glue-figure-1-trial.json",
+    "specs/experiments/glue-figure-2-trial.json",
+    "specs/experiments/glue-figure-3-trial.json",
+    "specs/experiments/glue-figure-4-trial.json",
+    "specs/experiments/glue-figure-5-trial.json"
+  ],
+  "base_assemblies": [
+    "specs/experiments/glue-base-empty-trial.json",
+    "specs/experiments/glue-base-walled-empty-trial.json"
+  ],
+  "print_center_spacing_mm": 115,
+  "physical_fit_tested": false,
+  "digitally_validated": false
+}

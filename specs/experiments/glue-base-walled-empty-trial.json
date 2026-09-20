@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "assembly_id": "glue-base-walled-empty-trial",
+  "label": "Empty tray with five recesses (source scale)",
+  "placements": [
+    {
+      "instance_id": "tray",
+      "part": "aurelian.glue-tray-five-walled@1",
+      "definition_sha256": "2b410f4b066607623bc5ed0ae72431f8da4105767fdef83597ad6efd197397e6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

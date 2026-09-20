@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "purpose": "User-selected presets for future PrusaSlicer physical print tests",
+  "selected_date": "2026-09-19",
+  "slicer_version": "2.9.6",
+  "print_preset": "0.05mm ULTRADETAIL @XLIS 0.25 - Balanced Miniatures",
+  "printer_preset": "Original Prusa XL - 5T Input Shaper 0.25 nozzle",
+  "filament_presets_by_tool": [
+    "Generic PLA @XLIS",
+    "Epic FDM PLA",
+    "Generic PLA @XLIS",
+    "Generic PLA @XLIS",
+    "Generic PLA @XLIS"
+  ],
+  "selected_tool": 2,
+  "nozzle_configuration_mm": [0.4, 0.25, 0.4, 0.4, 0.4],
+  "project_overrides": {
+    "support_material": "0",
+    "support_material_auto": "0"
+  },
+  "retain_prior_test_preferences": {
+    "spaced_individual_figures": true,
+    "figure_center_spacing_mm": 115,
+    "sequential_printing_when_clearances_allow": true
+  },
+  "observed_saved_tool_2_filament_values": {
+    "temperature_c": 205,
+    "first_layer_temperature_c": 230,
+    "bed_temperature_c": 60,
+    "first_layer_bed_temperature_c": 60
+  },
+  "profile_policy": "Resolve the named installed presets and their inheritance read-only for each new test. Hash the resolved inputs into its output directory. Use Epic FDM PLA on tool 2; do not substitute Generic PLA or an older project snapshot. Saved preset temperatures take precedence over the older experimental 205 C first-layer override.",
+  "screenshot_scope": "Preset selections and Supports: None are visible. The print preset label is truncated and appears modified; the full name was confirmed in PrusaSlicer.ini. Other unsaved per-setting edits are not captured by this screenshot."
+}

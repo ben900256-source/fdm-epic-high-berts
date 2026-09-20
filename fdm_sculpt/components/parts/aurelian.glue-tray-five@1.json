@@ -1,0 +1,85 @@
+{
+  "component_id": "aurelian.glue-tray-five",
+  "version": 1,
+  "name": "glue tray five",
+  "family": "glue-base-trial",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "tray"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0,
+        "dimensions": [
+          21.46153846153846,
+          6.461538461538462,
+          1.6923076923076923
+        ],
+        "export": true,
+        "location": [
+          0,
+          0,
+          0.8461538461538461
+        ],
+        "primitive": "cube",
+        "role": "tray"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          20.23076923076923,
+          5.230769230769231,
+          1.2769230769230768
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          1.2538461538461538
+        ],
+        "primitive": "cube",
+        "role": "recess"
+      }
+    ],
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "recess",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "tray"
+      }
+    ],
+    "recipe": {
+      "floor_mm": 0.8,
+      "outside_mm": [
+        27.9,
+        8.4,
+        2.2
+      ],
+      "physical_fit_tested": false,
+      "print_scale": 1.3,
+      "recess_mm": [
+        26.3,
+        6.8,
+        1.4
+      ],
+      "seating": "Five flat footings side by side in one shared recess",
+      "side_clearance_mm": 0.15,
+      "wall_mm": 0.8
+    },
+    "seed": 1001
+  }
+}

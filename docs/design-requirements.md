@@ -10,6 +10,11 @@ Use this as the starting point when designing a new piece or army variant.
 - Five-tool Prusa XL, tool 2, 0.25 mm nozzle, single-color PLA, 0.05 mm layers.
 - Preserve the nozzle array `0.4,0.25,0.4,0.4,0.4` and installed presets.
 - Python 3.13, Blender 5.1.2 and the installed PrusaSlicer 2.9.6 are the pinned tools.
+- Future physical trials use [the user's selected presets](prusa-print-test-settings.md):
+  Balanced Miniatures 0.05 mm, the XL 5T Input Shaper 0.25 nozzle preset, Epic FDM
+  PLA on tool 2 and Generic PLA on the other tools, with supports off. Read the
+  saved presets for each trial; Epic FDM PLA currently specifies 205°C normal
+  layers and 230°C first layer. Earlier trial snapshots are historical evidence.
 - The accepted print target is [130% intact spearmen](../specs/elf-print-target.json):
   10.4 mm sole-to-eye, 1.56 mm intact shafts, five figures on a 26 x 6.5 x 1.3 mm strip.
   Source recipes remain 8 mm sole-to-eye on a 20 x 5 x 1 mm strip; apply the
