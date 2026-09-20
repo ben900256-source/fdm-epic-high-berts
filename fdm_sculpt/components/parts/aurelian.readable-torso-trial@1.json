@@ -1,0 +1,81 @@
+{
+  "component_id": "aurelian.readable-torso-trial",
+  "version": 1,
+  "name": "Broader infantry torso",
+  "family": "torso",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "torso",
+    "collar"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          2.116,
+          1.3,
+          2.18
+        ],
+        "export": true,
+        "location": [
+          0.0,
+          0.06,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "torso",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.541,
+          0.98,
+          0.78
+        ],
+        "export": true,
+        "location": [
+          0.0,
+          0,
+          1.15
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "collar",
+        "segments": 32
+      }
+    ],
+    "detail_trial": {
+      "print_scale": 1.3,
+      "seed": 1001,
+      "source": "aurelian.torso@4",
+      "source_sha256": "4dbcf07cfbbddf71ff0b80899b4d33f5493b1a826d2b1ad15eabae993459d631",
+      "status": "visual-only"
+    },
+    "landmarks": {
+      "collar": [
+        0.0,
+        0,
+        1.15
+      ],
+      "mount": [
+        0.0,
+        0,
+        0
+      ],
+      "torso": [
+        0.0,
+        0.06,
+        0
+      ]
+    },
+    "operations": [],
+    "provenance": "Revision 2 torso restored: the separate revision 3 nape transition now belongs to helmet revision 6.",
+    "width_factor": 1.15
+  }
+}
