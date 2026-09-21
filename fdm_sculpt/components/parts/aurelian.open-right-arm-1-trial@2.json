@@ -1,0 +1,806 @@
+{
+  "component_id": "aurelian.open-right-arm-1-trial",
+  "version": 2,
+  "name": "Fuller right sleeve with outward elbow and hand, pose 1 with larger gripping hand",
+  "family": "right-arm",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "robe_sleeve",
+    "right_palm",
+    "right_grouped_fingers",
+    "right_thumb",
+    "right_knuckle_plate",
+    "fingers_lower_transition"
+  ],
+  "parameters": {
+    "arm_trial": {
+      "elbow_world_shift_mm": 0.7,
+      "hand_world_shift_mm": 0.5,
+      "print_scale": 1.3,
+      "sleeve_diameter_factor": 1.25,
+      "status": "visual-only"
+    },
+    "atoms": [
+      {
+        "bevel": 0.06,
+        "bevel_segments": 3,
+        "depth": 1.8566319492241565,
+        "export": true,
+        "frame_mm": [
+          [
+            -0.8959877277613894,
+            -0.1372359560862984,
+            0.4223414306672528,
+            1.3920662958289303
+          ],
+          [
+            0.0,
+            0.9510506216245546,
+            0.30903513571687635,
+            0.28688225320238797
+          ],
+          [
+            -0.44407881248825903,
+            0.2768916890493966,
+            -0.8521296854554417,
+            -0.011045600449451909
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.48750000000000004,
+        "radius2": 0.6625000000000001,
+        "role": "robe_sleeve",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 48
+      },
+      {
+        "dimensions": [
+          0.98,
+          0.98,
+          0.85
+        ],
+        "export": false,
+        "location": [
+          0.999999999,
+          -0.0,
+          0.779999999
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "cloth_shoulder",
+        "segments": 32
+      },
+      {
+        "bevel": 0.06,
+        "bevel_segments": 3,
+        "depth": 0.770040567045787,
+        "export": false,
+        "frame_mm": [
+          [
+            0.9373425908886818,
+            -0.19820205298894858,
+            -0.28653937512505906,
+            1.6738091212067376
+          ],
+          [
+            -0.0,
+            0.8224223042639484,
+            -0.5688774502906381,
+            0.35473514920409366
+          ],
+          [
+            0.34840905169942604,
+            0.533233063153574,
+            0.7708914534834092,
+            -0.5052823539133462
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.6625000000000001,
+        "radius2": 0.41250000000000003,
+        "role": "cloth_forearm",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 48
+      },
+      {
+        "dimensions": [
+          1.3,
+          1.3,
+          1.4
+        ],
+        "export": false,
+        "location": [
+          1.7841325926578606,
+          0.5737645064047759,
+          -0.8020911998989039
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "cloth_elbow",
+        "segments": 32
+      },
+      {
+        "bevel": 0,
+        "depth": 1.7670890471806158,
+        "export": false,
+        "frame_mm": [
+          [
+            0.8488536570317408,
+            -0.0,
+            0.5286279116201109,
+            1.3170662963289304
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.5737645064047759
+          ],
+          [
+            -0.5286279116201109,
+            0.0,
+            0.8488536570317408,
+            -1.552091199898904
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.24,
+        "radius2": 0.58,
+        "role": "lower_cloth_drape",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 48
+      },
+      {
+        "bevel": 0,
+        "depth": 6,
+        "export": false,
+        "location": [
+          0.85,
+          0.5737645064047759,
+          0.697908800101096
+        ],
+        "primitive": "cone",
+        "radius1": 0.24,
+        "radius2": 5.34,
+        "role": "sleeve_rising_envelope",
+        "vertices": 64
+      },
+      {
+        "dimensions": [
+          0.23,
+          0.25,
+          1.59760967174489
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            -0.8617788083590102,
+            -0.12820613729826866,
+            0.49081612832340993,
+            1.1920662958289303
+          ],
+          [
+            0.0,
+            0.9675367449450663,
+            0.2527303843646547,
+            -0.15811774679761204
+          ],
+          [
+            -0.507284225521871,
+            0.21779768947388678,
+            -0.8338026631023147,
+            0.013954399550548113
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "upper_cloth_gather_0",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          0.23,
+          0.25,
+          1.59760967174489
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            -0.8617788083590102,
+            -0.1282061372982686,
+            0.49081612832340976,
+            1.5920662958289302
+          ],
+          [
+            0.0,
+            0.967536744945066,
+            0.2527303843646547,
+            -0.15811774679761204
+          ],
+          [
+            -0.5072842255218708,
+            0.21779768947388678,
+            -0.8338026631023147,
+            0.013954399550548113
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "upper_cloth_gather_1",
+        "segments": 24
+      },
+      {
+        "dimensions": [
+          1.625,
+          1.55,
+          1.55
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.992206031,
+            -0.122430775,
+            0.023192621,
+            0.3614727267556148
+          ],
+          [
+            0.122304228,
+            0.992469337,
+            0.006803793,
+            0.2610689970034114
+          ],
+          [
+            -0.023850959,
+            -0.003914209,
+            0.999707863,
+            -5.225344509927789
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          1.05,
+          -0.49,
+          5.279999999999999
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "right_palm",
+        "segments": 20
+      },
+      {
+        "bevel": 0.275,
+        "dimensions": [
+          1.825,
+          1.1500000000000001,
+          1.3
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.992206031,
+            -0.122430775,
+            0.023192621,
+            0.3614727267556148
+          ],
+          [
+            0.122304228,
+            0.992469337,
+            0.006803793,
+            0.2610689970034114
+          ],
+          [
+            -0.023850959,
+            -0.003914209,
+            0.999707863,
+            -5.225344509927789
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          1.05,
+          -1.1,
+          5.35
+        ],
+        "primitive": "cube",
+        "role": "right_grouped_fingers"
+      },
+      {
+        "dimensions": [
+          0.775,
+          0.8250000000000001,
+          0.95
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.992206031,
+            -0.122430775,
+            0.023192621,
+            0.3614727267556148
+          ],
+          [
+            0.122304228,
+            0.992469337,
+            0.006803793,
+            0.2610689970034114
+          ],
+          [
+            -0.023850959,
+            -0.003914209,
+            0.999707863,
+            -5.225344509927789
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.52,
+          -1.08,
+          5.51
+        ],
+        "primitive": "sphere",
+        "ring_count": 12,
+        "role": "right_thumb",
+        "segments": 20
+      },
+      {
+        "dimensions": [
+          1.4749999999999999,
+          0.475,
+          0.775
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.992206031,
+            -0.122430775,
+            0.023192621,
+            0.3614727267556148
+          ],
+          [
+            0.122304228,
+            0.992469337,
+            0.006803793,
+            0.2610689970034114
+          ],
+          [
+            -0.023850959,
+            -0.003914209,
+            0.999707863,
+            -5.225344509927789
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          1.05,
+          -1.39,
+          5.42
+        ],
+        "primitive": "sphere",
+        "ring_count": 10,
+        "role": "right_knuckle_plate",
+        "segments": 20
+      },
+      {
+        "bevel": 0,
+        "depth": 1.15,
+        "export": true,
+        "location": [
+          1.6620434337556147,
+          -0.6058275419965885,
+          -0.2726453199277885
+        ],
+        "primitive": "cone",
+        "radius1": 0.35,
+        "radius2": 0.9119999999999999,
+        "role": "fingers_lower_transition",
+        "scale": [
+          1,
+          0.7,
+          1
+        ],
+        "vertices": 48
+      },
+      {
+        "bevel": 0.08,
+        "bevel_segments": 3,
+        "depth": 1.045900332843708,
+        "export": false,
+        "frame_mm": [
+          [
+            0.999765370096819,
+            0.004071755702415773,
+            0.021274998488144736,
+            1.5746114137556146
+          ],
+          [
+            0.0,
+            0.9821737786474165,
+            -0.18797518064216834,
+            0.03740414000341141
+          ],
+          [
+            -0.021661134669511573,
+            0.18793107604373382,
+            0.9819433313088254,
+            -0.5765225882848437
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.27,
+        "radius2": 0.725,
+        "role": "right_palm_additive_taper",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 48
+      },
+      {
+        "bevel": 0.08,
+        "bevel_segments": 3,
+        "depth": 1.2531233752458306,
+        "export": false,
+        "frame_mm": [
+          [
+            0.9947518122243504,
+            0.06544506057477079,
+            0.07864970516623356,
+            1.6127645417556147
+          ],
+          [
+            0.0,
+            0.7686842490289989,
+            -0.6396284275223577,
+            -0.2650608749965886
+          ],
+          [
+            -0.1023173107366045,
+            0.6362715374280768,
+            0.7646500497499105,
+            -0.45760471928553853
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.27,
+        "radius2": 0.5750000000000001,
+        "role": "right_grouped_fingers_additive_taper",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 48
+      },
+      {
+        "bevel": 0.08,
+        "bevel_segments": 3,
+        "depth": 1.4334489181558436,
+        "export": false,
+        "frame_mm": [
+          [
+            0.9298083518555142,
+            -0.2170642744569955,
+            -0.2972196655239863,
+            1.3504610457556148
+          ],
+          [
+            -0.0,
+            0.8075654499898244,
+            -0.5897779615946432,
+            -0.28700249849658854
+          ],
+          [
+            0.3680440582589701,
+            0.54838047443102,
+            0.7508811000704954,
+            -0.32029865764792786
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.217,
+        "radius2": 0.3875,
+        "role": "right_thumb_additive_taper",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 48
+      }
+    ],
+    "cloth_pose": {
+      "elbow": [
+        1.7841325926578606,
+        0.5737645064047759,
+        -0.8020911998989039
+      ],
+      "shoulder": [
+        0.999999999,
+        -0.0,
+        0.779999999
+      ],
+      "wrist": [
+        1.5634856497556147,
+        0.13570579200341143,
+        -0.20847350792778852
+      ]
+    },
+    "landmarks": {
+      "drape_root": [
+        0.85,
+        0.5737645064047759,
+        -2.302091199898904
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "right_cuff": [
+        1.5634856497556147,
+        0.13570579200341143,
+        -0.20847350792778852
+      ],
+      "right_elbow": [
+        1.7841325926578606,
+        0.5737645064047759,
+        -0.8020911998989039
+      ],
+      "right_elbow_transition": [
+        1.121770417,
+        0.282231157,
+        -0.599160988
+      ],
+      "right_forearm": [
+        1.132821233,
+        0.021778205,
+        -0.375687986
+      ],
+      "right_grouped_fingers": [
+        1.6620434337556147,
+        -0.6658275419965886,
+        0.10235468007221149
+      ],
+      "right_knuckle_plate": [
+        1.6991718427556148,
+        -0.9531673839965885,
+        0.17346935107221148
+      ],
+      "right_palm": [
+        1.5857371777556146,
+        -0.06089751199658858,
+        0.02998746207221149
+      ],
+      "right_shoulder_slope": [
+        0.722,
+        0.025,
+        0.8115
+      ],
+      "right_sleeve_root": [
+        0.919999999,
+        0.27,
+        -1.020000001
+      ],
+      "right_thumb": [
+        1.1374364417556149,
+        -0.7097107889965886,
+        0.2748706620722115
+      ],
+      "right_upper_arm": [
+        1.069999999,
+        0.15,
+        -0.005000001
+      ],
+      "right_vambrace": [
+        1.1300606,
+        0.202302963,
+        -0.629770072
+      ],
+      "right_wrist_bridge": [
+        1.5884651087556148,
+        0.044826769003411426,
+        -0.12745110492778852
+      ]
+    },
+    "operations": [
+      {
+        "operand": "cloth_shoulder",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "cloth_forearm",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "cloth_elbow",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "lower_cloth_drape",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "sleeve_rising_envelope",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "upper_cloth_gather_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "upper_cloth_gather_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "robe_sleeve"
+      },
+      {
+        "operand": "right_palm_additive_taper",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "right_palm"
+      },
+      {
+        "operand": "right_grouped_fingers_additive_taper",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "right_grouped_fingers"
+      },
+      {
+        "operand": "right_thumb_additive_taper",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "right_thumb"
+      }
+    ],
+    "seed": 1001,
+    "source": "aurelian.right-arm@9",
+    "source_sha256": "65bb1fee9bb223adfe90442eb0c6d0754314d36e4ab80469038cc7c4f06f42b5",
+    "uniform_grip_trial": {
+      "hand_dimension_factor": 1.25,
+      "print_scale": 1.3,
+      "seed": 1001,
+      "source": "aurelian.open-right-arm-1-trial@1",
+      "source_sha256": "ef15092c9cf60141ece2af3990dae4e0d0e9756d387ae5f7cdea99f4eee6c3d2",
+      "status": "visual-only",
+      "wrist_root_unchanged": true
+    }
+  }
+}
