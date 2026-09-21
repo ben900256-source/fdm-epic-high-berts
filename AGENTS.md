@@ -44,7 +44,11 @@
   and [their details](docs/prusa-print-test-settings.md): the Epic Cool Detail v1
   0.05 mm print preset, Original Prusa XL - 5T Input Shaper 0.25 nozzle printer,
   Epic FDM PLA - Cool Detail v1 on tool 2 and Generic PLA @XLIS on the others,
-  with supports off. This new profile pair awaits physical comparison.
+  with supports off. The user reports worse spear rings from the single-mini v1
+  test. The current [three-mini cooling comparison](specs/prusa-three-mini-cooling-trial.json)
+  overrides sequential printing off, uses three identical copies at 40 mm centers,
+  and sets tool-2 minimum speed / slowdown threshold to 10 mm/s / 10 s.
+  Preserve other settings and the last printed mesh for that controlled comparison.
   Resolve the named installed presets read-only instead of reusing old test INIs
   or the historical proof adapter's preset selection. The new filament preset has
   205°C normal layers and 230°C first layer; do not force both to 205°C.

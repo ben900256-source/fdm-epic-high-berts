@@ -1,0 +1,1022 @@
+{
+  "component_id": "aurelian.readable-insignia-trial",
+  "version": 4,
+  "name": "Flat broad seahorse with stronger raised relief",
+  "family": "shield-insignia",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "seahorse_head"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.035,
+        "bevel_segments": 2,
+        "depth": 0.41999999999999993,
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            -0.0,
+            -0.09000000000000001
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.6100000000000001
+          ],
+          [
+            0.0,
+            1.0,
+            -0.0,
+            1.5815
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "seahorse_head",
+        "scale": [
+          0.38484992,
+          0.28,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.035,
+        "bevel_segments": 2,
+        "depth": 0.41999999999999993,
+        "export": false,
+        "frame_mm": [
+          [
+            0.0,
+            -1.0,
+            -0.0,
+            -0.36450000000000005
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.6100000000000001
+          ],
+          [
+            1.0,
+            0.0,
+            -0.0,
+            1.5415
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "seahorse_snout",
+        "scale": [
+          0.24,
+          0.365,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.035,
+        "bevel_segments": 2,
+        "depth": 0.41999999999999993,
+        "export": false,
+        "frame_mm": [
+          [
+            0.961523948,
+            0.274721128,
+            -0.0,
+            0.036000000000000004
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.6100000000000001
+          ],
+          [
+            -0.274721128,
+            0.961523948,
+            -0.0,
+            1.8365
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "seahorse_crest",
+        "scale": [
+          0.24,
+          0.24920164833920821,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.035,
+        "bevel_segments": 2,
+        "depth": 0.41999999999999993,
+        "export": false,
+        "frame_mm": [
+          [
+            -0.756823008,
+            0.65361987,
+            -0.0,
+            0.1575
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.6100000000000001
+          ],
+          [
+            -0.65361987,
+            -0.756823008,
+            -0.0,
+            1.4015
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "seahorse_neck_0",
+        "scale": [
+          0.26643456,
+          0.3253444185374862,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.035,
+        "bevel_segments": 2,
+        "depth": 0.41999999999999993,
+        "export": false,
+        "frame_mm": [
+          [
+            -0.97898042,
+            -0.203954254,
+            -0.0,
+            0.2205
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.6100000000000001
+          ],
+          [
+            0.203954254,
+            -0.97898042,
+            -0.0,
+            1.1715
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "seahorse_neck_1",
+        "scale": [
+          0.26643456,
+          0.30257650672131275,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.035,
+        "bevel_segments": 2,
+        "depth": 0.41999999999999993,
+        "export": false,
+        "frame_mm": [
+          [
+            -0.624695048,
+            -0.780868809,
+            -0.0,
+            0.108
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.6100000000000001
+          ],
+          [
+            0.780868809,
+            -0.624695048,
+            -0.0,
+            0.9715
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "seahorse_neck_2",
+        "scale": [
+          0.26643456,
+          0.3080624847486569,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.035,
+        "bevel_segments": 2,
+        "depth": 0.41999999999999993,
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            -0.0,
+            0.108
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.6100000000000001
+          ],
+          [
+            0.0,
+            1.0,
+            -0.0,
+            0.6915
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "seahorse_belly",
+        "scale": [
+          0.47366144,
+          0.475,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.035,
+        "bevel_segments": 2,
+        "depth": 0.41999999999999993,
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            -0.0,
+            0.378
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.6100000000000001
+          ],
+          [
+            0.0,
+            1.0,
+            -0.0,
+            0.8415
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "seahorse_back_fin",
+        "scale": [
+          0.31084031999999995,
+          0.285,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.035,
+        "bevel_segments": 2,
+        "depth": 0.41999999999999993,
+        "export": false,
+        "frame_mm": [
+          [
+            -0.76124323,
+            0.648466456,
+            -0.0,
+            0.28350000000000003
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.6100000000000001
+          ],
+          [
+            -0.648466456,
+            -0.76124323,
+            -0.0,
+            0.2465
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "seahorse_tail_0",
+        "scale": [
+          0.24,
+          0.327341478509682,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.035,
+        "bevel_segments": 2,
+        "depth": 0.41999999999999993,
+        "export": false,
+        "frame_mm": [
+          [
+            -0.917555625,
+            0.397607438,
+            -0.0,
+            0.4455
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.6100000000000001
+          ],
+          [
+            -0.397607438,
+            -0.917555625,
+            -0.0,
+            -0.0385
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "seahorse_tail_1",
+        "scale": [
+          0.24,
+          0.3134778272427181,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.035,
+        "bevel_segments": 2,
+        "depth": 0.41999999999999993,
+        "export": false,
+        "frame_mm": [
+          [
+            -0.965925826,
+            -0.258819045,
+            -0.0,
+            0.4630037733
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.6100000000000001
+          ],
+          [
+            0.258819045,
+            -0.965925826,
+            -0.0,
+            -0.3585
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "seahorse_tail_2",
+        "scale": [
+          0.24,
+          0.325996950669714,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.035,
+        "bevel_segments": 2,
+        "depth": 0.41999999999999993,
+        "export": false,
+        "frame_mm": [
+          [
+            -0.707106781,
+            -0.707106781,
+            -0.0,
+            0.3100037733
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.6100000000000001
+          ],
+          [
+            0.707106781,
+            -0.707106781,
+            -0.0,
+            -0.652948637
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "seahorse_tail_3",
+        "scale": [
+          0.24,
+          0.32599695066971424,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.035,
+        "bevel_segments": 2,
+        "depth": 0.41999999999999993,
+        "export": false,
+        "frame_mm": [
+          [
+            -0.258819045,
+            -0.965925826,
+            -0.0,
+            0.045000000000000005
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.6100000000000001
+          ],
+          [
+            0.965925826,
+            -0.258819045,
+            -0.0,
+            -0.822948637
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "seahorse_tail_4",
+        "scale": [
+          0.24,
+          0.3259969506697141,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.035,
+        "bevel_segments": 2,
+        "depth": 0.41999999999999993,
+        "export": false,
+        "frame_mm": [
+          [
+            0.258819045,
+            -0.965925826,
+            -0.0,
+            -0.261
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.6100000000000001
+          ],
+          [
+            0.965925826,
+            0.258819045,
+            -0.0,
+            -0.822948637
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "seahorse_tail_5",
+        "scale": [
+          0.24,
+          0.32599695066971407,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.035,
+        "bevel_segments": 2,
+        "depth": 0.41999999999999993,
+        "export": false,
+        "frame_mm": [
+          [
+            0.707106781,
+            -0.707106781,
+            -0.0,
+            -0.5260037733
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.6100000000000001
+          ],
+          [
+            0.707106781,
+            0.707106781,
+            -0.0,
+            -0.652948637
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "seahorse_tail_6",
+        "scale": [
+          0.24,
+          0.3259969506697143,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.035,
+        "bevel_segments": 2,
+        "depth": 0.41999999999999993,
+        "export": false,
+        "frame_mm": [
+          [
+            0.965925826,
+            -0.258819045,
+            -0.0,
+            -0.6790037733
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.6100000000000001
+          ],
+          [
+            0.258819045,
+            0.965925826,
+            -0.0,
+            -0.3585
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "seahorse_tail_7",
+        "scale": [
+          0.24,
+          0.325996950669714,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.035,
+        "bevel_segments": 2,
+        "depth": 0.41999999999999993,
+        "export": false,
+        "frame_mm": [
+          [
+            0.965925826,
+            0.258819045,
+            -0.0,
+            -0.6790037733
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.6100000000000001
+          ],
+          [
+            -0.258819045,
+            0.965925826,
+            -0.0,
+            -0.0185
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "seahorse_tail_8",
+        "scale": [
+          0.24,
+          0.32599695066971424,
+          1
+        ],
+        "vertices": 64
+      }
+    ],
+    "flat_relief": {
+      "back_y_mm": -0.4,
+      "embedded_mm": 0.12,
+      "front_y_mm": -0.82,
+      "minimum_stroke_width_mm": 0.48,
+      "print_scale": 1.3,
+      "relief_mm": 0.3,
+      "shield": "aurelian.shield@2",
+      "shield_front_y_mm": -0.52,
+      "source": "aurelian.readable-insignia-trial@3",
+      "source_sha256": "819184f63366bdfe77224e3b2c44bd06fa777c54cf260c1f17b2fb96a0a1c189",
+      "status": "visual-only"
+    },
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "seahorse_back_fin": [
+        0.378,
+        -0.6100000000000001,
+        0.8415
+      ],
+      "seahorse_belly": [
+        0.108,
+        -0.6100000000000001,
+        0.6915
+      ],
+      "seahorse_crest": [
+        0.036000000000000004,
+        -0.6100000000000001,
+        1.8365
+      ],
+      "seahorse_head": [
+        -0.09000000000000001,
+        -0.6100000000000001,
+        1.5815
+      ],
+      "seahorse_neck_0": [
+        0.1575,
+        -0.6100000000000001,
+        1.4015
+      ],
+      "seahorse_neck_1": [
+        0.2205,
+        -0.6100000000000001,
+        1.1715
+      ],
+      "seahorse_neck_2": [
+        0.108,
+        -0.6100000000000001,
+        0.9715
+      ],
+      "seahorse_snout": [
+        -0.36450000000000005,
+        -0.6100000000000001,
+        1.5415
+      ],
+      "seahorse_tail_0": [
+        0.28350000000000003,
+        -0.6100000000000001,
+        0.2465
+      ],
+      "seahorse_tail_1": [
+        0.4455,
+        -0.6100000000000001,
+        -0.0385
+      ],
+      "seahorse_tail_2": [
+        0.4630037733,
+        -0.6100000000000001,
+        -0.3585
+      ],
+      "seahorse_tail_3": [
+        0.3100037733,
+        -0.6100000000000001,
+        -0.652948637
+      ],
+      "seahorse_tail_4": [
+        0.045000000000000005,
+        -0.6100000000000001,
+        -0.822948637
+      ],
+      "seahorse_tail_5": [
+        -0.261,
+        -0.6100000000000001,
+        -0.822948637
+      ],
+      "seahorse_tail_6": [
+        -0.5260037733,
+        -0.6100000000000001,
+        -0.652948637
+      ],
+      "seahorse_tail_7": [
+        -0.6790037733,
+        -0.6100000000000001,
+        -0.3585
+      ],
+      "seahorse_tail_8": [
+        -0.6790037733,
+        -0.6100000000000001,
+        -0.0185
+      ]
+    },
+    "operations": [
+      {
+        "operand": "seahorse_snout",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "seahorse_head"
+      },
+      {
+        "operand": "seahorse_crest",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "seahorse_head"
+      },
+      {
+        "operand": "seahorse_neck_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "seahorse_head"
+      },
+      {
+        "operand": "seahorse_neck_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "seahorse_head"
+      },
+      {
+        "operand": "seahorse_neck_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "seahorse_head"
+      },
+      {
+        "operand": "seahorse_belly",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "seahorse_head"
+      },
+      {
+        "operand": "seahorse_back_fin",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "seahorse_head"
+      },
+      {
+        "operand": "seahorse_tail_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "seahorse_head"
+      },
+      {
+        "operand": "seahorse_tail_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "seahorse_head"
+      },
+      {
+        "operand": "seahorse_tail_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "seahorse_head"
+      },
+      {
+        "operand": "seahorse_tail_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "seahorse_head"
+      },
+      {
+        "operand": "seahorse_tail_4",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "seahorse_head"
+      },
+      {
+        "operand": "seahorse_tail_5",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "seahorse_head"
+      },
+      {
+        "operand": "seahorse_tail_6",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "seahorse_head"
+      },
+      {
+        "operand": "seahorse_tail_7",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "seahorse_head"
+      },
+      {
+        "operand": "seahorse_tail_8",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "seahorse_head"
+      }
+    ],
+    "seed": 1001
+  }
+}

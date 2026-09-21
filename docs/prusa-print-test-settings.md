@@ -1,5 +1,12 @@
 # Future PrusaSlicer print-test settings
 
+**Current experiment (2026-09-21):** the user reports that the slow single-mini
+test produced worse rings on the spear. Use the
+[three-mini cooling trial](three-mini-cooling-trial.md) to compare three identical
+copies, 40 mm apart, printed layer by layer, with 10 mm/s minimum speed and a
+10-second slowdown threshold. These are project overrides on the presets below;
+the installed presets remain unchanged. Temperature and flow changes are deferred.
+
 On 2026-09-20 the user requested a new print/filament pair to improve tiny-layer
 cooling, stringing and detail with the existing **0.25 mm nozzle**. These are
 experimental copies of the presets selected in the 2026-09-19 clipboard screenshot.

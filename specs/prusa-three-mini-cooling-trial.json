@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-09-21",
+  "status": "physical-comparison-pending",
+  "baseline_project": "out/cool-detail-test-20260920/single-mini-cool-detail-v1.3mf",
+  "geometry": "Reuse the last printed single-mini mesh unchanged, including its earlier shield insignia, to isolate cooling behavior.",
+  "copies": 3,
+  "center_spacing_mm": 40,
+  "print_overrides": {"complete_objects": "0"},
+  "tool_2_filament_overrides": {
+    "min_print_speed": "10",
+    "slowdown_below_layer_time": "10"
+  },
+  "preserve": ["0.25 mm tool-2 nozzle", "0.05 mm layers", "205 C normal / 230 C first layer", "100% fan after initial ramp", "extrusion multiplier", "0.9 mm retraction and wiping", "pressure advance", "220 mm/s^2 external acceleration", "0.23 mm external width"],
+  "feedback": "User reports worse spear rings with the slow single-mini Cool Detail v1 test. Thermal and low-flow explanations remain hypotheses; compare this three-copy test before changing temperature, flow or retraction."
+}

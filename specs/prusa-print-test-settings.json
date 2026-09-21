@@ -30,7 +30,8 @@
     "first_layer_bed_temperature_c": 60
   },
   "profile_recipe": "specs/prusa-cool-detail-v1.json",
-  "profile_status": "Experimental pair requested on 2026-09-20; physical print comparison outstanding",
+  "profile_status": "User reports worse spear rings from the single-mini Cool Detail v1 print; three-copy cooling comparison pending",
+  "active_experiment": "specs/prusa-three-mini-cooling-trial.json",
   "profile_policy": "Resolve the named installed presets and their inheritance read-only for each new test. Hash the resolved inputs into its output directory. Use Epic FDM PLA - Cool Detail v1 on tool 2; do not substitute Generic PLA or an older project snapshot. Saved preset temperatures take precedence over the older experimental 205 C first-layer override.",
   "screenshot_scope": "Preset selections and Supports: None are visible. The print preset label is truncated and appears modified; the full name was confirmed in PrusaSlicer.ini. Other unsaved per-setting edits are not captured by this screenshot."
 }

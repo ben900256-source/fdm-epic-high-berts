@@ -13,7 +13,8 @@ Use this as the starting point when designing a new piece or army variant.
 - Future physical trials use [the user's selected presets](prusa-print-test-settings.md):
   Epic Cool Detail v1 0.05 mm, the XL 5T Input Shaper 0.25 nozzle preset, Epic FDM
   PLA - Cool Detail v1 on tool 2 and Generic PLA on the other tools, with supports off.
-  The new profile pair awaits physical comparison. Read the
+  Follow the current three-mini cooling overrides in the linked settings; the
+  user reported worse spear rings from the slow single-mini profile. Read the
   saved presets for each trial; the new filament preset specifies 205°C normal
   layers and 230°C first layer. Earlier trial snapshots are historical evidence.
 - The accepted print target is [130% intact spearmen](../specs/elf-print-target.json):
