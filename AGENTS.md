@@ -41,11 +41,12 @@
 - Use Python 3.13, Blender 5.1.2 and the installed PrusaSlicer 2.9.6. The target is a five-tool
   Prusa XL, tool 2 with a 0.25 mm nozzle, single-color PLA and 0.05 mm layers.
 - For future physical print tests, follow [the user's preset selections](specs/prusa-print-test-settings.json)
-  and [their details](docs/prusa-print-test-settings.md): the Balanced Miniatures
+  and [their details](docs/prusa-print-test-settings.md): the Epic Cool Detail v1
   0.05 mm print preset, Original Prusa XL - 5T Input Shaper 0.25 nozzle printer,
-  Epic FDM PLA on tool 2 and Generic PLA @XLIS on the others, with supports off.
+  Epic FDM PLA - Cool Detail v1 on tool 2 and Generic PLA @XLIS on the others,
+  with supports off. This new profile pair awaits physical comparison.
   Resolve the named installed presets read-only instead of reusing old test INIs
-  or the historical proof adapter's preset selection. Epic FDM PLA currently has
+  or the historical proof adapter's preset selection. The new filament preset has
   205°C normal layers and 230°C first layer; do not force both to 205°C.
 - Generate only parameterized primitives, transforms, bevels and ordered Exact
   CSG. Never sculpt, hand-edit mesh elements or import third-party meshes.

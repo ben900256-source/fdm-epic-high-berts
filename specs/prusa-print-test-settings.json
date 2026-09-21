@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "purpose": "User-selected presets for future PrusaSlicer physical print tests",
-  "selected_date": "2026-09-19",
+  "selected_date": "2026-09-20",
   "slicer_version": "2.9.6",
-  "print_preset": "0.05mm ULTRADETAIL @XLIS 0.25 - Balanced Miniatures",
+  "print_preset": "0.05mm ULTRADETAIL @XLIS 0.25 - Epic Cool Detail v1",
   "printer_preset": "Original Prusa XL - 5T Input Shaper 0.25 nozzle",
   "filament_presets_by_tool": [
     "Generic PLA @XLIS",
-    "Epic FDM PLA",
+    "Epic FDM PLA - Cool Detail v1",
     "Generic PLA @XLIS",
     "Generic PLA @XLIS",
     "Generic PLA @XLIS"
@@ -29,6 +29,8 @@
     "bed_temperature_c": 60,
     "first_layer_bed_temperature_c": 60
   },
-  "profile_policy": "Resolve the named installed presets and their inheritance read-only for each new test. Hash the resolved inputs into its output directory. Use Epic FDM PLA on tool 2; do not substitute Generic PLA or an older project snapshot. Saved preset temperatures take precedence over the older experimental 205 C first-layer override.",
+  "profile_recipe": "specs/prusa-cool-detail-v1.json",
+  "profile_status": "Experimental pair requested on 2026-09-20; physical print comparison outstanding",
+  "profile_policy": "Resolve the named installed presets and their inheritance read-only for each new test. Hash the resolved inputs into its output directory. Use Epic FDM PLA - Cool Detail v1 on tool 2; do not substitute Generic PLA or an older project snapshot. Saved preset temperatures take precedence over the older experimental 205 C first-layer override.",
   "screenshot_scope": "Preset selections and Supports: None are visible. The print preset label is truncated and appears modified; the full name was confirmed in PrusaSlicer.ini. Other unsaved per-setting edits are not captured by this screenshot."
 }

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-09-20",
+  "status": "experimental-profile-pair",
+  "slicer_version": "2.9.6",
+  "selected_tool": 2,
+  "nozzle_configuration_mm": [0.4, 0.25, 0.4, 0.4, 0.4],
+  "print": {
+    "name": "0.05mm ULTRADETAIL @XLIS 0.25 - Epic Cool Detail v1",
+    "source": "0.05mm ULTRADETAIL @XLIS 0.25 - Balanced Miniatures",
+    "overrides": {
+      "layer_height": "0.05",
+      "external_perimeter_extrusion_width": "0.23",
+      "external_perimeter_speed": "12",
+      "small_perimeter_speed": "12",
+      "external_perimeter_acceleration": "220",
+      "travel_acceleration": "2500",
+      "seam_position": "rear",
+      "seam_gap_distance": "10%",
+      "avoid_crossing_perimeters": "1",
+      "support_material": "0",
+      "support_material_auto": "0",
+      "wipe_tower": "0",
+      "complete_objects": "1",
+      "perimeter_extruder": "2",
+      "infill_extruder": "2",
+      "solid_infill_extruder": "2",
+      "support_material_extruder": "2",
+      "support_material_interface_extruder": "2",
+      "compatible_printers_condition": "printer_model==\"XL5IS\" and nozzle_diameter[1]==0.25"
+    }
+  },
+  "filament": {
+    "name": "Epic FDM PLA - Cool Detail v1",
+    "source": "Epic FDM PLA",
+    "overrides": {
+      "temperature": "205",
+      "first_layer_temperature": "230",
+      "bed_temperature": "60",
+      "first_layer_bed_temperature": "60",
+      "cooling": "1",
+      "slowdown_below_layer_time": "20",
+      "min_print_speed": "3",
+      "fan_always_on": "1",
+      "min_fan_speed": "100",
+      "max_fan_speed": "100",
+      "bridge_fan_speed": "100",
+      "disable_fan_first_layers": "1",
+      "full_fan_speed_layer": "3",
+      "filament_retract_length": "0.9",
+      "filament_retract_speed": "35",
+      "filament_wipe": "1",
+      "filament_seam_gap_distance": "nil"
+    }
+  },
+  "decisions": [
+    "Keep the physical 0.25 mm tool-2 nozzle and existing printer preset; no printer preset is created or edited.",
+    "Preserve 220 mm/s^2 external acceleration because it is already lower than the suggested 400.",
+    "Keep 205 C normal and 230 C first layer; the previous test was already at 205 C after layer one.",
+    "Increase normal retraction only 0.1 mm, from the inherited XL 0.8 mm. Keep 35 mm/s retract speed and current pressure advance.",
+    "Use rear seam and 10% seam gap, retaining Arachne; 0.23 mm is the nominal outer-wall width, not a guarantee for every variable-width path.",
+    "Keep fixed 0.05 mm layers and upright geometry for this comparison. Adaptive layers and tilt are model/project changes, not filament preset changes.",
+    "Preserve sequential printing for spaced multi-object tests. A separate simultaneous-print experiment may give more inter-layer cooling but also adds travel/stringing.",
+    "The 20-second cooling threshold is a slowdown target, not a guaranteed dwell; minimum-speed limits can leave shorter layers."
+  ]
+}
