@@ -1,0 +1,227 @@
+{
+  "component_id": "aurelian.uniform-spear-140-trial",
+  "version": 3,
+  "name": "Uniform spear with fuller faceted leaf blade",
+  "family": "spear",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "spear"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.03,
+        "depth": 13.35,
+        "export": true,
+        "location": [
+          0,
+          0.46,
+          0.525
+        ],
+        "primitive": "cylinder",
+        "radius": 0.7,
+        "role": "spear",
+        "vertices": 64
+      },
+      {
+        "bevel": 0,
+        "depth": 1.25,
+        "export": false,
+        "location": [
+          0,
+          0.46,
+          7.755
+        ],
+        "primitive": "cone",
+        "radius1": 0.48,
+        "radius2": 1.2,
+        "role": "spear_leaf_lower",
+        "scale": [
+          1,
+          0.575,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0,
+        "depth": 2.35,
+        "export": false,
+        "location": [
+          0,
+          0.46,
+          9.525
+        ],
+        "primitive": "cone",
+        "radius1": 1.2,
+        "radius2": 0.27,
+        "role": "spear_leaf_tip",
+        "scale": [
+          1,
+          0.575,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.025,
+        "bevel_segments": 3,
+        "depth": 0.6,
+        "export": false,
+        "location": [
+          0,
+          0.46,
+          6.85
+        ],
+        "primitive": "cone",
+        "radius1": 0.6825,
+        "radius2": 0.77,
+        "role": "spear_collar_ramp",
+        "vertices": 40
+      },
+      {
+        "bevel": 0.025,
+        "bevel_segments": 3,
+        "depth": 0.2,
+        "export": false,
+        "location": [
+          0,
+          0.46,
+          7.235
+        ],
+        "primitive": "cone",
+        "radius1": 0.77,
+        "radius2": 0.77,
+        "role": "spear_collar_band",
+        "vertices": 40
+      }
+    ],
+    "decorative_blade": {
+      "depth_mm": 1.38,
+      "note": "15 percent thicker front-to-back; outline, length, shaft and collar unchanged",
+      "print_scale": 1.3,
+      "root_z_mm": 7.13,
+      "seed": 1001,
+      "shoulder_z_mm": 8.38,
+      "source": "aurelian.uniform-spear-140-trial@2",
+      "source_sha256": "811af74d89269204692ace9fa070b47a507d1bbdab2ebb7eddb7a691cabb463a",
+      "status": "visual-only",
+      "style": "Broad leaf silhouette with diamond section and central ridge",
+      "terminal_depth_mm": 0.3105,
+      "terminal_width_mm": 0.54,
+      "thickness_factor": 1.15,
+      "tip_z_mm": 10.7,
+      "width_mm": 2.4
+    },
+    "design": {
+      "collar_diameter_mm": 1.54,
+      "lower_shaft_diameter_mm": 1.4,
+      "note": "Constant shaft diameter; no step or enlargement above the hand.",
+      "shaft_diameter_mm": 1.4,
+      "shaft_extension_mm": 2.35,
+      "shaft_length_factor": 1.2136363636363636,
+      "shaft_length_mm": 13.35,
+      "upper_shaft_diameter_mm": 1.4
+    },
+    "experiment": {
+      "print_scale": 1.3,
+      "printed_lower_diameter_mm": 1.82,
+      "printed_upper_diameter_mm": 1.82,
+      "source": "aurelian.upper-spear-160-trial@1",
+      "source_sha256": "ca58e9ca573621a2dd3440c18e03569bfd8d915eacc1cb99fce8209ac7440c03",
+      "status": "visual-only"
+    },
+    "landmarks": {
+      "blade_shoulder": [
+        0,
+        0.46,
+        8.38
+      ],
+      "blade_terminal": [
+        0,
+        0.46,
+        10.7
+      ],
+      "collar": [
+        0,
+        0.46,
+        7.15
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "shaft_bottom": [
+        0,
+        0.46,
+        -6.15
+      ],
+      "shaft_top": [
+        0,
+        0.46,
+        7.2
+      ],
+      "spear": [
+        0.0,
+        0.46,
+        0.525
+      ],
+      "spear_leaf_lower": [
+        0,
+        0.46,
+        7.755
+      ],
+      "spear_leaf_tip": [
+        0,
+        0.46,
+        9.525
+      ]
+    },
+    "operations": [
+      {
+        "operand": "spear_collar_ramp",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "spear"
+      },
+      {
+        "operand": "spear_collar_band",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "spear"
+      },
+      {
+        "operand": "spear_leaf_lower",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "spear"
+      },
+      {
+        "operand": "spear_leaf_tip",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "spear"
+      }
+    ],
+    "overhang_revision": {
+      "intent": "Match blade depth across its widest shoulder and lengthen socket and blade root ramps.",
+      "source": "aurelian.spear@3"
+    },
+    "provenance": "One-off shaft thickness trial from aurelian.spear@5. Unchecked physical-trial candidate; not a production default.",
+    "seed": 1001,
+    "socket_cleanup_source": "aurelian.spear@4",
+    "socket_cleanup_source_sha256": "e8235b31d4bb3b23813d23a415370232149728c32e605cfb593ac4ffd3614465",
+    "thickness_trial": {
+      "diameter_mm": 1.2,
+      "seed": 1001,
+      "source": "aurelian.spear@5",
+      "source_sha256": "e5e7046af37f980219e4a3b1ba511b4a33d43e91bcbb0ca6e92c91b63048f751"
+    }
+  }
+}
