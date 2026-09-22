@@ -30,7 +30,7 @@
     "first_layer_bed_temperature_c": 60
   },
   "profile_recipe": "specs/prusa-cool-detail-v1.json",
-  "profile_status": "User reports printing multiple minis at once worked okay; retain tool-2 cooling overrides of 10 mm/s minimum speed and 10 s slowdown threshold",
+  "profile_status": "User accepted the five-mini wider-shield physical print on 2026-09-22; retain tool-2 cooling overrides of 10 mm/s minimum speed and 10 s slowdown threshold",
   "active_experiment": "specs/prusa-five-wider-shield-trial.json",
   "profile_policy": "Resolve the named installed presets and their inheritance read-only for each new test. Hash the resolved inputs into its output directory. Use Epic FDM PLA - Cool Detail v1 on tool 2; do not substitute Generic PLA or an older project snapshot. Saved preset temperatures take precedence over the older experimental 205 C first-layer override.",
   "screenshot_scope": "Preset selections and Supports: None are visible. The print preset label is truncated and appears modified; the full name was confirmed in PrusaSlicer.ini. Other unsaved per-setting edits are not captured by this screenshot."

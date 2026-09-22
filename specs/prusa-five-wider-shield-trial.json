@@ -1,7 +1,14 @@
 {
   "schema_version": 1,
   "created_date": "2026-09-21",
-  "status": "physical-trial-pending",
+  "status": "user-accepted-physical-print",
+  "accepted_date": "2026-09-22",
+  "accepted_source_commit": "01761b3",
+  "user_feedback": "this is really good. I think we've cracked it.",
+  "design_preferences": {
+    "shield_insignia": "Keep aurelian.readable-insignia-trial@4, the more raised flat seahorse with 0.39 mm relief at print scale; do not revert to the shallow revision.",
+    "shield_orientation": "Keep shield faces readable from the front. Use modest pose variation and avoid rotating shields too far inward."
+  },
   "geometry": "Five wider-shield infantry poses with fuller decorative spearheads and a five-recess glue-in base",
   "assemblies": ["wider-shield-infantry-1-trial", "wider-shield-infantry-2-trial", "wider-shield-infantry-3-trial", "wider-shield-infantry-4-trial", "wider-shield-infantry-5-trial", "wider-shield-base-empty-trial"],
   "export_scale": 1.3,

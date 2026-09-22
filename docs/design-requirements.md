@@ -13,11 +13,17 @@ Use this as the starting point when designing a new piece or army variant.
 - Future physical trials use [the user's selected presets](prusa-print-test-settings.md):
   Epic Cool Detail v1 0.05 mm, the XL 5T Input Shaper 0.25 nozzle preset, Epic FDM
   PLA - Cool Detail v1 on tool 2 and Generic PLA on the other tools, with supports off.
-  Follow the current three-mini cooling overrides in the linked settings; the
+  Follow the accepted five-mini cooling overrides in the linked settings; the
   user reported worse spear rings from the slow single-mini profile. Read the
   saved presets for each trial; the new filament preset specifies 205°C normal
   layers and 230°C first layer. Earlier trial snapshots are historical evidence.
-- The accepted print target is [130% intact spearmen](../specs/elf-print-target.json):
+- The current infantry baseline is the [accepted wider-shield print](wider-shield-trial.md),
+  accepted by the user on 2026-09-22: five glue-in poses, 1.82 mm uniform shafts,
+  fuller decorative spearheads and a 37.5 x 8.4 x 2 mm shared base. Apply the
+  1.3 print scale exactly once. Keep the raised flat seahorse at 0.39 mm relief
+  (`aurelian.readable-insignia-trial@4`). Keep shield faces readable from the
+  front; use modest pose variation and avoid pronounced inward rotation.
+- The earlier accepted scale reference is [130% intact spearmen](../specs/elf-print-target.json):
   10.4 mm sole-to-eye, 1.56 mm intact shafts, five figures on a 26 x 6.5 x 1.3 mm strip.
   Source recipes remain 8 mm sole-to-eye on a 20 x 5 x 1 mm strip; apply the
   target's 1.3 scale exactly once at export or in the slicer. The user physically
@@ -31,7 +37,7 @@ Use this as the starting point when designing a new piece or army variant.
 | Feature | Prototype target |
 | --- | --- |
 | Structural stock | At least 0.75 mm |
-| Spear shafts | Accepted intact design: 1.2 mm source, 1.56 mm at print scale |
+| Spear shafts | Current accepted infantry: 1.4 mm source, 1.82 mm at print scale |
 | Attached raised detail | 0.25 mm relief |
 | Intentional open gaps | At least 0.5 mm |
 | Removable supports | Zero |

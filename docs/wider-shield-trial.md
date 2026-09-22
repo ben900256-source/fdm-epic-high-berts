@@ -1,5 +1,11 @@
 # Wider shields and five-mini print trial
 
+The user accepted this physical print on **2026-09-22**: “this is really good.
+I think we've cracked it.” Source commit `01761b3` and the project below are the
+accepted infantry baseline. Keep the more raised flat seahorse
+(`aurelian.readable-insignia-trial@4`, 0.39 mm relief at print scale). Keep
+shield faces readable from the front and avoid pronounced inward rotation.
+
 The shield is 12% wider: 3.900 mm across at the 1.3 print scale, up from
 3.482 mm. New immutable `aurelian.shield@6` preserves its height, thickness,
 mount and pointed outline. The raised flat seahorse, current faces, hands,
@@ -30,5 +36,6 @@ stay at their original scale; STL exports apply 1.3 exactly once.
 
 The geometry is unchecked Blender Manifold output for a physical trial, not a
 digitally validated manufacturing build. No independent repeat build or full
-mesh printability audit was performed. The new shield/base fit still needs a
-physical trial.
+mesh printability audit was performed. User acceptance establishes a successful
+physical print; detailed glue-fit measurements and manufacturing validation
+were not reported.

@@ -28,7 +28,12 @@
   without geometry validation, independent repeat builds or slicing. Label these
   downloads unchecked Blender output. Keep the existing model recipes unchanged;
   the historical manufacturing gates below still apply to validated proof builds.
-- Current accepted print target: [130% intact spearmen](specs/elf-print-target.json),
+- Current accepted infantry baseline: [wider-shield glue-in spearmen](docs/wider-shield-trial.md),
+  physically printed and accepted on 2026-09-22. Preserve the more raised flat
+  seahorse (`aurelian.readable-insignia-trial@4`, 0.39 mm printed relief).
+  Keep shield faces readable from the front and avoid pronounced inward rotation.
+  Use the pinned five-pose print recipe in `specs/prusa-five-wider-shield-trial.json`.
+- Earlier accepted scale reference: [130% intact spearmen](specs/elf-print-target.json),
   five 10.4 mm sole-to-eye figures with 1.56 mm intact spear shafts on a
   26 × 6.5 × 1.3 mm strip. The user physically printed and accepted this target.
   Keep source recipes at 8 mm sole-to-eye and apply the pinned 1.3 export scale
@@ -45,10 +50,9 @@
   0.05 mm print preset, Original Prusa XL - 5T Input Shaper 0.25 nozzle printer,
   Epic FDM PLA - Cool Detail v1 on tool 2 and Generic PLA @XLIS on the others,
   with supports off. The user reports worse spear rings from the single-mini v1
-  test. The current [three-mini cooling comparison](specs/prusa-three-mini-cooling-trial.json)
-  overrides sequential printing off, uses three identical copies at 40 mm centers,
-  and sets tool-2 minimum speed / slowdown threshold to 10 mm/s / 10 s.
-  Preserve other settings and the last printed mesh for that controlled comparison.
+  test. The accepted [five-mini print](specs/prusa-five-wider-shield-trial.json)
+  prints five spaced poses and the extra base layer by layer on tool 2, with
+  40 mm minimum figure spacing and minimum speed / slowdown threshold of 10 mm/s / 10 s.
   Resolve the named installed presets read-only instead of reusing old test INIs
   or the historical proof adapter's preset selection. The new filament preset has
   205°C normal layers and 230°C first layer; do not force both to 205°C.
