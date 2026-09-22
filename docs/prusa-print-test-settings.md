@@ -91,3 +91,10 @@ old build-local profile snapshots for **future tests**. Historical print files,
 evidence and the historical proof adapter remain unchanged. Do not use the
 legacy `prusa.resolve_profile()` selection for new tests without adapting it to
 these presets; that adapter still targets the historical proof configuration.
+
+On 2026-09-21 the user reported that printing multiple minis at once worked okay.
+The active [five-mini wider-shield trial](wider-shield-trial.md) retains 40 mm
+spacing and the 10 mm/s / 10 s cooling overrides. All five poses and the extra
+glue-in base print layer by layer on tool 2; the earlier request for a separate
+tool-5/base-first stage was cancelled. The final saved project was reopened and
+sliced with embedded settings only: 458 layers, tool 2 only, about 3 h 2 min.

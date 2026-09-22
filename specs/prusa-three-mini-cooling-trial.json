@@ -1,7 +1,8 @@
 {
   "schema_version": 1,
   "created_date": "2026-09-21",
-  "status": "physical-comparison-pending",
+  "status": "user-reports-multiple-at-once-worked-okay",
+  "followup": "Continue the cooling overrides in specs/prusa-five-wider-shield-trial.json; this result does not isolate a specific thermal mechanism.",
   "baseline_project": "out/cool-detail-test-20260920/single-mini-cool-detail-v1.3mf",
   "geometry": "Reuse the last printed single-mini mesh unchanged, including its earlier shield insignia, to isolate cooling behavior.",
   "copies": 3,

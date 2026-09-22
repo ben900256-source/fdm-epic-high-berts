@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-09-21",
+  "status": "physical-trial-pending",
+  "geometry": "Five wider-shield infantry poses with fuller decorative spearheads and a five-recess glue-in base",
+  "assemblies": ["wider-shield-infantry-1-trial", "wider-shield-infantry-2-trial", "wider-shield-infantry-3-trial", "wider-shield-infantry-4-trial", "wider-shield-infantry-5-trial", "wider-shield-base-empty-trial"],
+  "export_scale": 1.3,
+  "seed": 1001,
+  "tool": 2,
+  "nozzle_mm": 0.25,
+  "layer_mm": 0.05,
+  "print_overrides": {"complete_objects": "0"},
+  "tool_2_filament_overrides": {"min_print_speed": "10", "slowdown_below_layer_time": "10"},
+  "nominal_plate_positions_mm": [[140,160],[180,160],[220,160],[160,200],[200,200],[180,120]],
+  "base_mm": [37.5,8.4,2],
+  "base_recess_mm": [5.5,6.8,1.2],
+  "assembled_pitch_mm": 7.6,
+  "project": "out/wider-shield-print-20260921/five-wider-shield-minis-and-base-v2.3mf",
+  "geometry_status": "Unchecked Blender Manifold output; not digitally validated",
+  "feedback": "User reports that printing multiple minis at once worked okay. Continue 10 mm/s and 10 s cooling overrides. User cancelled the separate toolhead-5/base-first setup; all six pieces print layer by layer on tool 2."
+}
