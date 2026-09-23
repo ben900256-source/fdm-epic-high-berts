@@ -1,0 +1,183 @@
+{
+  "component_id": "aurelian.standard-pole-accepted-r4",
+  "version": 1,
+  "name": "Tall standard pole for a broad banner \u2014 accepted infantry detail",
+  "family": "standard-pole",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "standard_pole"
+  ],
+  "parameters": {
+    "accepted_army": {
+      "accepted_reference": "wider-shield-infantry-3-trial",
+      "print_scale": 1.3,
+      "seed": 1001,
+      "source": "aurelian.standard-pole@4",
+      "source_sha256": "def6d449665fa84326d8158123184059c89b6decaa62c51acd5a773934547695",
+      "status": "visual-only",
+      "treatment": "Uniform 1.4 mm standard pole with fuller faceted finial"
+    },
+    "atoms": [
+      {
+        "bevel": 0.035,
+        "end": [
+          0,
+          0.46,
+          14.100000000000001
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.7,
+        "role": "standard_pole",
+        "start": [
+          0,
+          0.46,
+          -6.15
+        ]
+      },
+      {
+        "bevel": 0.14,
+        "dimensions": [
+          7.2,
+          0.65,
+          0.65
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.04,
+          13.65
+        ],
+        "primitive": "cube",
+        "role": "crossbar"
+      },
+      {
+        "bevel": 0.045,
+        "bevel_segments": 3,
+        "depth": 0.35,
+        "export": false,
+        "location": [
+          0,
+          0.46,
+          14.100000000000001
+        ],
+        "primitive": "cone",
+        "radius1": 0.77,
+        "radius2": 0.72,
+        "role": "finial_collar",
+        "vertices": 32
+      },
+      {
+        "bevel": 0,
+        "bevel_segments": 3,
+        "depth": 0.85,
+        "export": false,
+        "location": [
+          0,
+          0.46,
+          14.575
+        ],
+        "primitive": "cone",
+        "radius1": 0.48,
+        "radius2": 1.05,
+        "role": "leaf_finial_lower",
+        "scale": [
+          1,
+          0.575,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0,
+        "bevel_segments": 3,
+        "depth": 1.75,
+        "export": false,
+        "location": [
+          0,
+          0.46,
+          15.875
+        ],
+        "primitive": "cone",
+        "radius1": 1.05,
+        "radius2": 0.27,
+        "role": "leaf_finial_tip",
+        "scale": [
+          1,
+          0.575,
+          1
+        ],
+        "vertices": 4
+      }
+    ],
+    "design": {
+      "compatible_mount": "aurelian.spear@1",
+      "note": "Extended upper shaft and wider seated crossbar for a large rectangular banner field; the hand grip and lower shaft are unchanged.",
+      "shaft_diameter_mm": 1.02,
+      "support_target": "upright, no removable supports; pending sliced validation"
+    },
+    "landmarks": {
+      "banner_mount": [
+        0,
+        -0.1,
+        8.2
+      ],
+      "crossbar_left": [
+        -3.6,
+        0.04,
+        13.65
+      ],
+      "crossbar_right": [
+        3.6,
+        0.04,
+        13.65
+      ],
+      "foot": [
+        0,
+        0.46,
+        -6.15
+      ],
+      "grip": [
+        0,
+        0.46,
+        -0.4
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "crossbar",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "standard_pole"
+      },
+      {
+        "operand": "finial_collar",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "standard_pole"
+      },
+      {
+        "operand": "leaf_finial_lower",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "standard_pole"
+      },
+      {
+        "operand": "leaf_finial_tip",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "standard_pole"
+      }
+    ]
+  }
+}

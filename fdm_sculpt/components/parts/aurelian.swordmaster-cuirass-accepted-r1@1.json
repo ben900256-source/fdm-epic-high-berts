@@ -1,0 +1,315 @@
+{
+  "component_id": "aurelian.swordmaster-cuirass-accepted-r1",
+  "version": 1,
+  "name": "Swordmaster heavy ridged cuirass \u2014 accepted infantry detail",
+  "family": "chest-plate",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "smooth_chest_plate"
+  ],
+  "parameters": {
+    "accepted_army": {
+      "accepted_reference": "wider-shield-infantry-3-trial",
+      "print_scale": 1.3,
+      "seed": 1001,
+      "source": "aurelian.swordmaster-cuirass@1",
+      "source_sha256": "b89d0d422b55f553a005d11743d11a6066bf405ea0cc0f4d8da718de69a4f80c",
+      "status": "visual-only",
+      "treatment": "15 percent broader body with original unit armour/cloth"
+    },
+    "atoms": [
+      {
+        "dimensions": [
+          2.783,
+          1.98,
+          2.3
+        ],
+        "export": true,
+        "location": [
+          0.0,
+          -0.2,
+          0.15
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "smooth_chest_plate",
+        "segments": 48
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          4.6,
+          1.3,
+          4
+        ],
+        "export": false,
+        "location": [
+          0.0,
+          -0.75,
+          0
+        ],
+        "primitive": "cube",
+        "role": "plate_front_extent"
+      },
+      {
+        "dimensions": [
+          1.196,
+          2.6,
+          1.32
+        ],
+        "export": false,
+        "location": [
+          -1.426,
+          0,
+          0.8
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "left_armhole",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.196,
+          2.6,
+          1.32
+        ],
+        "export": false,
+        "location": [
+          1.426,
+          0,
+          0.8
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_armhole",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.035,
+          1.9,
+          0.78
+        ],
+        "export": false,
+        "location": [
+          0.0,
+          0,
+          1.37
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "neckline",
+        "segments": 32
+      },
+      {
+        "bevel": 0.025,
+        "dimensions": [
+          0.6669999999999999,
+          0.58,
+          2.3
+        ],
+        "export": false,
+        "location": [
+          0.0,
+          -0.82,
+          0.15
+        ],
+        "primitive": "cube",
+        "role": "central_pleat",
+        "rotation": [
+          0,
+          0,
+          0.7853981633974483
+        ]
+      },
+      {
+        "dimensions": [
+          2.553,
+          2.02,
+          2.3
+        ],
+        "export": false,
+        "location": [
+          0.0,
+          -0.2,
+          0.15
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "pleat_contour",
+        "segments": 48
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.8049999999999999,
+          -0.65,
+          0.93
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.15,
+        "role": "collar_-1",
+        "start": [
+          0.0,
+          -0.76,
+          1.08
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.8049999999999999,
+          -0.98,
+          0.67
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "chest_ridge_-1",
+        "start": [
+          0.0,
+          -1.16,
+          0.12
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.8049999999999999,
+          -0.65,
+          0.93
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.15,
+        "role": "collar_1",
+        "start": [
+          0.0,
+          -0.76,
+          1.08
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.8049999999999999,
+          -0.98,
+          0.67
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.13,
+        "role": "chest_ridge_1",
+        "start": [
+          0.0,
+          -1.16,
+          0.12
+        ]
+      }
+    ],
+    "landmarks": {
+      "central_pleat": [
+        0.0,
+        -1.21,
+        0.15
+      ],
+      "left_armhole": [
+        -1.426,
+        0,
+        0.8
+      ],
+      "mount": [
+        0.0,
+        0,
+        0
+      ],
+      "neckline": [
+        0.0,
+        0,
+        1.37
+      ],
+      "plate_center": [
+        0.0,
+        -0.2,
+        0.15
+      ],
+      "right_armhole": [
+        1.426,
+        0,
+        0.8
+      ]
+    },
+    "operations": [
+      {
+        "operand": "pleat_contour",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "central_pleat"
+      },
+      {
+        "operand": "central_pleat",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "smooth_chest_plate"
+      },
+      {
+        "operand": "plate_front_extent",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "smooth_chest_plate"
+      },
+      {
+        "operand": "left_armhole",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "smooth_chest_plate"
+      },
+      {
+        "operand": "right_armhole",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "smooth_chest_plate"
+      },
+      {
+        "operand": "neckline",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "smooth_chest_plate"
+      },
+      {
+        "operand": "collar_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "smooth_chest_plate"
+      },
+      {
+        "operand": "chest_ridge_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "smooth_chest_plate"
+      },
+      {
+        "operand": "collar_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "smooth_chest_plate"
+      },
+      {
+        "operand": "chest_ridge_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "smooth_chest_plate"
+      }
+    ],
+    "parent_definition_sha256": "0b63f168cab5f6c4ebd8920b730c9065282368eb0d236c5415b27f160a129318",
+    "parent_reference": "aurelian.chest-plate@4",
+    "seed": 1001
+  }
+}

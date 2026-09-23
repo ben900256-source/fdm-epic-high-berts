@@ -111,7 +111,7 @@ export async function initWorkshop({showReview,showSavedReview,initialReview,con
     if(!response.ok)throw new Error('Could not load experiments');
     const index=await response.json();
     if(sequence!==reviewSequence)return;
-    const choices=index.reviews.filter(r=>!r.id.startsWith('isolated-')&&/trial|kit/i.test(r.id+' '+r.label)).reverse();
+    const choices=index.reviews.filter(r=>r.id===selected||(!r.id.startsWith('isolated-')&&/trial|kit|accepted detail|accepted wider-shield/i.test(r.id+' '+r.label))).reverse();
     const previous=selected||$('trial-review').value;
     $('trial-review').replaceChildren(...choices.map(r=>new Option(r.label,r.id)));
     if(choices.some(r=>r.id===previous))$('trial-review').value=previous;

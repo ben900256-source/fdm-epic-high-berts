@@ -1,7 +1,6 @@
 {
   "schema_version": 1,
   "assembly_id": "aurelian-dragon-prince",
-  "label": "Dragon Prince cavalry",
   "placements": [
     {
       "instance_id": "base",
@@ -222,8 +221,8 @@
     },
     {
       "instance_id": "prince-01/torso",
-      "part": "aurelian.torso@2",
-      "definition_sha256": "c16b3f70d2ca8bc86a2a6d03f8ad4f1de395fd6595f9c40938903c726271c8fa",
+      "part": "aurelian.torso-accepted-r2@1",
+      "definition_sha256": "56348ba7f45fff54e6fe5b0f3d627ce7c33a2b0d5e990fe11221acd7d77c0ca4",
       "mount": [
         [
           1.0,
@@ -253,8 +252,8 @@
     },
     {
       "instance_id": "prince-01/cuirass",
-      "part": "aurelian.swordmaster-cuirass@1",
-      "definition_sha256": "b89d0d422b55f553a005d11743d11a6066bf405ea0cc0f4d8da718de69a4f80c",
+      "part": "aurelian.swordmaster-cuirass-accepted-r1@1",
+      "definition_sha256": "3933a6058177baf4998f511e7b41fa8a5c60adab424964ea43a6fe5ec10dabfa",
       "mount": [
         [
           1.0,
@@ -346,8 +345,8 @@
     },
     {
       "instance_id": "prince-01/left-arm",
-      "part": "aurelian.dragon-prince-left-arm@1",
-      "definition_sha256": "dbd8e7cb55a6c98f3999e006a54320ee1484d65f82232e69eb54adca47479ff6",
+      "part": "aurelian.dragon-prince-left-arm-accepted-r1@1",
+      "definition_sha256": "f19e3d20206e63df3488cf95dcec0e74c61b745800ea634365b4ac726ff4fe9f",
       "mount": [
         [
           1.0,
@@ -377,8 +376,8 @@
     },
     {
       "instance_id": "prince-01/right-arm",
-      "part": "aurelian.dragon-prince-right-arm@1",
-      "definition_sha256": "4f03e81de0cc5ba6785077e5a8a1f2607e193a83658fd32c2e941678e514fbe6",
+      "part": "aurelian.dragon-prince-right-arm-accepted-r1@1",
+      "definition_sha256": "90a9605c8980c0d493431b7603527eeaa3ef356f8709ced29fa09af48402bd36",
       "mount": [
         [
           1.0,
@@ -408,8 +407,8 @@
     },
     {
       "instance_id": "prince-01/head",
-      "part": "aurelian.head@12",
-      "definition_sha256": "539e53b2c3d83535370628a0464ba94cfdf613dbc8abbd580f6b16edc3f17efe",
+      "part": "aurelian.readable-head-trial@3",
+      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
       "mount": [
         [
           1.0,
@@ -439,8 +438,8 @@
     },
     {
       "instance_id": "prince-01/helmet",
-      "part": "aurelian.dragon-prince-helmet@6",
-      "definition_sha256": "c095483693fccce814d2a0f455519076b7276234a1d6d36b568fd9089a65b0f4",
+      "part": "aurelian.dragon-prince-helmet-accepted-r6@1",
+      "definition_sha256": "48ecf66c18adaa4ff6e96980c65375f470219407a1a3ddbe96a042256f5f6e19",
       "mount": [
         [
           1.0,
@@ -470,8 +469,8 @@
     },
     {
       "instance_id": "prince-01/lance",
-      "part": "aurelian.dragon-prince-lance@1",
-      "definition_sha256": "857c0846830d0558a9b120cc83d7df09d3e7d9ca1b08c2811de1b9430189fa45",
+      "part": "aurelian.dragon-prince-lance-accepted-r1@1",
+      "definition_sha256": "3d99f2ada8542788e5e3678f405b5f166a45947fd82d799eb0c49618735e27b2",
       "mount": [
         [
           1.0,
@@ -501,18 +500,18 @@
     },
     {
       "instance_id": "prince-01/shield",
-      "part": "aurelian.dragon-prince-shield@6",
-      "definition_sha256": "993ea1706245fc527feee5cbd4254c3ff3b2f8f602cebc46ee62c77593f7defc",
+      "part": "aurelian.dragon-prince-shield-accepted-r6@1",
+      "definition_sha256": "e70a4e3f45eeb6c602d002f76ccb6d617188c255b38522f5e5ba207f388af8dc",
       "mount": [
         [
-          0.766044443118978,
-          0.6427876096865393,
+          0.9396926207859084,
+          0.3420201433256687,
           0.0,
           -1.8213938048432696
         ],
         [
-          -0.6427876096865393,
-          0.766044443118978,
+          -0.3420201433256687,
+          0.9396926207859084,
           0.0,
           -1.383022221559489
         ],
@@ -530,5 +529,6 @@
         ]
       ]
     }
-  ]
+  ],
+  "label": "Dragon Prince cavalry \u2014 accepted detail (visual-only)"
 }

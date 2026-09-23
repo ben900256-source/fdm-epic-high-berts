@@ -33,6 +33,10 @@
   seahorse (`aurelian.readable-insignia-trial@4`, 0.39 mm printed relief).
   Keep shield faces readable from the front and avoid pronounced inward rotation.
   Use the pinned five-pose print recipe in `specs/prusa-five-wider-shield-trial.json`.
+- Other current figures incorporate this design through the
+  [accepted army update](docs/accepted-army-update.md) and
+  `specs/accepted-army-index.json`. Their new reviews are visual-only; do not
+  extend the five-spearman physical acceptance to unprinted army variants.
 - Earlier accepted scale reference: [130% intact spearmen](specs/elf-print-target.json),
   five 10.4 mm sole-to-eye figures with 1.56 mm intact spear shafts on a
   26 × 6.5 × 1.3 mm strip. The user physically printed and accepted this target.

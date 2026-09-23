@@ -1,0 +1,340 @@
+{
+  "component_id": "aurelian.swordmaster-right-arm-pose-08-accepted-r1",
+  "version": 1,
+  "name": "Swordmaster right arm: low-guard \u2014 accepted infantry detail",
+  "family": "swordmaster-right-arm",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shoulder"
+  ],
+  "parameters": {
+    "accepted_army": {
+      "accepted_reference": "wider-shield-infantry-3-trial",
+      "elbow_shift_mm": [
+        0.2683281572999747,
+        -0.13416407864998736,
+        0
+      ],
+      "grip_landmarks_unchanged": true,
+      "hand_factor": 1.25,
+      "print_scale": 1.3,
+      "seed": 1001,
+      "sleeve_factor": 1.25,
+      "source": "aurelian.swordmaster-right-arm-pose-08@1",
+      "source_sha256": "de8d5ecbe1fdf918d1b226f170130cfe7c9220e8dcbfbccab68ae26b4564b1b1",
+      "status": "visual-only",
+      "treatment": "Fuller sleeve and hand, opened elbow, fixed equipment grip"
+    },
+    "atoms": [
+      {
+        "dimensions": [
+          1.3224999999999998,
+          1.265,
+          1.3224999999999998
+        ],
+        "export": true,
+        "location": [
+          0.98,
+          0.0,
+          0.72
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "shoulder",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.7683281572999747,
+          -0.8841640786499874,
+          -0.5900000000000001
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.5625,
+        "role": "upper_arm",
+        "start": [
+          0.98,
+          0,
+          0.72
+        ]
+      },
+      {
+        "dimensions": [
+          1.125,
+          1.125,
+          1.125
+        ],
+        "export": false,
+        "location": [
+          1.7683281572999747,
+          -0.8841640786499874,
+          -0.5900000000000001
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "elbow",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.45,
+          -1.95,
+          -0.25
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.5375,
+        "role": "forearm",
+        "start": [
+          1.7683281572999747,
+          -0.8841640786499874,
+          -0.5900000000000001
+        ]
+      },
+      {
+        "bevel": 0.13,
+        "dimensions": [
+          1.275,
+          1.225,
+          1.225
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.42261826174069944,
+            0.0,
+            0.9063077870366499,
+            0.48639872897584774
+          ],
+          [
+            0.383022221559489,
+            0.9063077870366499,
+            -0.17860619515673035,
+            -0.39971136376948535
+          ],
+          [
+            -0.8213938048432696,
+            0.42261826174069944,
+            0.383022221559489,
+            1.0394883779637076
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.45000000000000007,
+          -1.95,
+          -0.25
+        ],
+        "primitive": "cube",
+        "role": "palm"
+      },
+      {
+        "bevel": 0.09,
+        "dimensions": [
+          1.2,
+          0.42500000000000004,
+          1.0
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.42261826174069944,
+            0.0,
+            0.9063077870366499,
+            0.48639872897584774
+          ],
+          [
+            0.383022221559489,
+            0.9063077870366499,
+            -0.17860619515673035,
+            -0.39971136376948535
+          ],
+          [
+            -0.8213938048432696,
+            0.42261826174069944,
+            0.383022221559489,
+            1.0394883779637076
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.45000000000000007,
+          -2.33,
+          -0.25
+        ],
+        "primitive": "cube",
+        "role": "fingers"
+      },
+      {
+        "dimensions": [
+          0.6,
+          0.625,
+          0.6
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.42261826174069944,
+            0.0,
+            0.9063077870366499,
+            0.48639872897584774
+          ],
+          [
+            0.383022221559489,
+            0.9063077870366499,
+            -0.17860619515673035,
+            -0.39971136376948535
+          ],
+          [
+            -0.8213938048432696,
+            0.42261826174069944,
+            0.383022221559489,
+            1.0394883779637076
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.04999999999999999,
+          -2.1899999999999995,
+          0.07000000000000006
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "thumb",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.35,
+          1.25,
+          0.8
+        ],
+        "export": false,
+        "location": [
+          0.98,
+          -0.04,
+          0.94
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "pauldron",
+        "segments": 32
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.46,
+          -0.5,
+          0.77
+        ],
+        "export": false,
+        "primitive": "between",
+        "radius": 0.14,
+        "role": "pauldron_rim",
+        "start": [
+          0.5,
+          -0.5,
+          0.77
+        ]
+      }
+    ],
+    "landmarks": {
+      "elbow": [
+        1.7683281572999747,
+        -0.8841640786499874,
+        -0.5900000000000001
+      ],
+      "grip": [
+        0.45,
+        -1.95,
+        -0.25
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "shoulder": [
+        0.98,
+        0,
+        0.72
+      ]
+    },
+    "operations": [
+      {
+        "operand": "upper_arm",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder"
+      },
+      {
+        "operand": "elbow",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder"
+      },
+      {
+        "operand": "forearm",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder"
+      },
+      {
+        "operand": "palm",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder"
+      },
+      {
+        "operand": "fingers",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder"
+      },
+      {
+        "operand": "thumb",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder"
+      },
+      {
+        "operand": "pauldron",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder"
+      },
+      {
+        "operand": "pauldron_rim",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder"
+      }
+    ],
+    "pose": "low-guard",
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}

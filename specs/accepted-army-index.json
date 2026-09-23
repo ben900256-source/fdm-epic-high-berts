@@ -1,0 +1,607 @@
+{
+  "schema_version": 1,
+  "seed": 1001,
+  "export_scale": 1.3,
+  "status": "visual-only",
+  "source": "accepted-army-sources.json",
+  "accepted_reference": "experiments/wider-shield-infantry-3-trial.json",
+  "assemblies": [
+    "specs/elf-modular-visual.json",
+    "specs/elf-spearman-variants.json",
+    "specs/elf-forward-spearmen.json",
+    "specs/elf-spearman-hawk-sergeant.json",
+    "specs/elf-standard-bearer.json",
+    "specs/elf-unit-center-standard.json",
+    "specs/elf-archer.json",
+    "specs/elf-archer-sergeant.json",
+    "specs/elf-archer-variants.json",
+    "specs/elf-archer-rear-ranks.json",
+    "specs/elf-unit-archers.json",
+    "specs/elf-swordmaster.json",
+    "specs/elf-swordmaster-sergeant.json",
+    "specs/elf-swordmaster-variants.json",
+    "specs/elf-dragon-prince.json"
+  ],
+  "models": [
+    "specs/models/archers/01-aiming-forward.json",
+    "specs/models/archers/02-aiming-left.json",
+    "specs/models/archers/03-aiming-right.json",
+    "specs/models/archers/04-ready-forward.json",
+    "specs/models/archers/05-ready-turned.json",
+    "specs/models/archers/06-reaching-quiver.json",
+    "specs/models/archers/07-drawing-arrow.json",
+    "specs/models/archers/08-shortblade-low.json",
+    "specs/models/archers/09-shortblade-raised.json",
+    "specs/models/archers/10-after-release.json",
+    "specs/models/archers/11-aiming-up-20.json",
+    "specs/models/archers/12-aiming-up-30.json",
+    "specs/models/archers/13-aiming-up-40.json",
+    "specs/models/elf-archer-sergeant.json",
+    "specs/models/elf-archer.json",
+    "specs/models/elf-spearman-sword-sergeant.json",
+    "specs/models/elf-standard-bearer.json",
+    "specs/models/elf-swordmaster-sergeant.json",
+    "specs/models/elf-swordmaster.json",
+    "specs/models/spearmen/01-standing-guard.json",
+    "specs/models/spearmen/02-watching-left.json",
+    "specs/models/spearmen/03-watching-right.json",
+    "specs/models/spearmen/04-spear-forward.json",
+    "specs/models/spearmen/05-spear-outward.json",
+    "specs/models/spearmen/06-rear-rank-ready.json",
+    "specs/models/spearmen/07-sword-low.json",
+    "specs/models/spearmen/08-sword-guard.json",
+    "specs/models/spearmen/09-sword-raised.json",
+    "specs/models/spearmen/10-hawk-sergeant.json",
+    "specs/models/spearmen/11-forward-spear-00-degrees.json",
+    "specs/models/spearmen/12-forward-spear-05-degrees.json",
+    "specs/models/spearmen/13-forward-spear-10-degrees.json",
+    "specs/models/spearmen/14-forward-spear-15-degrees.json",
+    "specs/models/spearmen/15-forward-spear-20-degrees.json",
+    "specs/models/spearmen/16-forward-spear-25-degrees.json",
+    "specs/models/spearmen/17-forward-spear-30-degrees.json",
+    "specs/models/spearmen/18-forward-spear-35-degrees.json",
+    "specs/models/spearmen/19-forward-spear-40-degrees.json",
+    "specs/models/spearmen/20-forward-spear-45-degrees.json",
+    "specs/models/swordmasters/01-diagonal-guard.json",
+    "specs/models/swordmasters/02-high-guard.json",
+    "specs/models/swordmasters/03-left-guard.json",
+    "specs/models/swordmasters/04-wide-parry.json",
+    "specs/models/swordmasters/05-left-parry.json",
+    "specs/models/swordmasters/06-forward-point.json",
+    "specs/models/swordmasters/07-high-right.json",
+    "specs/models/swordmasters/08-low-guard.json",
+    "specs/models/swordmasters/09-recovering.json",
+    "specs/models/swordmasters/10-upright-guard.json"
+  ],
+  "replacements": {
+    "aurelian.head@12": "aurelian.readable-head-trial@3",
+    "aurelian.helmet@5": "aurelian.readable-helmet-trial@1",
+    "aurelian.helmet@7": "aurelian.readable-helmet-trial@1",
+    "aurelian.torso@4": "aurelian.readable-torso-trial@1",
+    "aurelian.chest-plate@4": "aurelian.readable-chest-plate-trial@1",
+    "aurelian.skirt@8": "aurelian.readable-mail-trial@3",
+    "aurelian.shield@2": "aurelian.shield@6",
+    "aurelian.shield-insignia@4": "aurelian.readable-insignia-trial@4",
+    "aurelian.spear@5": "aurelian.uniform-spear-140-trial@3",
+    "aurelian.base-body-4x5-plain@1": "aurelian.glue-footing@1",
+    "aurelian.archer-blade-raised-arm@6": "aurelian.archer-blade-raised-arm-accepted-r6@1",
+    "aurelian.archer-bow-arm-elevated-20@6": "aurelian.archer-bow-arm-elevated-20-accepted-r6@1",
+    "aurelian.archer-bow-arm-elevated-30@6": "aurelian.archer-bow-arm-elevated-30-accepted-r6@1",
+    "aurelian.archer-bow-arm-elevated-40@6": "aurelian.archer-bow-arm-elevated-40-accepted-r6@1",
+    "aurelian.archer-bow-arm@10": "aurelian.archer-bow-arm-accepted-r10@1",
+    "aurelian.archer-bow-arm@11": "aurelian.archer-bow-arm-accepted-r11@1",
+    "aurelian.archer-bow-arm@12": "aurelian.archer-bow-arm-accepted-r12@1",
+    "aurelian.archer-bow-arm@13": "aurelian.archer-bow-arm-accepted-r13@1",
+    "aurelian.archer-bow-arm@7": "aurelian.archer-bow-arm-accepted-r7@1",
+    "aurelian.archer-bow-arm@8": "aurelian.archer-bow-arm-accepted-r8@1",
+    "aurelian.archer-bow-arm@9": "aurelian.archer-bow-arm-accepted-r9@1",
+    "aurelian.archer-draw-arm-elevated-20@5": "aurelian.archer-draw-arm-elevated-20-accepted-r5@1",
+    "aurelian.archer-draw-arm-elevated-30@5": "aurelian.archer-draw-arm-elevated-30-accepted-r5@1",
+    "aurelian.archer-draw-arm-elevated-40@5": "aurelian.archer-draw-arm-elevated-40-accepted-r5@1",
+    "aurelian.archer-draw-arm@6": "aurelian.archer-draw-arm-accepted-r6@1",
+    "aurelian.archer-quiver-bow-arm@6": "aurelian.archer-quiver-bow-arm-accepted-r6@1",
+    "aurelian.archer-quiver-pull-arm@8": "aurelian.archer-quiver-pull-arm-accepted-r8@1",
+    "aurelian.archer-quiver-reach-arm@6": "aurelian.archer-quiver-reach-arm-accepted-r6@1",
+    "aurelian.archer-ready-arm@5": "aurelian.archer-ready-arm-accepted-r5@1",
+    "aurelian.archer-ready-arm@6": "aurelian.archer-ready-arm-accepted-r6@1",
+    "aurelian.archer-relaxed-bow-arm@6": "aurelian.archer-relaxed-bow-arm-accepted-r6@1",
+    "aurelian.archer-release-arm@5": "aurelian.archer-release-arm-accepted-r5@1",
+    "aurelian.archer-side-bow-arm@7": "aurelian.archer-side-bow-arm-accepted-r7@1",
+    "aurelian.archer-signal-horn-arm@7": "aurelian.archer-signal-horn-arm-accepted-r7@1",
+    "aurelian.archer-tunic@5": "aurelian.archer-tunic-accepted-r5@1",
+    "aurelian.dragon-prince-helmet@6": "aurelian.dragon-prince-helmet-accepted-r6@1",
+    "aurelian.dragon-prince-lance@1": "aurelian.dragon-prince-lance-accepted-r1@1",
+    "aurelian.dragon-prince-left-arm@1": "aurelian.dragon-prince-left-arm-accepted-r1@1",
+    "aurelian.dragon-prince-right-arm@1": "aurelian.dragon-prince-right-arm-accepted-r1@1",
+    "aurelian.dragon-prince-shield@6": "aurelian.dragon-prince-shield-accepted-r6@1",
+    "aurelian.forward-spear-arm-01@2": "aurelian.forward-spear-arm-01-accepted-r2@1",
+    "aurelian.forward-spear-arm-02@2": "aurelian.forward-spear-arm-02-accepted-r2@1",
+    "aurelian.forward-spear-arm-03@2": "aurelian.forward-spear-arm-03-accepted-r2@1",
+    "aurelian.forward-spear-arm-04@2": "aurelian.forward-spear-arm-04-accepted-r2@1",
+    "aurelian.forward-spear-arm-05@2": "aurelian.forward-spear-arm-05-accepted-r2@1",
+    "aurelian.forward-spear-arm-06@2": "aurelian.forward-spear-arm-06-accepted-r2@1",
+    "aurelian.forward-spear-arm-07@2": "aurelian.forward-spear-arm-07-accepted-r2@1",
+    "aurelian.forward-spear-arm-08@2": "aurelian.forward-spear-arm-08-accepted-r2@1",
+    "aurelian.forward-spear-arm-09@2": "aurelian.forward-spear-arm-09-accepted-r2@1",
+    "aurelian.forward-spear-arm-10@2": "aurelian.forward-spear-arm-10-accepted-r2@1",
+    "aurelian.horn-arm@12": "aurelian.horn-arm-accepted-r12@1",
+    "aurelian.left-arm-b@10": "aurelian.left-arm-b-accepted-r10@1",
+    "aurelian.left-arm-c@10": "aurelian.left-arm-c-accepted-r10@1",
+    "aurelian.left-arm-d@10": "aurelian.left-arm-d-accepted-r10@1",
+    "aurelian.left-arm-e@10": "aurelian.left-arm-e-accepted-r10@1",
+    "aurelian.left-arm@12": "aurelian.left-arm-accepted-r12@1",
+    "aurelian.right-arm-b@9": "aurelian.right-arm-b-accepted-r9@1",
+    "aurelian.right-arm-c@11": "aurelian.right-arm-c-accepted-r11@1",
+    "aurelian.right-arm-c@12": "aurelian.right-arm-c-accepted-r12@1",
+    "aurelian.right-arm-d@10": "aurelian.right-arm-d-accepted-r10@1",
+    "aurelian.right-arm-e@10": "aurelian.right-arm-e-accepted-r10@1",
+    "aurelian.right-arm@9": "aurelian.right-arm-accepted-r9@1",
+    "aurelian.sergeant-helmet@6": "aurelian.sergeant-helmet-accepted-r6@1",
+    "aurelian.spearman-hawk-arm@7": "aurelian.spearman-hawk-arm-accepted-r7@1",
+    "aurelian.spearman-sword-guard-arm@8": "aurelian.spearman-sword-guard-arm-accepted-r8@1",
+    "aurelian.spearman-sword-low-arm@8": "aurelian.spearman-sword-low-arm-accepted-r8@1",
+    "aurelian.spearman-sword-raised-arm@8": "aurelian.spearman-sword-raised-arm-accepted-r8@1",
+    "aurelian.standard-insignia@1": "aurelian.standard-insignia-accepted-r1@1",
+    "aurelian.standard-pole@4": "aurelian.standard-pole-accepted-r4@1",
+    "aurelian.swordmaster-cuirass@1": "aurelian.swordmaster-cuirass-accepted-r1@1",
+    "aurelian.swordmaster-left-arm-pose-02@1": "aurelian.swordmaster-left-arm-pose-02-accepted-r1@1",
+    "aurelian.swordmaster-left-arm-pose-03@1": "aurelian.swordmaster-left-arm-pose-03-accepted-r1@1",
+    "aurelian.swordmaster-left-arm-pose-04@1": "aurelian.swordmaster-left-arm-pose-04-accepted-r1@1",
+    "aurelian.swordmaster-left-arm-pose-05@1": "aurelian.swordmaster-left-arm-pose-05-accepted-r1@1",
+    "aurelian.swordmaster-left-arm-pose-06@1": "aurelian.swordmaster-left-arm-pose-06-accepted-r1@1",
+    "aurelian.swordmaster-left-arm-pose-07@1": "aurelian.swordmaster-left-arm-pose-07-accepted-r1@1",
+    "aurelian.swordmaster-left-arm-pose-08@1": "aurelian.swordmaster-left-arm-pose-08-accepted-r1@1",
+    "aurelian.swordmaster-left-arm-pose-09@1": "aurelian.swordmaster-left-arm-pose-09-accepted-r1@1",
+    "aurelian.swordmaster-left-arm-pose-10@1": "aurelian.swordmaster-left-arm-pose-10-accepted-r1@1",
+    "aurelian.swordmaster-left-arm@1": "aurelian.swordmaster-left-arm-accepted-r1@1",
+    "aurelian.swordmaster-right-arm-pose-02@1": "aurelian.swordmaster-right-arm-pose-02-accepted-r1@1",
+    "aurelian.swordmaster-right-arm-pose-03@1": "aurelian.swordmaster-right-arm-pose-03-accepted-r1@1",
+    "aurelian.swordmaster-right-arm-pose-04@1": "aurelian.swordmaster-right-arm-pose-04-accepted-r1@1",
+    "aurelian.swordmaster-right-arm-pose-05@1": "aurelian.swordmaster-right-arm-pose-05-accepted-r1@1",
+    "aurelian.swordmaster-right-arm-pose-06@1": "aurelian.swordmaster-right-arm-pose-06-accepted-r1@1",
+    "aurelian.swordmaster-right-arm-pose-07@1": "aurelian.swordmaster-right-arm-pose-07-accepted-r1@1",
+    "aurelian.swordmaster-right-arm-pose-08@1": "aurelian.swordmaster-right-arm-pose-08-accepted-r1@1",
+    "aurelian.swordmaster-right-arm-pose-09@1": "aurelian.swordmaster-right-arm-pose-09-accepted-r1@1",
+    "aurelian.swordmaster-right-arm-pose-10@1": "aurelian.swordmaster-right-arm-pose-10-accepted-r1@1",
+    "aurelian.swordmaster-right-arm@1": "aurelian.swordmaster-right-arm-accepted-r1@1",
+    "aurelian.swordmaster-sergeant-helmet@2": "aurelian.swordmaster-sergeant-helmet-accepted-r2@1",
+    "aurelian.torso@2": "aurelian.torso-accepted-r2@1"
+  },
+  "new_parts": [
+    "aurelian.accepted-helmet-join-001037da9694@1",
+    "aurelian.accepted-helmet-join-08d67724991b@1",
+    "aurelian.accepted-helmet-join-0e1e2e7a0a11@1",
+    "aurelian.accepted-helmet-join-16caf8130b34@1",
+    "aurelian.accepted-helmet-join-2a51ce7cdcf4@1",
+    "aurelian.accepted-helmet-join-58180a641d4c@1",
+    "aurelian.accepted-helmet-join-76e2ebf1e913@1",
+    "aurelian.accepted-helmet-join-7855dbe969d0@1",
+    "aurelian.accepted-helmet-join-84e8b066e55c@1",
+    "aurelian.accepted-helmet-join-8ca3e3131aae@1",
+    "aurelian.accepted-helmet-join-c58e7e1669c6@1",
+    "aurelian.accepted-helmet-join-d394038d1df8@1",
+    "aurelian.accepted-helmet-join-e78afe5a0b69@1",
+    "aurelian.accepted-helmet-join-e78e6b185491@1",
+    "aurelian.accepted-helmet-join-eab1fb3eac5e@1",
+    "aurelian.accepted-helmet-join-ebc259cfc6b9@1",
+    "aurelian.archer-blade-raised-arm-accepted-r6@1",
+    "aurelian.archer-bow-arm-accepted-r10@1",
+    "aurelian.archer-bow-arm-accepted-r11@1",
+    "aurelian.archer-bow-arm-accepted-r12@1",
+    "aurelian.archer-bow-arm-accepted-r13@1",
+    "aurelian.archer-bow-arm-accepted-r7@1",
+    "aurelian.archer-bow-arm-accepted-r8@1",
+    "aurelian.archer-bow-arm-accepted-r9@1",
+    "aurelian.archer-bow-arm-elevated-20-accepted-r6@1",
+    "aurelian.archer-bow-arm-elevated-30-accepted-r6@1",
+    "aurelian.archer-bow-arm-elevated-40-accepted-r6@1",
+    "aurelian.archer-draw-arm-accepted-r6@1",
+    "aurelian.archer-draw-arm-elevated-20-accepted-r5@1",
+    "aurelian.archer-draw-arm-elevated-30-accepted-r5@1",
+    "aurelian.archer-draw-arm-elevated-40-accepted-r5@1",
+    "aurelian.archer-quiver-bow-arm-accepted-r6@1",
+    "aurelian.archer-quiver-pull-arm-accepted-r8@1",
+    "aurelian.archer-quiver-reach-arm-accepted-r6@1",
+    "aurelian.archer-ready-arm-accepted-r5@1",
+    "aurelian.archer-ready-arm-accepted-r6@1",
+    "aurelian.archer-relaxed-bow-arm-accepted-r6@1",
+    "aurelian.archer-release-arm-accepted-r5@1",
+    "aurelian.archer-side-bow-arm-accepted-r7@1",
+    "aurelian.archer-signal-horn-arm-accepted-r7@1",
+    "aurelian.archer-tunic-accepted-r5@1",
+    "aurelian.dragon-prince-helmet-accepted-r6@1",
+    "aurelian.dragon-prince-lance-accepted-r1@1",
+    "aurelian.dragon-prince-left-arm-accepted-r1@1",
+    "aurelian.dragon-prince-right-arm-accepted-r1@1",
+    "aurelian.dragon-prince-shield-accepted-r6@1",
+    "aurelian.forward-spear-arm-01-accepted-r2@1",
+    "aurelian.forward-spear-arm-02-accepted-r2@1",
+    "aurelian.forward-spear-arm-03-accepted-r2@1",
+    "aurelian.forward-spear-arm-04-accepted-r2@1",
+    "aurelian.forward-spear-arm-05-accepted-r2@1",
+    "aurelian.forward-spear-arm-06-accepted-r2@1",
+    "aurelian.forward-spear-arm-07-accepted-r2@1",
+    "aurelian.forward-spear-arm-08-accepted-r2@1",
+    "aurelian.forward-spear-arm-09-accepted-r2@1",
+    "aurelian.forward-spear-arm-10-accepted-r2@1",
+    "aurelian.horn-arm-accepted-r12@1",
+    "aurelian.left-arm-accepted-r12@1",
+    "aurelian.left-arm-b-accepted-r10@1",
+    "aurelian.left-arm-c-accepted-r10@1",
+    "aurelian.left-arm-d-accepted-r10@1",
+    "aurelian.left-arm-e-accepted-r10@1",
+    "aurelian.right-arm-accepted-r9@1",
+    "aurelian.right-arm-b-accepted-r9@1",
+    "aurelian.right-arm-c-accepted-r11@1",
+    "aurelian.right-arm-c-accepted-r12@1",
+    "aurelian.right-arm-d-accepted-r10@1",
+    "aurelian.right-arm-e-accepted-r10@1",
+    "aurelian.sergeant-helmet-accepted-r6@1",
+    "aurelian.spearman-hawk-arm-accepted-r7@1",
+    "aurelian.spearman-sword-guard-arm-accepted-r8@1",
+    "aurelian.spearman-sword-low-arm-accepted-r8@1",
+    "aurelian.spearman-sword-raised-arm-accepted-r8@1",
+    "aurelian.standard-insignia-accepted-r1@1",
+    "aurelian.standard-pole-accepted-r4@1",
+    "aurelian.swordmaster-cuirass-accepted-r1@1",
+    "aurelian.swordmaster-left-arm-accepted-r1@1",
+    "aurelian.swordmaster-left-arm-pose-02-accepted-r1@1",
+    "aurelian.swordmaster-left-arm-pose-03-accepted-r1@1",
+    "aurelian.swordmaster-left-arm-pose-04-accepted-r1@1",
+    "aurelian.swordmaster-left-arm-pose-05-accepted-r1@1",
+    "aurelian.swordmaster-left-arm-pose-06-accepted-r1@1",
+    "aurelian.swordmaster-left-arm-pose-07-accepted-r1@1",
+    "aurelian.swordmaster-left-arm-pose-08-accepted-r1@1",
+    "aurelian.swordmaster-left-arm-pose-09-accepted-r1@1",
+    "aurelian.swordmaster-left-arm-pose-10-accepted-r1@1",
+    "aurelian.swordmaster-right-arm-accepted-r1@1",
+    "aurelian.swordmaster-right-arm-pose-02-accepted-r1@1",
+    "aurelian.swordmaster-right-arm-pose-03-accepted-r1@1",
+    "aurelian.swordmaster-right-arm-pose-04-accepted-r1@1",
+    "aurelian.swordmaster-right-arm-pose-05-accepted-r1@1",
+    "aurelian.swordmaster-right-arm-pose-06-accepted-r1@1",
+    "aurelian.swordmaster-right-arm-pose-07-accepted-r1@1",
+    "aurelian.swordmaster-right-arm-pose-08-accepted-r1@1",
+    "aurelian.swordmaster-right-arm-pose-09-accepted-r1@1",
+    "aurelian.swordmaster-right-arm-pose-10-accepted-r1@1",
+    "aurelian.swordmaster-sergeant-helmet-accepted-r2@1",
+    "aurelian.torso-accepted-r2@1"
+  ],
+  "shield_turns": {
+    "specs/elf-modular-visual.json": [
+      {
+        "figure": "elf-01",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      },
+      {
+        "figure": "elf-02",
+        "before_degrees": 6.000000017511837,
+        "after_degrees": 6.000000017511837
+      },
+      {
+        "figure": "elf-03",
+        "before_degrees": -1.9999999860964692,
+        "after_degrees": -1.9999999860964692
+      },
+      {
+        "figure": "elf-04",
+        "before_degrees": 7.999999992645854,
+        "after_degrees": 7.999999992645854
+      },
+      {
+        "figure": "elf-05",
+        "before_degrees": -6.999999997329041,
+        "after_degrees": -6.999999997329041
+      }
+    ],
+    "specs/elf-spearman-variants.json": [
+      {
+        "figure": "variant-01-standing-guard",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      },
+      {
+        "figure": "variant-02-watching-left",
+        "before_degrees": 6.000000017511837,
+        "after_degrees": 6.000000017511837
+      },
+      {
+        "figure": "variant-03-watching-right",
+        "before_degrees": -1.9999999860964692,
+        "after_degrees": -1.9999999860964692
+      },
+      {
+        "figure": "variant-04-spear-forward",
+        "before_degrees": 7.999999992645854,
+        "after_degrees": 7.999999992645854
+      },
+      {
+        "figure": "variant-05-spear-outward",
+        "before_degrees": -6.999999997329041,
+        "after_degrees": -6.999999997329041
+      },
+      {
+        "figure": "variant-06-rear-rank-ready",
+        "before_degrees": -1.9999999860964692,
+        "after_degrees": -1.9999999860964692
+      },
+      {
+        "figure": "variant-07-sword-low",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      },
+      {
+        "figure": "variant-08-sword-guard",
+        "before_degrees": 6.000000017511837,
+        "after_degrees": 6.000000017511837
+      },
+      {
+        "figure": "variant-09-sword-raised",
+        "before_degrees": 7.999999992645854,
+        "after_degrees": 7.999999992645854
+      }
+    ],
+    "specs/elf-forward-spearmen.json": [
+      {
+        "figure": "forward-01",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      },
+      {
+        "figure": "forward-02",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      },
+      {
+        "figure": "forward-03",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      },
+      {
+        "figure": "forward-04",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      },
+      {
+        "figure": "forward-05",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      },
+      {
+        "figure": "forward-06",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      },
+      {
+        "figure": "forward-07",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      },
+      {
+        "figure": "forward-08",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      },
+      {
+        "figure": "forward-09",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      },
+      {
+        "figure": "forward-10",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      }
+    ],
+    "specs/elf-spearman-hawk-sergeant.json": [],
+    "specs/elf-standard-bearer.json": [],
+    "specs/elf-unit-center-standard.json": [
+      {
+        "figure": "elf-01",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      },
+      {
+        "figure": "elf-02",
+        "before_degrees": 6.000000017511837,
+        "after_degrees": 6.000000017511837
+      },
+      {
+        "figure": "elf-04",
+        "before_degrees": 7.999999992645854,
+        "after_degrees": 7.999999992645854
+      },
+      {
+        "figure": "elf-05",
+        "before_degrees": -6.999999997329041,
+        "after_degrees": -6.999999997329041
+      }
+    ],
+    "specs/elf-archer.json": [],
+    "specs/elf-archer-sergeant.json": [],
+    "specs/elf-archer-variants.json": [],
+    "specs/elf-archer-rear-ranks.json": [],
+    "specs/elf-unit-archers.json": [],
+    "specs/elf-swordmaster.json": [],
+    "specs/elf-swordmaster-sergeant.json": [],
+    "specs/elf-swordmaster-variants.json": [],
+    "specs/elf-dragon-prince.json": [
+      {
+        "figure": "prince-01",
+        "before_degrees": -40.0,
+        "after_degrees": -20
+      }
+    ],
+    "specs/models/archers/01-aiming-forward.json": [],
+    "specs/models/archers/02-aiming-left.json": [],
+    "specs/models/archers/03-aiming-right.json": [],
+    "specs/models/archers/04-ready-forward.json": [],
+    "specs/models/archers/05-ready-turned.json": [],
+    "specs/models/archers/06-reaching-quiver.json": [],
+    "specs/models/archers/07-drawing-arrow.json": [],
+    "specs/models/archers/08-shortblade-low.json": [],
+    "specs/models/archers/09-shortblade-raised.json": [],
+    "specs/models/archers/10-after-release.json": [],
+    "specs/models/archers/11-aiming-up-20.json": [],
+    "specs/models/archers/12-aiming-up-30.json": [],
+    "specs/models/archers/13-aiming-up-40.json": [],
+    "specs/models/elf-archer-sergeant.json": [],
+    "specs/models/elf-archer.json": [],
+    "specs/models/elf-spearman-sword-sergeant.json": [
+      {
+        "figure": "figure",
+        "before_degrees": 7.999999992645854,
+        "after_degrees": 7.999999992645854
+      }
+    ],
+    "specs/models/elf-standard-bearer.json": [],
+    "specs/models/elf-swordmaster-sergeant.json": [],
+    "specs/models/elf-swordmaster.json": [],
+    "specs/models/spearmen/01-standing-guard.json": [
+      {
+        "figure": "figure",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      }
+    ],
+    "specs/models/spearmen/02-watching-left.json": [
+      {
+        "figure": "figure",
+        "before_degrees": 6.000000017511837,
+        "after_degrees": 6.000000017511837
+      }
+    ],
+    "specs/models/spearmen/03-watching-right.json": [
+      {
+        "figure": "figure",
+        "before_degrees": -1.9999999860964692,
+        "after_degrees": -1.9999999860964692
+      }
+    ],
+    "specs/models/spearmen/04-spear-forward.json": [
+      {
+        "figure": "figure",
+        "before_degrees": 7.999999992645854,
+        "after_degrees": 7.999999992645854
+      }
+    ],
+    "specs/models/spearmen/05-spear-outward.json": [
+      {
+        "figure": "figure",
+        "before_degrees": -6.999999997329041,
+        "after_degrees": -6.999999997329041
+      }
+    ],
+    "specs/models/spearmen/06-rear-rank-ready.json": [
+      {
+        "figure": "figure",
+        "before_degrees": -1.9999999860964692,
+        "after_degrees": -1.9999999860964692
+      }
+    ],
+    "specs/models/spearmen/07-sword-low.json": [
+      {
+        "figure": "figure",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      }
+    ],
+    "specs/models/spearmen/08-sword-guard.json": [
+      {
+        "figure": "figure",
+        "before_degrees": 6.000000017511837,
+        "after_degrees": 6.000000017511837
+      }
+    ],
+    "specs/models/spearmen/09-sword-raised.json": [
+      {
+        "figure": "figure",
+        "before_degrees": 7.999999992645854,
+        "after_degrees": 7.999999992645854
+      }
+    ],
+    "specs/models/spearmen/10-hawk-sergeant.json": [],
+    "specs/models/spearmen/11-forward-spear-00-degrees.json": [
+      {
+        "figure": "figure",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      }
+    ],
+    "specs/models/spearmen/12-forward-spear-05-degrees.json": [
+      {
+        "figure": "figure",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      }
+    ],
+    "specs/models/spearmen/13-forward-spear-10-degrees.json": [
+      {
+        "figure": "figure",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      }
+    ],
+    "specs/models/spearmen/14-forward-spear-15-degrees.json": [
+      {
+        "figure": "figure",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      }
+    ],
+    "specs/models/spearmen/15-forward-spear-20-degrees.json": [
+      {
+        "figure": "figure",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      }
+    ],
+    "specs/models/spearmen/16-forward-spear-25-degrees.json": [
+      {
+        "figure": "figure",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      }
+    ],
+    "specs/models/spearmen/17-forward-spear-30-degrees.json": [
+      {
+        "figure": "figure",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      }
+    ],
+    "specs/models/spearmen/18-forward-spear-35-degrees.json": [
+      {
+        "figure": "figure",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      }
+    ],
+    "specs/models/spearmen/19-forward-spear-40-degrees.json": [
+      {
+        "figure": "figure",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      }
+    ],
+    "specs/models/spearmen/20-forward-spear-45-degrees.json": [
+      {
+        "figure": "figure",
+        "before_degrees": -0.999999965974439,
+        "after_degrees": -0.999999965974439
+      }
+    ],
+    "specs/models/swordmasters/01-diagonal-guard.json": [],
+    "specs/models/swordmasters/02-high-guard.json": [],
+    "specs/models/swordmasters/03-left-guard.json": [],
+    "specs/models/swordmasters/04-wide-parry.json": [],
+    "specs/models/swordmasters/05-left-parry.json": [],
+    "specs/models/swordmasters/06-forward-point.json": [],
+    "specs/models/swordmasters/07-high-right.json": [],
+    "specs/models/swordmasters/08-low-guard.json": [],
+    "specs/models/swordmasters/09-recovering.json": [],
+    "specs/models/swordmasters/10-upright-guard.json": []
+  },
+  "notes": "Broader bodies, full arms and grips, readable faces/mail, raised emblems and broad leaf weapons. Physical acceptance applies only to the original five-pose infantry test."
+}

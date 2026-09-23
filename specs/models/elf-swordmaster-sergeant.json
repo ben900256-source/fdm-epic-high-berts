@@ -2,76 +2,12 @@
   "schema_version": 1,
   "model_id": "aurelian-swordmaster-sergeant",
   "source": {
-    "assembly": "../elf-swordmaster-variants.json",
-    "figure": "variant-10-upright-guard",
+    "assembly": "../accepted-army-models/elf-swordmaster-sergeant.json",
+    "figure": "elf-swordmaster-sergeant",
     "origin_mm": [
-      20,
-      15,
+      0,
+      0,
       0
     ]
-  },
-  "parts": [
-    {
-      "instance_id": "helmet",
-      "part": "aurelian.swordmaster-sergeant-helmet@2",
-      "definition_sha256": "12c4fd7a2a49401a2dba9d5ba61e80dd789152f0236faeb853db7d38221cac6e",
-      "mount": [
-        [
-          0.9975640502598242,
-          -0.0697564737441253,
-          0.0,
-          0.011724989473194114
-        ],
-        [
-          0.0697564737441253,
-          0.9975640502598242,
-          0.0,
-          -0.1355148344053223
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          8.197198264
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ]
-    },
-    {
-      "instance_id": "waist-armour",
-      "part": "aurelian.swordmaster-sergeant-waist@3",
-      "definition_sha256": "815afdb8eb188966b4cf35d48fe716c312e4e3f67a0fca78fe7fa48cf7615480",
-      "mount": [
-        [
-          0.999390827020799,
-          -0.03486888379654803,
-          0.001461439463076196,
-          0.002119086786507296
-        ],
-        [
-          0.03489949640439459,
-          0.9985141910071047,
-          -0.04185014398382902,
-          -0.060682709007455315
-        ],
-        [
-          0.0,
-          0.041875654,
-          0.99912283,
-          6.198728104
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ]
-    }
-  ]
+  }
 }

@@ -1,0 +1,82 @@
+{
+  "component_id": "aurelian.torso-accepted-r2",
+  "version": 1,
+  "name": "Torso fitted beneath curved breastplate \u2014 accepted infantry detail",
+  "family": "torso",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "torso",
+    "collar"
+  ],
+  "parameters": {
+    "accepted_army": {
+      "accepted_reference": "wider-shield-infantry-3-trial",
+      "print_scale": 1.3,
+      "seed": 1001,
+      "source": "aurelian.torso@2",
+      "source_sha256": "c16b3f70d2ca8bc86a2a6d03f8ad4f1de395fd6595f9c40938903c726271c8fa",
+      "status": "visual-only",
+      "treatment": "15 percent broader body with original unit armour/cloth"
+    },
+    "atoms": [
+      {
+        "dimensions": [
+          2.116,
+          1.3,
+          2.18
+        ],
+        "export": true,
+        "location": [
+          0.0,
+          0.06,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "torso",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          1.541,
+          0.98,
+          0.78
+        ],
+        "export": true,
+        "location": [
+          0.0,
+          0,
+          1.15
+        ],
+        "primitive": "sphere",
+        "ring_count": 20,
+        "role": "collar",
+        "segments": 32
+      }
+    ],
+    "landmarks": {
+      "collar": [
+        0.0,
+        0,
+        1.15
+      ],
+      "mount": [
+        0.0,
+        0,
+        0
+      ],
+      "torso": [
+        0.0,
+        0.06,
+        0
+      ]
+    },
+    "operations": [],
+    "provenance": "parameter recipe extracted from spearman revision 11"
+  }
+}

@@ -6,6 +6,12 @@ rebuild a regiment when one crest, helmet, torso, shield or weapon changes.
 Follow the [army design requirements](design-requirements.md) for printer,
 feature-size and support targets while creating or combining pieces.
 
+Current recipes incorporate the [accepted army update](accepted-army-update.md):
+49 reusable figures and 15 layouts share the accepted readable detail and
+proportions. The default composition is the five accepted glue-in spearmen.
+See `specs/accepted-army-index.json` for the pinned current models and preserved
+source snapshots.
+
 The library stores independently versioned parameter definitions in
 `fdm_sculpt/components/parts/`. These define primitives, transforms, bevels,
 ordered local Exact operations and named landmarks, including a local `mount`.

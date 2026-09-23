@@ -13,7 +13,8 @@ import os
 from functools import lru_cache
 
 from .army import load_model
-from .components.parts import catalog
+from .components.parts import CATALOG, validate_part
+from .components.core import ComponentDefinition
 from .components.elves_v2 import multiply, translation
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -30,7 +31,15 @@ def source_revision():
 
 @lru_cache(maxsize=2)
 def definitions_at(revision):
-    return catalog()
+    # Resolve only the pieces requested by a model. Historical terrain recipes
+    # need not be loaded when opening a current infantry preview.
+    class Definitions(dict):
+        def __missing__(self, ref):
+            path = CATALOG/(ref+'.json')
+            part = validate_part(ComponentDefinition.from_dict(json.loads(path.read_text())))
+            self[ref] = part
+            return part
+    return Definitions()
 
 
 @lru_cache(maxsize=100)
@@ -174,8 +183,9 @@ def plan(request):
         raise ValueError('Magnet holes must be enabled or disabled')
     revision = source_revision()
     by_id = {m['id']:m for m in models()}
-    # Reuse the reviewed strip and terrain. Geometry is never scaled to fit.
-    source = json.loads((ROOT/'specs/elf-modular-visual.json').read_text())
+    # Compact row exports retain their original strip/terrain recipe. The
+    # current default review now uses the accepted separate glue-in base.
+    source = json.loads((ROOT/'specs/accepted-army-sources.json').read_text())['sources']['specs/elf-modular-visual.json']
     placements = deepcopy([p for p in source['placements'] if '/' not in p['instance_id']])
     base_ref='aurelian.base-body-20x5@1' if magnet_holes else 'aurelian.base-body-20x5-plain@2'
     base=definitions_at(revision)[base_ref]

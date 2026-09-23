@@ -1,0 +1,111 @@
+{
+  "date": "2026-09-22",
+  "status": "visual-only",
+  "digitally_validated": false,
+  "reusable_models": 49,
+  "layouts": 15,
+  "new_immutable_parts": 98,
+  "all_model_assets_available": true,
+  "saved_provenance_passed": true,
+  "viewer_reviews": [
+    {
+      "assembly": "specs/elf-modular-visual.json",
+      "viewer_id": "aurelian-spearmen-organic-faces",
+      "revision": "77ec9bdd8c055187610ff6ea79c3c3b7e74e16481fc7374d3e845f69a0b0b174",
+      "views": 2
+    },
+    {
+      "assembly": "specs/elf-spearman-variants.json",
+      "viewer_id": "aurelian-spearman-variants",
+      "revision": "e30af1e5d626b2b8f9e6dbac258bf8422f3911fd29daa48b8a4b88b2ae153a35",
+      "views": 22
+    },
+    {
+      "assembly": "specs/elf-forward-spearmen.json",
+      "viewer_id": "aurelian-forward-spearmen",
+      "revision": "6b86fc915d1ae674bfd69cdbed87f5efb99ae1ce06d7f325a8271a4319d2dc9d",
+      "views": 22
+    },
+    {
+      "assembly": "specs/elf-spearman-hawk-sergeant.json",
+      "viewer_id": "aurelian-spearman-hawk-sergeant",
+      "revision": "5f3f34d78dcae899fdf7e8c65674e82c4729e8ea378fa9a61806cee8bd163415",
+      "views": 2
+    },
+    {
+      "assembly": "specs/elf-standard-bearer.json",
+      "viewer_id": "aurelian-standard-bearer",
+      "revision": "6c290bbe9b66971d45312a6203a7f6f88137439800006061f591989692463c84",
+      "views": 2
+    },
+    {
+      "assembly": "specs/elf-unit-center-standard.json",
+      "viewer_id": "aurelian-spearmen-center-standard",
+      "revision": "f73003a333d436ca3af04c53c9b108a27366681b8fb064f0d1058d4d8134936f",
+      "views": 2
+    },
+    {
+      "assembly": "specs/elf-archer.json",
+      "viewer_id": "aurelian-archer",
+      "revision": "350ae0cdab0315c0a7439b1c250978b09efe9fa982e6910817dc04ac5a60c796",
+      "views": 2
+    },
+    {
+      "assembly": "specs/elf-archer-sergeant.json",
+      "viewer_id": "aurelian-archer-sergeant",
+      "revision": "3a4d4eb75a357df3d5195c324f57acd1560189e2b25e1315c1d3948818168233",
+      "views": 2
+    },
+    {
+      "assembly": "specs/elf-archer-variants.json",
+      "viewer_id": "aurelian-archer-variants",
+      "revision": "d7ac6a1d1564cf30e1d373352eeb2ff7f08e8efb96e89c0d70dbb10430ebf17f",
+      "views": 28
+    },
+    {
+      "assembly": "specs/elf-archer-rear-ranks.json",
+      "viewer_id": "aurelian-archer-rear-ranks",
+      "revision": "4ee159085d5618275e91cf00a911a337f796fcd68c91bc4b4c742a4b7bdf819b",
+      "views": 2
+    },
+    {
+      "assembly": "specs/elf-unit-archers.json",
+      "viewer_id": "aurelian-archers",
+      "revision": "8ebeed79fc749f84a054369c266013607f1a8c66ed7a5e18cece5c6fcb8dd4cd",
+      "views": 2
+    },
+    {
+      "assembly": "specs/elf-swordmaster.json",
+      "viewer_id": "aurelian-swordmaster",
+      "revision": "c29a42e7570a151f783870d3e136e6e739f6725ee4bd553910aa31c10dd246a9",
+      "views": 2
+    },
+    {
+      "assembly": "specs/elf-swordmaster-sergeant.json",
+      "viewer_id": "aurelian-swordmaster-sergeant",
+      "revision": "f3e84487d265450854d714e7bab1fd1ea24a7c45be7c0914cfc0976078a1b611",
+      "views": 2
+    },
+    {
+      "assembly": "specs/elf-swordmaster-variants.json",
+      "viewer_id": "aurelian-swordmaster-variants",
+      "revision": "48890756f67fa77cfb9e5f6ca4e43b57fd37e87f864f07f130aa19c88f49cd2f",
+      "views": 22
+    },
+    {
+      "assembly": "specs/elf-dragon-prince.json",
+      "viewer_id": "aurelian-dragon-prince",
+      "revision": "aab491ff6d56e1cdbb4e8764c155fa672f088295367e077ccba5cd56ba00d62b",
+      "views": 2
+    }
+  ],
+  "attachment_pairs": 81,
+  "attachment_failures": 0,
+  "live_workshop_model_families_checked": [
+    "spearmen",
+    "archers",
+    "swordmasters"
+  ],
+  "automated_tests": "26 accepted-army and workshop tests passed",
+  "limitations": "No new physical trials, manufacturing mesh validation, slicing or independent repeat builds."
+}

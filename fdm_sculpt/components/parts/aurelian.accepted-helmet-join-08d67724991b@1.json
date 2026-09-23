@@ -1,0 +1,149 @@
+{
+  "component_id": "aurelian.accepted-helmet-join-08d67724991b",
+  "version": 1,
+  "name": "Rounded shoulder and helmet-side spear connection, pose 1",
+  "family": "equipment-join",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shoulder_fill"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0,
+        "depth": 1.694931035778641,
+        "export": true,
+        "frame_mm": [
+          [
+            0.7251499557035511,
+            0.6835267920093262,
+            0.08335866090921441,
+            0.792643590608074
+          ],
+          [
+            -0.672826311457081,
+            0.7290926071131556,
+            -0.12541421316581636,
+            -0.08128422135800605
+          ],
+          [
+            -0.14650015820536488,
+            0.034858210774239146,
+            0.9885962820016176,
+            1.2993012592513054
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.32,
+        "radius2": 1,
+        "role": "shoulder_fill",
+        "scale": [
+          0.7716292691182163,
+          0.42,
+          1
+        ],
+        "vertices": 48
+      },
+      {
+        "dimensions": [
+          1.5432585382364326,
+          0.84,
+          0.42
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.7251499557035511,
+            0.6835267920093262,
+            0.08335866090921441,
+            0.8632871813460616
+          ],
+          [
+            -0.672826311457081,
+            0.7290926071131556,
+            -0.12541421316581636,
+            -0.18756844246925625
+          ],
+          [
+            -0.14650015820536488,
+            0.034858210774239146,
+            0.9885962820016176,
+            2.137102519361263
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "rounded_fill_top",
+        "segments": 40
+      }
+    ],
+    "experiment": {
+      "intent": "Fill the shoulder-to-helmet-side gap with a rising rounded volume that also joins the spear.",
+      "minimum_top_thickness_mm": 1.092,
+      "print_scale": 1.3,
+      "source_parts": {
+        "aurelian.readable-helmet-trial@1": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+        "aurelian.right-arm-accepted-r9@1": "d1275be65b4ad57367715ffae2be14840367714ac5134a333932a6e13e42c1f9",
+        "aurelian.uniform-spear-140-trial@3": "25363d5f0c46e495e2776bf7f76658cf56521436cdc738098e4e91caa2e96401"
+      }
+    },
+    "landmarks": {
+      "helmet_contact": [
+        0.5192166652370566,
+        0.13499883335621524,
+        2.137102519361263
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "shoulder_root": [
+        0.7219999998700863,
+        0.024999999753244167,
+        0.46149999914134776
+      ],
+      "spear_contact": [
+        1.2073576974550666,
+        -0.5101357182947277,
+        2.137102519361263
+      ]
+    },
+    "operations": [
+      {
+        "operand": "rounded_fill_top",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shoulder_fill"
+      }
+    ],
+    "seed": 1001
+  }
+}

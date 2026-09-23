@@ -1,0 +1,1169 @@
+{
+  "component_id": "aurelian.dragon-prince-shield-accepted-r6",
+  "version": 1,
+  "name": "Dragon Prince dense flat scale shield with oval gem \u2014 accepted infantry detail",
+  "family": "dragon-prince-shield",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shield"
+  ],
+  "parameters": {
+    "accepted_army": {
+      "accepted_reference": "wider-shield-infantry-3-trial",
+      "print_scale": 1.3,
+      "seed": 1001,
+      "source": "aurelian.dragon-prince-shield@6",
+      "source_sha256": "993ea1706245fc527feee5cbd4254c3ff3b2f8f602cebc46ee62c77593f7defc",
+      "status": "visual-only",
+      "treatment": "Broad flat relief with 0.30 mm source projection"
+    },
+    "atoms": [
+      {
+        "bevel": 0.09,
+        "depth": 0.44,
+        "export": true,
+        "location": [
+          0.0,
+          0,
+          0.0
+        ],
+        "primitive": "cone",
+        "radius1": 1.1,
+        "radius2": 1.04,
+        "role": "shield",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1.8900000000000001,
+          2.4375,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "dimensions": [
+          1.02,
+          0.38,
+          1.65
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.28,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "oval_gem_setting",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.73,
+          0.32,
+          1.3
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.48,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "central_oval_gem",
+        "segments": 32
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          0.0,
+          -0.35,
+          -2.0999999999999996
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_-6_0",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          0.0,
+          -0.35,
+          -1.75
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_-5_0",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          -0.4,
+          -0.35,
+          -1.4
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_-4_-1",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          0.0,
+          -0.35,
+          -1.4
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_-4_0",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          0.4,
+          -0.35,
+          -1.4
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_-4_1",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          -0.8,
+          -0.35,
+          -1.0499999999999998
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_-3_-2",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          -0.4,
+          -0.35,
+          -1.0499999999999998
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_-3_-1",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          0.4,
+          -0.35,
+          -1.0499999999999998
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_-3_1",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          0.8,
+          -0.35,
+          -1.0499999999999998
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_-3_2",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          -0.8,
+          -0.35,
+          -0.7
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_-2_-2",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          0.8,
+          -0.35,
+          -0.7
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_-2_2",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          -1.2000000000000002,
+          -0.35,
+          -0.35
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_-1_-3",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          -0.8,
+          -0.35,
+          -0.35
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_-1_-2",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          0.8,
+          -0.35,
+          -0.35
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_-1_2",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          1.2000000000000002,
+          -0.35,
+          -0.35
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_-1_3",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          -1.2000000000000002,
+          -0.35,
+          0.0
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_0_-3",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          -0.8,
+          -0.35,
+          0.0
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_0_-2",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          0.8,
+          -0.35,
+          0.0
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_0_2",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          1.2000000000000002,
+          -0.35,
+          0.0
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_0_3",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          -1.2000000000000002,
+          -0.35,
+          0.35
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_1_-3",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          -0.8,
+          -0.35,
+          0.35
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_1_-2",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          0.8,
+          -0.35,
+          0.35
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_1_2",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          1.2000000000000002,
+          -0.35,
+          0.35
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_1_3",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          -0.8,
+          -0.35,
+          0.7
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_2_-2",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          0.8,
+          -0.35,
+          0.7
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_2_2",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          -0.8,
+          -0.35,
+          1.0499999999999998
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_3_-2",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          -0.4,
+          -0.35,
+          1.0499999999999998
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_3_-1",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          0.4,
+          -0.35,
+          1.0499999999999998
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_3_1",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          0.8,
+          -0.35,
+          1.0499999999999998
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_3_2",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          -0.4,
+          -0.35,
+          1.4
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_4_-1",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          0.0,
+          -0.35,
+          1.4
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_4_0",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          0.4,
+          -0.35,
+          1.4
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_4_1",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          0.0,
+          -0.35,
+          1.75
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_5_0",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.018,
+        "depth": 0.42,
+        "export": false,
+        "location": [
+          0.0,
+          -0.35,
+          2.0999999999999996
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.215,
+        "role": "flat_scale_6_0",
+        "rotation": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1,
+          1
+        ],
+        "vertices": 4
+      }
+    ],
+    "landmarks": {
+      "grip": [
+        0,
+        0.5,
+        0
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "oval_gem_setting",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "central_oval_gem",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_-6_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_-5_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_-4_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_-4_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_-4_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_-3_-2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_-3_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_-3_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_-3_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_-2_-2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_-2_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_-1_-3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_-1_-2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_-1_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_-1_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_0_-3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_0_-2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_0_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_0_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_1_-3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_1_-2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_1_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_1_3",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_2_-2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_2_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_3_-2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_3_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_3_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_3_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_4_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_4_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_4_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_5_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      },
+      {
+        "operand": "flat_scale_6_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield"
+      }
+    ],
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}
