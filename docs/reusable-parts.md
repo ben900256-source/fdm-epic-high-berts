@@ -42,7 +42,7 @@ The current composition includes curved breastplates, rounded tunic shoulders,
 chainmail skirts, broader shields with thicker seahorses, fitted helmet crests,
 and organic faces with an integrated brow and mouth groove. Earlier part
 revisions and the original modular assembly remain pinned for comparison.
-The [spearman underside study](spearman-overhang-study.md) adds permanent
+The [spearman underside study](locked-spearmen.md) adds permanent
 tapers beneath the neck, hems, grips, sleeves, shield details and spearheads,
 with separate CLI slice comparisons and preserved earlier revisions.
 
@@ -250,69 +250,11 @@ dependencies, and perform the applicable export/print checks. The historical
 they do not automatically include newer modular part revisions. Do not use
 those old recipes to release a subsequently changed modular model.
 
-For a requested physical trial of a saved modular review, use:
-
-```powershell
-py -3.13 -m scripts.generate-spearman-print-trial
-py -3.13 -m fdm_sculpt.atelier compose specs/elf-spearmen-print-trial.json --seed 1001 --output out/spearmen-print-source
-py -3.13 -m fdm_sculpt.modular_print out/spearmen-print-source --seed 1001 --output out/spearmen-trial --figure-cache out/original-spearman-cache-04
-```
-
-This verifies the saved component provenance, materializes shared parts with
-Exact unions, joins the placed figures and base, packs scene dependencies,
-and exports a single-material STL and 3MF. It then prepares and reopens a
-Prusa XL project with the preserved tool-2 profile, slices it, and records
-contour, deposited-support, face-landmark and automatic-support diagnostics.
-`--no-slice` stops after geometry export for an independent comparison build.
-The output is explicitly an unvalidated manufacturing trial. Check the
-reports before attempting a print; successful export does not establish
-structural dimensions, support-free printability or physical performance.
-`regiment assess <trial> --support-audit` also accepts these modular trials.
-
-The trial retains the original reviewed skirt @3 and its chainmail exactly,
-as requested. Coarser skirt @4 and @5 experiments are preserved in the recipe
-history but are not used by the trial. The checked original-mail figure cache
-is used explicitly for this prototype; cache preparation requires the saved
-original-mail repair and part checkpoints. It is not a general release builder.
-Internal fill @1 adds 180 primitive boxes inside sealed microscopic pockets.
-The original skirt @3 is unchanged. The filler-box containment probe finds no
-exterior intersections, and the repaired exterior passes a bidirectional
-surface comparison at 0.000002 mm, using double-precision triangle distances
-where float BVH measurements become unstable on thin planar triangles.
-The internal filler also passes independent cached-mesh hash comparison and
-saved-scene provenance. Equipment joins @3 increases the spear brace diameter
-from 0.80 to 0.81 mm to investigate a degenerate triangle at its shaft contact;
-its endpoints, bevel and assembly placement stay unchanged. This adjustment
-is confined to the print-trial specification.
-Spearman join fill @1 adds three further contained primitive boxes to seal
-microscopic pockets produced where that first figure meets the original mail.
-The isolated filled figure passes artifact topology and self-intersection
-checks; stand fusion and slicing remain separate required checks.
-The trial places complete figures 0.01 mm higher, except the fourth at
-0.005 mm, to avoid numerical cape/soil crossings. These seating offsets apply
-once to every part of each figure; geometry and equipment alignment remain
-unchanged. Cached placement validation permits those rigid translations and
-rejects individual part movement. Native Exact fusion with a 0.0000005 mm
-numerical weld passes the full stand's topology and intersection checks in
-the seating study. `out/spearmen-original-print-03` and its independent repeat
-produce byte-identical STLs, with no removed faces and passing packed-scene
-provenance. The Prusa project reopens and slices using embedded XL tool-2
-settings. Pocket, shaft and boot-contact probes pass. The sliced support,
-contour and brow-landmark screens fail, so the result remains an experimental
-trial, not a digitally validated support-free print. The automatic-support
-slice is diagnostic only. See the output's `PRINT-TRIAL.md` and `previews/`.
-Trial trim @7 moves its cape cutout rearward by 0.04 mm, providing a real
-overlap at the seam instead of coincident surfaces. The trial trim placements
-rise 0.03 mm to separate coincident lower hem surfaces. The original army's
-visual specifications retain their reviewed revisions. Definitions and golden
-hashes also preserve the intermediate trial skirt @4.
-
-The first trial uses five copies of the first spearman, 4 mm apart. Other
-reviewed poses remain in the visual army: the second pose exposed an enclosed
-cavity at its spear join during manufacturing checks. The trial may reuse a
-previously checked first figure and base with `--figure-cache <prior-build>`;
-that path verifies the complete placement contract, records the source scene
-hash, rechecks both cached solids, and performs a fresh Exact stand union.
+For new spearman print tests, use the [locked default](locked-spearmen.md) and
+`specs/prusa-spearmen.json`: five spaced glue-in figures and their matching base.
+The old print-trial generators and experimental assembly recipes have been
+removed. Shared immutable components and historical backend checks remain;
+they must not be treated as alternate current designs.
 
 ## Terrain and bases
 

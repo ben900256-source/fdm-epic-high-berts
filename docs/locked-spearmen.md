@@ -1,11 +1,11 @@
-﻿# Locked spearmen and inclined spears
+# Locked spearmen and inclined spears
 
 On 2026-09-23 the user accepted the latest five spearmen as the design baseline:
 "they're good as is." The latest print made little noticeable difference, so
 further face, helmet, crest, shield and body experiments stop here unless requested.
 
 The accepted shape is saved in
-[the printed five-pose snapshot](../specs/experiments/locked-spearmen-printed-row-20260923.json).
+[the printed five-pose snapshot](../specs/baselines/spearmen-printed-20260923.json).
 It includes the recessed head and restored nose, pointed helmet revision 5,
 crest revision 7, raised fierce seahorse revision 6, wide shields and the uniform
 shaft with decorative spearhead revision 3. Shield orientations, hands, bodies,
@@ -37,3 +37,9 @@ recipes. Three saved/published layouts reused all cached parts and passed
 provenance checks. Front, side and overhead viewer checks verified the loaded
 mounts. All 40 local hand/shaft and shoulder/helmet-fill contacts overlap.
 See the [visual verification record](evidence/locked-spearmen-visual-20260923.json).
+
+The locked row is now the viewer and print-target default. The retired spearman
+experiment recipes, their launch scripts and old viewer entries have been
+removed. `specs/prusa-spearmen.json` names the active spaced five-mini layout;
+`specs/viewer-defaults.json` pins startup and prevents retired trial rows from
+being republished. Shared component definitions and caches are retained.

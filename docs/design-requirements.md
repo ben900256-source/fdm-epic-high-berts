@@ -1,85 +1,62 @@
 # Army model design requirements
 
-Use this as the starting point when designing a new piece or army variant.
-[Repository rules](../AGENTS.md) govern construction;
-[printability criteria](printability.md) define release checks;
-[reusable parts](reusable-parts.md) describes the review workflow.
+The default spearmen are [locked](locked-spearmen.md), using
+[`specs/elf-modular-visual.json`](../specs/elf-modular-visual.json).
+The user accepted their printed shape on 2026-09-23. Keep current heads, noses,
+pointed helmets, crests, raised fierce seahorses, broad shields, bodies and arms.
+Every spear must lean at least 6 degrees from vertical. That final angle change
+is visual-only pending a physical trial; other army variants remain unprinted.
+Prior spearman experiment recipes and viewer entries have been deleted.
 
 ## Printer and scale
 
-- Five-tool Prusa XL, tool 2, 0.25 mm nozzle, single-color PLA, 0.05 mm layers.
+- Python 3.13, Blender 5.1.2 and PrusaSlicer 2.9.6.
+- Five-tool Prusa XL, tool 2, 0.25 mm nozzle, PLA, 0.05 mm layers.
 - Preserve the nozzle array `0.4,0.25,0.4,0.4,0.4` and installed presets.
-- Python 3.13, Blender 5.1.2 and the installed PrusaSlicer 2.9.6 are the pinned tools.
-- Future physical trials use [the user's selected presets](prusa-print-test-settings.md):
-  Epic Cool Detail v1 0.05 mm, the XL 5T Input Shaper 0.25 nozzle preset, Epic FDM
-  PLA - Cool Detail v1 on tool 2 and Generic PLA on the other tools, with supports off.
-  Follow the accepted five-mini cooling overrides in the linked settings; the
-  user reported worse spear rings from the slow single-mini profile. Read the
-  saved presets for each trial; the new filament preset specifies 205°C normal
-  layers and 230°C first layer. Earlier trial snapshots are historical evidence.
-- The current infantry baseline is the [accepted wider-shield print](wider-shield-trial.md),
-  accepted by the user on 2026-09-22: five glue-in poses, 1.82 mm uniform shafts,
-  fuller decorative spearheads and a 37.5 x 8.4 x 2 mm shared base. Apply the
-  1.3 print scale exactly once. Keep the raised flat seahorse at 0.39 mm relief
-  (`aurelian.readable-insignia-trial@4`). Keep shield faces readable from the
-  front; use modest pose variation and avoid pronounced inward rotation.
-- The earlier accepted scale reference is [130% intact spearmen](../specs/elf-print-target.json):
-  10.4 mm sole-to-eye, 1.56 mm intact shafts, five figures on a 26 x 6.5 x 1.3 mm strip.
-  Source recipes remain 8 mm sole-to-eye on a 20 x 5 x 1 mm strip; apply the
-  target's 1.3 scale exactly once at export or in the slicer. The user physically
-  printed this version and accepted the improvement. Open-grip/separate-spear
-  experiments are retired. New army layouts may compose other figures and bases.
-- Current infantry previews use a 1 mm base with 0.5 mm terrain relief.
-  Optional 3 x 1 mm magnet pockets use a 2 mm base to retain roof stock.
+- Source scale is 8 mm sole-to-eye; apply the 1.3 export scale exactly once.
+- Current printed spear shaft: 1.82 mm, uniform along its length.
+- Separate footings: 5.2 x 6.5 x 1.3 mm. Shared base: 37.5 x 8.4 x 2 mm.
+- Use the [default print recipe](../specs/prusa-spearmen.json): five minis spaced
+  at least 40 mm apart and the additional base, layer by layer on tool 2.
+- Resolve the [saved presets](prusa-print-test-settings.md) read-only. Keep
+  205 C normal layers, 230 C first layer, supports off and 100% cooling after
+  the initial ramp. Tool-2 overrides: 10 mm/s minimum speed and 10 s slowdown.
 
-The current spearmen are [locked as of 2026-09-23](locked-spearmen.md).
-Their pinned latest shapes supersede the older wider-shield detail references
-above. Keep every spear at least 6 degrees from vertical, preserving existing
-inclined poses. The final spear-angle adjustment still requires a print trial.
+## Geometry and validation
 
-## Geometry targets
-
-| Feature | Prototype target |
-| --- | --- |
-| Structural stock | At least 0.75 mm |
-| Spear shafts | Current accepted infantry: 1.4 mm source, 1.82 mm at print scale |
-| Attached raised detail | 0.25 mm relief |
-| Intentional open gaps | At least 0.5 mm |
-| Removable supports | Zero |
-
-Keep equipment joined to the model with deliberate solid overlap. Design
-undersides to grow gradually from existing material; use ramps beneath
-outward projections. A conservative starting aim is no more than one layer
-height of sideways growth per layer. Actual sliced paths determine whether
-the resulting features have support.
-
-Terminal tips and edges of attached relief are exceptions to the structural
-stock target. For spear and banner-pole tips, prefer a short narrowing taper
-with a small flat or rounded end. **About 0.3-0.4 mm across the narrowest end
-is provisional design guidance, not an established printable minimum.** Keep
-the supporting shaft full thickness. See [terminal tips](printability.md#terminal-tips)
-for measurement and validation details.
-
-## Reusable construction and visual review
-
-- Use parameterized primitives, transforms, bevels and ordered Exact CSG.
-  Do not sculpt, hand-edit meshes or import third-party meshes.
-- Each reusable piece owns its geometry and mount landmarks. Preserve existing
-  definitions and golden hashes; geometry changes get a new integer revision.
-- Models and units pin component references and hashes. Compile a changed
-  component once; reuse its cached geometry across placements and variants.
-- Review in the local Three.js viewer. Use explicit seeds, fresh output
-  directories and saved-scene provenance. Keep earlier saved reviews.
-- During visual iteration, defer full-model fusion, independent repeat builds,
-  mesh printability audits and slicing until print/release preparation is requested.
-
-## Before calling a model print ready
-
-Apply the complete [printability criteria](printability.md) to the intended
-modular composition. Verify a connected watertight solid, dimensions and
-spacing, actual deposited detail, support behavior, and tool assignments in
-the saved slicer project. Do not weaken checks to pass a model.
-
-Visual review is not print validation. Only passing manufacturing builds may
-be labeled **digitally validated**; strength, cooling and handling still need
-a user-run physical trial. The current army reviews remain **visual-only**.
+- Generate only parameterized primitives, transforms, bevels and ordered Exact
+  CSG. Never sculpt, hand-edit mesh elements or import third-party meshes.
+  Terrain-specific exception requested by the user: continuous procedural
+  heightfields may replace the former dirt/sand primitive textures. Generate
+  these algorithmically from pinned seeded samples; no manual mesh edits or
+  imported heightmaps. Figures and base bodies retain the primitive/Exact rules.
+- Reusable recipes live in `fdm_sculpt/components/`, import no Blender modules,
+  own their geometry and landmarks, and use explicit positive integer revisions.
+  Preserve reviewed definitions and golden hashes; change geometry in a new revision.
+- Persist component ID/version, instance ID, definition and plan hashes, geometry
+  roles and Exact operation order. Keep hidden operands in `SOURCE_PRIMITIVES`
+  and the fused printable strip in `EVALUATED_EXPORT`.
+- Require an explicit integer seed and fresh output directory. Repeat the same
+  seed independently and compare geometry hashes. Add resolver, golden hash and
+  saved-Blender provenance checks for each component revision.
+- Prototype targets: 0.75 mm structural walls, 1.0 mm spear shafts, 0.25 mm
+  attached relief and 0.5 mm intentional gaps. Tapered terminal tips and edges of
+  fused decorative relief are not freestanding structural walls.
+- Require one connected watertight manifold outward-facing positive-volume
+  solid without self-intersections. Check feature dimensions and spacing on the
+  evaluated mesh, then inspect actual sliced layers and tool assignments.
+- Keep saved nozzle configuration `0.4,0.25,0.4,0.4,0.4`. Resolve and hash installed
+  profiles into the build; never edit installed presets. Reopen the exported
+  Prusa project and slice without a separate config to verify it is complete.
+- Label only passing builds `digitally validated`; never claim physical print
+  testing without an actual user-run trial. Visual review alone is insufficient.
+- Use zero removable supports as the design target. Run `regiment assess`
+  on fresh sliced builds; use `--support-audit` for a separate conservative
+  automatic-support estimate. Follow `docs/printability.md` for anchored bridge,
+  deposited-layer and facial-detail criteria. Do not weaken gates to pass a model.
+- Preserve the approved helmet outline and shared long planar nose character.
+  Check filled brow/temple landmarks and actual sliced eye, mouth and nose detail.
+  Geometry probes alone do not establish that small facial relief will print.
+- The user does not model in Blender. Unsaved GUI changes may be discarded when
+  replacing a review scene. Keep active saved builds and immutable part caches.
+  Retired spearman experiment reviews must remain removed.

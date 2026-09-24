@@ -21,8 +21,6 @@ def test_cylinder_removed_and_surrounding_arm_preserved():
     assert 'left_forearm' not in part.output_roles
     assert new['operations'] == old['operations']
     assert new['landmarks'] == {k:v for k,v in old['landmarks'].items() if k != 'left_forearm'}
-    assembly = load_assembly(ROOT/'specs/elf-spearmen-overhang-study.json', definitions)
-    assert next(p for p in assembly['placements'] if p['instance_id'] == 'row-01/left-arm')['part'] == 'aurelian.left-arm@10'
 
 
 def test_lowered_shoulder_preserves_the_rest_of_the_arm():

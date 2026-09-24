@@ -3,8 +3,8 @@ import {beginProgress} from './progress.js';
 export async function initWorkshop({showReview,showSavedReview,initialReview,context}){
   const panel=document.createElement('section');panel.id='workshop';
   panel.innerHTML=`
-    <nav class="tabs"><button id="tab-model" aria-pressed="true">Model review</button><button id="tab-row" aria-pressed="false">Build a row</button><button id="tab-trials" aria-pressed="false">Trials &amp; kits</button></nav>
-    <div id="trial-tools" hidden><label for="trial-review">Experiment</label><select id="trial-review"></select><p class="hint">One-off test rows, spear kits and fit tests. Downloads for the selected experiment appear below.</p></div>
+    <nav class="tabs"><button id="tab-model" aria-pressed="true">Model review</button><button id="tab-row" aria-pressed="false">Build a row</button><button id="tab-trials" aria-pressed="false">Saved reviews</button></nav>
+    <div id="trial-tools" hidden><label for="trial-review">Current review</label><select id="trial-review"></select><p class="hint">Current units and reusable parts. The locked spearmen are the default.</p></div>
     <label for="unit-family">Unit type</label><select id="unit-family"><option value="spearmen">Spearmen</option><option value="swordsmen">Swordsmen</option><option value="archers">Archers</option><option value="swordmasters">Bertmasters</option></select>
     <div id="model-tools"><label for="single-model">Individual model</label><select id="single-model"></select>
     <details id="feedback-tools"><summary>Sculpting feedback</summary><p class="hint">Choose a component below to focus your feedback. The model revision and viewing angle are saved with your note.</p><label for="feedback-note">What would you like changed?</label><textarea id="feedback-note" rows="3" maxlength="8000"></textarea><button id="save-feedback">Save feedback</button><p id="feedback-status" role="status"></p></details></div>
@@ -108,14 +108,14 @@ export async function initWorkshop({showReview,showSavedReview,initialReview,con
   async function trials(selected){
     const sequence=++reviewSequence;reviewActivity?.finish();tab(false,true);
     const response=await fetch('/data/reviews.json',{cache:'no-store'});
-    if(!response.ok)throw new Error('Could not load experiments');
+    if(!response.ok)throw new Error('Could not load saved reviews');
     const index=await response.json();
     if(sequence!==reviewSequence)return;
-    const choices=index.reviews.filter(r=>r.id===selected||(!r.id.startsWith('isolated-')&&/trial|kit|accepted detail|accepted wider-shield/i.test(r.id+' '+r.label))).reverse();
-    const previous=selected||$('trial-review').value;
+    const choices=[...index.reviews].sort((a,b)=>Number(b.id===index.default_review)-Number(a.id===index.default_review));
+    const previous=selected||$('trial-review').value||index.default_review;
     $('trial-review').replaceChildren(...choices.map(r=>new Option(r.label,r.id)));
     if(choices.some(r=>r.id===previous))$('trial-review').value=previous;
-    if(!$('trial-review').value)throw new Error('No experiments have been published yet');
+    if(!$('trial-review').value)throw new Error('No saved reviews have been published yet');
     await showSavedReview($('trial-review').value);
   }
   $('tab-model').onclick=guard(async()=>{tab(false);await individual();});
@@ -177,7 +177,7 @@ export async function initWorkshop({showReview,showSavedReview,initialReview,con
   try{
     const data=await api('catalog');token=data.token;entries=data.models;populate();
     $('tab-model').disabled=false;$('tab-row').disabled=false;$('tab-trials').disabled=false;startup.finish();
-    if(initialReview){await trials(initialReview);}else{await individual();}
+    if(initialReview||data.default_review){await trials(initialReview||data.default_review);}else{await individual();}
     await poll();
     setInterval(()=>poll().catch(e=>{$('workshop-error').textContent='Export status unavailable: '+e.message;}),3000);
   }catch(e){$('workshop-error').textContent=e.message;}finally{startup.finish();}

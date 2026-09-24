@@ -42,9 +42,9 @@ def generate():
         extra=fitted_spear_joins(spec,definitions);parts.update(extra);definitions.update(extra)
         output[name]=spec;turns[name]=angles
     # Reuse the locked, printed shapes for the default five-pose composition.
-    reviewed=json.loads((ROOT/'specs/experiments/locked-spearmen-printed-row-20260923.json').read_text())
+    reviewed=json.loads((ROOT/'specs/baselines/spearmen-printed-20260923.json').read_text())
     reviewed['assembly_id']=sources['specs/elf-modular-visual.json']['assembly_id']
-    reviewed['label']='Accepted wider-shield infantry â€” visual-only'
+    reviewed['label']='Locked spearmen - five glue-in figures'
     for p in reviewed['placements']:p['instance_id']=p['instance_id'].replace('row-','elf-')
     output['specs/elf-modular-visual.json']=reviewed
     # Unit rows share the accepted recess pitch; individual gallery bases retain
@@ -75,8 +75,6 @@ def generate():
     parts.pop(insignia.reference,None)
     parts[fierce.reference]=fierce
     parts[crest.reference]=crest
-    comparison=[]
-    before=deepcopy(output['specs/elf-modular-visual.json'])
     for spec in output.values():apply_faces(spec,faces)
     for spec in output.values():apply_recessed(spec,recessed)
     for spec in output.values():
@@ -105,15 +103,7 @@ def generate():
                 if slot in slots:slots[slot]['mount']=multiply(turn,slots[slot]['mount'])
     for spec in output.values():apply_pointed(spec,pointed)
     for spec in output.values():apply_spear_lean(spec,definitions)
-    after=output['specs/elf-modular-visual.json']
-    for spec,group,x in ((before,'before',-3),(after,'after',3)):
-        for placement in spec['placements']:
-            if not placement['instance_id'].startswith('elf-03/'):continue
-            q=deepcopy(placement);q['instance_id']=group+'/'+q['instance_id'].split('/',1)[1]
-            q['mount'][0][3]+=x;comparison.append(q)
-    write(ROOT/'specs/experiments/recessed-head-comparison-trial.json',dict(
-        schema_version=1,assembly_id='recessed-head-comparison-trial',
-        label='Bolder head / recessed head with prior nose (visual-only)',placements=comparison))
+    output['specs/elf-modular-visual.json']['label']='Locked spearmen - five glue-in figures'
     for name,spec in output.items():
         resolve_assembly(spec,definitions)
         if name.startswith('specs/models/'):
@@ -143,7 +133,7 @@ def generate():
     write(ROOT/'tests/fixtures/taller-helmets-golden.json',{ref:p.sha256 for ref,p in taller.items()})
     write(ROOT/'tests/fixtures/accepted-army-golden.json',{ref:p.sha256 for ref,p in sorted(parts.items())})
     write(ROOT/'specs/accepted-army-index.json',dict(schema_version=1,seed=1001,export_scale=1.3,status='visual-only',
-        source='accepted-army-sources.json',accepted_reference='experiments/wider-shield-infantry-3-trial.json',
+        source='accepted-army-sources.json',accepted_reference='spearmen-locked-baseline.json',
         spearmen_baseline='spearmen-locked-baseline.json',
         assemblies=[n for n in output if not n.startswith('specs/models/')],
         models=[n for n in output if n.startswith('specs/models/')],

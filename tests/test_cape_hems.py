@@ -20,10 +20,6 @@ def test_hem_revisions_keep_shoulders_and_upper_outline():
         parts = revised_parts(definitions, 1001)
         assert {p.reference:p.sha256 for p in parts} == golden
     assert {ref:definitions[ref].sha256 for ref in golden} == golden
-    current = load_assembly(ROOT/'specs/elf-spearmen-overhang-study.json', definitions)
-    cape_sources = {definitions[p['part']].to_dict()['parameters'].get('robe_source', p['part'])
-                    for p in current['placements'] if p['instance_id'].endswith('/cape')}
-    assert set(golden) <= cape_sources
     for part in parts:
         new = part.to_dict()['parameters']
         old = definitions[new['hem_revision']['source']].to_dict()['parameters']

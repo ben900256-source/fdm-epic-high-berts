@@ -1,4 +1,4 @@
-﻿import json
+import json
 from pathlib import Path
 import pytest
 from fdm_sculpt.components.bolder_faces import SOURCES, revised_parts
@@ -21,19 +21,6 @@ def test_bolder_face_revisions_are_immutable_and_resolve():
         assert defs[part.reference].to_dict() == part.to_dict()
         assert part.to_dict()['parameters']['bolder_face']['source_sha256'] == defs[old].sha256
         assert part.to_dict()['parameters']['landmarks']['mount'] == [0,0,0]
-    comparison = json.loads((ROOT/'specs/experiments/bolder-face-comparison-trial.json').read_text())
-    resolve_assembly(comparison, defs)
-    before = {p['instance_id'].split('/')[1]:p for p in comparison['placements'] if p['instance_id'].startswith('before/')}
-    after = {p['instance_id'].split('/')[1]:p for p in comparison['placements'] if p['instance_id'].startswith('after/')}
-    assert set(before) == set(after)
-    for slot, old in before.items():
-        new = after[slot]
-        for axis in range(3):
-            assert new['mount'][axis][:3] == old['mount'][axis][:3]
-            assert new['mount'][axis][3] == pytest.approx(old['mount'][axis][3]+(6 if axis==0 else 0))
-        if slot not in ('head','helmet'):
-            assert old['part'] == new['part']
-            assert old['definition_sha256'] == new['definition_sha256']
 
 
 def test_detail_growth_preserves_eye_height_and_nose_underside():

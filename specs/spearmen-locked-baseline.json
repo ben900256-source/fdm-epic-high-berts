@@ -4,10 +4,10 @@
   "accepted_date": "2026-09-23",
   "user_feedback": "okay that made more or less no difference. now I want us to lock in the spearmen. they're good as is. I just want there to be no perfectly vertical spears",
   "accepted_printed_shape": {
-    "assembly": "specs/experiments/locked-spearmen-printed-row-20260923.json",
-    "sha256": "8dcd9ea3be7735c9e743e4bf462b8c8b5421df63b8618299dab6d4f5a198ec61",
+    "assembly": "specs/baselines/spearmen-printed-20260923.json",
     "source_project": "out/pointed-helmet-print-20260923/five-pointed-helmet-minis-and-base.3mf",
-    "source_project_sha256": "8b05568338155b5c7a1141c0b42f82da546fe0bd52dd06a12cd06fe18221ee2e"
+    "source_project_sha256": "8b05568338155b5c7a1141c0b42f82da546fe0bd52dd06a12cd06fe18221ee2e",
+    "canonical_json_sha256": "b8f932afdffee14303010e14a73cd973adcf31cc1ef0436801bc227b9b88e839"
   },
   "current_assembly": "specs/elf-modular-visual.json",
   "current_placements_sha256": "2fdd17458a47662134ee5b93aed28107dea9758ba6ed0b31255ff4e09137ca18",
@@ -96,7 +96,7 @@
     "footings and matching base"
   ],
   "print_settings": "specs/prusa-print-test-settings.json",
-  "print_layout": "specs/prusa-five-wider-shield-trial.json",
+  "print_layout": "specs/prusa-spearmen.json",
   "shape_acceptance_does_not_validate_other_army_variants": true,
   "digitally_validated": false
 }

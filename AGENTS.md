@@ -39,21 +39,18 @@
   Nearly upright spears pivot through their existing grips; already inclined
   poses stay unchanged. This final angle change is visual-only pending a print;
   acceptance of the printed shape does not establish validation of the angle edit.
-  Historical trial recipes stay unchanged. Use the established spaced five-mini
+  Prior spearman experiment recipes/reviews were deleted at user request.
+  Do not recreate or republish them. Use the established spaced five-mini
   tool-2 print layout and matching shared base for future tests.
 - Other current figures incorporate the [accepted army update](docs/accepted-army-update.md)
   through `specs/accepted-army-index.json`. Their reviews are visual-only; do not
   extend spearman physical acceptance to unprinted army variants.
-- Earlier accepted scale reference: [130% intact spearmen](specs/elf-print-target.json),
-  five 10.4 mm sole-to-eye figures with 1.56 mm intact spear shafts on a
-  26 Ã— 6.5 Ã— 1.3 mm strip. The user physically printed and accepted this target.
-  Keep source recipes at 8 mm sole-to-eye and apply the pinned 1.3 export scale
-  exactly once, including terrain and base. The separate-spear/open-grip experiment
-  is retired; preserve its historical definitions but do not resume it by default.
-  See [the accepted trial](docs/intact-spears-130-trial.md) for source and evidence.
-  The visual parts/assembly workflow also supports isolated
-  pieces, alternative models and other army units; the five-figure restrictions
-  apply to the historical spearman print-proof specification only.
+- Default model: `specs/elf-modular-visual.json`; default print recipe:
+  `specs/prusa-spearmen.json`. Source figures remain 8 mm sole-to-eye; apply
+  the 1.3 export scale exactly once to figures, terrain and base. Current shafts
+  are 1.82 mm printed and the separate five-recess base is 37.5 x 8.4 x 2 mm.
+  The accepted printed shape is provenance in `specs/baselines/`, not an alternate
+  experiment. Shared immutable component definitions and goldens stay pinned.
 - Use Python 3.13, Blender 5.1.2 and the installed PrusaSlicer 2.9.6. The target is a five-tool
   Prusa XL, tool 2 with a 0.25 mm nozzle, single-color PLA and 0.05 mm layers.
 - For future physical print tests, follow [the user's preset selections](specs/prusa-print-test-settings.json)
@@ -61,7 +58,7 @@
   0.05 mm print preset, Original Prusa XL - 5T Input Shaper 0.25 nozzle printer,
   Epic FDM PLA - Cool Detail v1 on tool 2 and Generic PLA @XLIS on the others,
   with supports off. The user reports worse spear rings from the single-mini v1
-  test. The accepted [five-mini print](specs/prusa-five-wider-shield-trial.json)
+  test. The accepted [five-mini print](specs/prusa-spearmen.json)
   prints five spaced poses and the extra base layer by layer on tool 2, with
   40 mm minimum figure spacing and minimum speed / slowdown threshold of 10 mm/s / 10 s.
   Resolve the named installed presets read-only instead of reusing old test INIs
@@ -101,7 +98,8 @@
   Check filled brow/temple landmarks and actual sliced eye, mouth and nose detail.
   Geometry probes alone do not establish that small facial relief will print.
 - The user does not model in Blender. Unsaved GUI changes may be discarded when
-  replacing a review scene. Keep earlier saved builds.
+  replacing a review scene. Keep active saved builds and immutable part caches.
+  Retired spearman experiment reviews must remain removed.
 - This source repository is explicitly authorized for public publication under
   `ben900256-source/fdm-epic-high-berts`. Keep unrelated projects, local profile
   dumps, credentials and generated scratch artifacts out of commits.

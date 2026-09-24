@@ -1,4 +1,4 @@
-﻿# Fuller heads and stronger facial detail
+# Fuller heads and stronger facial detail
 
 The 2026-09-23 visual revision enlarges heads across the 49 current figure
 recipes and 15 army layouts. Head width increases 8%, depth 5%, and height

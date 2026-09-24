@@ -29,15 +29,15 @@ def test_fit_goldens_and_preserved_upper_skirt():
             assert after['location'][2]+after['depth']/2 == pytest.approx(before['location'][2]+before['depth']/2)
             assert after['radius2'] == before['radius2']
             assert (after['radius2']-after['radius1'])/after['depth'] == pytest.approx((before['radius2']-before['radius1'])/before['depth'])
-    assembly = load_assembly(ROOT/'specs/elf-spearmen-overhang-study.json', definitions)
-    assert set(golden) <= {p['part'] for p in assembly['placements']}
 
 
-def test_all_inherited_shoulders_are_centered_in_plate_holes():
+def test_historical_inherited_shoulders_are_centered_in_plate_holes():
     definitions = catalog()
     count = 0
+    sources=json.loads((ROOT/'specs/accepted-army-sources.json').read_text())['sources']
     for model in models():
-        slots = {p['instance_id']:p for p in load_model(model['path'], definitions)['placements']}
+        key=Path(model['path']).relative_to(ROOT).as_posix()
+        slots = {p['instance_id'].split('/')[-1]:p for p in sources[key]['placements']}
         for side in ('left', 'right'):
             if side+'-tunic' not in slots or 'mail' not in slots:
                 continue
@@ -57,10 +57,10 @@ def test_all_inherited_shoulders_are_centered_in_plate_holes():
     assert count >= 10
 
 
-def test_left_sleeves_are_integrated_with_the_posed_arm():
+def test_historical_left_sleeves_are_integrated_with_the_posed_arm():
     from fdm_sculpt.components.robe_arms import pose
     definitions=catalog()
-    assembly=load_assembly(ROOT/'specs/elf-modular-visual.json',definitions)
+    assembly=json.loads((ROOT/'specs/accepted-army-sources.json').read_text())['sources']['specs/elf-modular-visual.json']
     slots={p['instance_id']:p for p in assembly['placements']}
     for i in range(1,6):
         arm=slots[f'elf-{i:02}/left-arm']

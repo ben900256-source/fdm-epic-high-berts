@@ -13,7 +13,13 @@
     "Generic PLA @XLIS"
   ],
   "selected_tool": 2,
-  "nozzle_configuration_mm": [0.4, 0.25, 0.4, 0.4, 0.4],
+  "nozzle_configuration_mm": [
+    0.4,
+    0.25,
+    0.4,
+    0.4,
+    0.4
+  ],
   "project_overrides": {
     "support_material": "0",
     "support_material_auto": "0"
@@ -31,7 +37,8 @@
   },
   "profile_recipe": "specs/prusa-cool-detail-v1.json",
   "profile_status": "User accepted the five-mini wider-shield physical print on 2026-09-22; retain tool-2 cooling overrides of 10 mm/s minimum speed and 10 s slowdown threshold",
-  "active_experiment": "specs/prusa-five-wider-shield-trial.json",
   "profile_policy": "Resolve the named installed presets and their inheritance read-only for each new test. Hash the resolved inputs into its output directory. Use Epic FDM PLA - Cool Detail v1 on tool 2; do not substitute Generic PLA or an older project snapshot. Saved preset temperatures take precedence over the older experimental 205 C first-layer override.",
-  "screenshot_scope": "Preset selections and Supports: None are visible. The print preset label is truncated and appears modified; the full name was confirmed in PrusaSlicer.ini. Other unsaved per-setting edits are not captured by this screenshot."
+  "screenshot_scope": "Preset selections and Supports: None are visible. The print preset label is truncated and appears modified; the full name was confirmed in PrusaSlicer.ini. Other unsaved per-setting edits are not captured by this screenshot.",
+  "default_print_recipe": "specs/prusa-spearmen.json",
+  "baseline": "specs/spearmen-locked-baseline.json"
 }

@@ -14,7 +14,7 @@ test('individual review, constrained row planning and safe preview invalidation'
   });
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto('http://127.0.0.1:8765');
-  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearman-standing-guard');
+  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearmen-organic-faces');
   await expect(page.locator('#row-unique')).not.toBeChecked();
   await page.click('#tab-row');
   await expect(page.locator('body')).toHaveAttribute('data-assembly','workshop-row');
@@ -69,7 +69,7 @@ test('individual review, constrained row planning and safe preview invalidation'
 
 test('slot changes preview automatically and the latest selection wins',async({page})=>{
   await page.goto('http://127.0.0.1:8765');
-  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearman-standing-guard');
+  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearmen-organic-faces');
   const initialResponse=page.waitForResponse(r=>r.url().endsWith('/api/rows/plan'));
   await page.click('#tab-row');
   const initial=await (await initialResponse).json();
@@ -120,7 +120,7 @@ test('local API rejects remote origins and unpreviewed exports',async({request})
 
 test('magnet holes default off, update the preview, and travel with the export',async({page})=>{
   await page.goto('http://127.0.0.1:8765');
-  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearman-standing-guard');
+  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearmen-organic-faces');
   await page.click('#tab-row');
   await expect(page.locator('#row-magnets')).not.toBeChecked();
   await expect(page.locator('#export-row')).toBeEnabled();
@@ -153,7 +153,7 @@ test('magnet holes default off, update the preview, and travel with the export',
 
 test('row tab previews immediately with planning and part-loading progress',async({page})=>{
   await page.goto('http://127.0.0.1:8765');
-  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearman-standing-guard');
+  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearmen-organic-faces');
   let releasePlan,releaseParts;
   const planGate=new Promise(resolve=>releasePlan=resolve);
   const partGate=new Promise(resolve=>releaseParts=resolve);
@@ -186,7 +186,7 @@ test('row tab previews immediately with planning and part-loading progress',asyn
 
 test('late row failures cannot replace a newer model view or leave progress stuck',async({page})=>{
   await page.goto('http://127.0.0.1:8765');
-  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearman-standing-guard');
+  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearmen-organic-faces');
   let release;
   const gate=new Promise(resolve=>release=resolve);
   await page.route('**/api/rows/plan',async route=>{
@@ -200,7 +200,7 @@ test('late row failures cannot replace a newer model view or leave progress stuc
   release();await response;
   await expect(page.locator('#activity-progress')).toBeHidden();
   await expect(page.locator('#workshop-error')).toBeEmpty();
-  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearman-standing-guard');
+  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearmen-organic-faces');
   await page.click('#tab-row');
   await expect(page.locator('#workshop-error')).toContainText('Old row request failed');
   await expect(page.locator('#activity-progress')).toBeHidden();
@@ -215,7 +215,7 @@ test('background export cards show progress and finish cleanly',async({page})=>{
     return route.fulfill({json:jobs[0]});
   });
   await page.goto('http://127.0.0.1:8765');
-  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearman-standing-guard');
+  await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearmen-organic-faces');
   await page.click('#tab-row');
   await expect(page.locator('#export-row')).toBeEnabled();
   await page.click('#export-row');

@@ -4,7 +4,7 @@
   "export_scale": 1.3,
   "status": "visual-only",
   "source": "accepted-army-sources.json",
-  "accepted_reference": "experiments/wider-shield-infantry-3-trial.json",
+  "accepted_reference": "spearmen-locked-baseline.json",
   "spearmen_baseline": "spearmen-locked-baseline.json",
   "assemblies": [
     "specs/elf-modular-visual.json",

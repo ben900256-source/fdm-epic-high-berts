@@ -26,9 +26,6 @@ def test_nape_revisions_resolve_and_preserve_upper_helmet():
         assert old['atoms'][index] == new['atoms'][index]
     assert all(op['solver'] == 'EXACT' for op in new['operations'])
     assert definitions['aurelian.torso@4'].to_dict()['parameters']['atoms'] == definitions['aurelian.torso@2'].to_dict()['parameters']['atoms']
-    resolved = load_assembly(ROOT/'specs/elf-spearmen-overhang-study.json', definitions)
-    assert sum(p['part']=='aurelian.helmet@7' for p in resolved['placements']) == 5
-    assert sum(p['part']=='aurelian.torso@4' for p in resolved['placements']) == 5
 
 
 def test_nape_profile_is_tangent_and_stays_inside_crown():

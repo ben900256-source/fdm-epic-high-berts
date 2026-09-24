@@ -26,10 +26,9 @@ def test_slicer_center_is_undone_for_shield_overhang():
 
 
 def test_cached_seating_moves_complete_figures_and_rejects_pose_changes():
-    previous = resolve_assembly(json.loads(Path('specs/elf-spearmen-print-trial.json').read_text()), catalog())
-    for p in previous['placements']:
-        if p['instance_id'].startswith('elf-04/'):
-            p['mount'][2][3] += .005
+    previous = dict(placements=[dict(instance_id=f'elf-{i+1:02}/{slot}', part=slot+'@1',
+        definition_sha256=slot, mount=[[1,0,0,-8+4*i],[0,1,0,0],[0,0,1,0],[0,0,0,1]])
+        for i in range(5) for slot in ('torso','spear')])
     current = json.loads(json.dumps(previous))
     for p in current['placements']:
         if p['instance_id'].startswith('elf-'):
@@ -66,74 +65,6 @@ def test_trial_skirt_recipe_golden_and_outward_open_recesses():
             # The cut stays outward of the link center, away from its backing.
             assert atom['location'][1]-atom['dimensions'][1]/2 >= .099
             assert atom['location'][1]+atom['dimensions'][1]/2 > .21
-    trial = resolve_assembly(json.loads((root/'specs/elf-spearmen-print-trial.json').read_text()), definitions)
-    # The manufacturing trial predates later visual revisions; its source is pinned.
-    source = resolve_assembly(json.loads((root/'tests/fixtures/print-trial-source-assembly.json').read_text()), definitions)
-    assert len(trial['placements']) == len(source['placements'])+10
-    source_parts = {p['instance_id']:p for p in source['placements']}
-    for left in trial['placements']:
-        key = left['instance_id']
-        index = 0
-        if '/' in key:
-            number, role = key.split('/')
-            index = int(number.split('-')[1])-1
-            key = 'elf-01/'+role
-        if key == 'elf-01/join-internal-fill':
-            fill = spearman_join_fill(seed=1001)
-            assert left['part'] == fill.reference
-            assert left['definition_sha256'] == fill.sha256 == golden[fill.reference]
-            assert left['mount'] == [[1,0,0,-8+4*index],[0,1,0,0],[0,0,1,[.01,.01,.01,.005,.01][index]],[0,0,0,1]]
-            continue
-        if key == 'elf-01/mail-internal-fill':
-            fill = mail_internal_fill(seed=1001)
-            assert left['part'] == fill.reference
-            assert left['definition_sha256'] == fill.sha256 == golden[fill.reference]
-            expected = [row[:] for row in source_parts['elf-01/skirt']['mount']]
-            expected[0][3] += 4*index
-            expected[2][3] += [.01,.01,.01,.005,.01][index]
-            assert left['mount'] == expected
-            assert fill.to_dict()['parameters']['source_definition_sha256'] == definitions['aurelian.skirt@3'].sha256
-            continue
-        right = json.loads(json.dumps(source_parts[key]))
-        right['instance_id'] = left['instance_id']
-        right['mount'][0][3] += 4*index
-        expected_mount = [row[:] for row in right['mount']]
-        if right['part'].startswith('aurelian.mail-skirt-trim'):
-            expected_mount[2][3] += .03
-        if '/' in left['instance_id']:
-            expected_mount[2][3] += [.01,.01,.01,.005,.01][index]
-        assert left['mount'] == expected_mount
-        if right['part'] == 'aurelian.skirt@3':
-            assert left['part'] == right['part']
-            assert left['definition_sha256'] == definitions['aurelian.skirt@3'].sha256
-        elif right['part'] == 'aurelian.equipment-joins@2':
-            brace = trial_equipment_brace(definitions, seed=1001)
-            assert left['part'] == brace.reference
-            assert left['definition_sha256'] == brace.sha256 == golden[brace.reference]
-            before = definitions[right['part']].to_dict()['parameters']['atoms'][0]
-            after = brace.to_dict()['parameters']['atoms'][0]
-            assert after == dict(before, radius=.405)
-        elif right['part'].startswith('aurelian.mail-skirt-trim'):
-            assert left['part'] == right['part'].replace('@6','@7')
-            assert definitions[left['part']].sha256 == golden[left['part']]
-            assert definitions[left['part']].to_dict()['parameters']['cape_contact_overlap_mm'] == .04
-            before = definitions[right['part']].to_dict()['parameters']
-            after = definitions[left['part']].to_dict()['parameters']
-            assert before['operations'] == after['operations']
-            for old, new in zip(before['atoms'], after['atoms']):
-                if not old['role'].startswith('cape_contact_'):
-                    assert old == new
-                    continue
-                identity = [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]]
-                frame = old.get('frame_mm', identity)
-                assert new['frame_mm'][1][3]-frame[1][3] == pytest.approx(.04)
-                for i in range(4):
-                    for j in range(4):
-                        if (i,j) != (1,3):
-                            assert new['frame_mm'][i][j] == frame[i][j]
-        else:
-            right['mount'] = expected_mount
-            assert left == right
 
 
 @pytest.mark.parametrize('seed', [True, 1002, None])

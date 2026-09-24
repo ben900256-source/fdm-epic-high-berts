@@ -1,0 +1,25 @@
+﻿import {test,expect} from '@playwright/test';
+import fs from 'node:fs';
+test.use({channel:'chrome',viewport:{width:1150,height:800}});
+test.setTimeout(120000);
+test('locked spearmen open by default and retired experiments stay absent',async({page})=>{
+ const policy=JSON.parse(fs.readFileSync('specs/viewer-defaults.json'));
+ const spec=JSON.parse(fs.readFileSync('specs/elf-modular-visual.json'));
+ await page.goto('http://127.0.0.1:8765');
+ await expect(page.locator('body')).toHaveAttribute('data-assembly',policy.default_review,{timeout:90000});
+ await expect(page.locator('#tab-trials')).toHaveText('Saved reviews');
+ await expect(page.locator('#trial-review')).toHaveValue(policy.default_review);
+ const ids=await page.locator('#trial-review option').evaluateAll(options=>options.map(o=>o.value));
+ expect(ids.filter(id=>policy.retired_reviews.includes(id))).toEqual([]);
+ expect(ids).toContain('aurelian-archer');expect(ids).toContain('aurelian-swordmaster');
+ const index=await(await page.request.get('http://127.0.0.1:8765/data/reviews.json')).json();
+ const current=index.reviews.find(r=>r.id===policy.default_review);
+ await expect(page.locator('body')).toHaveAttribute('data-revision',current.revision);
+ const loaded=await(await page.request.get('http://127.0.0.1:8765'+current.url)).json();
+ expect(loaded.assembly.placements).toEqual(spec.placements);
+ await expect(page.locator('#error')).toBeEmpty();await expect(page.locator('#workshop-error')).toBeEmpty();
+ await page.screenshot({path:'out/default-spearmen-review-20260923/default-view.png'});
+ await page.click('#tab-model');
+ await expect(page.locator('body')).toHaveAttribute('data-assembly','aurelian-spearman-standing-guard',{timeout:90000});
+ await expect(page.locator('#workshop-error')).toBeEmpty();
+});

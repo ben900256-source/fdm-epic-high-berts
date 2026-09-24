@@ -1,4 +1,4 @@
-﻿import json
+import json
 from copy import deepcopy
 from pathlib import Path
 
@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_locked_five_change_only_upright_spear_mounts_and_keep_grip_pivots():
-    old = json.loads((ROOT/'specs/experiments/locked-spearmen-printed-row-20260923.json').read_text(encoding='utf-8'))
+    old = json.loads((ROOT/'specs/baselines/spearmen-printed-20260923.json').read_text(encoding='utf-8'))
     updated = deepcopy(old)
     changes = apply(updated, Definitions())
     assert len(changes) == 3

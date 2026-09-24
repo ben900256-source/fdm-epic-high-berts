@@ -94,3 +94,17 @@ def test_workshop_prefers_piece_metadata_over_legacy_review(tmp_path,monkeypatch
     monkeypatch.setattr(workshop,'DATA',tmp_path)
     assembly=dict(placements=[dict(part='leg@1',definition_sha256='same')])
     assert workshop.assets_for(assembly)['leg@1']==exact
+
+
+def test_locked_spearmen_are_default_and_retired_reviews_cannot_publish(tmp_path):
+    policy=viewer.review_defaults()
+    assert policy['default_review']=='aurelian-spearmen-organic-faces'
+    assert policy['default_review'] not in policy['retired_reviews']
+    build=tmp_path/'build';build.mkdir()
+    (build/'saved-provenance.json').write_text('{"passes":true}')
+    (build/'assembly-job.json').write_text(json.dumps(dict(seed=1001,
+        assembly=dict(assembly_id='open-arm-infantry-gallery-trial',placements=[]),assets={})))
+    destination=tmp_path/'viewer'
+    with pytest.raises(ValueError,match='retired'):
+        viewer.publish(build,destination)
+    assert not destination.exists()

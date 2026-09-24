@@ -20,7 +20,7 @@ physical trial was performed.
 ```powershell
 py -3.13 scripts/generate-roomier-shoes.py --seed 1001
 py -3.13 -m fdm_sculpt.atelier part aurelian.left-leg@5 --seed 1001 --output out/shoe-isolated-new
-py -3.13 -m fdm_sculpt.atelier compose specs/elf-spearmen-overhang-study.json --seed 1001 --output out/shoes-new-review
+py -3.13 -m fdm_sculpt.atelier compose specs/elf-modular-visual.json --seed 1001 --output out/shoes-new-review
 ```
 
 The viewer now exports triangle ranges for each visible geometry role. Hold

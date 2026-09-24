@@ -23,11 +23,21 @@ def _write_json(path, value):
     temporary.replace(path)
 
 
+def review_defaults():
+    return json.loads((ROOT/'specs/viewer-defaults.json').read_text(encoding='utf-8'))
+
+
+def require_active_review(assembly_id):
+    if assembly_id in review_defaults()['retired_reviews']:
+        raise ValueError('This spearman experiment has been retired; use the locked spearmen baseline')
+
+
 def publish(build, destination=DATA):
     build, destination = Path(build).resolve(), Path(destination).resolve()
     if not json.loads((build/'saved-provenance.json').read_text())['passes']:
         raise ValueError('Saved visual provenance must pass before browser review')
     job = json.loads((build/'assembly-job.json').read_text())
+    require_active_review(job['assembly']['assembly_id'])
     exporter = Path(__file__).with_name('viewer_export.py')
     exporter_hash = hashlib.sha256(exporter.read_bytes()).hexdigest()
     assets, missing = {}, []
@@ -83,6 +93,7 @@ def publish(build, destination=DATA):
     entry = dict(id=assembly_id, label=label,
                  url=f'/data/reviews/{review_key}.json', revision=manifest['revision'])
     index['reviews'] = [r for r in index['reviews'] if r['id'] != assembly_id]+[entry]
+    index['default_review'] = review_defaults()['default_review']
     _write_json(index_path, index)
     _write_json(destination/'latest.json', manifest)
     return dict(url='http://127.0.0.1:8765', exported_parts=len(missing), reused_parts=len(assets)-len(missing))
@@ -153,7 +164,8 @@ class Handler(SimpleHTTPRequestHandler):
         from . import workshop
         try:
             if path.path == '/api/catalog':
-                result = dict(models=workshop.public_models(), token=API_TOKEN)
+                result = dict(models=workshop.public_models(), token=API_TOKEN,
+                              default_review=review_defaults()['default_review'])
             elif path.path == '/api/model':
                 result = workshop.model_review(parse_qs(path.query).get('id',[''])[0])
             elif path.path == '/api/jobs':

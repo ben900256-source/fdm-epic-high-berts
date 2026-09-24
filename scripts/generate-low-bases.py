@@ -10,7 +10,7 @@ from fdm_sculpt.components.parts import catalog
 from fdm_sculpt.components.low_bases import revised_parts, BASE_SOURCES
 from fdm_sculpt.components.terrain import write_definition
 
-LAYOUTS = ['elf-modular-visual', 'elf-spearmen-overhang-study',
+LAYOUTS = ['elf-modular-visual',
            'elf-spearman-variants', 'elf-spearman-hawk-sergeant',
            'elf-archer', 'elf-archer-sergeant', 'elf-archer-variants',
            'elf-archer-rear-ranks', 'elf-unit-archers', 'elf-standard-bearer',

@@ -49,8 +49,8 @@ the collar on turned heads. No slicing or physical trial was performed here.
 ```powershell
 py -3.13 scripts/generate-helmet-nape.py --seed 1001
 py -3.13 -m fdm_sculpt.atelier part aurelian.helmet@7 --seed 1001 --output out/helmet-new-review
-py -3.13 -m fdm_sculpt.atelier compose specs/elf-spearmen-overhang-study.json --seed 1001 --output out/helmet-row-new-review
+py -3.13 -m fdm_sculpt.atelier compose specs/elf-modular-visual.json --seed 1001 --output out/helmet-row-new-review
 ```
 
-See the separate [shield support study](shield-breakaway-study.md) for the
+See the separate [shield support study](locked-spearmen.md) for the
 removable pedestal candidates.
