@@ -28,18 +28,25 @@
   without geometry validation, independent repeat builds or slicing. Label these
   downloads unchecked Blender output. Keep the existing model recipes unchanged;
   the historical manufacturing gates below still apply to validated proof builds.
-- Current accepted infantry baseline: [wider-shield glue-in spearmen](docs/wider-shield-trial.md),
-  physically printed and accepted on 2026-09-22. Preserve the more raised flat
-  seahorse (`aurelian.readable-insignia-trial@4`, 0.39 mm printed relief).
-  Keep shield faces readable from the front and avoid pronounced inward rotation.
-  Use the pinned five-pose print recipe in `specs/prusa-five-wider-shield-trial.json`.
-- Other current figures incorporate this design through the
-  [accepted army update](docs/accepted-army-update.md) and
-  `specs/accepted-army-index.json`. Their new reviews are visual-only; do not
-  extend the five-spearman physical acceptance to unprinted army variants.
+- Current spearmen design is [locked](docs/locked-spearmen.md), accepted by the
+  user on 2026-09-23 after the latest print. Preserve the pinned shapes in
+  `specs/spearmen-locked-baseline.json`: recessed head/prior nose, pointed helmet
+  revision 5, crest revision 7, raised fierce seahorse revision 6, wider shields,
+  uniform shaft and decorative spearhead revision 3, bodies and glue-in footings.
+  Do not resume detail experiments unless requested. Keep shields readable from
+  the front and avoid pronounced inward rotation.
+- No current spear may be visually upright: keep at least 6 degrees from vertical.
+  Nearly upright spears pivot through their existing grips; already inclined
+  poses stay unchanged. This final angle change is visual-only pending a print;
+  acceptance of the printed shape does not establish validation of the angle edit.
+  Historical trial recipes stay unchanged. Use the established spaced five-mini
+  tool-2 print layout and matching shared base for future tests.
+- Other current figures incorporate the [accepted army update](docs/accepted-army-update.md)
+  through `specs/accepted-army-index.json`. Their reviews are visual-only; do not
+  extend spearman physical acceptance to unprinted army variants.
 - Earlier accepted scale reference: [130% intact spearmen](specs/elf-print-target.json),
   five 10.4 mm sole-to-eye figures with 1.56 mm intact spear shafts on a
-  26 × 6.5 × 1.3 mm strip. The user physically printed and accepted this target.
+  26 Ã— 6.5 Ã— 1.3 mm strip. The user physically printed and accepted this target.
   Keep source recipes at 8 mm sole-to-eye and apply the pinned 1.3 export scale
   exactly once, including terrain and base. The separate-spear/open-grip experiment
   is retired; preserve its historical definitions but do not resume it by default.
@@ -59,7 +66,7 @@
   40 mm minimum figure spacing and minimum speed / slowdown threshold of 10 mm/s / 10 s.
   Resolve the named installed presets read-only instead of reusing old test INIs
   or the historical proof adapter's preset selection. The new filament preset has
-  205°C normal layers and 230°C first layer; do not force both to 205°C.
+  205Â°C normal layers and 230Â°C first layer; do not force both to 205Â°C.
 - Generate only parameterized primitives, transforms, bevels and ordered Exact
   CSG. Never sculpt, hand-edit mesh elements or import third-party meshes.
   Terrain-specific exception requested by the user: continuous procedural

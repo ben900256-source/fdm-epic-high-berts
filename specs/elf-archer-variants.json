@@ -872,8 +872,8 @@
     },
     {
       "instance_id": "variant-01-aiming-forward/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.997434423,
@@ -903,8 +903,8 @@
     },
     {
       "instance_id": "variant-01-aiming-forward/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.997434423,
@@ -934,8 +934,8 @@
     },
     {
       "instance_id": "variant-01-aiming-forward/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.997434423,
@@ -1244,8 +1244,8 @@
     },
     {
       "instance_id": "variant-02-aiming-left/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9703665500578014,
@@ -1275,8 +1275,8 @@
     },
     {
       "instance_id": "variant-02-aiming-left/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9703665500578014,
@@ -1306,8 +1306,8 @@
     },
     {
       "instance_id": "variant-02-aiming-left/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9703665500578014,
@@ -1616,8 +1616,8 @@
     },
     {
       "instance_id": "variant-03-aiming-right/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9132088105587082,
@@ -1647,8 +1647,8 @@
     },
     {
       "instance_id": "variant-03-aiming-right/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9132088105587082,
@@ -1678,8 +1678,8 @@
     },
     {
       "instance_id": "variant-03-aiming-right/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9132088105587082,
@@ -1988,8 +1988,8 @@
     },
     {
       "instance_id": "variant-04-ready-forward/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.997523105029176,
@@ -2019,8 +2019,8 @@
     },
     {
       "instance_id": "variant-04-ready-forward/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.997523105029176,
@@ -2050,8 +2050,8 @@
     },
     {
       "instance_id": "variant-04-ready-forward/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.997523105029176,
@@ -2329,8 +2329,8 @@
     },
     {
       "instance_id": "variant-05-ready-turned/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.8825736839919992,
@@ -2360,8 +2360,8 @@
     },
     {
       "instance_id": "variant-05-ready-turned/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.8825736839919992,
@@ -2391,8 +2391,8 @@
     },
     {
       "instance_id": "variant-05-ready-turned/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.8825736839919992,
@@ -2670,8 +2670,8 @@
     },
     {
       "instance_id": "variant-06-reaching-quiver/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9613547234631925,
@@ -2701,8 +2701,8 @@
     },
     {
       "instance_id": "variant-06-reaching-quiver/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9613547234631925,
@@ -2732,8 +2732,8 @@
     },
     {
       "instance_id": "variant-06-reaching-quiver/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9613547234631925,
@@ -3011,8 +3011,8 @@
     },
     {
       "instance_id": "variant-07-drawing-arrow/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9452307901024074,
@@ -3042,8 +3042,8 @@
     },
     {
       "instance_id": "variant-07-drawing-arrow/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9452307901024074,
@@ -3073,8 +3073,8 @@
     },
     {
       "instance_id": "variant-07-drawing-arrow/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9452307901024074,
@@ -3383,8 +3383,8 @@
     },
     {
       "instance_id": "variant-08-shortblade-low/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9816645483084626,
@@ -3414,8 +3414,8 @@
     },
     {
       "instance_id": "variant-08-shortblade-low/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9816645483084626,
@@ -3445,8 +3445,8 @@
     },
     {
       "instance_id": "variant-08-shortblade-low/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9816645483084626,
@@ -3755,8 +3755,8 @@
     },
     {
       "instance_id": "variant-09-shortblade-raised/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9132088105587082,
@@ -3786,8 +3786,8 @@
     },
     {
       "instance_id": "variant-09-shortblade-raised/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9132088105587082,
@@ -3817,8 +3817,8 @@
     },
     {
       "instance_id": "variant-09-shortblade-raised/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9132088105587082,
@@ -4127,8 +4127,8 @@
     },
     {
       "instance_id": "variant-10-after-release/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9137258984920875,
@@ -4158,8 +4158,8 @@
     },
     {
       "instance_id": "variant-10-after-release/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9137258984920875,
@@ -4189,8 +4189,8 @@
     },
     {
       "instance_id": "variant-10-after-release/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9137258984920875,
@@ -4468,8 +4468,8 @@
     },
     {
       "instance_id": "variant-11-aiming-up-20/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.997434423,
@@ -4499,8 +4499,8 @@
     },
     {
       "instance_id": "variant-11-aiming-up-20/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.997434423,
@@ -4530,8 +4530,8 @@
     },
     {
       "instance_id": "variant-11-aiming-up-20/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.997434423,
@@ -4840,8 +4840,8 @@
     },
     {
       "instance_id": "variant-12-aiming-up-30/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.997434423,
@@ -4871,8 +4871,8 @@
     },
     {
       "instance_id": "variant-12-aiming-up-30/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.997434423,
@@ -4902,8 +4902,8 @@
     },
     {
       "instance_id": "variant-12-aiming-up-30/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.997434423,
@@ -5212,8 +5212,8 @@
     },
     {
       "instance_id": "variant-13-aiming-up-40/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.997434423,
@@ -5243,8 +5243,8 @@
     },
     {
       "instance_id": "variant-13-aiming-up-40/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.997434423,
@@ -5274,8 +5274,8 @@
     },
     {
       "instance_id": "variant-13-aiming-up-40/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.997434423,
@@ -5521,5 +5521,5 @@
       ]
     }
   ],
-  "label": "Archer variants (13) \u2014 accepted detail (visual-only)"
+  "label": "Archer variants (13) \u2014 accepted detail (visual-only); bolder faces (visual-only); recessed head and prior nose (visual-only)"
 }

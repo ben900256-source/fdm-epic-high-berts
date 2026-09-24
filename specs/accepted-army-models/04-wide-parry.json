@@ -159,8 +159,8 @@
     },
     {
       "instance_id": "04-wide-parry/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9975640502598242,
@@ -190,8 +190,8 @@
     },
     {
       "instance_id": "04-wide-parry/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9975640502598242,

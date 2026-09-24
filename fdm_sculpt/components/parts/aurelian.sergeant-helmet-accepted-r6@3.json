@@ -1,0 +1,891 @@
+{
+  "component_id": "aurelian.sergeant-helmet-accepted-r6",
+  "version": 3,
+  "name": "Sergeant helmet with taller capped feather plumes \u2014 accepted infantry detail - fuller face detail - 20 percent taller shell",
+  "family": "helmet",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "helmet_crown"
+  ],
+  "parameters": {
+    "accepted_army": {
+      "accepted_reference": "wider-shield-infantry-3-trial",
+      "print_scale": 1.3,
+      "seed": 1001,
+      "source": "aurelian.sergeant-helmet@6",
+      "source_sha256": "9011ca3d257f71b1cfb82738b922b4cbb20cebceb30aaaea91130a3ec3f4856d",
+      "status": "visual-only",
+      "treatment": "Broader helmet opening, preserving rank/dragon ornament"
+    },
+    "atoms": [
+      {
+        "dimensions": [
+          1.7712,
+          2.1,
+          5.28
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0.08,
+          7.2
+        ],
+        "primitive": "sphere",
+        "ring_count": 64,
+        "role": "helmet_crown",
+        "segments": 64
+      },
+      {
+        "bevel": 0.06,
+        "dimensions": [
+          1.34,
+          2.5,
+          2.376
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          -0.95,
+          7.01
+        ],
+        "primitive": "cube",
+        "role": "helmet_face_opening"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          3.5,
+          3.5,
+          4.0
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0.08,
+          8.65
+        ],
+        "primitive": "cube",
+        "role": "helmet_nape_clip"
+      },
+      {
+        "bevel": 0.06,
+        "bevel_segments": 4,
+        "depth": 1.08,
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0.08,
+          9.15
+        ],
+        "primitive": "cone",
+        "radius1": 0.55,
+        "radius2": 0.14,
+        "role": "helmet_tapered_tip",
+        "rotation": [
+          0,
+          0,
+          0.1308996938995747
+        ],
+        "scale": [
+          1.08,
+          1.2804878048780488,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "dimensions": [
+          1.7309960899751695,
+          2.0523327625044354,
+          2.739674640285839
+        ],
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          -0.3949628211265359
+        ],
+        "primitive": "sphere",
+        "ring_count": 96,
+        "role": "nape_ellipsoid",
+        "segments": 64
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          4,
+          4,
+          0.9499999999999998
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          -0.9249999999999999
+        ],
+        "primitive": "cube",
+        "role": "nape_limits"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          1.34,
+          2.5,
+          1.44
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.95,
+          -1.5
+        ],
+        "primitive": "cube",
+        "role": "nape_front_clearance"
+      },
+      {
+        "dimensions": [
+          0.7150000000000001,
+          0.9900000000000001,
+          0.792
+        ],
+        "export": false,
+        "location": [
+          -0.68,
+          0.03,
+          0.82
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "left_wing_root",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          0.85,
+          3.1387500000000004
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9685831611286311,
+            0.0,
+            -0.2486898871648548,
+            0.4856369202634039
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.2486898871648548,
+            0.0,
+            0.9685831611286311,
+            0.3217907358755765
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -1.0307995210287597,
+          -0.03,
+          2.0830013983675015
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "left_wing_feather_0",
+        "segments": 32
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          12,
+          12,
+          12
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          -2.8202070078202617
+        ],
+        "primitive": "cube",
+        "role": "left_wing_feather_0_tip_limit"
+      },
+      {
+        "dimensions": [
+          0.8,
+          0.85,
+          3.3412499999999996
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9348256763960144,
+            0.0,
+            -0.35510696240813705,
+            0.689746570828341
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.35510696240813705,
+            0.0,
+            0.9348256763960144,
+            0.5823426037819364
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -1.2415943729721053,
+          0.18,
+          2.170238057432279
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "left_wing_feather_1",
+        "segments": 32
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          12,
+          12,
+          12
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          -2.7006656178618584
+        ],
+        "primitive": "cube",
+        "role": "left_wing_feather_1_tip_limit"
+      },
+      {
+        "dimensions": [
+          0.8,
+          0.85,
+          3.2400000000000007
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.8894163732912975,
+            0.0,
+            -0.45709792705869423,
+            0.7864769270581626
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.45709792705869423,
+            0.0,
+            0.8894163732912975,
+            0.8643429562661349
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          -1.3931443190584876,
+          0.39,
+          2.0576244666878685
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "left_wing_feather_2",
+        "segments": 32
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          12,
+          12,
+          12
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          -2.896641048219315
+        ],
+        "primitive": "cube",
+        "role": "left_wing_feather_2_tip_limit"
+      },
+      {
+        "dimensions": [
+          0.7150000000000001,
+          0.9900000000000001,
+          0.792
+        ],
+        "export": false,
+        "location": [
+          0.68,
+          0.03,
+          0.82
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_wing_root",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.8,
+          0.85,
+          3.1387500000000004
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9685831611286311,
+            0.0,
+            0.2486898871648548,
+            -0.4856369202634039
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.2486898871648548,
+            0.0,
+            0.9685831611286311,
+            0.3217907358755765
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          1.0307995210287597,
+          -0.03,
+          2.0830013983675015
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_wing_feather_0",
+        "segments": 32
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          12,
+          12,
+          12
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          -2.8202070078202617
+        ],
+        "primitive": "cube",
+        "role": "right_wing_feather_0_tip_limit"
+      },
+      {
+        "dimensions": [
+          0.8,
+          0.85,
+          3.3412499999999996
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.9348256763960144,
+            0.0,
+            0.35510696240813705,
+            -0.689746570828341
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.35510696240813705,
+            0.0,
+            0.9348256763960144,
+            0.5823426037819364
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          1.2415943729721053,
+          0.18,
+          2.170238057432279
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_wing_feather_1",
+        "segments": 32
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          12,
+          12,
+          12
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          -2.7006656178618584
+        ],
+        "primitive": "cube",
+        "role": "right_wing_feather_1_tip_limit"
+      },
+      {
+        "dimensions": [
+          0.8,
+          0.85,
+          3.2400000000000007
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.8894163732912975,
+            0.0,
+            0.45709792705869423,
+            -0.7864769270581626
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.45709792705869423,
+            0.0,
+            0.8894163732912975,
+            0.8643429562661349
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          1.3931443190584876,
+          0.39,
+          2.0576244666878685
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "right_wing_feather_2",
+        "segments": 32
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          12,
+          12,
+          12
+        ],
+        "export": false,
+        "location": [
+          0,
+          0,
+          -2.896641048219315
+        ],
+        "primitive": "cube",
+        "role": "right_wing_feather_2_tip_limit"
+      },
+      {
+        "dimensions": [
+          0.45,
+          0.32,
+          0.48
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.94,
+          0.96
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "brow_jewel",
+        "segments": 32
+      }
+    ],
+    "bolder_face": {
+      "depth_factor": 1.05,
+      "height_factor": 1.0,
+      "print_scale": 1.3,
+      "seed": 1001,
+      "source": "aurelian.sergeant-helmet-accepted-r6@1",
+      "source_sha256": "fa9acac561d1dad0ee7ea3fe65dcc3539105bdda94b26bd969f63960b58753d8",
+      "status": "visual-only",
+      "width_factor": 1.08
+    },
+    "detail_source": {
+      "definition_sha256": "6778ff1d921229bd035a12319d89e2380ec6c5bf39c6d4b525f4bcdab30bb18c",
+      "reference": "aurelian.sergeant-helmet@2"
+    },
+    "feather_stock_mm": [
+      0.8,
+      0.85
+    ],
+    "feather_tip_height_fraction": 0.72,
+    "landmarks": {
+      "front_brim": [
+        0,
+        -0.85,
+        0.68
+      ],
+      "helmet_crown": [
+        0.0,
+        0.08,
+        0.0
+      ],
+      "helmet_face_opening": [
+        0.0,
+        -0.95,
+        -0.19
+      ],
+      "helmet_nape_clip": [
+        0.0,
+        0.08,
+        1.45
+      ],
+      "helmet_tapered_tip": [
+        0.0,
+        0.08,
+        1.9500000000000002
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "nape_join": [
+        0,
+        0.08,
+        -0.55
+      ],
+      "nape_root": [
+        0,
+        0.08,
+        -1.4
+      ],
+      "wing_roots": [
+        [
+          -0.68,
+          0.03,
+          0.82
+        ],
+        [
+          0.68,
+          0.03,
+          0.82
+        ]
+      ]
+    },
+    "nape_profile": {
+      "center_z": -0.3949628211265359,
+      "join_z": -0.55,
+      "radius_x": 0.801387078692208,
+      "radius_z": 1.1415311001190995,
+      "root_radius": 0.38,
+      "root_z": -1.4,
+      "seed": 1001
+    },
+    "operations": [
+      {
+        "operand": "helmet_nape_clip",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "nape_limits",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "nape_ellipsoid"
+      },
+      {
+        "operand": "nape_ellipsoid",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "helmet_tapered_tip",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "helmet_face_opening",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "nape_front_clearance",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "left_wing_root",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "left_wing_feather_0_tip_limit",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "left_wing_feather_0"
+      },
+      {
+        "operand": "left_wing_feather_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "left_wing_feather_1_tip_limit",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "left_wing_feather_1"
+      },
+      {
+        "operand": "left_wing_feather_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "left_wing_feather_2_tip_limit",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "left_wing_feather_2"
+      },
+      {
+        "operand": "left_wing_feather_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "right_wing_root",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "right_wing_feather_0_tip_limit",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "right_wing_feather_0"
+      },
+      {
+        "operand": "right_wing_feather_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "right_wing_feather_1_tip_limit",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "right_wing_feather_1"
+      },
+      {
+        "operand": "right_wing_feather_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "right_wing_feather_2_tip_limit",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "right_wing_feather_2"
+      },
+      {
+        "operand": "right_wing_feather_2",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "brow_jewel",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      }
+    ],
+    "parent": {
+      "definition_sha256": "dfe68cc0dc09d3266256cdd940a5d949991086da043c3a61b828228108688317",
+      "reference": "aurelian.helmet@7"
+    },
+    "plume_height_fit": {
+      "length_factor": 1.35,
+      "seed": 1001,
+      "source": "aurelian.sergeant-helmet@4",
+      "source_sha256": "1198002fbcf16c0734aa8076ae6688558bbaba495fc74b2509176caf1dec8e95"
+    },
+    "provenance": "Standard infantry revision 7 flush nape retained. Swept wing feathers keep their roots and broad silhouette; horizontal Exact caps remove their vanishing needle ends. Visual-only, pending sliced-detail review. Feather stock broadened after the 0.25 mm slice omitted intermediate tip contours; terminal sections are approximately 0.55 mm across. Wing feathers lengthened 35 percent from fixed roots, retaining the broad stock and Exact tip cutoff. Central helmet peak unchanged. Visual-only.",
+    "seed": 1001,
+    "taller_helmet": {
+      "height_factor": 1.2,
+      "print_scale": 1.3,
+      "seed": 1001,
+      "source": "aurelian.sergeant-helmet-accepted-r6@2",
+      "source_sha256": "02c5c71035ccaad0cadc741e656682de25a7a8f1e3b15214e056564257d2dbe1",
+      "status": "visual-only"
+    }
+  }
+}

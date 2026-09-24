@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "assembly_id": "aurelian-spearmen-organic-faces",
-  "label": "Accepted wider-shield infantry \u2014 visual-only",
+  "label": "Accepted wider-shield infantry \u00e2\u20ac\u201d visual-only; bolder faces (visual-only); recessed head and prior nose (visual-only)",
   "placements": [
     {
       "instance_id": "tray",
@@ -253,8 +253,8 @@
     },
     {
       "instance_id": "elf-01/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9955644479260664,
@@ -284,8 +284,8 @@
     },
     {
       "instance_id": "elf-01/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9955644479260664,
@@ -381,22 +381,22 @@
       "definition_sha256": "25363d5f0c46e495e2776bf7f76658cf56521436cdc738098e4e91caa2e96401",
       "mount": [
         [
-          0.9612616959383189,
+          0.9555966196846231,
           0.27555507530991424,
-          0.006734420940770259,
-          -10.488353948619167
+          0.10442461850992042,
+          -10.424855320299338
         ],
         [
-          -0.27563735581699916,
+          -0.2765968765835834,
           0.9609747497094643,
-          0.02348571685974688,
-          -1.329492636703081
+          -0.004658184454174114,
+          -1.3477861725282863
         ],
         [
-          0.0,
+          -0.1016330080041545,
           -0.024432178,
-          0.99970149,
-          7.624832356384614
+          0.9945218955821171,
+          7.621465620018299
         ],
         [
           0.0,
@@ -470,8 +470,8 @@
     },
     {
       "instance_id": "elf-01/shield-insignia",
-      "part": "aurelian.readable-insignia-trial@4",
-      "definition_sha256": "cd71372080ea2a92709a4f656240390c8e6ae2327c39c03d40d18a30a1f836bd",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
       "mount": [
         [
           0.8285325452995469,
@@ -532,8 +532,8 @@
     },
     {
       "instance_id": "elf-01/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9955644479260664,
@@ -935,8 +935,8 @@
     },
     {
       "instance_id": "elf-02/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9781738474701216,
@@ -966,8 +966,8 @@
     },
     {
       "instance_id": "elf-02/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9781738474701216,
@@ -1001,15 +1001,15 @@
       "definition_sha256": "538846584437e7cdfd7d8ad1d2a95c49994690a51fa88f21427e05ea201b3cfa",
       "mount": [
         [
-          0.8285325454583006,
-          -0.5591539073963377,
-          0.02967707909267514,
+          0.9504771587657055,
+          -0.3107936118079183,
+          -0.0007084959225835755,
           -6.321849807003362
         ],
         [
-          0.5588522587361598,
-          0.8224560875116466,
-          -0.10606666568714239,
+          0.308828749702469,
+          0.944719238134244,
+          -0.11013793455022028,
           -1.0909518263924032
         ],
         [
@@ -1063,22 +1063,22 @@
       "definition_sha256": "25363d5f0c46e495e2776bf7f76658cf56521436cdc738098e4e91caa2e96401",
       "mount": [
         [
-          0.984807753012208,
+          0.9793523329669381,
           -0.1735624927101424,
-          0.005454421059485131,
-          -4.078303811421522
+          0.10365842471436504,
+          -3.994830408131027
         ],
         [
-          0.17364817766693033,
+          0.1758676890756029,
           0.9843218094745617,
-          -0.030933558991197995,
-          -1.2155742075096518
+          -0.013458477555607373,
+          -1.2007203882566848
         ],
         [
-          0.0,
+          -0.09969736126949172,
           0.031410759,
-          0.99950656,
-          7.5979750283846155
+          0.994521895002284,
+          7.593738063127225
         ],
         [
           0.0,
@@ -1152,19 +1152,19 @@
     },
     {
       "instance_id": "elf-02/shield-insignia",
-      "part": "aurelian.readable-insignia-trial@4",
-      "definition_sha256": "cd71372080ea2a92709a4f656240390c8e6ae2327c39c03d40d18a30a1f836bd",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
       "mount": [
         [
-          0.8285325454583006,
-          -0.5591539073963377,
-          0.02967707909267514,
+          0.9504771587657055,
+          -0.3107936118079183,
+          -0.0007084959225835755,
           -6.321849807003362
         ],
         [
-          0.5588522587361598,
-          0.8224560875116466,
-          -0.10606666568714239,
+          0.308828749702469,
+          0.944719238134244,
+          -0.11013793455022028,
           -1.0909518263924032
         ],
         [
@@ -1214,8 +1214,8 @@
     },
     {
       "instance_id": "elf-02/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9781738474701216,
@@ -1617,8 +1617,8 @@
     },
     {
       "instance_id": "elf-03/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9846687974132066,
@@ -1648,8 +1648,8 @@
     },
     {
       "instance_id": "elf-03/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9846687974132066,
@@ -1745,22 +1745,22 @@
       "definition_sha256": "25363d5f0c46e495e2776bf7f76658cf56521436cdc738098e4e91caa2e96401",
       "mount": [
         [
-          0.9975640502598242,
+          0.9920726756689592,
           -0.06975477384861663,
-          0.00048698807989091224,
-          1.6354662973894363
+          0.10452788010481766,
+          1.671880609365625
         ],
         [
-          0.0697564737441253,
+          0.07010238618687731,
           0.9975397406214834,
-          -0.006964254001516901,
-          -1.1855581871968799
+          0.00034916173673462184,
+          -1.1829984917048377
         ],
         [
-          0.0,
+          -0.10429507010545584,
           0.00698126,
-          0.999975631,
-          7.612027019384616
+          0.9945218956591887,
+          7.610118212027522
         ],
         [
           0.0,
@@ -1834,8 +1834,8 @@
     },
     {
       "instance_id": "elf-03/shield-insignia",
-      "part": "aurelian.readable-insignia-trial@4",
-      "definition_sha256": "cd71372080ea2a92709a4f656240390c8e6ae2327c39c03d40d18a30a1f836bd",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
       "mount": [
         [
           0.9996573250049683,
@@ -1896,8 +1896,8 @@
     },
     {
       "instance_id": "elf-03/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9846687974132066,
@@ -2299,8 +2299,8 @@
     },
     {
       "instance_id": "elf-04/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9983826176816993,
@@ -2330,8 +2330,8 @@
     },
     {
       "instance_id": "elf-04/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9983826176816993,
@@ -2485,8 +2485,8 @@
     },
     {
       "instance_id": "elf-04/shield-insignia",
-      "part": "aurelian.readable-insignia-trial@4",
-      "definition_sha256": "cd71372080ea2a92709a4f656240390c8e6ae2327c39c03d40d18a30a1f836bd",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
       "mount": [
         [
           0.9802818971556361,
@@ -2547,8 +2547,8 @@
     },
     {
       "instance_id": "elf-04/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9983826176816993,
@@ -2950,8 +2950,8 @@
     },
     {
       "instance_id": "elf-05/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9960978590401214,
@@ -2981,8 +2981,8 @@
     },
     {
       "instance_id": "elf-05/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9960978590401214,
@@ -3136,8 +3136,8 @@
     },
     {
       "instance_id": "elf-05/shield-insignia",
-      "part": "aurelian.readable-insignia-trial@4",
-      "definition_sha256": "cd71372080ea2a92709a4f656240390c8e6ae2327c39c03d40d18a30a1f836bd",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
       "mount": [
         [
           0.9451945701826452,
@@ -3198,8 +3198,8 @@
     },
     {
       "instance_id": "elf-05/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9960978590401214,
@@ -3382,5 +3382,56 @@
         ]
       ]
     }
-  ]
+  ],
+  "spear_lean": {
+    "minimum_degrees": 6.0,
+    "status": "visual-only; angle change not yet printed",
+    "placements": [
+      {
+        "figure": "elf-01",
+        "before_degrees": 1.3999999909499166,
+        "after_degrees": 5.999999998788606,
+        "local_pivot_mm": [
+          0.0,
+          0.46,
+          -0.6499999989751466
+        ],
+        "grip_axis_pivot_mm": [
+          -10.365975988,
+          -0.902709968,
+          6.963787587
+        ]
+      },
+      {
+        "figure": "elf-02",
+        "before_degrees": 1.799999996183996,
+        "after_degrees": 6.000000001996028,
+        "local_pivot_mm": [
+          0.0,
+          0.46,
+          -0.850000001872092
+        ],
+        "grip_axis_pivot_mm": [
+          -4.162778816,
+          -0.73649265,
+          6.7628434
+        ]
+      },
+      {
+        "figure": "elf-03",
+        "before_degrees": 0.39999998281063553,
+        "after_degrees": 5.999999998265425,
+        "local_pivot_mm": [
+          0.0,
+          0.46,
+          -0.3499999977649594
+        ],
+        "grip_axis_pivot_mm": [
+          1.603208656,
+          -0.724252418,
+          7.26524693
+        ]
+      }
+    ]
+  }
 }

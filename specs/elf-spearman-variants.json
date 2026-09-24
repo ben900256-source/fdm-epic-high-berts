@@ -779,8 +779,8 @@
     },
     {
       "instance_id": "variant-01-standing-guard/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9979434175878297,
@@ -810,8 +810,8 @@
     },
     {
       "instance_id": "variant-01-standing-guard/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9979434175878297,
@@ -907,22 +907,22 @@
       "definition_sha256": "25363d5f0c46e495e2776bf7f76658cf56521436cdc738098e4e91caa2e96401",
       "mount": [
         [
-          1.0,
+          0.9948188589597052,
           0.0,
-          0.0,
-          -14.95
+          0.10166335553241447,
+          -14.883918819108393
         ],
         [
-          0.0,
+          -0.002483857198445235,
           0.99970149,
-          0.024432178,
-          -1.073269616
+          0.024305591439860413,
+          -1.073351897263836
         ],
         [
-          0.0,
+          -0.1016330080041545,
           -0.024432178,
-          0.99970149,
-          7.009447740999999
+          0.9945218955821171,
+          7.0060810046387925
         ],
         [
           0.0,
@@ -996,8 +996,8 @@
     },
     {
       "instance_id": "variant-01-standing-guard/shield-insignia",
-      "part": "aurelian.readable-insignia-trial@4",
-      "definition_sha256": "cd71372080ea2a92709a4f656240390c8e6ae2327c39c03d40d18a30a1f836bd",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
       "mount": [
         [
           0.989664824,
@@ -1058,8 +1058,8 @@
     },
     {
       "instance_id": "variant-01-standing-guard/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9979434175878297,
@@ -1368,8 +1368,8 @@
     },
     {
       "instance_id": "variant-02-watching-left/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.984792306259201,
@@ -1399,8 +1399,8 @@
     },
     {
       "instance_id": "variant-02-watching-left/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.984792306259201,
@@ -1496,22 +1496,22 @@
       "definition_sha256": "25363d5f0c46e495e2776bf7f76658cf56521436cdc738098e4e91caa2e96401",
       "mount": [
         [
-          0.9975640502598242,
+          0.9928076279121496,
           0.069722053109721,
-          -0.002191103785466548,
-          -7.050791434443894
+          0.0973234260907124,
+          -6.966204083962345
         ],
         [
-          -0.0697564737441253,
+          -0.06628310575122537,
           0.9970718122548641,
-          -0.03133424396977523,
-          -1.4780514734837125
+          -0.03813594585616189,
+          -1.4838329200930735
         ],
         [
-          0.0,
+          -0.09969736126949172,
           0.031410759,
-          0.99950656,
-          6.982590413
+          0.994521895002284,
+          6.978353447747593
         ],
         [
           0.0,
@@ -1585,8 +1585,8 @@
     },
     {
       "instance_id": "variant-02-watching-left/shield-insignia",
-      "part": "aurelian.readable-insignia-trial@4",
-      "definition_sha256": "cd71372080ea2a92709a4f656240390c8e6ae2327c39c03d40d18a30a1f836bd",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
       "mount": [
         [
           0.9896648245708511,
@@ -1647,8 +1647,8 @@
     },
     {
       "instance_id": "variant-02-watching-left/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.984792306259201,
@@ -1957,8 +1957,8 @@
     },
     {
       "instance_id": "variant-03-watching-right/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9846687974132066,
@@ -1988,8 +1988,8 @@
     },
     {
       "instance_id": "variant-03-watching-right/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9846687974132066,
@@ -2085,22 +2085,22 @@
       "definition_sha256": "25363d5f0c46e495e2776bf7f76658cf56521436cdc738098e4e91caa2e96401",
       "mount": [
         [
-          0.9975640502598242,
+          0.9920726756689592,
           -0.06975477384861663,
-          0.00048698807989091224,
-          1.1354662973894363
+          0.10452788010481766,
+          1.1718806094696634
         ],
         [
-          0.0697564737441253,
+          0.07010238618687731,
           0.9975397406214834,
-          -0.006964254001516901,
-          -1.1855581871968799
+          0.00034916173673462184,
+          -1.1829984916975245
         ],
         [
-          0.0,
+          -0.10429507010545584,
           0.00698126,
-          0.999975631,
-          6.996642404
+          0.9945218956591887,
+          6.9947335966374515
         ],
         [
           0.0,
@@ -2174,8 +2174,8 @@
     },
     {
       "instance_id": "variant-03-watching-right/shield-insignia",
-      "part": "aurelian.readable-insignia-trial@4",
-      "definition_sha256": "cd71372080ea2a92709a4f656240390c8e6ae2327c39c03d40d18a30a1f836bd",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
       "mount": [
         [
           0.9996573250049683,
@@ -2236,8 +2236,8 @@
     },
     {
       "instance_id": "variant-03-watching-right/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9846687974132066,
@@ -2546,8 +2546,8 @@
     },
     {
       "instance_id": "variant-04-spear-forward/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9983663379451836,
@@ -2577,8 +2577,8 @@
     },
     {
       "instance_id": "variant-04-spear-forward/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9983663379451836,
@@ -2732,8 +2732,8 @@
     },
     {
       "instance_id": "variant-04-spear-forward/shield-insignia",
-      "part": "aurelian.readable-insignia-trial@4",
-      "definition_sha256": "cd71372080ea2a92709a4f656240390c8e6ae2327c39c03d40d18a30a1f836bd",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
       "mount": [
         [
           0.9730347242622898,
@@ -2794,8 +2794,8 @@
     },
     {
       "instance_id": "variant-04-spear-forward/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9983663379451836,
@@ -3104,8 +3104,8 @@
     },
     {
       "instance_id": "variant-05-spear-outward/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9997399584523531,
@@ -3135,8 +3135,8 @@
     },
     {
       "instance_id": "variant-05-spear-outward/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9997399584523531,
@@ -3290,8 +3290,8 @@
     },
     {
       "instance_id": "variant-05-spear-outward/shield-insignia",
-      "part": "aurelian.readable-insignia-trial@4",
-      "definition_sha256": "cd71372080ea2a92709a4f656240390c8e6ae2327c39c03d40d18a30a1f836bd",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
       "mount": [
         [
           0.9873498845051006,
@@ -3352,8 +3352,8 @@
     },
     {
       "instance_id": "variant-05-spear-outward/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9997399584523531,
@@ -3662,8 +3662,8 @@
     },
     {
       "instance_id": "variant-06-rear-rank-ready/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9999146575406395,
@@ -3693,8 +3693,8 @@
     },
     {
       "instance_id": "variant-06-rear-rank-ready/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9999146575406395,
@@ -3848,8 +3848,8 @@
     },
     {
       "instance_id": "variant-06-rear-rank-ready/shield-insignia",
-      "part": "aurelian.readable-insignia-trial@4",
-      "definition_sha256": "cd71372080ea2a92709a4f656240390c8e6ae2327c39c03d40d18a30a1f836bd",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
       "mount": [
         [
           0.9873498844892802,
@@ -3910,8 +3910,8 @@
     },
     {
       "instance_id": "variant-06-rear-rank-ready/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9999146575406395,
@@ -4220,8 +4220,8 @@
     },
     {
       "instance_id": "variant-07-sword-low/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9905956944428661,
@@ -4251,8 +4251,8 @@
     },
     {
       "instance_id": "variant-07-sword-low/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9905956944428661,
@@ -4344,8 +4344,8 @@
     },
     {
       "instance_id": "variant-07-sword-low/shield-insignia",
-      "part": "aurelian.readable-insignia-trial@4",
-      "definition_sha256": "cd71372080ea2a92709a4f656240390c8e6ae2327c39c03d40d18a30a1f836bd",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
       "mount": [
         [
           0.9810292025246626,
@@ -4406,8 +4406,8 @@
     },
     {
       "instance_id": "variant-07-sword-low/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9905956944428661,
@@ -4778,8 +4778,8 @@
     },
     {
       "instance_id": "variant-08-sword-guard/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9872848756734169,
@@ -4809,8 +4809,8 @@
     },
     {
       "instance_id": "variant-08-sword-guard/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9872848756734169,
@@ -4902,8 +4902,8 @@
     },
     {
       "instance_id": "variant-08-sword-guard/shield-insignia",
-      "part": "aurelian.readable-insignia-trial@4",
-      "definition_sha256": "cd71372080ea2a92709a4f656240390c8e6ae2327c39c03d40d18a30a1f836bd",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
       "mount": [
         [
           0.960676121615026,
@@ -4964,8 +4964,8 @@
     },
     {
       "instance_id": "variant-08-sword-guard/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9872848756734169,
@@ -5336,8 +5336,8 @@
     },
     {
       "instance_id": "variant-09-sword-raised/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9874117476885529,
@@ -5367,8 +5367,8 @@
     },
     {
       "instance_id": "variant-09-sword-raised/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9874117476885529,
@@ -5460,8 +5460,8 @@
     },
     {
       "instance_id": "variant-09-sword-raised/shield-insignia",
-      "part": "aurelian.readable-insignia-trial@4",
-      "definition_sha256": "cd71372080ea2a92709a4f656240390c8e6ae2327c39c03d40d18a30a1f836bd",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
       "mount": [
         [
           0.976807083222357,
@@ -5522,8 +5522,8 @@
     },
     {
       "instance_id": "variant-09-sword-raised/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9874117476885529,
@@ -5894,8 +5894,8 @@
     },
     {
       "instance_id": "variant-10-hawk-sergeant/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9985608585252889,
@@ -5925,8 +5925,8 @@
     },
     {
       "instance_id": "variant-10-hawk-sergeant/helmet",
-      "part": "aurelian.sergeant-helmet-accepted-r6@1",
-      "definition_sha256": "fa9acac561d1dad0ee7ea3fe65dcc3539105bdda94b26bd969f63960b58753d8",
+      "part": "aurelian.sergeant-helmet-accepted-r6@5",
+      "definition_sha256": "b36c79cb5cf395dc32b1c529237f00d63f42d238bb22a185969fefc006ba6b99",
       "mount": [
         [
           0.9985608585252889,
@@ -5987,8 +5987,8 @@
     },
     {
       "instance_id": "variant-10-hawk-sergeant/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9985608585252889,
@@ -6389,5 +6389,56 @@
       ]
     }
   ],
-  "label": "Spearman variants (10) \u2014 accepted detail (visual-only)"
+  "label": "Spearman variants (10) \u2014 accepted detail (visual-only); bolder faces (visual-only); recessed head and prior nose (visual-only)",
+  "spear_lean": {
+    "minimum_degrees": 6.0,
+    "status": "visual-only; angle change not yet printed",
+    "placements": [
+      {
+        "figure": "variant-01-standing-guard",
+        "before_degrees": 1.3999999909499166,
+        "after_degrees": 5.999999998788606,
+        "local_pivot_mm": [
+          0.0,
+          0.46,
+          -0.6499999979888292
+        ],
+        "grip_axis_pivot_mm": [
+          -14.95,
+          -0.629287846,
+          6.348402973
+        ]
+      },
+      {
+        "figure": "variant-02-watching-left",
+        "before_degrees": 1.799999996183996,
+        "after_degrees": 6.000000001996027,
+        "local_pivot_mm": [
+          0.0,
+          0.46,
+          -0.8500000008722008
+        ],
+        "grip_axis_pivot_mm": [
+          -7.016856852,
+          -0.992764332,
+          6.147458785
+        ]
+      },
+      {
+        "figure": "variant-03-watching-right",
+        "before_degrees": 0.39999998281063553,
+        "after_degrees": 5.999999998265425,
+        "local_pivot_mm": [
+          0.0,
+          0.46,
+          -0.3499999987649351
+        ],
+        "grip_axis_pivot_mm": [
+          1.103208656,
+          -0.724252418,
+          6.649862314
+        ]
+      }
+    ]
+  }
 }

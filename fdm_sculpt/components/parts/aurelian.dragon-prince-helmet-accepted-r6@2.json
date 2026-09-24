@@ -1,0 +1,713 @@
+{
+  "component_id": "aurelian.dragon-prince-helmet-accepted-r6",
+  "version": 2,
+  "name": "Dragon Prince with upswept brow visor \u2014 accepted infantry detail - fuller face detail",
+  "family": "dragon-prince-helmet",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "dragon_crown"
+  ],
+  "parameters": {
+    "accepted_army": {
+      "accepted_reference": "wider-shield-infantry-3-trial",
+      "print_scale": 1.3,
+      "seed": 1001,
+      "source": "aurelian.dragon-prince-helmet@6",
+      "source_sha256": "c095483693fccce814d2a0f455519076b7276234a1d6d36b568fd9089a65b0f4",
+      "status": "visual-only",
+      "treatment": "Broader helmet opening, preserving rank/dragon ornament"
+    },
+    "atoms": [
+      {
+        "bevel": 0.12,
+        "depth": 2.35,
+        "export": true,
+        "location": [
+          0,
+          0.12,
+          0.65
+        ],
+        "primitive": "cone",
+        "radius1": 1.02,
+        "radius2": 0.69,
+        "role": "dragon_crown",
+        "scale": [
+          1.08,
+          1.1025,
+          1
+        ],
+        "vertices": 8
+      },
+      {
+        "bevel": 0.12,
+        "dimensions": [
+          0.42,
+          1.0,
+          1.25
+        ],
+        "export": false,
+        "location": [
+          -0.74,
+          -0.37,
+          -0.24
+        ],
+        "primitive": "cube",
+        "role": "cheek_guard_-1"
+      },
+      {
+        "bevel": 0.12,
+        "dimensions": [
+          0.42,
+          1.0,
+          1.25
+        ],
+        "export": false,
+        "location": [
+          0.74,
+          -0.37,
+          -0.24
+        ],
+        "primitive": "cube",
+        "role": "cheek_guard_1"
+      },
+      {
+        "bevel": 0.075,
+        "depth": 2.624290380274256,
+        "export": false,
+        "location": [
+          -0.52,
+          0.37,
+          2.125
+        ],
+        "primitive": "cone",
+        "radius1": 0.7,
+        "radius2": 0.16799999999999998,
+        "role": "rider_plate_-1_0",
+        "rotation": [
+          -0.23850925245950064,
+          0,
+          0
+        ],
+        "scale": [
+          0.6071428571428572,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.075,
+        "depth": 2.4304114877937852,
+        "export": false,
+        "location": [
+          -0.52,
+          0.7899999999999999,
+          1.805
+        ],
+        "primitive": "cone",
+        "radius1": 0.7,
+        "radius2": 0.16799999999999998,
+        "role": "rider_plate_-1_1",
+        "rotation": [
+          -0.2579519871397324,
+          0,
+          0
+        ],
+        "scale": [
+          0.6071428571428572,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.27,
+        "export": false,
+        "location": [
+          -0.8804000000000001,
+          0.009000000000000008,
+          1.3599999999999999
+        ],
+        "primitive": "cone",
+        "radius1": 0.34,
+        "radius2": 0.28,
+        "role": "rider_scale_-1_0_0",
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1.22,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.27,
+        "export": false,
+        "location": [
+          -0.8804000000000001,
+          0.359,
+          1.3599999999999999
+        ],
+        "primitive": "cone",
+        "radius1": 0.34,
+        "radius2": 0.28,
+        "role": "rider_scale_-1_0_1",
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1.22,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.27,
+        "export": false,
+        "location": [
+          -0.80288,
+          0.1578,
+          1.972
+        ],
+        "primitive": "cone",
+        "radius1": 0.34,
+        "radius2": 0.28,
+        "role": "rider_scale_-1_1_0",
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1.22,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.27,
+        "export": false,
+        "location": [
+          -0.80288,
+          0.5078,
+          1.972
+        ],
+        "primitive": "cone",
+        "radius1": 0.34,
+        "radius2": 0.28,
+        "role": "rider_scale_-1_1_1",
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1.22,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.27,
+        "export": false,
+        "location": [
+          -0.72536,
+          0.3066,
+          2.5839999999999996
+        ],
+        "primitive": "cone",
+        "radius1": 0.34,
+        "radius2": 0.28,
+        "role": "rider_scale_-1_2_0",
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1.22,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.27,
+        "export": false,
+        "location": [
+          -0.72536,
+          0.6566,
+          2.5839999999999996
+        ],
+        "primitive": "cone",
+        "radius1": 0.34,
+        "radius2": 0.28,
+        "role": "rider_scale_-1_2_1",
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1.22,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.075,
+        "depth": 2.624290380274256,
+        "export": false,
+        "location": [
+          0.52,
+          0.37,
+          2.125
+        ],
+        "primitive": "cone",
+        "radius1": 0.7,
+        "radius2": 0.16799999999999998,
+        "role": "rider_plate_1_0",
+        "rotation": [
+          -0.23850925245950064,
+          0,
+          0
+        ],
+        "scale": [
+          0.6071428571428572,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.075,
+        "depth": 2.4304114877937852,
+        "export": false,
+        "location": [
+          0.52,
+          0.7899999999999999,
+          1.805
+        ],
+        "primitive": "cone",
+        "radius1": 0.7,
+        "radius2": 0.16799999999999998,
+        "role": "rider_plate_1_1",
+        "rotation": [
+          -0.2579519871397324,
+          0,
+          0
+        ],
+        "scale": [
+          0.6071428571428572,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.27,
+        "export": false,
+        "location": [
+          0.8804000000000001,
+          0.009000000000000008,
+          1.3599999999999999
+        ],
+        "primitive": "cone",
+        "radius1": 0.34,
+        "radius2": 0.28,
+        "role": "rider_scale_1_0_0",
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1.22,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.27,
+        "export": false,
+        "location": [
+          0.8804000000000001,
+          0.359,
+          1.3599999999999999
+        ],
+        "primitive": "cone",
+        "radius1": 0.34,
+        "radius2": 0.28,
+        "role": "rider_scale_1_0_1",
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1.22,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.27,
+        "export": false,
+        "location": [
+          0.80288,
+          0.1578,
+          1.972
+        ],
+        "primitive": "cone",
+        "radius1": 0.34,
+        "radius2": 0.28,
+        "role": "rider_scale_1_1_0",
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1.22,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.27,
+        "export": false,
+        "location": [
+          0.80288,
+          0.5078,
+          1.972
+        ],
+        "primitive": "cone",
+        "radius1": 0.34,
+        "radius2": 0.28,
+        "role": "rider_scale_1_1_1",
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1.22,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.27,
+        "export": false,
+        "location": [
+          0.72536,
+          0.3066,
+          2.5839999999999996
+        ],
+        "primitive": "cone",
+        "radius1": 0.34,
+        "radius2": 0.28,
+        "role": "rider_scale_1_2_0",
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1.22,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.04,
+        "depth": 0.27,
+        "export": false,
+        "location": [
+          0.72536,
+          0.6566,
+          2.5839999999999996
+        ],
+        "primitive": "cone",
+        "radius1": 0.34,
+        "radius2": 0.28,
+        "role": "rider_scale_1_2_1",
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1.22,
+          1,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "dimensions": [
+          0.42,
+          0.25,
+          0.48
+        ],
+        "export": false,
+        "location": [
+          0,
+          -1.0,
+          0.85
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "brow_gem",
+        "segments": 32
+      },
+      {
+        "bevel": 0.06,
+        "dimensions": [
+          1.34,
+          2.5,
+          1.98
+        ],
+        "export": false,
+        "location": [
+          0,
+          -1.03,
+          -0.18
+        ],
+        "primitive": "cube",
+        "role": "face_opening"
+      },
+      {
+        "bevel": 0.075,
+        "dimensions": [
+          1.04,
+          0.4,
+          0.28
+        ],
+        "export": false,
+        "location": [
+          -0.43,
+          -0.7,
+          0.79
+        ],
+        "primitive": "cube",
+        "role": "swept_brow_-1",
+        "rotation": [
+          0,
+          0.3,
+          -0.42
+        ]
+      },
+      {
+        "bevel": 0.075,
+        "dimensions": [
+          1.04,
+          0.4,
+          0.28
+        ],
+        "export": false,
+        "location": [
+          0.43,
+          -0.7,
+          0.79
+        ],
+        "primitive": "cube",
+        "role": "swept_brow_1",
+        "rotation": [
+          0,
+          -0.3,
+          0.42
+        ]
+      }
+    ],
+    "bolder_face": {
+      "depth_factor": 1.05,
+      "height_factor": 1.0,
+      "print_scale": 1.3,
+      "seed": 1001,
+      "source": "aurelian.dragon-prince-helmet-accepted-r6@1",
+      "source_sha256": "48ecf66c18adaa4ff6e96980c65375f470219407a1a3ddbe96a042256f5f6e19",
+      "status": "visual-only",
+      "width_factor": 1.08
+    },
+    "landmarks": {
+      "front_brim": [
+        0,
+        -0.89,
+        0.65
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [
+      {
+        "operand": "cheek_guard_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "cheek_guard_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "rider_plate_-1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "rider_plate_-1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "rider_scale_-1_0_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "rider_scale_-1_0_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "rider_scale_-1_1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "rider_scale_-1_1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "rider_scale_-1_2_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "rider_scale_-1_2_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "rider_plate_1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "rider_plate_1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "rider_scale_1_0_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "rider_scale_1_0_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "rider_scale_1_1_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "rider_scale_1_1_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "rider_scale_1_2_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "rider_scale_1_2_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "brow_gem",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "swept_brow_-1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "swept_brow_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      },
+      {
+        "operand": "face_opening",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "dragon_crown"
+      }
+    ],
+    "provenance": "Original parameterized spearman variant recipe; visual-only.",
+    "seed": 1001
+  }
+}

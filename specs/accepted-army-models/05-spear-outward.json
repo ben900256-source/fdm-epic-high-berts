@@ -159,8 +159,8 @@
     },
     {
       "instance_id": "05-spear-outward/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9997399584523531,
@@ -190,8 +190,8 @@
     },
     {
       "instance_id": "05-spear-outward/helmet",
-      "part": "aurelian.readable-helmet-trial@1",
-      "definition_sha256": "4cf69f0814c27ac13ad4a6609b1f2c68ec0500476fb5ea7d4b4e1314de437811",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
       "mount": [
         [
           0.9997399584523531,
@@ -345,8 +345,8 @@
     },
     {
       "instance_id": "05-spear-outward/shield-insignia",
-      "part": "aurelian.readable-insignia-trial@4",
-      "definition_sha256": "cd71372080ea2a92709a4f656240390c8e6ae2327c39c03d40d18a30a1f836bd",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
       "mount": [
         [
           0.9873498845051006,
@@ -407,8 +407,8 @@
     },
     {
       "instance_id": "05-spear-outward/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.9997399584523531,

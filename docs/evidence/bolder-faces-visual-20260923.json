@@ -1,0 +1,180 @@
+{
+  "date": "2026-09-23",
+  "status": "visual-only",
+  "seed": 1001,
+  "export_scale": 1.3,
+  "models": 49,
+  "layouts": 15,
+  "new_parts": [
+    "aurelian.dragon-prince-helmet-accepted-r6@2",
+    "aurelian.readable-head-trial@4",
+    "aurelian.readable-helmet-trial@2",
+    "aurelian.sergeant-helmet-accepted-r6@2",
+    "aurelian.swordmaster-sergeant-helmet-accepted-r2@2"
+  ],
+  "reviews": [
+    {
+      "assembly": "bolder-face-comparison-trial",
+      "revision": "9f5f31f56a2e09598a1565dde0cf8c0c894c08fb5aecfed29aebadb443e6cd21",
+      "saved_provenance_passed": true,
+      "screenshots": 6
+    },
+    {
+      "assembly": "aurelian-archer",
+      "revision": "8482539f8c8748074b43097fa470d9923134958b067a917f395deef8654bcb0b",
+      "saved_provenance_passed": true,
+      "screenshots": 2
+    },
+    {
+      "assembly": "aurelian-archer-rear-ranks",
+      "revision": "0a6cfda08919345143213d54a9d9a7a77e09326e5d1be05871bed3c787e5eb64",
+      "saved_provenance_passed": true,
+      "screenshots": 4
+    },
+    {
+      "assembly": "aurelian-archer-sergeant",
+      "revision": "6c24b8f833ed8cec2d6e395196764894e76ed590416a885654d67d599b8a0516",
+      "saved_provenance_passed": true,
+      "screenshots": 2
+    },
+    {
+      "assembly": "aurelian-archer-variants",
+      "revision": "adcd635ec471d2fb736f4a93b484f1a8c4422d9793bf8b5475335cfccdc23c67",
+      "saved_provenance_passed": true,
+      "screenshots": 28
+    },
+    {
+      "assembly": "aurelian-dragon-prince",
+      "revision": "96c239c7adf24d3507c164dc0bde37201f11c931dbb29a4b1b88ff00f1617832",
+      "saved_provenance_passed": true,
+      "screenshots": 4
+    },
+    {
+      "assembly": "aurelian-forward-spearmen",
+      "revision": "d8d96f6d965f0100996328a908be059b4c540883bf9b4edfe9676a7bda648a3f",
+      "saved_provenance_passed": true,
+      "screenshots": 22
+    },
+    {
+      "assembly": "aurelian-spearmen-organic-faces",
+      "revision": "5ba06c0ca26da70bfe47631eba12e07827fdeb02c6e60b3e264d8c31d65b40a0",
+      "saved_provenance_passed": true,
+      "screenshots": 2
+    },
+    {
+      "assembly": "aurelian-spearman-hawk-sergeant",
+      "revision": "40b77d75df1fb81fff8c6aebb48ae84333b3e505e13b0f4f5d94e299c136460f",
+      "saved_provenance_passed": true,
+      "screenshots": 4
+    },
+    {
+      "assembly": "aurelian-spearman-variants",
+      "revision": "11cb0141b4b0dc9eb4a05fc1f983625446c72864fc9b8843da563c2984c7c17d",
+      "saved_provenance_passed": true,
+      "screenshots": 22
+    },
+    {
+      "assembly": "aurelian-standard-bearer",
+      "revision": "326e401bc43f29c8ce94853414b5b8faa9769a77663d0a8e1bab1ee8869e1e3a",
+      "saved_provenance_passed": true,
+      "screenshots": 2
+    },
+    {
+      "assembly": "aurelian-swordmaster",
+      "revision": "8cbb0c609da8a2b6177e89a1daafefabadf4d05553b99c572bb08680efc19b66",
+      "saved_provenance_passed": true,
+      "screenshots": 2
+    },
+    {
+      "assembly": "aurelian-swordmaster-sergeant",
+      "revision": "513fcf7a9cbf349bc979a0efa3d010b94d77a6d6ec1b7a4de67aa985fd184962",
+      "saved_provenance_passed": true,
+      "screenshots": 4
+    },
+    {
+      "assembly": "aurelian-swordmaster-variants",
+      "revision": "58f957fe64f6d7020de817c969ca85bc0002861ff673e3bc180b8fde2884d236",
+      "saved_provenance_passed": true,
+      "screenshots": 22
+    },
+    {
+      "assembly": "aurelian-archers",
+      "revision": "abc83fe48f6b283a3c69d7be1fe246eb95bbcf04adb7ea2f07b9b86df7b41a82",
+      "saved_provenance_passed": true,
+      "screenshots": 2
+    },
+    {
+      "assembly": "aurelian-spearmen-center-standard",
+      "revision": "daa2b3d3198ff5953b0e1f649d2a58a4386b59be29b33928e3fb5fb9620bf041",
+      "saved_provenance_passed": true,
+      "screenshots": 2
+    }
+  ],
+  "measurements": {
+    "scope": "Evaluated local head surface rays; not sliced detail validation",
+    "records": [
+      {
+        "part": "aurelian.readable-head-trial@3",
+        "source_bounds": [
+          [
+            -0.7910987734794617,
+            0.7910982966423035
+          ],
+          [
+            -1.218200445175171,
+            0.8799999952316284
+          ],
+          [
+            -0.9900000095367432,
+            1.0299999713897705
+          ]
+        ],
+        "eye_floor_y": -0.38000035285949707,
+        "brow_surface_y": -0.6775763034820557,
+        "nose_front_y": -1.188955307006836,
+        "eye_depth_from_brow_mm_print": 0.38684873580932616,
+        "nose_projection_from_brow_mm_print": 0.6647927045822144
+      },
+      {
+        "part": "aurelian.readable-head-trial@4",
+        "source_bounds": [
+          [
+            -0.8552517890930176,
+            0.855251133441925
+          ],
+          [
+            -1.4022561311721802,
+            0.9280000329017639
+          ],
+          [
+            -0.9900000095367432,
+            1.0299999713897705
+          ]
+        ],
+        "eye_floor_y": -0.3299999237060547,
+        "brow_surface_y": -0.7109136581420898,
+        "nose_front_y": -1.393618106842041,
+        "eye_depth_from_brow_mm_print": 0.49518785476684574,
+        "nose_projection_from_brow_mm_print": 0.8875157833099365
+      }
+    ]
+  },
+  "contact_checks": {
+    "scope": "Local head, helmet and ornament contacts; not manufacturing validation",
+    "checked": 132,
+    "failures": []
+  },
+  "unchanged_mounts_and_other_parts_in_recipes": 64,
+  "tests": {
+    "passed": 29,
+    "files": [
+      "tests/test_bolder_faces.py",
+      "tests/test_accepted_army.py",
+      "tests/test_workshop.py"
+    ]
+  },
+  "limitations": [
+    "No manufacturing fusion or mesh validation",
+    "No slicing or new physical print trial"
+  ]
+}

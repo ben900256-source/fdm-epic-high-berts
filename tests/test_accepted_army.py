@@ -1,4 +1,4 @@
-import json
+﻿import json
 from pathlib import Path
 
 from fdm_sculpt.army import load_model
@@ -25,10 +25,10 @@ def test_every_current_figure_resolves_to_accepted_detail():
         resolve_assembly(spec,defs)
         heads=[p for p in spec['placements'] if p['instance_id'].split('/')[-1]=='head']
         assert heads,name
-        assert all(p['part']=='aurelian.readable-head-trial@3' for p in heads),name
+        assert all(p['part']=='aurelian.readable-head-trial@5' for p in heads),name
         for p in spec['placements']:
             if p['instance_id'].split('/')[-1]=='shield-insignia':
-                assert p['part']=='aurelian.readable-insignia-trial@4'
+                assert p['part']=='aurelian.readable-insignia-trial@6'
             if p['instance_id'].split('/')[-1]=='spear':
                 assert p['part']=='aurelian.uniform-spear-140-trial@3'
 

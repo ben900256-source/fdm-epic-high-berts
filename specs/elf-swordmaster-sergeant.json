@@ -221,8 +221,8 @@
     },
     {
       "instance_id": "sergeant-01/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.9975640502598242,
@@ -252,8 +252,8 @@
     },
     {
       "instance_id": "sergeant-01/helmet",
-      "part": "aurelian.swordmaster-sergeant-helmet-accepted-r2@1",
-      "definition_sha256": "25b582e56e10fccc8695db03f9008bbeb6d27b60f63cdec6db2d0b7b0e21051b",
+      "part": "aurelian.swordmaster-sergeant-helmet-accepted-r2@5",
+      "definition_sha256": "1e316cbc51917bada5728067063cae7cd581c2205f4961d63b6aa225adfc9b3a",
       "mount": [
         [
           0.9975640502598242,
@@ -592,5 +592,5 @@
       ]
     }
   ],
-  "label": "Bertmaster sergeant \u2014 accepted detail (visual-only)"
+  "label": "Bertmaster sergeant \u2014 accepted detail (visual-only); bolder faces (visual-only); recessed head and prior nose (visual-only)"
 }

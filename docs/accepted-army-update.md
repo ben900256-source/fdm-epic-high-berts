@@ -1,10 +1,14 @@
 # Accepted infantry design across the army
 
+The spearmen are now [locked with inclined spears](locked-spearmen.md). Their
+latest accepted shapes and the final placement-only adjustment are pinned there.
+
 The 2026-09-22 update applies the [accepted five-spearman design](wider-shield-trial.md)
 to all **49 reusable figure recipes and 15 current layouts**: spear and short-sword
 variants, forward spearmen, archers and elevated bows, swordmasters, command
 figures and the Dragon Prince. The original five printed poses remain unchanged
-in the default `specs/elf-modular-visual.json` composition.
+in the historical wider-shield trial. The default composition now includes
+the subsequent [fuller-head and facial-detail revision](bolder-faces.md).
 
 Shared faces use the broader head with deeper eyes and mouth; infantry helmets
 use the clearer opening. Command and cavalry helmet revisions enlarge the

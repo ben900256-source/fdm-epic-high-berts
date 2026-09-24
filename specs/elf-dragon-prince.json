@@ -407,8 +407,8 @@
     },
     {
       "instance_id": "prince-01/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           1.0,
@@ -438,8 +438,8 @@
     },
     {
       "instance_id": "prince-01/helmet",
-      "part": "aurelian.dragon-prince-helmet-accepted-r6@1",
-      "definition_sha256": "48ecf66c18adaa4ff6e96980c65375f470219407a1a3ddbe96a042256f5f6e19",
+      "part": "aurelian.dragon-prince-helmet-accepted-r6@3",
+      "definition_sha256": "c0c0e0bd995f4587df6697706c86a4e98160d7bd1ef5bb0db3829b099d9419d4",
       "mount": [
         [
           1.0,
@@ -530,5 +530,5 @@
       ]
     }
   ],
-  "label": "Dragon Prince cavalry \u2014 accepted detail (visual-only)"
+  "label": "Dragon Prince cavalry \u2014 accepted detail (visual-only); bolder faces (visual-only); recessed head and prior nose (visual-only)"
 }

@@ -5,6 +5,7 @@
   "status": "visual-only",
   "source": "accepted-army-sources.json",
   "accepted_reference": "experiments/wider-shield-infantry-3-trial.json",
+  "spearmen_baseline": "spearmen-locked-baseline.json",
   "assemblies": [
     "specs/elf-modular-visual.json",
     "specs/elf-spearman-variants.json",
@@ -81,7 +82,8 @@
     "aurelian.chest-plate@4": "aurelian.readable-chest-plate-trial@1",
     "aurelian.skirt@8": "aurelian.readable-mail-trial@3",
     "aurelian.shield@2": "aurelian.shield@6",
-    "aurelian.shield-insignia@4": "aurelian.readable-insignia-trial@4",
+    "aurelian.shield-insignia@4": "aurelian.readable-insignia-trial@6",
+    "aurelian.crest@4": "aurelian.crest@5",
     "aurelian.spear@5": "aurelian.uniform-spear-140-trial@3",
     "aurelian.base-body-4x5-plain@1": "aurelian.glue-footing@1",
     "aurelian.archer-blade-raised-arm@6": "aurelian.archer-blade-raised-arm-accepted-r6@1",
@@ -209,6 +211,7 @@
     "aurelian.archer-side-bow-arm-accepted-r7@1",
     "aurelian.archer-signal-horn-arm-accepted-r7@1",
     "aurelian.archer-tunic-accepted-r5@1",
+    "aurelian.crest@5",
     "aurelian.dragon-prince-helmet-accepted-r6@1",
     "aurelian.dragon-prince-lance-accepted-r1@1",
     "aurelian.dragon-prince-left-arm-accepted-r1@1",
@@ -230,6 +233,7 @@
     "aurelian.left-arm-c-accepted-r10@1",
     "aurelian.left-arm-d-accepted-r10@1",
     "aurelian.left-arm-e-accepted-r10@1",
+    "aurelian.readable-insignia-trial@6",
     "aurelian.right-arm-accepted-r9@1",
     "aurelian.right-arm-b-accepted-r9@1",
     "aurelian.right-arm-c-accepted-r11@1",
@@ -602,6 +606,20 @@
     "specs/models/swordmasters/08-low-guard.json": [],
     "specs/models/swordmasters/09-recovering.json": [],
     "specs/models/swordmasters/10-upright-guard.json": []
+  },
+  "face_update": {
+    "aurelian.readable-head-trial@3": "aurelian.readable-head-trial@4",
+    "aurelian.readable-helmet-trial@1": "aurelian.readable-helmet-trial@2",
+    "aurelian.sergeant-helmet-accepted-r6@1": "aurelian.sergeant-helmet-accepted-r6@2",
+    "aurelian.swordmaster-sergeant-helmet-accepted-r2@1": "aurelian.swordmaster-sergeant-helmet-accepted-r2@2",
+    "aurelian.dragon-prince-helmet-accepted-r6@1": "aurelian.dragon-prince-helmet-accepted-r6@2"
+  },
+  "pointed_helmet_update": {
+    "aurelian.readable-helmet-trial@3": "aurelian.readable-helmet-trial@5",
+    "aurelian.sergeant-helmet-accepted-r6@3": "aurelian.sergeant-helmet-accepted-r6@5",
+    "aurelian.swordmaster-sergeant-helmet-accepted-r2@3": "aurelian.swordmaster-sergeant-helmet-accepted-r2@5",
+    "aurelian.crest@4": "aurelian.crest@7",
+    "aurelian.crest@5": "aurelian.crest@7"
   },
   "notes": "Broader bodies, full arms and grips, readable faces/mail, raised emblems and broad leaf weapons. Physical acceptance applies only to the original five-pose infantry test."
 }

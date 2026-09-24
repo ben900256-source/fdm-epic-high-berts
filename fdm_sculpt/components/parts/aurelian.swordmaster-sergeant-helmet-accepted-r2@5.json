@@ -1,0 +1,403 @@
+{
+  "component_id": "aurelian.swordmaster-sergeant-helmet-accepted-r2",
+  "version": 5,
+  "name": "Swordmaster officer helmet with seated oval brow gem \u2014 accepted infantry detail - fuller face detail - restored tall pointed crown - continuous taper",
+  "family": "helmet",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "helmet_crown"
+  ],
+  "parameters": {
+    "accepted_army": {
+      "accepted_reference": "wider-shield-infantry-3-trial",
+      "print_scale": 1.3,
+      "seed": 1001,
+      "source": "aurelian.swordmaster-sergeant-helmet@2",
+      "source_sha256": "12c4fd7a2a49401a2dba9d5ba61e80dd789152f0236faeb853db7d38221cac6e",
+      "status": "visual-only",
+      "treatment": "Broader helmet opening, preserving rank/dragon ornament"
+    },
+    "atoms": [
+      {
+        "dimensions": [
+          1.7712,
+          2.1,
+          6.490000000000001
+        ],
+        "export": true,
+        "location": [
+          0.0,
+          0.08,
+          -0.3800000000000001
+        ],
+        "primitive": "sphere",
+        "ring_count": 64,
+        "role": "helmet_crown",
+        "segments": 64
+      },
+      {
+        "bevel": 0.06,
+        "dimensions": [
+          1.34,
+          2.5,
+          1.98
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          -0.95,
+          7.01
+        ],
+        "primitive": "cube",
+        "role": "helmet_face_opening"
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          3.5,
+          3.5,
+          4.0
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -7.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0.08,
+          8.6
+        ],
+        "primitive": "cube",
+        "role": "helmet_nape_clip"
+      },
+      {
+        "bevel": 0.025,
+        "bevel_segments": 4,
+        "depth": 0.81,
+        "export": false,
+        "location": [
+          0,
+          0.08,
+          2.755
+        ],
+        "primitive": "cone",
+        "radius1": 0.4787353267734386,
+        "radius2": 0.12,
+        "role": "helmet_tapered_tip",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1.1856368563685638,
+          1
+        ],
+        "vertices": 64
+      },
+      {
+        "bevel": 0.045,
+        "dimensions": [
+          1.55,
+          0.4,
+          0.25
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.8,
+          0.7
+        ],
+        "primitive": "cube",
+        "role": "reinforced_brow"
+      },
+      {
+        "bevel": 0.09,
+        "dimensions": [
+          0.38,
+          1.25,
+          1.15
+        ],
+        "export": false,
+        "location": [
+          -0.73,
+          0,
+          0.77
+        ],
+        "primitive": "cube",
+        "role": "left_temple_plate"
+      },
+      {
+        "bevel": 0.035,
+        "dimensions": [
+          0.15,
+          0.85,
+          0.75
+        ],
+        "export": false,
+        "location": [
+          -0.91,
+          -0.02,
+          0.83
+        ],
+        "primitive": "cube",
+        "role": "left_raised_panel"
+      },
+      {
+        "bevel": 0.09,
+        "dimensions": [
+          0.38,
+          1.25,
+          1.15
+        ],
+        "export": false,
+        "location": [
+          0.73,
+          0,
+          0.77
+        ],
+        "primitive": "cube",
+        "role": "right_temple_plate"
+      },
+      {
+        "bevel": 0.035,
+        "dimensions": [
+          0.15,
+          0.85,
+          0.75
+        ],
+        "export": false,
+        "location": [
+          0.91,
+          -0.02,
+          0.83
+        ],
+        "primitive": "cube",
+        "role": "right_raised_panel"
+      },
+      {
+        "dimensions": [
+          0.58,
+          0.6,
+          0.68
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.7,
+          1.02
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "gem_setting",
+        "segments": 32
+      },
+      {
+        "dimensions": [
+          0.38,
+          0.22,
+          0.5
+        ],
+        "export": false,
+        "location": [
+          0,
+          -0.95,
+          1.02
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "oval_brow_gem",
+        "segments": 32
+      }
+    ],
+    "bolder_face": {
+      "depth_factor": 1.05,
+      "height_factor": 1.0,
+      "print_scale": 1.3,
+      "seed": 1001,
+      "source": "aurelian.swordmaster-sergeant-helmet-accepted-r2@1",
+      "source_sha256": "25b582e56e10fccc8695db03f9008bbeb6d27b60f63cdec6db2d0b7b0e21051b",
+      "status": "visual-only",
+      "width_factor": 1.08
+    },
+    "landmarks": {
+      "brow_gem": [
+        0,
+        -0.95,
+        1.02
+      ],
+      "front_brim": [
+        0,
+        -0.85,
+        0.68
+      ],
+      "helmet_crown": [
+        0,
+        0.08,
+        -0.38
+      ],
+      "helmet_face_opening": [
+        0.0,
+        -0.95,
+        -0.19
+      ],
+      "helmet_nape_clip": [
+        0.0,
+        0.08,
+        1.4
+      ],
+      "helmet_tapered_tip": [
+        0,
+        0.08,
+        2.755
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "point_top": [
+        0,
+        0.08,
+        3.16
+      ]
+    },
+    "operations": [
+      {
+        "operand": "helmet_nape_clip",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "helmet_tapered_tip",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "helmet_face_opening",
+        "operation": "DIFFERENCE",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "reinforced_brow",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "left_temple_plate",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "left_raised_panel",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "right_temple_plate",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "right_raised_panel",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "gem_setting",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      },
+      {
+        "operand": "oval_brow_gem",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "helmet_crown"
+      }
+    ],
+    "parent_definition_sha256": "21c6ee3db6b2d03657dcc7352be3a39846921a6dfa81c81a4685aac9c137bbf9",
+    "parent_reference": "aurelian.helmet@5",
+    "pointed_helmet": {
+      "brow_z": 0.8,
+      "nominal_terminal_diameter": 0.24,
+      "nominal_top_z": 3.16,
+      "opening_and_nape_unchanged": true,
+      "overall_height_factor": 1.2,
+      "print_scale": 1.3,
+      "seed": 1001,
+      "source": "aurelian.swordmaster-sergeant-helmet-accepted-r2@2",
+      "source_sha256": "ade0dde816c0757f4a3b896bbebad0de8af773bf4c39c06389caf0aae126808f",
+      "status": "visual-only",
+      "tangent_join_z": 2.35,
+      "transition_source": "aurelian.swordmaster-sergeant-helmet-accepted-r2@4",
+      "transition_source_sha256": "65e05618258f650c1df375e5843a3128b3edd313ca0475ae9d8e80db5451080b",
+      "upper_factor": 1.475
+    },
+    "provenance": "Forged officer helmet with oval gem raised into a crown-backed setting above the brow. Visual-only.",
+    "seed": 1001
+  }
+}

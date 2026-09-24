@@ -32,6 +32,11 @@ Use this as the starting point when designing a new piece or army variant.
 - Current infantry previews use a 1 mm base with 0.5 mm terrain relief.
   Optional 3 x 1 mm magnet pockets use a 2 mm base to retain roof stock.
 
+The current spearmen are [locked as of 2026-09-23](locked-spearmen.md).
+Their pinned latest shapes supersede the older wider-shield detail references
+above. Keep every spear at least 6 degrees from vertical, preserving existing
+inclined poses. The final spear-angle adjustment still requires a print trial.
+
 ## Geometry targets
 
 | Feature | Prototype target |

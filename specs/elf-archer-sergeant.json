@@ -128,8 +128,8 @@
     },
     {
       "instance_id": "sergeant-01/head",
-      "part": "aurelian.readable-head-trial@3",
-      "definition_sha256": "3514d2e677743e447cba4e14c05f960caf38d763f113365040dd9297a915d022",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
       "mount": [
         [
           0.997434423,
@@ -159,8 +159,8 @@
     },
     {
       "instance_id": "sergeant-01/helmet",
-      "part": "aurelian.sergeant-helmet-accepted-r6@1",
-      "definition_sha256": "fa9acac561d1dad0ee7ea3fe65dcc3539105bdda94b26bd969f63960b58753d8",
+      "part": "aurelian.sergeant-helmet-accepted-r6@5",
+      "definition_sha256": "b36c79cb5cf395dc32b1c529237f00d63f42d238bb22a185969fefc006ba6b99",
       "mount": [
         [
           0.997434423,
@@ -190,8 +190,8 @@
     },
     {
       "instance_id": "sergeant-01/crest",
-      "part": "aurelian.crest@4",
-      "definition_sha256": "1f4fbb55aef19b0744a2fcde1353759bfe255c065a0592ccabdf900c6c9101db",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
       "mount": [
         [
           0.997434423,
@@ -437,5 +437,5 @@
       ]
     }
   ],
-  "label": "Archer sergeant \u2014 accepted detail (visual-only)"
+  "label": "Archer sergeant \u2014 accepted detail (visual-only); bolder faces (visual-only); recessed head and prior nose (visual-only)"
 }

@@ -17,7 +17,8 @@ SHARED = {
     'aurelian.chest-plate@4': 'aurelian.readable-chest-plate-trial@1',
     'aurelian.skirt@8': 'aurelian.readable-mail-trial@3',
     'aurelian.shield@2': 'aurelian.shield@6',
-    'aurelian.shield-insignia@4': 'aurelian.readable-insignia-trial@4',
+    'aurelian.shield-insignia@4': 'aurelian.readable-insignia-trial@6',
+    'aurelian.crest@4': 'aurelian.crest@5',
     'aurelian.spear@5': 'aurelian.uniform-spear-140-trial@3',
     'aurelian.base-body-4x5-plain@1': 'aurelian.glue-footing@1',
 }
