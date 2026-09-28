@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 import pytest
 from fdm_sculpt.army import load_assembly
-from fdm_sculpt.components.parts import catalog
+from fdm_sculpt.components.parts import catalog,resolve_assembly
 from fdm_sculpt.components.dragon_princes import cavalry_parts,open_face_barding
 from fdm_sculpt.components.dragon_prince_reference import reference_parts,connected_head_parts,scale_helmets,upright_helmets,swept_visor,larger_shield,great_shield,flexed_steed,scalp_barding,routed_reins,gem_shield,scaled_shield,dense_scaled_shield,supported_lance_seal,flush_reins,angular_pauldrons,fitted_reins,bridle_fitted_reins,tapestry_lance,heroic_steed
 
@@ -118,7 +118,11 @@ def test_cavalry_recipes_and_equipment_contacts():
     bard_golden=json.loads((ROOT/'tests/fixtures/dragon-prince-barding-v2-golden.json').read_text())
     for _ in range(2):
         p=open_face_barding(1001);assert p.sha256==d[p.reference].sha256==bard_golden[p.reference]
-    m={p['instance_id']:p for p in load_assembly(ROOT/'specs/elf-dragon-prince.json',d)['placements']}
+    # Historical recipe goldens use their original assembly contacts. The accepted
+    # army update deliberately changed shield size/orientation and hand volume.
+    # Current horse/rider placement is covered by test_refined_horse.py.
+    source=json.loads((ROOT/'specs/accepted-army-sources.json').read_text())['sources']['specs/elf-dragon-prince.json']
+    m={p['instance_id']:p for p in resolve_assembly(source,d)['placements']}
     def anchor(slot,name):
         p=m['prince-01/'+slot];v=d[p['part']].to_dict()['parameters']['landmarks'][name]
         return [sum(p['mount'][i][j]*v[j] for j in range(3))+p['mount'][i][3] for i in range(3)]

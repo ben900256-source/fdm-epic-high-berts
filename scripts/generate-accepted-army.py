@@ -15,6 +15,7 @@ from fdm_sculpt.components.taller_helmets import revised_parts as taller_helmets
 from fdm_sculpt.components.fierce_insignia import revised_part as fierce_insignia
 from fdm_sculpt.components.pointed_helmets import revised_parts as pointed_helmets, apply as apply_pointed
 from fdm_sculpt.components.leaning_spears import apply as apply_spear_lean
+from fdm_sculpt.components.refined_horse import apply as apply_refined_horse
 
 class Definitions(dict):
     def __missing__(self,ref):
@@ -102,6 +103,7 @@ def generate():
             for slot in ('shield','shield-insignia'):
                 if slot in slots:slots[slot]['mount']=multiply(turn,slots[slot]['mount'])
     for spec in output.values():apply_pointed(spec,pointed)
+    for spec in output.values():apply_refined_horse(spec,definitions)
     for spec in output.values():apply_spear_lean(spec,definitions)
     output['specs/elf-modular-visual.json']['label']='Locked spearmen - five glue-in figures'
     for name,spec in output.items():

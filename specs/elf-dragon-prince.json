@@ -66,8 +66,8 @@
     },
     {
       "instance_id": "prince-01/horse",
-      "part": "aurelian.dragon-prince-horse@5",
-      "definition_sha256": "36bef16e7ca274996013cd67a50f3c17d6de011989d559038bffba4516da5f31",
+      "part": "aurelian.dragon-prince-horse@7",
+      "definition_sha256": "297b67bc3c13fd9959c7f7c7955bf4956cd0a4e4d9c0b50e80819b0657b1671e",
       "mount": [
         [
           1.0,
@@ -97,8 +97,8 @@
     },
     {
       "instance_id": "prince-01/barding",
-      "part": "aurelian.dragon-prince-barding@8",
-      "definition_sha256": "e6a415e3f326347a34079cb7e1a3b10e34f096002801738f93488d9f228cafd8",
+      "part": "aurelian.dragon-prince-barding@10",
+      "definition_sha256": "f8e2abd0df5bc46d31de4af2c7fce9cbc4b0f2d526b0b647a500cb8a8f698fd7",
       "mount": [
         [
           1.0,
@@ -530,5 +530,5 @@
       ]
     }
   ],
-  "label": "Dragon Prince cavalry \u2014 accepted detail (visual-only); bolder faces (visual-only); recessed head and prior nose (visual-only)"
+  "label": "Dragon Prince - refined horse anatomy (visual-only)"
 }
