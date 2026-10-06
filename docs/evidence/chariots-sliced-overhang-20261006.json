@@ -1,0 +1,268 @@
+{
+  "date": "2026-10-06",
+  "label": "Sliced overhang diagnostic; unchecked Blender exports; physical trial pending",
+  "digitally_validated": false,
+  "blender": "5.1.2",
+  "slicer": "2.9.6",
+  "seed": 1001,
+  "export_scale": 1.3,
+  "tool": 2,
+  "nozzle_mm": 0.25,
+  "layer_mm": 0.05,
+  "first_layer_mm": 0.14,
+  "normal_temperature_c": 205,
+  "first_layer_temperature_c": 230,
+  "minimum_speed_mm_s": 10,
+  "slowdown_threshold_s": 10,
+  "normal_supports": false,
+  "installed_presets_unchanged": true,
+  "support_diagnostic": {
+    "style": "organic",
+    "threshold_degrees_from_bed": 45,
+    "buildplate_only": false
+  },
+  "models": [
+    {
+      "name": "chariot",
+      "assembly_id": "aurelian-expansion-chariot",
+      "assembly_sha256": "6321323a10febd67cdcf8414f909dee17a1cfba458bf8fc34e57a253c515b81e",
+      "part_revisions": [
+        "aurelian.crest@7",
+        "aurelian.dragon-prince-horse@7",
+        "aurelian.expansion-chariot-base@1",
+        "aurelian.expansion-chariot-reins@2",
+        "aurelian.expansion-chariot-shield-brace@1",
+        "aurelian.expansion-chariot-spear-arms@1",
+        "aurelian.expansion-chariot@2",
+        "aurelian.expansion-driver-arms@1",
+        "aurelian.expansion-hero-regalia@1",
+        "aurelian.expansion-light-horse-tack@1",
+        "aurelian.expansion-reaver-coat@1",
+        "aurelian.left-leg-c@6",
+        "aurelian.readable-chest-plate-trial@1",
+        "aurelian.readable-head-trial@5",
+        "aurelian.readable-helmet-trial@5",
+        "aurelian.readable-insignia-trial@6",
+        "aurelian.readable-mail-trial@3",
+        "aurelian.readable-torso-trial@1",
+        "aurelian.right-leg-c@6",
+        "aurelian.shield@6",
+        "aurelian.uniform-spear-140-trial@3"
+      ],
+      "passes": false,
+      "layer_count": 515,
+      "layer_gaps": [
+        {
+          "previous_z_mm": 25.74,
+          "next_z_mm": 25.84,
+          "missing_layers": 1
+        }
+      ],
+      "support_summary": {
+        "layer_count": 515,
+        "model_path_length_mm": 95406.677,
+        "unsupported_centerline_mm": 1731.455,
+        "unaccepted_run_count": 540,
+        "accepted_bridge_count": 762
+      },
+      "exterior_review_run_count": 307,
+      "automatic_support_ratio": 0.2457807202222363,
+      "artifact_sha256": {
+        "stl": "d0ce9c3df9165911f786a695c7464562ec2d2fddffe9a85465bf44733d382980",
+        "project": "2939b218267b4e07b9cc12f981f4caa131737cabf9e290cc37a4711b7ba79e25",
+        "gcode": "cfdef6388f076a66eae25421ceb1cf6050c2eb0544ebc62eab5c5fb5a28411c6",
+        "settings": "76b6d9187f280f12e918fa0a06f96f2cf6600ffb5a26b28f39f68e836fcbcbcc"
+      },
+      "analysis_source_sha256": {
+        "slicer_overhang.py": "e2184b569ea98d0641206c23b9cce8bd5d0e0970a03d261cf306984e208751c7",
+        "regiment_validation.py": "5aece67ca8d2d2f1bcdc23471eac5f84bba37407a11953837d119fef01b958b3",
+        "printability.py": "605766becd8d2da68a57f3e20af73dd65d1cded2c8724ae2c54a21736032a8a0",
+        "prusa.py": "c23013f89af176a4b83c3ab3b940a21e36e5d99497a3259ff81b491e87014d7a"
+      },
+      "normal_project": "out/chariots-overhang-20261006/chariot/chariot.3mf",
+      "diagnostic_project": "out/chariots-overhang-20261006/chariot/support-audit/diagnostic-supports.3mf"
+    },
+    {
+      "name": "general-on-chariot",
+      "assembly_id": "aurelian-expansion-general-on-chariot",
+      "assembly_sha256": "c47c181577665c815895914906aa2657b2eee647c9c1f7a51cc40493af28e6ea",
+      "part_revisions": [
+        "aurelian.crest@7",
+        "aurelian.dragon-prince-horse@7",
+        "aurelian.expansion-chariot-base@1",
+        "aurelian.expansion-chariot-reins@2",
+        "aurelian.expansion-chariot-shield-brace@1",
+        "aurelian.expansion-chariot@2",
+        "aurelian.expansion-command-sword@1",
+        "aurelian.expansion-driver-arms@1",
+        "aurelian.expansion-general-arms@1",
+        "aurelian.expansion-general-regalia@1",
+        "aurelian.expansion-light-horse-tack@1",
+        "aurelian.expansion-reaver-coat@1",
+        "aurelian.left-leg-c@6",
+        "aurelian.readable-chest-plate-trial@1",
+        "aurelian.readable-head-trial@5",
+        "aurelian.readable-helmet-trial@5",
+        "aurelian.readable-insignia-trial@6",
+        "aurelian.readable-mail-trial@3",
+        "aurelian.readable-torso-trial@1",
+        "aurelian.right-leg-c@6",
+        "aurelian.shield@6",
+        "aurelian.swordmaster-sergeant-helmet-accepted-r2@5"
+      ],
+      "passes": false,
+      "layer_count": 372,
+      "layer_gaps": [
+        {
+          "previous_z_mm": 18.64,
+          "next_z_mm": 19.74,
+          "missing_layers": 21
+        }
+      ],
+      "support_summary": {
+        "layer_count": 372,
+        "model_path_length_mm": 92073.978,
+        "unsupported_centerline_mm": 1742.373,
+        "unaccepted_run_count": 564,
+        "accepted_bridge_count": 757
+      },
+      "exterior_review_run_count": 351,
+      "automatic_support_ratio": 0.31721754039166117,
+      "artifact_sha256": {
+        "stl": "b22982a0ead895e7b3d37217dcf6d2b83305882720e128e3ba4f3c911bac73aa",
+        "project": "a68d2eb22f989a5de424b5b2faa655caa8af83bd528ea246fa8962d2fc8e085a",
+        "gcode": "cfd848c16e864293c006f740e211940f888d3bf4adec58ced49c76c3a011b4f8",
+        "settings": "76b6d9187f280f12e918fa0a06f96f2cf6600ffb5a26b28f39f68e836fcbcbcc"
+      },
+      "analysis_source_sha256": {
+        "slicer_overhang.py": "e2184b569ea98d0641206c23b9cce8bd5d0e0970a03d261cf306984e208751c7",
+        "regiment_validation.py": "5aece67ca8d2d2f1bcdc23471eac5f84bba37407a11953837d119fef01b958b3",
+        "printability.py": "605766becd8d2da68a57f3e20af73dd65d1cded2c8724ae2c54a21736032a8a0",
+        "prusa.py": "c23013f89af176a4b83c3ab3b940a21e36e5d99497a3259ff81b491e87014d7a"
+      },
+      "normal_project": "out/chariots-overhang-20261006/general-on-chariot/general-on-chariot.3mf",
+      "diagnostic_project": "out/chariots-overhang-20261006/general-on-chariot/support-audit/diagnostic-supports.3mf"
+    },
+    {
+      "name": "hero-on-chariot",
+      "assembly_id": "aurelian-expansion-hero-on-chariot",
+      "assembly_sha256": "034340801dfbdc7c37c27bc298cf91d74b7e23b84fae47e430fe161c9e311249",
+      "part_revisions": [
+        "aurelian.crest@7",
+        "aurelian.dragon-prince-horse@7",
+        "aurelian.expansion-chariot-base@1",
+        "aurelian.expansion-chariot-reins@2",
+        "aurelian.expansion-chariot-shield-brace@1",
+        "aurelian.expansion-chariot@2",
+        "aurelian.expansion-command-sword@1",
+        "aurelian.expansion-driver-arms@1",
+        "aurelian.expansion-hero-arms@1",
+        "aurelian.expansion-hero-regalia@1",
+        "aurelian.expansion-light-horse-tack@1",
+        "aurelian.expansion-reaver-coat@1",
+        "aurelian.left-leg-c@6",
+        "aurelian.readable-chest-plate-trial@1",
+        "aurelian.readable-head-trial@5",
+        "aurelian.readable-helmet-trial@5",
+        "aurelian.readable-insignia-trial@6",
+        "aurelian.readable-mail-trial@3",
+        "aurelian.readable-torso-trial@1",
+        "aurelian.right-leg-c@6",
+        "aurelian.shield@6"
+      ],
+      "passes": false,
+      "layer_count": 371,
+      "layer_gaps": [],
+      "support_summary": {
+        "layer_count": 371,
+        "model_path_length_mm": 92064.347,
+        "unsupported_centerline_mm": 1723.96,
+        "unaccepted_run_count": 538,
+        "accepted_bridge_count": 754
+      },
+      "exterior_review_run_count": 328,
+      "automatic_support_ratio": 0.2960375802498384,
+      "artifact_sha256": {
+        "stl": "d5f696ff32cb348808b32efa189b182f3076231ca6c45337aeebe5c9e7e2b270",
+        "project": "bebad829aa693c052972671b8ca0a850d55222ced646d893a6db476ccd1b2580",
+        "gcode": "4c88c07d3f1d2259fd1e8e10edd0b73c32d4b64b761249803859e740bcdbc340",
+        "settings": "76b6d9187f280f12e918fa0a06f96f2cf6600ffb5a26b28f39f68e836fcbcbcc"
+      },
+      "analysis_source_sha256": {
+        "slicer_overhang.py": "e2184b569ea98d0641206c23b9cce8bd5d0e0970a03d261cf306984e208751c7",
+        "regiment_validation.py": "5aece67ca8d2d2f1bcdc23471eac5f84bba37407a11953837d119fef01b958b3",
+        "printability.py": "605766becd8d2da68a57f3e20af73dd65d1cded2c8724ae2c54a21736032a8a0",
+        "prusa.py": "c23013f89af176a4b83c3ab3b940a21e36e5d99497a3259ff81b491e87014d7a"
+      },
+      "normal_project": "out/chariots-overhang-20261006/hero-on-chariot/hero-on-chariot.3mf",
+      "diagnostic_project": "out/chariots-overhang-20261006/hero-on-chariot/support-audit/diagnostic-supports.3mf"
+    },
+    {
+      "name": "mage-on-chariot",
+      "assembly_id": "aurelian-expansion-mage-on-chariot",
+      "assembly_sha256": "0a39d3672a37ebaff0fc370f5cafe897e999761c22e05ecd48e5ae3df010bd9e",
+      "part_revisions": [
+        "aurelian.crest@7",
+        "aurelian.dragon-prince-horse@7",
+        "aurelian.expansion-chariot-base@1",
+        "aurelian.expansion-chariot-reins@2",
+        "aurelian.expansion-chariot@2",
+        "aurelian.expansion-driver-arms@1",
+        "aurelian.expansion-light-horse-tack@1",
+        "aurelian.expansion-mage-arms@1",
+        "aurelian.expansion-mage-regalia@1",
+        "aurelian.expansion-mage-staff@1",
+        "aurelian.expansion-reaver-coat@1",
+        "aurelian.left-leg-c@6",
+        "aurelian.readable-head-trial@5",
+        "aurelian.readable-helmet-trial@5",
+        "aurelian.readable-torso-trial@1",
+        "aurelian.right-leg-c@6"
+      ],
+      "passes": false,
+      "layer_count": 395,
+      "layer_gaps": [],
+      "support_summary": {
+        "layer_count": 395,
+        "model_path_length_mm": 88659.829,
+        "unsupported_centerline_mm": 1644.034,
+        "unaccepted_run_count": 530,
+        "accepted_bridge_count": 717
+      },
+      "exterior_review_run_count": 373,
+      "automatic_support_ratio": 0.3106512029825311,
+      "artifact_sha256": {
+        "stl": "e20c93498c2f09153b4bf2e7dfcc0e78da485e8f0cdbf0b3a0f193019cf4613e",
+        "project": "11cbbf8ef234d27c6522857bc859ba40a726453782c571f13799c7313c71ec6b",
+        "gcode": "98bd9e63c2cb7d4a3feb1140141dae1f5da423a32609528085442f6805da8214",
+        "settings": "76b6d9187f280f12e918fa0a06f96f2cf6600ffb5a26b28f39f68e836fcbcbcc"
+      },
+      "analysis_source_sha256": {
+        "slicer_overhang.py": "e2184b569ea98d0641206c23b9cce8bd5d0e0970a03d261cf306984e208751c7",
+        "regiment_validation.py": "5aece67ca8d2d2f1bcdc23471eac5f84bba37407a11953837d119fef01b958b3",
+        "printability.py": "605766becd8d2da68a57f3e20af73dd65d1cded2c8724ae2c54a21736032a8a0",
+        "prusa.py": "c23013f89af176a4b83c3ab3b940a21e36e5d99497a3259ff81b491e87014d7a"
+      },
+      "normal_project": "out/chariots-overhang-20261006/mage-on-chariot/mage-on-chariot.3mf",
+      "diagnostic_project": "out/chariots-overhang-20261006/mage-on-chariot/support-audit/diagnostic-supports.3mf"
+    }
+  ],
+  "conclusions": [
+    "All four variants retain exposed overhang concerns; they are not cleared for support-free printing.",
+    "Front-board/floor lip: approximately 2.9 mm curved unsupported exterior runs at Z 4.59 mm.",
+    "Horse underside/rear barrel transition: approximately 1.8 mm exposed flagged runs near Z 4.89 mm.",
+    "Driver coat/belt underside: approximately 4.5 mm unsupported exterior run at Z 10.79 mm.",
+    "Regular passenger palm/spear grip: approximately 4.5 mm flagged run at Z 10.54 mm.",
+    "Mage robe hem: approximately 4.2 mm exterior flagged run at Z 5.99 mm.",
+    "General sword tip: next extrusion at Z 19.74 mm follows Z 18.64 mm, leaving 21 nominal layers missing.",
+    "Regular spear terminal: one omitted nominal layer between Z 25.74 and 25.84 mm; extrusion resumes.",
+    "Smaller residual flags exist at wheels, horse details, mail, helmets/faces and other attached decoration; reinforced parts are not individually certified."
+  ],
+  "limitations": [
+    "Unsupported run length follows the deposited centerline and is not a horizontal reach measurement.",
+    "Conservative previous-layer screen includes internal infill and does not model same-layer anchoring.",
+    "Automatic support/model ratios exclude brim and estimate filament cost, not failure probability.",
+    "No topology/self-intersection validation or independent geometry repeat build was run under the unchecked export exception.",
+    "No physical print was performed and no model geometry was changed during this review."
+  ]
+}

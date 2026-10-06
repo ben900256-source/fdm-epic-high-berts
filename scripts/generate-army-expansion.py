@@ -107,7 +107,7 @@ def generate(seed=SEED):
         put(items,'vehicle','expansion-chariot',(0,0,1.2))
         put(items,'reins','expansion-chariot-reins',(0,0,1.2))
         for i,x in enumerate((-2.25,2.25),1):
-            for slot,ref in [('horse','aurelian.dragon-prince-horse@7'),('tack','expansion-light-horse-tack')]:
+            for slot,ref in [('horse','aurelian.expansion-chariot-horse@3'),('belly-blends','aurelian.expansion-chariot-horse-belly-blends@2'),('tack','expansion-light-horse-tack')]:
                 put(items,f'team-{i}/'+slot,ref,(x,-4.4,1.2))
         for prefix,who,y in [('driver','driver',2.3),('passenger',kind or 'hero',5.0)]:
             at=(0,y,9.2);legs(items,prefix,at);add_upper(items,who,prefix,at)
@@ -117,13 +117,13 @@ def generate(seed=SEED):
             put(items,'passenger/shield-brace','expansion-chariot-shield-brace',matrix=shield['mount'])
         if kind is None:
             # Regular crew use a deck-seated spear; the character variants keep
-            # their own weapons. Reuse the locked spear mesh without scaling.
+            # their own weapons. Preserve the locked shaft and use a fuller terminal cap.
             items[:]=[p for p in items if p['instance_id']!='passenger/sword']
             arms=next(p for p in items if p['instance_id']=='passenger/arms')
-            ref=PREFIX+'chariot-spear-arms@1'
+            ref=PREFIX+'chariot-spear-arms@2'
             arms.update(part=ref,definition_sha256=defs[ref].sha256)
             grip=point(arms['mount'],defs[ref].to_dict()['parameters']['landmarks']['right_grip'])
-            spear_ref='aurelian.uniform-spear-140-trial@3'
+            spear_ref='aurelian.expansion-chariot-spear@2'
             bottom=defs[spear_ref].to_dict()['parameters']['landmarks']['shaft_bottom']
             lean=rotation([18,0,20])
             axis=[lean[i][2] for i in range(3)]
@@ -132,6 +132,19 @@ def generate(seed=SEED):
             seat=[grip[i]-axis[i]*below_hand for i in range(3)]
             mount=multiply(translation(seat),multiply(lean,translation([-v for v in bottom])))
             put(items,'passenger/spear',spear_ref,matrix=mount)
+        # Local chariot alternatives keep every other army assembly pinned.
+        replacements={
+            'driver/coat':PREFIX+'chariot-driver-coat@3',
+            'driver/helmet':PREFIX+'chariot-helmet@1',
+            'passenger/helmet':PREFIX+('chariot-general-helmet@2' if kind=='general' else 'chariot-helmet@1'),
+            'driver/arms':PREFIX+'chariot-driver-arms@1',
+            'passenger/regalia':PREFIX+'chariot-mage-regalia@2' if kind=='mage' else None,
+            'passenger/sword':PREFIX+'chariot-command-sword@1',
+            'passenger/arms':PREFIX+'chariot-'+kind+'-arms@1' if kind else None,
+        }
+        for placement in items:
+            ref=replacements.get(placement['instance_id'])
+            if ref:placement.update(part=ref,definition_sha256=defs[ref].sha256)
         return items
     save('chariot','Chariot - two-horse team and spear crew',chariot(),'chariots')
     for kind in ('general','hero','mage'):

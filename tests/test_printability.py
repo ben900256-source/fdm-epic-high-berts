@@ -67,3 +67,30 @@ def test_face_screen_rejects_missing_noses_and_filled_eye_sockets(tmp_path):
     solid=assess_face_detail([dict(z=13,paths=filled)],spec,tmp_path)
     assert not solid['passes']
     assert all(not r['passes'] for r in solid['features'] if r['expected']=='open recess')
+
+
+def test_wide_model_is_screened_outside_historical_strip(tmp_path):
+    # Horse/chariot footprints extend far past the former +/-3.5 mm Y crop.
+    segment = path((-7, 14), (7, 14))
+    layers = [dict(z=.14, paths=[segment]), dict(z=.19, paths=[segment])]
+    result = assess_toolpaths(layers, tmp_path / 'supported')
+    assert result['passes']
+    layers[1]['paths'] = [path((-7, 15), (7, 15))]
+    result = assess_toolpaths(layers, tmp_path / 'floating')
+    assert not result['passes']
+    assert result['summary']['unaccepted_run_count'] == 1
+
+
+def test_assessment_is_translation_invariant(tmp_path):
+    a = [dict(z=.14, paths=[path((-1, 0), (1, 0))]),
+         dict(z=.19, paths=[path((-1, .4), (1, .4))])]
+    b = [dict(z=l['z'], paths=[(p[0]+90, p[1]-70, p[2]+90, p[3]-70, *p[4:])
+                              for p in l['paths']]) for l in a]
+    assert assess_toolpaths(a, tmp_path / 'a')['summary'] == assess_toolpaths(b, tmp_path / 'b')['summary']
+
+
+def test_missing_layer_cannot_support_plastic_above_it(tmp_path):
+    segment = path((-1, 0), (1, 0))
+    result = assess_toolpaths([dict(z=.14, paths=[segment]), dict(z=.24, paths=[segment])], tmp_path)
+    assert not result['passes']
+    assert result['summary']['unaccepted_run_count'] == 1

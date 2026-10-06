@@ -1,0 +1,1922 @@
+{
+  "date": "2026-10-06",
+  "label": "Chariot overhang fixes: sliced diagnostic; unchecked Blender output; physical trial pending",
+  "digitally_validated": false,
+  "blender": "5.1.2",
+  "slicer": "2.9.6",
+  "seed": 1001,
+  "export_scale": 1.3,
+  "tool": 2,
+  "nozzle_mm": 0.25,
+  "layer_mm": 0.05,
+  "first_layer_mm": 0.14,
+  "normal_temperature_c": 205,
+  "first_layer_temperature_c": 230,
+  "minimum_speed_mm_s": 10,
+  "slowdown_threshold_s": 10,
+  "normal_supports": false,
+  "installed_presets_unchanged": true,
+  "support_diagnostic": {
+    "style": "organic",
+    "threshold_degrees_from_bed": 45,
+    "buildplate_only": false
+  },
+  "conclusions": [
+    "All four individual projects and the combined plate slice with continuous nominal layers; the original sword/spear gaps are eliminated.",
+    "Full-perimeter underbody, grounded wheel contacts, inner horse blends, hip-grown coat, tapered palm and deck-seated robe address the large underside starts.",
+    "Selected spear-grip and rear-deck regions have no unaccepted perimeter runs; coat-region maximum is below 0.50 mm and Mage hem-region maximum below 0.13 mm.",
+    "Sloped helmet ceilings, General nape and brow remove the long helmet flags while preserving shared head definitions and outer crowns.",
+    "Conservative automatic-support/model filament falls by 22.5 to 39.8 percent relative to the baseline, but all four whole-model deposited-layer screens still fail.",
+    "Residual flags include internal leg-hole closing contours and small front-rim, mail and attached-detail contours; these are improved print trials, not certified support-free models."
+  ],
+  "limitations": [
+    "All four conservative deposited-layer screens still fail; zero-support certification is not claimed.",
+    "Perimeter flags include internal hole-closing contours as well as small exposed ledges and attached relief.",
+    "No topology/self-intersection validation, independent repeat builds or physical trials were performed."
+  ],
+  "baseline_evidence": "docs/evidence/chariots-sliced-overhang-20261006.json",
+  "local_output_directory": "out/chariots-fixed-sliced-20261006-v4",
+  "preserved": {
+    "historical_part_definitions": 34,
+    "non_chariot_assemblies": 13,
+    "all_original_chariot_mounts": true
+  },
+  "verification": {
+    "targeted_and_provenance_tests_passed": 32,
+    "historical_regiment_tests_passed": 11,
+    "viewer_loaded_placements_match_current_recipes": true
+  },
+  "models": [
+    {
+      "name": "chariot",
+      "assembly_id": "aurelian-expansion-chariot",
+      "assembly_sha256": "78fb6562c89c7b7005b0da27d6eb48e213420f29bd878f0d0fb7c4fbf67d4e1f",
+      "part_revisions": [
+        "aurelian.crest@7",
+        "aurelian.expansion-chariot-base@1",
+        "aurelian.expansion-chariot-driver-arms@1",
+        "aurelian.expansion-chariot-driver-coat@3",
+        "aurelian.expansion-chariot-helmet@1",
+        "aurelian.expansion-chariot-horse-belly-blends@2",
+        "aurelian.expansion-chariot-horse@3",
+        "aurelian.expansion-chariot-reins@2",
+        "aurelian.expansion-chariot-shield-brace@1",
+        "aurelian.expansion-chariot-spear-arms@2",
+        "aurelian.expansion-chariot-spear@2",
+        "aurelian.expansion-chariot@5",
+        "aurelian.expansion-hero-regalia@1",
+        "aurelian.expansion-light-horse-tack@1",
+        "aurelian.left-leg-c@6",
+        "aurelian.readable-chest-plate-trial@1",
+        "aurelian.readable-head-trial@5",
+        "aurelian.readable-insignia-trial@6",
+        "aurelian.readable-mail-trial@3",
+        "aurelian.readable-torso-trial@1",
+        "aurelian.right-leg-c@6",
+        "aurelian.shield@6"
+      ],
+      "passes": false,
+      "layer_count": 516,
+      "layer_gaps": [],
+      "baseline_layer_gaps": [
+        {
+          "previous_z_mm": 25.74,
+          "next_z_mm": 25.84,
+          "missing_layers": 1
+        }
+      ],
+      "support_summary": {
+        "layer_count": 516,
+        "model_path_length_mm": 99036.534,
+        "unsupported_centerline_mm": 1695.067,
+        "unaccepted_run_count": 534,
+        "accepted_bridge_count": 789
+      },
+      "exterior_review_run_count": 258,
+      "baseline_exterior_review_run_count": 307,
+      "automatic_support_ratio": 0.1535316636938669,
+      "baseline_automatic_support_ratio": 0.2457807202222363,
+      "automatic_support_relative_reduction": 0.3753307275076633,
+      "artifact_sha256": {
+        "stl": "ba70c3325bdbcc65187d08467f0258bef7380331f66b5bf8e939b6f49dfdab24",
+        "project": "04af71bb8d5fb53d375c1b845254399e937511eeb311bde5dbc71c28e3463719",
+        "gcode": "64572722da6748e102e98f902ac1b1da7c6f70e61518e0b893c198937e29153c",
+        "settings": "76b6d9187f280f12e918fa0a06f96f2cf6600ffb5a26b28f39f68e836fcbcbcc"
+      },
+      "analysis_source_sha256": {
+        "slicer_overhang.py": "e2184b569ea98d0641206c23b9cce8bd5d0e0970a03d261cf306984e208751c7",
+        "regiment_validation.py": "5aece67ca8d2d2f1bcdc23471eac5f84bba37407a11953837d119fef01b958b3",
+        "printability.py": "605766becd8d2da68a57f3e20af73dd65d1cded2c8724ae2c54a21736032a8a0",
+        "prusa.py": "c23013f89af176a4b83c3ab3b940a21e36e5d99497a3259ff81b491e87014d7a"
+      },
+      "region_comparison": {
+        "front_lip": {
+          "count": 7,
+          "maximum_mm": 1.53569,
+          "worst": [
+            {
+              "z_mm": 5.24,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.3477,
+              "end_xy_mm": [
+                -0.7224166666666557,
+                0.31108333333334076
+              ],
+              "length_mm": 1.53569,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                -1.6719999999999942,
+                0.9408999999999906
+              ]
+            },
+            {
+              "z_mm": 5.24,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.3142,
+              "end_xy_mm": [
+                -0.7254999999999938,
+                0.5459999999999923
+              ],
+              "length_mm": 1.16482,
+              "passes": false,
+              "roles": [
+                "Overhang perimeter",
+                "Perimeter"
+              ],
+              "start_xy_mm": [
+                -1.4585000000000008,
+                1.0443333333333318
+              ]
+            },
+            {
+              "z_mm": 4.79,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 3.7114,
+              "end_xy_mm": [
+                -2.717305555555554,
+                0.7297499999999894
+              ],
+              "length_mm": 0.97125,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                -2.972999999999999,
+                0.6740384615384684
+              ]
+            }
+          ]
+        },
+        "hind_legs": {
+          "count": 21,
+          "maximum_mm": 1.03853,
+          "worst": [
+            {
+              "z_mm": 5.09,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 3.4422,
+              "end_xy_mm": [
+                3.0173750000000092,
+                -2.2308124999999936
+              ],
+              "length_mm": 1.03853,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                2.7252499999999955,
+                -2.3062500000000057
+              ]
+            },
+            {
+              "z_mm": 5.09,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 3.4902,
+              "end_xy_mm": [
+                -2.725624999999993,
+                -2.326312499999995
+              ],
+              "length_mm": 0.91667,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                -2.988250000000004,
+                -2.3289722222222276
+              ]
+            },
+            {
+              "z_mm": 5.04,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 3.4904,
+              "end_xy_mm": [
+                -2.726937499999999,
+                -1.8315625000000013
+              ],
+              "length_mm": 0.91216,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                -2.988250000000004,
+                -1.8282777777777797
+              ]
+            }
+          ]
+        },
+        "belly_start": {
+          "count": 5,
+          "maximum_mm": 0.58747,
+          "worst": [
+            {
+              "z_mm": 5.39,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.8254,
+              "end_xy_mm": [
+                0.1511499999999984,
+                -4.478849999999997
+              ],
+              "length_mm": 0.58747,
+              "passes": false,
+              "roles": [
+                "External perimeter"
+              ],
+              "start_xy_mm": [
+                -0.16950000000000642,
+                -4.451249999999998
+              ]
+            },
+            {
+              "z_mm": 5.49,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.8325,
+              "end_xy_mm": [
+                0.14775000000000632,
+                -5.056400000000002
+              ],
+              "length_mm": 0.58398,
+              "passes": false,
+              "roles": [
+                "External perimeter"
+              ],
+              "start_xy_mm": [
+                -0.16950000000000642,
+                -5.026249999999987
+              ]
+            },
+            {
+              "z_mm": 5.44,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.7292,
+              "end_xy_mm": [
+                0.12875000000000653,
+                -4.812599999999998
+              ],
+              "length_mm": 0.48713,
+              "passes": false,
+              "roles": [
+                "External perimeter"
+              ],
+              "start_xy_mm": [
+                -0.15150000000000574,
+                -4.783937500000009
+              ]
+            }
+          ]
+        },
+        "driver_coat": {
+          "count": 9,
+          "maximum_mm": 0.49634,
+          "worst": [
+            {
+              "z_mm": 10.44,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.7575,
+              "end_xy_mm": [
+                0.6796250000000015,
+                3.149249999999995
+              ],
+              "length_mm": 0.49634,
+              "passes": false,
+              "roles": [
+                "Perimeter"
+              ],
+              "start_xy_mm": [
+                0.6702788461538571,
+                2.8669999999999902
+              ]
+            },
+            {
+              "z_mm": 10.44,
+              "anchored_after": false,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.3945,
+              "end_xy_mm": [
+                -0.7820000000000107,
+                2.9080454545454417
+              ],
+              "length_mm": 0.3574,
+              "passes": false,
+              "roles": [
+                "Perimeter"
+              ],
+              "start_xy_mm": [
+                -0.6796250000000015,
+                3.1430000000000007
+              ]
+            },
+            {
+              "z_mm": 10.59,
+              "anchored_after": false,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.3571,
+              "end_xy_mm": [
+                -1.3824000000000012,
+                4.137500000000008
+              ],
+              "length_mm": 0.354,
+              "passes": false,
+              "roles": [
+                "Perimeter"
+              ],
+              "start_xy_mm": [
+                -1.3367142857142744,
+                3.880678571428567
+              ]
+            }
+          ]
+        },
+        "spear_grip": {
+          "count": 0,
+          "maximum_mm": 0,
+          "worst": []
+        },
+        "rear_deck": {
+          "count": 0,
+          "maximum_mm": 0,
+          "worst": []
+        }
+      },
+      "remaining_largest_perimeter_flags": [
+        {
+          "z_mm": 3.74,
+          "anchored_after": false,
+          "anchored_before": false,
+          "classification": "requires-review",
+          "curvature_ratio": 57.1292,
+          "end_xy_mm": [
+            4.282333333333331,
+            -2.9011666666666684
+          ],
+          "length_mm": 1.56221,
+          "passes": false,
+          "roles": [
+            "Perimeter"
+          ],
+          "start_xy_mm": [
+            4.255533333333343,
+            -2.9065999999999965
+          ]
+        },
+        {
+          "z_mm": 3.74,
+          "anchored_after": false,
+          "anchored_before": false,
+          "classification": "requires-review",
+          "curvature_ratio": 57.1292,
+          "end_xy_mm": [
+            -1.567666666666663,
+            -2.9011666666666684
+          ],
+          "length_mm": 1.56221,
+          "passes": false,
+          "roles": [
+            "Perimeter"
+          ],
+          "start_xy_mm": [
+            -1.5944666666666791,
+            -2.9065999999999965
+          ]
+        },
+        {
+          "z_mm": 5.24,
+          "anchored_after": true,
+          "anchored_before": true,
+          "classification": "requires-review",
+          "curvature_ratio": 1.3477,
+          "end_xy_mm": [
+            -0.7224166666666557,
+            0.31108333333334076
+          ],
+          "length_mm": 1.53569,
+          "passes": false,
+          "roles": [
+            "External perimeter",
+            "Overhang perimeter"
+          ],
+          "start_xy_mm": [
+            -1.6719999999999942,
+            0.9408999999999906
+          ]
+        },
+        {
+          "z_mm": 9.29,
+          "anchored_after": true,
+          "anchored_before": true,
+          "classification": "requires-review",
+          "curvature_ratio": 1.0726,
+          "end_xy_mm": [
+            -1.2540454545454454,
+            5.363000000000005
+          ],
+          "length_mm": 1.49544,
+          "passes": false,
+          "roles": [
+            "External perimeter"
+          ],
+          "start_xy_mm": [
+            -1.9151666666666642,
+            6.59050000000001
+          ]
+        },
+        {
+          "z_mm": 3.64,
+          "anchored_after": false,
+          "anchored_before": false,
+          "classification": "requires-review",
+          "curvature_ratio": 50.4684,
+          "end_xy_mm": [
+            4.287499999999994,
+            -2.897750000000009
+          ],
+          "length_mm": 1.42212,
+          "passes": false,
+          "roles": [
+            "Perimeter"
+          ],
+          "start_xy_mm": [
+            4.264647058823526,
+            -2.881264705882367
+          ]
+        }
+      ],
+      "normal_project": "out/chariots-fixed-sliced-20261006-v4/chariot/chariot.3mf",
+      "diagnostic_project": "out/chariots-fixed-sliced-20261006-v4/chariot/support-audit/diagnostic-supports.3mf",
+      "support_diagnostic_sha256": "306c20096b071c279bc2ecb59aa0d9119cbe4478d609164dc30f030bef0543ee",
+      "reused_from": "out/chariots-fixed-sliced-20261006-v3/chariot"
+    },
+    {
+      "name": "general-on-chariot",
+      "assembly_id": "aurelian-expansion-general-on-chariot",
+      "assembly_sha256": "f6460c49d185c95c095a73dde8c20f44f2054923bc206c39cc87ecd9282555e4",
+      "part_revisions": [
+        "aurelian.crest@7",
+        "aurelian.expansion-chariot-base@1",
+        "aurelian.expansion-chariot-command-sword@1",
+        "aurelian.expansion-chariot-driver-arms@1",
+        "aurelian.expansion-chariot-driver-coat@3",
+        "aurelian.expansion-chariot-general-arms@1",
+        "aurelian.expansion-chariot-general-helmet@2",
+        "aurelian.expansion-chariot-helmet@1",
+        "aurelian.expansion-chariot-horse-belly-blends@2",
+        "aurelian.expansion-chariot-horse@3",
+        "aurelian.expansion-chariot-reins@2",
+        "aurelian.expansion-chariot-shield-brace@1",
+        "aurelian.expansion-chariot@5",
+        "aurelian.expansion-general-regalia@1",
+        "aurelian.expansion-light-horse-tack@1",
+        "aurelian.left-leg-c@6",
+        "aurelian.readable-chest-plate-trial@1",
+        "aurelian.readable-head-trial@5",
+        "aurelian.readable-insignia-trial@6",
+        "aurelian.readable-mail-trial@3",
+        "aurelian.readable-torso-trial@1",
+        "aurelian.right-leg-c@6",
+        "aurelian.shield@6"
+      ],
+      "passes": false,
+      "layer_count": 395,
+      "layer_gaps": [],
+      "baseline_layer_gaps": [
+        {
+          "previous_z_mm": 18.64,
+          "next_z_mm": 19.74,
+          "missing_layers": 21
+        }
+      ],
+      "support_summary": {
+        "layer_count": 395,
+        "model_path_length_mm": 95947.901,
+        "unsupported_centerline_mm": 1716.227,
+        "unaccepted_run_count": 551,
+        "accepted_bridge_count": 785
+      },
+      "exterior_review_run_count": 296,
+      "baseline_exterior_review_run_count": 351,
+      "automatic_support_ratio": 0.2024185717691394,
+      "baseline_automatic_support_ratio": 0.31721754039166117,
+      "automatic_support_relative_reduction": 0.3618935084131292,
+      "artifact_sha256": {
+        "stl": "22f9c2d6be117462c649823c88fbc7160c060e155ce0a4984578241d9548c8e2",
+        "project": "1fa4142aaf543a70b9485cebb7a337acb244de4daf4cf428b2b13aebb73fbf1a",
+        "gcode": "dd82097c07c4ae0bf8e947cb3738a2d6b62aa36ba0d655dfb9a8e3defe124607",
+        "settings": "76b6d9187f280f12e918fa0a06f96f2cf6600ffb5a26b28f39f68e836fcbcbcc"
+      },
+      "analysis_source_sha256": {
+        "slicer_overhang.py": "e2184b569ea98d0641206c23b9cce8bd5d0e0970a03d261cf306984e208751c7",
+        "regiment_validation.py": "5aece67ca8d2d2f1bcdc23471eac5f84bba37407a11953837d119fef01b958b3",
+        "printability.py": "605766becd8d2da68a57f3e20af73dd65d1cded2c8724ae2c54a21736032a8a0",
+        "prusa.py": "c23013f89af176a4b83c3ab3b940a21e36e5d99497a3259ff81b491e87014d7a"
+      },
+      "region_comparison": {
+        "front_lip": {
+          "count": 9,
+          "maximum_mm": 1.4734,
+          "worst": [
+            {
+              "z_mm": 5.24,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.3584,
+              "end_xy_mm": [
+                -0.7224166666666557,
+                0.31108333333334076
+              ],
+              "length_mm": 1.4734,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                -1.6420000000000043,
+                0.8863000000000028
+              ]
+            },
+            {
+              "z_mm": 5.24,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.3142,
+              "end_xy_mm": [
+                -0.7254999999999938,
+                0.5459999999999923
+              ],
+              "length_mm": 1.16482,
+              "passes": false,
+              "roles": [
+                "Overhang perimeter",
+                "Perimeter"
+              ],
+              "start_xy_mm": [
+                -1.4585000000000008,
+                1.0443333333333318
+              ]
+            },
+            {
+              "z_mm": 4.79,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 3.7114,
+              "end_xy_mm": [
+                -2.717305555555554,
+                0.7297499999999894
+              ],
+              "length_mm": 0.97125,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                -2.972999999999999,
+                0.6740384615384684
+              ]
+            }
+          ]
+        },
+        "hind_legs": {
+          "count": 23,
+          "maximum_mm": 0.91699,
+          "worst": [
+            {
+              "z_mm": 5.04,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 3.4339,
+              "end_xy_mm": [
+                2.988625000000005,
+                -1.8495937499999924
+              ],
+              "length_mm": 0.91699,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                2.7252499999999955,
+                -1.805500000000002
+              ]
+            },
+            {
+              "z_mm": 5.09,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 3.4902,
+              "end_xy_mm": [
+                -2.725624999999993,
+                -2.326312499999995
+              ],
+              "length_mm": 0.91667,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                -2.988250000000004,
+                -2.3289722222222276
+              ]
+            },
+            {
+              "z_mm": 5.04,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 3.4904,
+              "end_xy_mm": [
+                -2.726937499999999,
+                -1.8315625000000013
+              ],
+              "length_mm": 0.91216,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                -2.988250000000004,
+                -1.8282777777777797
+              ]
+            }
+          ]
+        },
+        "belly_start": {
+          "count": 5,
+          "maximum_mm": 0.58747,
+          "worst": [
+            {
+              "z_mm": 5.39,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.8254,
+              "end_xy_mm": [
+                0.1511499999999984,
+                -4.478849999999997
+              ],
+              "length_mm": 0.58747,
+              "passes": false,
+              "roles": [
+                "External perimeter"
+              ],
+              "start_xy_mm": [
+                -0.16950000000000642,
+                -4.451249999999998
+              ]
+            },
+            {
+              "z_mm": 5.49,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.8325,
+              "end_xy_mm": [
+                0.14775000000000632,
+                -5.056400000000002
+              ],
+              "length_mm": 0.58398,
+              "passes": false,
+              "roles": [
+                "External perimeter"
+              ],
+              "start_xy_mm": [
+                -0.16950000000000642,
+                -5.026249999999987
+              ]
+            },
+            {
+              "z_mm": 5.44,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.7292,
+              "end_xy_mm": [
+                0.12875000000000653,
+                -4.812599999999998
+              ],
+              "length_mm": 0.48713,
+              "passes": false,
+              "roles": [
+                "External perimeter"
+              ],
+              "start_xy_mm": [
+                -0.15150000000000574,
+                -4.783937500000009
+              ]
+            }
+          ]
+        },
+        "driver_coat": {
+          "count": 8,
+          "maximum_mm": 0.49191,
+          "worst": [
+            {
+              "z_mm": 10.44,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.7647,
+              "end_xy_mm": [
+                0.6796250000000015,
+                3.149249999999995
+              ],
+              "length_mm": 0.49191,
+              "passes": false,
+              "roles": [
+                "Perimeter"
+              ],
+              "start_xy_mm": [
+                0.6707600000000091,
+                2.8706400000000074
+              ]
+            },
+            {
+              "z_mm": 10.29,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.4785,
+              "end_xy_mm": [
+                -1.224199999999998,
+                4.032333333333337
+              ],
+              "length_mm": 0.39619,
+              "passes": false,
+              "roles": [
+                "Perimeter"
+              ],
+              "start_xy_mm": [
+                -1.1600000000000013,
+                3.7721666666666636
+              ]
+            },
+            {
+              "z_mm": 10.09,
+              "anchored_after": false,
+              "anchored_before": false,
+              "classification": "requires-review",
+              "curvature_ratio": 3.9801,
+              "end_xy_mm": [
+                -0.6628749999999961,
+                2.9511249999999976
+              ],
+              "length_mm": 0.21099,
+              "passes": false,
+              "roles": [
+                "Perimeter"
+              ],
+              "start_xy_mm": [
+                -0.6367499999999993,
+                2.997249999999994
+              ]
+            }
+          ]
+        },
+        "rear_deck": {
+          "count": 0,
+          "maximum_mm": 0,
+          "worst": []
+        }
+      },
+      "remaining_largest_perimeter_flags": [
+        {
+          "z_mm": 8.54,
+          "anchored_after": true,
+          "anchored_before": true,
+          "classification": "requires-review",
+          "curvature_ratio": 1.1157,
+          "end_xy_mm": [
+            1.815437499999991,
+            7.018937499999991
+          ],
+          "length_mm": 1.66358,
+          "passes": false,
+          "roles": [
+            "External perimeter"
+          ],
+          "start_xy_mm": [
+            1.5860000000000025,
+            5.545642857142868
+          ]
+        },
+        {
+          "z_mm": 9.29,
+          "anchored_after": true,
+          "anchored_before": true,
+          "classification": "requires-review",
+          "curvature_ratio": 1.0924,
+          "end_xy_mm": [
+            1.880749999999999,
+            6.650000000000008
+          ],
+          "length_mm": 1.56463,
+          "passes": false,
+          "roles": [
+            "External perimeter"
+          ],
+          "start_xy_mm": [
+            1.2553333333333399,
+            5.361499999999992
+          ]
+        },
+        {
+          "z_mm": 3.74,
+          "anchored_after": false,
+          "anchored_before": false,
+          "classification": "requires-review",
+          "curvature_ratio": 57.1292,
+          "end_xy_mm": [
+            4.282333333333331,
+            -2.9011666666666684
+          ],
+          "length_mm": 1.56221,
+          "passes": false,
+          "roles": [
+            "Perimeter"
+          ],
+          "start_xy_mm": [
+            4.255533333333343,
+            -2.9065999999999965
+          ]
+        },
+        {
+          "z_mm": 3.74,
+          "anchored_after": false,
+          "anchored_before": false,
+          "classification": "requires-review",
+          "curvature_ratio": 57.1292,
+          "end_xy_mm": [
+            -1.567666666666663,
+            -2.9011666666666684
+          ],
+          "length_mm": 1.56221,
+          "passes": false,
+          "roles": [
+            "Perimeter"
+          ],
+          "start_xy_mm": [
+            -1.5944666666666791,
+            -2.9065999999999965
+          ]
+        },
+        {
+          "z_mm": 10.79,
+          "anchored_after": true,
+          "anchored_before": true,
+          "classification": "requires-review",
+          "curvature_ratio": 1.2129,
+          "end_xy_mm": [
+            1.5390000000000086,
+            7.155250000000002
+          ],
+          "length_mm": 1.52294,
+          "passes": false,
+          "roles": [
+            "External perimeter"
+          ],
+          "start_xy_mm": [
+            1.5867500000000092,
+            5.900500000000001
+          ]
+        }
+      ],
+      "normal_project": "out/chariots-fixed-sliced-20261006-v4/general-on-chariot/general-on-chariot.3mf",
+      "diagnostic_project": "out/chariots-fixed-sliced-20261006-v4/general-on-chariot/support-audit/diagnostic-supports.3mf",
+      "support_diagnostic_sha256": "a461a051e7686005c9a2fe7e3c9c7ea45ef80604d40f03d10a16b0512d0db338",
+      "reused_from": ""
+    },
+    {
+      "name": "hero-on-chariot",
+      "assembly_id": "aurelian-expansion-hero-on-chariot",
+      "assembly_sha256": "11b8f2ad785db8615e82951dcc06160ea69361dfa46728fe17fdb4117d0a4589",
+      "part_revisions": [
+        "aurelian.crest@7",
+        "aurelian.expansion-chariot-base@1",
+        "aurelian.expansion-chariot-command-sword@1",
+        "aurelian.expansion-chariot-driver-arms@1",
+        "aurelian.expansion-chariot-driver-coat@3",
+        "aurelian.expansion-chariot-helmet@1",
+        "aurelian.expansion-chariot-hero-arms@1",
+        "aurelian.expansion-chariot-horse-belly-blends@2",
+        "aurelian.expansion-chariot-horse@3",
+        "aurelian.expansion-chariot-reins@2",
+        "aurelian.expansion-chariot-shield-brace@1",
+        "aurelian.expansion-chariot@5",
+        "aurelian.expansion-hero-regalia@1",
+        "aurelian.expansion-light-horse-tack@1",
+        "aurelian.left-leg-c@6",
+        "aurelian.readable-chest-plate-trial@1",
+        "aurelian.readable-head-trial@5",
+        "aurelian.readable-insignia-trial@6",
+        "aurelian.readable-mail-trial@3",
+        "aurelian.readable-torso-trial@1",
+        "aurelian.right-leg-c@6",
+        "aurelian.shield@6"
+      ],
+      "passes": false,
+      "layer_count": 371,
+      "layer_gaps": [],
+      "baseline_layer_gaps": [],
+      "support_summary": {
+        "layer_count": 371,
+        "model_path_length_mm": 95909.271,
+        "unsupported_centerline_mm": 1687.214,
+        "unaccepted_run_count": 536,
+        "accepted_bridge_count": 786
+      },
+      "exterior_review_run_count": 282,
+      "baseline_exterior_review_run_count": 328,
+      "automatic_support_ratio": 0.17834418825012696,
+      "baseline_automatic_support_ratio": 0.2960375802498384,
+      "automatic_support_relative_reduction": 0.3975623361749717,
+      "artifact_sha256": {
+        "stl": "5e0c375fe0dadf882dc84b2d3d38f5570c472278dbb7f99c86430ad8c6a25fd1",
+        "project": "2a91366a2318cc468c421e190787e8ae4e1743d5bf7c2d88871b5dd26c49a0d0",
+        "gcode": "5d6e3fb6278b46623ea243928de9f9ed2de8e8970c3b8b96edbc6b29e1431c2a",
+        "settings": "76b6d9187f280f12e918fa0a06f96f2cf6600ffb5a26b28f39f68e836fcbcbcc"
+      },
+      "analysis_source_sha256": {
+        "slicer_overhang.py": "e2184b569ea98d0641206c23b9cce8bd5d0e0970a03d261cf306984e208751c7",
+        "regiment_validation.py": "5aece67ca8d2d2f1bcdc23471eac5f84bba37407a11953837d119fef01b958b3",
+        "printability.py": "605766becd8d2da68a57f3e20af73dd65d1cded2c8724ae2c54a21736032a8a0",
+        "prusa.py": "c23013f89af176a4b83c3ab3b940a21e36e5d99497a3259ff81b491e87014d7a"
+      },
+      "region_comparison": {
+        "front_lip": {
+          "count": 9,
+          "maximum_mm": 1.53569,
+          "worst": [
+            {
+              "z_mm": 5.24,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.3477,
+              "end_xy_mm": [
+                -0.7224166666666557,
+                0.31108333333334076
+              ],
+              "length_mm": 1.53569,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                -1.6719999999999942,
+                0.9408999999999906
+              ]
+            },
+            {
+              "z_mm": 5.24,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.3142,
+              "end_xy_mm": [
+                -0.7254999999999938,
+                0.5459999999999923
+              ],
+              "length_mm": 1.16482,
+              "passes": false,
+              "roles": [
+                "Overhang perimeter",
+                "Perimeter"
+              ],
+              "start_xy_mm": [
+                -1.4585000000000008,
+                1.0443333333333318
+              ]
+            },
+            {
+              "z_mm": 4.79,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 3.7114,
+              "end_xy_mm": [
+                -2.717305555555554,
+                0.7297499999999894
+              ],
+              "length_mm": 0.97125,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                -2.972999999999999,
+                0.6740384615384684
+              ]
+            }
+          ]
+        },
+        "hind_legs": {
+          "count": 23,
+          "maximum_mm": 1.03853,
+          "worst": [
+            {
+              "z_mm": 5.09,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 3.4422,
+              "end_xy_mm": [
+                3.0173750000000092,
+                -2.2308124999999936
+              ],
+              "length_mm": 1.03853,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                2.7252499999999955,
+                -2.3062500000000057
+              ]
+            },
+            {
+              "z_mm": 5.09,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 3.4902,
+              "end_xy_mm": [
+                -2.725624999999993,
+                -2.326312499999995
+              ],
+              "length_mm": 0.91667,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                -2.988250000000004,
+                -2.3289722222222276
+              ]
+            },
+            {
+              "z_mm": 5.04,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 3.4904,
+              "end_xy_mm": [
+                -2.726937499999999,
+                -1.8315625000000013
+              ],
+              "length_mm": 0.91216,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                -2.988250000000004,
+                -1.8282777777777797
+              ]
+            }
+          ]
+        },
+        "belly_start": {
+          "count": 5,
+          "maximum_mm": 0.58747,
+          "worst": [
+            {
+              "z_mm": 5.39,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.8254,
+              "end_xy_mm": [
+                0.1511499999999984,
+                -4.478849999999997
+              ],
+              "length_mm": 0.58747,
+              "passes": false,
+              "roles": [
+                "External perimeter"
+              ],
+              "start_xy_mm": [
+                -0.16950000000000642,
+                -4.451249999999998
+              ]
+            },
+            {
+              "z_mm": 5.49,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.8325,
+              "end_xy_mm": [
+                0.14775000000000632,
+                -5.056400000000002
+              ],
+              "length_mm": 0.58398,
+              "passes": false,
+              "roles": [
+                "External perimeter"
+              ],
+              "start_xy_mm": [
+                -0.16950000000000642,
+                -5.026249999999987
+              ]
+            },
+            {
+              "z_mm": 5.44,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.7292,
+              "end_xy_mm": [
+                0.12875000000000653,
+                -4.812599999999998
+              ],
+              "length_mm": 0.48713,
+              "passes": false,
+              "roles": [
+                "External perimeter"
+              ],
+              "start_xy_mm": [
+                -0.15150000000000574,
+                -4.783937500000009
+              ]
+            }
+          ]
+        },
+        "driver_coat": {
+          "count": 11,
+          "maximum_mm": 0.49634,
+          "worst": [
+            {
+              "z_mm": 10.44,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.7575,
+              "end_xy_mm": [
+                0.6796250000000015,
+                3.149249999999995
+              ],
+              "length_mm": 0.49634,
+              "passes": false,
+              "roles": [
+                "Perimeter"
+              ],
+              "start_xy_mm": [
+                0.6702788461538571,
+                2.8669999999999902
+              ]
+            },
+            {
+              "z_mm": 10.44,
+              "anchored_after": false,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.3945,
+              "end_xy_mm": [
+                -0.7820000000000107,
+                2.9080454545454417
+              ],
+              "length_mm": 0.3574,
+              "passes": false,
+              "roles": [
+                "Perimeter"
+              ],
+              "start_xy_mm": [
+                -0.6796250000000015,
+                3.1430000000000007
+              ]
+            },
+            {
+              "z_mm": 10.59,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.2938,
+              "end_xy_mm": [
+                -1.3927500000000075,
+                4.1389062499999945
+              ],
+              "length_mm": 0.34187,
+              "passes": false,
+              "roles": [
+                "Perimeter"
+              ],
+              "start_xy_mm": [
+                -1.3367142857142744,
+                3.880678571428567
+              ]
+            }
+          ]
+        },
+        "rear_deck": {
+          "count": 0,
+          "maximum_mm": 0,
+          "worst": []
+        }
+      },
+      "remaining_largest_perimeter_flags": [
+        {
+          "z_mm": 8.54,
+          "anchored_after": true,
+          "anchored_before": true,
+          "classification": "requires-review",
+          "curvature_ratio": 1.1211,
+          "end_xy_mm": [
+            1.8017499999999913,
+            7.0305000000000035
+          ],
+          "length_mm": 1.68216,
+          "passes": false,
+          "roles": [
+            "External perimeter"
+          ],
+          "start_xy_mm": [
+            1.5860000000000025,
+            5.545642857142868
+          ]
+        },
+        {
+          "z_mm": 9.29,
+          "anchored_after": true,
+          "anchored_before": true,
+          "classification": "requires-review",
+          "curvature_ratio": 1.0924,
+          "end_xy_mm": [
+            1.880749999999999,
+            6.650000000000008
+          ],
+          "length_mm": 1.56463,
+          "passes": false,
+          "roles": [
+            "External perimeter"
+          ],
+          "start_xy_mm": [
+            1.2553333333333399,
+            5.361499999999992
+          ]
+        },
+        {
+          "z_mm": 3.74,
+          "anchored_after": false,
+          "anchored_before": false,
+          "classification": "requires-review",
+          "curvature_ratio": 57.1292,
+          "end_xy_mm": [
+            4.282333333333331,
+            -2.9011666666666684
+          ],
+          "length_mm": 1.56221,
+          "passes": false,
+          "roles": [
+            "Perimeter"
+          ],
+          "start_xy_mm": [
+            4.255533333333343,
+            -2.9065999999999965
+          ]
+        },
+        {
+          "z_mm": 3.74,
+          "anchored_after": false,
+          "anchored_before": false,
+          "classification": "requires-review",
+          "curvature_ratio": 57.1292,
+          "end_xy_mm": [
+            -1.567666666666663,
+            -2.9011666666666684
+          ],
+          "length_mm": 1.56221,
+          "passes": false,
+          "roles": [
+            "Perimeter"
+          ],
+          "start_xy_mm": [
+            -1.5944666666666791,
+            -2.9065999999999965
+          ]
+        },
+        {
+          "z_mm": 5.24,
+          "anchored_after": true,
+          "anchored_before": true,
+          "classification": "requires-review",
+          "curvature_ratio": 1.3477,
+          "end_xy_mm": [
+            -0.7224166666666557,
+            0.31108333333334076
+          ],
+          "length_mm": 1.53569,
+          "passes": false,
+          "roles": [
+            "External perimeter",
+            "Overhang perimeter"
+          ],
+          "start_xy_mm": [
+            -1.6719999999999942,
+            0.9408999999999906
+          ]
+        }
+      ],
+      "normal_project": "out/chariots-fixed-sliced-20261006-v4/hero-on-chariot/hero-on-chariot.3mf",
+      "diagnostic_project": "out/chariots-fixed-sliced-20261006-v4/hero-on-chariot/support-audit/diagnostic-supports.3mf",
+      "support_diagnostic_sha256": "5e9029461592cc3e5c71243519f9eb5b37ef544ee675a0ba871de9c762e6b0d9",
+      "reused_from": "out/chariots-fixed-sliced-20261006-v3/hero-on-chariot"
+    },
+    {
+      "name": "mage-on-chariot",
+      "assembly_id": "aurelian-expansion-mage-on-chariot",
+      "assembly_sha256": "67869012a4d9c444d5cfbd4b30846cbd87b801fbad766a48d78655e7badb69c8",
+      "part_revisions": [
+        "aurelian.crest@7",
+        "aurelian.expansion-chariot-base@1",
+        "aurelian.expansion-chariot-driver-arms@1",
+        "aurelian.expansion-chariot-driver-coat@3",
+        "aurelian.expansion-chariot-helmet@1",
+        "aurelian.expansion-chariot-horse-belly-blends@2",
+        "aurelian.expansion-chariot-horse@3",
+        "aurelian.expansion-chariot-mage-arms@1",
+        "aurelian.expansion-chariot-mage-regalia@2",
+        "aurelian.expansion-chariot-reins@2",
+        "aurelian.expansion-chariot@5",
+        "aurelian.expansion-light-horse-tack@1",
+        "aurelian.expansion-mage-staff@1",
+        "aurelian.left-leg-c@6",
+        "aurelian.readable-head-trial@5",
+        "aurelian.readable-torso-trial@1",
+        "aurelian.right-leg-c@6"
+      ],
+      "passes": false,
+      "layer_count": 395,
+      "layer_gaps": [],
+      "baseline_layer_gaps": [],
+      "support_summary": {
+        "layer_count": 395,
+        "model_path_length_mm": 92160.498,
+        "unsupported_centerline_mm": 1598.059,
+        "unaccepted_run_count": 529,
+        "accepted_bridge_count": 738
+      },
+      "exterior_review_run_count": 315,
+      "baseline_exterior_review_run_count": 373,
+      "automatic_support_ratio": 0.240805036183627,
+      "baseline_automatic_support_ratio": 0.3106512029825311,
+      "automatic_support_relative_reduction": 0.22483790865227005,
+      "artifact_sha256": {
+        "stl": "a038ba6584d9479a5de36641eafa8c57300dbff2da04c0da2b5dc635ca130a7d",
+        "project": "2bc7afe4ec4895b43bd307b0e28c7266cab14ea955fe807d0a75d970d93ae5e1",
+        "gcode": "5d9f4c93708b8fd0a2d344bc078737933f3087b466248d072d75b78f33535ed7",
+        "settings": "76b6d9187f280f12e918fa0a06f96f2cf6600ffb5a26b28f39f68e836fcbcbcc"
+      },
+      "analysis_source_sha256": {
+        "slicer_overhang.py": "e2184b569ea98d0641206c23b9cce8bd5d0e0970a03d261cf306984e208751c7",
+        "regiment_validation.py": "5aece67ca8d2d2f1bcdc23471eac5f84bba37407a11953837d119fef01b958b3",
+        "printability.py": "605766becd8d2da68a57f3e20af73dd65d1cded2c8724ae2c54a21736032a8a0",
+        "prusa.py": "c23013f89af176a4b83c3ab3b940a21e36e5d99497a3259ff81b491e87014d7a"
+      },
+      "region_comparison": {
+        "front_lip": {
+          "count": 9,
+          "maximum_mm": 1.4734,
+          "worst": [
+            {
+              "z_mm": 5.24,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.3584,
+              "end_xy_mm": [
+                -0.7224166666666557,
+                0.31108333333334076
+              ],
+              "length_mm": 1.4734,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                -1.6420000000000043,
+                0.8863000000000028
+              ]
+            },
+            {
+              "z_mm": 5.24,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.3142,
+              "end_xy_mm": [
+                -0.7254999999999938,
+                0.5459999999999923
+              ],
+              "length_mm": 1.16482,
+              "passes": false,
+              "roles": [
+                "Overhang perimeter",
+                "Perimeter"
+              ],
+              "start_xy_mm": [
+                -1.4585000000000008,
+                1.0443333333333318
+              ]
+            },
+            {
+              "z_mm": 4.79,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 3.7114,
+              "end_xy_mm": [
+                -2.717305555555554,
+                0.7297499999999894
+              ],
+              "length_mm": 0.97125,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                -2.972999999999999,
+                0.6740384615384684
+              ]
+            }
+          ]
+        },
+        "hind_legs": {
+          "count": 23,
+          "maximum_mm": 0.91699,
+          "worst": [
+            {
+              "z_mm": 5.04,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 3.4339,
+              "end_xy_mm": [
+                2.988625000000005,
+                -1.8495937499999924
+              ],
+              "length_mm": 0.91699,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                2.7252499999999955,
+                -1.805500000000002
+              ]
+            },
+            {
+              "z_mm": 5.09,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 3.4902,
+              "end_xy_mm": [
+                -2.725624999999993,
+                -2.326312499999995
+              ],
+              "length_mm": 0.91667,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                -2.988250000000004,
+                -2.3289722222222276
+              ]
+            },
+            {
+              "z_mm": 5.04,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 3.4904,
+              "end_xy_mm": [
+                -2.726937499999999,
+                -1.8315625000000013
+              ],
+              "length_mm": 0.91216,
+              "passes": false,
+              "roles": [
+                "External perimeter",
+                "Overhang perimeter"
+              ],
+              "start_xy_mm": [
+                -2.988250000000004,
+                -1.8282777777777797
+              ]
+            }
+          ]
+        },
+        "belly_start": {
+          "count": 5,
+          "maximum_mm": 0.58747,
+          "worst": [
+            {
+              "z_mm": 5.39,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.8254,
+              "end_xy_mm": [
+                0.1511499999999984,
+                -4.478849999999997
+              ],
+              "length_mm": 0.58747,
+              "passes": false,
+              "roles": [
+                "External perimeter"
+              ],
+              "start_xy_mm": [
+                -0.16950000000000642,
+                -4.451249999999998
+              ]
+            },
+            {
+              "z_mm": 5.49,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.8325,
+              "end_xy_mm": [
+                0.14775000000000632,
+                -5.056400000000002
+              ],
+              "length_mm": 0.58398,
+              "passes": false,
+              "roles": [
+                "External perimeter"
+              ],
+              "start_xy_mm": [
+                -0.16950000000000642,
+                -5.026249999999987
+              ]
+            },
+            {
+              "z_mm": 5.44,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.7292,
+              "end_xy_mm": [
+                0.12875000000000653,
+                -4.812599999999998
+              ],
+              "length_mm": 0.48713,
+              "passes": false,
+              "roles": [
+                "External perimeter"
+              ],
+              "start_xy_mm": [
+                -0.15150000000000574,
+                -4.783937500000009
+              ]
+            }
+          ]
+        },
+        "driver_coat": {
+          "count": 8,
+          "maximum_mm": 0.49634,
+          "worst": [
+            {
+              "z_mm": 10.44,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.7575,
+              "end_xy_mm": [
+                0.6796250000000015,
+                3.149249999999995
+              ],
+              "length_mm": 0.49634,
+              "passes": false,
+              "roles": [
+                "Perimeter"
+              ],
+              "start_xy_mm": [
+                0.6702788461538571,
+                2.8669999999999902
+              ]
+            },
+            {
+              "z_mm": 10.44,
+              "anchored_after": true,
+              "anchored_before": true,
+              "classification": "requires-review",
+              "curvature_ratio": 1.7594,
+              "end_xy_mm": [
+                -0.6703181818181825,
+                2.8693636363636377
+              ],
+              "length_mm": 0.48062,
+              "passes": false,
+              "roles": [
+                "Perimeter"
+              ],
+              "start_xy_mm": [
+                -0.6796250000000015,
+                3.1423749999999977
+              ]
+            },
+            {
+              "z_mm": 9.79,
+              "anchored_after": false,
+              "anchored_before": false,
+              "classification": "requires-review",
+              "curvature_ratio": 3.9674,
+              "end_xy_mm": [
+                0.7890000000000015,
+                3.0621666666666556
+              ],
+              "length_mm": 0.16038,
+              "passes": false,
+              "roles": [
+                "Perimeter"
+              ],
+              "start_xy_mm": [
+                0.8115000000000023,
+                3.0957499999999953
+              ]
+            }
+          ]
+        },
+        "mage_hem": {
+          "count": 2,
+          "maximum_mm": 0.12404,
+          "worst": [
+            {
+              "z_mm": 6.09,
+              "anchored_after": false,
+              "anchored_before": false,
+              "classification": "requires-review",
+              "curvature_ratio": 3.9502,
+              "end_xy_mm": [
+                1.3945000000000007,
+                5.317000000000007
+              ],
+              "length_mm": 0.12404,
+              "passes": false,
+              "roles": [
+                "External perimeter"
+              ],
+              "start_xy_mm": [
+                1.414750000000005,
+                5.341000000000008
+              ]
+            },
+            {
+              "z_mm": 5.89,
+              "anchored_after": false,
+              "anchored_before": false,
+              "classification": "requires-review",
+              "curvature_ratio": 3.9155,
+              "end_xy_mm": [
+                1.4200000000000017,
+                5.302749999999996
+              ],
+              "length_mm": 0.1187,
+              "passes": false,
+              "roles": [
+                "External perimeter"
+              ],
+              "start_xy_mm": [
+                1.4397500000000107,
+                5.325749999999992
+              ]
+            }
+          ]
+        },
+        "rear_deck": {
+          "count": 0,
+          "maximum_mm": 0,
+          "worst": []
+        }
+      },
+      "remaining_largest_perimeter_flags": [
+        {
+          "z_mm": 3.74,
+          "anchored_after": false,
+          "anchored_before": false,
+          "classification": "requires-review",
+          "curvature_ratio": 57.1292,
+          "end_xy_mm": [
+            4.282333333333331,
+            -2.9011666666666684
+          ],
+          "length_mm": 1.56221,
+          "passes": false,
+          "roles": [
+            "Perimeter"
+          ],
+          "start_xy_mm": [
+            4.255533333333343,
+            -2.9065999999999965
+          ]
+        },
+        {
+          "z_mm": 3.74,
+          "anchored_after": false,
+          "anchored_before": false,
+          "classification": "requires-review",
+          "curvature_ratio": 57.1292,
+          "end_xy_mm": [
+            -1.567666666666663,
+            -2.9011666666666684
+          ],
+          "length_mm": 1.56221,
+          "passes": false,
+          "roles": [
+            "Perimeter"
+          ],
+          "start_xy_mm": [
+            -1.5944666666666791,
+            -2.9065999999999965
+          ]
+        },
+        {
+          "z_mm": 5.24,
+          "anchored_after": true,
+          "anchored_before": true,
+          "classification": "requires-review",
+          "curvature_ratio": 1.3584,
+          "end_xy_mm": [
+            -0.7224166666666557,
+            0.31108333333334076
+          ],
+          "length_mm": 1.4734,
+          "passes": false,
+          "roles": [
+            "External perimeter",
+            "Overhang perimeter"
+          ],
+          "start_xy_mm": [
+            -1.6420000000000043,
+            0.8863000000000028
+          ]
+        },
+        {
+          "z_mm": 3.64,
+          "anchored_after": false,
+          "anchored_before": false,
+          "classification": "requires-review",
+          "curvature_ratio": 50.4684,
+          "end_xy_mm": [
+            4.287499999999994,
+            -2.897750000000009
+          ],
+          "length_mm": 1.42212,
+          "passes": false,
+          "roles": [
+            "Perimeter"
+          ],
+          "start_xy_mm": [
+            4.264647058823526,
+            -2.881264705882367
+          ]
+        },
+        {
+          "z_mm": 8.14,
+          "anchored_after": true,
+          "anchored_before": true,
+          "classification": "requires-review",
+          "curvature_ratio": 1.3747,
+          "end_xy_mm": [
+            -1.1433636363636284,
+            3.073045454545461
+          ],
+          "length_mm": 1.31464,
+          "passes": false,
+          "roles": [
+            "External perimeter",
+            "Overhang perimeter"
+          ],
+          "start_xy_mm": [
+            -0.3401666666666709,
+            2.554000000000007
+          ]
+        }
+      ],
+      "normal_project": "out/chariots-fixed-sliced-20261006-v4/mage-on-chariot/mage-on-chariot.3mf",
+      "diagnostic_project": "out/chariots-fixed-sliced-20261006-v4/mage-on-chariot/support-audit/diagnostic-supports.3mf",
+      "support_diagnostic_sha256": "b82bd51dba738747ca76e9195f9b5abfb0e44eff67784bf8d5d6d23b960ab0e6",
+      "reused_from": "out/chariots-fixed-sliced-20261006-v3/mage-on-chariot"
+    }
+  ],
+  "combined_plate": {
+    "project": "out/chariots-fixed-sliced-20261006-v4/four-chariots-overhang-fixes.3mf",
+    "project_sha256": "2eed214812b7bafb9a192a54c02bce97858b4d700859ba4d3801526cade9bd29",
+    "gcode_sha256": "8d147eb0582a3002edc1fbad408503afb622b2ea7e80a1172e5086f0a423f1ec",
+    "centers_mm": [
+      [
+        155,
+        155
+      ],
+      [
+        205,
+        155
+      ],
+      [
+        155,
+        205
+      ],
+      [
+        205,
+        205
+      ]
+    ],
+    "reopened_and_sliced_without_separate_config": true,
+    "continuous_layers": true,
+    "layer_gaps": [],
+    "extrusion_tools": [
+      1
+    ],
+    "selected_tools": [
+      1
+    ],
+    "roles": [
+      "Bridge infill",
+      "External perimeter",
+      "Internal infill",
+      "Overhang perimeter",
+      "Perimeter",
+      "Skirt/Brim",
+      "Solid infill",
+      "Top solid infill"
+    ],
+    "layer_count": 516,
+    "first_layer_mm": 0.14,
+    "final_z_mm": 25.89,
+    "model_extrusion_segments": 666081,
+    "estimated_print_time": "8h 18m 15s",
+    "filament_used_g_by_tool": "0.00, 6.70, 0.00, 0.00, 0.00"
+  }
+}

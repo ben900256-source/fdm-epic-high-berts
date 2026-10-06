@@ -1,0 +1,360 @@
+{
+  "component_id": "aurelian.expansion-chariot-general-arms",
+  "version": 1,
+  "name": "Chariot general arms",
+  "family": "army-expansion-chariot-general-arms",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shoulder_1",
+    "upper_arm_1",
+    "elbow_1",
+    "forearm_1",
+    "palm_1",
+    "thumb_1",
+    "finger_1_0",
+    "finger_1_1",
+    "finger_1_2",
+    "shoulder_-1",
+    "upper_arm_-1",
+    "elbow_-1",
+    "forearm_-1",
+    "palm_-1",
+    "thumb_-1",
+    "finger_-1_0",
+    "finger_-1_1",
+    "finger_-1_2"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          1.25,
+          1.2,
+          1.3
+        ],
+        "export": true,
+        "location": [
+          0.99,
+          0,
+          0.65
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "shoulder_1",
+        "segments": 40
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.5,
+          -0.28,
+          -0.35
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.56,
+        "role": "upper_arm_1",
+        "start": [
+          0.99,
+          0,
+          0.65
+        ]
+      },
+      {
+        "dimensions": [
+          1.15,
+          1.15,
+          1.15
+        ],
+        "export": true,
+        "location": [
+          1.5,
+          -0.28,
+          -0.35
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "elbow_1",
+        "segments": 40
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.65,
+          -1.12,
+          1.0
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.52,
+        "role": "forearm_1",
+        "start": [
+          1.5,
+          -0.28,
+          -0.35
+        ]
+      },
+      {
+        "dimensions": [
+          1.15,
+          1.1,
+          1.1
+        ],
+        "export": true,
+        "location": [
+          1.65,
+          -1.12,
+          1.0
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "palm_1",
+        "segments": 48
+      },
+      {
+        "dimensions": [
+          0.5,
+          0.48,
+          0.55
+        ],
+        "export": true,
+        "location": [
+          1.2999999999999998,
+          -1.52,
+          1.23
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "thumb_1",
+        "segments": 40
+      },
+      {
+        "bevel": 0.09,
+        "dimensions": [
+          0.26,
+          0.26,
+          0.7
+        ],
+        "export": true,
+        "location": [
+          1.3499999999999999,
+          -1.55,
+          0.94
+        ],
+        "primitive": "cube",
+        "role": "finger_1_0"
+      },
+      {
+        "bevel": 0.09,
+        "dimensions": [
+          0.26,
+          0.26,
+          0.7
+        ],
+        "export": true,
+        "location": [
+          1.65,
+          -1.55,
+          0.94
+        ],
+        "primitive": "cube",
+        "role": "finger_1_1"
+      },
+      {
+        "bevel": 0.09,
+        "dimensions": [
+          0.26,
+          0.26,
+          0.7
+        ],
+        "export": true,
+        "location": [
+          1.95,
+          -1.55,
+          0.94
+        ],
+        "primitive": "cube",
+        "role": "finger_1_2"
+      },
+      {
+        "dimensions": [
+          1.25,
+          1.2,
+          1.3
+        ],
+        "export": true,
+        "location": [
+          -0.99,
+          0,
+          0.65
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "shoulder_-1",
+        "segments": 40
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.5,
+          -0.28,
+          -0.05
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.56,
+        "role": "upper_arm_-1",
+        "start": [
+          -0.99,
+          0,
+          0.65
+        ]
+      },
+      {
+        "dimensions": [
+          1.15,
+          1.15,
+          1.15
+        ],
+        "export": true,
+        "location": [
+          -1.5,
+          -0.28,
+          -0.05
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "elbow_-1",
+        "segments": 40
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.58,
+          -1.28,
+          0.12
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.52,
+        "role": "forearm_-1",
+        "start": [
+          -1.5,
+          -0.28,
+          -0.05
+        ]
+      },
+      {
+        "dimensions": [
+          1.15,
+          1.1,
+          1.1
+        ],
+        "export": true,
+        "location": [
+          -1.58,
+          -1.28,
+          0.12
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "palm_-1",
+        "segments": 48
+      },
+      {
+        "dimensions": [
+          0.5,
+          0.48,
+          0.55
+        ],
+        "export": true,
+        "location": [
+          -1.23,
+          -1.6800000000000002,
+          0.35
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "thumb_-1",
+        "segments": 40
+      },
+      {
+        "bevel": 0.09,
+        "dimensions": [
+          0.26,
+          0.26,
+          0.7
+        ],
+        "export": true,
+        "location": [
+          -1.8800000000000001,
+          -1.71,
+          0.06
+        ],
+        "primitive": "cube",
+        "role": "finger_-1_0"
+      },
+      {
+        "bevel": 0.09,
+        "dimensions": [
+          0.26,
+          0.26,
+          0.7
+        ],
+        "export": true,
+        "location": [
+          -1.58,
+          -1.71,
+          0.06
+        ],
+        "primitive": "cube",
+        "role": "finger_-1_1"
+      },
+      {
+        "bevel": 0.09,
+        "dimensions": [
+          0.26,
+          0.26,
+          0.7
+        ],
+        "export": true,
+        "location": [
+          -1.28,
+          -1.71,
+          0.06
+        ],
+        "primitive": "cube",
+        "role": "finger_-1_2"
+      }
+    ],
+    "audit_source": "docs/chariots-sliced-overhang-review.md",
+    "design_notes": "Rounded palm undersides remove the broad flat starting ledges; grip and shoulder landmarks preserved. Spear palm includes stock growing from the shaft.",
+    "export_scale": 1.3,
+    "landmarks": {
+      "left_grip": [
+        -1.58,
+        -1.28,
+        0.12
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "right_grip": [
+        1.65,
+        -1.12,
+        1.0
+      ]
+    },
+    "operations": [],
+    "provenance": "Original parameterized primitives, rigid frames and local ordered Exact CSG.",
+    "seed": 1001,
+    "visual_only": true
+  }
+}

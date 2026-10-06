@@ -353,7 +353,7 @@ def _first_pass_parts(seed=SEED):
 CURRENT_REVISIONS = {PREFIX+'dragon@1': PREFIX+'dragon@3',
                      PREFIX+'crew-arms@1': PREFIX+'crew-arms@2',
                      PREFIX+'chariot-reins@1': PREFIX+'chariot-reins@2',
-                     PREFIX+'chariot@1': PREFIX+'chariot@2'}
+                     PREFIX+'chariot@1': PREFIX+'chariot@5'}
 
 
 def triangle_membrane(role, apex, edge_a, edge_b, thickness=.76):
@@ -586,4 +586,5 @@ def dragon_v3(seed):
 
 
 def all_parts(seed=SEED):
-    return _first_pass_parts(seed)+[dragon_v2(seed),dragon_v3(seed),crew_arms_v2(seed),chariot_reins(seed),chariot_reins_v2(seed),supported_chariot(seed),chariot_shield_brace(seed),chariot_spear_arms(seed),loader_bolt(seed)]
+    from .chariot_print_fixes import all_parts as chariot_parts
+    return _first_pass_parts(seed)+[dragon_v2(seed),dragon_v3(seed),crew_arms_v2(seed),chariot_reins(seed),chariot_reins_v2(seed),supported_chariot(seed),chariot_shield_brace(seed),chariot_spear_arms(seed),loader_bolt(seed)]+chariot_parts(seed)

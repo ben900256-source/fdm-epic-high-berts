@@ -33,19 +33,40 @@ CRITERIA = PrintabilityCriteria()
 SIZE = (880,280)
 
 
-def pixel(point, criteria=CRITERIA):
-    return (round((point[0]+11)/criteria.resolution_mm),round((3.5-point[1])/criteria.resolution_mm))
+@dataclass(frozen=True)
+class Raster:
+    left_mm: float = -11
+    top_mm: float = 3.5
+    size: tuple[int, int] = SIZE
+
+    @classmethod
+    def fit(cls, layers, criteria=CRITERIA):
+        paths = [p for layer in layers for p in model_paths(layer)]
+        if not paths:
+            raise ValueError('cannot screen empty model toolpaths')
+        margin = max(p[4] for p in paths) / 2 + criteria.raster_tolerance_mm + 0.5
+        left = min(min(p[0], p[2]) for p in paths) - margin
+        right = max(max(p[0], p[2]) for p in paths) + margin
+        bottom = min(min(p[1], p[3]) for p in paths) - margin
+        top = max(max(p[1], p[3]) for p in paths) + margin
+        return cls(left, top, (math.ceil((right-left)/criteria.resolution_mm)+1,
+                               math.ceil((top-bottom)/criteria.resolution_mm)+1))
+
+
+def pixel(point, criteria=CRITERIA, raster=Raster()):
+    return (round((point[0]-raster.left_mm)/criteria.resolution_mm),
+            round((raster.top_mm-point[1])/criteria.resolution_mm))
 
 
 def model_paths(layer):
     return [p for p in layer['paths'] if p[5] not in {'Skirt/Brim','Skirt','Brim'}]
 
 
-def deposition_mask(paths, criteria=CRITERIA):
-    mask=Image.new('L',SIZE)
+def deposition_mask(paths, criteria=CRITERIA, raster=Raster()):
+    mask=Image.new('L',raster.size)
     draw=ImageDraw.Draw(mask)
     for x,y,nx,ny,width,role in paths:
-        draw.line([pixel((x,y),criteria),pixel((nx,ny),criteria)],fill=255,
+        draw.line([pixel((x,y),criteria,raster),pixel((nx,ny),criteria,raster)],fill=255,
                   width=max(1,round(width/criteria.resolution_mm)))
     return mask
 
@@ -60,7 +81,7 @@ def path_chains(paths):
     return chains
 
 
-def unsupported_runs(paths, previous, criteria=CRITERIA):
+def unsupported_runs(paths, previous, criteria=CRITERIA, raster=Raster()):
     tolerance=round(criteria.raster_tolerance_mm/criteria.resolution_mm)
     support=previous.filter(ImageFilter.MaxFilter(2*tolerance+1)) if tolerance else previous
     pixels=support.load()
@@ -74,8 +95,8 @@ def unsupported_runs(paths, previous, criteria=CRITERIA):
             for i in range(count):
                 t=(i+0.5)/count
                 position=(x+(nx-x)*t,y+(ny-y)*t)
-                ix,iy=pixel(position,criteria)
-                supported=0<=ix<SIZE[0] and 0<=iy<SIZE[1] and bool(pixels[ix,iy])
+                ix,iy=pixel(position,criteria,raster)
+                supported=0<=ix<previous.width and 0<=iy<previous.height and bool(pixels[ix,iy])
                 samples.append((supported,length/count,position,role))
         if not samples:
             continue
@@ -117,6 +138,8 @@ def unsupported_runs(paths, previous, criteria=CRITERIA):
 def assess_toolpaths(layers, output, criteria=CRITERIA):
     output=Path(output)
     output.mkdir(parents=True,exist_ok=True)
+    raster=Raster.fit(layers,criteria)
+    size=raster.size
     previous=None
     records=[]
     hotspots=[]
@@ -124,8 +147,12 @@ def assess_toolpaths(layers, output, criteria=CRITERIA):
         paths=model_paths(layer)
         if not paths:
             raise ValueError('printability screening requires model extrusion on every layer')
-        current=deposition_mask(paths,criteria)
-        runs,total,unsupported=([],sum(math.dist(p[:2],p[2:4]) for p in paths),0.0) if previous is None else unsupported_runs(paths,previous,criteria)
+        if previous is not None and layer['z']-layers[index-1]['z']>criteria.nominal_layer_mm+1e-5:
+            # A skipped layer contains no plastic; do not bridge a vertical gap
+            # by accidentally comparing against an older, lower layer.
+            previous=Image.new('L',size)
+        current=deposition_mask(paths,criteria,raster)
+        runs,total,unsupported=([],sum(math.dist(p[:2],p[2:4]) for p in paths),0.0) if previous is None else unsupported_runs(paths,previous,criteria,raster)
         failures=[r for r in runs if not r['passes']]
         record=dict(index=index,z_mm=layer['z'],model_path_length_mm=round(total,4),
                     centerline_without_previous_plastic_mm=round(unsupported,4),
@@ -133,23 +160,24 @@ def assess_toolpaths(layers, output, criteria=CRITERIA):
                     runs=runs,passes=not failures)
         records.append(record)
         if failures:
-            tile=Image.new('RGB',SIZE,'#17212b')
+            tile=Image.new('RGB',size,'#17212b')
             tile.paste('#77818a',mask=current)
             draw=ImageDraw.Draw(tile)
             for run in failures:
-                draw.line([pixel(run['start_xy_mm']),pixel(run['end_xy_mm'])],fill='#ff6655',width=3)
-            banner=Image.new('RGB',(SIZE[0],SIZE[1]+25),'#17212b')
+                draw.line([pixel(run['start_xy_mm'],criteria,raster),pixel(run['end_xy_mm'],criteria,raster)],fill='#ff6655',width=3)
+            banner=Image.new('RGB',(size[0],size[1]+25),'#17212b')
             banner.paste(tile,(0,25))
             ImageDraw.Draw(banner).text((10,5),f"Layer {index+1} Z {layer['z']:.2f} mm | red: support review",fill='white')
             hotspots.append((max(r['length_mm'] for r in failures),index,banner))
+            hotspots=sorted(hotspots,key=lambda x:(-x[0],x[1]))[:12]
         previous=current
     chosen=sorted(sorted(hotspots,key=lambda x:(-x[0],x[1]))[:12],key=lambda x:x[1])
     if chosen:
-        sheet=Image.new('RGB',(SIZE[0],(SIZE[1]+25)*len(chosen)),'#17212b')
+        sheet=Image.new('RGB',(size[0],(size[1]+25)*len(chosen)),'#17212b')
         for index,(_,_,tile) in enumerate(chosen):
-            sheet.paste(tile,(0,index*(SIZE[1]+25)))
+            sheet.paste(tile,(0,index*(size[1]+25)))
         sheet.save(output/'support-hotspots.png')
-    result=dict(schema_version=1,criteria=asdict(criteria),
+    result=dict(schema_version=1,criteria=asdict(criteria),raster=asdict(raster),
                 method='ordered G-code centerline samples against previous deposited bead footprints; one-cell raster tolerance',
                 limitation='digital screen only; cooling, adhesion, strength and surface quality require a physical trial',
                 passes=all(r['passes'] for r in records),

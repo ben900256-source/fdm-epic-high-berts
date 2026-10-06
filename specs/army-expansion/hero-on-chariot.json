@@ -35,8 +35,8 @@
     },
     {
       "instance_id": "vehicle",
-      "part": "aurelian.expansion-chariot@2",
-      "definition_sha256": "377e25ef62c785daccba7e5b80d9e702208344a7577690dc5cd4b86058e6669e",
+      "part": "aurelian.expansion-chariot@5",
+      "definition_sha256": "9678da8faa9879a71f56d778eb634005cd09f40149e998d9d593d619c08fa50c",
       "mount": [
         [
           1.0,
@@ -97,8 +97,39 @@
     },
     {
       "instance_id": "team-1/horse",
-      "part": "aurelian.dragon-prince-horse@7",
-      "definition_sha256": "297b67bc3c13fd9959c7f7c7955bf4956cd0a4e4d9c0b50e80819b0657b1671e",
+      "part": "aurelian.expansion-chariot-horse@3",
+      "definition_sha256": "7c73e8332dc78a9de544277387d042de301f120145128c804ae81e04584057e6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.25
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -4.4
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "team-1/belly-blends",
+      "part": "aurelian.expansion-chariot-horse-belly-blends@2",
+      "definition_sha256": "ddfacbda5fb24909104a7c4d7c64764a3392a09c1f726974522f02b65a77ceaa",
       "mount": [
         [
           1.0,
@@ -159,8 +190,39 @@
     },
     {
       "instance_id": "team-2/horse",
-      "part": "aurelian.dragon-prince-horse@7",
-      "definition_sha256": "297b67bc3c13fd9959c7f7c7955bf4956cd0a4e4d9c0b50e80819b0657b1671e",
+      "part": "aurelian.expansion-chariot-horse@3",
+      "definition_sha256": "7c73e8332dc78a9de544277387d042de301f120145128c804ae81e04584057e6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.25
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -4.4
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "team-2/belly-blends",
+      "part": "aurelian.expansion-chariot-horse-belly-blends@2",
+      "definition_sha256": "ddfacbda5fb24909104a7c4d7c64764a3392a09c1f726974522f02b65a77ceaa",
       "mount": [
         [
           1.0,
@@ -345,8 +407,8 @@
     },
     {
       "instance_id": "driver/helmet",
-      "part": "aurelian.readable-helmet-trial@5",
-      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "part": "aurelian.expansion-chariot-helmet@1",
+      "definition_sha256": "4d7967d255ea320b44f425a247780233052318031c11190308a5071864ef90f2",
       "mount": [
         [
           1.0,
@@ -407,8 +469,8 @@
     },
     {
       "instance_id": "driver/arms",
-      "part": "aurelian.expansion-driver-arms@1",
-      "definition_sha256": "275914c2ceb88e39cc9d6c671e5d6bfbc1039b6268487d56139bb10581d96744",
+      "part": "aurelian.expansion-chariot-driver-arms@1",
+      "definition_sha256": "9668823ac1235262be5c23b5f1ba7dc8cef26f20e6d81ef461fb1589ab165665",
       "mount": [
         [
           1.0,
@@ -438,8 +500,8 @@
     },
     {
       "instance_id": "driver/coat",
-      "part": "aurelian.expansion-reaver-coat@1",
-      "definition_sha256": "ba95f83c6f0d5532ea29341ab88c72b61def6a279cffc5c29544528cb2615799",
+      "part": "aurelian.expansion-chariot-driver-coat@3",
+      "definition_sha256": "7e5762e5e0c16c02a5dd81766801998ec8499b629791a8b59f10bb5ae46c92eb",
       "mount": [
         [
           1.0,
@@ -624,8 +686,8 @@
     },
     {
       "instance_id": "passenger/helmet",
-      "part": "aurelian.readable-helmet-trial@5",
-      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "part": "aurelian.expansion-chariot-helmet@1",
+      "definition_sha256": "4d7967d255ea320b44f425a247780233052318031c11190308a5071864ef90f2",
       "mount": [
         [
           1.0,
@@ -686,8 +748,8 @@
     },
     {
       "instance_id": "passenger/arms",
-      "part": "aurelian.expansion-hero-arms@1",
-      "definition_sha256": "d6efd17ce75fffd624616689d6a0ba0672d56ce2d6a5702b73921a00d85f15f5",
+      "part": "aurelian.expansion-chariot-hero-arms@1",
+      "definition_sha256": "11ad35fb747c34abe8dff2526ddec5cf37436cce701ed35f293c3d12d10fc560",
       "mount": [
         [
           1.0,
@@ -748,8 +810,8 @@
     },
     {
       "instance_id": "passenger/sword",
-      "part": "aurelian.expansion-command-sword@1",
-      "definition_sha256": "a2075ba2a1b826eb1a6f16350b9caa7c6ef29f7c6ed2fd8fe5f30bfc15caf3ac",
+      "part": "aurelian.expansion-chariot-command-sword@1",
+      "definition_sha256": "adbbfe7e83a940962b2326399d3e96941f36da5f4bb2137709e203bae6493868",
       "mount": [
         [
           -0.8012516067574695,

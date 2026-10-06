@@ -67,7 +67,7 @@ def test_chariot_keeps_two_horses_and_two_crew_in_each_configuration():
         items=assembly(name)['placements']
         assert len([p for p in items if p['instance_id'].endswith('/horse')])==2
         assert {p['instance_id'] for p in items if p['instance_id'].endswith('/head')}=={'driver/head','passenger/head'}
-        assert len([p for p in items if p['part']=='aurelian.expansion-chariot@2'])==1
+        assert len([p for p in items if p['part']=='aurelian.expansion-chariot@5'])==1
 @pytest.mark.integration
 def test_saved_reviews_preserve_provenance_and_remain_visual_only():
     path=os.environ.get('ARMY_EXPANSION_REVIEW')
@@ -128,13 +128,17 @@ def test_thick_chariot_reins_meet_both_hands_and_rise_steeply_from_the_horses():
                 point(arms['mount'],grips[grip]),abs=1e-7)
 
 
-def test_regular_chariot_spear_reuses_the_locked_shape_and_meets_hand_and_deck():
+def test_regular_chariot_spear_preserves_locked_shaft_and_meets_hand_and_deck():
     from math import acos, degrees, dist
     defs=Definitions()
     slots={p['instance_id']:p for p in assembly('chariot')['placements']}
     assert 'passenger/sword' not in slots
     spear=slots['passenger/spear'];arms=slots['passenger/arms']
-    assert spear['part']=='aurelian.uniform-spear-140-trial@3'
+    assert spear['part']=='aurelian.expansion-chariot-spear@2'
+    current={a['role']:a for a in defs[spear['part']].to_dict()['parameters']['atoms']}
+    old={a['role']:a for a in defs['aurelian.uniform-spear-140-trial@3'].to_dict()['parameters']['atoms']}
+    assert current['spear']==old['spear']
+    assert current['spear_leaf_tip']['radius2']>old['spear_leaf_tip']['radius2']
     landmarks=defs[spear['part']].to_dict()['parameters']['landmarks']
     bottom=point(spear['mount'],landmarks['shaft_bottom'])
     top=point(spear['mount'],landmarks['shaft_top'])
@@ -197,3 +201,62 @@ def test_chariot_shield_braces_anchor_below_the_deck_and_preserve_shared_faces()
         assert root[2]-foot['dimensions'][2]/2<4.05<root[2]+foot['dimensions'][2]/2
         assert root[0]<-2 and 1.1<root[1]<6.5
     assert not any(p['instance_id']=='passenger/shield-brace' for p in assembly('mage-on-chariot')['placements'])
+
+
+def test_chariot_print_fixes_are_local_and_keep_equipment_mounts():
+    defs=Definitions()
+    for name in ('chariot','general-on-chariot','hero-on-chariot','mage-on-chariot'):
+        slots={p['instance_id']:p for p in assembly(name)['placements']}
+        assert slots['driver/coat']['part']=='aurelian.expansion-chariot-driver-coat@3'
+        assert slots['driver/head']['part']=='aurelian.readable-head-trial@5'
+        assert slots['driver/helmet']['part']=='aurelian.expansion-chariot-helmet@1'
+        assert {p['part'] for n,p in slots.items() if n.endswith('/horse')}=={'aurelian.expansion-chariot-horse@3'}
+    for a in index()['assemblies']:
+        if 'chariot' in a['id']:continue
+        assert not any('expansion-chariot-' in p['part'] for p in json.loads((ROOT/a['path']).read_text())['placements'])
+    mage={p['instance_id']:p for p in assembly('mage-on-chariot')['placements']}
+    robe=defs[mage['passenger/regalia']['part']].to_dict()['parameters']
+    assert point(mage['passenger/regalia']['mount'],[0,.05,robe['hem_bottom_z_mm']])[2]<4.05
+    current=defs['aurelian.expansion-chariot-horse@3'].to_dict()['parameters']
+    old=defs['aurelian.dragon-prince-horse@7'].to_dict()['parameters']
+    for side in (-1,1):
+        tag=f'{side}_hind'
+        assert current['leg_paths'][tag][-1]==old['leg_paths'][tag][-1]
+        assert current['leg_paths'][tag][0]==old['leg_paths'][tag][0]
+        a,b=current['leg_paths'][tag][1:3]
+        from math import dist
+        assert dist(a[0][:2],b[0][:2])+abs(a[1]-b[1])<abs(a[0][2]-b[0][2])
+
+
+def test_current_chariot_ramp_covers_all_deck_edges_and_wheels_start_in_base():
+    from math import sqrt
+    defs=Definitions();p=defs['aurelian.expansion-chariot@5'].to_dict()['parameters']
+    atoms={a['role']:a for a in p['atoms']};h=atoms['tapered_underbody'];deck=atoms['deck']
+    z=deck['location'][2]-deck['dimensions'][2]/2
+    bottom=h['frame_mm'][2][3]-h['depth']/2
+    t=(z-bottom)/h['depth'];half=(h['radius1']+(h['radius2']-h['radius1'])*t)/sqrt(2)
+    clip=atoms['underbody_width_clip']
+    for axis in (0,1):
+        low=max(h['frame_mm'][axis][3]-half,clip['location'][axis]-clip['dimensions'][axis]/2)
+        high=min(h['frame_mm'][axis][3]+half,clip['location'][axis]+clip['dimensions'][axis]/2)
+        assert low<=deck['location'][axis]-deck['dimensions'][axis]/2
+        assert high>=deck['location'][axis]+deck['dimensions'][axis]/2
+    for side in (-1,1):
+        w=atoms[f'wheel_{side}']
+        assert w['frame_mm'][2][3]-w['radius']<=-.19
+    p=defs['aurelian.expansion-chariot-horse-belly-blends@2'].to_dict()['parameters']
+    foot=next(a for a in p['atoms'] if a['role']=='grounded_tail_node_0')
+    assert foot['location'][2]-foot['dimensions'][2]/2<0
+
+
+def test_chariot_helmet_roofs_keep_outer_crowns_and_eye_centers_clear():
+    defs=Definitions()
+    for ref,source in [('aurelian.expansion-chariot-helmet@1','aurelian.readable-helmet-trial@5'),
+                       ('aurelian.expansion-chariot-general-helmet@2','aurelian.swordmaster-sergeant-helmet-accepted-r2@5')]:
+        p=defs[ref].to_dict()['parameters'];old=defs[source].to_dict()['parameters']
+        a={a['role']:a for a in p['atoms']};b={a['role']:a for a in old['atoms']}
+        for role in ('helmet_crown','helmet_tapered_tip','helmet_face_opening'):
+            assert a[role]==b[role]
+        roof=p['face_window_roof']
+        assert roof['apex_z_mm']-roof['slope']*.375>.32+.42/2
+        assert roof['flat_cap_width_mm']*1.3<.3

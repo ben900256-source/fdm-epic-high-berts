@@ -1523,8 +1523,8 @@
     },
     {
       "instance_id": "chariot/vehicle",
-      "part": "aurelian.expansion-chariot@2",
-      "definition_sha256": "377e25ef62c785daccba7e5b80d9e702208344a7577690dc5cd4b86058e6669e",
+      "part": "aurelian.expansion-chariot@5",
+      "definition_sha256": "9678da8faa9879a71f56d778eb634005cd09f40149e998d9d593d619c08fa50c",
       "mount": [
         [
           1.0,
@@ -1585,8 +1585,39 @@
     },
     {
       "instance_id": "chariot/team-1/horse",
-      "part": "aurelian.dragon-prince-horse@7",
-      "definition_sha256": "297b67bc3c13fd9959c7f7c7955bf4956cd0a4e4d9c0b50e80819b0657b1671e",
+      "part": "aurelian.expansion-chariot-horse@3",
+      "definition_sha256": "7c73e8332dc78a9de544277387d042de301f120145128c804ae81e04584057e6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          29.75
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -4.4
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/team-1/belly-blends",
+      "part": "aurelian.expansion-chariot-horse-belly-blends@2",
+      "definition_sha256": "ddfacbda5fb24909104a7c4d7c64764a3392a09c1f726974522f02b65a77ceaa",
       "mount": [
         [
           1.0,
@@ -1647,8 +1678,39 @@
     },
     {
       "instance_id": "chariot/team-2/horse",
-      "part": "aurelian.dragon-prince-horse@7",
-      "definition_sha256": "297b67bc3c13fd9959c7f7c7955bf4956cd0a4e4d9c0b50e80819b0657b1671e",
+      "part": "aurelian.expansion-chariot-horse@3",
+      "definition_sha256": "7c73e8332dc78a9de544277387d042de301f120145128c804ae81e04584057e6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          34.25
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -4.4
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/team-2/belly-blends",
+      "part": "aurelian.expansion-chariot-horse-belly-blends@2",
+      "definition_sha256": "ddfacbda5fb24909104a7c4d7c64764a3392a09c1f726974522f02b65a77ceaa",
       "mount": [
         [
           1.0,
@@ -1833,8 +1895,8 @@
     },
     {
       "instance_id": "chariot/driver/helmet",
-      "part": "aurelian.readable-helmet-trial@5",
-      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "part": "aurelian.expansion-chariot-helmet@1",
+      "definition_sha256": "4d7967d255ea320b44f425a247780233052318031c11190308a5071864ef90f2",
       "mount": [
         [
           1.0,
@@ -1895,8 +1957,8 @@
     },
     {
       "instance_id": "chariot/driver/arms",
-      "part": "aurelian.expansion-driver-arms@1",
-      "definition_sha256": "275914c2ceb88e39cc9d6c671e5d6bfbc1039b6268487d56139bb10581d96744",
+      "part": "aurelian.expansion-chariot-driver-arms@1",
+      "definition_sha256": "9668823ac1235262be5c23b5f1ba7dc8cef26f20e6d81ef461fb1589ab165665",
       "mount": [
         [
           1.0,
@@ -1926,8 +1988,8 @@
     },
     {
       "instance_id": "chariot/driver/coat",
-      "part": "aurelian.expansion-reaver-coat@1",
-      "definition_sha256": "ba95f83c6f0d5532ea29341ab88c72b61def6a279cffc5c29544528cb2615799",
+      "part": "aurelian.expansion-chariot-driver-coat@3",
+      "definition_sha256": "7e5762e5e0c16c02a5dd81766801998ec8499b629791a8b59f10bb5ae46c92eb",
       "mount": [
         [
           1.0,
@@ -2112,8 +2174,8 @@
     },
     {
       "instance_id": "chariot/passenger/helmet",
-      "part": "aurelian.readable-helmet-trial@5",
-      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "part": "aurelian.expansion-chariot-helmet@1",
+      "definition_sha256": "4d7967d255ea320b44f425a247780233052318031c11190308a5071864ef90f2",
       "mount": [
         [
           1.0,
@@ -2174,8 +2236,8 @@
     },
     {
       "instance_id": "chariot/passenger/arms",
-      "part": "aurelian.expansion-chariot-spear-arms@1",
-      "definition_sha256": "6180a51c60342e4da6bd748936e5e08dde8df641c1a1749658a18cbff3ed4a50",
+      "part": "aurelian.expansion-chariot-spear-arms@2",
+      "definition_sha256": "d2776a761229841f7e9f3035fcac54c24753507a1c13fc818575896de203e675",
       "mount": [
         [
           1.0,
@@ -2360,8 +2422,8 @@
     },
     {
       "instance_id": "chariot/passenger/spear",
-      "part": "aurelian.uniform-spear-140-trial@3",
-      "definition_sha256": "25363d5f0c46e495e2776bf7f76658cf56521436cdc738098e4e91caa2e96401",
+      "part": "aurelian.expansion-chariot-spear@2",
+      "definition_sha256": "34c8ba0d383577ec482484832ae3329c0b9d57788cd5efa5ace377f70092c02d",
       "mount": [
         [
           0.9396926207859084,
