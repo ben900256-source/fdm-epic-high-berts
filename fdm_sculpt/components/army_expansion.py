@@ -9,7 +9,7 @@ import math
 from .core import ComponentDefinition
 from .elves_v2 import multiply, rotation, translation
 from .parts import validate_part
-from .refined_horse import _frame, _chain
+from .refined_horse import _frame, _chain, _smooth_stations
 from .spearmen import cube, sphere, link
 
 
@@ -351,7 +351,9 @@ def _first_pass_parts(seed=SEED):
 
 # First visual review refinements. Revision 1 definitions remain immutable.
 CURRENT_REVISIONS = {PREFIX+'dragon@1': PREFIX+'dragon@3',
-                     PREFIX+'crew-arms@1': PREFIX+'crew-arms@2'}
+                     PREFIX+'crew-arms@1': PREFIX+'crew-arms@2',
+                     PREFIX+'chariot-reins@1': PREFIX+'chariot-reins@2',
+                     PREFIX+'chariot@1': PREFIX+'chariot@2'}
 
 
 def triangle_membrane(role, apex, edge_a, edge_b, thickness=.76):
@@ -422,6 +424,148 @@ def chariot_reins(seed):
     return definition('chariot-reins',atoms,seed,notes='Driver-to-bit reins on the two-horse team; bridges remain a print-review concern.')
 
 
+def chariot_reins_v2(seed):
+    """Thick, rounded reins draped onto the horse backs, necks and bridles.
+
+    Only the steep run from each rump to the driver's hand stands free.
+    Source coordinates share the chariot's unchanged 1.2 mm base offset.
+    """
+    route = [([.88, .70, 8.15], .56),
+             ([1.90, -1.60, 5.50], .58),
+             ([2.45, -2.55, 5.82], .58),
+             ([2.65, -4.10, 5.80], .58),
+             ([2.80, -5.55, 5.70], .58),
+             ([2.85, -6.10, 6.10], .58),
+             ([2.83, -6.70, 7.20], .58),
+             ([2.77, -7.50, 7.75], .56),
+             ([2.65, -8.85, 7.12], .54)]
+    atoms, operations, roots, routes = [], [], [], {}
+    for side in (-1, 1):
+        stations = [([side*p[0], p[1], p[2]], radius) for p, radius in route]
+        # Keep the free hand-to-rump run straight and steep. Smooth only the
+        # attached portion so a spline cannot sag into a horizontal bridge.
+        sampled = stations[:1] + _smooth_stations(stations[1:], subdivisions=2)
+        strand = _chain(f'rein_{side}', sampled)
+        root = strand[0]['role']
+        for atom in strand:
+            atom['export'] = atom['role'] == root
+        atoms.extend(strand)
+        roots.append(root)
+        operations.extend(dict(target=root, operand=atom['role'],
+                               operation='UNION', solver='EXACT') for atom in strand[1:])
+        routes[str(side)] = stations
+    data = chariot_reins(seed).to_dict()
+    data.update(version=2, name='Thick draped chariot reins with rounded transitions', output_roles=roots)
+    data['parameters'].update(
+        atoms=atoms, operations=operations, route_stations=routes,
+        nominal_diameter_mm=1.16, minimum_terminal_diameter_mm=1.08,
+        landmarks=dict(mount=[0, 0, 0], right_grip=route[0][0],
+                       left_grip=[-route[0][0][0], *route[0][0][1:]],
+                       right_bit=route[-1][0],
+                       left_bit=[-route[-1][0][0], *route[-1][0][1:]]),
+        design_notes='Nominal 1.16 mm source / 1.508 mm at 130%; rounded tangent joins. '
+                     'Steep hand-to-rump runs; remaining length rests into the horse backs, necks and bridles. '
+                     'Visual prototype: sliced support and physical handling checks remain outstanding.')
+    return validate_part(ComponentDefinition.from_dict(data))
+
+
+def supported_chariot(seed):
+    """Grounded tapered underbody and filled wheels with raised spoke relief."""
+    data = chariot(seed).to_dict()
+    data.update(version=2, name='Chariot with a sloped supported floor and solid detailed wheels')
+    params = data['parameters']
+    atoms = params['atoms']
+    roles = {atom['role']: atom for atom in atoms}
+    # Native four-sided cone rotated 45 degrees has square, axis-aligned faces.
+    # Its 3 mm lower footprint is buried 0.1 mm in the shared base. The 5.5 mm
+    # upper footprint intersects the existing deck without moving its top.
+    underbody = dict(role='tapered_underbody', primitive='cone', export=False,
+                     location=[0, 0, 0], radius1=3.0/math.sqrt(2),
+                     radius2=5.5/math.sqrt(2), depth=2.30, vertices=4, bevel=0,
+                     frame_mm=multiply(translation([0, 3.8, 1.05]), rotation([0, 0, 45])))
+    atoms.append(underbody)
+    params['operations'].append(dict(target='deck', operand='tapered_underbody',
+                                     operation='UNION', solver='EXACT'))
+    for side in (-1, 1):
+        wheel = roles[f'wheel_{side}']
+        wheel['depth'] = 1.02
+        # The original hollowed rim now surrounds an overlapping solid web.
+        # Keep 0.76 mm of uninterrupted stock, plus shallow outer relief.
+        web = cylinder(f'wheel_web_{side}', [0, 0, 0], 1.32, .76, wheel['frame_mm'])
+        web['bevel'] = .03
+        atoms.append(web)
+        params['operations'].append(dict(target=wheel['role'], operand=web['role'],
+                                         operation='UNION', solver='EXACT'))
+        for i in range(8):
+            spoke = roles[f'spoke_{side}_{i}']
+            for end in ('start', 'end'):
+                spoke[end][0] = side*3.75
+            spoke['export'] = False
+            params['operations'].append(dict(target=wheel['role'], operand=spoke['role'],
+                                             operation='UNION', solver='EXACT'))
+        hub = roles[f'hub_{side}']
+        hub['export'] = False
+        params['operations'].append(dict(target=wheel['role'], operand=hub['role'],
+                                         operation='UNION', solver='EXACT'))
+    params.update(
+        underbody=dict(bottom_z_mm=-.10, top_z_mm=2.20,
+                       lower_width_mm=3.0, upper_width_mm=5.5,
+                       face_angle_from_vertical_degrees=math.degrees(math.atan(1.25/2.30))),
+        wheel_web_thickness_mm=.76,
+        design_notes='Continuous tapered stock joins the base to the deck underside. '
+                     'Solid wheel webs close the spoke openings; hubs and eight spokes remain in raised relief. '
+                     'Deck height, crew, spear, reins and horse mounts are preserved. Visual-only pending sliced review.')
+    data['output_roles'] = [atom['role'] for atom in atoms if atom.get('export')]
+    return validate_part(ComponentDefinition.from_dict(data))
+
+
+def chariot_shield_brace(seed):
+    """A rear brace grows from the cart side into the shield's lower point."""
+    root = [-.78, .34, -4.65]
+    top = [0, .06, -1.55]
+    brace = dict(role='shield_brace', primitive='cone', export=True,
+                 location=[0, 0, 0], radius1=.76, radius2=.88,
+                 depth=math.dist(root, top), vertices=4, bevel=0,
+                 frame_mm=multiply(_frame(root, top), rotation([0, 0, 45])))
+    foot = ellipsoid('shield_brace_foot', root, [1.15, 1.15, 1.15])
+    data = definition('chariot-shield-brace', [brace, foot], seed,
+                      landmarks=dict(cart_root=root, shield_join=top),
+                      notes='Permanent sloping brace behind the lower shield. Rounded root overlaps the cart side and deck. '
+                            'Uses the same shield frame for regular, Hero and General chariots; face and insignia are unchanged.',
+                      metadata=dict(minimum_square_section_mm=math.sqrt(2)*.76)).to_dict()
+    data['parameters']['atoms'][1]['export'] = False
+    data['parameters']['operations'] = [dict(target='shield_brace', operand='shield_brace_foot',
+                                             operation='UNION', solver='EXACT')]
+    data['output_roles'] = ['shield_brace']
+    return validate_part(ComponentDefinition.from_dict(data))
+
+
+def chariot_spear_arms(seed):
+    """Preserve the passenger pose, with a fuller right hand around the spear."""
+    data = character_arms('hero', seed).to_dict()
+    data.update(component_id=PREFIX+'chariot-spear-arms', version=1,
+                name='Chariot passenger arms with a full closed spear grip',
+                family='army-expansion-chariot-spear-arms')
+    params = data['parameters']
+    grip = params['landmarks']['right_grip']
+    for atom in params['atoms']:
+        role = atom['role']
+        if role == 'palm_1':
+            atom.update(dimensions=[1.85, 1.82, 1.50], bevel=.22)
+        elif role == 'thumb_1':
+            atom.update(location=[grip[0]-.62, grip[1]-.62, grip[2]+.25],
+                        dimensions=[.60, .60, .70])
+        elif role.startswith('finger_1_'):
+            finger = int(role.rsplit('_', 1)[1])
+            atom.update(location=[grip[0]+(finger-1)*.42, grip[1]-.75, grip[2]-.06],
+                        dimensions=[.35, .34, .95], bevel=.10)
+    params.update(spear_reference='aurelian.uniform-spear-140-trial@3',
+                  shaft_diameter_mm=1.4,
+                  design_notes='Existing shoulder, elbow, grip landmark and shield arm preserved. '
+                               'Fuller right palm and fingers surround the established 1.4 mm shaft.')
+    return validate_part(ComponentDefinition.from_dict(data))
+
+
 def loader_bolt(seed):
     a=[-1.65,-1.12,-.96];b=[2.15,-1.34,-1.50]
     return definition('loader-bolt',[link('spare_bolt',a,b,.32),
@@ -442,4 +586,4 @@ def dragon_v3(seed):
 
 
 def all_parts(seed=SEED):
-    return _first_pass_parts(seed)+[dragon_v2(seed),dragon_v3(seed),crew_arms_v2(seed),chariot_reins(seed),loader_bolt(seed)]
+    return _first_pass_parts(seed)+[dragon_v2(seed),dragon_v3(seed),crew_arms_v2(seed),chariot_reins(seed),chariot_reins_v2(seed),supported_chariot(seed),chariot_shield_brace(seed),chariot_spear_arms(seed),loader_bolt(seed)]

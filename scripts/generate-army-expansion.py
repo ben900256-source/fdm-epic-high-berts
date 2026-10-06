@@ -112,8 +112,28 @@ def generate(seed=SEED):
         for prefix,who,y in [('driver','driver',2.3),('passenger',kind or 'hero',5.0)]:
             at=(0,y,9.2);legs(items,prefix,at);add_upper(items,who,prefix,at)
             if who not in ('mage','driver'):put(items,prefix+'/mail-skirt','aurelian.readable-mail-trial@3',at)
+        shield=next((p for p in items if p['instance_id']=='passenger/shield'),None)
+        if shield:
+            put(items,'passenger/shield-brace','expansion-chariot-shield-brace',matrix=shield['mount'])
+        if kind is None:
+            # Regular crew use a deck-seated spear; the character variants keep
+            # their own weapons. Reuse the locked spear mesh without scaling.
+            items[:]=[p for p in items if p['instance_id']!='passenger/sword']
+            arms=next(p for p in items if p['instance_id']=='passenger/arms')
+            ref=PREFIX+'chariot-spear-arms@1'
+            arms.update(part=ref,definition_sha256=defs[ref].sha256)
+            grip=point(arms['mount'],defs[ref].to_dict()['parameters']['landmarks']['right_grip'])
+            spear_ref='aurelian.uniform-spear-140-trial@3'
+            bottom=defs[spear_ref].to_dict()['parameters']['landmarks']['shaft_bottom']
+            lean=rotation([18,0,20])
+            axis=[lean[i][2] for i in range(3)]
+            # The axis ends 0.2 mm inside the deck's flat top at source scale.
+            below_hand=(grip[2]-3.85)/axis[2]
+            seat=[grip[i]-axis[i]*below_hand for i in range(3)]
+            mount=multiply(translation(seat),multiply(lean,translation([-v for v in bottom])))
+            put(items,'passenger/spear',spear_ref,matrix=mount)
         return items
-    save('chariot','Chariot - two-horse team and crew',chariot(),'chariots')
+    save('chariot','Chariot - two-horse team and spear crew',chariot(),'chariots')
     for kind in ('general','hero','mage'):
         save(kind+'-on-chariot',kind.capitalize()+' on chariot',chariot(kind),kind+'-on-chariot')
     artillery=[];put(artillery,'base','expansion-artillery-base');put(artillery,'engine','expansion-bolt-thrower',(0,-1.1,1.2))

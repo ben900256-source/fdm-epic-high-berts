@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-05",
+  "status": "visual-only; unprinted",
+  "digitally_validated": false,
+  "seed": 1001,
+  "export_scale": 1.3,
+  "assembly": "specs/army-expansion/chariot.json",
+  "spear_reference": "aurelian.uniform-spear-140-trial@3",
+  "spear_definition_sha256": "25363d5f0c46e495e2776bf7f76658cf56521436cdc738098e4e91caa2e96401",
+  "arms_reference": "aurelian.expansion-chariot-spear-arms@1",
+  "arms_definition_sha256": "6180a51c60342e4da6bd748936e5e08dde8df641c1a1749658a18cbff3ed4a50",
+  "shaft_source_diameter_mm": 1.4,
+  "shaft_printed_diameter_mm": 1.82,
+  "lean_from_vertical_degrees": 18,
+  "butt_axis_position_mm": [
+    1.249911049,
+    5.611356972,
+    3.85
+  ],
+  "butt_axis_deck_inset_mm": 0.2,
+  "reviews": {
+    "aurelian-army-expansion": {
+      "path": "out/chariot-spear-20261005/assemblies/elf-army-expansion",
+      "viewer_revision": "cdf70bb9e57994fde528b02268c591432950a7549d8f8ae5289e756c6f97e7c2",
+      "saved_provenance_passes": true,
+      "views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-chariot": {
+      "path": "out/chariot-spear-20261005/assemblies/chariot",
+      "viewer_revision": "56de81ff55444e52a24fdb12be0cc1e60aa5e2a98ccb59b64e43441588ea5696",
+      "saved_provenance_passes": true,
+      "views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    }
+  },
+  "verification": "14 expansion tests pass including golden hashes, grip alignment, deck seat, unchanged shaft length and saved provenance.",
+  "cache_policy": "Only the new passenger arms were compiled. The locked spear and other components reuse immutable caches.",
+  "scope": "Regular chariot and overview; character chariot weapons stay as previously reviewed.",
+  "limitations": [
+    "Visual-only assembly; no new manufacturing build, slicing or physical trial."
+  ]
+}

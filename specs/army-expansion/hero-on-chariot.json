@@ -35,8 +35,8 @@
     },
     {
       "instance_id": "vehicle",
-      "part": "aurelian.expansion-chariot@1",
-      "definition_sha256": "4ec066cabc65bbe7d261ca91648b168f44d6b16ccfba2644d358266c485d27e4",
+      "part": "aurelian.expansion-chariot@2",
+      "definition_sha256": "377e25ef62c785daccba7e5b80d9e702208344a7577690dc5cd4b86058e6669e",
       "mount": [
         [
           1.0,
@@ -66,8 +66,8 @@
     },
     {
       "instance_id": "reins",
-      "part": "aurelian.expansion-chariot-reins@1",
-      "definition_sha256": "be0669969aea7d9a6490df2d035bbbb48055c4ac960aaaa384f3dcc59631c5f1",
+      "part": "aurelian.expansion-chariot-reins@2",
+      "definition_sha256": "86ce96287ff05588b17ae7ef24a6dcfe1750d7e5a3083a170b8d2f1bc9c81fe9",
       "mount": [
         [
           1.0,
@@ -861,6 +861,37 @@
           0.0,
           1.0,
           9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "passenger/shield-brace",
+      "part": "aurelian.expansion-chariot-shield-brace@1",
+      "definition_sha256": "00d3279a8e00347ce8f126c8411ad2b9d8b71520ef36222911ce8b5197061ed9",
+      "mount": [
+        [
+          0.9902680687415704,
+          0.13917310096006544,
+          0.0,
+          -1.7
+        ],
+        [
+          -0.13917310096006544,
+          0.9902680687415704,
+          0.0,
+          3.2
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.85
         ],
         [
           0.0,

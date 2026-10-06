@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-05",
+  "status": "visual-only; unprinted",
+  "digitally_validated": false,
+  "seed": 1001,
+  "export_scale": 1.3,
+  "component": "aurelian.expansion-chariot-shield-brace@1",
+  "definition_sha256": "00d3279a8e00347ce8f126c8411ad2b9d8b71520ef36222911ce8b5197061ed9",
+  "changes": [
+    "Permanent sloped brace connects the lower shield to the cart side and deck.",
+    "Shared shield outline, face direction and raised fierce seahorse remain unchanged.",
+    "Applied to regular, Hero and General chariots; Mage has no shield."
+  ],
+  "surface_checks": [
+    {
+      "assembly": "aurelian-expansion-chariot",
+      "revision": "63d1f792083219e9abf4d9fdc7586ad9dec337ae973645154b9eb6f980a13907",
+      "samples": [
+        {
+          "y": -0.4,
+          "shieldBottom": 6.574999904632568,
+          "braceBottom": 5.869898922560817,
+          "braceTop": 7.258451637497458
+        },
+        {
+          "y": 0,
+          "shieldBottom": 6.574999904632568,
+          "braceBottom": 4.969592650536317,
+          "braceTop": 7.29458069432751
+        },
+        {
+          "y": 0.35,
+          "shieldBottom": 6.574999904632568,
+          "braceBottom": 5.001205371650905,
+          "braceTop": 7.326193619053805
+        }
+      ],
+      "deckTop": 4.050000143051148,
+      "footBottom": 3.625000099924952
+    },
+    {
+      "assembly": "aurelian-expansion-general-on-chariot",
+      "revision": "72f4683b2e650abe0c35661b99de371e8ceff7e05e3d38b26264ac8309ad24da",
+      "samples": [
+        {
+          "y": -0.4,
+          "shieldBottom": 6.294999904632567,
+          "braceBottom": 5.589898922560815,
+          "braceTop": 6.978451637497457
+        },
+        {
+          "y": 0,
+          "shieldBottom": 6.294999904632567,
+          "braceBottom": 4.689592650536315,
+          "braceTop": 7.014580694327509
+        },
+        {
+          "y": 0.35,
+          "shieldBottom": 6.294999904632567,
+          "braceBottom": 4.721205371650904,
+          "braceTop": 7.0461936190538035
+        }
+      ],
+      "deckTop": 4.050000143051148,
+      "footBottom": 3.3450000999249507
+    },
+    {
+      "assembly": "aurelian-expansion-hero-on-chariot",
+      "revision": "a36444bb54c7cc7c846fc82ef4e6c1736a8af2d51f6592c28fc57785dbdc47fd",
+      "samples": [
+        {
+          "y": -0.4,
+          "shieldBottom": 6.574999904632568,
+          "braceBottom": 5.869898922560817,
+          "braceTop": 7.258451637497458
+        },
+        {
+          "y": 0,
+          "shieldBottom": 6.574999904632568,
+          "braceBottom": 4.969592650536317,
+          "braceTop": 7.29458069432751
+        },
+        {
+          "y": 0.35,
+          "shieldBottom": 6.574999904632568,
+          "braceBottom": 5.001205371650905,
+          "braceTop": 7.326193619053805
+        }
+      ],
+      "deckTop": 4.050000143051148,
+      "footBottom": 3.625000099924952
+    }
+  ],
+  "verification": "16 expansion tests pass. Viewer rays at three points across each lower shield show shield-to-brace overlap, and brace roots overlap the deck.",
+  "reviews": {
+    "aurelian-army-expansion": {
+      "path": "out/chariot-shield-20261005/assemblies/elf-army-expansion",
+      "viewer_revision": "e5eab96ec8ee5d5e6c4b7d36603b57f0679ed2859f7a658dabd2a3c0ecffeaec",
+      "saved_provenance_passes": true,
+      "views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-chariot": {
+      "path": "out/chariot-shield-20261005/assemblies/chariot",
+      "viewer_revision": "63d1f792083219e9abf4d9fdc7586ad9dec337ae973645154b9eb6f980a13907",
+      "saved_provenance_passes": true,
+      "views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-general-on-chariot": {
+      "path": "out/chariot-shield-20261005/assemblies/general-on-chariot",
+      "viewer_revision": "72f4683b2e650abe0c35661b99de371e8ceff7e05e3d38b26264ac8309ad24da",
+      "saved_provenance_passes": true,
+      "views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-hero-on-chariot": {
+      "path": "out/chariot-shield-20261005/assemblies/hero-on-chariot",
+      "viewer_revision": "a36444bb54c7cc7c846fc82ef4e6c1736a8af2d51f6592c28fc57785dbdc47fd",
+      "saved_provenance_passes": true,
+      "views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    }
+  },
+  "isolated_part_review": "out/chariot-shield-20261005/parts/brace",
+  "compiled_parts": [
+    "aurelian.expansion-chariot-shield-brace@1"
+  ],
+  "limitations": [
+    "Visual-only; targeted geometry checks do not replace sliced support assessment or a physical trial."
+  ]
+}

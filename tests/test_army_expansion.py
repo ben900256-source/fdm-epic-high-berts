@@ -67,7 +67,7 @@ def test_chariot_keeps_two_horses_and_two_crew_in_each_configuration():
         items=assembly(name)['placements']
         assert len([p for p in items if p['instance_id'].endswith('/horse')])==2
         assert {p['instance_id'] for p in items if p['instance_id'].endswith('/head')}=={'driver/head','passenger/head'}
-        assert len([p for p in items if p['part']=='aurelian.expansion-chariot@1'])==1
+        assert len([p for p in items if p['part']=='aurelian.expansion-chariot@2'])==1
 @pytest.mark.integration
 def test_saved_reviews_preserve_provenance_and_remain_visual_only():
     path=os.environ.get('ARMY_EXPANSION_REVIEW')
@@ -105,3 +105,95 @@ def test_dragon_wing_prisms_meet_the_body_root_using_blenders_native_triangle():
                  for x in (-sqrt(3)/2,sqrt(3)/2)]
         assert min(c[2] for c in corners)>apex[2]
         assert panel['depth']>=.75
+
+
+def test_thick_chariot_reins_meet_both_hands_and_rise_steeply_from_the_horses():
+    from math import hypot
+    defs=Definitions()
+    reference='aurelian.expansion-chariot-reins@2'
+    parameters=defs[reference].to_dict()['parameters']
+    assert parameters['nominal_diameter_mm']==pytest.approx(1.16)
+    assert parameters['minimum_terminal_diameter_mm']>=1.0
+    for stations in parameters['route_stations'].values():
+        hand,rump=stations[0][0],stations[1][0]
+        assert hand[2]-rump[2]>=hypot(hand[0]-rump[0],hand[1]-rump[1])
+        assert min(2*radius for _,radius in stations)>=1.0
+    for name in ('chariot','general-on-chariot','hero-on-chariot','mage-on-chariot'):
+        slots={p['instance_id']:p for p in assembly(name)['placements']}
+        rein=slots['reins'];arms=slots['driver/arms']
+        assert rein['part']==reference
+        grips=defs[arms['part']].to_dict()['parameters']['landmarks']
+        for grip in ('right_grip','left_grip'):
+            assert point(rein['mount'],parameters['landmarks'][grip])==pytest.approx(
+                point(arms['mount'],grips[grip]),abs=1e-7)
+
+
+def test_regular_chariot_spear_reuses_the_locked_shape_and_meets_hand_and_deck():
+    from math import acos, degrees, dist
+    defs=Definitions()
+    slots={p['instance_id']:p for p in assembly('chariot')['placements']}
+    assert 'passenger/sword' not in slots
+    spear=slots['passenger/spear'];arms=slots['passenger/arms']
+    assert spear['part']=='aurelian.uniform-spear-140-trial@3'
+    landmarks=defs[spear['part']].to_dict()['parameters']['landmarks']
+    bottom=point(spear['mount'],landmarks['shaft_bottom'])
+    top=point(spear['mount'],landmarks['shaft_top'])
+    axis=[(b-a)/dist(bottom,top) for a,b in zip(bottom,top)]
+    assert degrees(acos(axis[2]))==pytest.approx(18)
+    assert axis[0]>0 and axis[1]<0
+    assert dist(bottom,top)==pytest.approx(13.35)  # No rescaling of the cache.
+    grip=point(arms['mount'],defs[arms['part']].to_dict()['parameters']['landmarks']['right_grip'])
+    along=sum((g-b)*u for g,b,u in zip(grip,bottom,axis))
+    assert [bottom[i]+along*axis[i] for i in range(3)]==pytest.approx(grip,abs=1e-7)
+    assert bottom[2]==pytest.approx(3.85)
+    assert abs(bottom[0])+.7<2.75
+    assert 1.1+.7<bottom[1]<6.5-.7
+    for kind in ('general','hero','mage'):
+        names={p['instance_id'] for p in assembly(kind+'-on-chariot')['placements']}
+        assert 'passenger/spear' not in names
+        assert 'passenger/'+('staff' if kind=='mage' else 'sword') in names
+
+
+def test_chariot_underbody_is_grounded_and_wheels_have_continuous_stock():
+    from math import sqrt
+    defs=Definitions()
+    current=defs['aurelian.expansion-chariot@2'].to_dict()['parameters']
+    original=defs['aurelian.expansion-chariot@1'].to_dict()['parameters']
+    atoms={a['role']:a for a in current['atoms']}
+    old={a['role']:a for a in original['atoms']}
+    assert atoms['deck']==old['deck']
+    assert current['landmarks']==original['landmarks']
+    hull=atoms['tapered_underbody']
+    bottom=point(hull['frame_mm'],[0,0,-hull['depth']/2])
+    top=point(hull['frame_mm'],[0,0,hull['depth']/2])
+    assert bottom[2]<0
+    assert top[2]>atoms['deck']['location'][2]-atoms['deck']['dimensions'][2]/2
+    assert (hull['radius2']-hull['radius1'])/hull['depth']<1
+    assert sqrt(2)*hull['radius2']>=max(atoms['deck']['dimensions'][:2])
+    operations=current['operations']
+    for side in (-1,1):
+        web=atoms[f'wheel_web_{side}']
+        assert web['depth']>=.75
+        assert web['radius']>atoms[f'rim_hollow_{side}']['radius']
+        union=next(i for i,o in enumerate(operations) if o['operand']==web['role'])
+        cut=next(i for i,o in enumerate(operations) if o['operand']==f'rim_hollow_{side}')
+        assert union>cut and operations[union]['operation']=='UNION'
+        assert len([a for a in atoms if a.startswith(f'spoke_{side}_')])==8
+
+
+def test_chariot_shield_braces_anchor_below_the_deck_and_preserve_shared_faces():
+    defs=Definitions()
+    ref='aurelian.expansion-chariot-shield-brace@1'
+    parameters=defs[ref].to_dict()['parameters']
+    assert parameters['minimum_square_section_mm']>=1.0
+    foot=next(a for a in parameters['atoms'] if a['role']=='shield_brace_foot')
+    for name in ('chariot','general-on-chariot','hero-on-chariot'):
+        slots={p['instance_id']:p for p in assembly(name)['placements']}
+        brace=slots['passenger/shield-brace'];shield=slots['passenger/shield']
+        assert brace['part']==ref and brace['mount']==shield['mount']
+        assert shield['part']=='aurelian.shield@6'
+        assert slots['passenger/shield-insignia']['part']=='aurelian.readable-insignia-trial@6'
+        root=point(brace['mount'],parameters['landmarks']['cart_root'])
+        assert root[2]-foot['dimensions'][2]/2<4.05<root[2]+foot['dimensions'][2]/2
+        assert root[0]<-2 and 1.1<root[1]<6.5
+    assert not any(p['instance_id']=='passenger/shield-brace' for p in assembly('mage-on-chariot')['placements'])

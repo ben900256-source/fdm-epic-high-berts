@@ -35,8 +35,8 @@
     },
     {
       "instance_id": "vehicle",
-      "part": "aurelian.expansion-chariot@1",
-      "definition_sha256": "4ec066cabc65bbe7d261ca91648b168f44d6b16ccfba2644d358266c485d27e4",
+      "part": "aurelian.expansion-chariot@2",
+      "definition_sha256": "377e25ef62c785daccba7e5b80d9e702208344a7577690dc5cd4b86058e6669e",
       "mount": [
         [
           1.0,
@@ -66,8 +66,8 @@
     },
     {
       "instance_id": "reins",
-      "part": "aurelian.expansion-chariot-reins@1",
-      "definition_sha256": "be0669969aea7d9a6490df2d035bbbb48055c4ac960aaaa384f3dcc59631c5f1",
+      "part": "aurelian.expansion-chariot-reins@2",
+      "definition_sha256": "86ce96287ff05588b17ae7ef24a6dcfe1750d7e5a3083a170b8d2f1bc9c81fe9",
       "mount": [
         [
           1.0,

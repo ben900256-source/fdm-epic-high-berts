@@ -1,0 +1,108 @@
+{
+  "component_id": "aurelian.expansion-chariot-shield-brace",
+  "version": 1,
+  "name": "Chariot shield brace",
+  "family": "army-expansion-chariot-shield-brace",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shield_brace"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0,
+        "depth": 3.2088627268862724,
+        "export": true,
+        "frame_mm": [
+          [
+            0.6858985646291282,
+            -0.6858985646291282,
+            0.24307677404351755,
+            -0.39
+          ],
+          [
+            0.71970177694469,
+            0.6887781473433107,
+            -0.08725832914382682,
+            0.2
+          ],
+          [
+            -0.10757560737619574,
+            0.2347931489247893,
+            0.9660743583780828,
+            -3.1
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.76,
+        "radius2": 0.88,
+        "role": "shield_brace",
+        "vertices": 4
+      },
+      {
+        "dimensions": [
+          1.15,
+          1.15,
+          1.15
+        ],
+        "export": false,
+        "location": [
+          -0.78,
+          0.34,
+          -4.65
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "shield_brace_foot",
+        "segments": 40
+      }
+    ],
+    "design_notes": "Permanent sloping brace behind the lower shield. Rounded root overlaps the cart side and deck. Uses the same shield frame for regular, Hero and General chariots; face and insignia are unchanged.",
+    "export_scale": 1.3,
+    "landmarks": {
+      "cart_root": [
+        -0.78,
+        0.34,
+        -4.65
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "shield_join": [
+        0,
+        0.06,
+        -1.55
+      ]
+    },
+    "minimum_square_section_mm": 1.0748023074035524,
+    "operations": [
+      {
+        "operand": "shield_brace_foot",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "shield_brace"
+      }
+    ],
+    "provenance": "Original parameterized primitives, rigid frames and local ordered Exact CSG.",
+    "seed": 1001,
+    "visual_only": true
+  }
+}
