@@ -1,0 +1,231 @@
+{
+  "date": "2026-10-06",
+  "seed": 1001,
+  "export_scale": 1.3,
+  "digitally_validated": false,
+  "physical_trial": false,
+  "source_assembly": "specs/army-expansion/bolt-thrower.json",
+  "source_assembly_sha256": "e8748492ff778fdbbae20afb91ebf798e2fdf9cffa60890e2af8d6edca16b362",
+  "current_parts": [
+    "aurelian.crest@7",
+    "aurelian.expansion-artillery-base@1",
+    "aurelian.expansion-artillery-boot-seats@1",
+    "aurelian.expansion-artillery-crew-coat@1",
+    "aurelian.expansion-artillery-helmet@1",
+    "aurelian.expansion-artillery-left-leg@1",
+    "aurelian.expansion-artillery-right-leg@1",
+    "aurelian.expansion-bolt-thrower@3",
+    "aurelian.expansion-crew-arms@4",
+    "aurelian.expansion-loader-bolt@2",
+    "aurelian.readable-head-trial@5",
+    "aurelian.readable-torso-trial@1"
+  ],
+  "preserved_old_part_hashes": 58,
+  "preserved_other_assemblies": 16,
+  "targeted_tests_passed": 37,
+  "viewer_current_placements_verified": true,
+  "local_output": "out/bolt-thrower-support-trial-20261006",
+  "stages": {
+    "baseline": {
+      "support_summary": {
+        "layer_count": 299,
+        "model_path_length_mm": 42836.654,
+        "unsupported_centerline_mm": 942.021,
+        "unaccepted_run_count": 272,
+        "accepted_bridge_count": 362
+      },
+      "gcode": {
+        "continuous_layers": true,
+        "layer_gaps": [],
+        "extrusion_tools": [
+          1
+        ],
+        "selected_tools": [
+          1
+        ],
+        "roles": [
+          "Bridge infill",
+          "External perimeter",
+          "Internal infill",
+          "Overhang perimeter",
+          "Perimeter",
+          "Skirt/Brim",
+          "Solid infill",
+          "Top solid infill"
+        ],
+        "layer_count": 299,
+        "first_layer_mm": 0.14,
+        "final_z_mm": 15.04,
+        "model_extrusion_segments": 58364,
+        "estimated_print_time": "54m 29s",
+        "filament_used_g_by_tool": "0.00, 0.91, 0.00, 0.00, 0.00"
+      },
+      "passes": false,
+      "automatic_support_ratio": 0.3241217079625959,
+      "automatic_support_filament_mm": 76.1423,
+      "artifact_sha256": {
+        "stl": "aa41e629e689e9532289b7bbec56bbe7cfaa24cd891ec0462085808d5fe4c2a2",
+        "project": "05f3b1e2f75ccc39a3fe3f055e32908c8ce1a171523953512a1a262195924b9f",
+        "gcode": "0cd0ddff19886a179598aac055bc1c247898efc948120d1f3d695d99a13d5a16",
+        "settings": "76b6d9187f280f12e918fa0a06f96f2cf6600ffb5a26b28f39f68e836fcbcbcc"
+      },
+      "analysis_source_sha256": {
+        "slicer_overhang.py": "e2184b569ea98d0641206c23b9cce8bd5d0e0970a03d261cf306984e208751c7",
+        "regiment_validation.py": "5aece67ca8d2d2f1bcdc23471eac5f84bba37407a11953837d119fef01b958b3",
+        "printability.py": "605766becd8d2da68a57f3e20af73dd65d1cded2c8724ae2c54a21736032a8a0",
+        "prusa.py": "c23013f89af176a4b83c3ab3b940a21e36e5d99497a3259ff81b491e87014d7a"
+      }
+    },
+    "v3": {
+      "support_summary": {
+        "layer_count": 299,
+        "model_path_length_mm": 51101.371,
+        "unsupported_centerline_mm": 870.485,
+        "unaccepted_run_count": 226,
+        "accepted_bridge_count": 379
+      },
+      "gcode": {
+        "continuous_layers": true,
+        "layer_gaps": [],
+        "extrusion_tools": [
+          1
+        ],
+        "selected_tools": [
+          1
+        ],
+        "roles": [
+          "Bridge infill",
+          "External perimeter",
+          "Internal infill",
+          "Overhang perimeter",
+          "Perimeter",
+          "Skirt/Brim",
+          "Solid infill",
+          "Top solid infill"
+        ],
+        "layer_count": 299,
+        "first_layer_mm": 0.14,
+        "final_z_mm": 15.04,
+        "model_extrusion_segments": 76920,
+        "estimated_print_time": "1h 7m 25s",
+        "filament_used_g_by_tool": "0.00, 1.03, 0.00, 0.00, 0.00"
+      },
+      "passes": false,
+      "automatic_support_ratio": 0.1437122104993754,
+      "automatic_support_filament_mm": 39.8449,
+      "artifact_sha256": {
+        "stl": "df7943c3e6eb2ccc69a1b00581aff5b7b8f458e8d42061c2e8d5a5f640b96b90",
+        "project": "ae3bb219d9d01d9d9d8c1906c06b0683dde3a94ca913fe14690e1ea7c005b90d",
+        "gcode": "3096667524f122eef40a6524cc90f85e86f44f9b9baa956bf5c7addefc16fd51",
+        "settings": "76b6d9187f280f12e918fa0a06f96f2cf6600ffb5a26b28f39f68e836fcbcbcc"
+      },
+      "analysis_source_sha256": {
+        "slicer_overhang.py": "e2184b569ea98d0641206c23b9cce8bd5d0e0970a03d261cf306984e208751c7",
+        "regiment_validation.py": "5aece67ca8d2d2f1bcdc23471eac5f84bba37407a11953837d119fef01b958b3",
+        "printability.py": "605766becd8d2da68a57f3e20af73dd65d1cded2c8724ae2c54a21736032a8a0",
+        "prusa.py": "c23013f89af176a4b83c3ab3b940a21e36e5d99497a3259ff81b491e87014d7a"
+      }
+    },
+    "v3-solid": {
+      "support_summary": {
+        "layer_count": 299,
+        "model_path_length_mm": 56339.049,
+        "unsupported_centerline_mm": 272.817,
+        "unaccepted_run_count": 202,
+        "accepted_bridge_count": 38
+      },
+      "gcode": {
+        "continuous_layers": true,
+        "layer_gaps": [],
+        "extrusion_tools": [
+          1
+        ],
+        "selected_tools": [
+          1
+        ],
+        "roles": [
+          "External perimeter",
+          "Internal infill",
+          "Overhang perimeter",
+          "Perimeter",
+          "Skirt/Brim",
+          "Solid infill",
+          "Top solid infill"
+        ],
+        "layer_count": 299,
+        "first_layer_mm": 0.14,
+        "final_z_mm": 15.04,
+        "model_extrusion_segments": 77873,
+        "estimated_print_time": "1h 11m 6s",
+        "filament_used_g_by_tool": "0.00, 1.08, 0.00, 0.00, 0.00"
+      },
+      "passes": false,
+      "automatic_support_ratio": 0.13685043357977847,
+      "automatic_support_filament_mm": 39.8449,
+      "artifact_sha256": {
+        "stl": "df7943c3e6eb2ccc69a1b00581aff5b7b8f458e8d42061c2e8d5a5f640b96b90",
+        "project": "015c68fbbc73fc884082f3ba4bff0d368dfe8bd822bf6d413ed74e1d14f5fbf0",
+        "gcode": "f8b7a3567e4979feb3fac0b6fa7cdd73996350a50118cc4469900fb6716945c2",
+        "settings": "da4c96738b665c4599d31952616ab0fed99c82d5fef98e7bb46a31d9787b8ca7"
+      },
+      "analysis_source_sha256": {
+        "slicer_overhang.py": "e2184b569ea98d0641206c23b9cce8bd5d0e0970a03d261cf306984e208751c7",
+        "regiment_validation.py": "5aece67ca8d2d2f1bcdc23471eac5f84bba37407a11953837d119fef01b958b3",
+        "printability.py": "605766becd8d2da68a57f3e20af73dd65d1cded2c8724ae2c54a21736032a8a0",
+        "prusa.py": "c23013f89af176a4b83c3ab3b940a21e36e5d99497a3259ff81b491e87014d7a"
+      }
+    }
+  },
+  "project": {
+    "path": "out/bolt-thrower-support-trial-20261006/bolt-thrower-support-trial.3mf",
+    "sha256": "015c68fbbc73fc884082f3ba4bff0d368dfe8bd822bf6d413ed74e1d14f5fbf0",
+    "reopened_and_sliced_without_separate_config": true,
+    "installed_presets_unchanged": true,
+    "overrides": {
+      "complete_objects": "0",
+      "support_material": "0",
+      "support_material_auto": "0",
+      "fill_density": "100%",
+      "fill_pattern": "rectilinear"
+    }
+  },
+  "limitations": [
+    "Deposited-layer screen still fails; no support-free or digital-validation certification.",
+    "Remaining runs include internal/closing crew contours and small attached detail. No criteria were relaxed.",
+    "Diagnostic topology checks on fused exports did not pass; the selected Manifold export remains unchecked.",
+    "Alternative global Exact export and solid-infill tests did not eliminate all flags. Final project retains Manifold and uses solid infill.",
+    "No independent manufacturing repeat, self-intersection certification, or physical trial."
+  ],
+  "export_diagnostics": {
+    "v1": {
+      "vertex_count": 33892,
+      "triangle_count": 67943,
+      "boundary_edges": 15,
+      "nonmanifold_edges": 5,
+      "inconsistently_oriented_edges": 0,
+      "degenerate_triangles": 0,
+      "duplicate_triangles": 5,
+      "connected_components": 1,
+      "signed_volume_mm3": 701.6054190274442,
+      "component_signed_volumes_mm3": [
+        701.6054190274408
+      ],
+      "removed_triangle_count": 135
+    },
+    "v3-exact": {
+      "vertex_count": 34462,
+      "triangle_count": 69079,
+      "boundary_edges": 265,
+      "nonmanifold_edges": 186,
+      "inconsistently_oriented_edges": 0,
+      "degenerate_triangles": 0,
+      "duplicate_triangles": 31,
+      "connected_components": 1,
+      "signed_volume_mm3": 711.3823774101218,
+      "component_signed_volumes_mm3": [
+        711.3823774101218
+      ],
+      "removed_triangle_count": 127
+    }
+  }
+}

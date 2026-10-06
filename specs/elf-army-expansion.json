@@ -2484,8 +2484,8 @@
     },
     {
       "instance_id": "bolt-thrower/engine",
-      "part": "aurelian.expansion-bolt-thrower@1",
-      "definition_sha256": "ee4ad6da8ececf443906e7d70650b9d7b3d424bb9f184b3833c3dc47b2882f3b",
+      "part": "aurelian.expansion-bolt-thrower@3",
+      "definition_sha256": "bcda7f849ff786b396c81058c1343e2a5bc53c8adffc2576bb9f50cc220471a3",
       "mount": [
         [
           1.0,
@@ -2515,8 +2515,8 @@
     },
     {
       "instance_id": "bolt-thrower/crew-1/left-leg",
-      "part": "aurelian.left-leg-c@6",
-      "definition_sha256": "dcfd7f32708c024c7944c7ff0da4e94e25bf80e2ca125c6402d6614dc36b6da3",
+      "part": "aurelian.expansion-artillery-left-leg@1",
+      "definition_sha256": "8c19dc7c4e1e31070d0607e54db1ee3dfa4cb24fe9968247918a13d4b1132430",
       "mount": [
         [
           0.42261826174069944,
@@ -2546,8 +2546,8 @@
     },
     {
       "instance_id": "bolt-thrower/crew-1/right-leg",
-      "part": "aurelian.right-leg-c@6",
-      "definition_sha256": "b16677ff963cd89cb212087bd3141d4219014b277594c4ee363816648e7a5df6",
+      "part": "aurelian.expansion-artillery-right-leg@1",
+      "definition_sha256": "12828465a2b826ca5201735b41143258803226cb82a30027dd2fa03016dc60aa",
       "mount": [
         [
           0.42261826174069944,
@@ -2639,8 +2639,8 @@
     },
     {
       "instance_id": "bolt-thrower/crew-1/helmet",
-      "part": "aurelian.readable-helmet-trial@5",
-      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "part": "aurelian.expansion-artillery-helmet@1",
+      "definition_sha256": "67df90ac58fbd4d7818eebebe8daf12a902d4e599c372dca4efa8a0e54195592",
       "mount": [
         [
           0.42261826174069944,
@@ -2701,8 +2701,8 @@
     },
     {
       "instance_id": "bolt-thrower/crew-1/arms",
-      "part": "aurelian.expansion-crew-arms@2",
-      "definition_sha256": "eed85759ad0a4f4573d7f6f216c5e628f4ee72613c52703c7ff5cd5549ddcc14",
+      "part": "aurelian.expansion-crew-arms@4",
+      "definition_sha256": "05944e5acc97b54c74b3532b97c4b60e6829c407854b1cc21d164d9c20856293",
       "mount": [
         [
           0.42261826174069944,
@@ -2732,8 +2732,39 @@
     },
     {
       "instance_id": "bolt-thrower/crew-1/coat",
-      "part": "aurelian.expansion-reaver-coat@1",
-      "definition_sha256": "ba95f83c6f0d5532ea29341ab88c72b61def6a279cffc5c29544528cb2615799",
+      "part": "aurelian.expansion-artillery-crew-coat@1",
+      "definition_sha256": "a48e7478cdf5e830fa0101e5ab21e309b1cbe58652e04368c75ab6e59f6c0152",
+      "mount": [
+        [
+          0.42261826174069944,
+          -0.9063077870366499,
+          0.0,
+          52.65
+        ],
+        [
+          0.9063077870366499,
+          0.42261826174069944,
+          0.0,
+          1.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/crew-1/boot-seats",
+      "part": "aurelian.expansion-artillery-boot-seats@1",
+      "definition_sha256": "10281fb4e1bc30e637603f2a3d1f3b3311a93f999e368a3a7a792ac979eb5817",
       "mount": [
         [
           0.42261826174069944,
@@ -2763,8 +2794,8 @@
     },
     {
       "instance_id": "bolt-thrower/crew-2/left-leg",
-      "part": "aurelian.left-leg-c@6",
-      "definition_sha256": "dcfd7f32708c024c7944c7ff0da4e94e25bf80e2ca125c6402d6614dc36b6da3",
+      "part": "aurelian.expansion-artillery-left-leg@1",
+      "definition_sha256": "8c19dc7c4e1e31070d0607e54db1ee3dfa4cb24fe9968247918a13d4b1132430",
       "mount": [
         [
           0.42261826174069944,
@@ -2794,8 +2825,8 @@
     },
     {
       "instance_id": "bolt-thrower/crew-2/right-leg",
-      "part": "aurelian.right-leg-c@6",
-      "definition_sha256": "b16677ff963cd89cb212087bd3141d4219014b277594c4ee363816648e7a5df6",
+      "part": "aurelian.expansion-artillery-right-leg@1",
+      "definition_sha256": "12828465a2b826ca5201735b41143258803226cb82a30027dd2fa03016dc60aa",
       "mount": [
         [
           0.42261826174069944,
@@ -2887,8 +2918,8 @@
     },
     {
       "instance_id": "bolt-thrower/crew-2/helmet",
-      "part": "aurelian.readable-helmet-trial@5",
-      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "part": "aurelian.expansion-artillery-helmet@1",
+      "definition_sha256": "67df90ac58fbd4d7818eebebe8daf12a902d4e599c372dca4efa8a0e54195592",
       "mount": [
         [
           0.42261826174069944,
@@ -2949,8 +2980,8 @@
     },
     {
       "instance_id": "bolt-thrower/crew-2/arms",
-      "part": "aurelian.expansion-crew-arms@2",
-      "definition_sha256": "eed85759ad0a4f4573d7f6f216c5e628f4ee72613c52703c7ff5cd5549ddcc14",
+      "part": "aurelian.expansion-crew-arms@4",
+      "definition_sha256": "05944e5acc97b54c74b3532b97c4b60e6829c407854b1cc21d164d9c20856293",
       "mount": [
         [
           0.42261826174069944,
@@ -2980,8 +3011,39 @@
     },
     {
       "instance_id": "bolt-thrower/crew-2/coat",
-      "part": "aurelian.expansion-reaver-coat@1",
-      "definition_sha256": "ba95f83c6f0d5532ea29341ab88c72b61def6a279cffc5c29544528cb2615799",
+      "part": "aurelian.expansion-artillery-crew-coat@1",
+      "definition_sha256": "a48e7478cdf5e830fa0101e5ab21e309b1cbe58652e04368c75ab6e59f6c0152",
+      "mount": [
+        [
+          0.42261826174069944,
+          0.9063077870366499,
+          0.0,
+          60.1
+        ],
+        [
+          -0.9063077870366499,
+          0.42261826174069944,
+          0.0,
+          1.7
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/crew-2/boot-seats",
+      "part": "aurelian.expansion-artillery-boot-seats@1",
+      "definition_sha256": "10281fb4e1bc30e637603f2a3d1f3b3311a93f999e368a3a7a792ac979eb5817",
       "mount": [
         [
           0.42261826174069944,
@@ -3011,8 +3073,8 @@
     },
     {
       "instance_id": "bolt-thrower/crew-2/spare-bolt",
-      "part": "aurelian.expansion-loader-bolt@1",
-      "definition_sha256": "0c0aabfc96f341fa09d4ad5bccd874356a094c618cd1708b9209341e87fdf8a8",
+      "part": "aurelian.expansion-loader-bolt@2",
+      "definition_sha256": "5ceea8e007d51b9bf2ae488610d0aec5195cf7290d25d34a89e225c218f9de27",
       "mount": [
         [
           0.42261826174069944,

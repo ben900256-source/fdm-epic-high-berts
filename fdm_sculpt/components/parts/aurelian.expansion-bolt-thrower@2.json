@@ -1,0 +1,1283 @@
+{
+  "component_id": "aurelian.expansion-bolt-thrower",
+  "version": 2,
+  "name": "Bolt thrower",
+  "family": "army-expansion-bolt-thrower",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "stock",
+    "pivot",
+    "breech",
+    "bolt_rack",
+    "elevation_screw",
+    "front_leg_-1",
+    "rear_leg_-1",
+    "foot_front_-1",
+    "foot_rear_-1",
+    "bow_inner_-1",
+    "bow_outer_-1",
+    "bowstring_-1",
+    "crank_-1",
+    "crank_handle_-1",
+    "front_leg_1",
+    "rear_leg_1",
+    "foot_front_1",
+    "foot_rear_1",
+    "bow_inner_1",
+    "bow_outer_1",
+    "bowstring_1",
+    "crank_1",
+    "crank_handle_1",
+    "loaded_bolt_0",
+    "bolt_head_0",
+    "fletching_0",
+    "loaded_bolt_1",
+    "bolt_head_1",
+    "fletching_1",
+    "loaded_bolt_2",
+    "bolt_head_2",
+    "fletching_2",
+    "tapered_stock_keel",
+    "bow_brace_-1",
+    "string_brace_-1",
+    "bow_brace_foot_-1",
+    "string_brace_foot_-1",
+    "bow_end_saddle_-1",
+    "crank_underside_-1",
+    "bow_brace_1",
+    "string_brace_1",
+    "bow_brace_foot_1",
+    "string_brace_foot_1",
+    "bow_end_saddle_1",
+    "crank_underside_1"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.12,
+        "dimensions": [
+          1.05,
+          5.7,
+          0.85
+        ],
+        "export": true,
+        "location": [
+          0,
+          0,
+          3.8
+        ],
+        "primitive": "cube",
+        "role": "stock"
+      },
+      {
+        "bevel": 0.045,
+        "depth": 1.2,
+        "export": true,
+        "location": [
+          0,
+          0.55,
+          2.95
+        ],
+        "primitive": "cylinder",
+        "radius": 0.75,
+        "role": "pivot",
+        "vertices": 48
+      },
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          1.5,
+          1.4,
+          1.05
+        ],
+        "export": true,
+        "location": [
+          0,
+          1.85,
+          4.1
+        ],
+        "primitive": "cube",
+        "role": "breech"
+      },
+      {
+        "bevel": 0.08,
+        "dimensions": [
+          2.35,
+          2.7,
+          0.6
+        ],
+        "export": true,
+        "location": [
+          0,
+          0.3,
+          4.23
+        ],
+        "primitive": "cube",
+        "role": "bolt_rack"
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0,
+          1.7,
+          3.7
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.38,
+        "role": "elevation_screw",
+        "start": [
+          0,
+          1.7,
+          -0.08
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.55,
+          0.4,
+          3.0
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.48,
+        "role": "front_leg_-1",
+        "start": [
+          -1.75,
+          -1.8,
+          0.33
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.5,
+          0.6,
+          3.0
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.48,
+        "role": "rear_leg_-1",
+        "start": [
+          -1.65,
+          2.1,
+          0.33
+        ]
+      },
+      {
+        "bevel": 0.12,
+        "dimensions": [
+          0.95,
+          1.2,
+          0.46
+        ],
+        "export": true,
+        "location": [
+          -1.75,
+          -1.8,
+          0.23
+        ],
+        "primitive": "cube",
+        "role": "foot_front_-1"
+      },
+      {
+        "bevel": 0.12,
+        "dimensions": [
+          0.95,
+          1.2,
+          0.46
+        ],
+        "export": true,
+        "location": [
+          -1.65,
+          2.1,
+          0.23
+        ],
+        "primitive": "cube",
+        "role": "foot_rear_-1"
+      },
+      {
+        "bevel": 0,
+        "depth": 1.8782438606315208,
+        "export": true,
+        "frame_mm": [
+          [
+            -0.09482957727840105,
+            -0.1444160037806264,
+            -0.9849626232122891,
+            -1.2249999999999999
+          ],
+          [
+            0.9953973105673368,
+            1.734723475976807e-18,
+            -0.09583420117741188,
+            -1.8900000000000001
+          ],
+          [
+            0.013839992359550427,
+            -0.9895170629413289,
+            0.1437513017661179,
+            4.065
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.58,
+        "radius2": 0.47,
+        "role": "bow_inner_-1",
+        "scale": [
+          1,
+          0.85,
+          1
+        ],
+        "vertices": 40
+      },
+      {
+        "bevel": 0,
+        "depth": 1.8383688422076783,
+        "export": true,
+        "frame_mm": [
+          [
+            0.5781355710808153,
+            2.7755575615628914e-17,
+            -0.8159407217752154,
+            -2.9
+          ],
+          [
+            0.7677083539493834,
+            0.3387194682727412,
+            0.543960481183477,
+            -1.48
+          ],
+          [
+            0.2763750074217776,
+            -0.9408874118687269,
+            0.19582577322605138,
+            4.38
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.48,
+        "radius2": 0.3,
+        "role": "bow_outer_-1",
+        "scale": [
+          1,
+          0.85,
+          1
+        ],
+        "vertices": 40
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0,
+          2.06,
+          4.57
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.3,
+        "role": "bowstring_-1",
+        "start": [
+          -3.62,
+          -0.99,
+          4.56
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.25,
+          2.1,
+          4.1
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.25,
+        "role": "crank_-1",
+        "start": [
+          -0.65,
+          2.1,
+          4.1
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.2,
+          2.7,
+          4.1
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.28,
+        "role": "crank_handle_-1",
+        "start": [
+          -1.2,
+          2.1,
+          4.1
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.55,
+          0.4,
+          3.0
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.48,
+        "role": "front_leg_1",
+        "start": [
+          1.75,
+          -1.8,
+          0.33
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.5,
+          0.6,
+          3.0
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.48,
+        "role": "rear_leg_1",
+        "start": [
+          1.65,
+          2.1,
+          0.33
+        ]
+      },
+      {
+        "bevel": 0.12,
+        "dimensions": [
+          0.95,
+          1.2,
+          0.46
+        ],
+        "export": true,
+        "location": [
+          1.75,
+          -1.8,
+          0.23
+        ],
+        "primitive": "cube",
+        "role": "foot_front_1"
+      },
+      {
+        "bevel": 0.12,
+        "dimensions": [
+          0.95,
+          1.2,
+          0.46
+        ],
+        "export": true,
+        "location": [
+          1.65,
+          2.1,
+          0.23
+        ],
+        "primitive": "cube",
+        "role": "foot_rear_1"
+      },
+      {
+        "bevel": 0,
+        "depth": 1.8782438606315208,
+        "export": true,
+        "frame_mm": [
+          [
+            0.09482957727840105,
+            -0.1444160037806264,
+            0.9849626232122891,
+            1.2249999999999999
+          ],
+          [
+            0.9953973105673368,
+            -1.734723475976807e-18,
+            -0.09583420117741188,
+            -1.8900000000000001
+          ],
+          [
+            0.013839992359550427,
+            0.9895170629413289,
+            0.1437513017661179,
+            4.065
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.58,
+        "radius2": 0.47,
+        "role": "bow_inner_1",
+        "scale": [
+          1,
+          0.85,
+          1
+        ],
+        "vertices": 40
+      },
+      {
+        "bevel": 0,
+        "depth": 1.8383688422076783,
+        "export": true,
+        "frame_mm": [
+          [
+            0.5781355710808153,
+            -2.7755575615628914e-17,
+            0.8159407217752154,
+            2.9
+          ],
+          [
+            -0.7677083539493834,
+            0.3387194682727412,
+            0.543960481183477,
+            -1.48
+          ],
+          [
+            -0.2763750074217776,
+            -0.9408874118687269,
+            0.19582577322605138,
+            4.38
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.48,
+        "radius2": 0.3,
+        "role": "bow_outer_1",
+        "scale": [
+          1,
+          0.85,
+          1
+        ],
+        "vertices": 40
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0,
+          2.06,
+          4.57
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.3,
+        "role": "bowstring_1",
+        "start": [
+          3.62,
+          -0.99,
+          4.56
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.25,
+          2.1,
+          4.1
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.25,
+        "role": "crank_1",
+        "start": [
+          0.65,
+          2.1,
+          4.1
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.2,
+          2.7,
+          4.1
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.28,
+        "role": "crank_handle_1",
+        "start": [
+          1.2,
+          2.1,
+          4.1
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.67,
+          -3.3,
+          4.72
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.28,
+        "role": "loaded_bolt_0",
+        "start": [
+          -0.67,
+          1.55,
+          4.72
+        ]
+      },
+      {
+        "bevel": 0,
+        "depth": 1.0699999999999998,
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            -0.0,
+            0.0,
+            -0.67
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -3.6849999999999996
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            4.72
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.14,
+        "role": "bolt_head_0",
+        "scale": [
+          1,
+          0.75,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.045,
+        "dimensions": [
+          0.65,
+          0.8,
+          0.23
+        ],
+        "export": true,
+        "location": [
+          -0.67,
+          1.25,
+          4.72
+        ],
+        "primitive": "cube",
+        "role": "fletching_0"
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.0,
+          -3.3,
+          4.72
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.28,
+        "role": "loaded_bolt_1",
+        "start": [
+          0.0,
+          1.55,
+          4.72
+        ]
+      },
+      {
+        "bevel": 0,
+        "depth": 1.0699999999999998,
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            -0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -3.6849999999999996
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            4.72
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.14,
+        "role": "bolt_head_1",
+        "scale": [
+          1,
+          0.75,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.045,
+        "dimensions": [
+          0.65,
+          0.8,
+          0.23
+        ],
+        "export": true,
+        "location": [
+          0.0,
+          1.25,
+          4.72
+        ],
+        "primitive": "cube",
+        "role": "fletching_1"
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.67,
+          -3.3,
+          4.72
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.28,
+        "role": "loaded_bolt_2",
+        "start": [
+          0.67,
+          1.55,
+          4.72
+        ]
+      },
+      {
+        "bevel": 0,
+        "depth": 1.0699999999999998,
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            -0.0,
+            0.0,
+            0.67
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -3.6849999999999996
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            4.72
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.43,
+        "radius2": 0.14,
+        "role": "bolt_head_2",
+        "scale": [
+          1,
+          0.75,
+          1
+        ],
+        "vertices": 4
+      },
+      {
+        "bevel": 0.045,
+        "dimensions": [
+          0.65,
+          0.8,
+          0.23
+        ],
+        "export": true,
+        "location": [
+          0.67,
+          1.25,
+          4.72
+        ],
+        "primitive": "cube",
+        "role": "fletching_2"
+      },
+      {
+        "bevel": 0,
+        "depth": 2.36,
+        "export": true,
+        "frame_mm": [
+          [
+            0.0,
+            0,
+            -1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0,
+            0.0,
+            -0.7249999999999999
+          ],
+          [
+            0,
+            -1,
+            0,
+            2.9333333333333336
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "tapered_stock_keel",
+        "scale": [
+          4.128054424705825,
+          3.033333333333333,
+          1
+        ],
+        "vertices": 3
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          40,
+          40,
+          20
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.0,
+            -0.17106701589140175,
+            0.9852593953238968,
+            9.462593953238969
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.9852593953238968,
+            0.17106701589140175,
+            1.6106701589140187
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cube",
+        "role": "keel_side_-1"
+      },
+      {
+        "bevel": 0,
+        "depth": 0.78,
+        "export": true,
+        "frame_mm": [
+          [
+            -0.9756812625407283,
+            0,
+            -0.21919414665298556,
+            -1.825
+          ],
+          [
+            0.21919414665298556,
+            0,
+            -0.9756812625407283,
+            -1.3900000000000001
+          ],
+          [
+            0,
+            -1,
+            0,
+            2.76
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "bow_brace_-1",
+        "scale": [
+          2.159853390086157,
+          2.84,
+          1
+        ],
+        "vertices": 3
+      },
+      {
+        "bevel": 0,
+        "depth": 0.78,
+        "export": true,
+        "frame_mm": [
+          [
+            -0.7647468249311491,
+            0,
+            0.644330888408841,
+            -1.81
+          ],
+          [
+            -0.644330888408841,
+            0,
+            -0.7647468249311491,
+            0.535
+          ],
+          [
+            0,
+            -1,
+            0,
+            2.92
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "string_brace_-1",
+        "scale": [
+          2.7329410287576033,
+          3.0,
+          1
+        ],
+        "vertices": 3
+      },
+      {
+        "bevel": 0.09,
+        "dimensions": [
+          1.02,
+          1.02,
+          0.46
+        ],
+        "export": true,
+        "location": [
+          -1.825,
+          -1.3900000000000001,
+          0.13
+        ],
+        "primitive": "cube",
+        "role": "bow_brace_foot_-1"
+      },
+      {
+        "bevel": 0.09,
+        "dimensions": [
+          1.02,
+          1.02,
+          0.46
+        ],
+        "export": true,
+        "location": [
+          -1.81,
+          0.535,
+          0.13
+        ],
+        "primitive": "cube",
+        "role": "string_brace_foot_-1"
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -3.65,
+          -0.98,
+          4.56
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.38,
+        "role": "bow_end_saddle_-1",
+        "start": [
+          -3.5,
+          -1.01,
+          3.94
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.23,
+          2.55,
+          4.0
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.34,
+        "role": "crank_underside_-1",
+        "start": [
+          -0.45,
+          2.25,
+          2.75
+        ]
+      },
+      {
+        "bevel": 0,
+        "dimensions": [
+          40,
+          40,
+          20
+        ],
+        "export": false,
+        "frame_mm": [
+          [
+            0.0,
+            -0.17106701589140175,
+            -0.9852593953238968,
+            -9.462593953238969
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.9852593953238968,
+            0.17106701589140175,
+            1.6106701589140187
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cube",
+        "role": "keel_side_1"
+      },
+      {
+        "bevel": 0,
+        "depth": 0.78,
+        "export": true,
+        "frame_mm": [
+          [
+            0.9756812625407283,
+            0,
+            -0.21919414665298556,
+            1.825
+          ],
+          [
+            0.21919414665298556,
+            0,
+            0.9756812625407283,
+            -1.3900000000000001
+          ],
+          [
+            0,
+            -1,
+            0,
+            2.76
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "bow_brace_1",
+        "scale": [
+          2.159853390086157,
+          2.84,
+          1
+        ],
+        "vertices": 3
+      },
+      {
+        "bevel": 0,
+        "depth": 0.78,
+        "export": true,
+        "frame_mm": [
+          [
+            0.7647468249311491,
+            0,
+            0.644330888408841,
+            1.81
+          ],
+          [
+            -0.644330888408841,
+            0,
+            0.7647468249311491,
+            0.535
+          ],
+          [
+            0,
+            -1,
+            0,
+            2.92
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1,
+        "radius2": 1,
+        "role": "string_brace_1",
+        "scale": [
+          2.7329410287576033,
+          3.0,
+          1
+        ],
+        "vertices": 3
+      },
+      {
+        "bevel": 0.09,
+        "dimensions": [
+          1.02,
+          1.02,
+          0.46
+        ],
+        "export": true,
+        "location": [
+          1.825,
+          -1.3900000000000001,
+          0.13
+        ],
+        "primitive": "cube",
+        "role": "bow_brace_foot_1"
+      },
+      {
+        "bevel": 0.09,
+        "dimensions": [
+          1.02,
+          1.02,
+          0.46
+        ],
+        "export": true,
+        "location": [
+          1.81,
+          0.535,
+          0.13
+        ],
+        "primitive": "cube",
+        "role": "string_brace_foot_1"
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          3.65,
+          -0.98,
+          4.56
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.38,
+        "role": "bow_end_saddle_1",
+        "start": [
+          3.5,
+          -1.01,
+          3.94
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.23,
+          2.55,
+          4.0
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.34,
+        "role": "crank_underside_1",
+        "start": [
+          0.45,
+          2.25,
+          2.75
+        ]
+      }
+    ],
+    "audit_source": "docs/bolt-thrower-support-trial.md",
+    "design_notes": "Permanent tapered stock keel and thin triangular bow/string braces grow from broad base contacts. Original bow, bolt rack, three loaded bolts and four leg endpoints retained; trial requires sliced checks.",
+    "export_scale": 1.3,
+    "grounded_screw_bottom_mm": -0.08,
+    "keel_bottom_width_mm": 0.78,
+    "landmarks": {
+      "ground": [
+        0,
+        0,
+        0
+      ],
+      "loading": [
+        0,
+        2.5,
+        4.5
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "minimum_web_mm": 0.78,
+    "operations": [
+      {
+        "operand": "keel_side_-1",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "tapered_stock_keel"
+      },
+      {
+        "operand": "keel_side_1",
+        "operation": "INTERSECT",
+        "solver": "EXACT",
+        "target": "tapered_stock_keel"
+      }
+    ],
+    "provenance": "Original parameterized primitives, rigid frames and local ordered Exact CSG.",
+    "seed": 1001,
+    "visual_only": true
+  }
+}

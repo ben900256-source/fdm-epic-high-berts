@@ -1,0 +1,557 @@
+{
+  "component_id": "aurelian.expansion-crew-arms",
+  "version": 4,
+  "name": "Crew arms",
+  "family": "army-expansion-crew-arms",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shoulder_1",
+    "upper_arm_1",
+    "elbow_1",
+    "forearm_1",
+    "palm_1",
+    "thumb_1",
+    "finger_1_0",
+    "finger_1_1",
+    "finger_1_2",
+    "shoulder_-1",
+    "upper_arm_-1",
+    "elbow_-1",
+    "forearm_-1",
+    "palm_-1",
+    "thumb_-1",
+    "finger_-1_0",
+    "finger_-1_1",
+    "finger_-1_2"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          1.25,
+          1.2,
+          1.3
+        ],
+        "export": true,
+        "location": [
+          0.99,
+          0,
+          0.65
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "shoulder_1",
+        "segments": 40
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.5,
+          -0.28,
+          -0.35
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.56,
+        "role": "upper_arm_1",
+        "start": [
+          0.99,
+          0,
+          0.65
+        ]
+      },
+      {
+        "dimensions": [
+          1.15,
+          1.15,
+          1.15
+        ],
+        "export": true,
+        "location": [
+          1.5,
+          -0.28,
+          -0.35
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "elbow_1",
+        "segments": 40
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.45,
+          -1.3,
+          -1.45
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.52,
+        "role": "forearm_1",
+        "start": [
+          1.5,
+          -0.28,
+          -0.35
+        ]
+      },
+      {
+        "dimensions": [
+          1.15,
+          1.1,
+          1.1
+        ],
+        "export": true,
+        "location": [
+          1.45,
+          -1.3,
+          -1.45
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "palm_1",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          0.5,
+          0.48,
+          0.55
+        ],
+        "export": true,
+        "location": [
+          1.1,
+          -1.7000000000000002,
+          -1.22
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "thumb_1",
+        "segments": 40
+      },
+      {
+        "bevel": 0.09,
+        "dimensions": [
+          0.26,
+          0.26,
+          0.7
+        ],
+        "export": true,
+        "location": [
+          1.15,
+          -1.73,
+          -1.51
+        ],
+        "primitive": "cube",
+        "role": "finger_1_0"
+      },
+      {
+        "bevel": 0.09,
+        "dimensions": [
+          0.26,
+          0.26,
+          0.7
+        ],
+        "export": true,
+        "location": [
+          1.45,
+          -1.73,
+          -1.51
+        ],
+        "primitive": "cube",
+        "role": "finger_1_1"
+      },
+      {
+        "bevel": 0.09,
+        "dimensions": [
+          0.26,
+          0.26,
+          0.7
+        ],
+        "export": true,
+        "location": [
+          1.75,
+          -1.73,
+          -1.51
+        ],
+        "primitive": "cube",
+        "role": "finger_1_2"
+      },
+      {
+        "dimensions": [
+          1.25,
+          1.2,
+          1.3
+        ],
+        "export": true,
+        "location": [
+          -0.99,
+          0,
+          0.65
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "shoulder_-1",
+        "segments": 40
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.5,
+          -0.28,
+          -0.05
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.56,
+        "role": "upper_arm_-1",
+        "start": [
+          -0.99,
+          0,
+          0.65
+        ]
+      },
+      {
+        "dimensions": [
+          1.15,
+          1.15,
+          1.15
+        ],
+        "export": true,
+        "location": [
+          -1.5,
+          -0.28,
+          -0.05
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "elbow_-1",
+        "segments": 40
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.35,
+          -1.15,
+          -0.9500000000000001
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.52,
+        "role": "forearm_-1",
+        "start": [
+          -1.5,
+          -0.28,
+          -0.05
+        ]
+      },
+      {
+        "dimensions": [
+          1.15,
+          1.1,
+          1.1
+        ],
+        "export": true,
+        "location": [
+          -1.35,
+          -1.15,
+          -0.9500000000000001
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "palm_-1",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          0.5,
+          0.48,
+          0.55
+        ],
+        "export": true,
+        "location": [
+          -1.0,
+          -1.5499999999999998,
+          -0.7200000000000001
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "thumb_-1",
+        "segments": 40
+      },
+      {
+        "bevel": 0.09,
+        "dimensions": [
+          0.26,
+          0.26,
+          0.7
+        ],
+        "export": true,
+        "location": [
+          -1.6500000000000001,
+          -1.5799999999999998,
+          -1.01
+        ],
+        "primitive": "cube",
+        "role": "finger_-1_0"
+      },
+      {
+        "bevel": 0.09,
+        "dimensions": [
+          0.26,
+          0.26,
+          0.7
+        ],
+        "export": true,
+        "location": [
+          -1.35,
+          -1.5799999999999998,
+          -1.01
+        ],
+        "primitive": "cube",
+        "role": "finger_-1_1"
+      },
+      {
+        "bevel": 0.09,
+        "dimensions": [
+          0.26,
+          0.26,
+          0.7
+        ],
+        "export": true,
+        "location": [
+          -1.05,
+          -1.5799999999999998,
+          -1.01
+        ],
+        "primitive": "cube",
+        "role": "finger_-1_2"
+      },
+      {
+        "dimensions": [
+          0.72,
+          0.72,
+          0.72
+        ],
+        "export": false,
+        "location": [
+          -0.65458507043,
+          -0.5737438935100001,
+          -4.318490253239999
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "sleeve_return_-1_node_0",
+        "segments": 48
+      },
+      {
+        "dimensions": [
+          1.04,
+          1.04,
+          1.04
+        ],
+        "export": false,
+        "location": [
+          -1.35,
+          -1.15,
+          -0.9500000000000001
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "sleeve_return_-1_node_1",
+        "segments": 48
+      },
+      {
+        "bevel": 0,
+        "depth": 3.4801226264044614,
+        "export": false,
+        "frame_mm": [
+          [
+            0.9799173186610712,
+            6.938893903907228e-18,
+            -0.19940423412780534,
+            -0.998267243117327
+          ],
+          [
+            -0.03362411395231458,
+            0.9856806421018774,
+            -0.16523646917842433,
+            -0.8585363854187997
+          ],
+          [
+            0.19654889353292823,
+            0.16862286851323163,
+            0.9658855318645947,
+            -2.6537430646436193
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.363620927819551,
+        "radius2": 0.523452451294907,
+        "role": "sleeve_return_-1_taper_1",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 48
+      },
+      {
+        "dimensions": [
+          0.72,
+          0.72,
+          0.72
+        ],
+        "export": false,
+        "location": [
+          0.65772602464,
+          0.24183633833,
+          -4.35267319263
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "sleeve_return_1_node_0",
+        "segments": 48
+      },
+      {
+        "dimensions": [
+          1.04,
+          1.04,
+          1.04
+        ],
+        "export": false,
+        "location": [
+          1.45,
+          -1.3,
+          -1.45
+        ],
+        "primitive": "sphere",
+        "ring_count": 32,
+        "role": "sleeve_return_1_node_1",
+        "segments": 48
+      },
+      {
+        "bevel": 0,
+        "depth": 3.373325709729305,
+        "export": false,
+        "frame_mm": [
+          [
+            0.9721550999467228,
+            1.3877787807814457e-17,
+            0.234338348649079,
+            1.048983414831981
+          ],
+          [
+            0.10992945075456162,
+            0.8831420381482135,
+            -0.45604348072548917,
+            -0.5195856957132666
+          ],
+          [
+            -0.20695404684223428,
+            0.4691056815424635,
+            0.8585510363631291,
+            -2.9192140948316734
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.36359664096538524,
+        "radius2": 0.5234173702833343,
+        "role": "sleeve_return_1_taper_1",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 48
+      }
+    ],
+    "audit_source": "docs/bolt-thrower-support-trial.md",
+    "design_notes": "Lower sleeve folds start inside the actual planted ankle axes, then rise steeply to the original wrists. Rounded palms, hands and upper arm poses retained.",
+    "export_scale": 1.3,
+    "landmarks": {
+      "left_grip": [
+        -1.35,
+        -1.15,
+        -0.9500000000000001
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "right_grip": [
+        1.45,
+        -1.3,
+        -1.45
+      ]
+    },
+    "operations": [
+      {
+        "operand": "sleeve_return_-1_node_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "palm_-1"
+      },
+      {
+        "operand": "sleeve_return_-1_node_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "palm_-1"
+      },
+      {
+        "operand": "sleeve_return_-1_taper_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "palm_-1"
+      },
+      {
+        "operand": "sleeve_return_1_node_0",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "palm_1"
+      },
+      {
+        "operand": "sleeve_return_1_node_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "palm_1"
+      },
+      {
+        "operand": "sleeve_return_1_taper_1",
+        "operation": "UNION",
+        "solver": "EXACT",
+        "target": "palm_1"
+      }
+    ],
+    "provenance": "Original parameterized primitives, rigid frames and local ordered Exact CSG.",
+    "seed": 1001,
+    "visual_only": true
+  }
+}

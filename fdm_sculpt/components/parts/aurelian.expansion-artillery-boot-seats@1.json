@@ -1,0 +1,117 @@
+{
+  "component_id": "aurelian.expansion-artillery-boot-seats",
+  "version": 1,
+  "name": "Artillery boot seats",
+  "family": "army-expansion-artillery-boot-seats",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "left_boot_seat",
+    "right_boot_seat"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.05,
+        "dimensions": [
+          1.155,
+          2.2500000000000004,
+          0.66
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.9914596717139715,
+            0.13041364715712744,
+            0.0,
+            -0.728658684
+          ],
+          [
+            -0.13041364715712744,
+            0.9914596717139715,
+            0.0,
+            -1.169186462
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.3
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cube",
+        "role": "left_boot_seat"
+      },
+      {
+        "bevel": 0.05,
+        "dimensions": [
+          1.155,
+          2.25,
+          0.66
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.9724163853316681,
+            -0.2332517385540626,
+            0.0,
+            0.790206269
+          ],
+          [
+            0.2332517385540626,
+            0.9724163853316681,
+            0.0,
+            -0.342790697
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -5.3
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cube",
+        "role": "right_boot_seat"
+      }
+    ],
+    "design_notes": "Thin level soles extend the posed shoe outlines into the artillery base, filling the tilted underside contacts.",
+    "export_scale": 1.3,
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [],
+    "provenance": "Original parameterized primitives, rigid frames and local ordered Exact CSG.",
+    "seed": 1001,
+    "visual_only": true
+  }
+}

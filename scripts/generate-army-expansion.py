@@ -153,7 +153,13 @@ def generate(seed=SEED):
     for i,(x,y,angle) in enumerate([(-3.35,1.3,65),(4.1,1.7,-65)],1):
         at=(x,y,6.4);legs(artillery,f'crew-{i}',at,(0,0,angle))
         add_upper(artillery,'crew',f'crew-{i}',at,(0,0,angle))
+        put(artillery,f'crew-{i}/boot-seats','expansion-artillery-boot-seats',at,(0,0,angle))
         if i==2:put(artillery,f'crew-{i}/spare-bolt','expansion-loader-bolt',at,(0,0,angle))
+    for placement in artillery:
+        slot=placement['instance_id'].split('/')[-1]
+        ref={'coat':PREFIX+'artillery-crew-coat@1','helmet':PREFIX+'artillery-helmet@1',
+             'left-leg':PREFIX+'artillery-left-leg@1','right-leg':PREFIX+'artillery-right-leg@1'}.get(slot)
+        if ref:placement.update(part=ref,definition_sha256=defs[ref].sha256)
     save('bolt-thrower','Elven Bolt Thrower - engine and two crew',artillery,'elven-bolt-thrower')
     # A gallery of the eight main roles. Mount alternatives have their own viewer entries.
     overview=[]
