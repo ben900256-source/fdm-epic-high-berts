@@ -1,0 +1,4657 @@
+{
+  "schema_version": 1,
+  "assembly_id": "aurelian-army-expansion",
+  "placements": [
+    {
+      "instance_id": "reavers/reaver-01/base",
+      "part": "aurelian.cavalry-base-body-6x12@1",
+      "definition_sha256": "125603238bbd7a68db0c3060d338a5167fd17aaf87637465534736de7b876662",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-01/terrain",
+      "part": "aurelian.cavalry-soil-6x12@1",
+      "definition_sha256": "7f149a9f7bacf9eca6c4734a8e03927b727252f465009af9e1c0e70bbc73bb7e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-01/horse",
+      "part": "aurelian.dragon-prince-horse@7",
+      "definition_sha256": "297b67bc3c13fd9959c7f7c7955bf4956cd0a4e4d9c0b50e80819b0657b1671e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-01/saddle",
+      "part": "aurelian.dragon-prince-saddle@1",
+      "definition_sha256": "840f5d9578d712ede23141c2309ee6f4ce1d5fe2e044c51e06c5c87a1798bf4f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-01/riding-legs",
+      "part": "aurelian.dragon-prince-riding-legs@1",
+      "definition_sha256": "e4b3c2d643307b6fb871003d031a690bb88dc160fe873459ed558c6320cdad06",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-01/tack",
+      "part": "aurelian.expansion-light-horse-tack@1",
+      "definition_sha256": "4fb7c42d79abea572319c9ede85e696bd4ba433d2eff21f5b9758c40939e560d",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-01/coat",
+      "part": "aurelian.expansion-reaver-coat@1",
+      "definition_sha256": "ba95f83c6f0d5532ea29341ab88c72b61def6a279cffc5c29544528cb2615799",
+      "mount": [
+        [
+          0.9510565162951535,
+          0.3090169943749474,
+          0.0,
+          -9.0
+        ],
+        [
+          -0.3090169943749474,
+          0.9510565162951535,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-01/head",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
+      "mount": [
+        [
+          0.9703665500578014,
+          0.2415411199101673,
+          0.0068298262238635455,
+          -9.039893529539388
+        ],
+        [
+          -0.24128443978783776,
+          0.9700886795891278,
+          -0.0266415485701148,
+          -0.1300394248792979
+        ],
+        [
+          -0.013060567,
+          0.024204136,
+          0.999621719,
+          11.997198264000001
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-01/helmet",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "mount": [
+        [
+          0.9703665500578014,
+          0.2415411199101673,
+          0.0068298262238635455,
+          -9.039893529539388
+        ],
+        [
+          -0.24128443978783776,
+          0.9700886795891278,
+          -0.0266415485701148,
+          -0.1300394248792979
+        ],
+        [
+          -0.013060567,
+          0.024204136,
+          0.999621719,
+          11.997198264000001
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-01/crest",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
+      "mount": [
+        [
+          0.9703665500578014,
+          0.2415411199101673,
+          0.0068298262238635455,
+          -9.039893529539388
+        ],
+        [
+          -0.24128443978783776,
+          0.9700886795891278,
+          -0.0266415485701148,
+          -0.1300394248792979
+        ],
+        [
+          -0.013060567,
+          0.024204136,
+          0.999621719,
+          11.997198264000001
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-01/bow-arm",
+      "part": "aurelian.archer-bow-arm-accepted-r7@1",
+      "definition_sha256": "cd97406a84841557c32b495b5472bad0561f6e6bbacb3459e34c7d7728f8b943",
+      "mount": [
+        [
+          0.9510565162951535,
+          0.3090169943749474,
+          0.0,
+          -9.0
+        ],
+        [
+          -0.3090169943749474,
+          0.9510565162951535,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-01/draw-arm",
+      "part": "aurelian.archer-draw-arm-accepted-r6@1",
+      "definition_sha256": "0cbed2a4feafa1347540e5b032a6e66a974f46037fb4d99331d8695f4118cb76",
+      "mount": [
+        [
+          0.9510565162951535,
+          0.3090169943749474,
+          0.0,
+          -9.0
+        ],
+        [
+          -0.3090169943749474,
+          0.9510565162951535,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-01/bow",
+      "part": "aurelian.archer-bow@4",
+      "definition_sha256": "7cfad1bc37db98dc26d0a948950c3d663fbc4c5d9e78484339ef420a9958ce22",
+      "mount": [
+        [
+          0.9510565162951535,
+          0.3090169943749474,
+          0.0,
+          -9.0
+        ],
+        [
+          -0.3090169943749474,
+          0.9510565162951535,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-01/quiver",
+      "part": "aurelian.archer-quiver@1",
+      "definition_sha256": "93f15975d61a9dcfb4c9afb7e5f77d8594c1650df667b1f2efbb6d0bb3aa52d7",
+      "mount": [
+        [
+          0.9510565162951535,
+          0.3090169943749474,
+          0.0,
+          -9.0
+        ],
+        [
+          -0.3090169943749474,
+          0.9510565162951535,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-01/arrow",
+      "part": "aurelian.arrow@1",
+      "definition_sha256": "6496f218aede92f5dceabf068f26465e5547b348bf2f2d70152625d2e9a7df36",
+      "mount": [
+        [
+          0.9510565162951535,
+          0.3090169943749474,
+          0.0,
+          -8.708681661818876
+        ],
+        [
+          -0.3090169943749474,
+          0.9510565162951535,
+          0.0,
+          -0.8832517341275862
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-01/bow-ferrule",
+      "part": "aurelian.archer-bow-ferrule@3",
+      "definition_sha256": "d9b9388f9d9cd4998dd80db498ffb6ad5ef25da6ff51438d1ece116beca61631",
+      "mount": [
+        [
+          0.9510565162951535,
+          0.3090169943749474,
+          0.0,
+          -9.203108852818792
+        ],
+        [
+          -0.3090169943749474,
+          0.9510565162951535,
+          0.0,
+          -2.4049421601998318
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.7
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-02/base",
+      "part": "aurelian.cavalry-base-body-6x12@1",
+      "definition_sha256": "125603238bbd7a68db0c3060d338a5167fd17aaf87637465534736de7b876662",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-02/terrain",
+      "part": "aurelian.cavalry-soil-6x12@1",
+      "definition_sha256": "7f149a9f7bacf9eca6c4734a8e03927b727252f465009af9e1c0e70bbc73bb7e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-02/horse",
+      "part": "aurelian.dragon-prince-horse@7",
+      "definition_sha256": "297b67bc3c13fd9959c7f7c7955bf4956cd0a4e4d9c0b50e80819b0657b1671e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-02/saddle",
+      "part": "aurelian.dragon-prince-saddle@1",
+      "definition_sha256": "840f5d9578d712ede23141c2309ee6f4ce1d5fe2e044c51e06c5c87a1798bf4f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-02/riding-legs",
+      "part": "aurelian.dragon-prince-riding-legs@1",
+      "definition_sha256": "e4b3c2d643307b6fb871003d031a690bb88dc160fe873459ed558c6320cdad06",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-02/tack",
+      "part": "aurelian.expansion-light-horse-tack@1",
+      "definition_sha256": "4fb7c42d79abea572319c9ede85e696bd4ba433d2eff21f5b9758c40939e560d",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-02/coat",
+      "part": "aurelian.expansion-reaver-coat@1",
+      "definition_sha256": "ba95f83c6f0d5532ea29341ab88c72b61def6a279cffc5c29544528cb2615799",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-02/head",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
+      "mount": [
+        [
+          0.997434423,
+          -0.070054632,
+          0.014728242,
+          0.002243391
+        ],
+        [
+          0.070384616,
+          0.997249471,
+          -0.023227086,
+          -0.136002621
+        ],
+        [
+          -0.013060567,
+          0.024204136,
+          0.999621719,
+          11.997198264000001
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-02/helmet",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "mount": [
+        [
+          0.997434423,
+          -0.070054632,
+          0.014728242,
+          0.002243391
+        ],
+        [
+          0.070384616,
+          0.997249471,
+          -0.023227086,
+          -0.136002621
+        ],
+        [
+          -0.013060567,
+          0.024204136,
+          0.999621719,
+          11.997198264000001
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-02/crest",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
+      "mount": [
+        [
+          0.997434423,
+          -0.070054632,
+          0.014728242,
+          0.002243391
+        ],
+        [
+          0.070384616,
+          0.997249471,
+          -0.023227086,
+          -0.136002621
+        ],
+        [
+          -0.013060567,
+          0.024204136,
+          0.999621719,
+          11.997198264000001
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-02/bow-arm",
+      "part": "aurelian.archer-bow-arm-accepted-r7@1",
+      "definition_sha256": "cd97406a84841557c32b495b5472bad0561f6e6bbacb3459e34c7d7728f8b943",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-02/draw-arm",
+      "part": "aurelian.archer-draw-arm-accepted-r6@1",
+      "definition_sha256": "0cbed2a4feafa1347540e5b032a6e66a974f46037fb4d99331d8695f4118cb76",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-02/bow",
+      "part": "aurelian.archer-bow@4",
+      "definition_sha256": "7cfad1bc37db98dc26d0a948950c3d663fbc4c5d9e78484339ef420a9958ce22",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-02/quiver",
+      "part": "aurelian.archer-quiver@1",
+      "definition_sha256": "93f15975d61a9dcfb4c9afb7e5f77d8594c1650df667b1f2efbb6d0bb3aa52d7",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-02/arrow",
+      "part": "aurelian.arrow@1",
+      "definition_sha256": "6496f218aede92f5dceabf068f26465e5547b348bf2f2d70152625d2e9a7df36",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.55
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.75
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-02/bow-ferrule",
+      "part": "aurelian.archer-bow-ferrule@3",
+      "definition_sha256": "d9b9388f9d9cd4998dd80db498ffb6ad5ef25da6ff51438d1ece116beca61631",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.55
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -2.35
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.7
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-03/base",
+      "part": "aurelian.cavalry-base-body-6x12@1",
+      "definition_sha256": "125603238bbd7a68db0c3060d338a5167fd17aaf87637465534736de7b876662",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          9.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-03/terrain",
+      "part": "aurelian.cavalry-soil-6x12@1",
+      "definition_sha256": "7f149a9f7bacf9eca6c4734a8e03927b727252f465009af9e1c0e70bbc73bb7e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          9.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-03/horse",
+      "part": "aurelian.dragon-prince-horse@7",
+      "definition_sha256": "297b67bc3c13fd9959c7f7c7955bf4956cd0a4e4d9c0b50e80819b0657b1671e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          9.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-03/saddle",
+      "part": "aurelian.dragon-prince-saddle@1",
+      "definition_sha256": "840f5d9578d712ede23141c2309ee6f4ce1d5fe2e044c51e06c5c87a1798bf4f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          9.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-03/riding-legs",
+      "part": "aurelian.dragon-prince-riding-legs@1",
+      "definition_sha256": "e4b3c2d643307b6fb871003d031a690bb88dc160fe873459ed558c6320cdad06",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          9.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-03/tack",
+      "part": "aurelian.expansion-light-horse-tack@1",
+      "definition_sha256": "4fb7c42d79abea572319c9ede85e696bd4ba433d2eff21f5b9758c40939e560d",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          9.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-03/coat",
+      "part": "aurelian.expansion-reaver-coat@1",
+      "definition_sha256": "ba95f83c6f0d5532ea29341ab88c72b61def6a279cffc5c29544528cb2615799",
+      "mount": [
+        [
+          0.9396926207859084,
+          -0.3420201433256687,
+          0.0,
+          9.0
+        ],
+        [
+          0.3420201433256687,
+          0.9396926207859084,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-03/head",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
+      "mount": [
+        [
+          0.9132088105587082,
+          -0.4069092277451397,
+          0.021784151607306724,
+          9.048623733895324
+        ],
+        [
+          0.40728256858446543,
+          0.9131478737040839,
+          -0.01678896587678455,
+          -0.1270333744498871
+        ],
+        [
+          -0.013060567,
+          0.024204136,
+          0.999621719,
+          11.997198264000001
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-03/helmet",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "mount": [
+        [
+          0.9132088105587082,
+          -0.4069092277451397,
+          0.021784151607306724,
+          9.048623733895324
+        ],
+        [
+          0.40728256858446543,
+          0.9131478737040839,
+          -0.01678896587678455,
+          -0.1270333744498871
+        ],
+        [
+          -0.013060567,
+          0.024204136,
+          0.999621719,
+          11.997198264000001
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-03/crest",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
+      "mount": [
+        [
+          0.9132088105587082,
+          -0.4069092277451397,
+          0.021784151607306724,
+          9.048623733895324
+        ],
+        [
+          0.40728256858446543,
+          0.9131478737040839,
+          -0.01678896587678455,
+          -0.1270333744498871
+        ],
+        [
+          -0.013060567,
+          0.024204136,
+          0.999621719,
+          11.997198264000001
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-03/bow-arm",
+      "part": "aurelian.archer-bow-arm-accepted-r7@1",
+      "definition_sha256": "cd97406a84841557c32b495b5472bad0561f6e6bbacb3459e34c7d7728f8b943",
+      "mount": [
+        [
+          0.9396926207859084,
+          -0.3420201433256687,
+          0.0,
+          9.0
+        ],
+        [
+          0.3420201433256687,
+          0.9396926207859084,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-03/draw-arm",
+      "part": "aurelian.archer-draw-arm-accepted-r6@1",
+      "definition_sha256": "0cbed2a4feafa1347540e5b032a6e66a974f46037fb4d99331d8695f4118cb76",
+      "mount": [
+        [
+          0.9396926207859084,
+          -0.3420201433256687,
+          0.0,
+          9.0
+        ],
+        [
+          0.3420201433256687,
+          0.9396926207859084,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-03/bow",
+      "part": "aurelian.archer-bow@4",
+      "definition_sha256": "7cfad1bc37db98dc26d0a948950c3d663fbc4c5d9e78484339ef420a9958ce22",
+      "mount": [
+        [
+          0.9396926207859084,
+          -0.3420201433256687,
+          0.0,
+          9.0
+        ],
+        [
+          0.3420201433256687,
+          0.9396926207859084,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-03/quiver",
+      "part": "aurelian.archer-quiver@1",
+      "definition_sha256": "93f15975d61a9dcfb4c9afb7e5f77d8594c1650df667b1f2efbb6d0bb3aa52d7",
+      "mount": [
+        [
+          0.9396926207859084,
+          -0.3420201433256687,
+          0.0,
+          9.0
+        ],
+        [
+          0.3420201433256687,
+          0.9396926207859084,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-03/arrow",
+      "part": "aurelian.arrow@1",
+      "definition_sha256": "6496f218aede92f5dceabf068f26465e5547b348bf2f2d70152625d2e9a7df36",
+      "mount": [
+        [
+          0.9396926207859084,
+          -0.3420201433256687,
+          0.0,
+          9.773346048926502
+        ],
+        [
+          0.3420201433256687,
+          0.9396926207859084,
+          0.0,
+          -0.5166583867603135
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reavers/reaver-03/bow-ferrule",
+      "part": "aurelian.archer-bow-ferrule@3",
+      "definition_sha256": "d9b9388f9d9cd4998dd80db498ffb6ad5ef25da6ff51438d1ece116beca61631",
+      "mount": [
+        [
+          0.9396926207859084,
+          -0.3420201433256687,
+          0.0,
+          10.320578278247572
+        ],
+        [
+          0.3420201433256687,
+          0.9396926207859084,
+          0.0,
+          -2.020166580017767
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.7
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/base",
+      "part": "aurelian.expansion-chariot-base@1",
+      "definition_sha256": "778140148443c07225ad34fd323dc610d03ca9a728d16559a0d94926c5086e5c",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/vehicle",
+      "part": "aurelian.expansion-chariot@1",
+      "definition_sha256": "4ec066cabc65bbe7d261ca91648b168f44d6b16ccfba2644d358266c485d27e4",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/reins",
+      "part": "aurelian.expansion-chariot-reins@1",
+      "definition_sha256": "be0669969aea7d9a6490df2d035bbbb48055c4ac960aaaa384f3dcc59631c5f1",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/team-1/horse",
+      "part": "aurelian.dragon-prince-horse@7",
+      "definition_sha256": "297b67bc3c13fd9959c7f7c7955bf4956cd0a4e4d9c0b50e80819b0657b1671e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          29.75
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -4.4
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/team-1/tack",
+      "part": "aurelian.expansion-light-horse-tack@1",
+      "definition_sha256": "4fb7c42d79abea572319c9ede85e696bd4ba433d2eff21f5b9758c40939e560d",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          29.75
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -4.4
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/team-2/horse",
+      "part": "aurelian.dragon-prince-horse@7",
+      "definition_sha256": "297b67bc3c13fd9959c7f7c7955bf4956cd0a4e4d9c0b50e80819b0657b1671e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          34.25
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -4.4
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/team-2/tack",
+      "part": "aurelian.expansion-light-horse-tack@1",
+      "definition_sha256": "4fb7c42d79abea572319c9ede85e696bd4ba433d2eff21f5b9758c40939e560d",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          34.25
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -4.4
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/driver/left-leg",
+      "part": "aurelian.left-leg-c@6",
+      "definition_sha256": "dcfd7f32708c024c7944c7ff0da4e94e25bf80e2ca125c6402d6614dc36b6da3",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/driver/right-leg",
+      "part": "aurelian.right-leg-c@6",
+      "definition_sha256": "b16677ff963cd89cb212087bd3141d4219014b277594c4ee363816648e7a5df6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/driver/torso",
+      "part": "aurelian.readable-torso-trial@1",
+      "definition_sha256": "603c45b71a9d401efa7e4410b5e5a9afde75998a479ecfda98e50e5a54ac52cc",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/driver/head",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/driver/helmet",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/driver/crest",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/driver/arms",
+      "part": "aurelian.expansion-driver-arms@1",
+      "definition_sha256": "275914c2ceb88e39cc9d6c671e5d6bfbc1039b6268487d56139bb10581d96744",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/driver/coat",
+      "part": "aurelian.expansion-reaver-coat@1",
+      "definition_sha256": "ba95f83c6f0d5532ea29341ab88c72b61def6a279cffc5c29544528cb2615799",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/passenger/left-leg",
+      "part": "aurelian.left-leg-c@6",
+      "definition_sha256": "dcfd7f32708c024c7944c7ff0da4e94e25bf80e2ca125c6402d6614dc36b6da3",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/passenger/right-leg",
+      "part": "aurelian.right-leg-c@6",
+      "definition_sha256": "b16677ff963cd89cb212087bd3141d4219014b277594c4ee363816648e7a5df6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/passenger/torso",
+      "part": "aurelian.readable-torso-trial@1",
+      "definition_sha256": "603c45b71a9d401efa7e4410b5e5a9afde75998a479ecfda98e50e5a54ac52cc",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/passenger/chest",
+      "part": "aurelian.readable-chest-plate-trial@1",
+      "definition_sha256": "c18a02b6b4448d46f841bce70e938731b0bd1ba0bd6c4ece4e612b7f355f3403",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/passenger/head",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/passenger/helmet",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/passenger/crest",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/passenger/arms",
+      "part": "aurelian.expansion-hero-arms@1",
+      "definition_sha256": "d6efd17ce75fffd624616689d6a0ba0672d56ce2d6a5702b73921a00d85f15f5",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/passenger/regalia",
+      "part": "aurelian.expansion-hero-regalia@1",
+      "definition_sha256": "206f88a90d486d7f900acd0f62a4a32c763c6d404d65fc42764dde3fd0e2a439",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/passenger/sword",
+      "part": "aurelian.expansion-command-sword@1",
+      "definition_sha256": "a2075ba2a1b826eb1a6f16350b9caa7c6ef29f7c6ed2fd8fe5f30bfc15caf3ac",
+      "mount": [
+        [
+          -0.8012516067574695,
+          0.2465415688836028,
+          0.5451725575274173,
+          33.8
+        ],
+        [
+          0.1703112865649484,
+          0.9674461963679652,
+          -0.18719487920813602,
+          4.1
+        ],
+        [
+          -0.5735764363510459,
+          -0.05714115806989163,
+          -0.8171566310795416,
+          8.799999999999999
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/passenger/shield",
+      "part": "aurelian.shield@6",
+      "definition_sha256": "538846584437e7cdfd7d8ad1d2a95c49994690a51fa88f21427e05ea201b3cfa",
+      "mount": [
+        [
+          0.9902680687415704,
+          0.13917310096006544,
+          0.0,
+          30.3
+        ],
+        [
+          -0.13917310096006544,
+          0.9902680687415704,
+          0.0,
+          3.2
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.85
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/passenger/shield-insignia",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
+      "mount": [
+        [
+          0.9902680687415704,
+          0.13917310096006544,
+          0.0,
+          30.3
+        ],
+        [
+          -0.13917310096006544,
+          0.9902680687415704,
+          0.0,
+          3.2
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.85
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "chariot/passenger/mail-skirt",
+      "part": "aurelian.readable-mail-trial@3",
+      "definition_sha256": "0f3af0700835e3842fde7fe7c2f02883a680b410e9828c5f18601509af887994",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/base",
+      "part": "aurelian.expansion-artillery-base@1",
+      "definition_sha256": "10cc74aa480fa1781996dfe4e760688d41adc1c37a420af06eedad368b216106",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/engine",
+      "part": "aurelian.expansion-bolt-thrower@1",
+      "definition_sha256": "ee4ad6da8ececf443906e7d70650b9d7b3d424bb9f184b3833c3dc47b2882f3b",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.1
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/crew-1/left-leg",
+      "part": "aurelian.left-leg-c@6",
+      "definition_sha256": "dcfd7f32708c024c7944c7ff0da4e94e25bf80e2ca125c6402d6614dc36b6da3",
+      "mount": [
+        [
+          0.42261826174069944,
+          -0.9063077870366499,
+          0.0,
+          52.65
+        ],
+        [
+          0.9063077870366499,
+          0.42261826174069944,
+          0.0,
+          1.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/crew-1/right-leg",
+      "part": "aurelian.right-leg-c@6",
+      "definition_sha256": "b16677ff963cd89cb212087bd3141d4219014b277594c4ee363816648e7a5df6",
+      "mount": [
+        [
+          0.42261826174069944,
+          -0.9063077870366499,
+          0.0,
+          52.65
+        ],
+        [
+          0.9063077870366499,
+          0.42261826174069944,
+          0.0,
+          1.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/crew-1/torso",
+      "part": "aurelian.readable-torso-trial@1",
+      "definition_sha256": "603c45b71a9d401efa7e4410b5e5a9afde75998a479ecfda98e50e5a54ac52cc",
+      "mount": [
+        [
+          0.42261826174069944,
+          -0.9063077870366499,
+          0.0,
+          52.65
+        ],
+        [
+          0.9063077870366499,
+          0.42261826174069944,
+          0.0,
+          1.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/crew-1/head",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
+      "mount": [
+        [
+          0.42261826174069944,
+          -0.9063077870366499,
+          0.0,
+          52.65
+        ],
+        [
+          0.9063077870366499,
+          0.42261826174069944,
+          0.0,
+          1.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/crew-1/helmet",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "mount": [
+        [
+          0.42261826174069944,
+          -0.9063077870366499,
+          0.0,
+          52.65
+        ],
+        [
+          0.9063077870366499,
+          0.42261826174069944,
+          0.0,
+          1.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/crew-1/crest",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
+      "mount": [
+        [
+          0.42261826174069944,
+          -0.9063077870366499,
+          0.0,
+          52.65
+        ],
+        [
+          0.9063077870366499,
+          0.42261826174069944,
+          0.0,
+          1.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/crew-1/arms",
+      "part": "aurelian.expansion-crew-arms@2",
+      "definition_sha256": "eed85759ad0a4f4573d7f6f216c5e628f4ee72613c52703c7ff5cd5549ddcc14",
+      "mount": [
+        [
+          0.42261826174069944,
+          -0.9063077870366499,
+          0.0,
+          52.65
+        ],
+        [
+          0.9063077870366499,
+          0.42261826174069944,
+          0.0,
+          1.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/crew-1/coat",
+      "part": "aurelian.expansion-reaver-coat@1",
+      "definition_sha256": "ba95f83c6f0d5532ea29341ab88c72b61def6a279cffc5c29544528cb2615799",
+      "mount": [
+        [
+          0.42261826174069944,
+          -0.9063077870366499,
+          0.0,
+          52.65
+        ],
+        [
+          0.9063077870366499,
+          0.42261826174069944,
+          0.0,
+          1.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/crew-2/left-leg",
+      "part": "aurelian.left-leg-c@6",
+      "definition_sha256": "dcfd7f32708c024c7944c7ff0da4e94e25bf80e2ca125c6402d6614dc36b6da3",
+      "mount": [
+        [
+          0.42261826174069944,
+          0.9063077870366499,
+          0.0,
+          60.1
+        ],
+        [
+          -0.9063077870366499,
+          0.42261826174069944,
+          0.0,
+          1.7
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/crew-2/right-leg",
+      "part": "aurelian.right-leg-c@6",
+      "definition_sha256": "b16677ff963cd89cb212087bd3141d4219014b277594c4ee363816648e7a5df6",
+      "mount": [
+        [
+          0.42261826174069944,
+          0.9063077870366499,
+          0.0,
+          60.1
+        ],
+        [
+          -0.9063077870366499,
+          0.42261826174069944,
+          0.0,
+          1.7
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/crew-2/torso",
+      "part": "aurelian.readable-torso-trial@1",
+      "definition_sha256": "603c45b71a9d401efa7e4410b5e5a9afde75998a479ecfda98e50e5a54ac52cc",
+      "mount": [
+        [
+          0.42261826174069944,
+          0.9063077870366499,
+          0.0,
+          60.1
+        ],
+        [
+          -0.9063077870366499,
+          0.42261826174069944,
+          0.0,
+          1.7
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/crew-2/head",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
+      "mount": [
+        [
+          0.42261826174069944,
+          0.9063077870366499,
+          0.0,
+          60.1
+        ],
+        [
+          -0.9063077870366499,
+          0.42261826174069944,
+          0.0,
+          1.7
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/crew-2/helmet",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "mount": [
+        [
+          0.42261826174069944,
+          0.9063077870366499,
+          0.0,
+          60.1
+        ],
+        [
+          -0.9063077870366499,
+          0.42261826174069944,
+          0.0,
+          1.7
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/crew-2/crest",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
+      "mount": [
+        [
+          0.42261826174069944,
+          0.9063077870366499,
+          0.0,
+          60.1
+        ],
+        [
+          -0.9063077870366499,
+          0.42261826174069944,
+          0.0,
+          1.7
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/crew-2/arms",
+      "part": "aurelian.expansion-crew-arms@2",
+      "definition_sha256": "eed85759ad0a4f4573d7f6f216c5e628f4ee72613c52703c7ff5cd5549ddcc14",
+      "mount": [
+        [
+          0.42261826174069944,
+          0.9063077870366499,
+          0.0,
+          60.1
+        ],
+        [
+          -0.9063077870366499,
+          0.42261826174069944,
+          0.0,
+          1.7
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/crew-2/coat",
+      "part": "aurelian.expansion-reaver-coat@1",
+      "definition_sha256": "ba95f83c6f0d5532ea29341ab88c72b61def6a279cffc5c29544528cb2615799",
+      "mount": [
+        [
+          0.42261826174069944,
+          0.9063077870366499,
+          0.0,
+          60.1
+        ],
+        [
+          -0.9063077870366499,
+          0.42261826174069944,
+          0.0,
+          1.7
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "bolt-thrower/crew-2/spare-bolt",
+      "part": "aurelian.expansion-loader-bolt@1",
+      "definition_sha256": "0c0aabfc96f341fa09d4ad5bccd874356a094c618cd1708b9209341e87fdf8a8",
+      "mount": [
+        [
+          0.42261826174069944,
+          0.9063077870366499,
+          0.0,
+          60.1
+        ],
+        [
+          -0.9063077870366499,
+          0.42261826174069944,
+          0.0,
+          1.7
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "giant-eagle/base",
+      "part": "aurelian.expansion-creature-base@1",
+      "definition_sha256": "d82f2eeeb1e33c1aad3518c2a4e3415513d9e649dd70732f889a59c8b07873b6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "giant-eagle/creature",
+      "part": "aurelian.expansion-giant-eagle@1",
+      "definition_sha256": "d0b700c340be8620043a25281c261d4bbd4a1ace121048824dcc319ccd0dddd2",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "dragon-rider/base",
+      "part": "aurelian.expansion-dragon-base@1",
+      "definition_sha256": "42ac95003e4bd4d9211272571fa91efc689a54aac6cde6f87977a38f2ca7df47",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "dragon-rider/creature",
+      "part": "aurelian.expansion-dragon@3",
+      "definition_sha256": "1cfd41ca219cfdb6d1826888027e9be2e04e230c6173b801055f8f03aa4cbaae",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "dragon-rider/rider/saddle-and-legs",
+      "part": "aurelian.expansion-dragon-seat@1",
+      "definition_sha256": "73c47648f155ff2281acdb47ca936fba02b9395658b6fe2a1d79b600213ff6f0",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.65
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          7.55
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "dragon-rider/rider/torso",
+      "part": "aurelian.readable-torso-trial@1",
+      "definition_sha256": "603c45b71a9d401efa7e4410b5e5a9afde75998a479ecfda98e50e5a54ac52cc",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.65
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "dragon-rider/rider/chest",
+      "part": "aurelian.readable-chest-plate-trial@1",
+      "definition_sha256": "c18a02b6b4448d46f841bce70e938731b0bd1ba0bd6c4ece4e612b7f355f3403",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.65
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "dragon-rider/rider/head",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.65
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "dragon-rider/rider/helmet",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.65
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "dragon-rider/rider/crest",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.65
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "dragon-rider/rider/arms",
+      "part": "aurelian.expansion-hero-arms@1",
+      "definition_sha256": "d6efd17ce75fffd624616689d6a0ba0672d56ce2d6a5702b73921a00d85f15f5",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.65
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "dragon-rider/rider/regalia",
+      "part": "aurelian.expansion-hero-riding-regalia@1",
+      "definition_sha256": "9da3805589fd1a3ab19826ce01739da877827029997dc8bd0442a8c6b249a679",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.65
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "dragon-rider/rider/sword",
+      "part": "aurelian.expansion-command-sword@1",
+      "definition_sha256": "a2075ba2a1b826eb1a6f16350b9caa7c6ef29f7c6ed2fd8fe5f30bfc15caf3ac",
+      "mount": [
+        [
+          -0.8012516067574695,
+          0.2465415688836028,
+          0.5451725575274173,
+          26.8
+        ],
+        [
+          0.1703112865649484,
+          0.9674461963679652,
+          -0.18719487920813602,
+          27.75
+        ],
+        [
+          -0.5735764363510459,
+          -0.05714115806989163,
+          -0.8171566310795416,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "dragon-rider/rider/shield",
+      "part": "aurelian.shield@6",
+      "definition_sha256": "538846584437e7cdfd7d8ad1d2a95c49994690a51fa88f21427e05ea201b3cfa",
+      "mount": [
+        [
+          0.9902680687415704,
+          0.13917310096006544,
+          0.0,
+          23.3
+        ],
+        [
+          -0.13917310096006544,
+          0.9902680687415704,
+          0.0,
+          26.85
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.25
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "dragon-rider/rider/shield-insignia",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
+      "mount": [
+        [
+          0.9902680687415704,
+          0.13917310096006544,
+          0.0,
+          23.3
+        ],
+        [
+          -0.13917310096006544,
+          0.9902680687415704,
+          0.0,
+          26.85
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.25
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "general/base",
+      "part": "aurelian.glue-footing@1",
+      "definition_sha256": "6a75ded8a18458c683a44d2ca33b71470f828eaa447f9559603ec21174a4cb2c",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          48.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "general/terrain",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          48.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "general/character/left-leg",
+      "part": "aurelian.left-leg-c@6",
+      "definition_sha256": "dcfd7f32708c024c7944c7ff0da4e94e25bf80e2ca125c6402d6614dc36b6da3",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          48.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "general/character/right-leg",
+      "part": "aurelian.right-leg-c@6",
+      "definition_sha256": "b16677ff963cd89cb212087bd3141d4219014b277594c4ee363816648e7a5df6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          48.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "general/character/torso",
+      "part": "aurelian.readable-torso-trial@1",
+      "definition_sha256": "603c45b71a9d401efa7e4410b5e5a9afde75998a479ecfda98e50e5a54ac52cc",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          48.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "general/character/chest",
+      "part": "aurelian.readable-chest-plate-trial@1",
+      "definition_sha256": "c18a02b6b4448d46f841bce70e938731b0bd1ba0bd6c4ece4e612b7f355f3403",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          48.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "general/character/head",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          48.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "general/character/helmet",
+      "part": "aurelian.swordmaster-sergeant-helmet-accepted-r2@5",
+      "definition_sha256": "1e316cbc51917bada5728067063cae7cd581c2205f4961d63b6aa225adfc9b3a",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          48.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "general/character/crest",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          48.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "general/character/arms",
+      "part": "aurelian.expansion-general-arms@1",
+      "definition_sha256": "91a3469a01ea42920536a246af1fac4e36551a425bf429585dc33db350a947b0",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          48.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "general/character/regalia",
+      "part": "aurelian.expansion-general-regalia@1",
+      "definition_sha256": "1ebff94d8a5b997b6942d2596fb950acca0e42dda77a65c5ee414b7b713d13c6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          48.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "general/character/sword",
+      "part": "aurelian.expansion-command-sword@1",
+      "definition_sha256": "a2075ba2a1b826eb1a6f16350b9caa7c6ef29f7c6ed2fd8fe5f30bfc15caf3ac",
+      "mount": [
+        [
+          0.9259131813179834,
+          -0.019532430720065913,
+          0.37723104963904686,
+          49.65
+        ],
+        [
+          0.048525053641771385,
+          0.9965381705807833,
+          -0.06750550899422061,
+          26.88
+        ],
+        [
+          -0.374606593415912,
+          0.08080939750840503,
+          0.9236556400757017,
+          7.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "general/character/shield",
+      "part": "aurelian.shield@6",
+      "definition_sha256": "538846584437e7cdfd7d8ad1d2a95c49994690a51fa88f21427e05ea201b3cfa",
+      "mount": [
+        [
+          0.9902680687415704,
+          0.13917310096006544,
+          0.0,
+          46.42
+        ],
+        [
+          -0.13917310096006544,
+          0.9902680687415704,
+          0.0,
+          26.12
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          5.57
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "general/character/shield-insignia",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
+      "mount": [
+        [
+          0.9902680687415704,
+          0.13917310096006544,
+          0.0,
+          46.42
+        ],
+        [
+          -0.13917310096006544,
+          0.9902680687415704,
+          0.0,
+          26.12
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          5.57
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "general/character/mail-skirt",
+      "part": "aurelian.readable-mail-trial@3",
+      "definition_sha256": "0f3af0700835e3842fde7fe7c2f02883a680b410e9828c5f18601509af887994",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          48.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "hero/base",
+      "part": "aurelian.glue-footing@1",
+      "definition_sha256": "6a75ded8a18458c683a44d2ca33b71470f828eaa447f9559603ec21174a4cb2c",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "hero/terrain",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "hero/character/left-leg",
+      "part": "aurelian.left-leg-c@6",
+      "definition_sha256": "dcfd7f32708c024c7944c7ff0da4e94e25bf80e2ca125c6402d6614dc36b6da3",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "hero/character/right-leg",
+      "part": "aurelian.right-leg-c@6",
+      "definition_sha256": "b16677ff963cd89cb212087bd3141d4219014b277594c4ee363816648e7a5df6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "hero/character/torso",
+      "part": "aurelian.readable-torso-trial@1",
+      "definition_sha256": "603c45b71a9d401efa7e4410b5e5a9afde75998a479ecfda98e50e5a54ac52cc",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "hero/character/chest",
+      "part": "aurelian.readable-chest-plate-trial@1",
+      "definition_sha256": "c18a02b6b4448d46f841bce70e938731b0bd1ba0bd6c4ece4e612b7f355f3403",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "hero/character/head",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "hero/character/helmet",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "hero/character/crest",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "hero/character/arms",
+      "part": "aurelian.expansion-hero-arms@1",
+      "definition_sha256": "d6efd17ce75fffd624616689d6a0ba0672d56ce2d6a5702b73921a00d85f15f5",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "hero/character/regalia",
+      "part": "aurelian.expansion-hero-regalia@1",
+      "definition_sha256": "206f88a90d486d7f900acd0f62a4a32c763c6d404d65fc42764dde3fd0e2a439",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "hero/character/sword",
+      "part": "aurelian.expansion-command-sword@1",
+      "definition_sha256": "a2075ba2a1b826eb1a6f16350b9caa7c6ef29f7c6ed2fd8fe5f30bfc15caf3ac",
+      "mount": [
+        [
+          -0.8012516067574695,
+          0.2465415688836028,
+          0.5451725575274173,
+          57.8
+        ],
+        [
+          0.1703112865649484,
+          0.9674461963679652,
+          -0.18719487920813602,
+          27.1
+        ],
+        [
+          -0.5735764363510459,
+          -0.05714115806989163,
+          -0.8171566310795416,
+          5.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "hero/character/shield",
+      "part": "aurelian.shield@6",
+      "definition_sha256": "538846584437e7cdfd7d8ad1d2a95c49994690a51fa88f21427e05ea201b3cfa",
+      "mount": [
+        [
+          0.9902680687415704,
+          0.13917310096006544,
+          0.0,
+          54.3
+        ],
+        [
+          -0.13917310096006544,
+          0.9902680687415704,
+          0.0,
+          26.2
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          5.8500000000000005
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "hero/character/shield-insignia",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
+      "mount": [
+        [
+          0.9902680687415704,
+          0.13917310096006544,
+          0.0,
+          54.3
+        ],
+        [
+          -0.13917310096006544,
+          0.9902680687415704,
+          0.0,
+          26.2
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          5.8500000000000005
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "hero/character/mail-skirt",
+      "part": "aurelian.readable-mail-trial@3",
+      "definition_sha256": "0f3af0700835e3842fde7fe7c2f02883a680b410e9828c5f18601509af887994",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "mage/base",
+      "part": "aurelian.glue-footing@1",
+      "definition_sha256": "6a75ded8a18458c683a44d2ca33b71470f828eaa447f9559603ec21174a4cb2c",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          64.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "mage/terrain",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          64.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "mage/character/left-leg",
+      "part": "aurelian.left-leg-c@6",
+      "definition_sha256": "dcfd7f32708c024c7944c7ff0da4e94e25bf80e2ca125c6402d6614dc36b6da3",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          64.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "mage/character/right-leg",
+      "part": "aurelian.right-leg-c@6",
+      "definition_sha256": "b16677ff963cd89cb212087bd3141d4219014b277594c4ee363816648e7a5df6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          64.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "mage/character/torso",
+      "part": "aurelian.readable-torso-trial@1",
+      "definition_sha256": "603c45b71a9d401efa7e4410b5e5a9afde75998a479ecfda98e50e5a54ac52cc",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          64.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "mage/character/head",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          64.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "mage/character/helmet",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          64.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "mage/character/arms",
+      "part": "aurelian.expansion-mage-arms@1",
+      "definition_sha256": "3b61e065bb4c955606fb7892f6cc1846dc730ad6674a87b8a3e1c5e1175695ed",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          64.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "mage/character/regalia",
+      "part": "aurelian.expansion-mage-regalia@1",
+      "definition_sha256": "c69d8bdec987b847b528918d703a2849839b262fbf83a0c0a1d09b82e812434c",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          64.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "mage/character/staff",
+      "part": "aurelian.expansion-mage-staff@1",
+      "definition_sha256": "d0b7dd67b476820b8a397e32da98a835cdaf39859e3a7a9a1411e2bbbea83e7b",
+      "mount": [
+        [
+          0.992546151641322,
+          0.0,
+          -0.12186934340514748,
+          65.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          26.8
+        ],
+        [
+          0.12186934340514748,
+          0.0,
+          0.992546151641322,
+          6.45
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "label": "High Elf army expansion - first visual pass"
+}

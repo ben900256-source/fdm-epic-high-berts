@@ -1,0 +1,103 @@
+{
+  "component_id": "aurelian.expansion-chariot-reins",
+  "version": 1,
+  "name": "Chariot reins",
+  "family": "army-expansion-chariot-reins",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "rein_-1_0",
+    "rein_-1_1",
+    "rein_1_0",
+    "rein_1_1"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.035,
+        "end": [
+          -1.25,
+          -2.5,
+          6.25
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.38,
+        "role": "rein_-1_0",
+        "start": [
+          -0.88,
+          0.7,
+          8.15
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -2.65,
+          -8.85,
+          7.12
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.38,
+        "role": "rein_-1_1",
+        "start": [
+          -1.25,
+          -2.5,
+          6.25
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          1.25,
+          -2.5,
+          6.25
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.38,
+        "role": "rein_1_0",
+        "start": [
+          0.88,
+          0.7,
+          8.15
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          2.65,
+          -8.85,
+          7.12
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.38,
+        "role": "rein_1_1",
+        "start": [
+          1.25,
+          -2.5,
+          6.25
+        ]
+      }
+    ],
+    "design_notes": "Driver-to-bit reins on the two-horse team; bridges remain a print-review concern.",
+    "export_scale": 1.3,
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [],
+    "provenance": "Original parameterized primitives, rigid frames and local ordered Exact CSG.",
+    "seed": 1001,
+    "visual_only": true
+  }
+}

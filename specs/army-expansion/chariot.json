@@ -1,0 +1,875 @@
+{
+  "schema_version": 1,
+  "assembly_id": "aurelian-expansion-chariot",
+  "placements": [
+    {
+      "instance_id": "base",
+      "part": "aurelian.expansion-chariot-base@1",
+      "definition_sha256": "778140148443c07225ad34fd323dc610d03ca9a728d16559a0d94926c5086e5c",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "vehicle",
+      "part": "aurelian.expansion-chariot@1",
+      "definition_sha256": "4ec066cabc65bbe7d261ca91648b168f44d6b16ccfba2644d358266c485d27e4",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "reins",
+      "part": "aurelian.expansion-chariot-reins@1",
+      "definition_sha256": "be0669969aea7d9a6490df2d035bbbb48055c4ac960aaaa384f3dcc59631c5f1",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "team-1/horse",
+      "part": "aurelian.dragon-prince-horse@7",
+      "definition_sha256": "297b67bc3c13fd9959c7f7c7955bf4956cd0a4e4d9c0b50e80819b0657b1671e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.25
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -4.4
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "team-1/tack",
+      "part": "aurelian.expansion-light-horse-tack@1",
+      "definition_sha256": "4fb7c42d79abea572319c9ede85e696bd4ba433d2eff21f5b9758c40939e560d",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.25
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -4.4
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "team-2/horse",
+      "part": "aurelian.dragon-prince-horse@7",
+      "definition_sha256": "297b67bc3c13fd9959c7f7c7955bf4956cd0a4e4d9c0b50e80819b0657b1671e",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.25
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -4.4
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "team-2/tack",
+      "part": "aurelian.expansion-light-horse-tack@1",
+      "definition_sha256": "4fb7c42d79abea572319c9ede85e696bd4ba433d2eff21f5b9758c40939e560d",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.25
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -4.4
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "driver/left-leg",
+      "part": "aurelian.left-leg-c@6",
+      "definition_sha256": "dcfd7f32708c024c7944c7ff0da4e94e25bf80e2ca125c6402d6614dc36b6da3",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "driver/right-leg",
+      "part": "aurelian.right-leg-c@6",
+      "definition_sha256": "b16677ff963cd89cb212087bd3141d4219014b277594c4ee363816648e7a5df6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "driver/torso",
+      "part": "aurelian.readable-torso-trial@1",
+      "definition_sha256": "603c45b71a9d401efa7e4410b5e5a9afde75998a479ecfda98e50e5a54ac52cc",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "driver/head",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "driver/helmet",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "driver/crest",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "driver/arms",
+      "part": "aurelian.expansion-driver-arms@1",
+      "definition_sha256": "275914c2ceb88e39cc9d6c671e5d6bfbc1039b6268487d56139bb10581d96744",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "driver/coat",
+      "part": "aurelian.expansion-reaver-coat@1",
+      "definition_sha256": "ba95f83c6f0d5532ea29341ab88c72b61def6a279cffc5c29544528cb2615799",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "passenger/left-leg",
+      "part": "aurelian.left-leg-c@6",
+      "definition_sha256": "dcfd7f32708c024c7944c7ff0da4e94e25bf80e2ca125c6402d6614dc36b6da3",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "passenger/right-leg",
+      "part": "aurelian.right-leg-c@6",
+      "definition_sha256": "b16677ff963cd89cb212087bd3141d4219014b277594c4ee363816648e7a5df6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "passenger/torso",
+      "part": "aurelian.readable-torso-trial@1",
+      "definition_sha256": "603c45b71a9d401efa7e4410b5e5a9afde75998a479ecfda98e50e5a54ac52cc",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "passenger/chest",
+      "part": "aurelian.readable-chest-plate-trial@1",
+      "definition_sha256": "c18a02b6b4448d46f841bce70e938731b0bd1ba0bd6c4ece4e612b7f355f3403",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "passenger/head",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "passenger/helmet",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "passenger/crest",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "passenger/arms",
+      "part": "aurelian.expansion-hero-arms@1",
+      "definition_sha256": "d6efd17ce75fffd624616689d6a0ba0672d56ce2d6a5702b73921a00d85f15f5",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "passenger/regalia",
+      "part": "aurelian.expansion-hero-regalia@1",
+      "definition_sha256": "206f88a90d486d7f900acd0f62a4a32c763c6d404d65fc42764dde3fd0e2a439",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "passenger/sword",
+      "part": "aurelian.expansion-command-sword@1",
+      "definition_sha256": "a2075ba2a1b826eb1a6f16350b9caa7c6ef29f7c6ed2fd8fe5f30bfc15caf3ac",
+      "mount": [
+        [
+          -0.8012516067574695,
+          0.2465415688836028,
+          0.5451725575274173,
+          1.8
+        ],
+        [
+          0.1703112865649484,
+          0.9674461963679652,
+          -0.18719487920813602,
+          4.1
+        ],
+        [
+          -0.5735764363510459,
+          -0.05714115806989163,
+          -0.8171566310795416,
+          8.799999999999999
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "passenger/shield",
+      "part": "aurelian.shield@6",
+      "definition_sha256": "538846584437e7cdfd7d8ad1d2a95c49994690a51fa88f21427e05ea201b3cfa",
+      "mount": [
+        [
+          0.9902680687415704,
+          0.13917310096006544,
+          0.0,
+          -1.7
+        ],
+        [
+          -0.13917310096006544,
+          0.9902680687415704,
+          0.0,
+          3.2
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.85
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "passenger/shield-insignia",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
+      "mount": [
+        [
+          0.9902680687415704,
+          0.13917310096006544,
+          0.0,
+          -1.7
+        ],
+        [
+          -0.13917310096006544,
+          0.9902680687415704,
+          0.0,
+          3.2
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.85
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "passenger/mail-skirt",
+      "part": "aurelian.readable-mail-trial@3",
+      "definition_sha256": "0f3af0700835e3842fde7fe7c2f02883a680b410e9828c5f18601509af887994",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "label": "Chariot - two-horse team and crew (visual-only)"
+}

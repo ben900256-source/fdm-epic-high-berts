@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "assembly_id": "aurelian-expansion-giant-eagle",
+  "placements": [
+    {
+      "instance_id": "base",
+      "part": "aurelian.expansion-creature-base@1",
+      "definition_sha256": "d82f2eeeb1e33c1aad3518c2a4e3415513d9e649dd70732f889a59c8b07873b6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "creature",
+      "part": "aurelian.expansion-giant-eagle@1",
+      "definition_sha256": "d0b700c340be8620043a25281c261d4bbd4a1ace121048824dcc319ccd0dddd2",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "label": "Giant Eagle - perched with swept wings (visual-only)"
+}

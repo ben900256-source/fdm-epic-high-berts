@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "assembly_id": "aurelian-expansion-mage",
+  "placements": [
+    {
+      "instance_id": "base",
+      "part": "aurelian.glue-footing@1",
+      "definition_sha256": "6a75ded8a18458c683a44d2ca33b71470f828eaa447f9559603ec21174a4cb2c",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "terrain",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/left-leg",
+      "part": "aurelian.left-leg-c@6",
+      "definition_sha256": "dcfd7f32708c024c7944c7ff0da4e94e25bf80e2ca125c6402d6614dc36b6da3",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/right-leg",
+      "part": "aurelian.right-leg-c@6",
+      "definition_sha256": "b16677ff963cd89cb212087bd3141d4219014b277594c4ee363816648e7a5df6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/torso",
+      "part": "aurelian.readable-torso-trial@1",
+      "definition_sha256": "603c45b71a9d401efa7e4410b5e5a9afde75998a479ecfda98e50e5a54ac52cc",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/head",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/helmet",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/arms",
+      "part": "aurelian.expansion-mage-arms@1",
+      "definition_sha256": "3b61e065bb4c955606fb7892f6cc1846dc730ad6674a87b8a3e1c5e1175695ed",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/regalia",
+      "part": "aurelian.expansion-mage-regalia@1",
+      "definition_sha256": "c69d8bdec987b847b528918d703a2849839b262fbf83a0c0a1d09b82e812434c",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/staff",
+      "part": "aurelian.expansion-mage-staff@1",
+      "definition_sha256": "d0b7dd67b476820b8a397e32da98a835cdaf39859e3a7a9a1411e2bbbea83e7b",
+      "mount": [
+        [
+          0.992546151641322,
+          0.0,
+          -0.12186934340514748,
+          1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.2
+        ],
+        [
+          0.12186934340514748,
+          0.0,
+          0.992546151641322,
+          6.45
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "label": "Mage on foot (visual-only)"
+}

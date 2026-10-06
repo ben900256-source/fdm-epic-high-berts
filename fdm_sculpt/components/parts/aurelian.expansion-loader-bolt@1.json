@@ -1,0 +1,96 @@
+{
+  "component_id": "aurelian.expansion-loader-bolt",
+  "version": 1,
+  "name": "Loader bolt",
+  "family": "army-expansion-loader-bolt",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "spare_bolt",
+    "spare_bolt_tip"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.035,
+        "end": [
+          2.15,
+          -1.34,
+          -1.5
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.32,
+        "role": "spare_bolt",
+        "start": [
+          -1.65,
+          -1.12,
+          -0.96
+        ]
+      },
+      {
+        "bevel": 0,
+        "depth": 0.8090735442467517,
+        "export": true,
+        "frame_mm": [
+          [
+            0.06122304003696075,
+            0.13621834047872827,
+            0.9887852664182724,
+            2.55
+          ],
+          [
+            0.9980886102025567,
+            1.734723475976807e-18,
+            -0.061799079151141786,
+            -1.365
+          ],
+          [
+            -0.00841816800508211,
+            0.9906788398452958,
+            -0.13595797413251254,
+            -1.5550000000000002
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.45,
+        "radius2": 0.14,
+        "role": "spare_bolt_tip",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 4
+      }
+    ],
+    "design_notes": "Spare bolt rests through the two loading hands; a removable support decision has not been evaluated.",
+    "export_scale": 1.3,
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [],
+    "provenance": "Original parameterized primitives, rigid frames and local ordered Exact CSG.",
+    "seed": 1001,
+    "visual_only": true
+  }
+}

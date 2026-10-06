@@ -1,0 +1,503 @@
+{
+  "component_id": "aurelian.expansion-mage-regalia",
+  "version": 1,
+  "name": "Mage regalia",
+  "family": "army-expansion-mage-regalia",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "robe",
+    "mantle",
+    "collar",
+    "book",
+    "book_clasp",
+    "robe_fold_0",
+    "robe_fold_1",
+    "robe_fold_2",
+    "robe_fold_3",
+    "robe_fold_4",
+    "robe_fold_5",
+    "robe_fold_6",
+    "mantle_gem"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0,
+        "depth": 3.8500000000000005,
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.05
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -2.725
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 1.58,
+        "radius2": 0.99,
+        "role": "robe",
+        "scale": [
+          1,
+          0.72,
+          1
+        ],
+        "vertices": 40
+      },
+      {
+        "dimensions": [
+          2.8,
+          1.7,
+          0.94
+        ],
+        "export": true,
+        "location": [
+          0,
+          0.22,
+          0.74
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "mantle",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          1.65,
+          1.0,
+          1.05
+        ],
+        "export": true,
+        "location": [
+          0,
+          0.45,
+          1.22
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "collar",
+        "segments": 40
+      },
+      {
+        "bevel": 0.1,
+        "dimensions": [
+          0.9,
+          0.72,
+          1.35
+        ],
+        "export": true,
+        "location": [
+          -0.95,
+          -0.87,
+          -1.0
+        ],
+        "primitive": "cube",
+        "role": "book"
+      },
+      {
+        "bevel": 0.04,
+        "dimensions": [
+          0.4,
+          0.17,
+          0.5
+        ],
+        "export": true,
+        "location": [
+          -0.95,
+          -1.24,
+          -1.0
+        ],
+        "primitive": "cube",
+        "role": "book_clasp"
+      },
+      {
+        "dimensions": [
+          0.27,
+          0.27,
+          3.70258474042121
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.9945055747619476,
+            0.0,
+            -0.10468362702642864,
+            -0.9462000000000002
+          ],
+          [
+            -0.008528797191019866,
+            -0.9966756209526659,
+            -0.08102447912262276,
+            -0.8
+          ],
+          [
+            -0.10433561897014305,
+            0.08147212160376013,
+            -0.991199461266752,
+            -2.635
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "robe_fold_0",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          0.27,
+          0.27,
+          3.6912965960486024
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.9975468157500851,
+            1.734723475976807e-18,
+            -0.07000250271858612,
+            -0.6308
+          ],
+          [
+            -0.005703252414056197,
+            -0.9966756209526658,
+            -0.08127225547823465,
+            -0.8
+          ],
+          [
+            -0.06976978786528751,
+            0.08147212160376013,
+            -0.9942305920170708,
+            -2.635
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "robe_fold_1",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          0.27,
+          0.27,
+          3.6845071095059647
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.999385007529852,
+            0.0,
+            -0.03506574859542711,
+            -0.3154
+          ],
+          [
+            -0.0028568809336935188,
+            -0.9966756209526659,
+            -0.08142201686244684,
+            -0.8
+          ],
+          [
+            -0.03494917675551739,
+            0.08147212160376013,
+            -0.9960626729505999,
+            -2.635
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "robe_fold_2",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          0.27,
+          0.27,
+          3.6822411653774116
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.9966756209526659,
+            -0.08147212160376013,
+            -0.8
+          ],
+          [
+            0.0,
+            0.08147212160376013,
+            -0.9966756209526659,
+            -2.635
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "robe_fold_3",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          0.27,
+          0.27,
+          3.6845071095059647
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.999385007529852,
+            0.0,
+            0.03506574859542711,
+            0.3154
+          ],
+          [
+            0.0028568809336935188,
+            -0.9966756209526659,
+            -0.08142201686244684,
+            -0.8
+          ],
+          [
+            0.03494917675551739,
+            0.08147212160376013,
+            -0.9960626729505999,
+            -2.635
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "robe_fold_4",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          0.27,
+          0.27,
+          3.6912965960486024
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.9975468157500851,
+            -1.734723475976807e-18,
+            0.07000250271858612,
+            0.6308
+          ],
+          [
+            0.005703252414056197,
+            -0.9966756209526658,
+            -0.08127225547823465,
+            -0.8
+          ],
+          [
+            0.06976978786528751,
+            0.08147212160376013,
+            -0.9942305920170708,
+            -2.635
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "robe_fold_5",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          0.27,
+          0.27,
+          3.70258474042121
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.9945055747619476,
+            0.0,
+            0.10468362702642864,
+            0.9462000000000002
+          ],
+          [
+            0.008528797191019866,
+            -0.9966756209526659,
+            -0.08102447912262276,
+            -0.8
+          ],
+          [
+            0.10433561897014305,
+            0.08147212160376013,
+            -0.991199461266752,
+            -2.635
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "robe_fold_6",
+        "segments": 40
+      },
+      {
+        "bevel": 0,
+        "depth": 0.38,
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            -0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.81
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.62
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.3,
+        "radius2": 0.2,
+        "role": "mantle_gem",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 6
+      }
+    ],
+    "design_notes": "Broad connected robe folds and distinct command insignia. Body-local mount; shared face and helmet remain unchanged.",
+    "export_scale": 1.3,
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [],
+    "provenance": "Original parameterized primitives, rigid frames and local ordered Exact CSG.",
+    "seed": 1001,
+    "visual_only": true
+  }
+}

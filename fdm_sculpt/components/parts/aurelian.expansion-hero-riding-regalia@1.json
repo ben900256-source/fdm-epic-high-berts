@@ -1,0 +1,366 @@
+{
+  "component_id": "aurelian.expansion-hero-riding-regalia",
+  "version": 1,
+  "name": "Hero regalia shortened for a saddle",
+  "family": "army-expansion-hero-riding-regalia",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "swept_cloak",
+    "belt",
+    "cloak_fold_0",
+    "cloak_fold_1",
+    "cloak_fold_2",
+    "cloak_fold_3",
+    "cloak_fold_4",
+    "pauldron_-1",
+    "pauldron_1",
+    "breast_medallion"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "dimensions": [
+          2.5,
+          0.82,
+          2.5954785859259175
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.9951047583608832,
+            0.0,
+            0.09882570458908084,
+            0.225
+          ],
+          [
+            -0.017448114760170563,
+            -0.9842908805195457,
+            0.17569014149169926,
+            1.05
+          ],
+          [
+            0.09727323978795088,
+            -0.17655441803041177,
+            -0.9794725388162234,
+            -0.55
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "swept_cloak",
+        "segments": 40
+      },
+      {
+        "bevel": 0.08,
+        "dimensions": [
+          2.3,
+          1.35,
+          0.3
+        ],
+        "export": true,
+        "location": [
+          0,
+          -0.12,
+          -0.85
+        ],
+        "primitive": "cube",
+        "role": "belt"
+      },
+      {
+        "dimensions": [
+          0.25,
+          0.25,
+          2.1054692066140506
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.9997031265110403,
+            -4.336808689942018e-19,
+            0.024365115309617384,
+            -0.595
+          ],
+          [
+            -0.0036949741917525103,
+            -0.988434227474423,
+            0.15160516192650825,
+            1.32
+          ],
+          [
+            0.024083313928386894,
+            -0.15165018284539095,
+            -0.9881407875567054,
+            -0.55
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "cloak_fold_0",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          0.25,
+          0.25,
+          2.1085763087922618
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.9982300094372142,
+            0.0,
+            0.059471407070786,
+            -0.21000000000000002
+          ],
+          [
+            -0.009018849756357371,
+            -0.988434227474423,
+            0.15138176345290985,
+            1.32
+          ],
+          [
+            0.05878357430482929,
+            -0.15165018284539092,
+            -0.9866847082198589,
+            -0.55
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "cloak_fold_1",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          0.25,
+          0.25,
+          2.114277451045629
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.9955382854713901,
+            0.0,
+            0.09435847688832705,
+            0.175
+          ],
+          [
+            -0.014309480273127392,
+            -0.988434227474423,
+            0.1509735630213233,
+            1.32
+          ],
+          [
+            0.09326714820877674,
+            -0.15165018284539095,
+            -0.9840241161211251,
+            -0.55
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "cloak_fold_2",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          0.25,
+          0.25,
+          2.122551730818356
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.9916574084219172,
+            -3.469446951953614e-18,
+            0.1289014519775745,
+            0.56
+          ],
+          [
+            -0.01954792876143555,
+            -0.988434227474423,
+            0.15038502730717024,
+            1.32
+          ],
+          [
+            0.12741060710578525,
+            -0.15165018284539092,
+            -0.980188124412806,
+            -0.55
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "cloak_fold_3",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          0.25,
+          0.25,
+          2.1333692085525184
+        ],
+        "export": true,
+        "frame_mm": [
+          [
+            0.9866291030106848,
+            0.0,
+            0.16298163421788242,
+            0.9450000000000001
+          ],
+          [
+            -0.02471619462958249,
+            -0.988434227474423,
+            0.14962248387215438,
+            1.32
+          ],
+          [
+            0.1610966257106716,
+            -0.15165018284539095,
+            -0.975217975238149,
+            -0.55
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "cloak_fold_4",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          1.32,
+          1.45,
+          0.6
+        ],
+        "export": true,
+        "location": [
+          -0.96,
+          0.02,
+          0.92
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "pauldron_-1",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          1.32,
+          1.45,
+          0.6
+        ],
+        "export": true,
+        "location": [
+          0.96,
+          0.02,
+          0.92
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "pauldron_1",
+        "segments": 40
+      },
+      {
+        "dimensions": [
+          0.85,
+          0.35,
+          0.85
+        ],
+        "export": true,
+        "location": [
+          0,
+          -0.79,
+          0.35
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "breast_medallion",
+        "segments": 40
+      }
+    ],
+    "design_notes": "Shortened riding cloak or robe; shared collar, book and command details.",
+    "export_scale": 1.3,
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [],
+    "provenance": "Original parameterized primitives, rigid frames and local ordered Exact CSG.",
+    "seed": 1001,
+    "visual_only": true
+  }
+}

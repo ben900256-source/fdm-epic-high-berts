@@ -1,0 +1,265 @@
+{
+  "component_id": "aurelian.expansion-mage-staff",
+  "version": 1,
+  "name": "Mage staff",
+  "family": "army-expansion-mage-staff",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "shaft",
+    "socket",
+    "crystal_lower",
+    "crystal_upper",
+    "crescent_-1",
+    "crescent_1"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.035,
+        "end": [
+          0.5,
+          0,
+          4.1
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.5,
+        "role": "shaft",
+        "start": [
+          0,
+          0,
+          -4.5
+        ]
+      },
+      {
+        "dimensions": [
+          1.3,
+          1.05,
+          0.95
+        ],
+        "export": true,
+        "location": [
+          0.5,
+          0,
+          4.0
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "socket",
+        "segments": 40
+      },
+      {
+        "bevel": 0,
+        "depth": 0.77,
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.5
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.365
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.25,
+        "radius2": 0.7,
+        "role": "crystal_lower",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 6
+      },
+      {
+        "bevel": 0,
+        "depth": 1.0499999999999998,
+        "export": true,
+        "frame_mm": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.5
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            5.275
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.7,
+        "radius2": 0.16,
+        "role": "crystal_upper",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 6
+      },
+      {
+        "bevel": 0,
+        "depth": 1.081665382639197,
+        "export": true,
+        "frame_mm": [
+          [
+            0.8320502943378438,
+            0.0,
+            -0.5547001962252289,
+            -0.2
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.5547001962252289,
+            -0.0,
+            0.8320502943378438,
+            4.45
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.3,
+        "radius2": 0.16,
+        "role": "crescent_-1",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 40
+      },
+      {
+        "bevel": 0,
+        "depth": 1.081665382639197,
+        "export": true,
+        "frame_mm": [
+          [
+            0.8320502943378438,
+            -0.0,
+            0.5547001962252289,
+            1.2
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5547001962252289,
+            0.0,
+            0.8320502943378438,
+            4.45
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "primitive": "cone",
+        "radius1": 0.3,
+        "radius2": 0.16,
+        "role": "crescent_1",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "vertices": 40
+      }
+    ],
+    "design_notes": "Substantial shaft and enclosed crystal socket; finite decorative tips.",
+    "export_scale": 1.3,
+    "landmarks": {
+      "grip": [
+        0,
+        0,
+        0
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ],
+      "tip": [
+        0.5,
+        0,
+        5.8
+      ]
+    },
+    "operations": [],
+    "provenance": "Original parameterized primitives, rigid frames and local ordered Exact CSG.",
+    "seed": 1001,
+    "visual_only": true
+  }
+}

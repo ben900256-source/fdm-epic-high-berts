@@ -1,0 +1,247 @@
+{
+  "component_id": "aurelian.expansion-light-horse-tack",
+  "version": 1,
+  "name": "Light horse tack",
+  "family": "army-expansion-light-horse-tack",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "cheek_rein_-1_0",
+    "cheek_rein_-1_1",
+    "cheek_rein_-1_2",
+    "cheek_rein_-1_3",
+    "bridle_boss_-1",
+    "cheek_rein_1_0",
+    "cheek_rein_1_1",
+    "cheek_rein_1_2",
+    "cheek_rein_1_3",
+    "bridle_boss_1",
+    "noseband",
+    "browband"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.54,
+          -3.15,
+          7.7
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.18,
+        "role": "cheek_rein_-1_0",
+        "start": [
+          -0.4,
+          -4.45,
+          7.12
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.64,
+          -2.8,
+          7.45
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.18,
+        "role": "cheek_rein_-1_1",
+        "start": [
+          -0.54,
+          -3.15,
+          7.7
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.66,
+          -1.52,
+          5.8
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.18,
+        "role": "cheek_rein_-1_2",
+        "start": [
+          -0.64,
+          -2.8,
+          7.45
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          -0.83,
+          0.1,
+          5.9
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.18,
+        "role": "cheek_rein_-1_3",
+        "start": [
+          -0.66,
+          -1.52,
+          5.8
+        ]
+      },
+      {
+        "dimensions": [
+          0.24,
+          0.43,
+          0.43
+        ],
+        "export": true,
+        "location": [
+          -0.53,
+          -3.15,
+          7.7
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bridle_boss_-1",
+        "segments": 40
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.54,
+          -3.15,
+          7.7
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.18,
+        "role": "cheek_rein_1_0",
+        "start": [
+          0.4,
+          -4.45,
+          7.12
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.64,
+          -2.8,
+          7.45
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.18,
+        "role": "cheek_rein_1_1",
+        "start": [
+          0.54,
+          -3.15,
+          7.7
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.66,
+          -1.52,
+          5.8
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.18,
+        "role": "cheek_rein_1_2",
+        "start": [
+          0.64,
+          -2.8,
+          7.45
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.83,
+          0.1,
+          5.9
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.18,
+        "role": "cheek_rein_1_3",
+        "start": [
+          0.66,
+          -1.52,
+          5.8
+        ]
+      },
+      {
+        "dimensions": [
+          0.24,
+          0.43,
+          0.43
+        ],
+        "export": true,
+        "location": [
+          0.53,
+          -3.15,
+          7.7
+        ],
+        "primitive": "sphere",
+        "ring_count": 24,
+        "role": "bridle_boss_1",
+        "segments": 40
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.42,
+          -4.46,
+          7.17
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.18,
+        "role": "noseband",
+        "start": [
+          -0.42,
+          -4.46,
+          7.17
+        ]
+      },
+      {
+        "bevel": 0.035,
+        "end": [
+          0.54,
+          -3.15,
+          8.1
+        ],
+        "export": true,
+        "primitive": "between",
+        "radius": 0.16,
+        "role": "browband",
+        "start": [
+          -0.54,
+          -3.15,
+          8.1
+        ]
+      }
+    ],
+    "design_notes": "Light bridle and low draped reins for the shared unarmored horse.",
+    "export_scale": 1.3,
+    "landmarks": {
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [],
+    "provenance": "Original parameterized primitives, rigid frames and local ordered Exact CSG.",
+    "seed": 1001,
+    "visual_only": true
+  }
+}

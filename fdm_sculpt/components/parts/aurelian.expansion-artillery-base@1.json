@@ -1,0 +1,58 @@
+{
+  "component_id": "aurelian.expansion-artillery-base",
+  "version": 1,
+  "name": "Artillery base",
+  "family": "army-expansion-artillery-base",
+  "required_anchors": [
+    "mount"
+  ],
+  "semantic_slots": [
+    "mono"
+  ],
+  "output_roles": [
+    "base"
+  ],
+  "parameters": {
+    "atoms": [
+      {
+        "bevel": 0.15,
+        "dimensions": [
+          13,
+          12,
+          1.2
+        ],
+        "export": true,
+        "location": [
+          0,
+          0,
+          0.6
+        ],
+        "primitive": "cube",
+        "role": "base"
+      }
+    ],
+    "design_notes": "",
+    "export_scale": 1.3,
+    "landmarks": {
+      "ground": [
+        0,
+        0,
+        1.2
+      ],
+      "mount": [
+        0,
+        0,
+        0
+      ]
+    },
+    "operations": [],
+    "provenance": "Original parameterized primitives, rigid frames and local ordered Exact CSG.",
+    "seed": 1001,
+    "size_mm": [
+      13,
+      12,
+      1.2
+    ],
+    "visual_only": true
+  }
+}

@@ -1,0 +1,472 @@
+{
+  "schema_version": 1,
+  "assembly_id": "aurelian-expansion-general",
+  "placements": [
+    {
+      "instance_id": "base",
+      "part": "aurelian.glue-footing@1",
+      "definition_sha256": "6a75ded8a18458c683a44d2ca33b71470f828eaa447f9559603ec21174a4cb2c",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "terrain",
+      "part": "aurelian.terrain-soil-gallery@5",
+      "definition_sha256": "d70ec1ac96e6af1f5a7ba241d3b15ebb0ffd8bdafc8002ab9763b4831e0bb53f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/left-leg",
+      "part": "aurelian.left-leg-c@6",
+      "definition_sha256": "dcfd7f32708c024c7944c7ff0da4e94e25bf80e2ca125c6402d6614dc36b6da3",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/right-leg",
+      "part": "aurelian.right-leg-c@6",
+      "definition_sha256": "b16677ff963cd89cb212087bd3141d4219014b277594c4ee363816648e7a5df6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/torso",
+      "part": "aurelian.readable-torso-trial@1",
+      "definition_sha256": "603c45b71a9d401efa7e4410b5e5a9afde75998a479ecfda98e50e5a54ac52cc",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/chest",
+      "part": "aurelian.readable-chest-plate-trial@1",
+      "definition_sha256": "c18a02b6b4448d46f841bce70e938731b0bd1ba0bd6c4ece4e612b7f355f3403",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/head",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/helmet",
+      "part": "aurelian.swordmaster-sergeant-helmet-accepted-r2@5",
+      "definition_sha256": "1e316cbc51917bada5728067063cae7cd581c2205f4961d63b6aa225adfc9b3a",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/crest",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          8.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/arms",
+      "part": "aurelian.expansion-general-arms@1",
+      "definition_sha256": "91a3469a01ea42920536a246af1fac4e36551a425bf429585dc33db350a947b0",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/regalia",
+      "part": "aurelian.expansion-general-regalia@1",
+      "definition_sha256": "1ebff94d8a5b997b6942d2596fb950acca0e42dda77a65c5ee414b7b713d13c6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/sword",
+      "part": "aurelian.expansion-command-sword@1",
+      "definition_sha256": "a2075ba2a1b826eb1a6f16350b9caa7c6ef29f7c6ed2fd8fe5f30bfc15caf3ac",
+      "mount": [
+        [
+          0.9259131813179834,
+          -0.019532430720065913,
+          0.37723104963904686,
+          1.65
+        ],
+        [
+          0.048525053641771385,
+          0.9965381705807833,
+          -0.06750550899422061,
+          -1.12
+        ],
+        [
+          -0.374606593415912,
+          0.08080939750840503,
+          0.9236556400757017,
+          7.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/shield",
+      "part": "aurelian.shield@6",
+      "definition_sha256": "538846584437e7cdfd7d8ad1d2a95c49994690a51fa88f21427e05ea201b3cfa",
+      "mount": [
+        [
+          0.9902680687415704,
+          0.13917310096006544,
+          0.0,
+          -1.58
+        ],
+        [
+          -0.13917310096006544,
+          0.9902680687415704,
+          0.0,
+          -1.88
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          5.57
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/shield-insignia",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
+      "mount": [
+        [
+          0.9902680687415704,
+          0.13917310096006544,
+          0.0,
+          -1.58
+        ],
+        [
+          -0.13917310096006544,
+          0.9902680687415704,
+          0.0,
+          -1.88
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          5.57
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "character/mail-skirt",
+      "part": "aurelian.readable-mail-trial@3",
+      "definition_sha256": "0f3af0700835e3842fde7fe7c2f02883a680b410e9828c5f18601509af887994",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "label": "General on foot (visual-only)"
+}

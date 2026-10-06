@@ -1,0 +1,366 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-05",
+  "status": "first visual pass; unprinted",
+  "digitally_validated": false,
+  "seed": 1001,
+  "export_scale": 1.3,
+  "index": "specs/army-expansion-index.json",
+  "roster_reference": "https://warmaster.info/en/revolution/armies/high-elves",
+  "coverage": [
+    "reavers",
+    "chariots",
+    "giant-eagles",
+    "dragon-rider",
+    "elven-bolt-thrower",
+    "general",
+    "hero",
+    "mage"
+  ],
+  "character_mounts": {
+    "general": [
+      "eagle",
+      "dragon",
+      "chariot"
+    ],
+    "hero": [
+      "eagle",
+      "dragon",
+      "chariot"
+    ],
+    "mage": [
+      "eagle",
+      "dragon",
+      "chariot"
+    ]
+  },
+  "new_component_definitions": {
+    "aurelian.expansion-creature-base@1": "d82f2eeeb1e33c1aad3518c2a4e3415513d9e649dd70732f889a59c8b07873b6",
+    "aurelian.expansion-dragon-base@1": "42ac95003e4bd4d9211272571fa91efc689a54aac6cde6f87977a38f2ca7df47",
+    "aurelian.expansion-chariot-base@1": "778140148443c07225ad34fd323dc610d03ca9a728d16559a0d94926c5086e5c",
+    "aurelian.expansion-artillery-base@1": "10cc74aa480fa1781996dfe4e760688d41adc1c37a420af06eedad368b216106",
+    "aurelian.expansion-giant-eagle@1": "d0b700c340be8620043a25281c261d4bbd4a1ace121048824dcc319ccd0dddd2",
+    "aurelian.expansion-dragon@1": "c3e3cc06e8054f555be4cb432541ea6a57dd4cb8723e771df051572ab21f4110",
+    "aurelian.expansion-eagle-seat@1": "01b0d6f9ebc53a7ff1e0f371764812baaae6b9eb3675b54041707b0c64a222c5",
+    "aurelian.expansion-dragon-seat@1": "73c47648f155ff2281acdb47ca936fba02b9395658b6fe2a1d79b600213ff6f0",
+    "aurelian.expansion-light-horse-tack@1": "4fb7c42d79abea572319c9ede85e696bd4ba433d2eff21f5b9758c40939e560d",
+    "aurelian.expansion-reaver-coat@1": "ba95f83c6f0d5532ea29341ab88c72b61def6a279cffc5c29544528cb2615799",
+    "aurelian.expansion-mage-staff@1": "d0b7dd67b476820b8a397e32da98a835cdaf39859e3a7a9a1411e2bbbea83e7b",
+    "aurelian.expansion-command-sword@1": "a2075ba2a1b826eb1a6f16350b9caa7c6ef29f7c6ed2fd8fe5f30bfc15caf3ac",
+    "aurelian.expansion-chariot@1": "4ec066cabc65bbe7d261ca91648b168f44d6b16ccfba2644d358266c485d27e4",
+    "aurelian.expansion-bolt-thrower@1": "ee4ad6da8ececf443906e7d70650b9d7b3d424bb9f184b3833c3dc47b2882f3b",
+    "aurelian.expansion-general-arms@1": "91a3469a01ea42920536a246af1fac4e36551a425bf429585dc33db350a947b0",
+    "aurelian.expansion-hero-arms@1": "d6efd17ce75fffd624616689d6a0ba0672d56ce2d6a5702b73921a00d85f15f5",
+    "aurelian.expansion-mage-arms@1": "3b61e065bb4c955606fb7892f6cc1846dc730ad6674a87b8a3e1c5e1175695ed",
+    "aurelian.expansion-driver-arms@1": "275914c2ceb88e39cc9d6c671e5d6bfbc1039b6268487d56139bb10581d96744",
+    "aurelian.expansion-crew-arms@1": "db90fb87601688959ea5b497ec32c55433eedfa83d26b28bc4b7608018841d25",
+    "aurelian.expansion-general-regalia@1": "1ebff94d8a5b997b6942d2596fb950acca0e42dda77a65c5ee414b7b713d13c6",
+    "aurelian.expansion-hero-regalia@1": "206f88a90d486d7f900acd0f62a4a32c763c6d404d65fc42764dde3fd0e2a439",
+    "aurelian.expansion-mage-regalia@1": "c69d8bdec987b847b528918d703a2849839b262fbf83a0c0a1d09b82e812434c",
+    "aurelian.expansion-general-riding-regalia@1": "5c14e320f483c1aaae7cac97fc30cce7217b9db945e88feddfdcde2deebc1980",
+    "aurelian.expansion-hero-riding-regalia@1": "9da3805589fd1a3ab19826ce01739da877827029997dc8bd0442a8c6b249a679",
+    "aurelian.expansion-mage-riding-regalia@1": "c4c6a2ad3739221be747a9cb50e234a3c0f83fc7a2b666b49b3177531f844e08",
+    "aurelian.expansion-dragon@2": "b17db9a92d2f130116326b1a7524c836610e217d81b6702a3c153b53a4547ca9",
+    "aurelian.expansion-dragon@3": "1cfd41ca219cfdb6d1826888027e9be2e04e230c6173b801055f8f03aa4cbaae",
+    "aurelian.expansion-crew-arms@2": "eed85759ad0a4f4573d7f6f216c5e628f4ee72613c52703c7ff5cd5549ddcc14",
+    "aurelian.expansion-chariot-reins@1": "be0669969aea7d9a6490df2d035bbbb48055c4ac960aaaa384f3dcc59631c5f1",
+    "aurelian.expansion-loader-bolt@1": "0c0aabfc96f341fa09d4ad5bccd874356a094c618cd1708b9209341e87fdf8a8"
+  },
+  "reused_component_types": [
+    "aurelian.archer-bow-arm-accepted-r7@1",
+    "aurelian.archer-bow-ferrule@3",
+    "aurelian.archer-bow@4",
+    "aurelian.archer-draw-arm-accepted-r6@1",
+    "aurelian.archer-quiver@1",
+    "aurelian.arrow@1",
+    "aurelian.cavalry-base-body-6x12@1",
+    "aurelian.cavalry-soil-6x12@1",
+    "aurelian.crest@7",
+    "aurelian.dragon-prince-horse@7",
+    "aurelian.dragon-prince-riding-legs@1",
+    "aurelian.dragon-prince-saddle@1",
+    "aurelian.glue-footing@1",
+    "aurelian.left-leg-c@6",
+    "aurelian.readable-chest-plate-trial@1",
+    "aurelian.readable-head-trial@5",
+    "aurelian.readable-helmet-trial@5",
+    "aurelian.readable-insignia-trial@6",
+    "aurelian.readable-mail-trial@3",
+    "aurelian.readable-torso-trial@1",
+    "aurelian.right-leg-c@6",
+    "aurelian.shield@6",
+    "aurelian.swordmaster-sergeant-helmet-accepted-r2@5",
+    "aurelian.terrain-soil-gallery@5"
+  ],
+  "reviews": {
+    "aurelian-army-expansion": {
+      "specification": "specs/elf-army-expansion.json",
+      "specification_file_sha256": "33e472bf66a4f9d22fcd7bff382dfa1d8179b7a717e59667a4211306f274b42c",
+      "review_directory": "out/army-expansion-20261005-v3/assemblies/elf-army-expansion",
+      "viewer_revision": "c4eff60fa4999b0512594e81cd689a4121d85615e55c54542e6855a26a6c9074",
+      "placement_count": 150,
+      "saved_provenance_passes": true,
+      "browser_placements_match_recipe": true,
+      "captured_views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-general": {
+      "specification": "specs/army-expansion/general.json",
+      "specification_file_sha256": "3f828ea60e4efc92fc00d37a039d6230a0dca1b2bd582db151a5d9bf02cdf6db",
+      "review_directory": "out/army-expansion-20261005-v2/assemblies/general",
+      "viewer_revision": "3123988498957b2956da565e19b3a5eddaf494f6fd3066a423fe455bc77c72ae",
+      "placement_count": 15,
+      "saved_provenance_passes": true,
+      "browser_placements_match_recipe": true,
+      "captured_views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-hero": {
+      "specification": "specs/army-expansion/hero.json",
+      "specification_file_sha256": "bf3e4f21a0c1231d868b1137c76e621a3167372e26bc42fc451e32ffa37d8f9b",
+      "review_directory": "out/army-expansion-20261005-v2/assemblies/hero",
+      "viewer_revision": "3469beefbc5ce7930975b55674a6cd027480ce3033cdaa9905788ea4d2960906",
+      "placement_count": 15,
+      "saved_provenance_passes": true,
+      "browser_placements_match_recipe": true,
+      "captured_views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-mage": {
+      "specification": "specs/army-expansion/mage.json",
+      "specification_file_sha256": "63201b0ecb809d9c6cedc7d3ec5138d27ab677ef80fecdd157ee809d84bf3724",
+      "review_directory": "out/army-expansion-20261005-v2/assemblies/mage",
+      "viewer_revision": "cbf3c3f626b64ed2f6436d20d932e0619a2d7d8043e26139185d8dba245ee6d5",
+      "placement_count": 10,
+      "saved_provenance_passes": true,
+      "browser_placements_match_recipe": true,
+      "captured_views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-reavers": {
+      "specification": "specs/army-expansion/reavers.json",
+      "specification_file_sha256": "359d1506fb9ae7ae185bb2bfa33811f20bdc7f6fbb3a470d00c6e33b660df399",
+      "review_directory": "out/army-expansion-20261005-v2/assemblies/reavers",
+      "viewer_revision": "3dd61f8cdb1aae069b337c3050e9f9e8c20045701a373d6027c42eb3a7168411",
+      "placement_count": 48,
+      "saved_provenance_passes": true,
+      "browser_placements_match_recipe": true,
+      "captured_views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-giant-eagle": {
+      "specification": "specs/army-expansion/giant-eagle.json",
+      "specification_file_sha256": "1ebda372f16bd25bd95d32859253a0a9ba9049cb274290878b727d9cc80e93a7",
+      "review_directory": "out/army-expansion-20261005-v2/assemblies/giant-eagle",
+      "viewer_revision": "5efb1ec4f568f5bae8872a891dd979f1e39039a433f9dd602805feea192afeac",
+      "placement_count": 2,
+      "saved_provenance_passes": true,
+      "browser_placements_match_recipe": true,
+      "captured_views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-dragon-rider": {
+      "specification": "specs/army-expansion/dragon-rider.json",
+      "specification_file_sha256": "ef650704f7bcfe4bd3a48ba608248760103d2e69bcd0627466810d5b96befd7c",
+      "review_directory": "out/army-expansion-20261005-v3/assemblies/dragon-rider",
+      "viewer_revision": "bcf7663c561143dca1f6538b874d450d728811b0e5b617f408b11a5a1c832c08",
+      "placement_count": 13,
+      "saved_provenance_passes": true,
+      "browser_placements_match_recipe": true,
+      "captured_views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-general-on-eagle": {
+      "specification": "specs/army-expansion/general-on-eagle.json",
+      "specification_file_sha256": "73053ca60fc2ffaff6b675a63a76cfa397e05d742e37fbed2ddfadaee5f690a9",
+      "review_directory": "out/army-expansion-20261005-v2/assemblies/general-on-eagle",
+      "viewer_revision": "340d5d7d165eecbd8195db5bf4f4ae1c40dc940d89b2902be5c5318f5b80e158",
+      "placement_count": 13,
+      "saved_provenance_passes": true,
+      "browser_placements_match_recipe": true,
+      "captured_views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-hero-on-eagle": {
+      "specification": "specs/army-expansion/hero-on-eagle.json",
+      "specification_file_sha256": "da906eba89169a5544f27182c1a516964a8462d8e5e666cc9682c39e96be5741",
+      "review_directory": "out/army-expansion-20261005-v2/assemblies/hero-on-eagle",
+      "viewer_revision": "bf3d7370814fc1b43a6b6da19a35777530aa1121b49cd622ccff6c7d1840509c",
+      "placement_count": 13,
+      "saved_provenance_passes": true,
+      "browser_placements_match_recipe": true,
+      "captured_views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-mage-on-eagle": {
+      "specification": "specs/army-expansion/mage-on-eagle.json",
+      "specification_file_sha256": "92f5df40f2b3fbc894bac5267c3edf978429938fd6161e1115e7618604d4277b",
+      "review_directory": "out/army-expansion-20261005-v2/assemblies/mage-on-eagle",
+      "viewer_revision": "fbd4881745a4328e99f2751b5ece0c36b5e53953b8609fc80293bc99c610b233",
+      "placement_count": 9,
+      "saved_provenance_passes": true,
+      "browser_placements_match_recipe": true,
+      "captured_views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-general-on-dragon": {
+      "specification": "specs/army-expansion/general-on-dragon.json",
+      "specification_file_sha256": "e84ad73dd026c0a1a2213b0f8bcd6497ec7c34038217150e868f1fdaaba8cc65",
+      "review_directory": "out/army-expansion-20261005-v3/assemblies/general-on-dragon",
+      "viewer_revision": "230726af421ba06c387717bc1a56795bf6106f4f847fc562160ecb2ea40d6afe",
+      "placement_count": 13,
+      "saved_provenance_passes": true,
+      "browser_placements_match_recipe": true,
+      "captured_views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-hero-on-dragon": {
+      "specification": "specs/army-expansion/hero-on-dragon.json",
+      "specification_file_sha256": "dfb83d3488f69476107d9cc0f585bd4e28c729b925ca49579f0332037096f6dc",
+      "review_directory": "out/army-expansion-20261005-v3/assemblies/hero-on-dragon",
+      "viewer_revision": "fc1093710de086e9077a2df94692ee1d4a01a2171aa3bf087c9d29061ac91799",
+      "placement_count": 13,
+      "saved_provenance_passes": true,
+      "browser_placements_match_recipe": true,
+      "captured_views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-mage-on-dragon": {
+      "specification": "specs/army-expansion/mage-on-dragon.json",
+      "specification_file_sha256": "46df45647da229db83de52798ce70759e49715f37801cd47ee4fe4e157c90704",
+      "review_directory": "out/army-expansion-20261005-v3/assemblies/mage-on-dragon",
+      "viewer_revision": "ca40506926497044a5ec8ca4455822a9dfbcf6a144474215539d95087a1fee01",
+      "placement_count": 9,
+      "saved_provenance_passes": true,
+      "browser_placements_match_recipe": true,
+      "captured_views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-chariot": {
+      "specification": "specs/army-expansion/chariot.json",
+      "specification_file_sha256": "96f9f16bf45b990a1adcb7ddc49a4fdc7af6eb45467dce5f5352c33dd6aed389",
+      "review_directory": "out/army-expansion-20261005-v2/assemblies/chariot",
+      "viewer_revision": "5072ce4b19ca3a76d7c7be07420fef121e868601041e52ca98f723b2cfd4d84f",
+      "placement_count": 28,
+      "saved_provenance_passes": true,
+      "browser_placements_match_recipe": true,
+      "captured_views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-general-on-chariot": {
+      "specification": "specs/army-expansion/general-on-chariot.json",
+      "specification_file_sha256": "4b093a6c8c8db3c8a34240b845fb11d170e3838e3a6128de778bf275302cc21c",
+      "review_directory": "out/army-expansion-20261005-v2/assemblies/general-on-chariot",
+      "viewer_revision": "e312a839fb7a486a6c1cc1037b06a8549db0731b18931f27b6632f866f55a009",
+      "placement_count": 28,
+      "saved_provenance_passes": true,
+      "browser_placements_match_recipe": true,
+      "captured_views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-hero-on-chariot": {
+      "specification": "specs/army-expansion/hero-on-chariot.json",
+      "specification_file_sha256": "a28eceb2ff6123d16777ce8c3fe911191f026c4771a28a1308cc14f041efa640",
+      "review_directory": "out/army-expansion-20261005-v2/assemblies/hero-on-chariot",
+      "viewer_revision": "b9b837ece9e59ed2f0a0142538f3d98732f3f63a05964bbb9726653cda9e3760",
+      "placement_count": 28,
+      "saved_provenance_passes": true,
+      "browser_placements_match_recipe": true,
+      "captured_views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-mage-on-chariot": {
+      "specification": "specs/army-expansion/mage-on-chariot.json",
+      "specification_file_sha256": "1635058c8457862c60e0cfdde06283c63b0f4f19647328ba197c5cd9dda66b4a",
+      "review_directory": "out/army-expansion-20261005-v2/assemblies/mage-on-chariot",
+      "viewer_revision": "8a252a4c1a09bfc16ac1a0ac5efd438996ddbfc506bd820565e17a70793da397",
+      "placement_count": 23,
+      "saved_provenance_passes": true,
+      "browser_placements_match_recipe": true,
+      "captured_views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    },
+    "aurelian-expansion-bolt-thrower": {
+      "specification": "specs/army-expansion/bolt-thrower.json",
+      "specification_file_sha256": "8fabcbd6614aa79276f44e347788b4bca740c7473ab5413289d6cd36235cf15c",
+      "review_directory": "out/army-expansion-20261005-v2/assemblies/bolt-thrower",
+      "viewer_revision": "5221dc146c2bd483e1caff034e418b7e1b7e38c7ecad88efb7fd15a075d6c291",
+      "placement_count": 19,
+      "saved_provenance_passes": true,
+      "browser_placements_match_recipe": true,
+      "captured_views": [
+        "front",
+        "side",
+        "overhead"
+      ]
+    }
+  },
+  "checks": {
+    "expansion_tests": "12 passed, including saved provenance for all 17 assemblies and overview",
+    "related_regressions": "25 passed, 1 skipped before final dragon-panel orientation correction; expansion tests rerun after correction",
+    "skipped_check": "Optional saved refined-horse review test; existing horse geometry unchanged",
+    "triangle_orientation": "Native three-sided Blender cone apex maps to wing body root",
+    "visual_contacts": "Viewer geometry bounds place crew feet in bases/deck and horse/wheel/engine bottoms on bases",
+    "unchanged_files": "No tracked pre-existing source, accepted recipe or baseline file modified",
+    "final_geometry_compilation": [
+      "aurelian.expansion-dragon@3"
+    ]
+  },
+  "limitations": [
+    "Overlapping modular visual meshes only; EVALUATED_EXPORT stays empty.",
+    "No manufacturing fusion, mesh gates, sliced layers, support assessment or physical print trial.",
+    "Chariot reins, artillery bow/string, wings and character weapons need a dedicated printability pass.",
+    "The September Cults3D upload ZIP does not contain these additions."
+  ]
+}

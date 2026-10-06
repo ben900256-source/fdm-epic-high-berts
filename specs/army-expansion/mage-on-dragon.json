@@ -1,0 +1,286 @@
+{
+  "schema_version": 1,
+  "assembly_id": "aurelian-expansion-mage-on-dragon",
+  "placements": [
+    {
+      "instance_id": "base",
+      "part": "aurelian.expansion-dragon-base@1",
+      "definition_sha256": "42ac95003e4bd4d9211272571fa91efc689a54aac6cde6f87977a38f2ca7df47",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "creature",
+      "part": "aurelian.expansion-dragon@3",
+      "definition_sha256": "1cfd41ca219cfdb6d1826888027e9be2e04e230c6173b801055f8f03aa4cbaae",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "rider/saddle-and-legs",
+      "part": "aurelian.expansion-dragon-seat@1",
+      "definition_sha256": "73c47648f155ff2281acdb47ca936fba02b9395658b6fe2a1d79b600213ff6f0",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.65
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          7.55
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "rider/torso",
+      "part": "aurelian.readable-torso-trial@1",
+      "definition_sha256": "603c45b71a9d401efa7e4410b5e5a9afde75998a479ecfda98e50e5a54ac52cc",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.65
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "rider/head",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.65
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "rider/helmet",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.65
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "rider/arms",
+      "part": "aurelian.expansion-mage-arms@1",
+      "definition_sha256": "3b61e065bb4c955606fb7892f6cc1846dc730ad6674a87b8a3e1c5e1175695ed",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.65
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "rider/regalia",
+      "part": "aurelian.expansion-mage-riding-regalia@1",
+      "definition_sha256": "c4c6a2ad3739221be747a9cb50e234a3c0f83fc7a2b666b49b3177531f844e08",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.65
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "rider/staff",
+      "part": "aurelian.expansion-mage-staff@1",
+      "definition_sha256": "d0b7dd67b476820b8a397e32da98a835cdaf39859e3a7a9a1411e2bbbea83e7b",
+      "mount": [
+        [
+          0.992546151641322,
+          0.0,
+          -0.12186934340514748,
+          1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.5499999999999999
+        ],
+        [
+          0.12186934340514748,
+          0.0,
+          0.992546151641322,
+          9.85
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "label": "Mage on Dragon (visual-only)"
+}

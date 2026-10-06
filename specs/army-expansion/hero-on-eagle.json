@@ -1,0 +1,410 @@
+{
+  "schema_version": 1,
+  "assembly_id": "aurelian-expansion-hero-on-eagle",
+  "placements": [
+    {
+      "instance_id": "base",
+      "part": "aurelian.expansion-creature-base@1",
+      "definition_sha256": "d82f2eeeb1e33c1aad3518c2a4e3415513d9e649dd70732f889a59c8b07873b6",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "creature",
+      "part": "aurelian.expansion-giant-eagle@1",
+      "definition_sha256": "d0b700c340be8620043a25281c261d4bbd4a1ace121048824dcc319ccd0dddd2",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "rider/saddle-and-legs",
+      "part": "aurelian.expansion-eagle-seat@1",
+      "definition_sha256": "01b0d6f9ebc53a7ff1e0f371764812baaae6b9eb3675b54041707b0c64a222c5",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          7.75
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "rider/torso",
+      "part": "aurelian.readable-torso-trial@1",
+      "definition_sha256": "603c45b71a9d401efa7e4410b5e5a9afde75998a479ecfda98e50e5a54ac52cc",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "rider/chest",
+      "part": "aurelian.readable-chest-plate-trial@1",
+      "definition_sha256": "c18a02b6b4448d46f841bce70e938731b0bd1ba0bd6c4ece4e612b7f355f3403",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "rider/head",
+      "part": "aurelian.readable-head-trial@5",
+      "definition_sha256": "656e13117261d7594909ad8c534cbbedc7eee9a7255439310046239a7c01e846",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "rider/helmet",
+      "part": "aurelian.readable-helmet-trial@5",
+      "definition_sha256": "63f9ea9ad198207c0923195ea812e957460eb428b840a5871ba9aa03f724af6d",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "rider/crest",
+      "part": "aurelian.crest@7",
+      "definition_sha256": "c61394070cb2f935d3a9d2da3c93c5b3f8a151f65bfbb5a23e5caa055e3f2d3f",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          11.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "rider/arms",
+      "part": "aurelian.expansion-hero-arms@1",
+      "definition_sha256": "d6efd17ce75fffd624616689d6a0ba0672d56ce2d6a5702b73921a00d85f15f5",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "rider/regalia",
+      "part": "aurelian.expansion-hero-riding-regalia@1",
+      "definition_sha256": "9da3805589fd1a3ab19826ce01739da877827029997dc8bd0442a8c6b249a679",
+      "mount": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "rider/sword",
+      "part": "aurelian.expansion-command-sword@1",
+      "definition_sha256": "a2075ba2a1b826eb1a6f16350b9caa7c6ef29f7c6ed2fd8fe5f30bfc15caf3ac",
+      "mount": [
+        [
+          -0.8012516067574695,
+          0.2465415688836028,
+          0.5451725575274173,
+          1.8
+        ],
+        [
+          0.1703112865649484,
+          0.9674461963679652,
+          -0.18719487920813602,
+          -0.4
+        ],
+        [
+          -0.5735764363510459,
+          -0.05714115806989163,
+          -0.8171566310795416,
+          9.4
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "rider/shield",
+      "part": "aurelian.shield@6",
+      "definition_sha256": "538846584437e7cdfd7d8ad1d2a95c49994690a51fa88f21427e05ea201b3cfa",
+      "mount": [
+        [
+          0.9902680687415704,
+          0.13917310096006544,
+          0.0,
+          -1.7
+        ],
+        [
+          -0.13917310096006544,
+          0.9902680687415704,
+          0.0,
+          -1.2999999999999998
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.450000000000001
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "instance_id": "rider/shield-insignia",
+      "part": "aurelian.readable-insignia-trial@6",
+      "definition_sha256": "e96094c1411b40530d548b9579bf1e5496085717a621cd474dd8057a4cc5c194",
+      "mount": [
+        [
+          0.9902680687415704,
+          0.13917310096006544,
+          0.0,
+          -1.7
+        ],
+        [
+          -0.13917310096006544,
+          0.9902680687415704,
+          0.0,
+          -1.2999999999999998
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.450000000000001
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "label": "Hero on Eagle (visual-only)"
+}
